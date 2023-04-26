@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+html {
+ font-size: 62.5%;
+
+ @include respondto(maxTablet) {
+  font-size: 57.5%;
+ }
+
+ @include respondto(phone) {
+  font-size: 62.5%;
+ }
+}
+
+html {
+ overflow-x: hidden;
+}
+
+body {
+ background-color: $white;
+ color: $black;
+ font-family: $main-font;
+ //font-family: $mainFont;
+ font-size: 1.6rem;
+ //font-smooth: always;
+ line-height: 2.4rem;
+ overflow-x: hidden;
+}
+
+b,
+strong {
+ //display: inline-block;
+ font-weight: bold;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+}
+
+main {
+ min-height: calc(100vh - 56.9rem);
+}
+
+ul {
+ list-style-type: none;
+ margin-bottom: 0;
+ margin-top: 0;
+ padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ margin-bottom: 3rem;
+ margin-top: 0;
+ font-family: $main-font;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+ font-weight: 400;
+}
+
+h1,
+.h1 {
+ font-size: 4rem;
+ line-height: 4.9rem;
+}
+
+h2,
+.h2 {
+ font-size: 3.4rem;
+ line-height: 4.1rem;
+}
+
+h3,
+.h3 {
+ font-size: 3rem;
+ line-height: 3.7rem;
+}
+
+h4,
+.h4 {
+ font-size: 2.2rem;
+ line-height: 2.7rem;
+}
+
+h5,
+.h5 {
+ font-size: 1.8rem;
+}
+
+h6,
+.h6 {
+ font-size: 1.6rem;
+}
+
+p {
+ font-size: 1.6rem;
+ line-height: 2.4rem;
+ margin-bottom: 2rem;
+ font-family: $main-font;
+ @include respondto(phone) {
+  font-size: 1.4rem;
+  line-height: 2rem;
+ }
+}
+
+li {
+ font-size: 1.6rem;
+ line-height: 2.4rem;
+ @include respondto(phone) {
+  font-size: 1.4rem;
+  line-height: 2rem;
+ }
+}
+
+a {
+ color: $main-color;
+ text-decoration: none;
+ transition: all 0.3s ease-in;
+
+ &:hover,
+ &:focus {
+  color: darken($main-color, 70%);
+  text-decoration: none;
+ }
+
+ // mac safari fix
+ > span,
+ > b,
+ > strong {
+  display: inline-block;
+  line-height: 1.5;
+ }
+}
+
+b,
+strong {
+ font-weight: bold;
+}
+
+a,
+button {
+ transition: 0.2s ease-in-out;
+}
+
+.position-relative {
+ position: relative;
+}
+.form-control {
+ font-size: 1.4rem;
+}
+.modal-content {
+ background-color: $white !important;
+}
+// Safari browser only
+
+.preloader {
+ display: flex;
+ align-items: center;
+ height: 100vh;
+ left: 0;
+ position: fixed;
+ top: 0;
+ transition: height 0.2s linear;
+ width: 100%;
+ background-color: rgba($black, 0.5);
+ z-index: 9999;
+
+ &.hide {
+  display: none !important;
+ }
+ .loader-element {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+ }
+
+ &.show {
+  height: 0;
+ }
+
+ img,
+ svg {
+  display: block;
+  margin: 0 auto;
+  max-height: 20rem;
+ }
+}
+
+// See: https://a11yproject.com/posts/how-to-hide-content
+
+.sr-only {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ padding: 0;
+ margin: -1px;
+ overflow: hidden;
+ clip: rect(0, 0, 0, 0);
+ border: 0;
+}
+
+// Use in conjunction with .sr-only to only display content when it's focused.
+// Useful for "Skip to main content" links; see https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+// Credit: HTML5 Boilerplate
+
+.sr-only-focusable {
+ &:active,
+ &:focus {
+  position: fixed !important;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  z-index: 999;
+ }
+}
+
+* {
+ &:focus:not([disabled]) {
+  outline-offset: 2px;
+ }
+}

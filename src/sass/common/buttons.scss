@@ -1,0 +1,94 @@
+.button {
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid $main-color;
+  background-color: $main-color;
+  color: $white;
+  display: flex;
+  width: fit-content;
+  padding: .95rem 2.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .2s ease-in-out;
+  justify-content: center;
+  max-width: 100%;
+
+  @include respondto(phone) {
+    padding: 1rem 1.5rem;
+  }
+
+  &[disabled],
+  &[aria-disabled=true] {
+    opacity: .7;
+  }
+
+  &:not([disabled]),
+  &:not([aria-disabled=true]) {
+    &:hover,
+    &:focus {
+      background-color: darken($main-color, 8%);
+      border: 1px solid darken($main-color, 8%);
+    }
+
+  }
+
+  &-border {
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid $main-color;
+    background-color: transparent;
+    color: $main-color;
+    display: flex;
+    width: fit-content;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    transition: .2s ease-in-out;
+    justify-content: center;
+    max-width: 100%;
+
+    &:not([disabled]),
+    &:not([aria-disabled=true]) {
+      &:hover,
+      &:focus {
+        background-color: $main-color;
+        color: $white;
+      }
+    }
+  }
+
+  i {
+    margin-left: 11px;
+    font-size: 1.2rem;
+    color: inherit;
+  }
+}
+
+.btn-lh {
+  &-36 {
+    line-height: 36px;
+
+    i {
+      line-height: 36px;
+    }
+  }
+
+  &-38 {
+    line-height: 38px;
+
+    i {
+      line-height: 38px;
+    }
+  }
+
+  &-58 {
+    line-height: 58px;
+
+    i {
+      line-height: 58px;
+    }
+  }
+}
