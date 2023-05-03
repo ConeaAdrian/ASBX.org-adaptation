@@ -1455,7 +1455,8 @@ h5,
 h6 {
   margin-bottom: 3rem;
   margin-top: 0;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  font-family: Helvetica, Sans-Serif !important; }
 
 h1,
 .h1,
@@ -1469,7 +1470,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: Helvetica, Sans-Serif !important; }
 
 h1,
 .h1 {
@@ -1503,7 +1505,7 @@ p {
   font-size: 1.6rem;
   line-height: 2.4rem;
   margin-bottom: 2rem;
-  font-family: "Montserrat", sans-serif; }
+  font-family: Helvetica, Sans-Serif !important; }
   @media (max-width: 767px) {
     p {
       font-size: 1.4rem;
@@ -1820,6 +1822,39 @@ img {
   .btn-lh-58 i {
     line-height: 58px; }
 
+.top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.button {
+  padding-right: 50px;
+  padding-left: 35px;
+  border-radius: 6px;
+  background-color: #FF4043 !important;
+  background-position: 90% 50%;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  text-decoration: none;
+  cursor: pointer;
+  border: none; }
+
+.transparent {
+  box-shadow: none;
+  color: #45164b;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  margin-top: 30px;
+  padding: 0 30px 0 0;
+  cursor: pointer;
+  border: none; }
+
 .w-form-formradioinput--inputType-custom {
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -2116,7 +2151,7 @@ figcaption {
   width: 410px;
   margin-bottom: -180px;
   padding: 0px 40px 45px 45px;
-  background-color: #45164b;
+  background-color: #264470;
   color: #fff; }
 
 .hero-text-block.centered {
@@ -2240,7 +2275,7 @@ figcaption {
   background-color: #fff; }
 
 .section.footer-section {
-  background-color: #45164b;
+  background-color: #264470;
   color: #fff; }
 
 .section.tint {
@@ -2322,7 +2357,7 @@ figcaption {
   color: #000; }
 
 .checklist-block.color {
-  background-color: #45164b;
+  background-color: #264470;
   color: #fff; }
 
 .checklist-item {
@@ -2411,7 +2446,7 @@ figcaption {
 .button.cta-button.purple {
   margin-top: 20px;
   float: right;
-  background-color: #45164b; }
+  background-color: #264470; }
 
 .button.header-cta-link {
   display: none;
@@ -2433,7 +2468,7 @@ figcaption {
   background-size: 14px;
   background-repeat: no-repeat;
   box-shadow: none;
-  color: #45164b; }
+  color: #264470; }
 
 .button.transparant:hover {
   color: #ff4043; }
@@ -2592,7 +2627,7 @@ figcaption {
 .cta-title {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #45164b;
+  color: #264470;
   font-size: 33px;
   font-weight: 400; }
 
@@ -2623,7 +2658,7 @@ figcaption {
 .column-image-block {
   position: relative;
   width: 100%;
-  background-image: url("../images/adult-business-meeting-business-people-1438072-1.jpg");
+  background-image: url("../../img/people.jpg");
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: 21px 21px 50px -20px rgba(0, 0, 0, 0.4); }
@@ -3109,7 +3144,7 @@ figcaption {
   display: block;
   width: 100%;
   height: 460px;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
+  background-image: url("../../img/suits.jpg");
   background-position: 50% 50%;
   background-size: cover;
   color: #fff;
@@ -4579,11 +4614,14 @@ figcaption {
 
 .heading-2._10pxtop {
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  color: #264470;
+  color: #264470; }
 
 .heading-3 {
   font-size: 20px;
-  line-height: 28px; }
+  line-height: 28px;
+  color: #264470; }
 
 .list-item {
   color: #000;
@@ -8995,7 +9033,7 @@ textarea.w-select {
 
 .w-nav {
   position: relative;
-  background: #dddddd;
+  background: #ffffff;
   z-index: 1000; }
 
 .w-nav:before,
