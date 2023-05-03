@@ -9,9 +9,20 @@
     <meta property="og:description" content="" />
     <!--description of the page, key words-->
     <meta name="description" content="" />
+    <meta content="ASBX.org is dedicated to raising awareness about asbestos exposure, advocating for policy change, and providing resources to protect public health. Join us in our fight against asbestos." name="description">
+  <meta content="ASBX.org | Asbestos Exposure Organization | Protecting Public Health" property="og:title">
+  <meta content="ASBX.org is dedicated to raising awareness about asbestos exposure, advocating for policy change, and providing resources to protect public health. Join us in our fight against asbestos." property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/5d04f82f89e22f579a36c222/5d2c1e44b9b05de9ea430949_Template-Slideshow-1.jpg" property="og:image">
+  <meta content="ASBX.org | Asbestos Exposure Organization | Protecting Public Health" property="twitter:title">
+  <meta content="ASBX.org is dedicated to raising awareness about asbestos exposure, advocating for policy change, and providing resources to protect public health. Join us in our fight against asbestos." property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/5d04f82f89e22f579a36c222/5d2c1e44b9b05de9ea430949_Template-Slideshow-1.jpg" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
 
 <!--    <meta http-equiv="X-UA-Compatible" content="IE=edge" />-->
-    <title>Dr. Reza Nazemi, MD homepage</title>
+    <title>ASBX.org</title>
     <!--use this for fav icon-->
     <!-- <link rel="icon" href="img/favIco/favicon.ico" type="image/x-icon"> -->
     <link rel="icon" type="image/png" href="img/favIco/favicon-16x16.png" sizes="16x16">
@@ -23,11 +34,23 @@
     <link rel="stylesheet" href="css/libs.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/asbx.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Rubik:300,regular,italic,500,700,900","Karla:regular,italic,700"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.jpg" rel="apple-touch-icon">
+
     <script
       src="https://kit.fontawesome.com/1a43954746.js"
       crossorigin="anonymous"
     ></script>
-
+    
   </head>
 
   <body>
@@ -35,86 +58,307 @@
 
 <!--menu-->
 <header class="header-section">
-  <a href="#content-body" class="sr-only sr-only-focusable">Skip to content</a>
-  <div class="header-menu">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 col-sm-8 col-8">
-          <a href="" class="logo-header" aria-label="Dr. Reza Nazemi, MD logo"><h1 id="logo">Dr. Reza Nazemi, MD</h1>
-          </a>
-        </div>
-        <div class="col-md-6 col-sm-4 col-4 right-item layout-row justify-content-end align-items-center">
-          <a href="tel:+13106520228" aria-label="Call Dr. Reza Nazemi by phone number +1-310-652-0228"
-             class="link phone-number">
-            <i class="fas fa-phone visible-sm"></i>
-            <span class="hidden-sm">+1-310-652-0228</span>
-          </a>
-
-          <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#scheduleAppointment"
-                  aria-label="Schedule Appointment">
-            <i class="far fa-calendar-check visible-xs"></i>
-            <span class="hidden-xs">Schedule Appointment</span>
-          </button>
-        </div>
+  <div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="container-2 w-container">
+      <a href="index.html" aria-current="page" class="w-nav-brand w--current"><img src="../../img//ASBX_logo.png" alt="" class="logo"></a>
+      <div class="menu-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
       </div>
-
-
+      <a href="cities.html" class="button header-cta-link w-nav-link">Get Started</a>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="cities.html" class="nav-link w-nav-link">Asbestos</a>
+        <div data-hover="false" data-delay="0" class="dropdown w-dropdown">
+          <div class="nav-link-dropdown w-dropdown-toggle">
+            <div>Asbestos Diseases</div>
+          </div>
+          <nav class="dropdown-list w-dropdown-list">
+            <a href="mesothelioma.html" class="dropdown-link w-dropdown-link">Mesothelioma</a>
+            <a href="#" class="dropdown-link w-dropdown-link">Lung Cancer</a>
+            <a href="#" class="dropdown-link w-dropdown-link">Asbestosis</a>
+            <a href="#" class="dropdown-link last w-dropdown-link">Other Related Cancers</a>
+          </nav>
+        </div>
+        <a href="about-us.html" class="nav-link w-nav-link">About Us</a>
+        <div class="nav-link-wrapper">
+          <a href="frequently-asked.html" class="nav-link w-nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link last w-nav-link">Contact Us</a>
+        </div>
+      </nav>
     </div>
-
   </div>
 </header>
+
+
 <!--end menu-->
 
 <div class="body-page">
  <!-- widgets -->
- <header class="hero-section relative">
- <picture>
-  <!--<source srcset="img/bg/bg-5.webp" type="image/webp"/>-->
-  <source srcset="img/hero.jpg" type="image/jpg" />
-  <img
-   src="img/hero.jpg"
-   class="object-fit-cover"
-   width="1920"
-   height="707"
-   alt=""
-  />
- </picture>
-
- <div class="container">
-  <div class="row">
-   <div class="display-flex col-sm-12">
-    <div class="left-hero-content">
-     <h2>Specialist in Endocrinology</h2>
-
-     <p>
-      Specializing in endocrinology, internal medicine, and the treatment of
-      thyroid diseases using nonsurgical, hormone-focused treatments and
-      therapies, including hyperthyroidism, hypothyroidism, thyroid cancer, and
-      thyroid nodule issues.
-     </p>
-     <div class="bottom-items">
-      <button class="button">Schedule Appointment</button>
-     </div>
-    </div>
-   </div>
+ <div class="section-search-top wf-section">
+    
   </div>
- </div>
-</header>
-
+  <div class="page-wrapper">
+    <div data-w-id="a2f37dc4-f436-3660-1e7a-ea261bbcd760" class="hero-section wf-section">
+      <div class="hero-overlay">
+        <div class="container w-container">
+          <div class="hero-text-block">
+            <h1 class="hero-main-title">ASBX.org</h1>
+            <div class="small-uppercase-title white">Asbestos Exposure Organization</div>
+            <h2 class="heading white">Fighting for a healthier future without asbestos Exposure</h2>
+            <p class="hero-paragraph">ASBX.org, a non-profit organization, is committed to promoting knowledge and awareness regarding the adverse effects of asbestos on human health. To achieve this mission, ASBX.org has taken the initiative to establish the most comprehensive asbestos exposure database in North America.</p>
+            <form action="/search" class="header-search w-form"><input type="search" class="search-field w-input" maxlength="256" name="query" placeholder="Find a Documented Locations" id="search" required=""><input type="submit" value="&#x27;" class="search-button w-button"></form>
+          </div>
+        </div><img src="images/Shape-1-White_1.svg" alt="" class="bg-shape in-header">
+      </div>
+    </div>
+    <div class="section-2 pd-top-0 wf-section">
+      <div class="container w-container">
+        <div class="grid-1-column gap-row-80px">
+          <div class="grid-2-columns _1-25fr---1fr gap-row-48px">
+            <div id="w-node-_3dda4761-cf03-1b7b-c7da-84186a9f3ca7-0886afbd" data-w-id="3dda4761-cf03-1b7b-c7da-84186a9f3ca7" class="inner-container _640px">
+              <div class="position-relative---z-index-1">
+                <img src="../../img/the-story-behind-our-firm-image-left-startux-webflow-ecommerce-template-p-500.jpg" alt="">
+                <div class="card stats-inside-image-card">
+                  <div>
+                    <div class="display-2">1000+</div>
+                    <div class="text-200">Victims helped</div>
+                  </div>
+                  <div>
+                    <div class="display-2">$2+B</div>
+                    <div class="text-200">Recovered Compensation</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="w-node-_3dda4761-cf03-1b7b-c7da-84186a9f3cb5-0886afbd" data-w-id="3dda4761-cf03-1b7b-c7da-84186a9f3cb5" class="inner-container _494px _100-mbl w-clearfix">
+              <h2 class="heading-2 _10pxtop">Investigate the Roots of Your Diagnosis Expediently</h2>
+              <h3 class="heading-3">Obtain Accurate Information on Asbestos-Related Compensation</h3>
+              <p class="paragraph _18x28px">Acquire reliable and exact insights into the financial compensation accessible for individuals diagnosed with asbestos-linked ailments. Promptly familiarize yourself with three specific monetary compensation alternatives and the time-frame necessary to receive them.</p>
+              <a href="cities.html" class="button cta-button purple w-button">Get Started</a>
+            </div>
+          </div>
+        </div><img src="images/Shape-1_1.svg" alt="" class="bg-shape circle">
+      </div>
+    </div>
+    <div class="section wf-section">
+      <div class="container w-container">
+        <div class="flex-row w-row">
+          <div class="text-column-left w-col w-col-6">
+            <div class="title-wrapper">
+              <div class="small-uppercase-title"><strong>Benefits of Our GEOLOCATION Search Tool</strong></div>
+              <h2 class="section-title">Why Choose ASBX.org?</h2>
+            </div>
+            <p class="paragraph _18x28px">Our powerful <strong>geolocation search tool</strong>, integrated with the <strong>Asbestos Claims Case Value Calculator</strong>, is an invaluable resource for individuals seeking information on asbestos exposure job sites and potential compensation. By providing accurate, up-to-date data based on Asbestos Trust Funds approved locations, and streamlining the compensation estimation process, <strong>we empower victims and their families</strong> to take control of their asbestos exposure history and <strong>make informed decisions</strong> about their <strong>health and compensation</strong> claims.</p>
+            <ul role="list">
+              <li>Bankruptcy site lists</li>
+              <li>Job and industry codes</li>
+              <li>Navy Ship records</li>
+              <li>Civil site lists</li>
+              <li>Product Identification for civil and bankruptcy.</li>
+            </ul>
+          </div>
+          <div class="checklist-column-right w-col w-col-6">
+            <div class="checklist-block">
+              <ul role="list" class="checklist w-list-unstyled">
+                <li class="checklist-item"><strong>Ease of Use</strong>: Simply input your search criteria, such as industry, job, and age, and our geolocation tool will provide a list of relevant job sites.</li>
+                <li class="checklist-item"><strong>Precision</strong>: Locate Asbestos Trust Funds approved job sites in your area or nationwide with pinpoint accuracy. </li>
+                <li class="checklist-item"><strong>Comprehensive Data</strong>: Our database contains a vast number (over 200K) of asbestos exposure job sites across various industries &amp; jobs, ensuring that you will find all the information you need to understand your asbestos claims.</li>
+                <li class="checklist-item"><strong>Exploring the 3 compensation options available to you</strong>, will ensure that you make well-informed decisions regarding your health and potential claims for compensation.</li>
+              </ul>
+              <div class="cta-button-wrapper">
+                <div class="small-cta-title">Interested?</div>
+                <a href="cities.html" class="button cta-button w-button">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div><img src="images/Shape-3.svg" alt="" class="bg-shape"><img src="images/Shape-1_1.svg" alt="" class="bg-shape circle">
+      </div>
+    </div>
+    <div class="image-section wf-section">
+      <div data-w-id="2fabcfbf-dcc7-eded-a00a-dab5f9a7ec9b" class="image-section-overlay">
+        <div class="container w-container">
+          <div class="centered-title-wrapper">
+            <div class="small-uppercase-title white">Getting Diagnosed after 20-50 Years</div>
+            <h2 class="section-title white">Asbestos: The Silent Killer</h2>
+            <p class="centered-paragraph">Despite its usefulness, asbestos has a dark side – when its microscopic fibers are released into the air and inhaled or ingested, they can lead to devastating health consequences.</p>
+            <a href="information.html" class="button outline-button w-button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section overflow wf-section">
+      <div class="container w-container">
+        <div class="title-wrapper how-it-works">
+          <div class="small-uppercase-title">Get Involved</div>
+          <h2 class="section-title">We Need Your Help.</h2>
+        </div><img src="images/Shape-3.svg" alt="" class="bg-shape"><img src="images/Shape-1_1.svg" alt="" class="bg-shape circle">
+      </div>
+      <div class="how-it-works-wrapper">
+        <div class="column-image-block w-clearfix">
+          <div class="how-it-works-content-wrapper">
+            <div class="how-it-works-block">
+              <p class="paragraph"><strong>Raising Awareness:</strong> Your personal experiences with asbestos exposure and its consequences can make a difference in the lives of others. Share your story and help us identify new asbestos sites near you to help raise awareness and support fellow victims.</p>
+              <a href="#" class="button w-button">Start Here</a>
+              <div class="block-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section overflow wf-section">
+      <div class="container w-container">
+        <div class="title-wrapper how-it-works">
+          <div class="small-uppercase-title">Step 1</div>
+          <h2 class="section-title">Select your State</h2>
+        </div><img src="images/Shape-3.svg" alt="" class="bg-shape"><img src="images/Shape-1_1.svg" alt="" class="bg-shape circle">
+      </div>
+      <div class="how-it-works-wrapper">
+        <div class="column-image-us-map"><img src="images/us-map.png" loading="lazy" width="809" sizes="(max-width: 767px) 100vw, (max-width: 991px) 87vw, 809px" srcset="images/us-map-p-500.png 500w, images/us-map-p-800.png 800w, images/us-map-p-1080.png 1080w, images/us-map-p-1600.png 1600w, images/us-map.png 1618w" alt=""></div>
+      </div>
+    </div>
+    <div class="section wf-section">
+      <div class="container w-container">
+        <div class="flex-row w-row">
+          <div class="story-column-left w-col w-col-6">
+            <div class="featured-story-list-wrapper w-dyn-list">
+              <div role="list" class="w-dyn-items">
+                <div role="listitem" class="w-dyn-item">
+                  <a href="#" class="testimonial-link-block w-inline-block">
+                    <div class="testimonial-overlay-block">
+                      <div class="story-overlay-block">
+                        <div class="story-overlay-title"></div>
+                        <div class="team-title-wrapper in-block">
+                          <div class="team-line"></div>
+                          <div class="team-title"></div>
+                          <div class="team-title">,</div>
+                          <div class="team-title"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="w-dyn-empty">
+                <div>No items found.</div>
+              </div>
+            </div>
+          </div>
+          <div class="text-column-right w-col w-col-6">
+            <div class="title-wrapper">
+              <div class="small-uppercase-title">Make a Difference</div>
+              <h2 class="section-title">Advocacy for Responsible Asbestos Management</h2>
+            </div>
+            <p class="paragraph">One of our core objectives at ASBX.org is to champion policy change that strengthens regulations and promotes responsible asbestos management. We work tirelessly to advocate for stricter legislation and increased enforcement to protect the public from the dangers of asbestos exposure. Join us in our fight for a safer future by supporting our advocacy efforts and staying informed about ongoing policy developments.</p>
+          </div>
+        </div><img src="images/Shape-1_1.svg" alt="" class="bg-shape circle">
+      </div>
+    </div>
+    <div data-w-id="6d79173e-1f52-e12b-65bf-4eeb1d4da5b1" class="image-section stories wf-section">
+      <div class="image-section-overlay">
+        <div class="container w-container">
+          <div class="centered-title-wrapper stories">
+            <div class="small-uppercase-title white">Make a Difference</div>
+            <h2 class="section-title white">Our Mission</h2>
+            <p class="centered-paragraph">Our mission is to educate communities, advocate for stronger regulations, support research on asbestos-related diseases, and provide resources for those affected by asbestos exposure.</p>
+            <a href="stories.html" class="button outline-button w-button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section with-large-color-block wf-section">
+      <div class="large-color-block">
+        <div class="container w-container">
+          <div class="title-wrapper">
+            <div class="small-uppercase-title">Quick Answers</div>
+            <h2 class="section-title">Frequently Asked</h2>
+          </div>
+          <div class="faq-list-wrapper w-dyn-list">
+            <div role="list" class="faq-list w-dyn-items">
+              <div role="listitem" class="faq-item w-dyn-item">
+                <div class="faq-item-block">
+                  <a data-w-id="0747feb4-0156-5150-7a1b-fd351e2d80f5" href="#" class="faq-link-block w-inline-block">
+                    <div class="faq-title"></div>
+                  </a>
+                  <div style="display:none" class="faq-answer-wrapper">
+                    <div class="faq-rtb w-richtext"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-dyn-empty">
+              <div>No items found.</div>
+            </div>
+          </div>
+          <a href="frequently-asked.html" class="button transparant w-button">View All FAQs</a>
+        </div>
+      </div>
+      <div class="container w-container">
+        <div class="contact-person-block">
+          <div class="contact-person-row w-row">
+            <div class="contact-column-left w-col w-col-6">
+              <div class="title-wrapper">
+                <div class="small-uppercase-title">Stay Connected with ASBX.org</div>
+                <h2 class="section-title">Get in touch</h2>
+              </div>
+              <a href="#" class="contact-link-block w-inline-block"><img src="images/telephone.svg" alt="" class="contact-icon">
+                <div class="link-block-title">Give us a Call</div>
+                <div class="link-block-subtitle">(844) 966-1567</div>
+              </a>
+              <a href="#" class="contact-link-block w-inline-block"><img src="images/email-outbox.svg" alt="" class="contact-icon">
+                <div class="link-block-title">Send us an Email</div>
+                <div class="link-block-subtitle">support@asbx.org</div>
+              </a>
+            </div>
+            <div class="contact-person-column-right w-col w-col-6">
+              <div class="team-block">
+                <div class="support-image"></div>
+                <div class="team-title-wrapper">
+                  <div class="team-line"></div>
+                  <div class="team-title">Jeniffer, Customer Service</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 <!-- Main Footer start -->
 <footer class="footer-section">
 
-  <div class="copywriter">
-    <div class="container">
-      <div class="row">
-  
-        <div class="col-md-6 col-sm-12 ">
-          <p>©2023 ASBX.org</p>
+  <div class="section footer-section wf-section">
+    <div class="container w-container">
+      <div class="footer-top-block">
+        <div class="footer-top-title">Get in touch.</div>
+        <a href="#" class="footer-top-title link-version">Call +1 (844) 966-1567</a>
+        <div class="footer-top-title inline">or</div>
+        <a href="mailto:support@asbx.org?subject=Support%20ASBX.ORG" class="footer-top-title link-version">support@asbx.org</a>
+        <div class="footer-top-title inline hide-mobile">anytime.</div>
+      </div>
+      <div class="footer-row-wrapper">
+        <div class="footer-row w-row">
+          <div class="footer-column w-col w-col-4">
+            <div class="footer-title">About Us</div>
+            <a href="about-us.html" class="footer-link">Our Organization</a>
+            <a href="information.html" class="footer-link">How we Work</a>
+          </div>
+          <div class="footer-column w-col w-col-4">
+            <div class="footer-title">Start Now</div>
+            <a href="cities.html" class="footer-link">Find Organizations</a>
+            <a href="stories.html" class="footer-link">Read Stories</a>
+          </div>
+          <div class="footer-column w-col w-col-4">
+            <div class="footer-title">Legal</div>
+            <a href="template/licensing.html" class="footer-link">Template Licensing</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </div>
+        </div><img src="images/ASBX_ORG_Logo_footer.png" alt="" class="logo footer-version">
+      </div>
+      <div class="bottom-footer-block">
+        <div class="copyright-text">Copyright © <a href="#" target="_blank" class="bottom-footer-link">ASBX.ORG</a>
         </div>
-        <div class="col-md-6 col-sm-12 ">
-          <a target="_blank" href="" title="ASBX.org">With <i class="fas fa-heart heart-beat"></i>ASBX.org</a>
+        <div class="copyright-text">Powered by <a href="https://www.flintcooper.com" target="_blank" class="bottom-footer-link">Flint Cooper</a>
         </div>
+        <div class="copyright-text">All Rights Reserved</div>
       </div>
     </div>
   </div>

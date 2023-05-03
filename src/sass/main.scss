@@ -9,17 +9,21 @@
 @import "common/general-classes.scss";
 @import "common/buttons.scss";
 //@import "common/forms.scss";
-@import "common/header.scss";
-@import "common/footer.scss";
-@import "common/hero.scss";
-@import "common/content.scss";
-@import "common/_scroll-up.scss";
-@import "widgets/categories";
-@import "widgets/before-after";
-@import "widgets/procedures";
-@import "widgets/about";
-@import "widgets/faq";
-@import "widgets/contact";
+// @import "common/_scroll-up.scss";
+// @import "widgets/categories";
+// @import "widgets/before-after";
+// @import "widgets/procedures";
+// @import "widgets/about";
+// @import "widgets/faq";
+// @import "widgets/contact";
+
+//@import "components";
+
+@import "components/search.scss";
+// @import "common/header.scss";
+// @import "common/footer.scss";
+// @import "common/hero.scss";
+// @import "common/content.scss";
 
 // end widgets
 
