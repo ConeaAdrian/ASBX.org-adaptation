@@ -94,14 +94,43 @@
 <div class="body-page">
  <!-- widgets -->
    <div class="page-wrapper">
-    <div data-w-id="a2f37dc4-f436-3660-1e7a-ea261bbcd760" class="hero-section wf-section">
+    <div class="hero-section wf-section">
       <div class="hero-overlay">
         <div class="container w-container">
           <div class="hero-text-block">
             <h1 class="hero-main-title">ASBX.org</h1>
             <div class="small-uppercase-title white">Asbestos Exposure Organization</div>
             <h2 class="heading white">Fighting for a healthier future without asbestos Exposure</h2>
-            <p class="hero-paragraph">ASBX.org, a non-profit organization, is committed to promoting knowledge and awareness regarding the adverse effects of asbestos on human health. To achieve this mission, ASBX.org has taken the initiative to establish the most comprehensive asbestos exposure database in North America.</p>
+            <div class="form-header">
+                <p>Find information about Asbestos compensation for your area.</p>
+              </div>
+            <form>
+                <div class="select-wrapper">
+                  <label for="select1">I was:</label>
+                  <select id="select1">
+                    <option value="">--Select--</option>
+                    <option value="lista1">Family Member</option>
+                    <option value="lista2">Listă 2</option>
+                    <option value="lista3">Listă 3</option>
+                  </select>
+                </div>
+                <div class="select-wrapper">
+                  <label for="select2">diagnosed with</label>
+                  <select id="select2">
+                    <option value="">--Select--</option>
+                    <option value="lista4">Mesothelioma</option>
+                    <option value="lista5">Lung Cancer</option>
+                    <option value="lista6">Asbestosis</option>
+                  </select>
+                </div>
+                <div class="select-wrapper search-wrapper">
+                  <label for="search">in</label>
+                  <input type="text" id="search" placeholder="Introdu termenul căutat...">
+                </div>
+                <button class="button" type="submit">Search</button>
+              </form>
+              
+              
             <form action="/search" class="header-search w-form"><input type="search" class="search-field w-input" maxlength="256" name="query" placeholder="Find a Documented Locations" id="search" required=""><input type="submit" value="&#x27;" class="search-button w-button"></form>
           </div>
         </div><img src="images/Shape-1-White_1.svg" alt="" class="bg-shape in-header">
@@ -111,7 +140,7 @@
       <div class="container w-container">
         <div class="grid-1-column gap-row-80px">
           <div class="grid-2-columns _1-25fr---1fr gap-row-48px">
-            <div id="w-node-_3dda4761-cf03-1b7b-c7da-84186a9f3ca7-0886afbd" data-w-id="3dda4761-cf03-1b7b-c7da-84186a9f3ca7" class="inner-container _640px">
+            <div class="inner-container _640px">
               <div class="position-relative---z-index-1">
                 <img src="../../img/the-story-behind-our-firm-image-left-startux-webflow-ecommerce-template-p-500.jpg" alt="">
                 <div class="card stats-inside-image-card">
@@ -126,7 +155,7 @@
                 </div>
               </div>
             </div>
-            <div id="w-node-_3dda4761-cf03-1b7b-c7da-84186a9f3cb5-0886afbd" data-w-id="3dda4761-cf03-1b7b-c7da-84186a9f3cb5" class="inner-container _494px _100-mbl w-clearfix">
+            <div class="inner-container _494px _100-mbl w-clearfix">
               <h2 class="heading-2 _10pxtop">Investigate the Roots of Your Diagnosis Expediently</h2>
               <h3 class="heading-3">Obtain Accurate Information on Asbestos-Related Compensation</h3>
               <p class="paragraph _18x28px">Acquire reliable and exact insights into the financial compensation accessible for individuals diagnosed with asbestos-linked ailments. Promptly familiarize yourself with three specific monetary compensation alternatives and the time-frame necessary to receive them.</p>
@@ -171,7 +200,7 @@
       </div>
     </div>
     <div class="image-section wf-section">
-      <div data-w-id="2fabcfbf-dcc7-eded-a00a-dab5f9a7ec9b" class="image-section-overlay">
+      <div class="image-section-overlay">
         <div class="container w-container">
           <div class="centered-title-wrapper">
             <div class="small-uppercase-title white">Getting Diagnosed after 20-50 Years</div>
@@ -238,7 +267,7 @@
         </div><img src="images/Shape-1_1.svg" alt="" class="bg-shape circle">
       </div>
     </div>
-    <div data-w-id="6d79173e-1f52-e12b-65bf-4eeb1d4da5b1" class="image-section stories wf-section">
+    <div class="image-section stories wf-section">
       <div class="image-section-overlay">
         <div class="container w-container">
           <div class="centered-title-wrapper stories">
@@ -252,30 +281,33 @@
     </div>
     <div class="section with-large-color-block wf-section">
       <div class="large-color-block">
-        <div class="container w-container">
-          <div class="title-wrapper">
-            <div class="small-uppercase-title">Quick Answers</div>
-            <h2 class="section-title">Frequently Asked</h2>
-          </div>
-          <div class="faq-list-wrapper w-dyn-list">
-            <div role="list" class="faq-list w-dyn-items">
-              <div role="listitem" class="faq-item w-dyn-item">
-                <div class="faq-item-block">
-                  <a data-w-id="0747feb4-0156-5150-7a1b-fd351e2d80f5" href="#" class="faq-link-block w-inline-block">
-                    <div class="faq-title"></div>
-                  </a>
-                  <div style="display:none" class="faq-answer-wrapper">
-                    <div class="faq-rtb w-richtext"></div>
-                  </div>
-                </div>
+
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+              <div class="faq-item">
+                <p class="question">Can ASBX.org help me find legal assistance if I have been diagnosed with an asbestos-related disease?</p>
+                <p class="answer">Yes, ASBX.org can help you find legal assistance if you have been diagnosed with an asbestos-related disease. We have a network of experienced asbestos lawyers who can provide you with the guidance and support you need.</p>
+              </div>
+              <div class="faq-item">
+                <p class="question">Can family members of someone who passed away from an asbestos-related disease seek legal help through ASBX.org?</p>
+                <p class="answer">Yes, family members of someone who passed away from an asbestos-related disease can seek legal help through ASBX.org. Our lawyers can help you file a wrongful death claim and seek compensation for your loved one's suffering and losses.</p>
+              </div>
+              <div class="faq-item">
+                <p class="question">How can I get involved with ASBX.org?</p>
+                <p class="answer">There are many ways to get involved with ASBX.org, including making a donation, volunteering your time, or sharing our message with others. Visit our website to learn more about how you can help us in our mission to support asbestos victims.</p>
+              </div>
+              <div class="faq-item">
+                <p class="question">How can I learn more about my legal rights and options if I or a loved one has been diagnosed with an asbestos-related disease?</p>
+                <p class="answer">ASBX.org can provide you with the information you need to understand your legal rights and options if you or a loved one has been diagnosed with an asbestos-related disease. Our lawyers can help you pursue a legal claim and seek compensation for your medical expenses, lost wages, and other damages.</p>
+              </div>
+              <div class="faq-item">
+                <p class="question">How can I stay informed about ASBX.org's activities and updates?</p>
+                <p class="answer">You can stay informed about ASBX.org's activities and updates by subscribing to our newsletter, following us on social media, or visiting our website regularly. We also encourage you to reach out to us directly if you have any questions or concerns.</p>
               </div>
             </div>
-            <div class="w-dyn-empty">
-              <div>No items found.</div>
-            </div>
+            <button class="view-all-btn">View All FAQs</button>
           </div>
-          <a href="frequently-asked.html" class="transparent">View All FAQs</a>
-        </div>
       </div>
       <div class="container w-container">
         <div class="contact-person-block">
@@ -309,47 +341,72 @@
     </div>
 </div>
 <!-- Main Footer start -->
-<footer class="footer-section">
-
-  <div class="section footer-section wf-section">
-    <div class="container w-container">
-      <div class="footer-top-block">
-        <div class="footer-top-title">Get in touch.</div>
-        <a href="#" class="footer-top-title link-version">Call +1 (844) 966-1567</a>
-        <div class="footer-top-title inline">or</div>
-        <a href="mailto:support@asbx.org?subject=Support%20ASBX.ORG" class="footer-top-title link-version">support@asbx.org</a>
-        <div class="footer-top-title inline hide-mobile">anytime.</div>
-      </div>
-      <div class="footer-row-wrapper">
-        <div class="footer-row w-row">
-          <div class="footer-column w-col w-col-4">
-            <div class="footer-title">About Us</div>
-            <a href="about-us.html" class="footer-link">Our Organization</a>
-            <a href="information.html" class="footer-link">How we Work</a>
-          </div>
-          <div class="footer-column w-col w-col-4">
-            <div class="footer-title">Start Now</div>
-            <a href="cities.html" class="footer-link">Find Organizations</a>
-            <a href="stories.html" class="footer-link">Read Stories</a>
-          </div>
-          <div class="footer-column w-col w-col-4">
-            <div class="footer-title">Legal</div>
-            <a href="template/licensing.html" class="footer-link">Template Licensing</a>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </div>
-        </div><img src="images/ASBX_ORG_Logo_footer.png" alt="" class="logo footer-version">
-      </div>
-      <div class="bottom-footer-block">
-        <div class="copyright-text">Copyright © <a href="#" target="_blank" class="bottom-footer-link">ASBX.ORG</a>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="connect">
+          <h4>Connect with Us</h4>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
         </div>
-        <div class="copyright-text">Powered by <a href="https://www.flintcooper.com" target="_blank" class="bottom-footer-link">Flint Cooper</a>
-        </div>
-        <div class="copyright-text">All Rights Reserved</div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="help">
+          <a href="#"><i class="fas fa-question-circle"></i> Need More Help?</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <h4>Pet Insurance</h4>
+        <ul>
+          <li><a href="#">Dog Insurance</a></li>
+          <li><a href="#">Cat Insurance</a></li>
+          <li><a href="#">Coverage Details</a></li>
+          <li><a href="#">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Partner With Us</h4>
+        <ul>
+          <li><a href="#">Employers</a></li>
+          <li><a href="#">Veterinarians</a></li>
+          <li><a href="#">Shelters</a></li>
+          <li><a href="#">Breeders</a></li>
+          <li><a href="#">Sponsorships</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>About ASBX</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Press &amp; Media</a></li>
+          <li><a href="#">Supported Technology</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Licensing</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Sample Policy Terms</a></li>
+          <li><a href="#">Notice to California Residents</a></li>
+        </ul>
+      </div>
+    </div>
+    
   </div>
-
 </footer>
+
 <!-- Main Footer end -->
 
 <!-- end widgets -->

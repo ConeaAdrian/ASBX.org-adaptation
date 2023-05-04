@@ -1,0 +1,180 @@
+footer {
+    background-color: #264470;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 16px;
+  
+    .row {
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+  
+      &:last-child {
+        margin-top: 20px;
+      }
+    }
+  
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    li {
+      margin-bottom: 10px;
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .help {
+        margin-top: 10px;
+      margin-bottom: 30px;
+  
+      a {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+  
+        i {
+          font-size: 20px;
+          margin-right: 10px;
+        }
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .connect {
+      ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          margin-right: 10px;
+  
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: background-color 0.3s ease-in-out;
+  
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.4);
+            }
+  
+            &:hover i {
+              color: #264470;
+            }
+  
+            i {
+              color: #fff;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 767.98px) {
+      .row {
+        margin-bottom: 10px;
+  
+        &:last-child {
+          margin-top: 10px;
+        }
+      }
+  
+      h4 {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+  
+      li {
+        margin-bottom: 5px;
+      }
+  
+      .help {
+        margin-top: 10px;
+  
+        a {
+          font-size: 14px;
+  
+          i {
+            font-size: 18px;
+          }
+        }
+      }
+  
+      .connect {
+        ul {
+          li {
+            margin-right: 5px;
+  
+            a {
+              width: 25px;
+              height: 25px;
+  
+              i {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  //--------
+
+  
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #FF4043;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .scroll-up:hover {
+    background-color: darken(#FF4043, 10%);
+  }
+  
+  .scroll-up.active {
+    display: block;
+  }
+  
+  

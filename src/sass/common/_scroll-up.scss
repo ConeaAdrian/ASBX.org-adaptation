@@ -1,27 +1,26 @@
-.scroll-up {
- color: $black;
- width: 40px;
- height: 40px;
- border-radius: 50%;
- position: fixed;
- bottom: 8rem;
- right: 1rem;
- z-index: 30;
- background-color: $main-color;
- box-shadow: 0 0 10px 0 rgba($white, 0.6);
- cursor: pointer;
- transition: all 0.3s;
- visibility: hidden;
- display: flex;
- justify-content: center;
- align-items: center;
- &.show {
-  visibility: visible;
- }
 
- i {
-  font-size: 2rem;
-  color: $white;
-  margin: auto;
- }
-}
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #264470;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .scroll-up:hover {
+    background-color: darken(#264470, 10%);
+  }
+  
+  .scroll-up.active {
+    display: block;
+  }
+  
