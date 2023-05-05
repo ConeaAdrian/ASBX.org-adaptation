@@ -42,4 +42,26 @@ $(document).ready(function() {
 
 
 
+  const stateList = document.getElementById('state-list');
+const ol = document.createElement('ol');
+
+// Adaugă stilurile clasei la listă
+ol.classList.add('state-list');
+
+// Parcurge fiecare element și adaugă un element <li> cu același conținut și clase
+for (let i = 0; i < stateList.children.length; i++) {
+  const state = stateList.children[i];
+  const li = document.createElement('li');
   
+  // Copiază clasele din elementul original în elementul <li>
+  li.className = state.className;
+  
+  // Copiază conținutul din elementul original în elementul <li>
+  li.textContent = state.textContent;
+  
+  // Adaugă elementul <li> la lista ordonată
+  ol.appendChild(li);
+}
+
+// Înlocuiește elementul original cu lista ordonată
+stateList.parentNode.replaceChild(ol, stateList);

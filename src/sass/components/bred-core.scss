@@ -1,0 +1,60 @@
+.background {
+    width: 100%;
+    height: 425px;
+    background: rgba(217, 227, 207, 0.26);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    
+    h1 {
+        margin-top: 3.5rem;
+        margin-bottom: 4.8rem;
+        color: #264470;
+        max-width: 56rem;
+        width: 100%;
+        font-size: 32px;
+        font-family: 'Helvetica';
+        line-height: 34px;
+    }
+    h5 {
+        margin-bottom: 4.6rem;
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000;
+        width: 285px;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 25px;
+        background-color: #264470;
+      }
+      
+      .select-wrapper {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      
+        label {
+          margin-right: 10px;
+          font-weight: bold;
+          color: #fff;
+        }
+      
+        select {
+          padding: 8px 10px;
+          font-size: 16px;
+          border-radius: 3px;
+          background: transparent;
+          color: #fff;
+        }
+        .option {
+            color: #fff;
+        }
+      }
+}
