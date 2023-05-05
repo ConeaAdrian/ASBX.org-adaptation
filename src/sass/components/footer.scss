@@ -1,3 +1,30 @@
+//icon
+.icon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .arrow-icon {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #264470;
+  }
+/// 
+
+
+.contact-icon {
+    width: 50px !important;
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  
+
 footer {
     background-color: #264470;
     color: #fff;
@@ -177,4 +204,8 @@ footer {
     display: block;
   }
   
-  
+
+
+
+
+  //--------------
