@@ -9802,3 +9802,125 @@ article {
     padding: 12px 16px;
     margin: 0 4px;
     cursor: pointer; }
+
+.content-state h1 {
+  margin-bottom: 4rem; }
+
+.content-state .city-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .content-state .city-list li {
+    display: flex;
+    align-items: center;
+    width: calc(100% / 3);
+    padding-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer; }
+  .content-state .city-list li:before {
+    content: "●";
+    margin-right: 10px; }
+  @media (max-width: 600px) {
+    .content-state .city-list li {
+      width: 100%; } }
+
+.state-search h1 {
+  text-align: center; }
+
+.state-search .search-container {
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto; }
+  .state-search .search-container__bar {
+    display: flex; }
+  .state-search .search-container .search-bar {
+    border: 1px solid #CBCBCB;
+    width: 100%;
+    margin-top: 15px; }
+
+.state-search .search-input {
+  height: 42px;
+  width: 80%;
+  padding: 0 10px;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px; }
+
+.state-search .search2-button {
+  width: 116px;
+  height: 42px;
+  background: #093661;
+  border: none;
+  border-radius: 6px;
+  color: #FFFFFF;
+  margin-left: 10px;
+  cursor: pointer; }
+
+.state-search .categories {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  gap: 3rem; }
+  .state-search .categories h4 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #515151;
+    margin-right: 20px; }
+
+.state-search .category {
+  cursor: pointer; }
+
+.state-search .category:hover {
+  color: #093661; }
+
+@media (max-width: 600px) {
+  .state-search .search-container {
+    flex-direction: column; }
+  .state-search .search-input {
+    width: 100%;
+    margin-bottom: 10px; }
+  .state-search .search2-button {
+    margin-left: 0;
+    margin-top: 10px;
+    align-self: flex-end; } }
+
+.trust-fund {
+  width: 100%;
+  max-width: 940px; }
+  .trust-fund h1 {
+    margin-bottom: 3rem; }
+  .trust-fund p {
+    font-size: 20px; }
+  .trust-fund .industry-categorys {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+    .trust-fund .industry-categorys .category {
+      background: #EDF2FA;
+      border-radius: 10px;
+      padding: 10px;
+      padding: 10px 30px;
+      height: 42px;
+      cursor: pointer; }
+  .trust-fund .content-box {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    display: flex; }
+  .trust-fund .military-link {
+    margin-top: 5rem;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap; }
+    .trust-fund .military-link__divizion {
+      text-align: center; }

@@ -1,0 +1,39 @@
+.content-state {
+    $column-count: 3;
+    $column-gap: 20px;
+
+    h1 {
+        margin-bottom: 4rem;
+    }
+
+.city-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    width: calc(100% / #{$column-count});
+    padding-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  li:before {
+    content: "●";
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    $column-count: 1;
+  
+    li {
+      width: 100%;
+    }
+  }
+}
+
+}
