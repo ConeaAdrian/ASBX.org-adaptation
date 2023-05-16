@@ -1,0 +1,158 @@
+.general-claims {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    width: 100%;
+
+    .claims-selected {
+
+        width: 100%;
+        height: auto;
+        background: #FCFCFC;
+        border: 1px solid #324A74;
+        border-radius: 10px;
+        margin-top: 10rem;
+        position: relative;
+        text-align: center;
+
+        img {
+            display: flex;
+            text-align: center;
+            top: -60px;
+            position: absolute;
+            margin: 0 100px;
+        }
+
+        .content-information {
+            margin-top: 8rem;
+            h4 {
+                font-size: 28px;
+                color: #324A74;
+            }
+        }
+
+        .back-ground {
+            height: 115px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            background: #EDF2FA;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.09);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: 128px;
+                margin: 0;
+                color: #324A74;
+            }
+        }
+
+        .claims-buttons {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                padding: 10px 28px;
+                border-radius: 5px;
+                font-weight: 800;
+                font-size: 16px;
+            }
+
+            button:first-child {
+                background: #FF4043;
+                color: white;
+                border-radius: 20px;
+            }
+
+            button:last-child {
+                background-color: #F5F5F5;
+                background: transparent;
+                border: 1px solid #324A74;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .job-select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+        align-items: flex-start;
+        background: #FFFFFF;
+        border: 0.5px solid #DDD7D7;
+
+        .jobs {
+            width: 100%;
+            height: 44px;
+            background: #324A74;
+            p {
+                color: white;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px; 
+                margin-top: 8px;
+                margin-left: 20px;
+            }
+        }
+
+        .information-user {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+            margin: 20px;
+
+            .profession {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h4 {
+                    font-size: 18px;
+                    margin-right: 5px;
+                    margin-top: 0;
+                }
+
+                .arrow {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #000; /* înlocuiți cu culoarea dorită pentru săgeată */
+                }
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 16px;
+                    margin: 0;
+                    color: #324A74;
+                }
+            }
+
+            .change-btn {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+
+                button {
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 // Navigation Variables
 $content-width: 1000px;
 $breakpoint: 799px;
-$nav-height: 70px;
+$nav-height: 45px;
 $nav-background: #ffffff;
 $nav-font-color: #264470;
 $link-hover-color: #FF4043;
@@ -15,7 +15,6 @@ $link-hover-color: #FF4043;
 // Logo and branding
 .brand {
   position: absolute;
-  padding-left: 20px;
   float: left;
   line-height: $nav-height;
   text-transform: uppercase;
@@ -49,8 +48,11 @@ nav {
         padding: 0 20px;
         line-height: $nav-height;
         background: $nav-background;
-        color: $nav-font-color;
+        color: #504B4B;
         text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: capitalize;
         &:hover {
           
           color: $nav-font-color;
@@ -167,4 +169,42 @@ article {
   max-width: $content-width;
   margin: 0 auto;
   padding: 10px;
+}
+
+
+.header-bar {
+  background-color: #0D487D;
+  height: 40px;
+  
+
+  .header-information {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h3 {
+    color: white;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 10px;
+  }
+
+  .contact {
+
+    h4 {
+      color: white;
+      margin: 0;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 17px;
+      margin-right: 20px;
+    }
+  }
+
+  .container {
+    padding: 12px;
+  }
 }
