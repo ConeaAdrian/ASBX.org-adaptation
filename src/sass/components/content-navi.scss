@@ -26,73 +26,72 @@
             margin-bottom: 2rem;
         }
     }
-
-    .claims-economy {
-        height: 344px;
-        background: #EDF2FA;
-        border: 1px solid rgba(0, 0, 0, 0.23);
-        max-width: 860px;
-        padding: 20px;
-        margin-top: 4rem;
-        &__text {
-            justify-content: space-between;
-            display: flex;
-            .context {
-                h3 {
-                    color: #324A74;
-                    font-weight: 700;
-                    font-size: 22px;
-                    line-height: 25px;
-                    max-width: 550px;
-                    width: 100%;
-                }
-
-                .bar {
-                    width: 100px;
-                    height: 4px;
-                    background: #15528E;
-                    margin-bottom: 2rem;
-                }
+}
+.claims-economy {
+    height: 344px;
+    background: #EDF2FA;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    max-width: 860px;
+    padding: 20px;
+    margin-top: 4rem;
+    &__text {
+        justify-content: space-between;
+        display: flex;
+        .context {
+            h3 {
+                color: #324A74;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 25px;
+                max-width: 550px;
+                width: 100%;
             }
 
-            .logo {
-                width: 72px;
-                height: 72px;
-                background: #FF4043;
-                border-radius: 50%;
-                
-                img {
-                    display: flex;
-                    margin: 0 auto;
-                    margin-top: 5px;
-                }
+            .bar {
+                width: 100px;
+                height: 4px;
+                background: #15528E;
+                margin-bottom: 2rem;
             }
         }
-        form {
-            background-color: transparent;
-            justify-content: flex-start;
-            gap: 45px;
 
-            .second-wrapper {
-                margin: 0;
-              
-                label {
-                  margin-right: 10px;
-                  font-weight: bold;
-                }
-              
-                select {
-                  padding: 8px 10px;
-                  font-size: 16px;
-                  border-radius: 3px;
-                  background: transparent;
-                }
+        .logo {
+            width: 72px;
+            height: 72px;
+            background: #FF4043;
+            border-radius: 50%;
+            
+            img {
+                display: flex;
+                margin: 0 auto;
+                margin-top: 5px;
             }
+        }
+    }
+    form {
+        background-color: transparent;
+        justify-content: flex-start;
+        gap: 45px;
 
-            .button {
-                background: #253974 !important;
-                margin-top: 22px;
+        .second-wrapper {
+            margin: 0;
+          
+            label {
+              margin-right: 10px;
+              font-weight: bold;
             }
+          
+            select {
+              padding: 8px 10px;
+              font-size: 16px;
+              border-radius: 3px;
+              background: transparent;
+            }
+        }
+
+        .button {
+            background: #253974 !important;
+            margin-top: 22px;
         }
     }
 }
