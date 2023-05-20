@@ -4,18 +4,15 @@
 @@include("partials/map.js");
 
 
+
+
+
 $(document).ready(function() {
-    $('.faq-item').addClass('closed'); // adauga clasa "closed" initial pe toate elementele "faq-item"
-    $('.faq-item').click(function() {
-      $(this).toggleClass('open closed');
-      $(this).children('.answer').slideToggle();
-    });
+  $('.profession').click(function() {
+    $(this).toggleClass('active');
+    $(this).next('.profession__content').slideToggle();
   });
-   
-  
-  
-
-
+});
 
   (function($) { // Begin jQuery
     $(function() { // DOM ready

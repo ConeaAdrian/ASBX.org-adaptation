@@ -9413,7 +9413,6 @@ form {
         .information .select-job .job-section__text {
           width: 100%; } }
     .information .select-job .job-section .box {
-      width: 100%;
       width: 23%; }
       @media (max-width: 829px) {
         .information .select-job .job-section .box {
@@ -9567,6 +9566,32 @@ form {
       height: 46px;
       border-radius: 20px; }
 
+.claims-select {
+  max-width: 320px;
+  width: 100%; }
+  @media (max-width: 992px) {
+    .claims-select {
+      display: none; } }
+
+@media (min-width: 992px) {
+  .claims-select-mobile {
+    display: none; } }
+
+.claims-select-mobile .general-claims {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 320px;
+  width: 100%;
+  justify-content: flex-start; }
+  @media (max-width: 992px) {
+    .claims-select-mobile .general-claims {
+      max-width: none;
+      width: 100%; } }
+  .claims-select-mobile .general-claims .badge {
+    display: none; }
+
 .general-claims {
   display: flex;
   flex-direction: column;
@@ -9578,28 +9603,27 @@ form {
   .general-claims .claims-selected {
     width: 100%;
     height: auto;
-    background: #FCFCFC;
-    border: 1px solid #324A74;
+    background: #fcfcfc;
+    border: 1px solid #324a74;
     border-radius: 10px;
     margin-top: 10rem;
-    position: relative;
     text-align: center; }
     .general-claims .claims-selected img {
       display: flex;
       text-align: center;
       top: -60px;
-      position: absolute;
-      margin: 0 100px; }
+      position: relative;
+      margin: 0 auto; }
     .general-claims .claims-selected .content-information {
-      margin-top: 8rem; }
+      margin-top: -3rem; }
       .general-claims .claims-selected .content-information h4 {
         font-size: 28px;
-        color: #324A74; }
+        color: #324a74; }
     .general-claims .claims-selected .back-ground {
       height: 115px;
       margin-top: 20px;
       margin-bottom: 15px;
-      background: #EDF2FA;
+      background: #edf2fa;
       box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.09);
       display: flex;
       align-items: center;
@@ -9607,7 +9631,7 @@ form {
       .general-claims .claims-selected .back-ground h1 {
         font-size: 128px;
         margin: 0;
-        color: #324A74; }
+        color: #324a74; }
     .general-claims .claims-selected .claims-buttons {
       margin-bottom: 20px;
       display: flex;
@@ -9621,13 +9645,13 @@ form {
         font-weight: 800;
         font-size: 16px; }
       .general-claims .claims-selected .claims-buttons button:first-child {
-        background: #FF4043;
+        background: #ff4043;
         color: white;
         border-radius: 20px; }
       .general-claims .claims-selected .claims-buttons button:last-child {
-        background-color: #F5F5F5;
+        background-color: #f5f5f5;
         background: transparent;
-        border: 1px solid #324A74;
+        border: 1px solid #324a74;
         border-radius: 20px; }
   .general-claims .job-select {
     display: flex;
@@ -9636,12 +9660,12 @@ form {
     width: 100%;
     margin-top: 2rem;
     align-items: flex-start;
-    background: #FFFFFF;
-    border: 0.5px solid #DDD7D7; }
+    background: #ffffff;
+    border: 0.5px solid #ddd7d7; }
     .general-claims .job-select .jobs {
       width: 100%;
       height: 44px;
-      background: #324A74; }
+      background: #324a74; }
       .general-claims .job-select .jobs p {
         color: white;
         font-weight: 700;
@@ -9652,39 +9676,83 @@ form {
     .general-claims .job-select .information-user {
       display: flex;
       align-items: center;
-      margin-top: 10px;
       flex-direction: column;
       width: 100%;
       align-items: flex-start;
-      margin: 20px; }
+      border-bottom: 0.5px solid #ddd7d7;
+      padding: 20px 10px; }
       .general-claims .job-select .information-user .profession {
         display: flex;
         align-items: center;
-        justify-content: space-between; }
+        justify-content: space-between;
+        width: 100%; }
         .general-claims .job-select .information-user .profession h4 {
           font-size: 18px;
           margin-right: 5px;
-          margin-top: 0; }
+          margin: 0; }
         .general-claims .job-select .information-user .profession .arrow {
           width: 10px;
           height: 10px;
           background-color: #000;
           /* înlocuiți cu culoarea dorită pentru săgeată */ }
+        .general-claims .job-select .information-user .profession .fa-chevron-down {
+          transform: rotate(0deg);
+          transition: transform 0.3s ease; }
+        .general-claims .job-select .information-user .profession.active .fa-chevron-down {
+          transform: rotate(-180deg); }
+        .general-claims .job-select .information-user .profession__content {
+          width: 100%;
+          display: none; }
+          .general-claims .job-select .information-user .profession__content.closed {
+            display: none; }
+          .general-claims .job-select .information-user .profession__content.open {
+            display: block; }
+      .general-claims .job-select .information-user .profession__content {
+        display: none; }
+        .general-claims .job-select .information-user .profession__content.closed {
+          display: none; }
+        .general-claims .job-select .information-user .profession__content.open {
+          display: block; }
       .general-claims .job-select .information-user .details {
         display: flex;
         flex-direction: column; }
         .general-claims .job-select .information-user .details h3 {
           font-size: 16px;
           margin: 0;
-          color: #324A74; }
+          color: #324a74; }
       .general-claims .job-select .information-user .change-btn {
         display: flex;
         justify-content: space-between;
         margin-top: 20px; }
-        .general-claims .job-select .information-user .change-btn button {
-          padding: 5px 10px;
-          border-radius: 5px;
-          font-size: 14px; }
+        .general-claims .job-select .information-user .change-btn a {
+          cursor: pointer;
+          text-decoration: underline;
+          font-weight: 700;
+          font-size: 18px;
+          color: #000000;
+          text-decoration: none; }
+          .general-claims .job-select .information-user .change-btn a i {
+            transform: translateY(1px);
+            margin-right: 5px; }
+          .general-claims .job-select .information-user .change-btn a .edit {
+            font-weight: 700;
+            font-size: 18px;
+            color: #000000; }
+        .general-claims .job-select .information-user .change-btn a.remove {
+          color: #FF4043;
+          display: flex; }
+          .general-claims .job-select .information-user .change-btn a.remove p {
+            margin-bottom: 0;
+            margin-left: 5px; }
+  .general-claims .fas.fa-chevron-down {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg); }
+  .general-claims .rotate {
+    transform: rotate(-180deg); }
+  .general-claims .details {
+    display: none; }
+  .general-claims .hidden {
+    display: block; }
 
 .general-page {
   display: flex;
@@ -9761,19 +9829,29 @@ form {
   width: 100%; }
 
 .content-box {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  gap: 2rem; }
+  .content-box .box {
+    width: 31%; }
 
 .box {
-  width: 211px;
   height: 92px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 45px -19px rgba(52, 54, 99, 0.11);
   border-radius: 15px;
   padding: 15px;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 32%; }
+  @media (max-width: 829px) {
+    .box {
+      width: 48%; } }
+  @media (max-width: 480px) {
+    .box {
+      width: 100%; } }
 
 .city {
   grid-column: 1 / -1;

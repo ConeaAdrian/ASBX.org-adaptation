@@ -1,4 +1,15 @@
-.general-claims {
+.claims-select {
+  max-width: 320px;
+  width: 100%;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+.claims-select-mobile {
+  @media (min-width: 992px) {
+    display: none;
+  }
+  .general-claims {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,153 +17,245 @@
     max-width: 320px;
     width: 100%;
     justify-content: flex-start;
+    @media (max-width: 992px) {
+      max-width: none;
+      width: 100%;
+    }
+    .badge {
+      display: none;
+    }
+  }
+}
+.general-claims {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 320px;
+  width: 100%;
+  justify-content: flex-start;
 
-    .claims-selected {
-        width: 100%;
-        height: auto;
-        background: #FCFCFC;
-        border: 1px solid #324A74;
-        border-radius: 10px;
-        margin-top: 10rem;
-        position: relative;
-        text-align: center;
+  .claims-selected {
+    width: 100%;
+    height: auto;
+    background: #fcfcfc;
+    border: 1px solid #324a74;
+    border-radius: 10px;
+    margin-top: 10rem;
+    text-align: center;
 
-        img {
-            display: flex;
-            text-align: center;
-            top: -60px;
-            position: absolute;
-            margin: 0 100px;
-        }
-
-        .content-information {
-            margin-top: 8rem;
-            h4 {
-                font-size: 28px;
-                color: #324A74;
-            }
-        }
-
-        .back-ground {
-            height: 115px;
-            margin-top: 20px;
-            margin-bottom: 15px;
-            background: #EDF2FA;
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.09);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            h1 {
-                font-size: 128px;
-                margin: 0;
-                color: #324A74;
-            }
-        }
-
-        .claims-buttons {
-            margin-bottom: 20px;
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-            align-items: center;
-            justify-content: center;
-
-            button {
-                padding: 10px 28px;
-                border-radius: 5px;
-                font-weight: 800;
-                font-size: 16px;
-            }
-
-            button:first-child {
-                background: #FF4043;
-                color: white;
-                border-radius: 20px;
-            }
-
-            button:last-child {
-                background-color: #F5F5F5;
-                background: transparent;
-                border: 1px solid #324A74;
-                border-radius: 20px;
-            }
-        }
+    img {
+      display: flex;
+      text-align: center;
+      top: -60px;
+      position: relative;
+      margin: 0 auto;
     }
 
-    .job-select {
+    .content-information {
+      margin-top: -3rem;
+      h4 {
+        font-size: 28px;
+        color: #324a74;
+      }
+    }
+
+    .back-ground {
+      height: 115px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      background: #edf2fa;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.09);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: 128px;
+        margin: 0;
+        color: #324a74;
+      }
+    }
+
+    .claims-buttons {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        padding: 10px 28px;
+        border-radius: 5px;
+        font-weight: 800;
+        font-size: 16px;
+      }
+
+      button:first-child {
+        background: #ff4043;
+        color: white;
+        border-radius: 20px;
+      }
+
+      button:last-child {
+        background-color: #f5f5f5;
+        background: transparent;
+        border: 1px solid #324a74;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .job-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    align-items: flex-start;
+    background: #ffffff;
+    border: 0.5px solid #ddd7d7;
+
+    .jobs {
+      width: 100%;
+      height: 44px;
+      background: #324a74;
+      p {
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: 8px;
+        margin-left: 20px;
+      }
+    }
+
+    .information-user {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      border-bottom: 0.5px solid #ddd7d7;
+      padding: 20px 10px;
+
+
+      .profession {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        h4 {
+          font-size: 18px;
+          margin-right: 5px;
+          margin: 0;
+        }
+
+        .arrow {
+          width: 10px;
+          height: 10px;
+          background-color: #000; /* înlocuiți cu culoarea dorită pentru săgeată */
+        }
+        .fa-chevron-down {
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+          }
+        
+          &.active {
+            // Stilurile pentru săgeată în sus
+            .fa-chevron-down {
+              transform: rotate(-180deg);
+            }
+          }
+          &__content {
+            width: 100%;
+            display: none;
+          
+            &.closed {
+              display: none;
+            }
+          
+            &.open {
+              display: block;
+            }
+        }
+        }
+
+      .profession__content {
+        display: none;
+
+        &.closed {
+          display: none;
+        }
+
+        &.open {
+          display: block;
+        }
+      }
+
+      .details {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 2rem;
-        align-items: flex-start;
-        background: #FFFFFF;
-        border: 0.5px solid #DDD7D7;
 
-        .jobs {
-            width: 100%;
-            height: 44px;
-            background: #324A74;
-            p {
-                color: white;
+        h3 {
+          font-size: 16px;
+          margin: 0;
+          color: #324a74;
+        }
+      }
+
+      .change-btn {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+         a {
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: 700;
+            font-size: 18px;
+            color: #000000;
+            text-decoration: none;
+
+            i {
+                transform: translateY(1px);
+                margin-right: 5px;
+            }
+
+            
+            .edit {
                 font-weight: 700;
                 font-size: 18px;
-                line-height: 18px; 
-                margin-top: 8px;
-                margin-left: 20px;
+                color: #000000;
             }
-        }
-
-        .information-user {
+         }
+         a.remove {
+            color: #FF4043;
             display: flex;
-            align-items: center;
-            margin-top: 10px;
-            flex-direction: column;
-            width: 100%;
-            align-items: flex-start;
-            margin: 20px;
-
-            .profession {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                h4 {
-                    font-size: 18px;
-                    margin-right: 5px;
-                    margin-top: 0;
-                }
-
-                .arrow {
-                    width: 10px;
-                    height: 10px;
-                    background-color: #000; /* înlocuiți cu culoarea dorită pentru săgeată */
-                }
-            }
-
-            .details {
-                display: flex;
-                flex-direction: column;
-
-                h3 {
-                    font-size: 16px;
-                    margin: 0;
-                    color: #324A74;
-                }
-            }
-
-            .change-btn {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 20px;
-
-                button {
-                    padding: 5px 10px;
-                    border-radius: 5px;
-                    font-size: 14px;
-                }
+            p {
+                margin-bottom: 0;
+                margin-left: 5px;
             }
         }
+      }
     }
+  }
+
+  .fas.fa-chevron-down {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg); // Iconița este orientată în jos inițial
+  }
+
+  .rotate {
+    transform: rotate(-180deg); // Iconița este rotită în sus
+  }
+
+  .details {
+    display: none; // Ascunde conținutul inițial
+  }
+
+  .hidden {
+    display: block; // Afișează conținutul la cerere
+  }
 }
