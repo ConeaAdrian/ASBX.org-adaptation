@@ -1521,7 +1521,8 @@ li {
 
 a {
   color: #1f334e;
-  text-decoration: none;
+  text-decoration: none !important;
+  cursor: pointer !important;
   transition: all 0.3s ease-in; }
   a:hover, a:focus {
     color: black;
@@ -9474,6 +9475,30 @@ form {
         padding: 10px;
         color: #fff;
         font-size: 16px; }
+      .information .industry-section__clasament .industry-card .hover-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 55.58px;
+        height: 52.11px;
+        border-radius: 50%;
+        background: #15528E;
+        border: 4px solid rgba(255, 255, 255, 0.29);
+        opacity: 0;
+        transition: opacity 0.3s; }
+        .information .industry-section__clasament .industry-card .hover-circle i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          font-size: 14px; }
+      .information .industry-section__clasament .industry-card:hover {
+        background: rgba(0, 0, 0, 0.66);
+        border-radius: 20px; }
+      .information .industry-section__clasament .industry-card:hover .hover-circle {
+        opacity: 1; }
     .information .industry-section__clasament .industry-card::before {
       content: "";
       position: absolute;
@@ -9773,6 +9798,9 @@ form {
   .content-navi__information {
     max-width: 860px;
     width: 100%; }
+    @media (max-width: 992px) {
+      .content-navi__information {
+        max-width: 100%; } }
     .content-navi__information .bar {
       width: 105px;
       height: 4px;
@@ -9780,12 +9808,15 @@ form {
       margin-bottom: 2rem; }
 
 .claims-economy {
-  height: 344px;
+  height: auto;
   background: #EDF2FA;
   border: 1px solid rgba(0, 0, 0, 0.23);
   max-width: 860px;
   padding: 20px;
   margin-top: 4rem; }
+  @media (max-width: 992px) {
+    .claims-economy {
+      max-width: 100%; } }
   .claims-economy__text {
     justify-content: space-between;
     display: flex; }
@@ -9802,7 +9833,7 @@ form {
       background: #15528E;
       margin-bottom: 2rem; }
     .claims-economy__text .logo {
-      width: 72px;
+      min-width: 72px;
       height: 72px;
       background: #FF4043;
       border-radius: 50%; }
@@ -9813,7 +9844,10 @@ form {
   .claims-economy form {
     background-color: transparent;
     justify-content: flex-start;
-    gap: 45px; }
+    gap: 20px; }
+    @media (max-width: 992px) {
+      .claims-economy form {
+        max-width: 100%; } }
     .claims-economy form .second-wrapper {
       margin: 0; }
       .claims-economy form .second-wrapper label {
@@ -9827,6 +9861,9 @@ form {
     .claims-economy form .button {
       background: #253974 !important;
       margin-top: 22px; }
+      @media (max-width: 595px) {
+        .claims-economy form .button {
+          margin-top: 0; } }
 
 .city-map {
   min-width: auto;
@@ -10039,6 +10076,13 @@ form {
         .trust-fund .content-box .box {
           width: 100%; } }
 
+.military-devision__content {
+  display: flex;
+  gap: 3rem; }
+
+.military-devision .text-paragraf {
+  margin: 2rem 0; }
+
 .military-link {
   margin-top: 5rem;
   display: flex;
@@ -10082,13 +10126,6 @@ form {
     display: flex;
     align-items: center;
     justify-content: center; }
-
-.military-devision__content {
-  display: flex;
-  gap: 3rem; }
-
-.military-devision .text-paragraf {
-  margin: 2rem 0; }
 
 .job-site h1 {
   font-family: "Helvetica";

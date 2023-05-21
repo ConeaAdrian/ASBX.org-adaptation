@@ -137,7 +137,8 @@ li {
 
 a {
  color: $main-color;
- text-decoration: none;
+ text-decoration: none !important;
+ cursor:  pointer !important;
  transition: all 0.3s ease-in;
 
  &:hover,

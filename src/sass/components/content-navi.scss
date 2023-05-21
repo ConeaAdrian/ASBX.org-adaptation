@@ -20,6 +20,9 @@
     &__information {
             max-width: 860px;
             width: 100%;
+            @media (max-width: 992px) {
+                max-width: 100%;
+              }
         .bar {
             width: 105px;
             height: 4px;
@@ -29,12 +32,15 @@
     }
 }
 .claims-economy {
-    height: 344px;
+    height: auto;
     background: #EDF2FA;
     border: 1px solid rgba(0, 0, 0, 0.23);
     max-width: 860px;
     padding: 20px;
     margin-top: 4rem;
+    @media (max-width: 992px) {
+        max-width: 100%;
+      }
     &__text {
         justify-content: space-between;
         display: flex;
@@ -57,7 +63,7 @@
         }
 
         .logo {
-            width: 72px;
+            min-width: 72px;
             height: 72px;
             background: #FF4043;
             border-radius: 50%;
@@ -72,7 +78,10 @@
     form {
         background-color: transparent;
         justify-content: flex-start;
-        gap: 45px;
+        gap: 20px;
+        @media (max-width: 992px) {
+            max-width: 100%;
+          }
 
         .second-wrapper {
             margin: 0;
@@ -93,6 +102,10 @@
         .button {
             background: #253974 !important;
             margin-top: 22px;
+
+            @media (max-width: 595px) {
+                margin-top: 0;
+              }
         }
     }
 }
