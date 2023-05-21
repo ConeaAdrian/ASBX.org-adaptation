@@ -10107,12 +10107,17 @@ form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 7rem; }
+  margin-top: 7rem;
+  border-top: 1px solid #F0EAEA;
+  padding-top: 20px; }
+  .job-site .search-container__letters {
+    display: flex;
+    flex-wrap: wrap; }
 
 .job-site .search-filter {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; }
+  margin-bottom: 2.5rem; }
   .job-site .search-filter p {
     font-weight: 400;
     font-size: 20px;
@@ -10120,7 +10125,8 @@ form {
     letter-spacing: 0.02em;
     color: #515151;
     margin-bottom: 0;
-    margin-right: 10px; }
+    margin-right: 10px;
+    width: 250px; }
 
 .job-site .search-filter a {
   font-weight: 400;
@@ -10178,3 +10184,74 @@ form {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc; }
+
+.job-site__box {
+  border: 1px solid #e6e1e5;
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+  position: relative;
+  margin-top: 4rem;
+  padding: 10px; }
+  .job-site__box img {
+    position: absolute;
+    right: -30px;
+    top: -30px; }
+  .job-site__box .content h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+    margin-top: 0;
+    color: #000000; }
+  .job-site__box .content .content-trust {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.8rem; }
+    .job-site__box .content .content-trust h4 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      color: #a8a8ab; }
+    .job-site__box .content .content-trust p {
+      font-size: 18px;
+      line-height: 18px;
+      color: #324a74;
+      font-weight: 700;
+      margin: 0;
+      margin-left: 5px; }
+  .job-site__box .content .dropdown-container {
+    flex-wrap: wrap; }
+    .job-site__box .content .dropdown-container .dropdown {
+      margin-right: 30px; }
+      .job-site__box .content .dropdown-container .dropdown label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #052a44; }
+      .job-site__box .content .dropdown-container .dropdown .chase {
+        background: #f9f9f9;
+        border: 1px solid #f3f3f3;
+        height: 30px;
+        width: 150px;
+        color: #7e7d7d; }
+  .job-site__box .button-add {
+    display: flex;
+    margin-top: 29px;
+    cursor: pointer; }
+    .job-site__box .button-add__element {
+      width: 33px;
+      height: 33px;
+      left: 479px;
+      top: 672px;
+      background: #ff4043;
+      border-radius: 4px;
+      margin-right: 2rem; }
+      .job-site__box .button-add__element i {
+        color: #fff;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 9px; }
+    .job-site__box .button-add p {
+      margin: 0; }

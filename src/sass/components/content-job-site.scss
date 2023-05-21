@@ -18,12 +18,19 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 7rem;
+    border-top: 1px solid #F0EAEA;
+    padding-top: 20px;
+
+    &__letters {
+        display: flex;
+        flex-wrap: wrap;
+    }
   }
 
   .search-filter {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 2.5rem;
 
     p {
       font-weight: 400;
@@ -33,6 +40,7 @@
       color: #515151;
       margin-bottom: 0;
       margin-right: 10px;
+      width: 250px;
     }
   }
 
@@ -102,5 +110,94 @@
   }
 
   &__box {
+    border: 1px solid #e6e1e5;
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-top: 4rem;
+    padding: 10px;
+
+    img {
+      position: absolute;
+      right: -30px;
+      top: -30px;
+    }
+
+    .content {
+      h2 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 23px;
+        margin-top: 0;
+        color: #000000;
+      }
+      .content-trust {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.8rem;
+
+        h4 {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 18px;
+          color: #a8a8ab;
+        }
+        p {
+          font-size: 18px;
+          line-height: 18px;
+          color: #324a74;
+          font-weight: 700;
+          margin: 0;
+          margin-left: 5px;
+        }
+      }
+      .dropdown-container {
+        flex-wrap: wrap;
+        .dropdown {
+            margin-right: 30px;
+          label {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #052a44;
+          }
+          .chase {
+            background: #f9f9f9;
+            border: 1px solid #f3f3f3;
+            height: 30px;
+            width: 150px;
+            color: #7e7d7d;
+          }
+        }
+      }
+    }
+    .button-add {
+      display: flex;
+      margin-top: 29px;
+      cursor: pointer;
+
+      &__element {
+        width: 33px;
+        height: 33px;
+        left: 479px;
+        top: 672px;
+        background: #ff4043;
+        border-radius: 4px;
+        margin-right: 2rem;
+
+        i {
+            color: #fff;
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 9px;
+        }
+      }
+      p {
+        margin: 0;
+      }
+    }
   }
 }
