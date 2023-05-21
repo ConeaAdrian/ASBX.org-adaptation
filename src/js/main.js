@@ -4,6 +4,11 @@
 @@include("partials/map.js");
 
 
+const militaryLinkDivizion = document.querySelector('.military-link__divizion');
+
+militaryLinkDivizion.addEventListener('click', () => {
+  window.location.href = 'http://localhost:3002/navi.html#';
+});
 
 
 

@@ -10045,7 +10045,8 @@ form {
   gap: 60px;
   flex-wrap: wrap; }
   .military-link__divizion {
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
 
 .calculate-value {
   height: 140px;
