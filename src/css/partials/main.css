@@ -9104,18 +9104,22 @@ footer {
   display: block; }
 
 .navigation {
-  height: 45px;
-  background: #ffffff; }
+  height: 60px;
+  background: #ffffff;
+  justify-content: space-between;
+  display: flex; }
 
 .brand {
-  position: absolute;
   float: left;
-  line-height: 45px;
+  line-height: 60px;
   text-transform: uppercase;
   font-size: 1.4em; }
   .brand a,
   .brand a:visited {
     text-decoration: none; }
+  .brand .logo {
+    height: 38px;
+    min-width: 135px; }
 
 .nav-container {
   max-width: 1000px;
@@ -9134,7 +9138,7 @@ nav {
       nav ul li a:visited {
         display: block;
         padding: 0 20px;
-        line-height: 45px;
+        line-height: 60px;
         background: #ffffff;
         color: #504B4B;
         text-decoration: none;
@@ -9166,18 +9170,18 @@ nav {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 22px;
+  right: 20px;
   background: #ffffff;
-  height: 45px;
-  width: 45px; }
+  height: 60px;
+  width: 60px; }
 
 @media only screen and (max-width: 798px) {
   .nav-mobile {
     display: block; }
   nav {
     width: 100%;
-    padding: 45px 0 15px; }
+    padding: 60px 0 15px; }
     nav ul {
       display: none; }
       nav ul li {
@@ -9825,7 +9829,7 @@ form {
       margin-top: 22px; }
 
 .city-map {
-  min-width: 780px;
+  min-width: auto;
   width: 100%; }
 
 .content-box {
@@ -9848,10 +9852,10 @@ form {
   width: 32%; }
   @media (max-width: 829px) {
     .box {
-      width: 48%; } }
-  @media (max-width: 480px) {
+      width: 48% !important; } }
+  @media (max-width: 538px) {
     .box {
-      width: 100%; } }
+      width: 100% !important; } }
 
 .city {
   grid-column: 1 / -1;
@@ -10015,17 +10019,25 @@ form {
     margin-top: 4rem;
     margin-bottom: 4rem; }
     .trust-fund .industry-categorys .category {
-      background: #EDF2FA;
+      background: #edf2fa;
       border-radius: 10px;
       padding: 10px;
       padding: 10px 30px;
       height: 42px;
       cursor: pointer; }
   .trust-fund .content-box {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
     flex-wrap: wrap;
-    display: flex; }
+    display: flex;
+    margin-bottom: 4rem;
+    gap: 2rem; }
+    .trust-fund .content-box .box {
+      width: 31%; }
+      @media (max-width: 829px) {
+        .trust-fund .content-box .box {
+          width: 48%; } }
+      @media (max-width: 480px) {
+        .trust-fund .content-box .box {
+          width: 100%; } }
 
 .military-link {
   margin-top: 5rem;
@@ -10038,7 +10050,7 @@ form {
 .calculate-value {
   height: 140px;
   width: 100%;
-  background: #15528E;
+  background: #15528e;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
@@ -10049,7 +10061,7 @@ form {
   .calculate-value__logo {
     width: 153px;
     height: 30px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 30px;
     position: relative;
     top: -12px;
@@ -10060,7 +10072,7 @@ form {
     margin-top: 5px;
     font-weight: 700;
     font-size: 24px;
-    color: #FFFFFF; }
+    color: #ffffff; }
   .calculate-value .button {
     width: 155px;
     height: 28px;
@@ -10076,3 +10088,93 @@ form {
 
 .military-devision .text-paragraf {
   margin: 2rem 0; }
+
+.job-site h1 {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 3rem; }
+
+.job-site p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  color: #353535; }
+
+.job-site .search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 7rem; }
+
+.job-site .search-filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; }
+  .job-site .search-filter p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #515151;
+    margin-bottom: 0;
+    margin-right: 10px; }
+
+.job-site .search-filter a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-right: 5px;
+  color: #787878; }
+
+.job-site .search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%; }
+
+.job-site .search-input input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  flex: 1;
+  background: rgba(249, 247, 247, 0.83);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  height: 40px; }
+
+.job-site .search-input .search-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ff4043;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px; }
+
+.job-site .search-input .search-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #fff; }
+
+.job-site .fa-search:before {
+  color: #fff; }
+
+.job-site .dropdown-container {
+  display: flex; }
+
+.job-site .dropdown {
+  margin-right: 10px; }
+
+.job-site label {
+  display: block;
+  font-weight: bold; }
+
+.job-site select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc; }

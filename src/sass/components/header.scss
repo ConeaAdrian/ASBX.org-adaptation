@@ -1,7 +1,7 @@
 // Navigation Variables
 $content-width: 1000px;
 $breakpoint: 799px;
-$nav-height: 45px;
+$nav-height: 60px;
 $nav-background: #ffffff;
 $nav-font-color: #264470;
 $link-hover-color: #FF4043;
@@ -10,11 +10,12 @@ $link-hover-color: #FF4043;
 .navigation {
   height: $nav-height;
   background: $nav-background;
+  justify-content: space-between;
+  display: flex;
 }
 
 // Logo and branding
 .brand {
-  position: absolute;
   float: left;
   line-height: $nav-height;
   text-transform: uppercase;
@@ -23,6 +24,11 @@ $link-hover-color: #FF4043;
   a:visited {
     
     text-decoration: none;
+  }
+
+  .logo {
+    height: 38px;
+    min-width: 135px;
   }
 }
 
@@ -90,8 +96,8 @@ nav {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 22px;
+  right: 20px;
   background: $nav-background;
   height: $nav-height;
   width: $nav-height;
