@@ -9804,12 +9804,12 @@ form {
     .content-navi__information .bar {
       width: 105px;
       height: 4px;
-      background: #FF4043;
+      background: #ff4043;
       margin-bottom: 2rem; }
 
 .claims-economy {
   height: auto;
-  background: #EDF2FA;
+  background: #edf2fa;
   border: 1px solid rgba(0, 0, 0, 0.23);
   max-width: 860px;
   padding: 20px;
@@ -9821,7 +9821,7 @@ form {
     justify-content: space-between;
     display: flex; }
     .claims-economy__text .context h3 {
-      color: #324A74;
+      color: #324a74;
       font-weight: 700;
       font-size: 22px;
       line-height: 25px;
@@ -9830,12 +9830,12 @@ form {
     .claims-economy__text .context .bar {
       width: 100px;
       height: 4px;
-      background: #15528E;
+      background: #15528e;
       margin-bottom: 2rem; }
     .claims-economy__text .logo {
       min-width: 72px;
       height: 72px;
-      background: #FF4043;
+      background: #ff4043;
       border-radius: 50%; }
       .claims-economy__text .logo img {
         display: flex;
@@ -9844,7 +9844,8 @@ form {
   .claims-economy form {
     background-color: transparent;
     justify-content: flex-start;
-    gap: 20px; }
+    gap: 20px;
+    padding-left: 0; }
     @media (max-width: 992px) {
       .claims-economy form {
         max-width: 100%; } }
@@ -9861,9 +9862,60 @@ form {
     .claims-economy form .button {
       background: #253974 !important;
       margin-top: 22px; }
-      @media (max-width: 595px) {
-        .claims-economy form .button {
-          margin-top: 0; } }
+
+.navi-equipment {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media (max-width: 570px) {
+    .navi-equipment {
+      display: block; } }
+  .navi-equipment .equipment-product {
+    width: 47%;
+    height: auto;
+    margin-top: 3rem; }
+    @media (max-width: 570px) {
+      .navi-equipment .equipment-product {
+        width: 100%; } }
+    .navi-equipment .equipment-product__industry {
+      background: #1d4e7c;
+      border-radius: 15px 15px 0px 0px;
+      height: 60px; }
+      .navi-equipment .equipment-product__industry h3 {
+        color: #ffff;
+        margin: 0 auto;
+        display: flex;
+        width: 230px;
+        padding-top: 14px;
+        font-weight: 700;
+        font-size: 20px; }
+    .navi-equipment .equipment-product__element {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 1px 45px -19px rgba(52, 54, 99, 0.11);
+      border-radius: 0px 0px 15px 15px;
+      padding-bottom: 3rem; }
+    .navi-equipment .equipment-product .name {
+      display: flex;
+      width: 230px;
+      margin: 0 auto; }
+      .navi-equipment .equipment-product .name h5 {
+        padding-right: 7px; }
+    .navi-equipment .equipment-product .category {
+      display: flex;
+      width: 230px;
+      margin: 0 auto; }
+      .navi-equipment .equipment-product .category p {
+        padding-bottom: 10px;
+        margin: 0; }
+      .navi-equipment .equipment-product .category .pc {
+        border: 1px solid #ddd7d7;
+        border-left: 0;
+        padding: 5px; }
+      .navi-equipment .equipment-product .category .clasament {
+        border: 1px solid #ddd7d7;
+        border-right: 0;
+        padding: 5px; }
 
 .city-map {
   min-width: auto;
@@ -10082,6 +10134,12 @@ form {
 .military-devision__content {
   display: flex;
   gap: 3rem; }
+  @media (max-width: 680px) {
+    .military-devision__content {
+      display: block; }
+      .military-devision__content img {
+        width: 100%;
+        margin-bottom: 2rem; } }
 
 .military-devision .text-paragraf {
   margin: 2rem 0; }
@@ -10090,8 +10148,10 @@ form {
   margin-top: 5rem;
   display: flex;
   gap: 60px;
-  flex-wrap: wrap;
-  justify-content: center; }
+  flex-wrap: wrap; }
+  @media (max-width: 992px) {
+    .military-link {
+      justify-content: center; } }
   .military-link__divizion {
     text-align: center;
     cursor: pointer; }
@@ -10231,7 +10291,7 @@ form {
   border: 1px solid #e6e1e5;
   border-radius: 10px;
   height: auto;
-  width: 100%;
+  width: 98%;
   position: relative;
   margin-top: 4rem;
   padding: 10px; }

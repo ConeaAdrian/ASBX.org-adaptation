@@ -3,6 +3,14 @@
     &__content {
         display: flex;
         gap: 3rem;
+        @media (max-width: 680px) {
+          display: block;
+
+          img {
+            width: 100%;
+            margin-bottom: 2rem;
+          }
+        }
     }
     .text-paragraf {
         margin: 2rem 0;
@@ -15,7 +23,9 @@
     display: flex;
     gap: 60px;
     flex-wrap: wrap;
-    justify-content: center;
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
   
     &__divizion {
       text-align: center;
