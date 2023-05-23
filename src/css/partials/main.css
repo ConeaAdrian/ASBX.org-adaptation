@@ -4912,10 +4912,6 @@ figcaption {
   .container-nav-bar {
     max-width: 90%;
     padding-bottom: 0px; }
-  .brand {
-    margin-right: 5%;
-    margin-bottom: 10px;
-    padding-left: 10px; }
   .text-field-5.border {
     min-width: 100%;
     box-shadow: none; }
@@ -9143,9 +9139,13 @@ nav {
         background: #ffffff;
         color: #504B4B;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 16px;
         text-transform: capitalize; }
+        @media (max-width: 1200px) {
+          nav ul li a,
+          nav ul li a:visited {
+            padding: 0 10px; } }
         nav ul li a:hover,
         nav ul li a:visited:hover {
           color: #264470; }
@@ -9177,7 +9177,7 @@ nav {
   height: 60px;
   width: 60px; }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 992px) {
   .nav-mobile {
     display: block; }
   nav {
@@ -9195,7 +9195,7 @@ nav {
   .nav-dropdown {
     position: static; } }
 
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 992px) {
   .nav-list {
     display: block !important; } }
 
@@ -9257,12 +9257,17 @@ article {
     line-height: 17px;
     margin-right: 20px; }
   .header-bar .container {
-    padding: 12px; }
+    padding: 10px 0; }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px; }
+  @media only screen and (max-width: 1100px) and (min-width: 880px) {
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 10px; } }
   .container h2 {
     margin-bottom: 20px; }
   .container .desktop-only {
@@ -10324,7 +10329,7 @@ form {
   .job-site__box .content .dropdown-container {
     flex-wrap: wrap; }
     .job-site__box .content .dropdown-container .dropdown {
-      margin-right: 30px; }
+      margin-right: 2rem; }
       .job-site__box .content .dropdown-container .dropdown label {
         font-weight: 400;
         font-size: 16px;
@@ -10347,7 +10352,7 @@ form {
       top: 672px;
       background: #ff4043;
       border-radius: 4px;
-      margin-right: 2rem; }
+      margin-right: 1rem; }
       .job-site__box .button-add__element i {
         color: #fff;
         display: flex;
