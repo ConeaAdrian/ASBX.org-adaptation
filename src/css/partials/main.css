@@ -1520,7 +1520,7 @@ li {
       line-height: 2rem; } }
 
 a {
-  color: #1f334e;
+  color: #264470;
   text-decoration: none !important;
   cursor: pointer !important;
   transition: all 0.3s ease-in; }
@@ -4348,12 +4348,12 @@ figcaption {
   margin-top: 10px;
   margin-bottom: 10px;
   color: #264470;
-  color: #264470; }
+  color: #15528E; }
 
 .heading-3 {
   font-size: 20px;
   line-height: 28px;
-  color: #264470; }
+  color: #15528E; }
 
 .list-item {
   color: #000;
@@ -9088,7 +9088,7 @@ footer {
   background-color: #FF4043;
   border-radius: 50%;
   text-align: center;
-  color: white;
+  color: #fff;
   font-size: 24px;
   line-height: 50px;
   cursor: pointer;
