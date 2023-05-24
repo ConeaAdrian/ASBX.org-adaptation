@@ -3851,11 +3851,6 @@ figcaption {
   margin-top: 40px;
   margin-bottom: 40px; }
 
-.grid-in-article-with-facts {
-  align-items: start;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto; }
-
 .article-container {
   position: relative;
   flex: 1; }
@@ -5368,9 +5363,6 @@ figcaption {
   .article-wrapper {
     margin-bottom: 20px;
     padding: 20px; }
-  .grid-in-article-with-facts {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr; }
   .article-container {
     padding-right: 10px;
     padding-left: 10px; }
@@ -10362,3 +10354,100 @@ form {
         margin-top: 9px; }
     .job-site__box .button-add p {
       margin: 0; }
+
+/* Stiluri generale */
+h1, h2, h3 {
+  color: #333; }
+
+p {
+  color: #666; }
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px; }
+
+a {
+  color: #007bff;
+  text-decoration: none; }
+
+/* Stiluri specifice */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+p {
+  margin-bottom: 10px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Stilizarea listei de link-uri suplimentare */
+ul li {
+  margin-bottom: 5px; }
+
+ul a:hover {
+  text-decoration: underline; }
+
+.error-page {
+  background: #f3f5f6;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 24px;
+  width: 100%;
+  max-width: 768px;
+  height: 615px;
+  margin: 5rem auto; }
+  .error-page__container {
+    padding: 52px 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff; }
+    @media (max-width: 768px) {
+      .error-page__container {
+        padding: 40px;
+        height: 100%; } }
+    .error-page__container .error-text {
+      font-weight: 700;
+      font-size: 140px;
+      line-height: 161px;
+      color: #15528e;
+      margin: 0 auto; }
+      @media (max-width: 768px) {
+        .error-page__container .error-text {
+          font-weight: 700;
+          font-size: 120px;
+          line-height: 120px; } }
+    .error-page__container h3 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      color: #15528e;
+      margin-bottom: 4rem; }
+      @media (max-width: 768px) {
+        .error-page__container h3 {
+          font-size: 32px;
+          line-height: 80%; } }
+    .error-page__container p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      color: rgba(60, 60, 67, 0.85); }
+    .error-page__container .button {
+      height: 64px;
+      margin-top: 2rem; }
+      @media (max-width: 768px) {
+        .error-page__container .button {
+          height: 48px; } }

@@ -2441,12 +2441,6 @@ figcaption {
   margin-bottom: 40px;
 }
 
-.grid-in-article-with-facts {
-  align-items: start;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
-}
-
 .article-container {
   position: relative;
   flex: 1;
@@ -4580,10 +4574,6 @@ figcaption {
     padding: 20px;
   }
 
-  .grid-in-article-with-facts {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
 
   .article-container {
     padding-right: 10px;
