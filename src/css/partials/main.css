@@ -1608,7 +1608,7 @@ button {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px; } }
+    max-width: 1300px; } }
 
 @media (min-width: 992px) {
   .container,
@@ -2688,7 +2688,7 @@ figcaption {
 .how-it-works-wrapper {
   position: relative;
   z-index: 20;
-  max-width: 1200px;
+  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -3118,7 +3118,7 @@ figcaption {
   position: relative;
   z-index: 10;
   overflow: hidden;
-  max-width: 1200px;
+  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 100px;
@@ -9252,7 +9252,7 @@ article {
     padding: 10px 0; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 20px; }
   @media only screen and (max-width: 1100px) and (min-width: 880px) {
@@ -10372,7 +10372,7 @@ a {
 
 /* Stiluri specifice */
 h1 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px; }
 
@@ -10488,3 +10488,99 @@ ul a:hover {
           background: transparent;
           border: 1px solid #ffffff;
           border-radius: 20px; }
+
+.boiler {
+  width: 100%; }
+  .boiler .table-content {
+    display: flex;
+    background: rgba(217, 217, 217, 0.19);
+    width: 100%;
+    height: auto;
+    justify-content: space-between; }
+    .boiler .table-content__structure {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 4rem;
+      margin-bottom: 3rem; }
+    .boiler .table-content__division {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 15px; }
+      .boiler .table-content__division .element {
+        display: flex;
+        max-width: 340px;
+        height: 61px;
+        background: rgba(21, 82, 142, 0.09);
+        border-radius: 5px;
+        align-items: center;
+        padding: 10px; }
+        .boiler .table-content__division .element .bar {
+          width: 20px;
+          height: 0px;
+          border: 1px solid #15528e;
+          transform: rotate(90deg); }
+        .boiler .table-content__division .element .nomerotation {
+          width: 43px;
+          height: 43px;
+          border-radius: 50%;
+          background: rgba(21, 82, 142, 0.46);
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .boiler .table-content__division .element .nomerotation p {
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 0; }
+        .boiler .table-content__division .element .element-text {
+          max-width: 240px;
+          width: 100%;
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 400;
+          color: #000000;
+          margin-bottom: 0; }
+  .boiler .boiler-img {
+    max-width: 57%;
+    height: 342px; }
+  .boiler .card-box {
+    margin-top: 7rem; }
+    .boiler .card-box__context {
+      border: 1px solid #f0f0f0;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+      border-radius: 6px;
+      height: auto;
+      position: relative;
+      margin-top: 11rem;
+      padding: 50px 17px; }
+      .boiler .card-box__context h2 {
+        font-weight: 700;
+        font-size: 32px; }
+      .boiler .card-box__context p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px; }
+      .boiler .card-box__context .box-nomerotation {
+        position: absolute;
+        left: -3rem;
+        top: -7rem;
+        width: 109px;
+        height: 109px;
+        background: rgba(136, 167, 198, 0.56);
+        border-radius: 50%; }
+        .boiler .card-box__context .box-nomerotation p {
+          font-weight: 700;
+          font-size: 96px;
+          line-height: 110px;
+          text-transform: uppercase;
+          color: #ffffff;
+          position: absolute;
+          right: 12px;
+          transform: translateY(21px); }
+      .boiler .card-box__context ul {
+        margin-left: 0;
+        color: #000000; }
