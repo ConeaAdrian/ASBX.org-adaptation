@@ -1193,6 +1193,3 @@ state_info = {
     "overridePopLink": null
   }
 }
-
-myUsaMap.setStatesData(state_info);
-myUsaMap.draw();

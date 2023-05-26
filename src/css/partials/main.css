@@ -10650,3 +10650,124 @@ ul a:hover {
 .contact .custom-section__input::placeholder,
 .contact .custom-section__textarea::placeholder {
   color: #000 !important; }
+
+.client-question {
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem; }
+  .client-question__text {
+    background-color: #ff4043;
+    border-radius: 6px 6px 0px 0px;
+    height: 46px; }
+    .client-question__text h3 {
+      font-weight: 700;
+      font-size: 20px;
+      color: #f7f7f7;
+      padding-left: 3rem;
+      margin-top: 8px; }
+    .client-question__text p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px; }
+  .client-question__content {
+    background: #f7f7f7;
+    border-radius: 0px 0px 6px 6px;
+    padding: 30px;
+    padding-bottom: 7rem; }
+    .client-question__content .textarea {
+      width: 100%;
+      height: 100px; }
+    .client-question__content .textarea::placeholder {
+      padding-top: 10px;
+      padding-left: 20px; }
+    .client-question__content .button {
+      float: right;
+      margin-top: 10px; }
+
+.number-validation {
+  background: #f6f6f6;
+  border-radius: 6px;
+  height: auto;
+  width: 278px;
+  padding: 30px;
+  align-items: center;
+  justify-self: center;
+  display: none;
+  text-align: center;
+  margin: 28% auto;
+  display: flex;
+  flex-direction: column; }
+  .number-validation h4 {
+    font-weight: 400;
+    font-size: 20px; }
+  .number-validation p {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 15px; }
+  .number-validation input {
+    background: #fefefe;
+    border: 1px solid #d5d5d5;
+    height: 39px;
+    width: 100%;
+    margin-bottom: 2rem; }
+
+.code-confirmation {
+  background: #f6f6f6;
+  border-radius: 6px;
+  height: auto;
+  width: 278px;
+  padding: 30px;
+  align-items: center;
+  justify-self: center;
+  display: none;
+  text-align: center;
+  margin: 28% auto;
+  display: flex;
+  flex-direction: column; }
+  .code-confirmation h4 {
+    font-weight: 400;
+    font-size: 20px; }
+  .code-confirmation p {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 15px; }
+  .code-confirmation input {
+    background: #fefefe;
+    border: 1px solid #d5d5d5;
+    height: 39px;
+    width: 100%;
+    margin-bottom: 2rem; }
+
+.thank-you {
+  background: #f6f6f6;
+  border-radius: 6px;
+  height: auto;
+  width: 278px;
+  padding: 30px;
+  align-items: center;
+  justify-self: center;
+  display: none;
+  text-align: center;
+  margin: 28% auto;
+  display: flex;
+  flex-direction: column; }
+  .thank-you h2 {
+    font-weight: 400;
+    font-size: 20px; }
+  .thank-you p {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 15px; }
+  .thank-you .button {
+    margin-top: 10px; }
+
+.validation-calculator {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(230, 230, 255, 0.85);
+  z-index: 1; }
