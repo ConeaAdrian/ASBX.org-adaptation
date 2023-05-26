@@ -3069,15 +3069,6 @@ figcaption {
   margin-top: -80px;
   align-items: flex-end; }
 
-.contact-icon {
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  height: 50px;
-  transform: translate(0px, -50%); }
-
 .support-image {
   width: 100%;
   height: 420px;
@@ -5778,8 +5769,6 @@ figcaption {
     width: 100%;
     padding-right: 30px;
     padding-left: 30px; }
-  .contact-icon {
-    height: 40px; }
   .support-image {
     height: 190px; }
   .team-title-wrapper.in-team-list {
@@ -10515,12 +10504,8 @@ ul a:hover {
         background: rgba(21, 82, 142, 0.09);
         border-radius: 5px;
         align-items: center;
-        padding: 10px; }
-        .boiler .table-content__division .element .bar {
-          width: 20px;
-          height: 0px;
-          border: 1px solid #15528e;
-          transform: rotate(90deg); }
+        padding: 10px;
+        gap: 7px; }
         .boiler .table-content__division .element .nomerotation {
           width: 43px;
           height: 43px;
@@ -10584,3 +10569,84 @@ ul a:hover {
       .boiler .card-box__context ul {
         margin-left: 0;
         color: #000000; }
+
+.contact .hreader-contact {
+  width: 100%;
+  max-width: 580px;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column; }
+  .contact .hreader-contact h1 {
+    font-size: 72px;
+    color: #324A74;
+    margin-bottom: 5rem; }
+  .contact .hreader-contact p {
+    color: #324A74; }
+
+.contact .contact-company {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 16rem; }
+  .contact .contact-company__information {
+    width: 100%;
+    max-width: 372px;
+    height: 214px;
+    background: #ffffff;
+    box-shadow: 0px 4px 40px rgba(43, 89, 255, 0.08);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .contact .contact-company__information p {
+      max-width: 260px; }
+    .contact .contact-company__information .contact-icon {
+      width: 55px;
+      height: 55px;
+      background-color: #324a74;
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-top: 5rem;
+      margin-bottom: 2rem; }
+      .contact .contact-company__information .contact-icon i {
+        color: #ffffff; }
+
+.contact .custom-section {
+  display: flex;
+  height: auto;
+  margin-top: 7rem; }
+  .contact .custom-section .custom-section__image img {
+    width: 550px;
+    height: 420px;
+    object-fit: cover; }
+  .contact .custom-section .custom-section__content {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 40px rgba(43, 89, 255, 0.08);
+    padding-top: 3rem; }
+    .contact .custom-section .custom-section__content .custom-section__input,
+    .contact .custom-section .custom-section__content .custom-section__textarea {
+      height: 50px;
+      width: 100%;
+      margin-bottom: 19px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc; }
+    .contact .custom-section .custom-section__content .custom-section__textarea {
+      height: 140px; }
+    .contact .custom-section .custom-section__content .button {
+      width: 200px;
+      height: 50px;
+      margin-top: 38px; }
+
+.contact .custom-section__input,
+.contact .custom-section__textarea {
+  background: #ebf0f9;
+  border-radius: 5px;
+  color: #000 !important; }
+
+.contact .custom-section__input::placeholder,
+.contact .custom-section__textarea::placeholder {
+  color: #000 !important; }

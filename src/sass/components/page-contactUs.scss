@@ -1,0 +1,106 @@
+.contact {
+  .hreader-contact {
+    width: 100%;
+    max-width: 580px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+
+    h1 {
+        font-size: 72px;
+        color: #324A74;
+        margin-bottom: 5rem;
+    }
+    p {
+        color: #324A74;
+    }
+  }
+  .contact-company {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 16rem;
+    &__information {
+      width: 100%;
+      max-width: 372px;
+      height: 214px;
+      background: #ffffff;
+      box-shadow: 0px 4px 40px rgba(43, 89, 255, 0.08);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      p {
+        max-width: 260px;
+      }
+
+      .contact-icon {
+        width: 55px;
+        height: 55px;
+        background-color: #324a74;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        i {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .custom-section {
+    display: flex;
+    height: auto;
+    margin-top: 7rem;
+
+    .custom-section__image {
+      img {
+        width: 550px;
+        height: 420px;
+        object-fit: cover;
+      }
+    }
+
+    .custom-section__content {
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 40px rgba(43, 89, 255, 0.08);
+      padding-top: 3rem;
+
+      .custom-section__input,
+      .custom-section__textarea {
+        height: 50px;
+        width: 100%;
+        margin-bottom: 19px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .custom-section__textarea {
+        height: 140px;
+      }
+
+      .button {
+        width: 200px;
+        height: 50px;
+        margin-top: 38px;
+      }
+    }
+  }
+  .custom-section__input,
+.custom-section__textarea {
+  background: #ebf0f9;
+  border-radius: 5px;
+  color: #000 !important;
+}
+
+.custom-section__input::placeholder,
+.custom-section__textarea::placeholder {
+  color: #000 !important;
+}
+
+}
