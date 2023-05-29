@@ -1876,7 +1876,8 @@ form {
 .select-wrapper {
   display: flex;
   align-items: center;
-  margin-right: 20px; }
+  margin-right: 20px;
+  color: white; }
   .select-wrapper label {
     margin-right: 10px;
     font-weight: bold; }
@@ -10271,9 +10272,6 @@ form {
       margin: 0; }
 
 /* Stiluri generale */
-h1, h2, h3 {
-  color: #333; }
-
 p {
   color: #666; }
 
@@ -10731,3 +10729,23 @@ ul a:hover {
   height: 100%;
   background-color: rgba(230, 230, 255, 0.85);
   z-index: 1; }
+
+.top-search {
+  background-color: #FF4043;
+  height: 65px;
+  display: flex; }
+  .top-search .asbestos-problem {
+    width: 30%;
+    height: 100%;
+    background-color: #15528E; }
+  .top-search__information {
+    display: flex;
+    align-items: center; }
+    .top-search__information h2 {
+      padding: 0;
+      margin: 0;
+      margin-right: 3rem; }
+  .top-search__content {
+    display: flex; }
+    .top-search__content .individual {
+      display: flex; }

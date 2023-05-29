@@ -1,0 +1,29 @@
+.top-search {
+    background-color: #FF4043;
+    height: 65px;
+    display: flex;
+
+    .asbestos-problem {
+        width: 30%;
+        height: 100%;
+        background-color: #15528E;
+    }
+    &__information {
+        display: flex;
+        align-items: center;
+        h2 {
+            padding: 0;
+            margin: 0;
+            margin-right: 3rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+
+        .individual {
+            display: flex;
+        }
+    }
+
+}
