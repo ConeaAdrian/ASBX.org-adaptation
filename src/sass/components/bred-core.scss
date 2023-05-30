@@ -36,6 +36,9 @@ form {
   padding: 25px;
   background-color: #264470;
   gap: 20px;
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
 
   .header-wraper {
     display: flex;
@@ -43,9 +46,9 @@ form {
     @media (max-width: 600px) {
       flex-direction: column;
     }
+    
 
     .select-wrapper {
-      display: flex;
       align-items: center;
       margin-right: 20px;
 
@@ -69,9 +72,31 @@ form {
   }
   .search-asbestos {
     display: flex;
+    width: 49%;
+    @media (max-width: 1070px) {
+      width: 46%;
+    }
+    @media (max-width: 992px) {
+      width: 100%;
+      padding-right: 20px;
+    }
+    @media (max-width: 992px) {
+      padding-right: 0px;
+    }
+    @media (max-width: 475px) {
+      flex-direction: column;
+    }
 
     label {
       color: white;
+    }
+  }
+
+  .button {
+    margin: 0;
+    @media (max-width: 475px) {
+      width: 100%;
+      margin-top: 15px;
     }
   }
 }

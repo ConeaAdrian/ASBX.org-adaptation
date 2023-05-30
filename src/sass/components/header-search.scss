@@ -1,29 +1,52 @@
 .top-search {
-    background-color: #FF4043;
-    height: 65px;
+  background-color: #ff4043;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+
+  .container {
+    padding: 0 20px;
+  }
+  .asbestos-problem {
+    width: 30%;
+    height: 100%;
+    background-color: #15528e;
+  }
+
+    label {
+        transform: translateY(6px);
+        margin-right: 1rem;
+        color: white;
+        text-decoration: none;
+        border: none;
+    }
+
+  &__content {
     display: flex;
 
-    .asbestos-problem {
-        width: 30%;
-        height: 100%;
-        background-color: #15528E;
-    }
-    &__information {
-        display: flex;
-        align-items: center;
-        h2 {
-            padding: 0;
-            margin: 0;
-            margin-right: 3rem;
-        }
-    }
 
-    &__content {
-        display: flex;
+    .individual {
+      display: flex;
+      height: 34px;
+      margin-right: 3rem;
 
-        .individual {
-            display: flex;
-        }
+      #diagnosed-with {
+        width: 160px;
+      }
+      #worked-in {
+        width: 237px;
+      }
     }
-
+  }
+  h2 {
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    line-height: 23px;
+  }
 }
