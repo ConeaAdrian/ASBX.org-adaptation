@@ -4,7 +4,7 @@ $breakpoint: 992px;
 $nav-height: 60px;
 $nav-background: #ffffff;
 $nav-font-color: #264470;
-$link-hover-color: #ff4043;
+$link-hover-color: #FF4043;
 
 // Outer navigation wrapper
 .navigation {
@@ -12,30 +12,18 @@ $link-hover-color: #ff4043;
   background: $nav-background;
   justify-content: space-between;
   display: flex;
-  width: 100%; /* Modificare: lățimea completă */
-  padding: 0 20px; /* Modificare: adăugarea spațiului în jurul conținutului */
 }
 
 // Logo and branding
 .brand {
+  float: left;
   line-height: $nav-height;
   text-transform: uppercase;
   font-size: 1.4em;
-  flex-direction: column;
-  display: flex;
-  align-items: flex-start; /* Modificare: alinierea textului la stânga */
-
-  h4 {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    margin: 0 auto;
-  }
   a,
   a:visited {
+    
     text-decoration: none;
-    min-width: 170px;
-    width: 100%;
   }
 
   .logo {
@@ -50,9 +38,9 @@ $link-hover-color: #ff4043;
   margin: 0 auto;
 }
 
-// Navigation
+// Navigation 
 nav {
-  z-index: 1;
+  float: right;
   ul {
     list-style: none;
     margin: 0;
@@ -66,7 +54,7 @@ nav {
         padding: 0 20px;
         line-height: $nav-height;
         background: $nav-background;
-        color: #504b4b;
+        color: #504B4B;
         text-decoration: none;
         font-weight: 500;
         font-size: 16px;
@@ -79,7 +67,7 @@ nav {
         }
         &:not(:only-child):after {
           padding-left: 4px;
-          content: " ▾";
+          content: ' ▾';
         }
       } // Dropdown list
       ul li {
@@ -90,7 +78,7 @@ nav {
         }
       }
       .FAQs {
-        color: #ff4043 !important;
+        color: #FF4043 !important;
       }
     }
   }
@@ -115,10 +103,6 @@ nav {
   background: $nav-background;
   height: $nav-height;
   width: $nav-height;
-
-  @media only screen and (max-width: 1100px) and (min-width: 880px) {
-    top: 0;
-  }
 }
 @media only screen and (max-width: 992px) {
   // Hamburger nav visible on mobile only
@@ -126,7 +110,7 @@ nav {
     display: block;
   }
   nav {
-    width: 100%;
+   width: 100%;
     padding: $nav-height 0 15px;
     ul {
       display: none;
@@ -149,7 +133,6 @@ nav {
 @media screen and (min-width: $breakpoint) {
   .nav-list {
     display: block !important;
-    background: white;
   }
 }
 #nav-toggle {
@@ -168,7 +151,7 @@ nav {
     background: $nav-font-color;
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     transition: all 300ms ease-in-out;
   }
   span:before {
@@ -192,16 +175,18 @@ nav {
   }
 }
 
-// Page content
+// Page content 
 article {
   max-width: $content-width;
   margin: 0 auto;
   padding: 10px;
 }
 
+
 .header-bar {
-  background-color: #0d487d;
+  background-color: #0D487D;
   height: 40px;
+  
 
   .header-information {
     display: flex !important;
@@ -219,6 +204,7 @@ article {
   }
 
   .contact {
+
     h4 {
       color: white;
       margin: 0;
