@@ -18,7 +18,9 @@
   }
   .contact-company {
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
     display: flex;
     margin-top: 16rem;
     &__information {
@@ -55,12 +57,18 @@
     display: flex;
     height: auto;
     margin-top: 7rem;
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
 
     .custom-section__image {
       img {
         width: 550px;
         height: 420px;
         object-fit: cover;
+        @media (max-width: 850px) {
+          width: 100%;
+        }
       }
     }
 

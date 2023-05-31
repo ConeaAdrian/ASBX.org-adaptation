@@ -36,56 +36,60 @@
         <a href="#">W</a>
       </div>
     </div>
-    <div class="search-input">
-      <input type="text" placeholder="Search Job-site by Name" />
-      <div class="search-icon">
-        <i class="fas fa-search"></i>
+    <form action="">
+      <div class="search-input">
+        <input type="text" placeholder="Search Job-site by Name" />
+        <div class="search-icon">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </form>
+  </div>
+  <form action="">
+    <div class="job-site__box">
+      <img src="../../img/Finance Icons.svg" alt="" />
+      <div class="content">
+        <h2>Newport News Shipbuilding & Drydock Company</h2>
+        <div class="content-trust">
+          <h4>Available Asbestos Trust Funds:</h4>
+          <p>10</p>
+        </div>
+        <div class="dropdown-container">
+          <div class="dropdown">
+            <label for="job">Select Job:</label>
+            <select class="chase" id="job">
+              <option value="job1">Job 1</option>
+              <option value="job2">Job 2</option>
+              <option value="job3">Job 3</option>
+              <!-- Alte opțiuni... -->
+            </select>
+          </div>
+          <div class="dropdown">
+            <label for="start">Start:</label>
+            <select class="chase" id="start">
+              <option value="start1">Start 1</option>
+              <option value="start2">Start 2</option>
+              <option value="start3">Start 3</option>
+              <!-- Alte opțiuni... -->
+            </select>
+          </div>
+          <div class="dropdown">
+            <label for="end">End:</label>
+            <select class="chase" id="end">
+              <option value="end1">End 1</option>
+              <option value="end2">End 2</option>
+              <option value="end3">End 3</option>
+              <!-- Alte opțiuni... -->
+            </select>
+          </div>
+          <div class="button-add">
+            <div class="button-add__element"><i class="fas fa-plus"></i></i></div>
+            <p>Add to Your Claims</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="job-site__box">
-    <img src="../../img/Finance Icons.svg" alt="" />
-    <div class="content">
-      <h2>Newport News Shipbuilding & Drydock Company</h2>
-      <div class="content-trust">
-        <h4>Available Asbestos Trust Funds:</h4>
-        <p>10</p>
-      </div>
-      <div class="dropdown-container">
-        <div class="dropdown">
-          <label for="job">Select Job:</label>
-          <select class="chase" id="job">
-            <option value="job1">Job 1</option>
-            <option value="job2">Job 2</option>
-            <option value="job3">Job 3</option>
-            <!-- Alte opțiuni... -->
-          </select>
-        </div>
-        <div class="dropdown">
-          <label for="start">Start:</label>
-          <select class="chase" id="start">
-            <option value="start1">Start 1</option>
-            <option value="start2">Start 2</option>
-            <option value="start3">Start 3</option>
-            <!-- Alte opțiuni... -->
-          </select>
-        </div>
-        <div class="dropdown">
-          <label for="end">End:</label>
-          <select class="chase" id="end">
-            <option value="end1">End 1</option>
-            <option value="end2">End 2</option>
-            <option value="end3">End 3</option>
-            <!-- Alte opțiuni... -->
-          </select>
-        </div>
-        <div class="button-add">
-          <div class="button-add__element"><i class="fas fa-plus"></i></i></div>
-          <p>Add to Your Claims</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  </form>
   @@include('./ask-question.html')
   <div class="claims-select-mobile">@@include('./claims-calculator.html')</div>
 </section>

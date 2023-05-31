@@ -95,6 +95,82 @@
 
 .hero-text-block {
   position: relative;
+
+ 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #264470;
+  gap: 20px;
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  .header-wraper {
+    display: flex;
+    gap: 20px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    
+
+    .select-wrapper {
+      align-items: center;
+      margin-right: 20px;
+
+      label {
+        margin-right: 10px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      select {
+        padding: 8px 10px;
+        font-size: 16px;
+        border-radius: 3px;
+        background: transparent;
+        color: #fff;
+      }
+      .option {
+        color: #fff;
+      }
+    }
+  }
+  .search-asbestos {
+    display: flex;
+    width: 49%;
+    @media (max-width: 1070px) {
+      width: 46%;
+    }
+    @media (max-width: 992px) {
+      width: 100%;
+      padding-right: 20px;
+    }
+    @media (max-width: 992px) {
+      padding-right: 0px;
+    }
+    @media (max-width: 475px) {
+      flex-direction: column;
+    }
+
+    label {
+      color: white;
+    }
+  }
+
+  .button {
+    margin: 0;
+    @media (max-width: 475px) {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+}
+
 }
 //design search
 
@@ -120,17 +196,6 @@
   font-weight: bold;
   color: #fff;
   margin-top: 10rem;
-}
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 25px;
-  width: 100%;
-  background-color: #264470;
 }
 
 .select-wrapper {

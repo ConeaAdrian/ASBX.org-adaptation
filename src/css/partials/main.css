@@ -1870,6 +1870,63 @@ img {
 
 .hero-text-block {
   position: relative; }
+  .hero-text-block form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #264470;
+    gap: 20px; }
+    @media (max-width: 992px) {
+      .hero-text-block form {
+        flex-direction: column; } }
+    .hero-text-block form .header-wraper {
+      display: flex;
+      gap: 20px; }
+      @media (max-width: 600px) {
+        .hero-text-block form .header-wraper {
+          flex-direction: column; } }
+      .hero-text-block form .header-wraper .select-wrapper {
+        align-items: center;
+        margin-right: 20px; }
+        .hero-text-block form .header-wraper .select-wrapper label {
+          margin-right: 10px;
+          font-weight: bold;
+          color: #fff; }
+        .hero-text-block form .header-wraper .select-wrapper select {
+          padding: 8px 10px;
+          font-size: 16px;
+          border-radius: 3px;
+          background: transparent;
+          color: #fff; }
+        .hero-text-block form .header-wraper .select-wrapper .option {
+          color: #fff; }
+    .hero-text-block form .search-asbestos {
+      display: flex;
+      width: 49%; }
+      @media (max-width: 1070px) {
+        .hero-text-block form .search-asbestos {
+          width: 46%; } }
+      @media (max-width: 992px) {
+        .hero-text-block form .search-asbestos {
+          width: 100%;
+          padding-right: 20px; } }
+      @media (max-width: 992px) {
+        .hero-text-block form .search-asbestos {
+          padding-right: 0px; } }
+      @media (max-width: 475px) {
+        .hero-text-block form .search-asbestos {
+          flex-direction: column; } }
+      .hero-text-block form .search-asbestos label {
+        color: white; }
+    .hero-text-block form .button {
+      margin: 0; }
+      @media (max-width: 475px) {
+        .hero-text-block form .button {
+          width: 100%;
+          margin-top: 15px; } }
 
 .form-search {
   display: flex;
@@ -1892,16 +1949,6 @@ img {
   font-weight: bold;
   color: #fff;
   margin-top: 10rem; }
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 25px;
-  width: 100%;
-  background-color: #264470; }
 
 .select-wrapper {
   display: flex;
@@ -9190,7 +9237,11 @@ nav {
   position: absolute;
   display: none;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  background-color: white; }
+
+.nav-list {
+  background-color: white; }
 
 /* Mobile navigation */
 .nav-mobile {
@@ -9347,64 +9398,63 @@ article {
     line-height: 18px;
     color: #000000;
     width: 285px; }
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0 auto;
-  padding: 25px;
-  background-color: #264470;
-  gap: 20px; }
-  @media (max-width: 992px) {
-    form {
-      flex-direction: column; } }
-  form .header-wraper {
+  .background form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #264470;
     gap: 20px; }
-    @media (max-width: 600px) {
-      form .header-wraper {
-        flex-direction: column; } }
-    form .header-wraper .select-wrapper {
-      align-items: center;
-      margin-right: 20px; }
-      form .header-wraper .select-wrapper label {
-        margin-right: 10px;
-        font-weight: bold;
-        color: #fff; }
-      form .header-wraper .select-wrapper select {
-        padding: 8px 10px;
-        font-size: 16px;
-        border-radius: 3px;
-        background: transparent;
-        color: #fff; }
-      form .header-wraper .select-wrapper .option {
-        color: #fff; }
-  form .search-asbestos {
-    display: flex;
-    width: 49%; }
-    @media (max-width: 1070px) {
-      form .search-asbestos {
-        width: 46%; } }
     @media (max-width: 992px) {
-      form .search-asbestos {
-        width: 100%;
-        padding-right: 20px; } }
-    @media (max-width: 992px) {
-      form .search-asbestos {
-        padding-right: 0px; } }
-    @media (max-width: 475px) {
-      form .search-asbestos {
+      .background form {
         flex-direction: column; } }
-    form .search-asbestos label {
-      color: white; }
-  form .button {
-    margin: 0; }
-    @media (max-width: 475px) {
-      form .button {
-        width: 100%;
-        margin-top: 15px; } }
+    .background form .header-wraper {
+      display: flex;
+      gap: 20px; }
+      @media (max-width: 600px) {
+        .background form .header-wraper {
+          flex-direction: column; } }
+      .background form .header-wraper .select-wrapper {
+        align-items: center;
+        margin-right: 20px; }
+        .background form .header-wraper .select-wrapper label {
+          margin-right: 10px;
+          font-weight: bold;
+          color: #fff; }
+        .background form .header-wraper .select-wrapper select {
+          padding: 8px 10px;
+          font-size: 16px;
+          border-radius: 3px;
+          background: transparent;
+          color: #fff; }
+        .background form .header-wraper .select-wrapper .option {
+          color: #fff; }
+    .background form .search-asbestos {
+      display: flex;
+      width: 49%; }
+      @media (max-width: 1070px) {
+        .background form .search-asbestos {
+          width: 46%; } }
+      @media (max-width: 992px) {
+        .background form .search-asbestos {
+          width: 100%;
+          padding-right: 20px; } }
+      @media (max-width: 992px) {
+        .background form .search-asbestos {
+          padding-right: 0px; } }
+      @media (max-width: 475px) {
+        .background form .search-asbestos {
+          flex-direction: column; } }
+      .background form .search-asbestos label {
+        color: white; }
+    .background form .button {
+      margin: 0; }
+      @media (max-width: 475px) {
+        .background form .button {
+          width: 100%;
+          margin-top: 15px; } }
 
 .information h2 {
   color: #264470; }
@@ -10197,6 +10247,8 @@ form {
   .job-site .search-container__letters {
     display: flex;
     flex-wrap: wrap; }
+  .job-site .search-container form {
+    width: 100%; }
 
 .job-site .search-filter {
   display: flex;
@@ -10613,7 +10665,9 @@ ul a:hover {
 
 .contact .contact-company {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
   display: flex;
   margin-top: 16rem; }
   .contact .contact-company__information {
@@ -10644,10 +10698,16 @@ ul a:hover {
   display: flex;
   height: auto;
   margin-top: 7rem; }
+  @media (max-width: 850px) {
+    .contact .custom-section {
+      flex-direction: column; } }
   .contact .custom-section .custom-section__image img {
     width: 550px;
     height: 420px;
     object-fit: cover; }
+    @media (max-width: 850px) {
+      .contact .custom-section .custom-section__image img {
+        width: 100%; } }
   .contact .custom-section .custom-section__content {
     padding: 20px;
     background-color: #ffffff;
