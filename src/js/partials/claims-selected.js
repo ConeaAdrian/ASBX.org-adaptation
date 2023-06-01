@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('.profession').click(function() {
-      $(this).toggleClass('active');
-      $(this).next('.profession__content').slideToggle();
-    });
+  $('.profession').click(function() {
+    $(this).toggleClass('active');
+    $(this).parent().find('.profession__content').slideToggle();
   });
+});

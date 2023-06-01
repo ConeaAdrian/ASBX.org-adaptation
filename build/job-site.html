@@ -168,19 +168,32 @@
       </div>
     </form>
   </div>
-  <form action="">
-    <div class="job-site__box">
-      <img src="../../img/Finance Icons.svg" alt="" />
-      <div class="content">
-        <h2>Newport News Shipbuilding & Drydock Company</h2>
+  <div class="job-site__box">
+    <img src="../../img/Finance Icons.svg" alt="" />
+    <div class="content">
+      <h2>Newport News Shipbuilding & Drydock Company</h2>
+      <div class="check-element">
         <div class="content-trust">
           <h4>Available Asbestos Trust Funds:</h4>
           <p>10</p>
         </div>
+        <button class="button-open">
+          <div class="button-open__section"><i class="fas fa-plus"></i></div>
+          <p>Add to Your Claims</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="popup-claim">
+    <div class="popup-content">
+      <button class="close-button">Close</button>
+      <form action="">
         <div class="dropdown-container">
           <div class="dropdown">
             <label for="job">Select Job:</label>
-            <select class="chase" id="job">
+            <select class="chase" id="job" required>
+              <option value="" disabled selected>Select job</option>
               <option value="job1">Job 1</option>
               <option value="job2">Job 2</option>
               <option value="job3">Job 3</option>
@@ -189,7 +202,8 @@
           </div>
           <div class="dropdown">
             <label for="start">Start:</label>
-            <select class="chase" id="start">
+            <select class="chase" id="start" required>
+              <option value="" disabled selected>Select start</option>
               <option value="start1">Start 1</option>
               <option value="start2">Start 2</option>
               <option value="start3">Start 3</option>
@@ -198,21 +212,27 @@
           </div>
           <div class="dropdown">
             <label for="end">End:</label>
-            <select class="chase" id="end">
+            <select class="chase" id="end" required>
+              <option value="" disabled selected>Select end</option>
               <option value="end1">End 1</option>
               <option value="end2">End 2</option>
               <option value="end3">End 3</option>
               <!-- Alte opțiuni... -->
             </select>
           </div>
-          <div class="button-add">
-            <div class="button-add__element"><i class="fas fa-plus"></i></i></div>
-            <p>Add to Your Claims</p>
+          <div class="button-container">
+            <button class="button-add popup-button" disabled>
+             
+              <p>Add Claims</p>
+              <button class="close-button-alt"></button>
+            </button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
-  </form>
+  </div>
+  
+
   <div class="client-question">
   <div class="client-question__text">
     <h3>Ask Any Asbestos-Related Legal Question</h3>
@@ -265,8 +285,8 @@
       </div>
       <p>From 3 Jobs</p>
       <div class="claims-buttons">
-        <button>Calculate</button>
-        <button>+ Add Claim</button>
+        <button>+ Add <span>New</span> City/State</button>
+        <button>Calculate <span>Your</span> Claims  </button>
       </div>
     </div>
   </div>
@@ -320,8 +340,8 @@
       </div>
       <p>From 3 Jobs</p>
       <div class="claims-buttons">
-        <button>Calculate</button>
-        <button>+ Add Claim</button>
+        <button>+ Add <span>New</span> City/State</button>
+        <button>Calculate <span>Your</span> Claims  </button>
       </div>
     </div>
   </div>

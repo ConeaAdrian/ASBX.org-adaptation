@@ -9699,12 +9699,14 @@ article {
       gap: 10px;
       margin-top: 20px;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      flex-direction: column; }
       .general-claims .claims-selected .claims-buttons button {
         padding: 10px 28px;
         border-radius: 5px;
         font-weight: 800;
-        font-size: 16px; }
+        font-size: 16px;
+        width: 75%; }
       .general-claims .claims-selected .claims-buttons button:first-child {
         background: #ff4043;
         color: white;
@@ -10339,22 +10341,28 @@ article {
     line-height: 23px;
     margin-top: 0;
     color: #000000; }
-  .job-site__box .content .content-trust {
+  .job-site__box .content .check-element {
     display: flex;
-    align-items: center;
-    margin-bottom: 1.8rem; }
-    .job-site__box .content .content-trust h4 {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 18px;
-      color: #a8a8ab; }
-    .job-site__box .content .content-trust p {
-      font-size: 18px;
-      line-height: 18px;
-      color: #324a74;
-      font-weight: 700;
-      margin: 0;
-      margin-left: 5px; }
+    justify-content: space-between; }
+    @media (max-width: 620px) {
+      .job-site__box .content .check-element {
+        flex-direction: column; } }
+    .job-site__box .content .check-element .content-trust {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.8rem; }
+      .job-site__box .content .check-element .content-trust h4 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        color: #a8a8ab; }
+      .job-site__box .content .check-element .content-trust p {
+        font-size: 18px;
+        line-height: 18px;
+        color: #324a74;
+        font-weight: 700;
+        margin: 0;
+        margin-left: 5px; }
   .job-site__box .content .dropdown-container {
     flex-wrap: wrap; }
     .job-site__box .content .dropdown-container .dropdown {
@@ -10370,11 +10378,11 @@ article {
         height: 30px;
         width: 150px;
         color: #7e7d7d; }
-  .job-site__box .button-add {
+  .job-site__box .button-open {
     display: flex;
-    margin-top: 29px;
-    cursor: pointer; }
-    .job-site__box .button-add__element {
+    cursor: pointer;
+    background-color: transparent; }
+    .job-site__box .button-open__section {
       width: 33px;
       height: 33px;
       left: 479px;
@@ -10382,15 +10390,90 @@ article {
       background: #ff4043;
       border-radius: 4px;
       margin-right: 1rem; }
-      .job-site__box .button-add__element i {
+      .job-site__box .button-open__section i {
         color: #fff;
         display: flex;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
         margin-top: 9px; }
-    .job-site__box .button-add p {
+    .job-site__box .button-open p {
       margin: 0; }
+
+.job-site .job-site__box .button-add {
+  display: flex;
+  cursor: pointer; }
+  .job-site .job-site__box .button-add.active .button-add__element {
+    background: red; }
+
+.job-site .popup-claim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: none; }
+
+.job-site .popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px; }
+
+.job-site .popup-content .button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem; }
+
+.job-site .close-button {
+  background-color: #ff4043;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer; }
+
+.job-site .close-button-alt {
+  width: 100%;
+  max-width: 220px;
+  height: 38px;
+  border-radius: 20px;
+  background-color: #ff4043;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  cursor: pointer; }
+
+.job-site .button-add {
+  display: flex;
+  cursor: pointer; }
+
+.job-site .button-add__element {
+  width: 33px;
+  height: 33px;
+  background: #ff4043;
+  border-radius: 4px;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.job-site .button-add__element i {
+  color: #fff; }
+
+.job-site .popup-claim.error .button-add__element {
+  background-color: #ff4043; }
+
+.job-site .popup-claim.error .close-button {
+  background-color: #ff4043; }
 
 /* Stiluri generale */
 p {
@@ -10501,7 +10584,7 @@ ul a:hover {
     .bottom-banner .banner-calculate .content-information {
       display: flex;
       justify-content: space-between; }
-      @media (max-width: 715px) {
+      @media (max-width: 745px) {
         .bottom-banner .banner-calculate .content-information {
           flex-direction: column;
           align-items: center; } }
@@ -10541,6 +10624,9 @@ ul a:hover {
           border-radius: 5px;
           font-weight: 800;
           font-size: 16px; }
+          @media (max-width: 475px) {
+            .bottom-banner .banner-calculate .content-information .claims-buttons button {
+              font-size: 14px; } }
           @media (max-width: 840px) {
             .bottom-banner .banner-calculate .content-information .claims-buttons button span {
               display: none; } }
