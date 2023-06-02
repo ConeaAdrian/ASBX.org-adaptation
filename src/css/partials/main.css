@@ -10274,40 +10274,6 @@ article {
   margin-right: 5px;
   color: #787878; }
 
-.job-site .search-input {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%; }
-
-.job-site .search-input input {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  flex: 1;
-  background: rgba(249, 247, 247, 0.83);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  height: 40px; }
-
-.job-site .search-input .search-icon {
-  width: 40px;
-  height: 40px;
-  background-color: #ff4043;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  cursor: pointer;
-  height: 40px; }
-
-.job-site .search-input .search-icon svg {
-  width: 20px;
-  height: 20px;
-  color: #fff; }
-
-.job-site .fa-search:before {
-  color: #fff; }
-
 .job-site .dropdown-container {
   display: flex; }
 
@@ -10403,6 +10369,36 @@ article {
     .job-site__box .button-open p {
       margin: 0; }
 
+.search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%; }
+  .search-input .fa-search:before {
+    color: #fff; }
+  .search-input input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    flex: 1;
+    background: rgba(249, 247, 247, 0.83);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 40px; }
+  .search-input .search-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ff4043;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px; }
+    .search-input .search-icon svg {
+      width: 20px;
+      height: 20px;
+      color: #fff; }
+
 .job-site .job-site__box .button-add {
   display: flex;
   cursor: pointer; }
@@ -10496,6 +10492,46 @@ article {
 
 .job-site .popup-claim.error .close-button {
   background-color: #ff4043; }
+
+.search-navi .bar {
+  width: 105px;
+  height: 4px;
+  background: #ff4043;
+  margin-bottom: 3rem; }
+
+.search-navi__box {
+  background: #ffffff;
+  border: 0.25px solid #000b33;
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+  margin-top: 3rem;
+  padding: 3rem; }
+  .search-navi__box h2 {
+    color: #000000;
+    margin-top: 0;
+    font-size: 22px; }
+  .search-navi__box .information-content {
+    display: flex;
+    justify-content: space-between; }
+    .search-navi__box .information-content .documentation .data {
+      display: flex;
+      gap: 1rem; }
+      .search-navi__box .information-content .documentation .data p {
+        font-size: 18px; }
+    .search-navi__box .information-content .arrow-next {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 1rem; }
+      .search-navi__box .information-content .arrow-next:hover, .search-navi__box .information-content .arrow-next:active {
+        background: #FD4C5C; }
+  .search-navi__box:hover, .search-navi__box:active {
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(43, 89, 255, 0.08);
+    border-radius: 10px; }
+    .search-navi__box:hover .arrow-next, .search-navi__box:active .arrow-next {
+      color: #FD4C5C; }
 
 /* Stiluri generale */
 p {
