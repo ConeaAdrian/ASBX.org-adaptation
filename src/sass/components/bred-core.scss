@@ -72,20 +72,7 @@ form {
   }
   .search-asbestos {
     display: flex;
-    width: 49%;
-    @media (max-width: 1070px) {
-      width: 46%;
-    }
-    @media (max-width: 992px) {
-      width: 100%;
-      padding-right: 20px;
-    }
-    @media (max-width: 992px) {
-      padding-right: 0px;
-    }
-    @media (max-width: 475px) {
-      flex-direction: column;
-    }
+    width: 100%;
 
     label {
       color: white;

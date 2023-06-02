@@ -1905,20 +1905,7 @@ img {
           color: #fff; }
     .hero-text-block form .search-asbestos {
       display: flex;
-      width: 49%; }
-      @media (max-width: 1070px) {
-        .hero-text-block form .search-asbestos {
-          width: 46%; } }
-      @media (max-width: 992px) {
-        .hero-text-block form .search-asbestos {
-          width: 100%;
-          padding-right: 20px; } }
-      @media (max-width: 992px) {
-        .hero-text-block form .search-asbestos {
-          padding-right: 0px; } }
-      @media (max-width: 475px) {
-        .hero-text-block form .search-asbestos {
-          flex-direction: column; } }
+      width: 100%; }
       .hero-text-block form .search-asbestos label {
         color: white; }
     .hero-text-block form .button {
@@ -9377,20 +9364,7 @@ article {
           color: #fff; }
     .background form .search-asbestos {
       display: flex;
-      width: 49%; }
-      @media (max-width: 1070px) {
-        .background form .search-asbestos {
-          width: 46%; } }
-      @media (max-width: 992px) {
-        .background form .search-asbestos {
-          width: 100%;
-          padding-right: 20px; } }
-      @media (max-width: 992px) {
-        .background form .search-asbestos {
-          padding-right: 0px; } }
-      @media (max-width: 475px) {
-        .background form .search-asbestos {
-          flex-direction: column; } }
+      width: 100%; }
       .background form .search-asbestos label {
         color: white; }
     .background form .button {
