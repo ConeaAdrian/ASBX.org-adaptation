@@ -10350,7 +10350,9 @@ article {
   .job-site__box .button-open {
     display: flex;
     cursor: pointer;
-    background-color: transparent; }
+    background-color: transparent;
+    justify-content: end;
+    align-items: center; }
     .job-site__box .button-open__section {
       width: 33px;
       height: 33px;
@@ -10542,7 +10544,7 @@ ul {
   margin-left: 20px; }
 
 a {
-  color: #007bff;
+  color: #000000;
   text-decoration: none; }
 
 /* Stiluri specifice */
@@ -11041,3 +11043,92 @@ ul a:hover {
     font-size: 20px;
     color: white;
     line-height: 23px; }
+
+.detiles-content .check-element {
+  flex-direction: column !important; }
+
+.detiles-content .user-information {
+  width: 72%; }
+  @media (max-width: 620px) {
+    .detiles-content .user-information {
+      width: 100%; } }
+  .detiles-content .user-information p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #a8a8ab; }
+
+.detiles-content ul {
+  margin-top: 2rem;
+  margin-bottom: 3rem; }
+  .detiles-content ul li {
+    color: 15528E; }
+
+.detiles-content h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000; }
+
+.detiles-content .companies-trust {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 3rem; }
+  .detiles-content .companies-trust__data {
+    display: flex;
+    justify-content: space-between; }
+    .detiles-content .companies-trust__data a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+      color: #000000; }
+
+.compensation-amounts {
+  margin-top: 4rem; }
+  .compensation-amounts i {
+    color: #ff4043; }
+  .compensation-amounts__data {
+    background: #fdfdfd;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    height: auto;
+    width: 100%;
+    padding: 2rem; }
+    .compensation-amounts__data .data-mesothelioma h4 {
+      color: #ff4043; }
+    .compensation-amounts__data .data-lung-cancer {
+      margin-top: 2rem; }
+      .compensation-amounts__data .data-lung-cancer h4 {
+        color: #ff4043; }
+  .compensation-amounts .explication {
+    margin-top: 3rem; }
+    .compensation-amounts .explication__grade {
+      display: flex; }
+      .compensation-amounts .explication__grade i {
+        margin-right: 10px;
+        width: 20px; }
+  .compensation-amounts .information {
+    position: relative;
+    background: #324a74;
+    border-radius: 6px;
+    height: auto;
+    padding: 15px;
+    width: 60%;
+    margin-top: 3rem; }
+    .compensation-amounts .information p {
+      color: #fdfdfd;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 1rem; }
+    .compensation-amounts .information__note {
+      position: absolute;
+      background: #ff4043;
+      border-radius: 20px;
+      top: -10px;
+      width: 86px;
+      height: 24px;
+      color: #fdfdfd;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 700; }

@@ -1,0 +1,46 @@
+.detiles-content {
+    .check-element {
+        flex-direction: column !important;
+    }
+  .user-information {
+    width: 72%;
+    @media (max-width: 620px) {
+        width: 100%;
+      }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #a8a8ab;
+    }
+  }
+  ul {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    li {
+      color: 15528E;
+    }
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+  }
+  .companies-trust {
+    width: 100%;
+    max-width: 360px;
+    margin-top: 3rem;
+    &__data {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000;
+      }
+    }
+  }
+}

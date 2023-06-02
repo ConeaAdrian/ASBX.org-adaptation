@@ -1,0 +1,70 @@
+.compensation-amounts {
+  margin-top: 4rem;
+  i {
+    color: #ff4043;
+  }
+  &__data {
+    background: #fdfdfd;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+
+    .data-mesothelioma {
+      h4 {
+        color: #ff4043;
+      }
+    }
+    .data-lung-cancer {
+      margin-top: 2rem;
+      h4 {
+        color: #ff4043;
+      }
+    }
+  }
+  .explication {
+    margin-top: 3rem;
+    &__grade {
+      display: flex;
+
+      i {
+        margin-right: 10px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+      }
+    }
+  }
+  .information {
+    position: relative;
+    background: #324a74;
+    border-radius: 6px;
+    height: auto;
+    padding: 15px;
+    width: 60%;
+    margin-top: 3rem;
+
+    p {
+      color: #fdfdfd;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 1rem;
+    }
+
+    &__note {
+      position: absolute;
+      background: #ff4043;
+      border-radius: 20px;
+      top: -10px;
+      width: 86px;
+      height: 24px;
+      color: #fdfdfd;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+}
