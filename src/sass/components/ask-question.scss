@@ -48,7 +48,6 @@
     }
   }
 }
-
 .number-validation {
   background: #f6f6f6;
   border-radius: 6px;
@@ -141,12 +140,11 @@
 }
 
 .validation-calculator {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: hsla(240, 100%, 95%, 0.85);
-  z-index: 1;
-
-
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 999;
 }

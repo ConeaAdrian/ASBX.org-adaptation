@@ -22,37 +22,63 @@ $(document).ready(function (e) {
  });
 });
 
-$(document).ready(function() {
-  $('.validation-calculator > div').hide();
-  $('.validation-calculator').hide();
-
-  $('.client-question__content .button').click(function() {
-    $('.validation-calculator').fadeIn();
-    $('.number-validation').fadeIn();
-    $('body').addClass('locked');
+$(document).ready(function (e) {
+  //scroll up
+  $(window).scroll(function () {
+   if ($(this).scrollTop() > 100) {
+    $(".scroll-up").fadeIn();
+    $(".scroll-up").addClass("show");
+   } else {
+    $(".scroll-up").fadeOut();
+    $(".scroll-up").removeClass("show");
+   }
   });
-
-  $('.number-validation .button').click(function() {
-    $('.number-validation').fadeOut();
-    $('.code-confirmation').fadeIn();
+ 
+  //Click event to scroll to top
+  $(".scroll-up").click(function () {
+   $("html, body").animate(
+    {
+     scrollTop: 0,
+    },
+    800
+   );
+   return false;
   });
+ });
+ 
+ $(document).ready(function() {
+   $('.validation-calculator > div').hide();
+   $('.validation-calculator').hide();
+ 
+   $('.client-question__content .button').click(function() {
+     $('.validation-calculator').fadeIn();
+     $('.number-validation').fadeIn();
+     $('body').addClass('locked');
+   });
+ 
+   $('.number-validation .button').click(function() {
+     $('.number-validation').fadeOut();
+     $('.code-confirmation').fadeIn();
+   });
+ 
+   $('.code-confirmation .button').click(function() {
+     $('.code-confirmation').fadeOut();
+     $('.thank-you').fadeIn();
+   });
+ 
+   $('.thank-you .button').click(function() {
+     $('.thank-you').fadeOut();
+     $('.validation-calculator').fadeOut();
+     $('body').removeClass('locked');
+   });
+ });
+ 
+ 
+ 
+ //--------
 
-  $('.code-confirmation .button').click(function() {
-    $('.code-confirmation').fadeOut();
-    $('.thank-you').fadeIn();
-  });
-
-  $('.thank-you .button').click(function() {
-    $('.thank-you').fadeOut();
-    $('.validation-calculator').fadeOut();
-    $('body').removeClass('locked');
-  });
-});
-
-
-
-//--------
-$(document).ready(function() {
+ 
+ $(document).ready(function() {
   $('.popup-claim').hide();
 
   $('.button-open').click(function() {
@@ -68,9 +94,19 @@ $(document).ready(function() {
       $('.popup-button').removeAttr('disabled');
       $('.popup-claim').removeClass('error');
       $('.close-button-alt').hide();
+      $('.button-add').css({
+        'background-color': '#324a74',
+        'border-color': '#324a74',
+        'color': '#ffffff'
+      });
     } else {
       $('.popup-button').attr('disabled', 'disabled');
       $('.close-button-alt').show();
+      $('.button-add').css({
+        'background-color': '#acaaaa',
+        'border-color': '#324A74',
+        'color': ''
+      });
     }
   });
 
@@ -82,6 +118,14 @@ $(document).ready(function() {
     if (job && start && end) {
       $('.popup-claim').fadeOut(function() {
         $('body').removeClass('locked');
+        $('#job').val('');
+        $('#start').val('');
+        $('#end').val('');
+        $('.button-add').css({
+          'background-color': '#acaaaa',
+          'border-color': '#324A74',
+          'color': ''
+        });
       });
     } else {
       $('.popup-claim').addClass('error');
@@ -91,13 +135,23 @@ $(document).ready(function() {
   $('.close-button').click(function() {
     $('.popup-claim').fadeOut(function() {
       $('body').removeClass('locked');
+      $('#job').val('');
+      $('#start').val('');
+      $('#end').val('');
+      $('.button-add').css({
+        'background-color': '#acaaaa',
+        'border-color': '#324A74',
+        'color': ''
+      });
     });
   });
 });
 
 
-
-
-
-//----------
-
+ 
+ 
+ 
+ 
+ //----------
+ 
+ 
