@@ -2,10 +2,14 @@
   h1 {
     font-family: "Helvetica";
     font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 46px;
-    margin-bottom: 3rem;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .text-trincipal {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
   }
   p {
     font-weight: 300;
@@ -17,7 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 7rem;
+    margin-top: 4rem;
     border-top: 1px solid #f0eaea;
     padding-top: 20px;
 
@@ -33,6 +37,8 @@
     margin-top: 3rem;
     flex-direction: column;
     display: flex;
+    border-bottom: 1px solid #f0eaea;
+    padding-bottom: 20px;
     b {
       font-weight: 700;
       font-size: 16px;
@@ -77,14 +83,15 @@
     .content {
       h2 {
         font-weight: 400;
-        font-size: 24px;
-        line-height: 23px;
+        font-size: 18px;
+        line-height: 21px;
         margin-top: 0;
         color: #000000;
       }
       .check-element {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         @media (max-width: 620px) {
           flex-direction: column;
         }
@@ -92,6 +99,7 @@
           display: flex;
           align-items: center;
           margin-bottom: 1.8rem;
+          margin-bottom: 0;
 
           h4 {
             font-weight: 400;
@@ -138,6 +146,14 @@
       p {
         margin: 0;
       }
+    }
+  }
+
+  .compensation-amounts {
+    h2 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
     }
   }
 }
@@ -208,6 +224,9 @@
   // Restul codului SCSS...
 
   .job-site__box {
+    h2 {
+      text-decoration: underline;
+    }
     // Restul stilurilor...
 
     .button-add {
@@ -235,143 +254,142 @@
   z-index: 999;
   display: none;
 
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 55%;
+    @media (max-width: 1440px) {
+      width: 70%;
+    }
 
-.popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 55%;
-  @media (max-width: 1440px) {
-    width: 70%;
-  }
+    h2 {
+      font-size: 28px;
+      color: #324a74;
+      margin-bottom: 5rem;
+    }
 
-  h2 {
-    font-size: 28px;
-    color: #324a74;
-    margin-bottom: 5rem;
-  }
+    .select-button-option {
+      justify-content: center;
+      display: flex;
+      margin-top: 4rem;
+      gap: 20px;
+      .button-container {
+        position: relative;
 
-  .select-button-option {
-    justify-content: center;
-    display: flex;
-    margin-top: 4rem;
-    gap: 20px;
-    .button-container {
-      position: relative;
-
-      .close-button-alt {
-        position: absolute;
+        .close-button-alt {
+          position: absolute;
+        }
       }
     }
   }
-}
 
-.popup-content .button-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .popup-content .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.close-button {
-  background-color: #ff4043;
-  color: #fff;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  width: 100px;
-  height: auto;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
-
-.close-button-alt {
-  width: 100%;
-  max-width: 220px;
-  height: 38px;
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-}
-
-.button-add {
-  display: flex;
-  cursor: pointer;
-  background: #acacac;
-  border: 1px solid #324a74;
-  border-radius: 20px;
-  height: 50px;
-  border-radius: 10px;
-
-  p {
-    margin-bottom: 0;
+  .close-button {
+    background-color: #ff4043;
+    color: #fff;
+    border-radius: 10px;
     font-size: 16px;
-    margin-top: 10px;
-    width: 120px;
-    color: white;
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
-}
 
-.button-add__element {
-  width: 33px;
-  height: 33px;
-  background: #ff4043;
-  border-radius: 4px;
-  margin-right: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-add__element i {
-  color: #fff;
-}
-
-.popup-claim.error .button-add__element {
-  background-color: #ff4043;
-}
-
-.popup-claim.error .close-button {
-  background-color: #ff4043;
-}
-.dropdown-container {
-  flex-wrap: wrap;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
-  .job-width {
-    @media (max-width: 1150px) {
-      width: 96% !important;
-    flex: none !important;
-    }
-    @media (max-width: 767px) {
-      width: 93% !important;
-    }
+  .close-button-alt {
+    width: 100%;
+    max-width: 220px;
+    height: 38px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
   }
-  .dropdown {
-    margin-right: 2rem;
-    flex: 1 0 150px;
 
-    label {
-      font-weight: 400;
+  .button-add {
+    display: flex;
+    cursor: pointer;
+    background: #acacac;
+    border: 1px solid #324a74;
+    border-radius: 20px;
+    height: 50px;
+    border-radius: 10px;
+
+    p {
+      margin-bottom: 0;
       font-size: 16px;
-      line-height: 160%;
-      color: #052a44;
-    }
-    .chase {
-      background: #ffffff;
-      border: 1px solid #f3f3f3;
-      height: 30px;
-      width: 150px;
-      color: #7e7d7d;
-      width: 100%;
+      margin-top: 10px;
+      width: 120px;
+      color: white;
     }
   }
-}
+
+  .button-add__element {
+    width: 33px;
+    height: 33px;
+    background: #ff4043;
+    border-radius: 4px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-add__element i {
+    color: #fff;
+  }
+
+  .popup-claim.error .button-add__element {
+    background-color: #ff4043;
+  }
+
+  .popup-claim.error .close-button {
+    background-color: #ff4043;
+  }
+  .dropdown-container {
+    flex-wrap: wrap;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    .job-width {
+      @media (max-width: 1150px) {
+        width: 96% !important;
+        flex: none !important;
+      }
+      @media (max-width: 767px) {
+        width: 93% !important;
+      }
+    }
+    .dropdown {
+      margin-right: 2rem;
+      flex: 1 0 150px;
+
+      label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #052a44;
+      }
+      .chase {
+        background: #ffffff;
+        border: 1px solid #f3f3f3;
+        height: 30px;
+        width: 150px;
+        color: #7e7d7d;
+        width: 100%;
+      }
+    }
+  }
 }

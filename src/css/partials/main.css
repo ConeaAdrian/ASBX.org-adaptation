@@ -5433,8 +5433,6 @@ figcaption {
   body {
     font-size: 15px;
     line-height: 25px; }
-  h1 {
-    font-size: 30px; }
   h2 {
     font-size: 24px;
     line-height: 32px; }
@@ -6817,10 +6815,6 @@ dfn {
    * Address variable `h1` font-size and margin within `section` and `article`
    * contexts in Firefox 4+, Safari, and Chrome.
    */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
 /**
    * Address styling not present in IE 8/9.
    */
@@ -7265,9 +7259,9 @@ h6 {
   margin-bottom: 10px; }
 
 h1 {
-  font-size: 38px;
-  line-height: 44px;
-  margin-top: 20px; }
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px; }
 
 h2 {
   font-size: 32px;
@@ -10032,7 +10026,8 @@ article {
     cursor: pointer; }
 
 .calculate-value {
-  height: 140px;
+  height: auto;
+  padding: 15px;
   width: 100%;
   background: #15528e;
   border-radius: 20px;
@@ -10042,13 +10037,16 @@ article {
   position: relative;
   margin-top: 5rem;
   margin-bottom: 6rem; }
+  .calculate-value p {
+    color: #ffffff !important;
+    padding: 0 !important; }
   .calculate-value__logo {
     width: 153px;
     height: 30px;
     background: #ffffff;
     border-radius: 30px;
     position: relative;
-    top: -12px;
+    top: -30px;
     margin: 0 auto; }
     .calculate-value__logo img {
       padding-bottom: 5px; }
@@ -10056,7 +10054,8 @@ article {
     margin-top: 5px;
     font-weight: 700;
     font-size: 24px;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-bottom: 10px; }
   .calculate-value .button {
     width: 155px;
     height: 28px;
@@ -10064,15 +10063,20 @@ article {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    text-transform: uppercase !important; }
 
 .job-site h1 {
   font-family: "Helvetica";
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 46px;
-  margin-bottom: 3rem; }
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px; }
+
+.job-site .text-trincipal {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px; }
 
 .job-site p {
   font-weight: 300;
@@ -10084,7 +10088,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 7rem;
+  margin-top: 4rem;
   border-top: 1px solid #f0eaea;
   padding-top: 20px; }
   .job-site .search-container__letters {
@@ -10096,7 +10100,9 @@ article {
 .job-site .nearby-city {
   margin-top: 3rem;
   flex-direction: column;
-  display: flex; }
+  display: flex;
+  border-bottom: 1px solid #f0eaea;
+  padding-bottom: 20px; }
   .job-site .nearby-city b {
     font-weight: 700;
     font-size: 16px; }
@@ -10131,20 +10137,22 @@ article {
     top: -30px; }
   .job-site__box .content h2 {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 21px;
     margin-top: 0;
     color: #000000; }
   .job-site__box .content .check-element {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: flex-start; }
     @media (max-width: 620px) {
       .job-site__box .content .check-element {
         flex-direction: column; } }
     .job-site__box .content .check-element .content-trust {
       display: flex;
       align-items: center;
-      margin-bottom: 1.8rem; }
+      margin-bottom: 1.8rem;
+      margin-bottom: 0; }
       .job-site__box .content .check-element .content-trust h4 {
         font-weight: 400;
         font-size: 18px;
@@ -10180,6 +10188,11 @@ article {
         margin-top: 9px; }
     .job-site__box .button-open p {
       margin: 0; }
+
+.job-site .compensation-amounts h2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px; }
 
 .search-filter {
   display: flex;
@@ -10232,6 +10245,9 @@ article {
       width: 20px;
       height: 20px;
       color: #fff; }
+
+.job-site .job-site__box h2 {
+  text-decoration: underline; }
 
 .job-site .job-site__box .button-add {
   display: flex;
@@ -10407,9 +10423,9 @@ a {
 
 /* Stiluri specifice */
 h1 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px; }
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px; }
 
 h2 {
   font-size: 20px;
@@ -10575,11 +10591,18 @@ ul a:hover {
       align-items: end;
       gap: 4rem;
       margin-bottom: 3rem; }
+      @media (max-width: 840px) {
+        .boiler .table-content__structure {
+          flex-direction: column;
+          align-items: flex-start; } }
     .boiler .table-content__division {
       gap: 10px;
       display: flex;
       flex-direction: column;
       padding-left: 15px; }
+      @media (max-width: 840px) {
+        .boiler .table-content__division {
+          width: 100%; } }
       .boiler .table-content__division .element {
         display: flex;
         max-width: 340px;
@@ -10589,6 +10612,10 @@ ul a:hover {
         align-items: center;
         padding: 10px;
         gap: 7px; }
+        @media (max-width: 840px) {
+          .boiler .table-content__division .element {
+            width: 100%;
+            max-width: none !important; } }
         .boiler .table-content__division .element .nomerotation {
           width: 43px;
           height: 43px;
