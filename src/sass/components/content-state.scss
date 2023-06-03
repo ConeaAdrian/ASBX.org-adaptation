@@ -27,8 +27,11 @@
       align-items: center;
       width: calc(100% / 3);
       cursor: pointer;
-      font-weight: 400;
-      font-size: 14px;
+
+      a {
+        font-weight: 400;
+        font-size: 18px;
+      }
     }
 
     li:before {
