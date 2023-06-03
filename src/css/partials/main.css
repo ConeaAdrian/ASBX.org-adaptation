@@ -1693,7 +1693,8 @@ img {
   cursor: pointer;
   border: none;
   padding: 0.95rem 2.5rem;
-  color: #fff; }
+  color: #fff;
+  border: 0 !important; }
   .button:hover {
     background-color: #000;
     box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16), inset 0 -2px 0 0 rgba(0, 0, 0, 0.11);
@@ -9337,6 +9338,7 @@ article {
         .information .select-job .job-section .box {
           width: 100%; } }
   .information .select-job .button {
+    border: 0;
     display: flex;
     margin: 0 auto;
     width: 100%;
@@ -9427,6 +9429,7 @@ article {
           margin-bottom: 18px;
           font-size: 26px; } }
     .baner-company__text .button {
+      border: 0;
       width: 100%;
       max-width: 219px;
       height: 46px;
@@ -9515,7 +9518,8 @@ article {
       .general-claims .claims-selected .claims-buttons button:first-child {
         background: #ff4043;
         color: white;
-        border-radius: 20px; }
+        border-radius: 20px;
+        border: 0; }
       .general-claims .claims-selected .claims-buttons button:last-child {
         background-color: #f5f5f5;
         background: transparent;
@@ -9705,6 +9709,7 @@ article {
         width: 100%;
         background-color: white; }
     .claims-economy .navi-form .button {
+      border: 0;
       background: #ff4043;
       margin-top: 22px;
       flex: 1 0 40px; }
@@ -10064,7 +10069,8 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase !important; }
+    text-transform: uppercase !important;
+    border: 0; }
 
 .job-site h1 {
   font-family: "Helvetica";
@@ -10170,7 +10176,8 @@ article {
     cursor: pointer;
     background-color: transparent;
     justify-content: end;
-    align-items: center; }
+    align-items: center;
+    border: 0; }
     .job-site__box .button-open__section {
       width: 33px;
       height: 33px;
@@ -10318,7 +10325,9 @@ article {
     border: 1px solid #324a74;
     border-radius: 20px;
     height: 50px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border: 0;
+    border: 0; }
     .popup-claim .button-add p {
       margin-bottom: 0;
       font-size: 16px;
@@ -10369,6 +10378,9 @@ article {
         width: 150px;
         color: #7e7d7d;
         width: 100%; }
+
+.boiler-button .button-open__section {
+  background-color: #15528E !important; }
 
 .search-navi .bar {
   width: 105px;
@@ -10497,6 +10509,7 @@ ul a:hover {
       line-height: 140%;
       color: rgba(60, 60, 67, 0.85); }
     .error-page__container .button {
+      border: 0;
       height: 64px;
       margin-top: 2rem; }
       @media (max-width: 768px) {
@@ -10570,12 +10583,14 @@ ul a:hover {
         .bottom-banner .banner-calculate .content-information .claims-buttons button:first-child {
           background: #ff4043;
           color: white;
-          border-radius: 20px; }
+          border-radius: 20px;
+          border: 0; }
         .bottom-banner .banner-calculate .content-information .claims-buttons button:last-child {
           color: #f5f5f5;
           background: transparent;
           border: 1px solid #ffffff;
-          border-radius: 20px; }
+          border-radius: 20px;
+          border: 0; }
 
 .boiler {
   width: 100%; }
@@ -10757,7 +10772,8 @@ ul a:hover {
     .contact .custom-section .custom-section__content .button {
       width: 200px;
       height: 50px;
-      margin-top: 38px; }
+      margin-top: 38px;
+      border: 0; }
 
 .contact .custom-section__input,
 .contact .custom-section__textarea {
@@ -10802,6 +10818,7 @@ ul a:hover {
       padding-top: 10px;
       padding-left: 20px; }
     .client-question__content .button {
+      border: 0;
       float: right;
       margin-top: 10px; }
 
@@ -10880,7 +10897,8 @@ ul a:hover {
     font-size: 15px;
     margin-bottom: 15px; }
   .thank-you .button {
-    margin-top: 10px; }
+    margin-top: 10px;
+    border: 0; }
 
 .validation-calculator {
   position: fixed;
@@ -11000,4 +11018,5 @@ ul a:hover {
       font-weight: 700;
       align-items: center;
       justify-content: center;
-      display: flex; }
+      display: flex;
+      border: 0; }
