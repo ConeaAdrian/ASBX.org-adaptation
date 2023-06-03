@@ -9373,6 +9373,9 @@ article {
       border-bottom: 32px solid transparent;
       border-left: 45px solid #ff4043; } }
 
+.bred-core .search-principal .container {
+  padding: 0; }
+
 .information h2 {
   color: #264470; }
 
