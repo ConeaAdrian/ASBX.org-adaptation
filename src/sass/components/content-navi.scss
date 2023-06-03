@@ -74,17 +74,19 @@
       }
     }
   }
-  form {
+  .navi-form {
     background-color: transparent;
     justify-content: flex-start;
     gap: 20px;
     padding-left: 0;
+    display: flex;
     @media (max-width: 992px) {
       max-width: 100%;
     }
 
     .second-wrapper {
       margin: 0;
+      width: 100%;
 
       label {
         margin-right: 10px;
@@ -96,12 +98,14 @@
         font-size: 16px;
         border-radius: 3px;
         background: transparent;
+        width: 100%;
       }
     }
 
     .button {
-      background: #253974 !important;
+      background: #ff4043;
       margin-top: 22px;
+      width: 160px;
     }
   }
 }
