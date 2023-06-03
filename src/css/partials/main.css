@@ -10174,12 +10174,6 @@ article {
   margin-right: 5px;
   color: #787878; }
 
-.job-site .dropdown-container {
-  display: flex; }
-
-.job-site .dropdown {
-  margin-right: 10px; }
-
 .job-site label {
   display: block;
   font-weight: bold; }
@@ -10231,22 +10225,6 @@ article {
         font-weight: 700;
         margin: 0;
         margin-left: 5px; }
-  .job-site__box .content .dropdown-container {
-    flex-wrap: wrap;
-    height: auto; }
-    .job-site__box .content .dropdown-container .dropdown {
-      margin-right: 2rem; }
-      .job-site__box .content .dropdown-container .dropdown label {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 160%;
-        color: #052a44; }
-      .job-site__box .content .dropdown-container .dropdown .chase {
-        background: #f9f9f9;
-        border: 1px solid #f3f3f3;
-        height: 30px;
-        width: 150px;
-        color: #7e7d7d; }
   .job-site__box .button-open {
     display: flex;
     cursor: pointer;
@@ -10307,7 +10285,7 @@ article {
   .job-site .job-site__box .button-add.active .button-add__element {
     background: red; }
 
-.job-site .popup-claim {
+.popup-claim {
   position: fixed;
   top: 0;
   left: 0;
@@ -10316,84 +10294,97 @@ article {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999;
   display: none; }
-
-.job-site .popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 10px; }
-  .job-site .popup-content h2 {
-    font-size: 28px;
-    color: #324a74;
-    margin-bottom: 5rem; }
-  .job-site .popup-content .select-button-option {
-    justify-content: center;
+  .popup-claim .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px; }
+    .popup-claim .popup-content h2 {
+      font-size: 28px;
+      color: #324a74;
+      margin-bottom: 5rem; }
+    .popup-claim .popup-content .select-button-option {
+      justify-content: center;
+      display: flex;
+      margin-top: 4rem;
+      gap: 20px; }
+      .popup-claim .popup-content .select-button-option .button-container {
+        position: relative; }
+        .popup-claim .popup-content .select-button-option .button-container .close-button-alt {
+          position: absolute; }
+  .popup-claim .popup-content .button-container {
     display: flex;
-    margin-top: 4rem;
-    gap: 20px; }
-    .job-site .popup-content .select-button-option .button-container {
-      position: relative; }
-      .job-site .popup-content .select-button-option .button-container .close-button-alt {
-        position: absolute; }
-
-.job-site .popup-content .button-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.job-site .close-button {
-  background-color: #ff4043;
-  color: #fff;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  width: 100px;
-  height: auto; }
-
-.job-site .close-button-alt {
-  width: 100%;
-  max-width: 220px;
-  height: 38px;
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer; }
-
-.job-site .button-add {
-  display: flex;
-  cursor: pointer;
-  background: #acacac;
-  border: 1px solid #324a74;
-  border-radius: 20px;
-  height: 50px;
-  border-radius: 10px; }
-  .job-site .button-add p {
-    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: center; }
+  .popup-claim .close-button {
+    background-color: #ff4043;
+    color: #fff;
+    border-radius: 10px;
     font-size: 16px;
-    margin-top: 10px;
-    width: 120px;
-    color: white; }
-
-.job-site .button-add__element {
-  width: 33px;
-  height: 33px;
-  background: #ff4043;
-  border-radius: 4px;
-  margin-right: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.job-site .button-add__element i {
-  color: #fff; }
-
-.job-site .popup-claim.error .button-add__element {
-  background-color: #ff4043; }
-
-.job-site .popup-claim.error .close-button {
-  background-color: #ff4043; }
+    cursor: pointer;
+    width: 100px;
+    height: auto; }
+  .popup-claim .close-button-alt {
+    width: 100%;
+    max-width: 220px;
+    height: 38px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer; }
+  .popup-claim .button-add {
+    display: flex;
+    cursor: pointer;
+    background: #acacac;
+    border: 1px solid #324a74;
+    border-radius: 20px;
+    height: 50px;
+    border-radius: 10px; }
+    .popup-claim .button-add p {
+      margin-bottom: 0;
+      font-size: 16px;
+      margin-top: 10px;
+      width: 120px;
+      color: white; }
+  .popup-claim .button-add__element {
+    width: 33px;
+    height: 33px;
+    background: #ff4043;
+    border-radius: 4px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .popup-claim .button-add__element i {
+    color: #fff; }
+  .popup-claim .popup-claim.error .button-add__element {
+    background-color: #ff4043; }
+  .popup-claim .popup-claim.error .close-button {
+    background-color: #ff4043; }
+  .popup-claim .dropdown-container {
+    flex-wrap: wrap;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between; }
+    .popup-claim .dropdown-container .dropdown {
+      margin-right: 2rem;
+      flex: 1 0 150px; }
+      .popup-claim .dropdown-container .dropdown label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #052a44; }
+      .popup-claim .dropdown-container .dropdown .chase {
+        background: #f9f9f9;
+        border: 1px solid #f3f3f3;
+        height: 30px;
+        width: 150px;
+        color: #7e7d7d;
+        width: 100%; }
 
 .search-navi .bar {
   width: 105px;
