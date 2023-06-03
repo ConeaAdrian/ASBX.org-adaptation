@@ -341,9 +341,22 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
+  .job-width {
+    @media (max-width: 1150px) {
+      width: 96% !important;
+    flex: none !important;
+    }
+    @media (max-width: 767px) {
+      width: 93% !important;
+    }
+  }
   .dropdown {
     margin-right: 2rem;
     flex: 1 0 150px;
+
+    .dropdown:first-child {
+      width: 100% !important; /* Anulăm lățimea de 100% pentru primul element label */
+    }
 
     label {
       font-weight: 400;
@@ -352,7 +365,7 @@
       color: #052a44;
     }
     .chase {
-      background: #f9f9f9;
+      background: #ffffff;
       border: 1px solid #f3f3f3;
       height: 30px;
       width: 150px;

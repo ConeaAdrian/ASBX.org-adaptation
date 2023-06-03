@@ -10326,16 +10326,26 @@ article {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between; }
+    @media (max-width: 1150px) {
+      .popup-claim .dropdown-container .job-width {
+        width: 96% !important;
+        flex: none !important; } }
+    @media (max-width: 767px) {
+      .popup-claim .dropdown-container .job-width {
+        width: 93% !important; } }
     .popup-claim .dropdown-container .dropdown {
       margin-right: 2rem;
       flex: 1 0 150px; }
+      .popup-claim .dropdown-container .dropdown .dropdown:first-child {
+        width: 100% !important;
+        /* Anulăm lățimea de 100% pentru primul element label */ }
       .popup-claim .dropdown-container .dropdown label {
         font-weight: 400;
         font-size: 16px;
         line-height: 160%;
         color: #052a44; }
       .popup-claim .dropdown-container .dropdown .chase {
-        background: #f9f9f9;
+        background: #ffffff;
         border: 1px solid #f3f3f3;
         height: 30px;
         width: 150px;
