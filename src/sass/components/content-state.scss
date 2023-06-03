@@ -1,6 +1,4 @@
 .content-state {
-  $column-count: 3;
-  $column-gap: 20px;
 
   h1 {
     font-weight: 400;
@@ -27,7 +25,7 @@
     li {
       display: flex;
       align-items: center;
-      width: calc(100% / #{$column-count});
+      width: calc(100% / 3);
       cursor: pointer;
       font-weight: 400;
       font-size: 14px;
@@ -42,7 +40,7 @@
       $column-count: 1;
 
       li {
-        width: 33%;
+        width: calc(100% / 2);
       }
     }
   }
