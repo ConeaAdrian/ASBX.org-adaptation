@@ -367,20 +367,7 @@ a {
   text-decoration: underline;
 }
 
-ul {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-left: 40px;
-  color: #264470;
-  font-size: 18px;
-  line-height: 24px;
-}
 
-ol {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-left: 40px;
-}
 
 img {
   display: inline-block;
@@ -4885,17 +4872,7 @@ figcaption {
     line-height: 24px;
   }
 
-  ul {
-    padding-left: 20px;
-    font-size: 16px;
-    line-height: 24px;
-  }
 
-  ol {
-    padding-left: 20px;
-    font-size: 18px;
-    line-height: 26px;
-  }
 
   blockquote {
     width: 100%;
@@ -7189,12 +7166,7 @@ figcaption {
   margin-top: 5px;
   text-align: center;
 }
-ul,
-ol {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-left: 40px;
-}
+
 .w-list-unstyled {
   padding-left: 0;
   list-style: none;

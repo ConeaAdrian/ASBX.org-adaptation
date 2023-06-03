@@ -2094,19 +2094,6 @@ a {
   color: #000;
   text-decoration: underline; }
 
-ul {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-left: 40px;
-  color: #264470;
-  font-size: 18px;
-  line-height: 24px; }
-
-ol {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-left: 40px; }
-
 img {
   display: inline-block;
   max-width: 100%; }
@@ -5546,14 +5533,6 @@ figcaption {
   p {
     font-size: 16px;
     line-height: 24px; }
-  ul {
-    padding-left: 20px;
-    font-size: 16px;
-    line-height: 24px; }
-  ol {
-    padding-left: 20px;
-    font-size: 18px;
-    line-height: 26px; }
   blockquote {
     width: 100%;
     padding: 25px;
@@ -7416,12 +7395,6 @@ figure {
 figcaption {
   margin-top: 5px;
   text-align: center; }
-
-ul,
-ol {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-left: 40px; }
 
 .w-list-unstyled {
   padding-left: 0;
@@ -9647,7 +9620,6 @@ article {
     border: 0.5px solid #ddd7d7; }
     .general-claims .job-select .jobs {
       width: 100%;
-      height: 44px;
       background: #324a74; }
       .general-claims .job-select .jobs p {
         color: white;
@@ -9894,7 +9866,7 @@ article {
 .box {
   position: relative;
   height: 92px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 45px -19px rgba(52, 54, 99, 0.11);
   border-radius: 15px;
@@ -9918,7 +9890,7 @@ article {
   grid-column: 1 / -1;
   font-weight: 700;
   font-size: 16px;
-  color: #A29F9F; }
+  color: #a29f9f; }
 
 .arrow {
   position: absolute;
@@ -9926,7 +9898,7 @@ article {
   bottom: 20px; }
 
 .box:hover {
-  background: linear-gradient(90.09deg, #031F3C 0.71%, #0C467B 99.92%);
+  background: linear-gradient(90.09deg, #031f3c 0.71%, #0c467b 99.92%);
   box-shadow: 0px 1px 45px -19px rgba(52, 54, 99, 0.11);
   border-radius: 15px;
   color: white !important; }
@@ -9941,33 +9913,45 @@ article {
   justify-content: center;
   margin-top: 5rem; }
   .page-navigation .page-button {
-    background: #FFFFFF;
-    border: 1px solid #EDEDED;
+    background: #ffffff;
+    border: 1px solid #ededed;
     border-radius: 8px;
     padding: 8px 16px;
     margin: 0 4px;
     cursor: pointer;
     transition: background-color 0.3s ease; }
+    @media (max-width: 475px) {
+      .page-navigation .page-button {
+        border-radius: 8px;
+        padding: 8px 12px;
+        margin: 0 3px; } }
   .page-navigation .page-button.active {
-    background: #FF4043;
-    color: #FFFFFF; }
+    background: #ff4043;
+    color: #ffffff; }
   .page-navigation .arrow-left {
     transform: rotate(180deg); }
   .page-navigation .page-button:hover {
-    background: #FF4043;
-    color: #FFFFFF; }
+    background: #ff4043;
+    color: #ffffff; }
   .page-navigation .tuning-fork {
     padding: 8px 16px; }
   .page-navigation .pagination__list {
     display: flex;
     align-items: center; }
-  .page-navigation .pagination__list__next, .page-navigation .pagination__list__prev {
-    background: #FFFFFF;
-    border: 1px solid #EDEDED;
+  .page-navigation .pagination__list__next,
+  .page-navigation .pagination__list__prev {
+    background: #ffffff;
+    border: 1px solid #ededed;
     border-radius: 8px;
     padding: 12px 16px;
     margin: 0 4px;
     cursor: pointer; }
+    @media (max-width: 475px) {
+      .page-navigation .pagination__list__next,
+      .page-navigation .pagination__list__prev {
+        border-radius: 8px;
+        padding: 10px 12px;
+        margin: 0 1px; } }
 
 .content-state h1 {
   margin-bottom: 4rem; }
@@ -10993,10 +10977,16 @@ ul a:hover {
     padding: 2rem; }
     .compensation-amounts__data .data-mesothelioma h4 {
       color: #ff4043; }
+    .compensation-amounts__data .data-mesothelioma p {
+      font-size: 16px;
+      margin-bottom: 2px; }
     .compensation-amounts__data .data-lung-cancer {
       margin-top: 2rem; }
       .compensation-amounts__data .data-lung-cancer h4 {
         color: #ff4043; }
+      .compensation-amounts__data .data-lung-cancer p {
+        font-size: 16px;
+        margin-bottom: 2px; }
   .compensation-amounts .explication {
     margin-top: 3rem; }
     .compensation-amounts .explication__grade {
@@ -11015,6 +11005,9 @@ ul a:hover {
     padding: 15px;
     width: 60%;
     margin-top: 3rem; }
+    @media (max-width: 992px) {
+      .compensation-amounts .information {
+        width: 100%; } }
     .compensation-amounts .information p {
       color: #fdfdfd;
       font-weight: 300;
@@ -11025,10 +11018,13 @@ ul a:hover {
       position: absolute;
       background: #ff4043;
       border-radius: 20px;
-      top: -10px;
+      top: -12px;
       width: 86px;
       height: 24px;
       color: #fdfdfd;
       font-size: 14px;
       text-align: center;
-      font-weight: 700; }
+      font-weight: 700;
+      align-items: center;
+      justify-content: center;
+      display: flex; }

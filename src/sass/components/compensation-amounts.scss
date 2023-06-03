@@ -15,11 +15,19 @@
       h4 {
         color: #ff4043;
       }
+      p {
+        font-size: 16px;
+        margin-bottom: 2px;
+      }
     }
     .data-lung-cancer {
       margin-top: 2rem;
       h4 {
         color: #ff4043;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 2px;
       }
     }
   }
@@ -45,6 +53,9 @@
     padding: 15px;
     width: 60%;
     margin-top: 3rem;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
 
     p {
       color: #fdfdfd;
@@ -58,13 +69,16 @@
       position: absolute;
       background: #ff4043;
       border-radius: 20px;
-      top: -10px;
+      top: -12px;
       width: 86px;
       height: 24px;
       color: #fdfdfd;
       font-size: 14px;
       text-align: center;
       font-weight: 700;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
   }
 }
