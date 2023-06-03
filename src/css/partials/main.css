@@ -9708,7 +9708,8 @@ article {
         font-size: 16px;
         border-radius: 3px;
         background: transparent;
-        width: 100%; }
+        width: 100%;
+        background-color: white; }
     .claims-economy .navi-form .button {
       background: #ff4043;
       margin-top: 22px;
