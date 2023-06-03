@@ -1903,11 +1903,6 @@ img {
           color: #fff; }
         .hero-text-block form .header-wraper .select-wrapper .option {
           color: #fff; }
-    .hero-text-block form .search-asbestos {
-      display: flex;
-      width: 100%; }
-      .hero-text-block form .search-asbestos label {
-        color: white; }
     .hero-text-block form .button {
       margin: 0; }
       @media (max-width: 475px) {
@@ -5649,8 +5644,6 @@ figcaption {
   .checklist-item {
     padding-top: 15px;
     padding-bottom: 15px; }
-  .button {
-    margin-top: 20px; }
   .button.header-cta-link {
     margin-top: 12px;
     font-size: 13px; }
@@ -9291,50 +9284,94 @@ article {
     line-height: 18px;
     color: #000000;
     width: 285px; }
-  .background form {
+
+.search-asbestos {
+  display: flex;
+  align-items: center;
+  background: #a6c3e4; }
+  @media (max-width: 640px) {
+    .search-asbestos {
+      height: 65px; } }
+  .search-asbestos__text {
+    background: #ff4043;
+    height: 85px; }
+    .search-asbestos__text h4 {
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+      justify-content: center;
+      margin-top: 2rem;
+      line-height: 2.5rem; }
+      @media (max-width: 640px) {
+        .search-asbestos__text h4 {
+          margin-top: 1rem; } }
+  .search-asbestos .search-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    width: 100%;
+    height: 85px;
     align-items: center;
-    margin: 0 auto;
-    padding: 25px;
-    background-color: #264470;
-    gap: 20px; }
-    @media (max-width: 992px) {
-      .background form {
-        flex-direction: column; } }
-    .background form .header-wraper {
-      display: flex;
-      gap: 20px; }
-      @media (max-width: 600px) {
-        .background form .header-wraper {
-          flex-direction: column; } }
-      .background form .header-wraper .select-wrapper {
-        align-items: center;
-        margin-right: 20px; }
-        .background form .header-wraper .select-wrapper label {
-          margin-right: 10px;
-          font-weight: bold;
-          color: #fff; }
-        .background form .header-wraper .select-wrapper select {
-          padding: 8px 10px;
-          font-size: 16px;
-          border-radius: 3px;
-          background: transparent;
-          color: #fff; }
-        .background form .header-wraper .select-wrapper .option {
-          color: #fff; }
-    .background form .search-asbestos {
-      display: flex;
-      width: 100%; }
-      .background form .search-asbestos label {
-        color: white; }
-    .background form .button {
-      margin: 0; }
-      @media (max-width: 475px) {
-        .background form .button {
-          width: 100%;
-          margin-top: 15px; } }
+    padding: 20px; }
+  .search-asbestos .input-wrapper {
+    position: relative;
+    width: 100%; }
+  .search-asbestos .input-wrapper i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    /* Schimbă culoarea după nevoie */ }
+  .search-asbestos input {
+    padding-left: 5rem; }
+  .search-asbestos input::placeholder {
+    padding-left: 2rem; }
+
+.search-asbestos__text {
+  background: #ff4043;
+  height: 85px;
+  position: relative;
+  margin-right: 7rem; }
+  @media (max-width: 640px) {
+    .search-asbestos__text {
+      height: 65px;
+      margin-right: 3rem; } }
+  @media (max-width: 520px) {
+    .search-asbestos__text {
+      display: none; } }
+  .search-asbestos__text h4 {
+    font-size: 12px !important; }
+
+@media (max-width: 520px) {
+  .search-principal .container {
+    padding: 0; } }
+
+.search-asbestos__text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -72px;
+  transform: translateY(-50%);
+  width: -11px;
+  height: 100%;
+  border-top: 40px solid transparent;
+  border-bottom: 44px solid transparent;
+  border-left: 72px solid #ff4043; }
+  @media (max-width: 640px) {
+    .search-asbestos__text::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -45px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: -11px;
+      height: 100%;
+      border-top: 32px solid transparent;
+      border-bottom: 32px solid transparent;
+      border-left: 45px solid #ff4043; } }
 
 .information h2 {
   color: #264470; }
@@ -9994,7 +10031,8 @@ article {
   margin-top: 20px;
   align-items: center;
   text-align: center;
-  gap: 3rem; }
+  gap: 3rem;
+  flex-wrap: wrap; }
   .state-search .categories h4 {
     font-weight: 400;
     font-size: 16px;
@@ -10895,44 +10933,6 @@ ul a:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999; }
-
-.top-search {
-  background-color: #ff4043;
-  height: 65px;
-  display: flex;
-  justify-content: space-between;
-  display: flex;
-  align-items: center; }
-  .top-search .container {
-    padding: 0 20px; }
-  .top-search .asbestos-problem {
-    width: 30%;
-    height: 100%;
-    background-color: #15528e; }
-  .top-search label {
-    transform: translateY(6px);
-    margin-right: 1rem;
-    color: white;
-    text-decoration: none;
-    border: none; }
-  .top-search__content {
-    display: flex; }
-    .top-search__content .individual {
-      display: flex;
-      height: 34px;
-      margin-right: 3rem; }
-      .top-search__content .individual #diagnosed-with {
-        width: 160px; }
-      .top-search__content .individual #worked-in {
-        width: 237px; }
-  .top-search h2 {
-    padding: 0;
-    margin: 0;
-    width: 240px;
-    font-weight: 700;
-    font-size: 20px;
-    color: white;
-    line-height: 23px; }
 
 .detiles-content .check-element {
   flex-direction: column !important; }
