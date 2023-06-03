@@ -45,31 +45,6 @@
       }
     }
   }
-  .search-filter {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2.5rem;
-
-    p {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-      color: #515151;
-      margin-bottom: 0;
-      margin-right: 10px;
-      width: 250px;
-    }
-  }
-
-  .search-filter a {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    margin-right: 5px;
-    color: #787878;
-  }
 
   label {
     display: block;
@@ -165,6 +140,31 @@
       }
     }
   }
+}
+.search-filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #515151;
+    margin-bottom: 0;
+    margin-right: 10px;
+    width: 250px;
+  }
+}
+
+.search-filter a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-right: 5px;
+  color: #787878;
 }
 .search-input {
   position: relative;

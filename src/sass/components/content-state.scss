@@ -1,39 +1,49 @@
 .content-state {
-    $column-count: 3;
-    $column-gap: 20px;
+  $column-count: 3;
+  $column-gap: 20px;
 
-    h1 {
-        margin-bottom: 4rem;
+  h1 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .documentation-data {
+    margin-bottom: 5rem;
+    p {
+      font-weight: 300;
+      font-size: 16px;
     }
+  }
 
-.city-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-
-  li {
+  .city-list {
     display: flex;
-    align-items: center;
-    width: calc(100% / #{$column-count});
-    padding-left: 20px;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  li:before {
-    content: "●";
-    margin-right: 10px;
-  }
-  
-  @media (max-width: 600px) {
-    $column-count: 1;
-  
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 5rem;
+
     li {
-      width: 100%;
+      display: flex;
+      align-items: center;
+      width: calc(100% / #{$column-count});
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    li:before {
+      content: "●";
+      margin-right: 10px;
+    }
+
+    @media (max-width: 600px) {
+      $column-count: 1;
+
+      li {
+        width: 100%;
+      }
     }
   }
-}
-
 }
