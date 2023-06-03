@@ -9760,13 +9760,16 @@ article {
     justify-content: flex-start;
     gap: 20px;
     padding-left: 0;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; }
     @media (max-width: 992px) {
       .claims-economy .navi-form {
         max-width: 100%; } }
     .claims-economy .navi-form .second-wrapper {
       margin: 0;
-      width: 100%; }
+      width: 100%;
+      flex: 1 0 150px; }
       .claims-economy .navi-form .second-wrapper label {
         margin-right: 10px;
         font-weight: bold; }
@@ -9779,7 +9782,7 @@ article {
     .claims-economy .navi-form .button {
       background: #ff4043;
       margin-top: 22px;
-      width: 160px; }
+      flex: 1 0 40px; }
 
 .navi-equipment {
   display: flex;
