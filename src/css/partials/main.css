@@ -1712,7 +1712,7 @@ img {
   cursor: pointer;
   border: none; }
   .button-blue:hover {
-    background: #324A74;
+    background: #15528E;
     box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16), inset 0 -2px 0 0 rgba(0, 0, 0, 0.11);
     filter: brightness(105%);
     border: none !important; }
@@ -9536,7 +9536,7 @@ article {
     border: 0.5px solid #ddd7d7; }
     .general-claims .job-select .jobs {
       width: 100%;
-      background: #324a74; }
+      background: #15528E; }
       .general-claims .job-select .jobs p {
         color: white;
         font-weight: 700;
@@ -10990,7 +10990,7 @@ ul a:hover {
         font-size: 18px; }
   .compensation-amounts .information {
     position: relative;
-    background: #324a74;
+    background: #15528E;
     border-radius: 6px;
     height: auto;
     padding: 15px;
