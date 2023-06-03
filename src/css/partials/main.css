@@ -10269,7 +10269,10 @@ article {
     font-size: 16px;
     cursor: pointer;
     width: 100px;
-    height: auto; }
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center; }
   .popup-claim .close-button-alt {
     width: 100%;
     max-width: 220px;
