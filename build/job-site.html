@@ -251,61 +251,62 @@
           <h4>Available Asbestos Trust Funds:</h4>
           <p>10</p>
         </div>
-        <button class="button-open">
+        <button class="button-open" onclick="add_claim(this)">
           <div class="button-open__section"><i class="fas fa-plus"></i></div>
           <p>Add to Your Claims</p>
         </button>
       </div>
     </div>
-  </div>
-  <div class="popup-claim">
-    <div class="popup-content">
-      <form action="">
-        <h2>Newport News Shipbuilding & Drydock Company</h2>
-        <div class="dropdown-container">
-          <div class="dropdown">
-            <label for="job">Select Job:</label>
-            <select class="chase" id="job" required>
-              <option value="" disabled selected>Select job</option>
-              <option value="job1">Job 1</option>
-              <option value="job2">Job 2</option>
-              <option value="job3">Job 3</option>
-              <!-- Alte opțiuni... -->
-            </select>
+    <div class="popup-claim" id="popup-claim">
+      <div class="popup-content">
+        <form action="">
+          <h2>Newport News Shipbuilding & Drydock Company</h2>
+          <div class="dropdown-container">
+            <div class="dropdown">
+              <label for="job">Select Job:</label>
+              <select class="chase" id="job" required>
+                <option value="" disabled selected>Select job</option>
+                <option value="job1">Job 1</option>
+                <option value="job2">Job 2</option>
+                <option value="job3">Job 3</option>
+                <!-- Alte opțiuni... -->
+              </select>
+            </div>
+            <div class="dropdown">
+              <label for="start">Start:</label>
+              <select class="chase" id="start" required>
+                <option value="" disabled selected>Select start</option>
+                <option value="start1">Start 1</option>
+                <option value="start2">Start 2</option>
+                <option value="start3">Start 3</option>
+                <!-- Alte opțiuni... -->
+              </select>
+            </div>
+            <div class="dropdown">
+              <label for="end">End:</label>
+              <select class="chase" id="end" required>
+                <option value="" disabled selected>Select end</option>
+                <option value="end1">End 1</option>
+                <option value="end2">End 2</option>
+                <option value="end3">End 3</option>
+                <!-- Alte opțiuni... -->
+              </select>
+            </div>
           </div>
-          <div class="dropdown">
-            <label for="start">Start:</label>
-            <select class="chase" id="start" required>
-              <option value="" disabled selected>Select start</option>
-              <option value="start1">Start 1</option>
-              <option value="start2">Start 2</option>
-              <option value="start3">Start 3</option>
-              <!-- Alte opțiuni... -->
-            </select>
+          <div class="select-button-option">
+            <button class="close-button">Close</button>
+            <div class="button-container">
+              <button class="button-add popup-button" disabled>
+                <p>Add Claims</p>
+                <button class="close-button-alt"></button>
+              </button>
+            </div>
           </div>
-          <div class="dropdown">
-            <label for="end">End:</label>
-            <select class="chase" id="end" required>
-              <option value="" disabled selected>Select end</option>
-              <option value="end1">End 1</option>
-              <option value="end2">End 2</option>
-              <option value="end3">End 3</option>
-              <!-- Alte opțiuni... -->
-            </select>
-          </div>
-        </div>
-        <div class="select-button-option">
-          <button class="close-button">Close</button>
-          <div class="button-container">
-            <button class="button-add popup-button" disabled>
-              <p>Add Claims</p>
-              <button class="close-button-alt"></button>
-            </button>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
+
   <div class="page-navigation">
     <ul class="pagination__list">
       <li>
@@ -381,7 +382,7 @@
     </div>
   </div>
 
-  <div class="popup-claim">
+  <div class="popup-claim" id="popup-claim">
     <div class="popup-content">
       <form action="">
         <h2>Newport News Shipbuilding & Drydock Company</h2>
@@ -428,7 +429,6 @@
         </div>
       </form>
     </div>
-  </div>
   <div class="page-navigation">
     <ul class="pagination__list">
       <li>
@@ -460,6 +460,7 @@
       </li>
     </ul>
   </div>
+</div>
   <div class="claims-select-mobile"><div class="general-claims">
   <img class="badge" src="../../img/navi-logo.png" alt="" />
   <div class="claims-selected">
