@@ -78,10 +78,6 @@
   input {
     padding-left: 5rem;
 }
-
-input::placeholder {
-    padding-left: 2rem;
-}
 }
 .search-asbestos__text {
   background: #ff4043;
@@ -97,7 +93,10 @@ input::placeholder {
     display: none;
   }
   h4 {
-    font-size: 12px !important;
+    font-size: 16px !important;
+    @media (max-width: 520px) {
+      font-size: 12px !important;
+    }
   }
 }
 .search-principal {
