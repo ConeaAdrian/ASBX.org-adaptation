@@ -9901,7 +9901,7 @@ article {
     margin-right: 10px; }
   @media (max-width: 600px) {
     .content-state .city-list li {
-      width: 100%; } }
+      width: 33%; } }
 
 .state-search h1 {
   text-align: center; }
