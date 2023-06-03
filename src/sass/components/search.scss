@@ -1366,9 +1366,7 @@ figcaption {
   transform: translate(0px, -50%);
 }
 
-.logo-image {
-  width: 100%;
-}
+
 
 .organization-content-block {
   position: relative;
@@ -2092,20 +2090,7 @@ figcaption {
   color: #45164b;
 }
 
-.logo {
-  height: 25px;
-  margin-top: 0px;
-}
 
-.logo.footer-version {
-  position: absolute;
-  left: auto;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
-  margin-top: 0px;
-  opacity: 0.2;
-}
 
 .bottom-footer-link {
   color: #b98bbe;
@@ -3638,10 +3623,6 @@ figcaption {
     width: 90%;
   }
 
-  .logo {
-    height: 20px;
-    margin-top: 0px;
-  }
 
   .contact-person-column-right {
     padding-bottom: 50px;
@@ -3845,9 +3826,7 @@ figcaption {
     color: #000;
   }
 
-  .logo-2 {
-    height: 24px;
-  }
+ 
 
   .nav-link-2 {
     margin-left: 20px;
@@ -4420,18 +4399,8 @@ figcaption {
     padding: 0px 30px 10px;
   }
 
-  .logo {
-    height: 22px;
-    margin-top: 16px;
-    margin-left: 5px;
-  }
 
-  .logo.footer-version {
-    position: static;
-    display: block;
-    margin-top: 30px;
-    margin-left: 30px;
-  }
+
 
   .style-block {
     padding: 30px;
@@ -4795,11 +4764,7 @@ figcaption {
     display: none;
   }
 
-  .logo-2 {
-    height: 22px;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
+
 
   .menu-button-2 {
     z-index: 9999;
@@ -5382,15 +5347,6 @@ figcaption {
     right: 20px;
   }
 
-  .logo {
-    height: 22px;
-    margin-top: 15px;
-    margin-left: 10px;
-  }
-
-  .logo.footer-version {
-    height: 20px;
-  }
 
   ._404-subtitle {
     font-size: 16px;
@@ -5766,11 +5722,7 @@ figcaption {
     text-transform: uppercase;
   }
 
-  .logo-2 {
-    height: 22px;
-    margin-top: 22px;
-    margin-left: 10px;
-  }
+
 
   .menu-button-2 {
     width: 55px;
@@ -8142,11 +8094,6 @@ textarea.w-select {
 .w-dropdown-link:focus {
   outline: 0;
 }
-@media screen and (max-width: 767px) {
-  .w-nav-brand {
-    padding-left: 10px;
-  }
-}
 /**
    * ## Note
    * Safari (on both iOS and OS X) does not handle viewport units (vh, vw) well.
@@ -8608,12 +8555,6 @@ textarea.w-select {
 .w-nav:after {
   clear: both;
 }
-.w-nav-brand {
-  position: relative;
-  float: left;
-  text-decoration: none;
-  color: #333333;
-}
 .w-nav-link {
   position: relative;
   display: inline-block;
@@ -8727,9 +8668,6 @@ textarea.w-select {
   }
   .w-nav[data-collapse="small"] .w-nav-button {
     display: block;
-  }
-  .w-nav-brand {
-    padding-left: 10px;
   }
 }
 @media screen and (max-width: 479px) {

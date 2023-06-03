@@ -32,14 +32,18 @@
     max-width: 360px;
     margin-top: 3rem;
     &__data {
+      gap: 2rem;
       display: flex;
       justify-content: space-between;
-
+      p {
+        width: 120px;
+      }
       a {
         font-weight: 700;
         font-size: 16px;
         line-height: 18px;
         color: #000000;
+        width: 180px;
       }
     }
   }

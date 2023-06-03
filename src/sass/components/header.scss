@@ -13,7 +13,6 @@ $link-hover-color: #ff4043;
   justify-content: space-between;
   display: flex;
   width: 100%; /* Modificare: lățimea completă */
-  padding: 0 20px; /* Modificare: adăugarea spațiului în jurul conținutului */
 }
 
 // Logo and branding
@@ -95,7 +94,19 @@ nav {
     }
   }
 }
-
+.nav-list {
+    @media (max-width: 992px) {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: 10;
+      padding: 5rem;
+      padding-top: 10rem !important;
+    }
+}
 // Dropdown list binds to JS toggle event
 .nav-dropdown {
   position: absolute;
@@ -119,6 +130,7 @@ nav {
   background: $nav-background;
   height: $nav-height;
   width: $nav-height;
+  z-index: 100;
 
   @media only screen and (max-width: 1100px) and (min-width: 880px) {
     top: 0;
@@ -139,6 +151,7 @@ nav {
         a {
           padding: 15px;
           line-height: 20px;
+          font-size: 24px;
         }
         ul li a {
           padding-left: 30px;
@@ -206,11 +219,15 @@ article {
 .header-bar {
   background-color: #0d487d;
   height: 40px;
+  @media (max-width: 425px) {
+    height: 55px;
+  }
 
   .header-information {
     display: flex !important;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
   }
 
   h3 {
@@ -223,6 +240,7 @@ article {
   }
 
   .contact {
+    width: 140px;
     h4 {
       color: white;
       margin: 0;
@@ -230,6 +248,7 @@ article {
       font-size: 15px;
       line-height: 17px;
       margin-right: 20px;
+      width: 120px;
     }
   }
 
