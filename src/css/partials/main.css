@@ -10254,7 +10254,11 @@ article {
     transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 2rem;
-    border-radius: 10px; }
+    border-radius: 10px;
+    width: 55%; }
+    @media (max-width: 1440px) {
+      .popup-claim .popup-content {
+        width: 70%; } }
     .popup-claim .popup-content h2 {
       font-size: 28px;
       color: #324a74;
@@ -10336,9 +10340,6 @@ article {
     .popup-claim .dropdown-container .dropdown {
       margin-right: 2rem;
       flex: 1 0 150px; }
-      .popup-claim .dropdown-container .dropdown .dropdown:first-child {
-        width: 100% !important;
-        /* Anulăm lățimea de 100% pentru primul element label */ }
       .popup-claim .dropdown-container .dropdown label {
         font-weight: 400;
         font-size: 16px;

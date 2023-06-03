@@ -244,6 +244,10 @@
   background-color: #fff;
   padding: 2rem;
   border-radius: 10px;
+  width: 55%;
+  @media (max-width: 1440px) {
+    width: 70%;
+  }
 
   h2 {
     font-size: 28px;
