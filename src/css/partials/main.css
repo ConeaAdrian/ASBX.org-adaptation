@@ -3885,6 +3885,8 @@ ul a:hover {
     .compensation-amounts__data .data-mesothelioma p {
       font-size: 16px;
       margin-bottom: 2px; }
+    .compensation-amounts__data .data-mesothelioma b {
+      font-size: 16px !important; }
     .compensation-amounts__data .data-lung-cancer {
       margin-top: 2rem; }
       .compensation-amounts__data .data-lung-cancer h4 {
@@ -3892,12 +3894,17 @@ ul a:hover {
       .compensation-amounts__data .data-lung-cancer p {
         font-size: 16px;
         margin-bottom: 2px; }
+      .compensation-amounts__data .data-lung-cancer b {
+        font-size: 16px !important; }
   .compensation-amounts .explication {
     margin-top: 3rem; }
     .compensation-amounts .explication__grade {
       display: flex; }
       .compensation-amounts .explication__grade p {
-        font-size: 13px; }
+        font-size: 13px;
+        margin-bottom: 0px; }
+      .compensation-amounts .explication__grade b {
+        font-size: 13px !important; }
       .compensation-amounts .explication__grade i {
         margin-right: 6px;
         width: 20px;
