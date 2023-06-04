@@ -1271,7 +1271,7 @@ ul {
 
 h1,
 h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   margin-top: 0;
   font-family: Helvetica, Sans-Serif !important; }
 
@@ -1287,10 +1287,11 @@ h6 {
   font-family: Helvetica, Sans-Serif !important; }
 
 p {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  margin-bottom: 2rem;
-  font-family: Helvetica, Sans-Serif !important; }
+  font-family: Helvetica, Sans-Serif !important;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3c3535; }
   @media (max-width: 767px) {
     p {
       font-size: 1.4rem;
@@ -1326,7 +1327,7 @@ label {
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: 500;
   font-family: Helvetica, Sans-Serif !important;
   font-size: 18px !important; }
 
@@ -1895,7 +1896,7 @@ nav {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 45px;
   right: 20px;
   background: #ffffff;
   height: 60px;
@@ -1903,7 +1904,7 @@ nav {
   z-index: 100; }
   @media (max-width: 425px) {
     .nav-mobile {
-      top: 75px; } }
+      top: 60px; } }
 
 @media only screen and (max-width: 992px) {
   .nav-mobile {
@@ -1965,6 +1966,9 @@ article {
   margin: 0 auto;
   padding: 10px; }
 
+.header-section {
+  margin-bottom: 1rem; }
+
 .header-bar {
   background-color: #0d487d;
   height: 40px; }
@@ -1978,19 +1982,22 @@ article {
     align-items: center;
     justify-content: space-between;
     gap: 2rem; }
-  .header-bar h3 {
+  .header-bar p {
     color: white;
     margin: 0;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 14px;
     line-height: 18px;
     margin-left: 10px; }
+  .header-bar .call-number {
+    font-weight: 600;
+    font-size: 14px; }
   .header-bar .contact {
     width: 140px; }
     .header-bar .contact h4 {
       color: white;
       margin: 0;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 15px;
       line-height: 17px;
       margin-right: 20px;
@@ -2001,7 +2008,8 @@ article {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 20px; }
+  padding: 0 20px;
+  padding-bottom: 3rem; }
   @media only screen and (max-width: 1040px) and (min-width: 992px) {
     .container {
       margin-bottom: 2rem; } }
@@ -2059,13 +2067,14 @@ article {
 .search-asbestos {
   display: flex;
   align-items: center;
-  background: #a6c3e4; }
+  background: #a6c3e4;
+  margin-bottom: 3rem; }
   @media (max-width: 640px) {
     .search-asbestos {
-      height: 65px; } }
+      height: 50px; } }
   .search-asbestos__text {
     background: #ff4043;
-    height: 85px; }
+    height: 50px; }
     .search-asbestos__text h4 {
       font-weight: 700;
       font-size: 16px;
@@ -2073,15 +2082,15 @@ article {
       color: #ffffff;
       text-align: center;
       justify-content: center;
-      margin-top: 2rem;
+      margin-top: 5px;
       line-height: 2.5rem; }
       @media (max-width: 640px) {
         .search-asbestos__text h4 {
-          margin-top: 1rem; } }
+          margin-top: 0rem; } }
   .search-asbestos .search-form {
     display: flex;
     width: 100%;
-    height: 85px;
+    height: 55px;
     align-items: center;
     padding: 20px; }
   .search-asbestos .input-wrapper {
@@ -2099,12 +2108,12 @@ article {
 
 .search-asbestos__text {
   background: #ff4043;
-  height: 85px;
+  height: 55px;
   position: relative;
   margin-right: 7rem; }
   @media (max-width: 640px) {
     .search-asbestos__text {
-      height: 65px;
+      height: 50px;
       margin-right: 3rem; } }
   @media (max-width: 520px) {
     .search-asbestos__text {
@@ -2115,21 +2124,24 @@ article {
       .search-asbestos__text h4 {
         font-size: 12px !important; } }
 
-@media (max-width: 520px) {
-  .search-principal .container {
-    padding: 0; } }
+.search-principal .container {
+  padding-top: 0;
+  padding-bottom: 0; }
+  @media (max-width: 520px) {
+    .search-principal .container {
+      padding: 0; } }
 
 .search-asbestos__text::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: -72px;
+  right: -57px;
   transform: translateY(-50%);
   width: -11px;
   height: 100%;
-  border-top: 40px solid transparent;
-  border-bottom: 44px solid transparent;
-  border-left: 72px solid #ff4043; }
+  border-top: 27px solid transparent;
+  border-bottom: 27px solid transparent;
+  border-left: 57px solid #ff4043; }
   @media (max-width: 640px) {
     .search-asbestos__text::after {
       content: "";
@@ -2141,8 +2153,8 @@ article {
       transform: translateY(-50%);
       width: -11px;
       height: 100%;
-      border-top: 32px solid transparent;
-      border-bottom: 32px solid transparent;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
       border-left: 45px solid #ff4043; } }
 
 .bred-core .search-principal .container {
@@ -2169,7 +2181,7 @@ article {
       color: #264470;
       font-family: "Helvetica";
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 96px;
       line-height: 110px;
       letter-spacing: 0.02em;
@@ -2184,7 +2196,6 @@ article {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #a8a8ab;
     margin-top: 40px;
     max-width: 220px;
     width: 100%; }
@@ -2565,7 +2576,7 @@ article {
     display: flex; }
     .claims-economy__text .context h3 {
       color: #324a74;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 22px;
       line-height: 25px;
       max-width: 550px;
@@ -2639,7 +2650,7 @@ article {
         display: flex;
         width: 230px;
         padding-top: 14px;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 20px; }
     .navi-equipment .equipment-product__element {
       background: #ffffff;
@@ -2704,13 +2715,13 @@ article {
 
 .city {
   grid-column: 1 / -1;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   margin-bottom: 14px; }
 
 .funds {
   grid-column: 1 / -1;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   color: #a29f9f; }
 
@@ -2776,16 +2787,21 @@ article {
         margin: 0 1px; } }
 
 .breadcrumb {
-  margin: 10px 0; }
-  .breadcrumb a {
-    text-decoration: none;
-    color: #555;
-    transition: color 0.3s; }
-    .breadcrumb a:hover {
-      color: #000; }
-  .breadcrumb span {
-    color: #777;
-    margin: 0 5px; }
+  font-size: 13px; }
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+  text-decoration: underline !important; }
+
+.breadcrumb span {
+  color: #000;
+  margin: 0 5px; }
+
+.breadcrumb .last-element {
+  text-decoration: none;
+  color: #FF4043; }
 
 .content-state {
   width: 100%; }
@@ -2984,8 +3000,8 @@ article {
       padding-bottom: 5px; }
   .calculate-value h2 {
     margin-top: 5px;
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 22px;
     color: #ffffff;
     margin-bottom: 10px; }
   .calculate-value .button {
@@ -3038,7 +3054,7 @@ article {
   border-bottom: 1px solid #f0eaea;
   padding-bottom: 20px; }
   .job-site .nearby-city b {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px; }
   .job-site .nearby-city span {
     margin-top: 5px;
@@ -3090,13 +3106,12 @@ article {
       .job-site__box .content .check-element .content-trust h4 {
         font-weight: 400;
         font-size: 18px;
-        line-height: 18px;
-        color: #a8a8ab; }
+        line-height: 18px; }
       .job-site__box .content .check-element .content-trust p {
         font-size: 18px;
         line-height: 18px;
         color: #324a74;
-        font-weight: 700;
+        font-weight: 500;
         margin: 0;
         margin-left: 5px; }
   .job-site__box .button-open {
@@ -3353,7 +3368,11 @@ article {
 
 /* Stiluri generale */
 p {
-  color: #666; }
+  color: #666;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3C3535; }
 
 ul {
   margin-left: 20px; }
@@ -3597,7 +3616,7 @@ ul a:hover {
       margin-top: 11rem;
       padding: 50px 17px; }
       .boiler .card-box__context h2 {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 32px; }
       .boiler .card-box__context p {
         font-weight: 400;
@@ -3612,7 +3631,7 @@ ul a:hover {
         background: rgba(136, 167, 198, 0.56);
         border-radius: 50%; }
         .boiler .card-box__context .box-nomerotation p {
-          font-weight: 700;
+          font-weight: 500;
           font-size: 96px;
           line-height: 110px;
           text-transform: uppercase;
@@ -3838,6 +3857,11 @@ ul a:hover {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999; }
 
+.detiles-content .job-site__box {
+  border: none; }
+  .detiles-content .job-site__box .user-information {
+    width: 100%; }
+
 .detiles-content .check-element {
   flex-direction: column !important; }
 
@@ -3847,10 +3871,9 @@ ul a:hover {
     .detiles-content .user-information {
       width: 100%; } }
   .detiles-content .user-information p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
-    line-height: 18px;
-    color: #a8a8ab; }
+    line-height: 18px; }
 
 .detiles-content ul {
   margin-top: 2rem;
@@ -3859,8 +3882,8 @@ ul a:hover {
     color: 15528E; }
 
 .detiles-content h2 {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 22px;
   line-height: 23px;
   color: #000000; }
 
@@ -3875,7 +3898,7 @@ ul a:hover {
     .detiles-content .companies-trust__data p {
       width: 120px; }
     .detiles-content .companies-trust__data a {
-      font-weight: 700;
+      font-weight: 500;
       font-size: 16px;
       line-height: 18px;
       color: #000000;
@@ -3895,8 +3918,10 @@ ul a:hover {
     height: auto;
     width: 100%;
     padding: 2rem; }
-    .compensation-amounts__data .data-mesothelioma h4 {
-      color: #ff4043; }
+    .compensation-amounts__data .data-mesothelioma__text {
+      color: #15528E;
+      font-weight: 400;
+      font-size: 18px !important; }
     .compensation-amounts__data .data-mesothelioma p {
       font-size: 16px;
       margin-bottom: 2px; }
@@ -3904,17 +3929,20 @@ ul a:hover {
       font-size: 16px !important; }
     .compensation-amounts__data .data-lung-cancer {
       margin-top: 2rem; }
-      .compensation-amounts__data .data-lung-cancer h4 {
-        color: #ff4043; }
+      .compensation-amounts__data .data-lung-cancer__text {
+        color: #15528E;
+        font-weight: 400;
+        font-size: 18px !important; }
       .compensation-amounts__data .data-lung-cancer p {
         font-size: 16px;
         margin-bottom: 2px; }
       .compensation-amounts__data .data-lung-cancer b {
         font-size: 16px !important; }
   .compensation-amounts .explication {
-    margin-top: 3rem; }
+    margin-top: 0.5rem; }
     .compensation-amounts .explication__grade {
-      display: flex; }
+      display: flex;
+      margin-bottom: -5px; }
       .compensation-amounts .explication__grade p {
         font-size: 13px;
         margin-bottom: 0px; }
@@ -3933,8 +3961,8 @@ ul a:hover {
     height: auto;
     padding: 15px;
     width: 60%;
-    margin-top: 3rem;
-    margin-bottom: 3rem; }
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem; }
     @media (max-width: 992px) {
       .compensation-amounts .information {
         width: 100%; } }
@@ -3954,7 +3982,7 @@ ul a:hover {
       color: #fdfdfd;
       font-size: 14px;
       text-align: center;
-      font-weight: 700;
+      font-weight: 500;
       align-items: center;
       justify-content: center;
       display: flex;

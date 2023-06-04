@@ -102,3 +102,79 @@ $(document).ready(function (e) {
     });
   });
 }
+
+
+const itemsPerPage = 10; // Numărul maxim de elemente afișate pe pagină
+const boxes = document.querySelectorAll('.job-site__box');
+const pageButtons = document.querySelectorAll('.page-button');
+const prevButton = document.querySelector('.pagination__list__prev');
+const nextButton = document.querySelector('.pagination__list__next');
+
+let currentPage = 1;
+
+// Funcție pentru afișarea elementelor corespunzătoare paginii curente
+function showItems(page) {
+  const startIndex = (page - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  boxes.forEach((box, index) => {
+    if (index >= startIndex && index < endIndex) {
+      box.classList.add('visible');
+    } else {
+      box.classList.remove('visible');
+    }
+  });
+}
+
+// Funcție pentru actualizarea paginilor și afișarea elementelor corespunzătoare paginii curente
+function updatePagination() {
+  pageButtons.forEach((button) => {
+    button.classList.remove('active');
+  });
+
+  pageButtons[currentPage - 1].classList.add('active');
+  showItems(currentPage);
+}
+
+// Funcție pentru gestionarea acțiunii de apăsare a unui buton de pagină
+function handlePageClick(event) {
+  event.preventDefault();
+
+  const targetPage = parseInt(event.target.textContent);
+
+  if (!isNaN(targetPage)) {
+    currentPage = targetPage;
+    updatePagination();
+  }
+}
+
+// Funcție pentru gestionarea acțiunii de apăsare a butonului "Previous"
+function handlePrevClick(event) {
+  event.preventDefault();
+
+  if (currentPage > 1) {
+    currentPage--;
+    updatePagination();
+  }
+}
+
+// Funcție pentru gestionarea acțiunii de apăsare a butonului "Next"
+function handleNextClick(event) {
+  event.preventDefault();
+
+  if (currentPage < pageButtons.length) {
+    currentPage++;
+    updatePagination();
+  }
+}
+
+// Adăugați evenimentele de click pentru butoanele de paginare
+pageButtons.forEach((button) => {
+  button.addEventListener('click', handlePageClick);
+});
+
+prevButton.addEventListener('click', handlePrevClick);
+nextButton.addEventListener('click', handleNextClick);
+
+// Inițializați paginarea
+updatePagination();

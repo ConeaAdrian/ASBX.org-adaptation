@@ -1,4 +1,11 @@
 .detiles-content {
+  .job-site__box {
+    border: none;
+    .user-information {
+        width: 100%;
+    }
+
+  }
     .check-element {
         flex-direction: column !important;
     }
@@ -8,10 +15,9 @@
         width: 100%;
       }
     p {
-      font-weight: 400;
+      font-weight: 300;
       font-size: 16px;
       line-height: 18px;
-      color: #a8a8ab;
     }
   }
   ul {
@@ -22,8 +28,8 @@
     }
   }
   h2 {
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 22px;
     line-height: 23px;
     color: #000000;
   }
@@ -39,7 +45,7 @@
         width: 120px;
       }
       a {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 16px;
         line-height: 18px;
         color: #000000;

@@ -12,8 +12,10 @@
     padding: 2rem;
 
     .data-mesothelioma {
-      h4 {
-        color: #ff4043;
+      &__text {
+        color: #15528E;
+        font-weight: 400;
+        font-size: 18px !important;
       }
       p {
         font-size: 16px;
@@ -25,8 +27,10 @@
     }
     .data-lung-cancer {
       margin-top: 2rem;
-      h4 {
-        color: #ff4043;
+      &__text {
+        color: #15528E;
+        font-weight: 400;
+        font-size: 18px !important;
       }
       p {
         font-size: 16px;
@@ -38,9 +42,10 @@
     }
   }
   .explication {
-    margin-top: 3rem;
+    margin-top: 0.5rem;
     &__grade {
       display: flex;
+      margin-bottom: -5px;
       
       p {
         font-size: 13px;
@@ -65,8 +70,8 @@
     height: auto;
     padding: 15px;
     width: 60%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
     @media (max-width: 992px) {
       width: 100%;
     }
@@ -89,7 +94,7 @@
       color: #fdfdfd;
       font-size: 14px;
       text-align: center;
-      font-weight: 700;
+      font-weight: 500;
       align-items: center;
       justify-content: center;
       display: flex;
