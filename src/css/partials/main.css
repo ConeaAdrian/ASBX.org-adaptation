@@ -146,67 +146,6 @@
   font-style: normal;
   font-display: swap; }
 
-.display-flex {
-  display: flex; }
-
-.display-inline-flex {
-  display: inline-flex; }
-
-.layout-row {
-  display: flex;
-  flex-direction: row; }
-
-.layout-row-reverse {
-  display: flex;
-  flex-direction: row-reverse; }
-
-.layout-column {
-  display: flex;
-  flex-direction: column; }
-
-@media (max-width: 991px) {
-  .layout-column-xs {
-    flex-direction: column; } }
-
-.align-items-start {
-  align-items: flex-start; }
-
-.align-items-end {
-  align-items: flex-end; }
-
-.align-items-center {
-  align-items: center; }
-
-.align-items-stretch {
-  align-items: stretch; }
-
-.align-items-baseline {
-  align-items: baseline; }
-
-.align-self-center {
-  align-self: center; }
-
-.align-self-end {
-  align-self: flex-end; }
-
-.justify-content-between {
-  justify-content: space-between; }
-
-.justify-content-center {
-  justify-content: center; }
-
-.justify-content-start {
-  justify-content: flex-start; }
-
-.justify-content-end {
-  justify-content: flex-end; }
-
-.justify-content-around {
-  justify-content: space-around; }
-
-.flex-wrap {
-  flex-wrap: wrap; }
-
 .zindex-0 {
   z-index: 0; }
 
@@ -1451,60 +1390,18 @@ h1,
 h2 {
   margin-bottom: 3rem;
   margin-top: 0;
-  font-family: "Montserrat", sans-serif;
   font-family: Helvetica, Sans-Serif !important; }
 
-h3,
+h3 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-family: Helvetica, Sans-Serif !important; }
+
 h4,
 h5,
 h6 {
-  margin-bottom: 1rem;
-  margin-top: 0;
-  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0rem;
   font-family: Helvetica, Sans-Serif !important; }
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  font-weight: 400;
-  font-family: Helvetica, Sans-Serif !important; }
-
-h1,
-.h1 {
-  font-size: 4rem;
-  line-height: 4.9rem; }
-
-h2,
-.h2 {
-  font-size: 3.4rem;
-  line-height: 4.1rem; }
-
-h3,
-.h3 {
-  font-size: 3rem;
-  line-height: 3.7rem; }
-
-h4,
-.h4 {
-  font-size: 2.2rem;
-  line-height: 2.7rem; }
-
-h5,
-.h5 {
-  font-size: 1.8rem; }
-
-h6,
-.h6 {
-  font-size: 1.6rem; }
 
 p {
   font-size: 1.6rem;
@@ -1518,7 +1415,8 @@ p {
 
 li {
   font-size: 1.6rem;
-  line-height: 2.4rem; }
+  line-height: 2.4rem;
+  font-family: Helvetica, Sans-Serif !important; }
   @media (max-width: 767px) {
     li {
       font-size: 1.4rem;
@@ -1537,7 +1435,11 @@ a {
   a > b,
   a > strong {
     display: inline-block;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-family: Helvetica, Sans-Serif !important; }
+
+label {
+  font-family: Helvetica, Sans-Serif !important; }
 
 b,
 strong {
@@ -1547,7 +1449,8 @@ strong {
 
 a,
 button {
-  transition: 0.2s ease-in-out; }
+  transition: 0.2s ease-in-out;
+  font-family: Helvetica, Sans-Serif !important; }
 
 .position-relative {
   position: relative; }
@@ -1592,18 +1495,6 @@ button {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
-
-.sr-only-focusable:active, .sr-only-focusable:focus {
-  position: fixed !important;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
-  z-index: 999; }
-
-*:focus:not([disabled]) {
-  outline-offset: 2px; }
 
 @media (min-width: 1200px) {
   .container,
@@ -2598,7 +2489,9 @@ article {
     .general-claims .claims-selected .content-information {
       margin-top: -3rem; }
       .general-claims .claims-selected .content-information h4 {
+        font-weight: 700;
         font-size: 28px;
+        line-height: 32px;
         color: #324a74; }
     .general-claims .claims-selected .back-ground {
       height: 115px;
@@ -2656,7 +2549,7 @@ article {
     border: 0.5px solid #ddd7d7; }
     .general-claims .job-select .jobs {
       width: 100%;
-      background: #15528E; }
+      background: #15528e; }
       .general-claims .job-select .jobs p {
         color: white;
         font-weight: 700;
@@ -2680,7 +2573,10 @@ article {
         .general-claims .job-select .information-user .profession h4 {
           font-size: 18px;
           margin-right: 5px;
-          margin: 0; }
+          margin: 0;
+          font-weight: 700;
+          margin-bottom: 7px;
+          margin-top: 5px; }
         .general-claims .job-select .information-user .profession .arrow {
           width: 10px;
           height: 10px;
@@ -2698,6 +2594,8 @@ article {
             display: none; }
           .general-claims .job-select .information-user .profession__content.open {
             display: block; }
+          .general-claims .job-select .information-user .profession__content .details h3 {
+            margin-bottom: 10px; }
       .general-claims .job-select .information-user .profession__content {
         display: none; }
         .general-claims .job-select .information-user .profession__content.closed {
@@ -2730,7 +2628,7 @@ article {
             font-size: 18px;
             color: #000000; }
         .general-claims .job-select .information-user .change-btn a.remove {
-          color: #FF4043;
+          color: #ff4043;
           display: flex; }
           .general-claims .job-select .information-user .change-btn a.remove p {
             margin-bottom: 0;
@@ -3256,7 +3154,7 @@ article {
   border: 1px solid #e6e1e5;
   border-radius: 10px;
   height: auto;
-  width: 98%;
+  width: 100%;
   position: relative;
   margin-top: 4rem;
   padding: 10px; }

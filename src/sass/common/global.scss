@@ -57,68 +57,21 @@ h1,
 h2 {
   margin-bottom: 3rem;
   margin-top: 0;
-  font-family: $main-font;
+//   font-family: $main-font;
   font-family: Helvetica, Sans-Serif !important;
 }
 
-h3,
+h3{
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-family: Helvetica, Sans-Serif !important;
+  }
+
 h4,
 h5,
 h6 {
-  margin-bottom: 1rem;
-  margin-top: 0;
-  font-family: $main-font;
+    margin-bottom: 0rem;
   font-family: Helvetica, Sans-Serif !important;
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  font-weight: 400;
-  font-family: Helvetica, Sans-Serif !important;
-}
-
-h1,
-.h1 {
-  font-size: 4rem;
-  line-height: 4.9rem;
-}
-
-h2,
-.h2 {
-  font-size: 3.4rem;
-  line-height: 4.1rem;
-}
-
-h3,
-.h3 {
-  font-size: 3rem;
-  line-height: 3.7rem;
-}
-
-h4,
-.h4 {
-  font-size: 2.2rem;
-  line-height: 2.7rem;
-}
-
-h5,
-.h5 {
-  font-size: 1.8rem;
-}
-
-h6,
-.h6 {
-  font-size: 1.6rem;
 }
 
 p {
@@ -135,6 +88,7 @@ p {
 li {
   font-size: 1.6rem;
   line-height: 2.4rem;
+  font-family: Helvetica, Sans-Serif !important;
   @include respondto(phone) {
     font-size: 1.4rem;
     line-height: 2rem;
@@ -160,9 +114,12 @@ a {
   > strong {
     display: inline-block;
     line-height: 1.5;
+    font-family: Helvetica, Sans-Serif !important;
   }
 }
-
+label {
+    font-family: Helvetica, Sans-Serif !important;
+}
 b,
 strong {
   font-weight: bold;
@@ -173,6 +130,7 @@ strong {
 a,
 button {
   transition: 0.2s ease-in-out;
+  font-family: Helvetica, Sans-Serif !important;
 }
 
 .position-relative {
@@ -219,8 +177,6 @@ button {
   }
 }
 
-// See: https://a11yproject.com/posts/how-to-hide-content
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -230,27 +186,4 @@ button {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-}
-
-// Use in conjunction with .sr-only to only display content when it's focused.
-// Useful for "Skip to main content" links; see https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
-// Credit: HTML5 Boilerplate
-
-.sr-only-focusable {
-  &:active,
-  &:focus {
-    position: fixed !important;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto;
-    z-index: 999;
-  }
-}
-
-* {
-  &:focus:not([disabled]) {
-    outline-offset: 2px;
-  }
 }
