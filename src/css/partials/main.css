@@ -2669,6 +2669,9 @@ article {
         border-right: 0;
         padding: 5px; }
 
+.content-city {
+  width: 100%; }
+
 .city-map {
   min-width: auto;
   width: 100%; }
