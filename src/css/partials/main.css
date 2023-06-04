@@ -2948,7 +2948,15 @@ article {
   margin-bottom: 6rem; }
   .calculate-value p {
     color: #ffffff !important;
-    padding: 0 !important; }
+    padding: 0 !important;
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 1rem; }
+    @media (max-width: 620px) {
+      .calculate-value p {
+        width: 90%; } }
   .calculate-value__logo {
     width: 153px;
     height: 30px;
@@ -2966,15 +2974,16 @@ article {
     color: #ffffff;
     margin-bottom: 10px; }
   .calculate-value .button {
-    width: 155px;
-    height: 28px;
+    width: 185px;
+    height: 40px;
     margin: 0 auto;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase !important;
-    border: 0; }
+    border: 0;
+    font-size: 16px !important; }
 
 .job-site h1 {
   font-family: "Helvetica";
