@@ -127,3 +127,23 @@
     }
   }
 }
+
+
+.breadcrumb {
+  margin: 10px 0;
+
+  a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  span {
+    color: #777;
+    margin: 0 5px;
+  }
+}
