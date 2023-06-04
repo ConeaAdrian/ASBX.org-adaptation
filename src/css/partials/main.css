@@ -3221,7 +3221,8 @@ article {
     height: 38px;
     background-color: transparent;
     color: #fff;
-    cursor: pointer; }
+    cursor: pointer;
+    border: none; }
   .popup-claim .button-add {
     display: flex;
     cursor: pointer;
