@@ -16,10 +16,6 @@ html {
   }
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   background-color: $white;
   color: $black;
@@ -28,7 +24,10 @@ body {
   font-size: 1.6rem;
   //font-smooth: always;
   line-height: 2.4rem;
-  overflow-x: hidden;
+}
+
+.body-page {
+  min-height: 500px;
 }
 
 b,

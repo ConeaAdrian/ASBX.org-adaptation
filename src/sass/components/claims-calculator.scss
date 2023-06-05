@@ -17,6 +17,7 @@
     max-width: 320px;
     width: 100%;
     justify-content: flex-start;
+    position: fixed;
     @media (max-width: 992px) {
       max-width: none;
       width: 100%;
@@ -278,4 +279,17 @@
   .hidden {
     display: block; // Afișează conținutul la cerere
   }
+}
+
+
+// .claims-selected {
+//   position: sticky;
+//   position: fixed;
+
+// }
+
+.claims-select {
+    position: sticky;
+    height: fit-content;
+    top: 0;
 }
