@@ -1760,7 +1760,8 @@ footer {
   font-size: 24px;
   line-height: 50px;
   cursor: pointer;
-  z-index: 9999; }
+  z-index: 9999;
+  border: none; }
 
 .scroll-up:hover {
   background-color: #ff0d11; }
