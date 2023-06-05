@@ -10,9 +10,11 @@
     align-items: center;
     background: #15528e;
     justify-content: center;
-
     border-radius: inherit;
 
+    .container {
+      padding-bottom: 0;
+    }
     .content-information {
       display: flex;
       justify-content: space-between;
@@ -29,7 +31,7 @@
         h3 {
           color: white;
           margin: 0;
-          font-weight: 700;
+          font-weight: 500;
           font-size: 24px;
           margin-right: 10px;
         }
@@ -49,7 +51,7 @@
             color: white;
             margin: 0;
             margin-right: 6px;
-            font-weight: 700;
+            font-weight: 500;
             font-size: 24px;
           }
         }
@@ -94,6 +96,7 @@
           border: 1px solid #ffffff;
           border-radius: 20px;
           border: 0;
+          border: 1px solid white;
         }
       }
     }
