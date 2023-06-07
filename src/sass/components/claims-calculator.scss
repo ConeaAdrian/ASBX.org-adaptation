@@ -106,7 +106,7 @@
       }
 
       button:first-child {
-        background: #ff4043;
+        background: $main-red;
         color: white;
         border-radius: 20px;
         border: 0;
@@ -135,7 +135,7 @@
 
     .jobs {
       width: 100%;
-      background: #15528e;
+      background: $bluish;
       p {
         color: white;
         font-weight: 500;
@@ -232,7 +232,6 @@
       .change-btn {
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
         a {
           cursor: pointer;
           text-decoration: underline;
@@ -253,7 +252,7 @@
           }
         }
         a.remove {
-          color: #ff4043;
+          color: $main-red;
           display: flex;
           p {
             margin-bottom: 0;

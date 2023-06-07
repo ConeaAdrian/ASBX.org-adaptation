@@ -71,7 +71,6 @@
     height: auto;
     width: 100%;
     position: relative;
-    margin-top: 4rem;
     padding: 10px;
 
     img {
@@ -130,7 +129,7 @@
         height: 33px;
         left: 479px;
         top: 672px;
-        background: #ff4043;
+        background: $main-red;
         border-radius: 4px;
         margin-right: 1rem;
 
@@ -204,7 +203,7 @@
   .search-icon {
     width: 40px;
     height: 40px;
-    background-color: #ff4043;
+    background-color: $main-red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -295,7 +294,7 @@
   }
 
   .close-button {
-    background-color: #ff4043;
+    background-color: $main-red;
     color: #fff;
     border-radius: 10px;
     font-size: 16px;
@@ -340,7 +339,7 @@
   .button-add__element {
     width: 33px;
     height: 33px;
-    background: #ff4043;
+    background: $main-red;
     border-radius: 4px;
     margin-right: 1rem;
     display: flex;
@@ -353,11 +352,11 @@
   }
 
   .popup-claim.error .button-add__element {
-    background-color: #ff4043;
+    background-color: $main-red;
   }
 
   .popup-claim.error .close-button {
-    background-color: #ff4043;
+    background-color: $main-red;
   }
   .dropdown-container {
     flex-wrap: wrap;
@@ -400,6 +399,6 @@
 .boiler-button {
 
   .button-open__section {
-    background-color: #15528E !important;
+    background-color: $bluish !important;
   }
 }

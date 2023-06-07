@@ -39,7 +39,7 @@
   }
 
   &__text {
-    background: #ff4043;
+    background: $main-red;
     height: 50px;
 
     h4 {
@@ -82,7 +82,7 @@
 }
 }
 .search-asbestos__text {
-  background: #ff4043;
+  background: $main-red;
   height: 55px;
   position: relative;
   margin-right: 7rem;
@@ -122,7 +122,7 @@
   height: 100%;
   border-top: 27px solid transparent;
   border-bottom: 27px solid transparent;
-  border-left: 57px solid #ff4043;
+  border-left: 57px solid $main-red;
 
   @media (max-width: 640px) {
     content: "";
@@ -136,7 +136,7 @@
     height: 100%;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
-    border-left: 45px solid #ff4043;
+    border-left: 45px solid $main-red;
   }
 }
 

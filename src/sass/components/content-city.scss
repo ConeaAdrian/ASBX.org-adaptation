@@ -92,7 +92,7 @@
   }
 
   .page-button.active {
-    background: #ff4043;
+    background: $main-red;
     color: #ffffff;
   }
 
@@ -101,7 +101,7 @@
   }
 
   .page-button:hover {
-    background: #ff4043;
+    background: $main-red;
     color: #ffffff;
   }
   .tuning-fork {
@@ -153,6 +153,6 @@
 
 .breadcrumb .last-element {
   text-decoration: none;
-  color: #FF4043;
+  color: $main-red;
 }
 

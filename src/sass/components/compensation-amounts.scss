@@ -1,7 +1,7 @@
 .compensation-amounts {
   margin-top: 4rem;
   i {
-    color: #ff4043;
+    color: $main-red;
   }
   &__data {
     background: #fdfdfd;
@@ -13,7 +13,7 @@
 
     .data-mesothelioma {
       &__text {
-        color: #15528E;
+        color: $bluish;
         font-weight: 400;
         font-size: 18px !important;
       }
@@ -28,7 +28,7 @@
     .data-lung-cancer {
       margin-top: 2rem;
       &__text {
-        color: #15528E;
+        color: $bluish;
         font-weight: 400;
         font-size: 18px !important;
       }
@@ -65,7 +65,7 @@
   }
   .information {
     position: relative;
-    background: #15528E;
+    background: $bluish;
     border-radius: 6px;
     height: auto;
     padding: 20px;
@@ -86,7 +86,7 @@
 
     &__note {
       position: absolute;
-      background: #ff4043;
+      background: $main-red;
       border-radius: 20px;
       top: -14px;
       width: 100px;

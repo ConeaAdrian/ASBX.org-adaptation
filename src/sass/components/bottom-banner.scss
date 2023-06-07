@@ -9,7 +9,7 @@
   .banner-calculate {
     flex-direction: row;
     align-items: center;
-    background: #15528e;
+    background: $bluish;
     justify-content: center;
     border-radius: inherit;
 
@@ -86,7 +86,7 @@
         }
 
         button:first-child {
-          background: #ff4043;
+          background: $main-red;
           color: white;
           border-radius: 20px;
           border: 0;

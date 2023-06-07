@@ -39,7 +39,7 @@
         &__bar {
           height: 4px;
           width: 105px;
-          background-color: #ff4043;
+          background-color: $main-red;
           margin-right: 15px;
         }
       }
@@ -117,7 +117,7 @@
   .bar {
     height: 4px;
     width: 105px;
-    background-color: #ff4043;
+    background-color: $main-red;
     margin-right: 15px;
     margin-bottom: 1rem;
   }
@@ -143,9 +143,9 @@
         font-size: 18px;
         margin: 0;
         &.orange-text {
-          color: #ff4043;
+          color: $main-red;
           margin-bottom: 10px;
-          border-left: solid 2px #ff4043;
+          border-left: solid 2px $main-red;
           padding-left: 8px;
         }
       }
