@@ -6,7 +6,7 @@
     display: none;
     width: 50px;
     height: 50px;
-    background-color: #264470;
+    background-color: $bluish;
     border-radius: 50%;
     text-align: center;
     color: white;
@@ -17,7 +17,7 @@
   }
   
   .scroll-up:hover {
-    background-color: darken(#264470, 10%);
+    background-color: darken($bluish, 10%);
   }
   
   .scroll-up.active {

@@ -1,6 +1,6 @@
 .information {
   h2 {
-    color: #264470;
+    color: $bluish;
   }
   .how-works {
     justify-content: center;
@@ -26,7 +26,7 @@
         align-items: center;
 
         h1 {
-          color: #264470;
+          color: $bluish;
           font-family: "Helvetica";
           font-style: normal;
           font-weight: 500;
