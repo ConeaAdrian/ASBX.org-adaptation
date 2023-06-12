@@ -124,7 +124,7 @@ nav {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 45px;
+  top: 15px;
   right: 20px;
   background: $nav-background;
   height: $nav-height;
@@ -209,60 +209,5 @@ nav {
     &:after {
       transform: rotate(-45deg);
     }
-  }
-}
-
-// Page content
-article {
-  max-width: $content-width;
-  margin: 0 auto;
-  padding: 10px;
-}
-.header-bar {
-  background-color: #0d487d;
-  height: 40px;
-  @media (max-width: 425px) {
-    height: 70px;
-  }
-
-  .container {
-    margin-top: 0;
-  }
-
-  .header-information {
-    display: flex !important;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-
-  p {
-    color: white;
-    margin: 0;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-    margin-left: 10px;
-  }
-  .call-number {
-    font-weight: 600;
-    font-size: 14px;
-  }
-
-  .contact {
-    width: 140px;
-    h4 {
-      color: white;
-      margin: 0;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 17px;
-      margin-right: 20px;
-      width: 120px;
-    }
-  }
-
-  .container {
-    padding: 10px 0;
   }
 }
