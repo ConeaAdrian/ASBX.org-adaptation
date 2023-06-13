@@ -1,10 +1,10 @@
 @include respondto(desktop) {
   .container {
-    max-width: 1440px;
-    padding: 0 2.5rem;
+    max-width: 980px;
+    padding: 0 2rem;
 
     @include respondto(desktop) {
-      max-width: 960px;
+      max-width: 980px;
     }
 
     @include respondto(onlyDesktop) {
