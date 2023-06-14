@@ -18,6 +18,7 @@ $link-hover-color: $main-red;
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 nav {
   z-index: 1;
