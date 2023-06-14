@@ -953,35 +953,41 @@ ul {
   margin-top: 0;
   padding-left: 0; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  font-family: "Roboto Serif"; }
+
 h1 {
   font-style: normal;
-  font-weight: 500;
-  font-family: 'Roboto Serif';
-  color: #324A74; }
+  font-weight: 500; }
 
 h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
-  font-family: 'Roboto Serif';
+  line-height: 35px;
   color: #000000; }
 
 h3 {
-  font-size: 18px;
-  font-family: 'Roboto Serif'; }
+  font-size: 18px; }
 
 h4,
 h5,
 h6 {
-  margin-bottom: 0rem;
-  font-family: 'Roboto Serif'; }
+  margin-bottom: 0rem; }
 
 p {
-  font-family: 'Roboto Serif';
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  color: #3c3535; }
+  font-weight: 400;
+  font-size: 18px;
+  color: #3c3535;
+  line-height: 26px; }
   @media (max-width: 767px) {
     p {
       font-size: 1.4rem;
@@ -989,8 +995,7 @@ p {
 
 li {
   font-size: 16px;
-  line-height: 18px;
-  font-family: 'Roboto Serif'; }
+  line-height: 18px; }
   @media (max-width: 767px) {
     li {
       font-size: 1.4rem;
@@ -999,8 +1004,7 @@ li {
 a {
   text-decoration: none !important;
   cursor: pointer !important;
-  transition: all 0.3s ease-in;
-  font-family: 'Roboto Serif'; }
+  transition: all 0.3s ease-in; }
   a:hover, a:focus {
     color: black;
     text-decoration: none; }
@@ -1009,15 +1013,15 @@ a {
   a > strong {
     display: inline-block;
     line-height: 1.5;
-    font-family: 'Roboto Serif'; }
+    font-family: "Roboto Serif"; }
 
 label {
-  font-family: 'Roboto Serif'; }
+  font-family: "Roboto Serif"; }
 
 b,
 strong {
   font-weight: 700;
-  font-family: 'Roboto Serif';
+  font-family: "Roboto Serif";
   font-size: 18px !important; }
 
 .position-relative {
@@ -1072,7 +1076,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   border: none;
-  padding: 0.95rem 2.5rem;
+  padding: 0;
   color: #fff;
   border: 0 !important;
   font-family: Helvetica, Sans-Serif !important; }
@@ -1867,3 +1871,125 @@ nav {
       margin-bottom: 2.5rem;
       max-width: 692px;
       width: 100%; }
+    .page-wrapper .index-content__about {
+      margin-top: 40px; }
+      .page-wrapper .index-content__about h2 {
+        color: #c55d34; }
+      .page-wrapper .index-content__about .works-step {
+        gap: 45px;
+        display: flex;
+        justify-content: space-between; }
+        .page-wrapper .index-content__about .works-step__box {
+          width: 100%;
+          max-width: 187px;
+          height: auto;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          margin-top: 40px;
+          margin-bottom: 40px;
+          padding: 10px; }
+          .page-wrapper .index-content__about .works-step__box span {
+            color: #c55d34; }
+  .page-wrapper .index-information {
+    background: #f7fcff;
+    height: auto;
+    margin-bottom: 55px; }
+    .page-wrapper .index-information .form-claim {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      position: relative;
+      height: auto;
+      background: #ffffff;
+      transform: translateY(-40px); }
+      .page-wrapper .index-information .form-claim b {
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 7px; }
+      .page-wrapper .index-information .form-claim p {
+        width: 100%;
+        max-width: 440px;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 22px; }
+      .page-wrapper .index-information .form-claim img {
+        position: absolute;
+        margin: 0 auto;
+        right: 38%;
+        transform: translateY(-15px); }
+    .page-wrapper .index-information .index-content {
+      margin-top: 3%; }
+  .page-wrapper .container-about {
+    max-width: 848px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-between; }
+    .page-wrapper .container-about .choose-documentation {
+      max-width: 361px;
+      width: 100%; }
+      .page-wrapper .container-about .choose-documentation h2 {
+        font-weight: 400;
+        font-size: 30px;
+        color: #c55d34; }
+      .page-wrapper .container-about .choose-documentation ul {
+        margin-left: 30px; }
+        .page-wrapper .container-about .choose-documentation ul li {
+          list-style-type: disc;
+          font-weight: 400;
+          font-size: 14px; }
+    .page-wrapper .container-about .chase-documentation {
+      width: 360px;
+      height: auto;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 20px 27px; }
+      .page-wrapper .container-about .chase-documentation p,
+      .page-wrapper .container-about .chase-documentation b {
+        font-size: 14px !important; }
+      .page-wrapper .container-about .chase-documentation p {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #c55d34;
+        line-height: 20px; }
+    .page-wrapper .container-about .button {
+      width: 106px;
+      height: 30px;
+      align-items: center;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      text-transform: uppercase;
+      margin-top: 40px;
+      transform: translateX(180px); }
+    .page-wrapper .container-about .advocacy-img {
+      position: relative; }
+      .page-wrapper .container-about .advocacy-img img {
+        width: 100%;
+        max-width: 400px;
+        height: 400px; }
+      .page-wrapper .container-about .advocacy-img__quote {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.22);
+        height: 104px;
+        width: 100%; }
+        .page-wrapper .container-about .advocacy-img__quote h3 {
+          margin-top: 16px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 26px;
+          color: #ffffff;
+          margin-left: 69px;
+          width: 160px;
+          margin-bottom: 0; }
+        .page-wrapper .container-about .advocacy-img__quote p {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 26px;
+          color: #ffffff;
+          margin-left: 69px; }
+    .page-wrapper .container-about .advocacy-information {
+      width: 100%;
+      max-width: 360px; }
+      .page-wrapper .container-about .advocacy-information h2 {
+        font-weight: 400;
+        font-size: 30px;
+        color: #c55d34; }
