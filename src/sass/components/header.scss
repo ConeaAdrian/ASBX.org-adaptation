@@ -9,11 +9,8 @@ $link-hover-color: $main-red;
 // Navigation
 
 .header-section {
-  position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
+  background: #324A74;
 }
 .navigation {
   display: flex;
@@ -85,6 +82,9 @@ nav {
     z-index: 10;
     padding: 5rem;
     padding-top: 10rem !important;
+  }
+  li {
+    font-family: 'Roboto Condensed' !important;
   }
 
   .button-question {
