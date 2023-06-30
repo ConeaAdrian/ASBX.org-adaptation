@@ -1,5 +1,3 @@
-
-
 .claims-select {
   max-width: 320px;
   width: 100%;
@@ -35,69 +33,89 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 320px;
+  max-width: 200px;
   width: 100%;
   justify-content: flex-start;
 
   .claims-selected {
     width: 100%;
     height: auto;
-    background: #fcfcfc;
+    border-radius: 4px;
     border: 1px solid #324a74;
-    border-radius: 10px;
-    margin-top: 10rem;
+    background: #fcfaf6;
+    margin-top: 5rem;
     text-align: center;
+    margin-bottom: 22px;
+
+    p {
+      font-family: Roboto, sans-serif !important;
+    }
 
     img {
       display: flex;
       text-align: center;
-      top: -60px;
+      top: -70px;
       position: relative;
       margin: 0 auto;
+      height: 90px;
+      max-width: 90px;
+      width: 100%;
     }
 
     .content-information {
-      margin-top: -3rem;
-      h4 {
-        font-weight: 500;
-        font-size: 28px;
-        line-height: 32px;
+      margin-top: -4.5rem;
+      h2 {
+        font-weight: 700;
+        font-size: 20px;
+        font-family: Roboto, sans-serif !important;
         color: #324a74;
+      }
+      p {
+        color: #324a74;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 6px;
+      }
+      b {
+        font-size: 14px;
       }
     }
 
     .back-ground {
-      height: 115px;
-      margin-top: 20px;
-      margin-bottom: 15px;
-      background: #edf2fa;
-      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.09);
+      height: 61px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      background: #324a74;
       display: flex;
       align-items: center;
       justify-content: center;
 
-      h1 {
-        font-size: 128px;
+      p {
+        font-size: 64px;
         margin: 0;
-        color: #324a74;
+        color: #fff;
       }
     }
 
     .claims-buttons {
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       display: flex;
       gap: 10px;
-      margin-top: 20px;
       align-items: center;
       justify-content: center;
       flex-direction: column;
 
       button {
-        padding: 10px 28px;
-        border-radius: 5px;
-        font-weight: 500;
-        font-size: 16px;
-        width: 85%;
+        width: 100%;
+        max-width: 125px;
+        height: 21px;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 700;
+        border: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: "Nunito", sans-serif;
 
         @media (max-width: 992px) {
           width: 50%;
@@ -110,186 +128,101 @@
       button:first-child {
         background: $main-red;
         color: white;
-        border-radius: 20px;
-        border: 0;
-        font-family: "Roboto Serif";
       }
 
       button:last-child {
-        background-color: #f5f5f5;
-        background: transparent;
-        border: 1px solid #324a74;
-        border-radius: 20px;
-        font-family: "Roboto Serif";
+        background: #324a74;
+        color: white;
       }
     }
   }
 
-  .job-select {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .content-box {
+    border-radius: 5px;
+    border: 1px solid #ececec;
+    background: #fff;
     width: 100%;
-    margin-top: 2rem;
-    align-items: flex-start;
-    background: #ffffff;
-    border: 0.5px solid #ddd7d7;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4px;
+    margin-bottom: 10px;
 
-    .jobs {
-      width: 100%;
-      background: $bluish;
-      p {
-        color: white;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 18px;
-        margin-top: 8px;
-        margin-left: 20px;
-      }
+    p {
+      line-height: 15px;
     }
 
-    .information-user {
+    &__information {
+      padding: 10px;
       display: flex;
-      align-items: center;
       flex-direction: column;
-      width: 100%;
-      align-items: flex-start;
-      border-bottom: 0.5px solid #ddd7d7;
-      padding: 20px 10px;
+      max-width: 185px;
 
-      .profession {
+      b {
+        font-size: 14px !important;
+        line-height: 15px;
+      }
+      .job {
+        margin-top: 5px;
+        margin-bottom: 3px;
+      }
+
+      .job,
+      .time {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 100%;
 
-        h4 {
-          font-size: 18px;
-          margin-right: 5px;
-          margin: 0;
-          font-weight: 500;
-          margin-bottom: 7px;
-          margin-top: 5px;
-        }
-
-        .arrow {
-          width: 10px;
-          height: 10px;
-          background-color: #000; /* înlocuiți cu culoarea dorită pentru săgeată */
-        }
-        .fa-chevron-down {
-          transform: rotate(0deg);
-          transition: transform 0.3s ease;
-        }
-
-        &.active {
-          // Stilurile pentru săgeată în sus
-          .fa-chevron-down {
-            transform: rotate(-180deg);
-          }
-        }
-        &__content {
-          width: 100%;
-          display: none;
-
-          &.closed {
-            display: none;
-          }
-
-          &.open {
-            display: block;
-          }
-
-          .details {
-            h3 {
-              margin-bottom: 10px;
-            }
-          }
-        }
-      }
-
-      .profession__content {
-        display: none;
-
-        &.closed {
-          display: none;
-        }
-
-        &.open {
-          display: block;
-        }
-      }
-
-      .details {
-        display: flex;
-        flex-direction: column;
-
-        h3 {
-          font-size: 16px;
-          margin: 0;
-          color: #324a74;
-        }
-      }
-
-      .change-btn {
-        display: flex;
-        justify-content: space-between;
-        a {
-          cursor: pointer;
-          text-decoration: underline;
-          font-weight: 500;
-          font-size: 18px;
-          color: #000000;
-          text-decoration: none;
-
-          i {
-            transform: translateY(1px);
-            margin-right: 5px;
-          }
-
-          .edit {
-            font-weight: 500;
-            font-size: 18px;
-            color: #000000;
-          }
-        }
-        a.remove {
-          color: $main-red;
-          display: flex;
-          p {
-            margin-bottom: 0;
-            margin-left: 5px;
-          }
+        b {
+          font-size: 12px !important;
+          margin-right: 4px;
         }
       }
     }
-  }
 
-  .fas.fa-chevron-down {
-    transition: transform 0.3s ease-in-out;
-    transform: rotate(0deg); // Iconița este orientată în jos inițial
-  }
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-bottom: 8px;
+      img {
+        margin-top: 2px;
+        border-radius: 26px;
+        width: 26px;
+        height: 26px;
+      }
 
-  .rotate {
-    transform: rotate(-180deg); // Iconița este rotită în sus
-  }
+      .delete {
+        background: none;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        outline: none;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+      }
+    }
 
-  .details {
-    display: none; // Ascunde conținutul inițial
-  }
+    &.special-content-box {
+      .special-text {
+        color: #324a74;
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 5px;
+      }
+    }
 
-  .hidden {
-    display: block; // Afișează conținutul la cerere
+    p {
+      font-size: 12px;
+    }
   }
 }
 
-
 .claims-select {
-
-  @media only screen and (max-width: 2440px) and (min-width: 992px)  {
+  @media only screen and (max-width: 2440px) and (min-width: 992px) {
     position: sticky;
-      height: fit-content;
-      top: 0;
-   }
-    
+    height: fit-content;
+    top: 0;
+  }
 }

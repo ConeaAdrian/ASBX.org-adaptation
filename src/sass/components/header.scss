@@ -84,7 +84,9 @@ nav {
     padding-top: 10rem !important;
   }
   li {
-    font-family: 'Roboto Condensed' !important;
+    a {
+      font-family: 'Roboto', sans-serif !important;
+    }
   }
 
   .button-question {

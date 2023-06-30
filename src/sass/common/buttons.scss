@@ -16,7 +16,7 @@
   padding: 0;
   color: #fff;
   border: 0 !important;
-  font-family: "Roboto Serif";
+  font-family: "Nunito", sans-serif;
   &:hover {
     background-color: #000;
     box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16),
@@ -36,7 +36,7 @@
   text-decoration: none;
   cursor: pointer;
   border: none;
-  font-family: "Roboto Serif";
+  font-family: "Nunito", sans-serif;
   &:hover {
     background: $bluish;
     box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16),

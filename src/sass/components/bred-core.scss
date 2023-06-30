@@ -27,7 +27,7 @@
     }
   }
 
-
+}
 .search-asbestos {
   display: flex;
   align-items: center;
@@ -77,9 +77,79 @@
   input {
     padding-left: 2rem;
     width: 100%;
-      max-width: 344px;
-      height: 42px;
+    max-width: 344px;
+    height: 42px;
+  }
+}
+.step-work {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 617px;
+  width: 100%;
+  h2 {
+    span {
+      color: #bf5931;
+    }
+  }
+}
+.background-state {
+  background: rgba(250, 247, 240, 0.31);
+  margin-bottom: 40px;
+
+  .state-select {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 720px;
+    width: 100%;
+    h2 {
+      color: #bf5931;
+    }
+
+    .state-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: left;
+
+      li {
+        width: 23%;
+        text-decoration-line: underline;
+        list-style-type: disc;
+        a {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          color: #000000;
+        }
+
+        @media (max-width: 767px) {
+          width: 48%;
+        }
+      }
+    }
   }
 }
 
+.military-index {
+  h3 {
+    width: 328px !important;
+  }
+  .advocacy-information {
+    .military-forces {
+      p {
+        margin-left: 20px;
+      }
+      &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: wrap;
+
+        img {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
 }

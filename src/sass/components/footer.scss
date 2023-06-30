@@ -1,183 +1,63 @@
-//icon
-.icon-container {
-  position: relative;
-  display: inline-block;
-}
-
-.arrow-icon {
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: $bluish;
-}
-/// 
-
-
-.contact-icon {
-  width: 50px !important;
-  height: 50px !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-
 footer {
-  background-color: $bluish;
-  color: $white;
-  padding: 40px 0;
-  font-size: 16px;
+  background-color: #faf7f0;
 
-  .row {
-    &:not(:last-child) {
-      margin-bottom: 5px;
-    }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
 
-    &:last-child {
-      margin-top: 20px;
-    }
-  }
+    .request-call {
+      p {
+        font-family: "Roboto Condensed";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #324a74;
+      }
+      .form-request {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        select {
+          background: #ffffff;
+          border: 1px solid #f0f0f0;
+          height: 25px;
+          width: 200px;
 
-  h4 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    margin-bottom: 10px;
-
-    a {
-      color: $white;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
+          &::placeholder {
+            color: #ff0000 !important;
+          }
+        }
+        input {
+          background: #ffffff;
+          border: 1px solid #f0f0f0;
+          height: 25px;
+          width: 200px;
+          
+          &::placeholder {
+            color: #000000 !important;
+          }
+        }
       }
     }
-  }
-
-  .help {
-      margin-top: 10px;
-    margin-bottom: 30px;
-
-    a {
+    .contact {
       display: flex;
-      align-items: center;
-      color: $white;
-      text-decoration: none;
-      margin-right: 20px;
+      flex-direction: column;
 
-      i {
-        font-size: 20px;
-        margin-right: 10px;
-      }
-
-      &:hover {
-        text-decoration: underline;
+      .logo-footer {
+        height: 21px;
+        width: 87px;
       }
     }
-  }
-
-  .connect {
-    ul {
-      display: flex;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-
-      li {
-        margin-right: 10px;
-
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          background-color: rgba(255, 255, 255, 0.2);
-          transition: background-color 0.3s ease-in-out;
-
-          &:hover {
-            background-color: rgba(255, 255, 255, 0.4);
-          }
-
-          &:hover i {
-            color: $bluish;
-          }
-
-          i {
-            color: $white;
-            font-size: 14px;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 767.98px) {
-    .row {
-      margin-bottom: 10px;
-
-      &:last-child {
-        margin-top: 10px;
-      }
-    }
-
-    h4 {
-      font-size: 16px;
-      margin-bottom: 15px;
-    }
-
-    li {
-      margin-bottom: 5px;
-    }
-
-    .help {
-      margin-top: 10px;
-
-      a {
-        font-size: 14px;
-
-        i {
-          font-size: 18px;
-        }
-      }
-    }
-
-    .connect {
-      ul {
-        li {
-          margin-right: 5px;
-
-          a {
-            width: 25px;
-            height: 25px;
-
-            i {
-              font-size: 12px;
-            }
-          }
-        }
+    .about-organization {
+      &__information {
+        display: flex;
       }
     }
   }
 }
-
 
 //--------
-
 
 .scroll-up {
   position: fixed;
@@ -204,9 +84,5 @@ footer {
 .scroll-up.active {
   display: block;
 }
-
-
-
-
 
 //--------------

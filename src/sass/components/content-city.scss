@@ -1,0 +1,23 @@
+.city-content {
+  .necessary-information {
+    display: flex;
+
+    &__content {
+      .compensation-fact {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+        max-width: 283px;
+        width: 100%;
+        height: auto;
+      }
+
+      .table-content {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+        max-width: 283px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

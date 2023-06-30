@@ -5,6 +5,7 @@
 
     @include respondto(desktop) {
       max-width: 980px;
+      padding: 0 2rem;
     }
 
     @include respondto(onlyDesktop) {
@@ -20,4 +21,21 @@ img {
 }
 body {
   margin: 0;
+}
+
+
+//calculator
+.general-page {
+  display: flex;
+  gap: 55px;
+
+  .badge {
+    display: block;
+  }
+}
+
+.page-suplimentar {
+  .badge {
+    display: none;
+  }
 }

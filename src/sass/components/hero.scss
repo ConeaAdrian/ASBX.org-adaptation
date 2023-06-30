@@ -229,102 +229,102 @@
       margin-top: 3%;
     }
   }
-  .container-about {
-    max-width: 848px;
+}
+.container-about {
+  max-width: 848px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-between;
+
+  .choose-documentation {
+    max-width: 361px;
     width: 100%;
-    margin: 0px auto;
-    display: flex;
-    padding-bottom: 30px;
-    justify-content: space-between;
 
-    .choose-documentation {
-      max-width: 361px;
-      width: 100%;
-
-      h2 {
+    h2 {
+      font-weight: 400;
+      font-size: 30px;
+      color: #c55d34;
+    }
+    ul {
+      margin-left: 30px;
+      li {
+        list-style-type: disc;
         font-weight: 400;
-        font-size: 30px;
-        color: #c55d34;
-      }
-      ul {
-        margin-left: 30px;
-        li {
-          list-style-type: disc;
-          font-weight: 400;
-          font-size: 14px;
-        }
+        font-size: 14px;
       }
     }
-    .chase-documentation {
-      width: 360px;
-      height: auto;
-      background: #ffffff;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      padding: 20px 27px;
+  }
+  .chase-documentation {
+    width: 360px;
+    height: auto;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 27px;
 
-      p,
-      b {
-        font-size: 14px !important;
+    p,
+    b {
+      font-size: 14px !important;
+    }
+    p {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #c55d34;
+      line-height: 20px;
+    }
+  }
+  .button {
+    width: 106px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    transform: translateX(180px);
+  }
+
+  .advocacy-img {
+    position: relative;
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: 400px;
+    }
+    &__quote {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.22);
+      height: 104px;
+      width: 100%;
+      h3 {
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #ffffff;
+        margin-left: 37px;
+        width: 160px;
+        margin-bottom: 0;
       }
       p {
-        padding-bottom: 10px;
-        border-bottom: 1px solid #c55d34;
-        line-height: 20px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        color: #ffffff;
+        margin-left: 37px;
       }
     }
-    .button {
-      width: 106px;
-      height: 30px;
-      align-items: center;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      text-transform: uppercase;
-      margin-top: 40px;
-      transform: translateX(180px);
-    }
+  }
+  .advocacy-information {
+    width: 100%;
+    max-width: 360px;
 
-    .advocacy-img {
-      position: relative;
-      img {
-        width: 100%;
-        max-width: 400px;
-        height: 400px;
-      }
-      &__quote {
-        position: absolute;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.22);
-        height: 104px;
-        width: 100%;
-        h3 {
-          margin-top: 16px;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 26px;
-          color: #ffffff;
-          margin-left: 69px;
-          width: 160px;
-          margin-bottom: 0;
-        }
-        p {
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 26px;
-          color: #ffffff;
-          margin-left: 69px;
-        }
-      }
-    }
-    .advocacy-information {
-      width: 100%;
-      max-width: 360px;
-
-      h2 {
-        font-weight: 400;
-        font-size: 30px;
-        color: #c55d34;
-      }
+    h2 {
+      font-weight: 400;
+      font-size: 30px;
+      color: #c55d34;
     }
   }
 }
