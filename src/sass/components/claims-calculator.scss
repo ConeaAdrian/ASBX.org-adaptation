@@ -1,5 +1,5 @@
 .claims-select {
-  max-width: 320px;
+  max-width: 202px;
   width: 100%;
   @media (max-width: 992px) {
     display: none;
@@ -63,16 +63,14 @@
     }
 
     .content-information {
-      margin-top: -4.5rem;
+      margin-top: -4rem;
       h2 {
-        font-weight: 700;
         font-size: 20px;
-        font-family: Roboto, sans-serif !important;
         color: #324a74;
+        font-family: 'Roboto Condensed', sans-serif !important;
       }
       p {
         color: #324a74;
-        font-weight: 700;
         font-size: 16px;
         margin-bottom: 6px;
       }
@@ -94,6 +92,7 @@
         font-size: 64px;
         margin: 0;
         color: #fff;
+        font-family: 'Roboto Condensed', sans-serif;
       }
     }
 
@@ -111,11 +110,10 @@
         height: 21px;
         border-radius: 4px;
         font-style: normal;
-        font-weight: 700;
         border: none;
         text-transform: uppercase;
         font-size: 14px;
-        font-family: "Nunito", sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
 
         @media (max-width: 992px) {
           width: 50%;

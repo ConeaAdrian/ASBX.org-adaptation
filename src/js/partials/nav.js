@@ -21,3 +21,29 @@
       });
     }); // end DOM ready
   })(jQuery); // end jQuery
+
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var beforeCheckbox = document.getElementById('beforeCheckbox');
+    var afterCheckbox = document.getElementById('afterCheckbox');
+  
+    beforeCheckbox.addEventListener('change', function() {
+      if (this.checked) {
+        afterCheckbox.checked = false;
+      }
+    });
+  
+    afterCheckbox.addEventListener('change', function() {
+      if (this.checked) {
+        beforeCheckbox.checked = false;
+      }
+    });
+  
+    var select1 = document.getElementById('select1');
+    select1.addEventListener('change', function() {
+      beforeCheckbox.checked = false;
+      afterCheckbox.checked = false;
+    });
+  });
+  
