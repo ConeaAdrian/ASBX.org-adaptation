@@ -1,8 +1,29 @@
 .content-table {
+  margin-top: 16px;
   display: flex;
   gap: 23px;
   justify-content: space-between;
+  &__facts {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fffef9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+    position: relative;
+    max-width: 421px;
+    width: 100%;
+
+    .facts-text {
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 7px 10px;
+    }
+    img {
+      position: absolute;
+      right: -13px;
+      transform: translateY(-24px);
+    }
+  }
   .necessary-information {
+    display: flex;
     max-width: 421px;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -10,36 +31,18 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
     max-width: 421px;
     padding: 8px 9px;
-    margin-top: 21px;
     position: relative;
-
-    img {
-      position: absolute;
-      right: -13px;
-      transform: translateY(-24px);
-    }
-    &__text {
-      margin-bottom: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    .table-container {
+    tbody {
       display: flex;
-      border-top: 1px solid rgba(0, 0, 0, 0.2);
-      padding-top: 6px;
-      justify-content: center;
-
-      .left-column,
-      .right-column {
-        max-width: 270px;
-      }
 
       .left-column {
+        flex-direction: column;
+        display: flex;
         border-right: 1px solid rgba(0, 0, 0, 0.1);
         padding-right: 10px;
         margin-right: 10px;
         text-align: right;
+        margin-left: 20px;
 
         &__about {
           color: #15528e;
@@ -48,12 +51,18 @@
         }
       }
       .right-column {
+        flex-direction: column;
+        display: flex;
         p {
           color: #c55d34 !important;
         }
         .none {
           color: #fffef9 !important;
         }
+      }
+      .left-column,
+      .right-column {
+        max-width: 270px;
       }
     }
   }
@@ -62,10 +71,9 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     max-width: 265px;
     width: 100%;
-    margin-top: 21px;
     padding: 12px 4px;
 
     p {
