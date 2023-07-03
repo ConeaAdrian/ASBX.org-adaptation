@@ -1184,48 +1184,104 @@ button {
   .header-search .search-asbestos {
     margin: 0 !important;
     height: 42px !important;
-    margin: 0 12px; }
+    margin: 0 12px;
+    justify-content: space-around; }
   .header-search .search-asbestos {
     background: #e4f5ff !important; }
 
 footer {
   background-color: #faf7f0; }
   footer .footer-content {
+    margin-top: 8px;
     display: flex;
     justify-content: space-between; }
-    footer .footer-content .request-call p {
-      font-family: "Roboto Condensed";
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
-      text-transform: uppercase;
-      color: #324a74; }
-    footer .footer-content .request-call .form-request {
-      display: flex;
-      flex-direction: column;
-      gap: 15px; }
-      footer .footer-content .request-call .form-request select {
-        background: #ffffff;
-        border: 1px solid #f0f0f0;
-        height: 25px;
-        width: 200px; }
-        footer .footer-content .request-call .form-request select::placeholder {
-          color: #ff0000 !important; }
-      footer .footer-content .request-call .form-request input {
-        background: #ffffff;
-        border: 1px solid #f0f0f0;
-        height: 25px;
-        width: 200px; }
-        footer .footer-content .request-call .form-request input::placeholder {
-          color: #000000 !important; }
+    footer .footer-content .request-call {
+      border-right: 1px solid #e2dede;
+      padding-right: 53px; }
+      footer .footer-content .request-call p {
+        font-family: "Roboto Condensed";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #324a74;
+        margin-bottom: 14px; }
+      footer .footer-content .request-call .form-request {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: end; }
+        footer .footer-content .request-call .form-request select {
+          background: #ffffff;
+          border: 1px solid #f0f0f0;
+          height: 25px;
+          width: 200px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 28px; }
+          footer .footer-content .request-call .form-request select::placeholder {
+            color: #ff0000 !important; }
+        footer .footer-content .request-call .form-request input {
+          background: #ffffff;
+          border: 1px solid #f0f0f0;
+          height: 25px;
+          width: 200px;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; }
+          footer .footer-content .request-call .form-request input::placeholder {
+            color: #000000 !important; }
     footer .footer-content .contact {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      border-right: 1px solid #e2dede;
+      padding-right: 46px; }
       footer .footer-content .contact .logo-footer {
         height: 21px;
-        width: 87px; }
-    footer .footer-content .about-organization__information {
-      display: flex; }
+        width: 87px;
+        margin-bottom: 7px; }
+      footer .footer-content .contact__number {
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration-line: underline;
+        max-width: 154px;
+        width: 100%;
+        margin-bottom: 20px; }
+      footer .footer-content .contact .contact-media img {
+        margin-right: 20px;
+        margin-top: 12px; }
+    footer .footer-content .about-organization {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 5px; }
+      footer .footer-content .about-organization__information {
+        display: flex;
+        align-items: center; }
+        footer .footer-content .about-organization__information .intermediar-bar {
+          width: 1px;
+          height: 14px;
+          background: #000;
+          margin-left: 5px;
+          margin-right: 5px; }
+      footer .footer-content .about-organization .text-reserv {
+        font-size: 12px !important; }
+      footer .footer-content .about-organization__information {
+        display: flex; }
+    footer .footer-content p {
+      font-size: 14px; }
+    footer .footer-content .button-blue {
+      border-radius: 4px;
+      background: #324A74;
+      width: 80px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 12px !important; }
 
 .scroll-up {
   position: fixed;
