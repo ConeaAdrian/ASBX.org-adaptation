@@ -14,9 +14,9 @@
     text-align: center;
     background: #ffffff;
     @media (max-width: 768px) {
-        padding: 40px;
-        height: 100%;
-      }
+      padding: 40px;
+      height: 100%;
+    }
     .error-text {
       font-weight: 500;
       font-size: 140px;
@@ -47,12 +47,11 @@
       color: rgba(60, 60, 67, 0.85);
     }
     .button {
-      border: 0;
-      height: 64px;
+      height: 44px;
+      max-width: 120px;
       margin-top: 2rem;
-      @media (max-width: 768px) {
-        height: 48px;
-      }
+      width: 100%;
+      text-transform: uppercase !important;
     }
   }
 }
