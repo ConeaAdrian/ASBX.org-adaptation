@@ -1,25 +1,33 @@
-<div class="search-principal">
-    <form action="" class="search-asbestos">
-        <select id="select1">
-          <option value="">--Select--</option>
-          <option value="lista1">Family Member</option>
-          <option value="lista2">Listă 2</option>
-          <option value="lista3">Listă 3</option>
-        </select>
-      <div class="search-form">
-        <div class="select-wrapper search-wrapper">
-          <div class="input-wrapper">
+<div class="search-principal container">
+  <form class="search-asbestos">
+    <div class="search-asbestos__select">
+      <div class="text"><p>FIND</p></div>
+      <select id="select1">
+        <option class="hello" value="">
+          Types of compensation, pro-bono legal advice ...
+        </option>
+        <option value="lista1">Family Member</option>
+        <option value="lista2">Listă 2</option>
+        <option value="lista3">Listă 3</option>
+      </select>
+    </div>
+    <div class="search-form">
+      <div class="select-wrapper search-wrapper">
+        <div class="input-wrapper">
+          <div class="input-wrapper__location">
             <i class="fas fa-map-marker-alt"></i>
-            <input
-              type="text"
-              id="search"
-              placeholder="Introdu termenul căutat..."
-              onfocus="addPadding()"
-              onblur="removePadding()"
-            />
+            <p>Near</p>
           </div>
+          <input
+            type="text"
+            id="search"
+            placeholder="Location..."
+            onfocus="addPadding()"
+            onblur="removePadding()"
+          />
         </div>
-        <button class="button new-buton-adapt" type="submit">Search</button>
       </div>
-    </form>
+      <button class="button" type="submit">Find</button>
+    </div>
+  </form>
 </div>

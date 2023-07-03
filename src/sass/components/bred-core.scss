@@ -28,59 +28,6 @@
   }
 
 }
-.search-asbestos {
-  display: flex;
-  align-items: center;
-  background: #324a74;
-  margin-bottom: 3rem;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 727px;
-  height: 84px;
-  padding: 19px;
-  justify-content: space-between;
-  @media (max-width: 640px) {
-    height: auto;
-  }
-  select {
-    max-width: 260px;
-    width: 100%;
-    height: 42px;
-  }
-  .search-form {
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-    .search-wrapper {
-      width: 100%;
-      max-width: 344px;
-      height: 42px;
-    }
-
-    .button {
-      width: 73px;
-      height: 42px;
-      border-radius: 0px 4px 4px 0px;
-    }
-  }
-  .input-wrapper {
-    position: relative;
-  }
-
-  .input-wrapper i {
-    position: absolute;
-    left: 10px;
-    top: 25%;
-    color: #888;
-  }
-  input {
-    padding-left: 2rem;
-    width: 100%;
-    max-width: 344px;
-    height: 42px;
-  }
-}
 .step-work {
   text-align: center;
   margin: 0 auto;

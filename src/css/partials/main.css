@@ -1093,6 +1093,101 @@ button {
   font-weight: 700;
   font-size: 12px; }
 
+.search-principal {
+  padding-top: 25px; }
+  .search-principal .search-asbestos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #324a74;
+    width: 100%;
+    max-width: 745px;
+    height: 62px;
+    margin: 0 auto;
+    gap: 8px; }
+    .search-principal .search-asbestos__select {
+      display: flex;
+      align-items: center; }
+      .search-principal .search-asbestos__select .text {
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-right: none;
+        background: #fff;
+        height: 25px;
+        width: 45px; }
+        .search-principal .search-asbestos__select .text p {
+          font-size: 14px;
+          font-weight: 700;
+          color: #324a74;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 3px; }
+      .search-principal .search-asbestos__select select {
+        height: 25px;
+        max-width: 334px;
+        width: 100%;
+        border-left: none !important;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        color: #545454;
+        font-size: 13px;
+        font-weight: 400; }
+    .search-principal .search-asbestos .search-form {
+      display: flex;
+      align-items: center; }
+      .search-principal .search-asbestos .search-form .select-wrapper {
+        display: flex;
+        align-items: center; }
+        .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper {
+          display: flex;
+          align-items: center; }
+          .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper__location {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-right: none;
+            background: #fff;
+            height: 25px;
+            width: 60px;
+            gap: 3px; }
+            .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper__location p {
+              font-size: 14px;
+              font-weight: 700;
+              color: #324a74;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-transform: uppercase !important; }
+            .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper__location i {
+              color: #324a74; }
+          .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper input {
+            border-left: none !important;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            background: #fff;
+            height: 25px;
+            max-width: 215px;
+            width: 100%;
+            padding-bottom: 5px; }
+            .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper input::placeholder {
+              color: #545454;
+              font-size: 13px;
+              font-weight: 400; }
+      .search-principal .search-asbestos .search-form .button {
+        border-radius: 0px 4px 4px 0px;
+        background: #ff4043;
+        width: 44px;
+        height: 25px;
+        text-transform: uppercase !important; }
+
+.header-search {
+  background: #F7FCFF; }
+  .header-search .search-asbestos {
+    margin: 0 !important;
+    height: 42px !important;
+    margin: 0 12px; }
+  .header-search .search-asbestos {
+    background: #e4f5ff !important; }
+
 footer {
   background-color: #faf7f0; }
   footer .footer-content {
@@ -1355,49 +1450,6 @@ nav {
       line-height: 47px;
       text-align: center;
       color: #bf5931; }
-
-.search-asbestos {
-  display: flex;
-  align-items: center;
-  background: #324a74;
-  margin-bottom: 3rem;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 727px;
-  height: 84px;
-  padding: 19px;
-  justify-content: space-between; }
-  @media (max-width: 640px) {
-    .search-asbestos {
-      height: auto; } }
-  .search-asbestos select {
-    max-width: 260px;
-    width: 100%;
-    height: 42px; }
-  .search-asbestos .search-form {
-    display: flex;
-    align-items: center;
-    width: 100%; }
-    .search-asbestos .search-form .search-wrapper {
-      width: 100%;
-      max-width: 344px;
-      height: 42px; }
-    .search-asbestos .search-form .button {
-      width: 73px;
-      height: 42px;
-      border-radius: 0px 4px 4px 0px; }
-  .search-asbestos .input-wrapper {
-    position: relative; }
-  .search-asbestos .input-wrapper i {
-    position: absolute;
-    left: 10px;
-    top: 25%;
-    color: #888; }
-  .search-asbestos input {
-    padding-left: 2rem;
-    width: 100%;
-    max-width: 344px;
-    height: 42px; }
 
 .step-work {
   text-align: center;
@@ -1959,49 +2011,6 @@ nav {
     padding-left: 10px; }
     .legend .legend-information p {
       color: #BF5931; }
-
-.search-background {
-  background: #f7fcff;
-  height: 69px; }
-  .search-background .search-header {
-    display: flex;
-    background: #e4f5ff;
-    border-radius: 4px;
-    padding: 10px;
-    gap: 12px;
-    max-width: 739px;
-    width: 100%; }
-    .search-background .search-header select {
-      max-width: 311px;
-      width: 100%;
-      height: 25px; }
-    .search-background .search-header .search-form {
-      display: flex;
-      align-items: center;
-      width: 100%; }
-      .search-background .search-header .search-form .search-wrapper {
-        width: 100%;
-        max-width: 355px;
-        height: 25px; }
-      .search-background .search-header .search-form .button {
-        width: 43px;
-        height: 25px;
-        border-radius: 0px 4px 4px 0px;
-        text-transform: uppercase !important; }
-    .search-background .search-header .input-wrapper {
-      position: relative; }
-    .search-background .search-header .input-wrapper i {
-      position: absolute;
-      left: 10px;
-      top: 15%;
-      color: #888; }
-    .search-background .search-header input {
-      padding-left: 2rem;
-      width: 100%;
-      max-width: 355px;
-      height: 25px; }
-  .search-background .search-form {
-    display: flex; }
 
 .baner-company {
   width: 100%;

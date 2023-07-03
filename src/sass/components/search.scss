@@ -1,0 +1,118 @@
+.search-principal {
+  padding-top: 25px;
+  .search-asbestos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #324a74;
+    width: 100%;
+    max-width: 745px;
+    height: 62px;
+    margin: 0 auto;
+    gap: 8px;
+    &__select {
+      display: flex;
+      align-items: center;
+
+      .text {
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-right: none;
+        background: #fff;
+        height: 25px;
+        width: 45px;
+        p {
+          font-size: 14px;
+          font-weight: 700;
+          color: #324a74;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 3px;
+        }
+      }
+      select {
+        height: 25px;
+        max-width: 334px;
+        width: 100%;
+        border-left: none !important;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        color: #545454;
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+    .search-form {
+      display: flex;
+      align-items: center;
+
+      .select-wrapper {
+        display: flex;
+        align-items: center;
+
+        .input-wrapper {
+          display: flex;
+          align-items: center;
+
+          &__location {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-right: none;
+            background: #fff;
+            height: 25px;
+            width: 60px;
+            gap: 3px;
+
+            p {
+              font-size: 14px;
+              font-weight: 700;
+              color: #324a74;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-transform: uppercase !important;
+            }
+            i {
+              color: #324a74;
+            }
+          }
+          input {
+            border-left: none !important;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            background: #fff;
+            height: 25px;
+            max-width: 215px;
+            width: 100%;
+            padding-bottom: 5px;
+
+            &::placeholder {
+              color: #545454;
+              font-size: 13px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .button {
+        border-radius: 0px 4px 4px 0px;
+        background: #ff4043;
+        width: 44px;
+        height: 25px;
+        text-transform: uppercase !important;
+      }
+    }
+  }
+}
+
+.header-search {
+  background: #F7FCFF;
+  .search-asbestos {
+    margin: 0 !important;
+    height: 42px !important;
+    margin: 0 12px ;
+  }
+  .search-asbestos {
+    background: #e4f5ff !important;
+  }
+}

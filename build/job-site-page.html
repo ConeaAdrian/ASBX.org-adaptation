@@ -162,33 +162,42 @@
   </div>
 </header>
 
-<div class="search-background">
-    <div class="container">
-        <form action="" class="search-header">
-            <select id="select1">
-              <option value="">Select Job Type</option>
-              <option value="lista1">Family Member</option>
-              <option value="lista2">Listă 2</option>
-              <option value="lista3">Listă 3</option>
-            </select>
-          <div class="search-form">
-            <div class="select-wrapper search-wrapper">
-              <div class="input-wrapper">
-                <i class="fas fa-map-marker-alt"></i>
-                <input
-                  type="text"
-                  id="search"
-                  placeholder="Near"
-                  onfocus="addPadding()"
-                  onblur="removePadding()"
-                />
-              </div>
-            </div>
-            <button class="button new-buton-adapt" type="submit">Find</button>
-          </div>
-        </form>
+<div class="header-search"><div class="search-principal container">
+  <form class="search-asbestos">
+    <div class="search-asbestos__select">
+      <div class="text"><p>FIND</p></div>
+      <select id="select1">
+        <option class="hello" value="">
+          Types of compensation, pro-bono legal advice ...
+        </option>
+        <option value="lista1">Family Member</option>
+        <option value="lista2">Listă 2</option>
+        <option value="lista3">Listă 3</option>
+      </select>
     </div>
+    <div class="search-form">
+      <div class="select-wrapper search-wrapper">
+        <div class="input-wrapper">
+          <div class="input-wrapper__location">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Near</p>
+          </div>
+          <input
+            type="text"
+            id="search"
+            placeholder="Location..."
+            onfocus="addPadding()"
+            onblur="removePadding()"
+          />
+        </div>
+      </div>
+      <button class="button" type="submit">Find</button>
+    </div>
+  </form>
 </div>
+</div>
+
+
 <div class="body-page">
   <div class="container">
 
