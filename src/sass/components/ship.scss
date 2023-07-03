@@ -49,4 +49,99 @@
       }
     }
   }
+
+  .trust-funds-claim {
+    margin-top: 26px;
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #bf5931;
+    }
+    h3 {
+      color: #324a74;
+      font-size: 18px;
+    }
+
+    .compensation-section__table {
+      tbody {
+        display: flex;
+        width: 100%;
+        max-width: none;
+
+        .data-column-text {
+          .claims-type {
+            color: #000;
+            font-weight: 700;
+          }
+          th {
+            color: #324a74;
+          }
+        }
+      }
+      .data-column {
+        background-color: #faf7f0 !important;
+
+        &__diagnosed {
+          background-color: white !important;
+          color: #bf5931;
+          font-size: 14px;
+          font-family: Nunito;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .legend {
+    .legend-text {
+        color: #BF5931;
+    }
+    .legend-information {
+        p {
+            color: #000 !important; 
+        }
+    }
+  }
+  .civil-defendants {
+    margin-bottom: 28px;
+    span {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #bf5931;
+      }
+      h3 {
+        color: #324a74;
+        font-size: 18px;
+      }
+  }
+
+  .equipment-table {
+    border-collapse: collapse;
+  margin-top: 30px;
+    th, td {
+      
+      border: 1px solid #e3e3e3;
+    }
+  
+    th {
+      background-color: #eeeeee;
+      font-weight: 700;
+    }
+  
+    td {
+      background-color: white;
+      width: auto;
+      padding: 3px;
+    }
+  
+    .background {
+        background-color: #FAF7F0;
+        color: #324A74;
+        cursor: pointer;
+        text-decoration-line: underline;
+    }
+  }
+  
 }
