@@ -1993,7 +1993,7 @@ nav {
       font-weight: 600; }
   .compensation-section__table tbody {
     display: flex;
-    max-width: 220px;
+    max-width: 240px;
     width: 100%; }
   .compensation-section__table tr {
     flex-direction: column;
