@@ -108,14 +108,19 @@
     color: #c55d34;
     font-weight: 400;
     margin: 0 auto;
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
   }
   p {
     width: 100%;
-    max-width: 586px;
+    max-width: 520px;
     margin: 0 auto;
+    text-align: center;
   }
   .quick-compensation {
     display: flex;
+    margin-top: 45px;
     &__text {
       background-color: #c55d34;
       padding: 35px 15px;
@@ -125,9 +130,11 @@
         color: #fff;
         font-size: 30px;
         margin-bottom: 16px;
+        text-align: left;
       }
       p {
         color: #fff;
+        text-align: left;
       }
     }
     img {

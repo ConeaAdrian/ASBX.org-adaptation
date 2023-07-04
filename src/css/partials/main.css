@@ -1587,13 +1587,18 @@ nav {
     font-size: 30px;
     color: #c55d34;
     font-weight: 400;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 100%;
+    max-width: 440px;
+    text-align: center; }
   .template-compensation p {
     width: 100%;
-    max-width: 586px;
-    margin: 0 auto; }
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center; }
   .template-compensation .quick-compensation {
-    display: flex; }
+    display: flex;
+    margin-top: 45px; }
     .template-compensation .quick-compensation__text {
       background-color: #c55d34;
       padding: 35px 15px;
@@ -1602,9 +1607,11 @@ nav {
       .template-compensation .quick-compensation__text h2 {
         color: #fff;
         font-size: 30px;
-        margin-bottom: 16px; }
+        margin-bottom: 16px;
+        text-align: left; }
       .template-compensation .quick-compensation__text p {
-        color: #fff; }
+        color: #fff;
+        text-align: left; }
     .template-compensation .quick-compensation img {
       max-width: 397px;
       width: 100%; }
