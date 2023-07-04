@@ -10,7 +10,7 @@ $link-hover-color: $main-red;
 
 .header-section {
   width: 100%;
-  background: #324A74;
+  background: #324a74;
 }
 .navigation {
   display: flex;
@@ -35,8 +35,14 @@ nav {
         font-weight: 500;
         font-size: 13px;
         text-transform: uppercase;
+        @media (max-width: 1025px) {
+          color: black;
+        }
         &:hover {
           color: #ffffff !important;
+          @media (max-width: 1025px) {
+            color: black;
+          }
         }
         @media (max-width: 1200px) {
           padding: 10px;
@@ -80,12 +86,12 @@ nav {
     height: 100%;
     background-color: white;
     z-index: 10;
-    padding: 5rem;
-    padding-top: 10rem !important;
+    padding: 3rem;
+    padding-top: 5rem !important;
   }
   li {
     a {
-      font-family: 'Roboto Condensed', sans-serif !important;
+      font-family: "Roboto Condensed", sans-serif !important;
     }
   }
 
@@ -98,15 +104,34 @@ nav {
     font-weight: 500;
     font-size: 13px;
     color: #ffffff;
+
+    @media (max-width: 1025px) {
+      color: black;
+      border: 1px solid black;
+    }
+  }
+  .free-chat {
+    margin-left: 10px;
+    @media (max-width: 1025px) {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+    p {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 10px;
+      @media (max-width: 1025px) {
+        color: black;
+      }
+    }
   }
 }
 
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 15px;
+  top: 0;
   right: 20px;
-  background: $nav-background;
   height: 2rem;
   width: 6rem;
   z-index: 100;
@@ -136,13 +161,13 @@ nav {
 }
 @media screen and (min-width: 1025px) {
   .nav-list {
-    display: block !important;
+    display: flex !important;
     background: transparent;
   }
 }
 #nav-toggle {
   position: absolute;
-  left: 18px;
+  right: 0;
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
@@ -151,9 +176,9 @@ nav {
   span:after {
     cursor: pointer;
     border-radius: 1px;
-    height: 5px;
+    height: 3px;
     width: 35px;
-    background: $nav-font-color;
+    background: white;
     position: absolute;
     display: block;
     content: "";
@@ -172,9 +197,11 @@ nav {
       top: 0;
     }
     &:before {
+      background-color: #324a74;
       transform: rotate(45deg);
     }
     &:after {
+      background-color: #324a74;
       transform: rotate(-45deg);
     }
   }

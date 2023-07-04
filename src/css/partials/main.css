@@ -990,11 +990,6 @@ body {
 .general-page {
   display: flex;
   gap: 55px; }
-  .general-page .badge {
-    display: block; }
-
-.page-suplimentar .badge {
-  display: none; }
 
 .button {
   font-size: 14px !important;
@@ -1310,7 +1305,7 @@ footer {
 
 .header-section {
   width: 100%;
-  background: #324A74; }
+  background: #324a74; }
 
 .navigation {
   display: flex;
@@ -1335,9 +1330,17 @@ nav {
         font-weight: 500;
         font-size: 13px;
         text-transform: uppercase; }
+        @media (max-width: 1025px) {
+          nav ul li a,
+          nav ul li a:visited {
+            color: black; } }
         nav ul li a:hover,
         nav ul li a:visited:hover {
           color: #ffffff !important; }
+          @media (max-width: 1025px) {
+            nav ul li a:hover,
+            nav ul li a:visited:hover {
+              color: black; } }
         @media (max-width: 1200px) {
           nav ul li a,
           nav ul li a:visited {
@@ -1375,10 +1378,10 @@ nav {
       height: 100%;
       background-color: white;
       z-index: 10;
-      padding: 5rem;
-      padding-top: 10rem !important; } }
+      padding: 3rem;
+      padding-top: 5rem !important; } }
   .nav-list li a {
-    font-family: 'Roboto Condensed', sans-serif !important; }
+    font-family: "Roboto Condensed", sans-serif !important; }
   .nav-list .button-question {
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -1388,13 +1391,29 @@ nav {
     font-weight: 500;
     font-size: 13px;
     color: #ffffff; }
+    @media (max-width: 1025px) {
+      .nav-list .button-question {
+        color: black;
+        border: 1px solid black; } }
+  .nav-list .free-chat {
+    margin-left: 10px; }
+    @media (max-width: 1025px) {
+      .nav-list .free-chat {
+        margin-top: 10px;
+        margin-left: 0; } }
+    .nav-list .free-chat p {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 10px; }
+      @media (max-width: 1025px) {
+        .nav-list .free-chat p {
+          color: black; } }
 
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 15px;
+  top: 0;
   right: 20px;
-  background: #ffffff;
   height: 2rem;
   width: 6rem;
   z-index: 100; }
@@ -1418,12 +1437,12 @@ nav {
 
 @media screen and (min-width: 1025px) {
   .nav-list {
-    display: block !important;
+    display: flex !important;
     background: transparent; } }
 
 #nav-toggle {
   position: absolute;
-  left: 18px;
+  right: 0;
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px; }
@@ -1432,9 +1451,9 @@ nav {
   #nav-toggle span:after {
     cursor: pointer;
     border-radius: 1px;
-    height: 5px;
+    height: 3px;
     width: 35px;
-    background: #15528E;
+    background: white;
     position: absolute;
     display: block;
     content: "";
@@ -1448,14 +1467,16 @@ nav {
     #nav-toggle.active span:before, #nav-toggle.active span:after {
       top: 0; }
     #nav-toggle.active span:before {
+      background-color: #324a74;
       transform: rotate(45deg); }
     #nav-toggle.active span:after {
+      background-color: #324a74;
       transform: rotate(-45deg); }
 
 .container {
   max-width: 980px;
   margin: 0 auto;
-  padding: 1rem 0rem; }
+  padding: 1rem 20px; }
   @media only screen and (max-width: 1040px) and (min-width: 992px) {
     .container {
       margin-bottom: 2rem; } }
@@ -1530,11 +1551,12 @@ nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      text-align: left; }
+      text-align: center;
+      align-items: center;
+      margin-top: 48px; }
       .background-state .state-select .state-list li {
         width: 23%;
-        text-decoration-line: underline;
-        list-style-type: disc; }
+        text-decoration-line: underline; }
         .background-state .state-select .state-list li a {
           font-weight: 400;
           font-size: 18px;
@@ -1558,6 +1580,44 @@ nav {
   flex-wrap: wrap; }
   .military-index .advocacy-information .military-forces__logo img {
     margin-right: 25px; }
+
+.template-compensation {
+  margin-top: 60px; }
+  .template-compensation h2 {
+    font-size: 30px;
+    color: #c55d34;
+    font-weight: 400;
+    margin: 0 auto; }
+  .template-compensation p {
+    width: 100%;
+    max-width: 586px;
+    margin: 0 auto; }
+  .template-compensation .quick-compensation {
+    display: flex; }
+    .template-compensation .quick-compensation__text {
+      background-color: #c55d34;
+      padding: 35px 15px;
+      max-width: 410px;
+      width: 100%; }
+      .template-compensation .quick-compensation__text h2 {
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 16px; }
+      .template-compensation .quick-compensation__text p {
+        color: #fff; }
+    .template-compensation .quick-compensation img {
+      max-width: 397px;
+      width: 100%; }
+    .template-compensation .quick-compensation button {
+      width: 106px;
+      height: 30px;
+      border-radius: 4px;
+      background: #fff;
+      color: #000;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-top: 21px; }
 
 .index-page .header-section {
   position: absolute;
@@ -1711,8 +1771,10 @@ nav {
       font-size: 30px;
       color: #c55d34; }
     .container-about .choose-documentation ul {
+      margin-top: 8px;
       margin-left: 30px; }
       .container-about .choose-documentation ul li {
+        color: black;
         list-style-type: disc;
         font-weight: 400;
         font-size: 14px; }
@@ -1752,7 +1814,7 @@ nav {
       height: 104px;
       width: 100%; }
       .container-about .advocacy-img__quote h3 {
-        margin-top: 37px;
+        margin-top: 20px;
         font-weight: 500;
         font-size: 20px;
         line-height: 26px;
