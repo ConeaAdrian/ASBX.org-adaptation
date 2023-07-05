@@ -33,3 +33,18 @@
     display: block;
   }
   
+
+
+ /* Stilurile pentru pop-up */
+.popup {
+  position: fixed;
+  bottom: 50px; /* Ajustați distanța de la partea de jos a paginii la butonul "Add +" */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: none;
+}

@@ -22,28 +22,65 @@
     }); // end DOM ready
   })(jQuery); // end jQuery
 
-
-  
   document.addEventListener('DOMContentLoaded', function() {
+    function resetCheckboxes() {
+      beforeCheckbox.checked = false;
+      afterCheckbox.checked = false;
+    }
+  
+    function displayError(errorElementId) {
+      var errorElement = document.getElementById(errorElementId);
+      errorElement.style.display = "block";
+      setTimeout(function() {
+        errorElement.style.display = "none";
+      }, 3000);
+    }
+  
     var beforeCheckbox = document.getElementById('beforeCheckbox');
     var afterCheckbox = document.getElementById('afterCheckbox');
-  
+    var select1 = document.getElementById('select1');
+    
     beforeCheckbox.addEventListener('change', function() {
       if (this.checked) {
         afterCheckbox.checked = false;
       }
     });
-  
+    
     afterCheckbox.addEventListener('change', function() {
       if (this.checked) {
         beforeCheckbox.checked = false;
       }
     });
-  
-    var select1 = document.getElementById('select1');
-    select1.addEventListener('change', function() {
-      beforeCheckbox.checked = false;
-      afterCheckbox.checked = false;
+    
+    select1.addEventListener('change', resetCheckboxes);
+    
+    document.getElementById('addButton').addEventListener('click', function(event) {
+      event.preventDefault();
+      
+      var jobTitle = document.getElementById('jobTitleSelect').value;
+      var fromYear = document.getElementById('fromYearSelect').value;
+      var toYear = document.getElementById('toYearSelect').value;
+      
+      if (jobTitle === "" || fromYear === "" || toYear === "") {
+        displayError('errorMessage');
+      } else {
+        document.getElementById('errorMessage').style.display = "none";
+        // You can add other codes to execute if the form is valid
+      }
+    });
+    
+    document.getElementById('boilerButton').addEventListener('click', function(event) {
+      event.preventDefault();
+      
+      var job = document.getElementById('select1').value;
+      
+      if (job === "" || (beforeCheckbox.checked === afterCheckbox.checked)) {
+        displayError('errorMessageBoiler');
+      } else {
+        document.getElementById('errorMessageBoiler').style.display = "none";
+      }
+      
+      resetCheckboxes();
     });
   });
   
