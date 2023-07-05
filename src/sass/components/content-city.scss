@@ -97,12 +97,20 @@
           display: flex;
           margin-top: 27px;
           align-items: center;
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
           .alphabet {
             ul {
               display: flex;
               flex-wrap: wrap;
               gap: 5px;
               text-decoration-line: underline;
+              li {
+                @media (max-width: 767px) {
+                 font-size: 14px;
+                }
+              }
             }
           }
         }

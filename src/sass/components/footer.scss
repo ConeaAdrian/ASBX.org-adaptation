@@ -2,6 +2,13 @@
 footer {
   margin-top: 45px;
   background-color: #faf7f0;
+  padding-bottom: 55px !important;
+  @media (max-width: 746px) {
+    padding-bottom: 80px !important;
+  }
+  @media (max-width: 475px) {
+    padding-bottom: 100px !important;
+  }
 
   .footer-content {
     margin-top: 8px;

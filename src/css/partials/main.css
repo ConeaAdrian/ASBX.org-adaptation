@@ -927,7 +927,8 @@ a {
 select {
   border: 1px solid #dbdbdb;
   background: #fff;
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif; }
 
 input {
   border: 1px solid #dbdbdb;
@@ -1379,7 +1380,14 @@ button {
 
 footer {
   margin-top: 45px;
-  background-color: #faf7f0; }
+  background-color: #faf7f0;
+  padding-bottom: 55px !important; }
+  @media (max-width: 746px) {
+    footer {
+      padding-bottom: 80px !important; } }
+  @media (max-width: 475px) {
+    footer {
+      padding-bottom: 100px !important; } }
   footer .footer-content {
     margin-top: 8px;
     display: flex;
@@ -2179,11 +2187,17 @@ nav {
       display: flex;
       margin-top: 27px;
       align-items: center; }
+      @media (max-width: 767px) {
+        .city-content .job-site-section .search-filter__table .search-alphabet {
+          flex-direction: column; } }
       .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul {
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
         text-decoration-line: underline; }
+        @media (max-width: 767px) {
+          .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul li {
+            font-size: 14px; } }
     .city-content .job-site-section .search-filter__table .search-form {
       margin-bottom: 21px;
       align-items: center;
@@ -2682,17 +2696,25 @@ nav {
       display: flex;
       align-items: center; }
       .jobsite-card__sorting .from-data select {
-        width: 60px;
+        width: 100px;
         margin-left: 7px; }
         @media (max-width: 830px) {
           .jobsite-card__sorting .from-data select {
             max-width: none; } }
+        @media (max-width: 475px) {
+          .jobsite-card__sorting .from-data select {
+            width: 91px;
+            margin-left: 4px; } }
     .jobsite-card__sorting .to-data {
       display: flex;
       align-items: center; }
       .jobsite-card__sorting .to-data select {
-        width: 60px;
+        width: 100px;
         margin-left: 7px; }
+        @media (max-width: 475px) {
+          .jobsite-card__sorting .to-data select {
+            width: 91px;
+            margin-left: 4px; } }
   .jobsite-card .add-button {
     border-radius: 4px;
     background: #ff4043;
@@ -2807,7 +2829,8 @@ nav {
   margin-top: 16px;
   display: flex;
   gap: 23px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 50px; }
   @media (max-width: 992px) {
     .content-table {
       flex-direction: column; } }
@@ -3316,3 +3339,81 @@ nav {
     position: absolute;
     right: 40px;
     bottom: 10px; }
+
+.bottom-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+  .bottom-banner .banner-calculate {
+    flex-direction: row;
+    align-items: center;
+    background: #003366;
+    justify-content: center;
+    border-radius: inherit; }
+    .bottom-banner .banner-calculate .container {
+      padding: 0 20px; }
+      @media (max-width: 475px) {
+        .bottom-banner .banner-calculate .container {
+          padding: 10px; } }
+    .bottom-banner .banner-calculate .content-information {
+      display: flex;
+      justify-content: space-between; }
+      @media (max-width: 745px) {
+        .bottom-banner .banner-calculate .content-information {
+          flex-direction: column;
+          align-items: center; } }
+      .bottom-banner .banner-calculate .content-information .claims-result {
+        display: flex;
+        align-items: center; }
+        .bottom-banner .banner-calculate .content-information .claims-result h3 {
+          font-family: 'Nunito', sans-serif !important;
+          color: white;
+          margin: 0;
+          font-weight: 700;
+          font-size: 18px;
+          margin-right: 10px; }
+        .bottom-banner .banner-calculate .content-information .claims-result p {
+          color: white;
+          margin: 0;
+          font-weight: 700;
+          font-size: 18px;
+          margin-left: 10px; }
+        .bottom-banner .banner-calculate .content-information .claims-result__number {
+          display: flex;
+          align-items: center; }
+          .bottom-banner .banner-calculate .content-information .claims-result__number h3 {
+            color: white;
+            margin: 0;
+            margin-right: 6px; }
+      .bottom-banner .banner-calculate .content-information .claims-buttons {
+        margin-bottom: 10px;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center; }
+        .bottom-banner .banner-calculate .content-information .claims-buttons button {
+          padding: 8px 12px;
+          border-radius: 5px;
+          font-weight: 800;
+          font-size: 14px;
+          font-family: 'Nunito', sans-serif; }
+          @media (max-width: 475px) {
+            .bottom-banner .banner-calculate .content-information .claims-buttons button {
+              font-size: 14px; } }
+          @media (max-width: 840px) {
+            .bottom-banner .banner-calculate .content-information .claims-buttons button span {
+              display: none; } }
+        .bottom-banner .banner-calculate .content-information .claims-buttons .calculate {
+          background: #FF4043;
+          color: white;
+          border-radius: 5px;
+          border: 0; }
+        .bottom-banner .banner-calculate .content-information .claims-buttons .add-city {
+          color: #324A74;
+          background: transparent;
+          border-radius: 5px;
+          border: 0;
+          background-color: white; }
