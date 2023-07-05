@@ -3,6 +3,9 @@
   display: flex;
   gap: 23px;
   justify-content: space-between;
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
   &__facts {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fffef9;
@@ -18,8 +21,8 @@
     }
     img {
       position: absolute;
-      right: -13px;
-      transform: translateY(-24px);
+      right: -14px;
+      transform: translateY(-15px);
     }
   }
   .necessary-information {
@@ -32,6 +35,12 @@
     max-width: 421px;
     padding: 8px 9px;
     position: relative;
+
+    p {
+      @media (max-width: 475px) {
+        font-size: 12px;
+      }
+    }
     tbody {
       display: flex;
 
@@ -55,6 +64,7 @@
         display: flex;
         p {
           color: #c55d34 !important;
+          width: 101px;
         }
         .none {
           color: #fffef9 !important;
@@ -77,6 +87,10 @@
   max-width: 265px;
   width: 100%;
   padding: 12px 4px;
+
+  @media (max-width: 992px) {
+    margin-bottom: 20px;
+  }
 
   p {
     margin-left: 5px;

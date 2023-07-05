@@ -71,19 +71,11 @@ p {
   font-size: 16px;
   color: #000;
   margin: 0;
-  @include respondto(phone) {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
 }
 
 li {
   font-size: 16px;
   line-height: 18px;
-  @include respondto(phone) {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
 }
 span {
   font-size: 14px;
@@ -107,6 +99,7 @@ a {
 select {
   border: 1px solid #dbdbdb;
   background: #fff;
+  font-size: 14px;
 }
 input {
   border: 1px solid #dbdbdb;

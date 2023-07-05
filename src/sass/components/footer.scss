@@ -1,14 +1,35 @@
+
 footer {
+  margin-top: 45px;
   background-color: #faf7f0;
 
   .footer-content {
     margin-top: 8px;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+
+    @media (max-width: 803px) {
+      flex-wrap: wrap;
+      
+    }
+    @media (max-width: 475px) {
+      flex-direction: column;
+      gap: 20px;
+    }
 
     .request-call {
       border-right: 1px solid #e2dede;
       padding-right: 53px;
+
+      @media (max-width: 803px) {
+        border: none;
+        padding-right: 0;
+      }
+      @media (max-width: 475px) {
+        width: 70%;
+        margin: 0 auto;
+      }
 
       p {
         font-family: "Roboto Condensed";
@@ -32,6 +53,9 @@ footer {
           font-size: 14px;
           font-weight: 400;
           line-height: 28px;
+          @media (max-width: 475px) {
+            width: 100%;
+          }
 
           &::placeholder {
             color: #ff0000 !important;
@@ -43,11 +67,13 @@ footer {
           height: 25px;
           width: 200px;
           font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
 
-            font-style: normal;
-            font-weight: 400;
-            line-height: 28px;
-
+          @media (max-width: 475px) {
+            width: 100%;
+          }
           &::placeholder {
             color: #000000 !important;
           }
@@ -59,11 +85,27 @@ footer {
       flex-direction: column;
       border-right: 1px solid #e2dede;
       padding-right: 46px;
+      @media (max-width: 803px) {
+        border: none;
+        padding-right: 0;
+      }
+      @media (max-width: 475px) {
+        margin: 0 auto;
+      }
 
       .logo-footer {
         height: 21px;
         width: 87px;
         margin-bottom: 7px;
+        @media (max-width: 475px) {
+          margin: 0 auto;
+          margin-bottom: 5px;
+        }
+      }
+      p {
+        @media (max-width: 475px) {
+         text-align: center;
+        }
       }
       &__number {
         font-size: 14px;
@@ -72,6 +114,10 @@ footer {
         max-width: 154px;
         width: 100%;
         margin-bottom: 20px;
+
+        @media (max-width: 475px) {
+          margin: 5px auto;
+        }
       }
       .contact-media {
         img {
@@ -85,10 +131,23 @@ footer {
       flex-direction: column;
       align-items: end;
       gap: 5px;
-
-      &__information {
+      @media (max-width: 803px) {
+        margin: 0 auto;
+        align-items: center;
+      }
+      &__content {
+        text-align: end;
+        @media (max-width: 762px) {
+          align-items: center;
+        }
+      }
+      .information {
         display: flex;
         align-items: center;
+        justify-content: end;
+        @media (max-width: 762px) {
+          justify-content: center;
+        }
         .intermediar-bar {
           width: 1px;
           height: 14px;
@@ -103,6 +162,16 @@ footer {
       }
       &__information {
         display: flex;
+        flex-direction: column;
+
+        @media (max-width: 762px) {
+          flex-direction: initial;
+        }
+      }
+
+      &__img {
+        display: flex;
+        flex-direction: column;
       }
     }
     p {
@@ -111,45 +180,15 @@ footer {
 
     .button-blue {
       border-radius: 4px;
-      background: #324A74;
+      background: #324a74;
       width: 80px;
-height: 25px;
-display: flex;
-align-items: center;
-justify-content: center;
-text-transform: uppercase;
-font-weight: 800;
-font-size: 12px !important;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 12px !important;
     }
   }
 }
-
-//--------
-
-.scroll-up {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  width: 50px;
-  height: 50px;
-  background-color: $main-red;
-  border-radius: 50%;
-  text-align: center;
-  color: $white;
-  font-size: 24px;
-  line-height: 50px;
-  cursor: pointer;
-  z-index: 9999;
-  border: none;
-}
-
-.scroll-up:hover {
-  background-color: darken($main-red, 10%);
-}
-
-.scroll-up.active {
-  display: block;
-}
-
-//--------------

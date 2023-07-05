@@ -38,12 +38,7 @@ nav {
         @media (max-width: 1025px) {
           color: black;
         }
-        &:hover {
-          color: #ffffff !important;
-          @media (max-width: 1025px) {
-            color: black;
-          }
-        }
+        
         @media (max-width: 1200px) {
           padding: 10px;
         }
@@ -121,7 +116,7 @@ nav {
       color: #fff;
       font-size: 10px;
       @media (max-width: 1025px) {
-        color: black;
+          flex-wrap: wrap;
       }
     }
   }

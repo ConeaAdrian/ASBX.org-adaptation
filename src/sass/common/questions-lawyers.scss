@@ -1,0 +1,177 @@
+.questions-lawyers {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  &__topbar {
+    border-radius: 6px 6px 0px 0px;
+    background: #036;
+    height: 65px;
+
+    h3 {
+      color: white;
+      margin: 0;
+      font-size: 18px;
+      font-family: "Nunito", sans-serif !important;
+      font-weight: 700;
+      padding: 20px 17px;
+
+      @media (max-width: 548px) {
+        font-size: 16px;
+        padding: 10px 17px;
+      }
+    }
+  }
+  .container-lawyers {
+    padding: 21px 15px;
+  }
+  &__select {
+    border-radius: 4px;
+    background: #f0f5ff;
+    padding: 19px 27px;
+    margin-top: 20px;
+    .general-select {
+      display: flex;
+      @media (max-width: 540px) {
+        flex-direction: column;
+      }
+
+      .select-lawyers {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        @media only screen and (max-width: 992px) and (min-width: 767px) {
+          flex-direction: column;
+          align-items: start;
+        }
+        @media (max-width: 767px) {
+          flex-direction: column;
+          align-items: start;
+        }
+        @media (max-width: 540px) {
+           margin-right: 0;
+          }
+        p {
+          font-weight: 700;
+          font-size: 14px;
+          margin-right: 5px;
+          width: 222px;
+          @media (max-width: 540px) {
+            width: auto !important;
+           }
+        }
+        select {
+          max-width: 150px;
+          height: 25px;
+          @media only screen and (max-width: 992px) and (min-width: 767px) {
+            max-width: none;
+            width: 100%;
+          }
+          @media (max-width: 767px) {
+            max-width: none;
+            width: 100%;
+          }
+        }
+      }
+      .profesion {
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: 992px) and (min-width: 767px) {
+          flex-direction: column;
+          align-items: start;
+        }
+        @media (max-width: 767px) {
+          flex-direction: column;
+          align-items: start;
+        }
+        p {
+          width: 40px;
+          font-weight: 700;
+          font-size: 14px;
+          margin-right: 5px;
+        }
+        select {
+          max-width: 150px;
+          height: 25px;
+
+          @media only screen and (max-width: 992px) and (min-width: 767px) {
+            max-width: none;
+            width: 100%;
+          }
+          @media (max-width: 767px) {
+            max-width: none;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .input-field {
+      width: 100%;
+      height: 70px;
+      padding: 10px;
+      color: #000;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
+      margin-top: 20px;
+
+      &::placeholder {
+        font-size: 16px;
+
+        @media (max-width: 680px) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .lawyers-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: start;
+      }
+
+    &__elements {
+      p {
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+    &__content {
+      display: flex;
+      gap: 11px;
+      margin-top: 8px;
+      align-items: center;
+
+      .data {
+        .name {
+          text-decoration-line: underline;
+          margin-bottom: 5px;
+        }
+        .disease {
+          color: #324a74;
+          font-size: 12px;
+          font-weight: 500;
+        }
+        .experience {
+          font-size: 12px;
+          font-weight: 700;
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .button {
+      width: 160px;
+      height: 36px;
+      @media (max-width: 500px) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

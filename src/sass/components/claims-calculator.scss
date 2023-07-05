@@ -1,12 +1,12 @@
 .claims-select {
   max-width: 202px;
   width: 100%;
-  @media (max-width: 992px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
 .claims-select-mobile {
-  @media (min-width: 992px) {
+  @media (min-width: 767px) {
     display: none;
   }
   .general-claims {
@@ -18,7 +18,7 @@
     width: 100%;
     justify-content: flex-start;
     position: fixed;
-    @media (max-width: 992px) {
+    @media (max-width: 767px) {
       max-width: none;
       width: 100%;
       position: inherit;
@@ -115,12 +115,6 @@
         font-size: 14px;
         font-family: 'Roboto Condensed', sans-serif;
 
-        @media (max-width: 992px) {
-          width: 50%;
-        }
-        @media (max-width: 590px) {
-          width: 80%;
-        }
       }
 
       button:first-child {
@@ -204,6 +198,7 @@
 
     &.special-content-box {
       .special-text {
+        align-items: center;
         color: #324a74;
         font-size: 12px;
         line-height: 15px;

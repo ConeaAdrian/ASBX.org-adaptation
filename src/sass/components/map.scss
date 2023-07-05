@@ -5,6 +5,9 @@
     @media only screen and (max-width: 1040px) and (min-width: 992px)  {
      margin-bottom: 2rem;
     }
+    @media (max-width: 475px) {
+      padding: 10px;
+    }
     
     .desktop-only {
       display: flex;
