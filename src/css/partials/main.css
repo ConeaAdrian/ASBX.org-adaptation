@@ -1547,6 +1547,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  .navigation .brand img {
+    height: 25px; }
 
 nav {
   z-index: 1; }
@@ -1560,23 +1562,16 @@ nav {
       nav ul li a,
       nav ul li a:visited {
         display: block;
-        padding: 10px;
+        padding: 0 10px;
         color: #ffffff;
         text-decoration: none;
         font-weight: 500;
         font-size: 13px;
         text-transform: uppercase; }
-        @media (max-width: 1025px) {
+        @media (max-width: 992px) {
           nav ul li a,
           nav ul li a:visited {
             color: black; } }
-        @media (max-width: 1200px) {
-          nav ul li a,
-          nav ul li a:visited {
-            padding: 10px; } }
-        nav ul li a:hover,
-        nav ul li a:visited:hover {
-          color: #15528E; }
         nav ul li a:not(:only-child):after,
         nav ul li a:visited:not(:only-child):after {
           padding-left: 4px;
@@ -1594,11 +1589,15 @@ nav {
   display: none;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  background-color: transparent; }
+  background-color: rgba(4, 4, 4, 0.5); }
+  @media (max-width: 992px) {
+    .nav-dropdown {
+      background-color: transparent; } }
 
 .nav-list {
-  background-color: white; }
-  @media (max-width: 1025px) {
+  background-color: white;
+  align-items: center; }
+  @media (max-width: 992px) {
     .nav-list {
       position: fixed;
       top: 0px;
@@ -1609,6 +1608,13 @@ nav {
       z-index: 10;
       padding: 3rem;
       padding-top: 5rem !important; } }
+  .nav-list .bar-top {
+    border-left: 1px solid #CDCDCD;
+    margin-left: 20px; }
+    @media (max-width: 992px) {
+      .nav-list .bar-top {
+        border: none;
+        margin-left: 0; } }
   .nav-list li a {
     font-family: "Roboto Condensed", sans-serif !important; }
   .nav-list .button-question {
@@ -1620,23 +1626,28 @@ nav {
     font-weight: 500;
     font-size: 13px;
     color: #ffffff; }
-    @media (max-width: 1025px) {
+    @media (max-width: 992px) {
       .nav-list .button-question {
         color: black;
         border: 1px solid black; } }
   .nav-list .free-chat {
-    margin-left: 10px; }
-    @media (max-width: 1025px) {
+    margin-left: 10px;
+    align-items: center; }
+    @media (max-width: 992px) {
       .nav-list .free-chat {
         margin-top: 10px;
-        margin-left: 0; } }
+        margin-left: 0;
+        display: flex;
+        gap: 10px; } }
     .nav-list .free-chat p {
       text-transform: uppercase;
       color: #fff;
-      font-size: 10px; }
-      @media (max-width: 1025px) {
+      font-size: 10px;
+      font-weight: 700; }
+      @media (max-width: 992px) {
         .nav-list .free-chat p {
-          flex-wrap: wrap; } }
+          flex-wrap: wrap;
+          color: black; } }
 
 .nav-mobile {
   display: none;
@@ -1647,7 +1658,7 @@ nav {
   width: 6rem;
   z-index: 100; }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 992px) {
   .nav-mobile {
     display: block; }
   nav {
@@ -1664,7 +1675,7 @@ nav {
   .nav-dropdown {
     position: static; } }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 993px) {
   .nav-list {
     display: flex !important;
     background: transparent; } }
@@ -1706,9 +1717,6 @@ nav {
   max-width: 980px;
   margin: 0 auto;
   padding: 1rem 20px; }
-  @media only screen and (max-width: 1040px) and (min-width: 992px) {
-    .container {
-      margin-bottom: 2rem; } }
   @media (max-width: 475px) {
     .container {
       padding: 10px; } }
@@ -2145,92 +2153,92 @@ nav {
 .city-content .mesothelioma-column {
   width: 200px; }
 
-.city-content .job-site-section {
-  max-width: 690px;
-  width: 100%; }
-  .city-content .job-site-section .information-steps {
-    list-style-type: none;
-    counter-reset: list-item;
-    padding-left: 0;
-    padding-top: 6px;
-    padding-bottom: 10px; }
-    .city-content .job-site-section .information-steps li {
-      position: relative;
-      margin-bottom: 5px;
-      margin-left: 35px; }
-      .city-content .job-site-section .information-steps li::before {
-        content: counter(list-item) ". ";
-        margin-right: 5px;
-        position: absolute;
-        left: -20px; }
-  .city-content .job-site-section__information {
-    border-left: 3px solid #ff4043;
-    padding-left: 10px;
-    margin-bottom: 36px; }
-  .city-content .job-site-section .search-filter p {
-    text-transform: uppercase;
-    font-weight: 700; }
-  .city-content .job-site-section .search-filter__table {
-    border-radius: 4px;
-    border: 1px solid #cecece;
-    background: #f7fcff;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
-    padding-left: 8px;
-    margin-right: 8px;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 44px; }
-    .city-content .job-site-section .search-filter__table p {
-      text-transform: inherit;
-      margin-right: 10px; }
-    .city-content .job-site-section .search-filter__table .search-alphabet {
+.city-content .job-site-section .information-steps {
+  list-style-type: none;
+  counter-reset: list-item;
+  padding-left: 0;
+  padding-top: 6px;
+  padding-bottom: 10px; }
+  .city-content .job-site-section .information-steps li {
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 35px; }
+    .city-content .job-site-section .information-steps li::before {
+      content: counter(list-item) ". ";
+      margin-right: 5px;
+      position: absolute;
+      left: -20px; }
+
+.city-content .job-site-section__information {
+  border-left: 3px solid #ff4043;
+  padding-left: 10px;
+  margin-bottom: 36px; }
+
+.city-content .job-site-section .search-filter p {
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.city-content .job-site-section .search-filter__table {
+  border-radius: 4px;
+  border: 1px solid #cecece;
+  background: #f7fcff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+  padding-left: 8px;
+  margin-right: 8px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 44px; }
+  .city-content .job-site-section .search-filter__table p {
+    text-transform: inherit;
+    margin-right: 10px; }
+  .city-content .job-site-section .search-filter__table .search-alphabet {
+    display: flex;
+    margin-top: 27px;
+    align-items: center; }
+    @media (max-width: 767px) {
+      .city-content .job-site-section .search-filter__table .search-alphabet {
+        flex-direction: column; } }
+    .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul {
       display: flex;
-      margin-top: 27px;
-      align-items: center; }
+      flex-wrap: wrap;
+      gap: 5px;
+      text-decoration-line: underline; }
       @media (max-width: 767px) {
-        .city-content .job-site-section .search-filter__table .search-alphabet {
-          flex-direction: column; } }
-      .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-        text-decoration-line: underline; }
-        @media (max-width: 767px) {
-          .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul li {
-            font-size: 14px; } }
-    .city-content .job-site-section .search-filter__table .search-form {
-      margin-bottom: 21px;
-      align-items: center;
-      display: flex; }
-      .city-content .job-site-section .search-filter__table .search-form input {
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        background: rgba(255, 255, 255, 0.83);
-        max-width: 541px;
-        width: 100%;
-        height: 25px; }
-      .city-content .job-site-section .search-filter__table .search-form .search-button {
-        border-radius: 0px 6px 6px 0px;
-        background: #ff4043;
-        width: 40px;
-        height: 25px;
-        transform: translateX(-5px); }
-        .city-content .job-site-section .search-filter__table .search-form .search-button i {
-          color: white; }
-    .city-content .job-site-section .search-filter__table .space-form {
-      display: flex;
-      align-items: center;
-      margin: 20px 0; }
-      .city-content .job-site-section .search-filter__table .space-form p {
-        margin: 0;
-        padding: 0 15px;
-        width: 200px;
-        font-weight: 600;
-        font-size: 14px; }
-      .city-content .job-site-section .search-filter__table .space-form .space-bar {
-        height: 1px;
-        width: 100%;
-        color: #000;
-        border: 0.7px solid #d4d4d4; }
+        .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul li {
+          font-size: 14px; } }
+  .city-content .job-site-section .search-filter__table .search-form {
+    margin-bottom: 21px;
+    align-items: center;
+    display: flex; }
+    .city-content .job-site-section .search-filter__table .search-form input {
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      background: rgba(255, 255, 255, 0.83);
+      max-width: 541px;
+      width: 100%;
+      height: 25px; }
+    .city-content .job-site-section .search-filter__table .search-form .search-button {
+      border-radius: 0px 6px 6px 0px;
+      background: #ff4043;
+      width: 40px;
+      height: 25px;
+      transform: translateX(-5px); }
+      .city-content .job-site-section .search-filter__table .search-form .search-button i {
+        color: white; }
+  .city-content .job-site-section .search-filter__table .space-form {
+    display: flex;
+    align-items: center;
+    margin: 20px 0; }
+    .city-content .job-site-section .search-filter__table .space-form p {
+      margin: 0;
+      padding: 0 15px;
+      width: 200px;
+      font-weight: 600;
+      font-size: 14px; }
+    .city-content .job-site-section .search-filter__table .space-form .space-bar {
+      height: 1px;
+      width: 100%;
+      color: #000;
+      border: 0.7px solid #d4d4d4; }
 
 .city-content .boiler-section {
   width: 100%;
@@ -2574,7 +2582,7 @@ nav {
     .general-claims .content-box p {
       font-size: 12px; }
 
-@media only screen and (max-width: 2440px) and (min-width: 992px) {
+@media only screen and (max-width: 2440px) and (min-width: 767px) {
   .claims-select {
     position: sticky;
     height: fit-content;

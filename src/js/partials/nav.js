@@ -22,65 +22,35 @@
     }); // end DOM ready
   })(jQuery); // end jQuery
 
+
+
+  
   document.addEventListener('DOMContentLoaded', function() {
-    function resetCheckboxes() {
-      beforeCheckbox.checked = false;
-      afterCheckbox.checked = false;
-    }
+    var addButtons = document.querySelectorAll('.add-button');
   
-    function displayError(errorElementId) {
-      var errorElement = document.getElementById(errorElementId);
-      errorElement.style.display = "block";
-      setTimeout(function() {
-        errorElement.style.display = "none";
-      }, 3000);
-    }
+    addButtons.forEach(function(addButton) {
+      addButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        var parentForm = this.closest('.jobsite-card');
+        var errorMessage = parentForm.querySelector('.error-message');
+        var jobTitleSelect = parentForm.querySelector('#jobTitleSelect');
+        var fromYearSelect = parentForm.querySelector('#fromYearSelect');
+        var toYearSelect = parentForm.querySelector('#toYearSelect');
   
-    var beforeCheckbox = document.getElementById('beforeCheckbox');
-    var afterCheckbox = document.getElementById('afterCheckbox');
-    var select1 = document.getElementById('select1');
-    
-    beforeCheckbox.addEventListener('change', function() {
-      if (this.checked) {
-        afterCheckbox.checked = false;
-      }
-    });
-    
-    afterCheckbox.addEventListener('change', function() {
-      if (this.checked) {
-        beforeCheckbox.checked = false;
-      }
-    });
-    
-    select1.addEventListener('change', resetCheckboxes);
-    
-    document.getElementById('addButton').addEventListener('click', function(event) {
-      event.preventDefault();
-      
-      var jobTitle = document.getElementById('jobTitleSelect').value;
-      var fromYear = document.getElementById('fromYearSelect').value;
-      var toYear = document.getElementById('toYearSelect').value;
-      
-      if (jobTitle === "" || fromYear === "" || toYear === "") {
-        displayError('errorMessage');
-      } else {
-        document.getElementById('errorMessage').style.display = "none";
-        // You can add other codes to execute if the form is valid
-      }
-    });
-    
-    document.getElementById('boilerButton').addEventListener('click', function(event) {
-      event.preventDefault();
-      
-      var job = document.getElementById('select1').value;
-      
-      if (job === "" || (beforeCheckbox.checked === afterCheckbox.checked)) {
-        displayError('errorMessageBoiler');
-      } else {
-        document.getElementById('errorMessageBoiler').style.display = "none";
-      }
-      
-      resetCheckboxes();
+        if (jobTitleSelect.value === 'None' || fromYearSelect.value === 'None' || toYearSelect.value === 'None') {
+          errorMessage.style.display = 'block';
+  
+          setTimeout(function() {
+            errorMessage.style.display = 'none';
+          }, 3000);
+        } else {
+          console.log('Este permis');
+          
+          // Dezactivează butonul
+          this.disabled = true;
+        }
+      });
     });
   });
   
