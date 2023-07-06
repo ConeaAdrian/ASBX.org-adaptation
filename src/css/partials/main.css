@@ -1843,7 +1843,8 @@ nav {
     text-align: center; }
   .template-compensation .quick-compensation {
     display: flex;
-    margin-top: 45px; }
+    margin-top: 45px;
+    justify-content: center; }
     .template-compensation .quick-compensation__text {
       background-color: #c55d34;
       padding: 35px 15px;
