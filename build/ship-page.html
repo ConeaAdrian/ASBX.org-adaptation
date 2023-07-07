@@ -266,30 +266,36 @@
       Claims” button
     </p>
     <form class="add-navy">
-      <div class="add-navy__select">
-        <p>What was your job?</p>
-        <select id="select1">
-          <option value="">Select Job</option>
-          <option value="lista1">Family Member</option>
-          <option value="lista2">Listă 2</option>
-          <option value="lista3">Listă 3</option>
-        </select>
-      </div>
-      <div class="time-served">
-        <div class="checkbox">
-          <p>Time Served on the Ship</p>
-          <div class="checkbox-select">
-            <label for="">Less than 1 Year</label>
-            <input type="radio" name="drone" id="beforeCheckbox" />
-
-            <label for="afterCheckbox">Over 1 Year</label>
-            <input type="radio" name="drone" id="afterCheckbox" />
-          </div>
+      <div class="element-division">
+        <div class="add-navy__select">
+          <p>What was your job?</p>
+          <select id="select1">
+            <option value="">Select Job</option>
+            <option value="lista1">Family Member</option>
+            <option value="lista2">Listă 2</option>
+            <option value="lista3">Listă 3</option>
+          </select>
         </div>
-        <button class="add-button">
-          <p>Add +</p>
-          <span>to your claim</span>
-        </button>
+        <div class="time-served">
+          <div class="checkbox">
+            <p>Time Served on the Ship</p>
+            <div class="checkbox-select">
+              <label for="">Less than 1 Year</label>
+              <input type="radio" name="drone" id="beforeCheckbox" />
+  
+              <label for="afterCheckbox">Over 1 Year</label>
+              <input type="radio" name="drone" id="afterCheckbox" />
+            </div>
+          </div>
+          <button class="add-button">
+            <p>Add +</p>
+            <span>to your claim</span>
+          </button>
+        </div>
+      </div>
+      <div id="errorMessage" class="error-message">
+        <i class="fas fa-exclamation"></i>
+        Please select the required boxes
       </div>
     </form>
   </div>
@@ -454,37 +460,43 @@
       Claims” button
     </p>
     <form class="add-navy">
-      <div class="add-navy__select">
-        <p>What was your job?</p>
-        <select id="select1">
-          <option value="">Select Job</option>
-          <option value="lista1">Family Member</option>
-          <option value="lista2">Listă 2</option>
-          <option value="lista3">Listă 3</option>
-        </select>
-      </div>
-      <div class="time-served">
-        <div class="checkbox">
-          <p>Time Served on the Ship</p>
-          <div class="checkbox-select">
-            <label for="">Less than 1 Year</label>
-            <input type="radio" name="drone" id="beforeCheckbox" />
-
-            <label for="afterCheckbox">Over 1 Year</label>
-            <input type="radio" name="drone" id="afterCheckbox" />
-          </div>
+      <div class="element-division">
+        <div class="add-navy__select">
+          <p>What was your job?</p>
+          <select id="select1">
+            <option value="">Select Job</option>
+            <option value="lista1">Family Member</option>
+            <option value="lista2">Listă 2</option>
+            <option value="lista3">Listă 3</option>
+          </select>
         </div>
-        <button class="add-button">
-          <p>Add +</p>
-          <span>to your claim</span>
-        </button>
+        <div class="time-served">
+          <div class="checkbox">
+            <p>Time Served on the Ship</p>
+            <div class="checkbox-select">
+              <label for="">Less than 1 Year</label>
+              <input type="radio" name="drone" id="beforeCheckbox" />
+  
+              <label for="afterCheckbox">Over 1 Year</label>
+              <input type="radio" name="drone" id="afterCheckbox" />
+            </div>
+          </div>
+          <button class="add-button">
+            <p>Add +</p>
+            <span>to your claim</span>
+          </button>
+        </div>
+      </div>
+      <div id="errorMessage" class="error-message">
+        <i class="fas fa-exclamation"></i>
+        Please select the required boxes
       </div>
     </form>
   </div>
 </div>
 
   </div>
-  <div class="caopensation-section" scrollToLegalQuestion>
+  <div class="caopensation-section" id="scrollToLegalQuestion">
     <div class="case-compensation">
   <div class="case-compensation__content">
     <h2>Asbestos Exposure Case Compensation Calculator</h2>
