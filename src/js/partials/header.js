@@ -22,17 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    // Here is the new code to update the toYearSelect options based on fromYearSelect value
     var fromYearSelect = addButton.closest('.jobsite-card').querySelector('#fromYearSelect');
     var toYearSelect = addButton.closest('.jobsite-card').querySelector('#toYearSelect');
 
-    // Initially disable the toYearSelect
     toYearSelect.disabled = true;
 
-    // Remove "Before" option from "toYearSelect"
-    var beforeOption = toYearSelect.querySelector('option[value="Before"]');
+    var beforeOption = toYearSelect.querySelector('#before');
     if (beforeOption) {
-        beforeOption.remove();
+      beforeOption.remove();
     }
 
     fromYearSelect.addEventListener('change', function() {
@@ -41,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       toYearOptions.forEach(function(option) {
         if (selectedFromYear === "Before") {
-          option.style.display = (option.value !== "Before") ? "" : "none";
+          option.style.display = (option.id !== "before") ? "" : "none";
         } else {
           var optionYear = parseInt(option.value);
           if (isNaN(optionYear) || optionYear >= parseInt(selectedFromYear)) {
@@ -52,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 
-      // Enable toYearSelect once an option is selected in fromYearSelect
       if (this.value !== "None") {
         toYearSelect.disabled = false;
       } else {
@@ -61,6 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   var addButtons = document.querySelectorAll('.add-button');
 
