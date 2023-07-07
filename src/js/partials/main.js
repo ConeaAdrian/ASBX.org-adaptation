@@ -1,50 +1,22 @@
-$(document).ready(function (e) {
- //scroll up
- $(window).scroll(function () {
-  if ($(this).scrollTop() > 100) {
-   $(".scroll-up").fadeIn();
-   $(".scroll-up").addClass("show");
-  } else {
-   $(".scroll-up").fadeOut();
-   $(".scroll-up").removeClass("show");
-  }
- });
+$(document).ready(function(e) {
+  $(".scroll-up").hide();
 
- //Click event to scroll to top
- $(".scroll-up").click(function () {
-  $("html, body").animate(
-   {
-    scrollTop: 0,
-   },
-   800
-  );
-  return false;
- });
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $(".scroll-up").fadeIn();
+    } else {
+      $(".scroll-up").fadeOut();
+    }
+  });
+
+
+  $(".scroll-up").click(function() {
+
+    document.body.scrollIntoView({ behavior: "smooth", block: "start" });
+    return false;
+  });
 });
 
-$(document).ready(function (e) {
-  //scroll up
-  $(window).scroll(function () {
-   if ($(this).scrollTop() > 100) {
-    $(".scroll-up").fadeIn();
-    $(".scroll-up").addClass("show");
-   } else {
-    $(".scroll-up").fadeOut();
-    $(".scroll-up").removeClass("show");
-   }
-  });
- 
-  //Click event to scroll to top
-  $(".scroll-up").click(function () {
-   $("html, body").animate(
-    {
-     scrollTop: 0,
-    },
-    800
-   );
-   return false;
-  });
- });
  
  $(document).ready(function() {
    $('.validation-calculator > div').hide();
