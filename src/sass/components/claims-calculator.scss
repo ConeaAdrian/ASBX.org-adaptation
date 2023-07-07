@@ -211,7 +211,9 @@
         padding: 5px;
         align-items: center;
       }
-
+      i {
+        cursor: pointer;
+      }
       .delete {
         background: none;
         border: none;

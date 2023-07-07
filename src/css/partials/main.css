@@ -2591,6 +2591,8 @@ nav {
           justify-content: space-between;
           padding: 5px;
           align-items: center; } }
+      .general-claims .content-box__logo i {
+        cursor: pointer; }
       .general-claims .content-box__logo .delete {
         background: none;
         border: none;
@@ -3034,10 +3036,28 @@ nav {
   margin-top: 28px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.19); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+  gap: 15px; }
+  @media only screen and (max-width: 880px) and (min-width: 768px) {
+    .content-ship .content-table-ship {
+      flex-direction: column;
+      padding-bottom: 65px; } }
+  @media (max-width: 640px) {
+    .content-ship .content-table-ship {
+      flex-direction: column;
+      padding-bottom: 60px; } }
   .content-ship .content-table-ship .table-navigator {
     max-width: 360px;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 80px; }
+    @media only screen and (max-width: 880px) and (min-width: 768px) {
+      .content-ship .content-table-ship .table-navigator {
+        margin-bottom: 20px !important;
+        max-width: none; } }
+    @media (max-width: 640px) {
+      .content-ship .content-table-ship .table-navigator {
+        margin-bottom: 20px !important;
+        max-width: none; } }
     .content-ship .content-table-ship .table-navigator__content li p {
       margin-left: 20px;
       font-size: 14px;
@@ -3049,11 +3069,27 @@ nav {
     width: 100%;
     max-width: 345px;
     height: 200px; }
+    @media only screen and (max-width: 992px) and (min-width: 768px) {
+      .content-ship .content-table-ship .ship-img {
+        max-width: none; } }
+    @media (max-width: 640px) {
+      .content-ship .content-table-ship .ship-img {
+        max-width: none; } }
     .content-ship .content-table-ship .ship-img img {
-      height: 230px; }
+      height: 230px;
+      width: 100%; }
     .content-ship .content-table-ship .ship-img p {
       color: #036;
       font-size: 12px; }
+
+@media (max-width: 495px) {
+  .content-ship .ship-trust th, .content-ship .ship-trust td {
+    font-size: 12px; } }
+
+@media (max-width: 495px) {
+  .content-ship .ship-trust .data-column__diagnosed {
+    text-transform: capitalize !important;
+    font-size: 12px !important; } }
 
 .content-ship .trust-funds-claim {
   margin-top: 26px; }
@@ -3245,7 +3281,16 @@ nav {
       margin-top: 13px;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 8px; }
+      margin-bottom: 8px;
+      gap: 15px; }
+      @media only screen and (max-width: 900px) and (min-width: 767px) {
+        .navy-claims-section .navy-container .add-navy {
+          flex-direction: column;
+          align-items: flex-start; } }
+      @media (max-width: 620px) {
+        .navy-claims-section .navy-container .add-navy {
+          flex-direction: column;
+          align-items: flex-start; } }
       .navy-claims-section .navy-container .add-navy p {
         font-weight: 700; }
       .navy-claims-section .navy-container .add-navy__select {
@@ -3259,6 +3304,13 @@ nav {
         margin-right: 5px; }
       .navy-claims-section .navy-container .add-navy .checkbox .checkbox-select input {
         margin-right: 26px; }
+        @media (max-width: 475px) {
+          .navy-claims-section .navy-container .add-navy .checkbox .checkbox-select input {
+            margin-right: 5px; } }
+      .navy-claims-section .navy-container .add-navy .time-served {
+        display: flex;
+        width: 100%;
+        align-items: center; }
   .navy-claims-section .add-button {
     border-radius: 4px;
     background: #036;

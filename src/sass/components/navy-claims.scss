@@ -35,12 +35,22 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 8px;
+      gap: 15px;
+      @media only screen and (max-width: 900px) and (min-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @media (max-width: 620px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       p {
         font-weight: 700;
       }
       &__select {
         width: 100%;
-          max-width: 172px;
+        max-width: 172px;
         select {
           width: 100%;
           max-width: 172px;
@@ -49,14 +59,21 @@
       }
       .checkbox {
         .checkbox-select {
-          
           label {
             margin-right: 5px;
           }
           input {
             margin-right: 26px;
+            @media (max-width: 475px) {
+              margin-right: 5px;
+            }
           }
         }
+      }
+      .time-served {
+        display: flex;
+        width: 100%;
+        align-items: center;
       }
     }
   }

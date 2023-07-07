@@ -18,10 +18,29 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+    gap: 15px;
+    @media only screen and (max-width: 880px) and (min-width: 768px) {
+      flex-direction: column;
+      padding-bottom: 65px;
+    }
+    @media (max-width: 640px) {
+      flex-direction: column;
+      padding-bottom: 60px;
+    }
 
     .table-navigator {
       max-width: 360px;
       width: 100%;
+      margin-bottom: 80px;
+      @media only screen and (max-width: 880px) and (min-width: 768px) {
+        margin-bottom: 20px !important;
+        max-width: none;
+      }
+
+      @media (max-width: 640px) {
+        margin-bottom: 20px !important;
+        max-width: none;
+      }
       &__content {
         li {
           p {
@@ -39,9 +58,17 @@
       width: 100%;
       max-width: 345px;
       height: 200px;
+      @media only screen and (max-width: 992px) and (min-width: 768px) {
+        max-width: none;
+      }
+      @media (max-width: 640px) {
+        max-width: none;
+      }
 
       img {
         height: 230px;
+        width: 100%;
+
       }
       p {
         color: #036;
@@ -49,7 +76,19 @@
       }
     }
   }
-
+.ship-trust {
+  th, td {
+    @media (max-width: 495px) {
+      font-size: 12px;
+    }
+  }
+  .data-column__diagnosed {
+    @media (max-width: 495px) {
+      text-transform: capitalize !important;
+      font-size: 12px !important;
+    }
+  }
+}
   .trust-funds-claim {
     margin-top: 26px;
     span {
@@ -77,6 +116,7 @@
           th {
             color: #324a74;
           }
+          
         }
       }
       .data-column {
