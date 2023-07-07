@@ -2475,7 +2475,7 @@ nav {
       .general-claims .claims-selected .content-information h2 {
         font-size: 20px;
         color: #324a74;
-        font-family: 'Roboto Condensed', sans-serif !important; }
+        font-family: "Roboto Condensed", sans-serif !important; }
       .general-claims .claims-selected .content-information p {
         color: #324a74;
         font-size: 16px;
@@ -2494,7 +2494,7 @@ nav {
         font-size: 64px;
         margin: 0;
         color: #fff;
-        font-family: 'Roboto Condensed', sans-serif; }
+        font-family: "Roboto Condensed", sans-serif; }
     .general-claims .claims-selected .claims-buttons {
       margin-bottom: 16px;
       display: flex;
@@ -2511,7 +2511,7 @@ nav {
         border: none;
         text-transform: uppercase;
         font-size: 14px;
-        font-family: 'Roboto Condensed', sans-serif; }
+        font-family: "Roboto Condensed", sans-serif; }
       .general-claims .claims-selected .claims-buttons button:first-child {
         background: #FF4043;
         color: white; }
@@ -2526,14 +2526,36 @@ nav {
     display: flex;
     justify-content: space-between;
     padding-right: 4px;
-    margin-bottom: 10px; }
+    margin-bottom: 17px;
+    position: relative; }
+    @media (max-width: 767px) {
+      .general-claims .content-box {
+        gap: 20px; } }
+    .general-claims .content-box img {
+      position: absolute;
+      transform: translate(14px, -13px);
+      right: 0;
+      border-radius: 26px;
+      width: 26px;
+      height: 26px; }
+      @media (max-width: 767px) {
+        .general-claims .content-box img {
+          max-width: none;
+          position: inherit;
+          position: static;
+          transform: none; } }
     .general-claims .content-box p {
-      line-height: 15px; }
+      transform: none; }
     .general-claims .content-box__information {
       padding: 10px;
       display: flex;
       flex-direction: column;
-      max-width: 185px; }
+      max-width: 185px;
+      width: 100%;
+      padding-right: 0; }
+      @media (max-width: 767px) {
+        .general-claims .content-box__information {
+          max-width: none; } }
       .general-claims .content-box__information b {
         font-size: 14px !important;
         line-height: 15px; }
@@ -2550,17 +2572,25 @@ nav {
           font-size: 12px !important;
           margin-right: 4px;
           width: 37px; }
+        .general-claims .content-box__information .job p,
+        .general-claims .content-box__information .time p {
+          width: 132px; }
+          @media (max-width: 767px) {
+            .general-claims .content-box__information .job p,
+            .general-claims .content-box__information .time p {
+              width: 100%; } }
     .general-claims .content-box__logo {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       justify-content: space-between;
-      padding-bottom: 8px; }
-      .general-claims .content-box__logo img {
-        margin-top: 2px;
-        border-radius: 26px;
-        width: 26px;
-        height: 26px; }
+      padding-bottom: 10px;
+      justify-content: end; }
+      @media (max-width: 767px) {
+        .general-claims .content-box__logo {
+          justify-content: space-between;
+          padding: 5px;
+          align-items: center; } }
       .general-claims .content-box__logo .delete {
         background: none;
         border: none;
