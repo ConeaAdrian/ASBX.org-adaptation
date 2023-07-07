@@ -2771,10 +2771,16 @@ nav {
       font-size: 14px;
       font-weight: 800;
       line-height: 15px; }
+      @media (max-width: 475px) {
+        .jobsite-card .add-button p {
+          font-size: 14px; } }
     .jobsite-card .add-button span {
       font-size: 8px;
       font-weight: 600;
       color: #fff; }
+      @media (max-width: 380px) {
+        .jobsite-card .add-button span {
+          display: none; } }
   .jobsite-card .error-message {
     display: none;
     color: #ff4043;

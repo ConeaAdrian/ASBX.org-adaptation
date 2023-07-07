@@ -189,11 +189,17 @@ ul {
         font-size: 14px;
         font-weight: 800;
         line-height: 15px;
+        @media (max-width: 475px) {
+          font-size: 14px;
+         }
       }
       span {
         font-size: 8px;
         font-weight: 600;
         color: #fff;
+        @media (max-width: 380px) {
+          display: none;
+         }
       }
     }
     /* Stilurile pentru mesajul de eroare */
