@@ -24,6 +24,10 @@
       position: absolute;
       right: -14px;
       transform: translateY(-15px);
+
+      @media (max-width: 475px) {
+        right: -7px;
+      }
     }
   }
   .necessary-information {

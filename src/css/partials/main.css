@@ -1376,6 +1376,9 @@ button {
     justify-content: space-around;
     background: #e4f5ff !important;
     padding: 10px; }
+    @media (max-width: 640px) {
+      .header-search .search-asbestos {
+        flex-direction: column; } }
 
 footer {
   background-color: #faf7f0;
@@ -2090,30 +2093,39 @@ nav {
 
 .compensation-asbestos {
   margin-top: 40px;
-  border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  background: rgba(217, 217, 217, 0.15);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #f8fbff;
   height: auto;
   width: 100%;
   padding: 25px; }
-  .compensation-asbestos h2 {
+  .compensation-asbestos h3 {
+    color: #000;
+    font-size: 22px;
+    font-family: "Roboto Serif", serif;
+    font-weight: 500;
+    max-width: 575px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 12px; }
+  .compensation-asbestos p {
+    max-width: 848px !important;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+  .compensation-asbestos .made-easy-text {
     color: #324a74;
     font-size: 20px;
     font-family: "Roboto Serif", serif;
-    font-weight: 500;
-    max-width: 330px;
+    max-width: 382px !important;
     width: 100%;
-    margin: 0 auto; }
-    .compensation-asbestos h2 span {
+    margin-top: 12px;
+    margin-bottom: 18px;
+    line-height: 26px; }
+    .compensation-asbestos .made-easy-text span {
       color: #c55d34;
       font-size: 20px;
       font-family: "Roboto Serif", serif;
       font-weight: 500; }
-  .compensation-asbestos p {
-    max-width: 330px !important;
-    width: 100%;
-    margin: 0 auto; }
   .compensation-asbestos .text-color {
     color: #c55d34;
     font-size: 14px;
@@ -2761,11 +2773,12 @@ nav {
     background: #ff4043;
     width: 100%;
     max-width: 70px;
-    height: 34px;
+    height: 36px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 50px; }
+    margin-top: 50px;
+    padding: 0 6px; }
     .jobsite-card .add-button p {
       color: #fff;
       font-size: 14px;
@@ -2838,11 +2851,12 @@ nav {
     background: #036;
     width: 100%;
     max-width: 70px;
-    height: 34px;
+    height: 36px;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0 6px; }
     @media (max-width: 620px) {
       .boiler-card .add-button {
         margin-top: 90px; } }
@@ -2896,6 +2910,9 @@ nav {
       position: absolute;
       right: -14px;
       transform: translateY(-15px); }
+      @media (max-width: 475px) {
+        .content-table__facts img {
+          right: -7px; } }
   .content-table .necessary-information {
     display: flex;
     max-width: 421px;

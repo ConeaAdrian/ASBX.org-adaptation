@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault();
 
       var parentForm = this.closest('.jobsite-card');
+      if (!parentForm) {
+        console.error("Ancestor element with class 'jobsite-card' not found.");
+        return;
+      }
+
       var errorMessage = parentForm.querySelector('.error-message');
       var jobTitleSelect = parentForm.querySelector('#jobTitleSelect');
       var fromYearSelect = parentForm.querySelector('#fromYearSelect');
@@ -22,8 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    var fromYearSelect = addButton.closest('.jobsite-card').querySelector('#fromYearSelect');
-    var toYearSelect = addButton.closest('.jobsite-card').querySelector('#toYearSelect');
+    var parentCard = addButton.closest('.jobsite-card');
+    var fromYearSelect = parentCard.querySelector('#fromYearSelect');
+    var toYearSelect = parentCard.querySelector('#toYearSelect');
 
     toYearSelect.disabled = true;
 
@@ -41,22 +47,15 @@ document.addEventListener('DOMContentLoaded', function() {
           option.style.display = (option.id !== "before") ? "" : "none";
         } else {
           var optionYear = parseInt(option.value);
-          if (isNaN(optionYear) || optionYear >= parseInt(selectedFromYear)) {
-            option.style.display = "";
-          } else {
-            option.style.display = "none";
-          }
+          option.style.display = isNaN(optionYear) || optionYear >= parseInt(selectedFromYear) ? "" : "none";
         }
       });
 
-      if (this.value !== "None") {
-        toYearSelect.disabled = false;
-      } else {
-        toYearSelect.disabled = true;
-      }
+      toYearSelect.disabled = (this.value === "None");
     });
   });
 });
+
 
 
 
