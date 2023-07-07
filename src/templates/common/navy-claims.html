@@ -15,7 +15,7 @@
         diagnosed with an asbestos-related disease, please select that job you use
         to have on this ship, how long you have served and click on “Add to
         Claims” button</p>
-    <div class="add-navy">
+    <form class="add-navy">
       <div class="add-navy__select">
         <p>What was your job?</p>
         <select id="select1">
@@ -28,17 +28,19 @@
       <div class="checkbox">
         <p>Time Served on the Ship</p>
         <div class="checkbox-select">
-          <label for="beforeCheckbox">Less than 1 Year</label>
-          <input type="checkbox" id="beforeCheckbox" />
+          <label for="">Less than 1 Year</label>
+          <input type="radio" name="drone" id="beforeCheckbox" />
 
           <label for="afterCheckbox">Over 1 Year</label>
-          <input type="checkbox" id="afterCheckbox" />
+          <input type="radio" name="drone" id="afterCheckbox" />
         </div>
+        
       </div>
       <button class="add-button">
         <p>Add +</p>
         <span>to your claim</span>
       </button>
-    </div>
+    </form>
+    
   </div>
 </div>

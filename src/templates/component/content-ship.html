@@ -6,7 +6,7 @@
     <div class="bar"></div>
     <p><b>Vassel Class: </b> Seaplane Tenders</p>
     <div class="add-claim">
-      <button class="button">Add To Your Claim</button>
+      <button class="button" id="buttonAddClaim">Add To Your Claim</button>
       <img src="../../img/Arrow 1.svg" alt="" />
       <p>(this button jump to the BOX)</p>
     </div>
@@ -14,19 +14,20 @@
       <div class="table-navigator">
         <p>Table of Contents</p>
         <ul class="table-navigator__content">
-          <li id="jobSites"><span>Currituck (AV-7) - History</span></li>
-          <li id="boilerLocations">
-            <span>Mesothelioma Compensation Sources</span>
+          <li id="liCurrituck"><span>Currituck (AV-7) - History</span></li>
+
+          <li>
+            <span id="liCompensationSources">Mesothelioma Compensation Sources</span>
             <p>1. Asbestos Trust Funds</p>
             <p>2. Other Compensation Sources</p>
           </li>
-          <li id="compensationAmounts">
+          <li id="liAsbestosProducts">
             <span>Asbestos Products on Currituck (AV-7) </span>
           </li>
-          <li id="trustFunds">
+          <li  id="liAddToClaim">
             <span>Add Currituck (AV-7) to your claim</span>
           </li>
-          <li id="trustFunds"><span>Get answer to any legal question</span></li>
+          <li id="liLegalQuestion"><span>Get answer to any legal question</span></li>
         </ul>
       </div>
       <div class="ship-img">
@@ -38,7 +39,7 @@
     </div>
     @@include('../common/navy-claims.html')
 
-    <h2>Currituck (AV-7) History</h2>
+    <h2 id="currituckHistory">Currituck (AV-7) History</h2>
     <div class="bar"></div>
     <p>
       The USS Currituck (AV-7) was a seaplane tender built at the Philadelphia
@@ -58,7 +59,7 @@
       Currituck (AV-7) put the crew at risk of developing mesothelioma, lung
       cancer or other asbestos-related diseases from asbestos exposure.
     </p>
-  <h2>
+  <h2 id="compensationSources">
     Sources of Mesothelioma Compensation for Navy Veterans that Served on
     Currituck (AV-7)
   </h2>
@@ -135,7 +136,7 @@
       to harmful asbestos exposure resulting in illness or injury.
     </p>
   </div>
-  <h2>
+  <h2 id="asbestosProducts">
     Equipment and Products Contaminated with Asbestos used on Currituck (AV-7)
   </h2>
   <div class="bar"></div>
@@ -145,6 +146,7 @@
     for your exposure to asbestos.
   </p>
   @@include('../common/equipment-tabel.html')
-  @@include('../common/navy-claims.html')
-  @@include('../common/case-compensation.html')
+  id="jobSitesTitle"
+ <div class="navy-claims-section" id="navyClaims"> @@include('../common/navy-claims.html')</div>
+ <div class="caopensation-section" scrollToLegalQuestion>@@include('../common/case-compensation.html')</div>
 </section>

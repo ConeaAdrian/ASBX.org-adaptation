@@ -112,10 +112,17 @@
 
   li {
     padding: 3px;
-    cursor: pointer;
 
+    p {
+      text-decoration-line: underline;
+      cursor: pointer;
+    }
+    p:hover {
+      background-color: #f2f2f2;
+    }
     span {
       text-decoration-line: underline;
+      cursor: pointer;
     }
   }
 
