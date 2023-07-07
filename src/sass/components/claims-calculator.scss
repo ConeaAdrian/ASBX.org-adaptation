@@ -162,10 +162,12 @@
       .time {
         display: flex;
         align-items: center;
+        align-items: baseline;
 
         b {
           font-size: 12px !important;
           margin-right: 4px;
+          width: 37px;
         }
       }
     }
