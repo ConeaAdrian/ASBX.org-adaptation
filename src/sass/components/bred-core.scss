@@ -103,6 +103,10 @@
 
         img {
           margin-right: 25px;
+          @media (max-width: 800px) {
+            width: 75px;
+            height: 75px;
+          }
         }
       }
     }
@@ -130,25 +134,43 @@
     display: flex;
     margin-top: 45px;
     justify-content: center;
+    @media (max-width: 720px) {
+      flex-direction: column;
+    }
     &__text {
       background-color: #c55d34;
       padding: 35px 15px;
       max-width: 410px;
       width: 100%;
+      @media (max-width: 720px) {
+        max-width: none;
+      }
       h2 {
         color: #fff;
         font-size: 30px;
         margin-bottom: 16px;
         text-align: left;
+        @media (max-width: 720px) {
+         margin-left: 0;
+        }
       }
       p {
         color: #fff;
         text-align: left;
+        @media (max-width: 720px) {
+          margin-left: 0;
+        }
       }
     }
     img {
       max-width: 397px;
       width: 100%;
+      @media (max-width: 720px) {
+        object-fit: unset;
+        height: 250px;
+        max-width: none;
+      }
+     
     }
     button {
       width: 106px;

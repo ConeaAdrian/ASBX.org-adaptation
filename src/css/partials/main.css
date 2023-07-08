@@ -1291,10 +1291,19 @@ button {
     max-width: 745px;
     height: 62px;
     margin: 0 auto;
-    gap: 8px; }
+    gap: 8px;
+    padding: 0 10px; }
+    @media (max-width: 720px) {
+      .search-principal .search-asbestos {
+        flex-direction: column;
+        padding: 10px;
+        height: auto; } }
     .search-principal .search-asbestos__select {
       display: flex;
       align-items: center; }
+      @media (max-width: 720px) {
+        .search-principal .search-asbestos__select {
+          width: 100%; } }
       .search-principal .search-asbestos__select .text {
         border: 1px solid rgba(0, 0, 0, 0.06);
         border-right: none;
@@ -1319,15 +1328,28 @@ button {
         color: #545454;
         font-size: 13px;
         font-weight: 400; }
+        @media (max-width: 720px) {
+          .search-principal .search-asbestos__select select {
+            max-width: none; } }
     .search-principal .search-asbestos .search-form {
       display: flex;
       align-items: center; }
+      @media (max-width: 720px) {
+        .search-principal .search-asbestos .search-form {
+          width: 100%; } }
       .search-principal .search-asbestos .search-form .select-wrapper {
         display: flex;
         align-items: center; }
+        @media (max-width: 720px) {
+          .search-principal .search-asbestos .search-form .select-wrapper {
+            max-width: none;
+            width: 100%; } }
         .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper {
           display: flex;
           align-items: center; }
+          @media (max-width: 720px) {
+            .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper {
+              width: 100%; } }
           .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper__location {
             display: flex;
             align-items: center;
@@ -1356,6 +1378,10 @@ button {
             max-width: 215px;
             width: 100%;
             padding-bottom: 5px; }
+            @media (max-width: 720px) {
+              .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper input {
+                max-width: none;
+                width: 100%; } }
             .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper input::placeholder {
               color: #545454;
               font-size: 13px;
@@ -1365,10 +1391,12 @@ button {
         background: #ff4043;
         width: 44px;
         height: 25px;
-        text-transform: uppercase !important; }
+        text-transform: uppercase !important;
+        font-size: 12px;
+        font-weight: 800; }
 
 .header-search {
-  background: #F7FCFF; }
+  background: #f7fcff; }
   .header-search .search-asbestos {
     margin: 0 !important;
     height: 42px !important;
@@ -1826,6 +1854,10 @@ nav {
   flex-wrap: wrap; }
   .military-index .advocacy-information .military-forces__logo img {
     margin-right: 25px; }
+    @media (max-width: 800px) {
+      .military-index .advocacy-information .military-forces__logo img {
+        width: 75px;
+        height: 75px; } }
 
 .template-compensation {
   margin-top: 60px; }
@@ -1846,22 +1878,39 @@ nav {
     display: flex;
     margin-top: 45px;
     justify-content: center; }
+    @media (max-width: 720px) {
+      .template-compensation .quick-compensation {
+        flex-direction: column; } }
     .template-compensation .quick-compensation__text {
       background-color: #c55d34;
       padding: 35px 15px;
       max-width: 410px;
       width: 100%; }
+      @media (max-width: 720px) {
+        .template-compensation .quick-compensation__text {
+          max-width: none; } }
       .template-compensation .quick-compensation__text h2 {
         color: #fff;
         font-size: 30px;
         margin-bottom: 16px;
         text-align: left; }
+        @media (max-width: 720px) {
+          .template-compensation .quick-compensation__text h2 {
+            margin-left: 0; } }
       .template-compensation .quick-compensation__text p {
         color: #fff;
         text-align: left; }
+        @media (max-width: 720px) {
+          .template-compensation .quick-compensation__text p {
+            margin-left: 0; } }
     .template-compensation .quick-compensation img {
       max-width: 397px;
       width: 100%; }
+      @media (max-width: 720px) {
+        .template-compensation .quick-compensation img {
+          object-fit: unset;
+          height: 250px;
+          max-width: none; } }
     .template-compensation .quick-compensation button {
       width: 106px;
       height: 30px;
@@ -1882,7 +1931,8 @@ nav {
   background: transparent !important; }
 
 .page-wrapper {
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .page-wrapper .overlay {
     position: absolute;
     top: 0;
@@ -1926,6 +1976,9 @@ nav {
           font-size: 60px;
           line-height: 70px;
           color: #ffffff; }
+          @media (max-width: 640px) {
+            .page-wrapper .container .hero-row .hero-row-context .logo-text {
+              font-size: 42px; } }
         .page-wrapper .container .hero-row .hero-row-context h2 {
           font-weight: 500;
           font-size: 24px;
@@ -1935,25 +1988,37 @@ nav {
           margin-bottom: 21px !important;
           margin-top: 27px !important;
           margin: 0 auto; }
+          @media (max-width: 640px) {
+            .page-wrapper .container .hero-row .hero-row-context h2 {
+              font-size: 20px; } }
         .page-wrapper .container .hero-row .hero-row-context .organization-text {
           font-weight: 700;
           font-size: 18px;
           line-height: 28px;
           color: #ffffff; }
+          @media (max-width: 640px) {
+            .page-wrapper .container .hero-row .hero-row-context .organization-text {
+              font-size: 16px; } }
         .page-wrapper .container .hero-row .hero-row-context p {
           font-weight: 400;
           font-size: 18px;
           color: #ffffff;
           font-family: "Nunito"; }
+          @media (max-width: 640px) {
+            .page-wrapper .container .hero-row .hero-row-context p {
+              font-size: 16px; } }
   .page-wrapper .index-content {
     max-width: 848px;
     width: 100%;
     margin: 0px auto;
     text-align: center;
     align-items: center;
-    margin-top: 5.5rem;
+    margin-top: 50px;
     display: flex;
     flex-direction: column; }
+    @media (max-width: 640px) {
+      .page-wrapper .index-content {
+        margin-top: 20px; } }
     .page-wrapper .index-content h1 {
       font-weight: 400;
       font-size: 30px;
@@ -1961,17 +2026,31 @@ nav {
       margin-bottom: 2.5rem;
       max-width: 692px;
       width: 100%; }
+      @media (max-width: 640px) {
+        .page-wrapper .index-content h1 {
+          font-size: 24px;
+          margin-bottom: 1.5rem; } }
     .page-wrapper .index-content p {
       max-width: 760px;
       width: 100%; }
+      @media (max-width: 640px) {
+        .page-wrapper .index-content p {
+          font-size: 14px; } }
     .page-wrapper .index-content__about {
       margin-top: 40px; }
       .page-wrapper .index-content__about h2 {
         color: #c55d34; }
+        @media (max-width: 640px) {
+          .page-wrapper .index-content__about h2 {
+            margin-bottom: 15px; } }
       .page-wrapper .index-content__about .works-step {
-        gap: 45px;
         display: flex;
         justify-content: space-between; }
+        @media (max-width: 640px) {
+          .page-wrapper .index-content__about .works-step {
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center; } }
         .page-wrapper .index-content__about .works-step__box {
           width: 100%;
           max-width: 187px;
@@ -1980,6 +2059,13 @@ nav {
           margin-top: 40px;
           margin-bottom: 40px;
           padding: 10px; }
+          @media (max-width: 640px) {
+            .page-wrapper .index-content__about .works-step__box {
+              width: 80%;
+              max-width: none;
+              margin-top: 0; } }
+          .page-wrapper .index-content__about .works-step__box img {
+            margin-bottom: 15px; }
           .page-wrapper .index-content__about .works-step__box span {
             color: #c55d34; }
   .page-wrapper .index-information {
@@ -2016,14 +2102,24 @@ nav {
   margin: 0px auto;
   display: flex;
   padding-bottom: 30px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  gap: 20px; }
+  @media (max-width: 720px) {
+    .container-about {
+      flex-direction: column; } }
   .container-about .choose-documentation {
     max-width: 361px;
     width: 100%; }
+    @media (max-width: 720px) {
+      .container-about .choose-documentation {
+        max-width: none; } }
     .container-about .choose-documentation h2 {
       font-weight: 400;
       font-size: 30px;
       color: #c55d34; }
+      @media (max-width: 800px) {
+        .container-about .choose-documentation h2 {
+          font-size: 26px !important; } }
     .container-about .choose-documentation ul {
       margin-top: 8px;
       margin-left: 30px; }
@@ -2038,6 +2134,9 @@ nav {
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px 27px; }
+    @media (max-width: 720px) {
+      .container-about .chase-documentation {
+        width: 100%; } }
     .container-about .chase-documentation p,
     .container-about .chase-documentation b {
       font-size: 14px !important; }
@@ -2053,14 +2152,20 @@ nav {
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
-    margin-top: 40px;
-    transform: translateX(180px); }
+    margin-top: 40px; }
   .container-about .advocacy-img {
     position: relative; }
     .container-about .advocacy-img img {
       width: 100%;
       max-width: 400px;
       height: 400px; }
+      @media (max-width: 800px) {
+        .container-about .advocacy-img img {
+          height: 350px; } }
+      @media (max-width: 720px) {
+        .container-about .advocacy-img img {
+          object-fit: cover;
+          max-width: none; } }
     .container-about .advocacy-img__quote {
       position: absolute;
       bottom: 0;
@@ -2086,13 +2191,19 @@ nav {
   .container-about .advocacy-information {
     width: 100%;
     max-width: 360px; }
+    @media (max-width: 720px) {
+      .container-about .advocacy-information {
+        max-width: none; } }
     .container-about .advocacy-information h2 {
       font-weight: 400;
       font-size: 30px;
       color: #c55d34; }
+      @media (max-width: 800px) {
+        .container-about .advocacy-information h2 {
+          font-size: 26px; } }
 
 .compensation-asbestos {
-  margin-top: 40px;
+  margin-top: 20px;
   background: #f8fbff;
   height: auto;
   width: 100%;

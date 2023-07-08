@@ -11,9 +11,18 @@
     height: 62px;
     margin: 0 auto;
     gap: 8px;
+    padding: 0 10px;
+    @media (max-width: 720px) {
+      flex-direction: column;
+      padding: 10px;
+      height: auto;
+    }
     &__select {
       display: flex;
       align-items: center;
+      @media (max-width: 720px) {
+        width: 100%;
+      }
 
       .text {
         border: 1px solid rgba(0, 0, 0, 0.06);
@@ -41,19 +50,32 @@
         color: #545454;
         font-size: 13px;
         font-weight: 400;
+        @media (max-width: 720px) {
+          max-width: none;
+        }
       }
     }
     .search-form {
       display: flex;
       align-items: center;
+      @media (max-width: 720px) {
+        width: 100%;
+      }
 
       .select-wrapper {
         display: flex;
         align-items: center;
+        @media (max-width: 720px) {
+          max-width: none;
+          width: 100%;
+        }
 
         .input-wrapper {
           display: flex;
           align-items: center;
+          @media (max-width: 720px) {
+            width: 100%;
+          }
 
           &__location {
             display: flex;
@@ -87,6 +109,10 @@
             max-width: 215px;
             width: 100%;
             padding-bottom: 5px;
+            @media (max-width: 720px) {
+              max-width: none;
+              width: 100%;
+            }
 
             &::placeholder {
               color: #545454;
@@ -102,17 +128,19 @@
         width: 44px;
         height: 25px;
         text-transform: uppercase !important;
+        font-size: 12px;
+        font-weight: 800;
       }
     }
   }
 }
 
 .header-search {
-  background: #F7FCFF;
+  background: #f7fcff;
   .search-asbestos {
     margin: 0 !important;
     height: 42px !important;
-    margin: 0 12px ;
+    margin: 0 12px;
     justify-content: space-around;
     background: #e4f5ff !important;
     padding: 10px;
