@@ -846,12 +846,12 @@ img {
   height: auto; }
 
 th {
-  font-family: "Nunito";
+  font-family: 'Inter', sans-serif;
   font-size: 14px; }
 
 td {
   font-size: 14px;
-  font-family: "Nunito"; }
+  font-family: 'Inter', sans-serif; }
 
 ul {
   list-style-type: none;
@@ -868,7 +868,7 @@ h6,
 p,
 li,
 a {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   line-height: normal; }
 
@@ -910,7 +910,7 @@ li {
 
 span {
   font-size: 14px;
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Inter', sans-serif; }
 
 a {
   text-decoration: none !important;
@@ -922,13 +922,13 @@ a {
   a > strong {
     display: inline-block;
     line-height: 1.5;
-    font-family: "Nunito", sans-serif; }
+    font-family: 'Inter', sans-serif; }
 
 select {
   border: 1px solid #dbdbdb;
   background: #fff;
   font-size: 14px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   border-radius: 0;
   appearance: none; }
 
@@ -937,12 +937,12 @@ input {
   background: #fff; }
 
 label {
-  font-family: "Nunito", sans-serif; }
+  font-family: 'Inter', sans-serif; }
 
 b,
 strong {
   font-weight: 700;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 18px !important; }
 
 .position-relative {
@@ -1074,23 +1074,24 @@ button {
 
 .breadcrumb a {
   text-decoration: none;
-  color: #000;
+  color: rgba(0, 0, 0, 0.61) !important;
   transition: color 0.3s;
   text-decoration: underline !important;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 12px; }
+  font-weight: 500;
+  font-size: 11px; }
 
 .breadcrumb span {
-  color: #000;
-  margin: 0 5px; }
+  color: rgba(0, 0, 0, 0.61) !important;
+  margin: 0 4px;
+  font-size: 10px; }
 
 .breadcrumb .last-element {
   text-transform: uppercase;
   text-decoration: none;
-  color: #bf5931;
-  font-weight: 700;
-  font-size: 12px; }
+  color: #bf5931 !important;
+  font-weight: 500;
+  font-size: 11px; }
 
 .questions-lawyers {
   border-radius: 4px;
@@ -2245,136 +2246,138 @@ nav {
 .city-content h3 {
   color: #c55d34; }
 
-.city-content .nearby-cities {
-  border-radius: 4px;
-  border: 1px solid #eaeaea;
-  background: #f7fcff;
-  max-width: 690px;
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 22px; }
-  .city-content .nearby-cities p {
-    margin-bottom: 5px;
-    color: #575758; }
-  .city-content .nearby-cities .location-list {
-    list-style-type: none;
-    flex-wrap: wrap;
-    display: flex; }
-    .city-content .nearby-cities .location-list li {
-      display: inline-block;
-      text-decoration-line: underline; }
-      .city-content .nearby-cities .location-list li a {
-        text-decoration: none;
-        color: #324a74; }
-        .city-content .nearby-cities .location-list li a:hover {
-          text-decoration: underline; }
-
 .city-content .claim-type-column {
   width: 150px; }
 
 .city-content .mesothelioma-column {
   width: 200px; }
 
-.city-content .job-site-section .information-steps {
-  list-style-type: none;
-  counter-reset: list-item;
-  padding-left: 0;
-  padding-top: 6px;
-  padding-bottom: 10px; }
-  .city-content .job-site-section .information-steps li {
-    position: relative;
-    margin-bottom: 5px;
-    margin-left: 35px; }
-    .city-content .job-site-section .information-steps li::before {
-      content: counter(list-item) ". ";
-      margin-right: 5px;
-      position: absolute;
-      left: -20px; }
-
-.city-content .job-site-section__information {
-  border-left: 3px solid #ff4043;
-  padding-left: 10px;
-  margin-bottom: 36px; }
-
-.city-content .job-site-section .search-filter p {
-  text-transform: uppercase;
-  font-weight: 700; }
-
-.city-content .job-site-section .search-filter__table {
-  border-radius: 4px;
-  border: 1px solid #cecece;
-  background: #f7fcff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
-  padding: 0 8px;
-  margin-right: 8px;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 44px; }
-  .city-content .job-site-section .search-filter__table p {
-    text-transform: inherit;
-    margin-right: 10px; }
-  .city-content .job-site-section .search-filter__table .search-alphabet {
-    display: flex;
-    margin-top: 27px;
-    align-items: center; }
-    @media (max-width: 767px) {
-      .city-content .job-site-section .search-filter__table .search-alphabet {
-        flex-direction: column; } }
-    .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      text-decoration-line: underline; }
+.city-content .job-site-section {
+  max-width: 580px;
+  width: 100%; }
+  .city-content .job-site-section .information-steps {
+    list-style-type: none;
+    counter-reset: list-item;
+    padding-left: 0;
+    padding-top: 6px;
+    padding-bottom: 10px; }
+    .city-content .job-site-section .information-steps li {
+      position: relative;
+      margin-bottom: 5px;
+      margin-left: 35px; }
+      .city-content .job-site-section .information-steps li::before {
+        content: counter(list-item) ". ";
+        margin-right: 5px;
+        position: absolute;
+        left: -20px; }
+  .city-content .job-site-section__information {
+    border-left: 3px solid #ff4043;
+    padding-left: 10px;
+    margin-bottom: 36px; }
+  .city-content .job-site-section .search-filter p {
+    text-transform: uppercase;
+    font-weight: 700; }
+  .city-content .job-site-section .search-filter .search-text {
+    font-size: 14px;
+    font-weight: 500; }
+  .city-content .job-site-section .search-filter__table {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: #f7f8fb;
+    padding: 9px 29px;
+    margin-right: 8px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 44px; }
+    .city-content .job-site-section .search-filter__table p {
+      text-transform: inherit;
+      margin-right: 10px; }
+    .city-content .job-site-section .search-filter__table .search-alphabet {
+      margin-top: 27px;
+      align-items: center; }
       @media (max-width: 767px) {
+        .city-content .job-site-section .search-filter__table .search-alphabet {
+          flex-direction: column; } }
+      .city-content .job-site-section .search-filter__table .search-alphabet p {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 11px; }
+      .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px; }
         .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul li {
-          font-size: 14px; } }
-  .city-content .job-site-section .search-filter__table .search-form {
-    margin-bottom: 21px;
-    align-items: center;
-    display: flex; }
-    .city-content .job-site-section .search-filter__table .search-form input {
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      background: rgba(255, 255, 255, 0.83);
+          font-size: 14px; }
+    .city-content .job-site-section .search-filter__table .search-form {
+      max-width: 520px;
       width: 100%;
-      height: 25px; }
-    .city-content .job-site-section .search-filter__table .search-form .search-button {
-      border-radius: 0px 6px 6px 0px;
-      background: #ff4043;
-      width: 40px;
-      height: 25px;
-      transform: translateX(-5px); }
-      .city-content .job-site-section .search-filter__table .search-form .search-button i {
-        color: white; }
-  .city-content .job-site-section .search-filter__table .space-form {
-    display: flex;
-    align-items: center;
-    margin: 20px 0; }
-    .city-content .job-site-section .search-filter__table .space-form p {
-      margin: 0;
-      padding: 0 15px;
-      width: 200px;
-      font-weight: 600;
-      font-size: 14px; }
-    .city-content .job-site-section .search-filter__table .space-form .space-bar {
-      height: 1px;
-      width: 100%;
-      color: #000;
-      border: 0.7px solid #d4d4d4; }
+      margin-bottom: 11px;
+      margin-top: 11px;
+      align-items: center;
+      display: flex; }
+      .city-content .job-site-section .search-filter__table .search-form input {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        background: rgba(255, 255, 255, 0.83);
+        width: 100%;
+        height: 32px; }
+        .city-content .job-site-section .search-filter__table .search-form input::placeholder {
+          font-size: 12px;
+          font-weight: 400;
+          padding-left: 10px; }
+      .city-content .job-site-section .search-filter__table .search-form .search-button {
+        border-radius: 0px 6px 6px 0px;
+        background: #ff4043;
+        width: 87px;
+        height: 32px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 800;
+        text-transform: uppercase; }
+        .city-content .job-site-section .search-filter__table .search-form .search-button i {
+          color: white; }
+    .city-content .job-site-section .search-filter__table .space-form {
+      display: flex;
+      align-items: center;
+      margin: 20px 0; }
+      .city-content .job-site-section .search-filter__table .space-form p {
+        margin: 0;
+        padding: 0 15px;
+        width: 200px;
+        font-weight: 600;
+        font-size: 14px; }
+      .city-content .job-site-section .search-filter__table .space-form .space-bar {
+        height: 1px;
+        width: 100%;
+        color: #000;
+        border: 0.7px solid #d4d4d4; }
 
 .city-content .boiler-section {
   width: 100%;
-  margin-top: 70px; }
+  margin-top: 70px;
+  max-width: 580px; }
   .city-content .boiler-section .boiler-card {
     margin-top: 21px; }
   .city-content .boiler-section .button-container {
     margin-top: 39px;
     display: flex;
     justify-content: flex-end; }
-  .city-content .boiler-section .button {
-    width: 106px;
+  .city-content .boiler-section .button-blue {
+    width: 174px;
     height: 30px;
     text-transform: uppercase !important;
-    margin-left: auto; }
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    background: #324a74;
+    color: white;
+    gap: 18px; }
+    .city-content .boiler-section .button-blue p {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800; }
 
 .city-content .page-navigation {
   display: flex;
@@ -2432,27 +2435,119 @@ nav {
           padding: 10px 12px;
           margin: 0 1px; } }
 
+.city-content .data-info {
+  color: #324a74; }
+
+.city-content .required-asbx {
+  border-radius: 4px;
+  border: 1px solid #e9e9e9;
+  background: rgba(220, 225, 239, 0.24);
+  position: relative;
+  padding: 15px 27px;
+  margin-top: 26px;
+  margin-bottom: 30px; }
+  .city-content .required-asbx img {
+    position: absolute;
+    right: 0;
+    transform: translate(15px, -30px); }
+  .city-content .required-asbx span {
+    color: #1c1b1b;
+    font-size: 16px;
+    text-decoration-line: underline;
+    text-transform: capitalize; }
+  .city-content .required-asbx p {
+    font-size: 14px;
+    padding-top: 7px; }
+
+.city-content .content-summarizer {
+  border-radius: 4px 4px 0px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+  padding: 17px 27px;
+  margin-bottom: 27px; }
+  .city-content .content-summarizer p {
+    text-decoration-line: underline;
+    text-transform: capitalize; }
+  .city-content .content-summarizer ul {
+    color: #c55d34;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    margin-top: 4px; }
+  .city-content .content-summarizer li {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration-line: underline; }
+
+.city-content .nearby-cities {
+  margin-bottom: 22px;
+  margin-top: 27px; }
+  .city-content .nearby-cities p {
+    margin-bottom: 5px;
+    color: #324a74;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize; }
+  .city-content .nearby-cities .location-list {
+    list-style-type: none;
+    flex-wrap: wrap;
+    display: flex; }
+    .city-content .nearby-cities .location-list li {
+      display: inline-block;
+      text-decoration-line: underline;
+      margin-bottom: 7px; }
+      .city-content .nearby-cities .location-list li a {
+        text-decoration: none;
+        color: #324a74;
+        font-size: 12px;
+        font-weight: 500;
+        margin-right: 7px; }
+        .city-content .nearby-cities .location-list li a:hover {
+          text-decoration: underline; }
+
+.city-content .information-steps-jobs h2 {
+  margin-bottom: 27px; }
+
+.city-content .information-steps-jobs ul {
+  margin-bottom: 10px; }
+  .city-content .information-steps-jobs ul li {
+    margin-top: 4px; }
+
+.city-content .information-steps-jobs p {
+  border-left: 3px solid #c55d34;
+  padding-left: 15px; }
+
+.exposure-job {
+  margin-top: 29px; }
+
 .compensation-section {
   margin-top: 30px; }
+  .compensation-section h3 {
+    margin-top: 14px; }
   .compensation-section__table {
     border-collapse: collapse;
     display: flex;
-    margin-top: 15px;
-    margin-bottom: 20px; }
+    margin-top: 13px;
+    margin-bottom: 21px; }
     .compensation-section__table .left-column {
       width: 100%; }
       .compensation-section__table .left-column th {
-        color: #324a74; }
+        color: #324a74;
+        font-weight: 400; }
       .compensation-section__table .left-column .claims-type {
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 500;
         color: #000 !important; }
     .compensation-section__table .right-column {
       width: 100%; }
+      .compensation-section__table .right-column td {
+        font-weight: 400; }
       .compensation-section__table .right-column .price {
         text-transform: uppercase;
         color: #bf5931;
-        font-weight: 600; }
+        font-weight: 500; }
     .compensation-section__table tbody {
       display: flex;
       max-width: 240px;
@@ -2478,10 +2573,15 @@ nav {
   .calculator-section p {
     margin-bottom: 21px; }
   .calculator-section .trust-list li {
-    text-decoration-line: underline; }
+    text-decoration-line: underline;
+    margin-bottom: 12px; }
     .calculator-section .trust-list li a {
       color: #324a74;
       font-weight: 400; }
+  .calculator-section span {
+    font-family: Roboto, serif !important;
+    color: #c55d34;
+    font-size: 22px; }
 
 .legend {
   max-width: 690px;
@@ -2489,12 +2589,14 @@ nav {
   display: flex;
   margin-bottom: 41px; }
   .legend .legend-text {
-    margin-right: 11px; }
+    margin-right: 11px;
+    font-size: 12px; }
   .legend .legend-information {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     padding-left: 10px; }
     .legend .legend-information p {
-      color: #bf5931; }
+      color: #bf5931;
+      font-size: 12px; }
 
 .baner-company {
   width: 100%;
@@ -2828,10 +2930,12 @@ nav {
   .jobsite-card__content {
     display: flex;
     justify-content: space-between; }
-  .jobsite-card h2 a {
-    font-size: 16px;
-    text-decoration-line: underline !important;
-    font-weight: 600; }
+  .jobsite-card h2 {
+    margin-bottom: 10px; }
+    .jobsite-card h2 a {
+      font-size: 16px;
+      text-decoration-line: underline !important;
+      font-weight: 500; }
   .jobsite-card p {
     font-size: 14px; }
   .jobsite-card__sorting {
@@ -2893,7 +2997,7 @@ nav {
     .jobsite-card .add-button p {
       color: #fff;
       font-size: 14px;
-      font-weight: 800;
+      font-weight: 600;
       line-height: 15px; }
       @media (max-width: 475px) {
         .jobsite-card .add-button p {
@@ -2949,7 +3053,7 @@ nav {
           gap: 10px;
           margin-top: 10px; } }
       .boiler-card .add-boiler__select .checkbox label {
-        width: 90px;
+        width: 92px;
         margin-right: 7px;
         margin-left: 15px; }
         @media (max-width: 620px) {
@@ -2974,7 +3078,7 @@ nav {
     .boiler-card .add-button p {
       color: #fff;
       font-size: 14px;
-      font-weight: 800;
+      font-weight: 600;
       line-height: 15px; }
     .boiler-card .add-button span {
       font-size: 8px;
@@ -3654,10 +3758,459 @@ nav {
           background: #FF4043;
           color: white;
           border-radius: 5px;
-          border: 0; }
+          border: 0;
+          font-family: 'Inter', sans-serif; }
         .bottom-banner .banner-calculate .content-information .claims-buttons .add-city {
           color: #324A74;
           background: transparent;
           border-radius: 5px;
           border: 0;
-          background-color: white; }
+          background-color: white;
+          font-weight: 700;
+          font-family: 'Inter', sans-serif; }
+
+.body-result {
+  background: #f3f3f3; }
+
+.result-page {
+  margin-top: 55px; }
+  .result-page .header-text {
+    text-align: center;
+    margin-bottom: 90px; }
+    .result-page .header-text h1 {
+      margin-bottom: 20px;
+      font-family: "Inter", sans-serif !important;
+      font-size: 32px;
+      font-weight: 600; }
+    .result-page .header-text p {
+      width: 100%;
+      max-width: 726px;
+      opacity: 0.6800000071525574;
+      color: #000;
+      margin: 0 auto;
+      line-height: 26px; }
+  .result-page .button-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px; }
+  .result-page input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden; }
+  .result-page label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 56px;
+    height: 24px;
+    background: #324a74;
+    display: block;
+    border-radius: 100px;
+    position: relative; }
+  .result-page label:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s; }
+  .result-page input:checked + label {
+    background: #565656; }
+  .result-page input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%); }
+  .result-page label:active:after {
+    width: 30px; }
+  .result-page .legal-representation {
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.74);
+    margin-top: 42px; }
+    .result-page .legal-representation .recommended {
+      padding-top: 42px;
+      margin-bottom: 5px;
+      text-align: center;
+      color: #324a74;
+      font-size: 16px;
+      font-weight: 600; }
+    .result-page .legal-representation .legal-information {
+      display: flex;
+      gap: 28px;
+      padding-bottom: 44px; }
+      .result-page .legal-representation .legal-information .ER-claims {
+        padding: 22px 18px;
+        max-width: 300px;
+        width: 100%;
+        height: fit-content;
+        border-radius: 24px;
+        background: #fff;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        display: flex;
+        flex-direction: column; }
+        .result-page .legal-representation .legal-information .ER-claims__name {
+          display: flex;
+          border-bottom: 1px solid #b4b4b4;
+          padding-bottom: 10px; }
+          .result-page .legal-representation .legal-information .ER-claims__name h2 {
+            color: #181059;
+            font-size: 24px;
+            font-weight: 700;
+            margin-right: 5px;
+            font-family: "Inter", sans-serif !important; }
+          .result-page .legal-representation .legal-information .ER-claims__name p {
+            color: #ff4043;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 4px;
+            background: #ede8e8;
+            padding: 8px; }
+        .result-page .legal-representation .legal-information .ER-claims .revenue {
+          color: #324a74;
+          font-size: 16px;
+          font-weight: 600;
+          padding-top: 4px;
+          padding-bottom: 30px; }
+        .result-page .legal-representation .legal-information .ER-claims ul {
+          list-style: none; }
+          .result-page .legal-representation .legal-information .ER-claims ul li {
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex; }
+            .result-page .legal-representation .legal-information .ER-claims ul li span {
+              color: #fe474a;
+              font-size: 16px;
+              font-weight: 400; }
+            .result-page .legal-representation .legal-information .ER-claims ul li b {
+              font-size: 16px;
+              font-weight: 600; }
+        .result-page .legal-representation .legal-information .ER-claims ul li:before {
+          content: "✓";
+          color: #181059;
+          padding-right: 15px; }
+        .result-page .legal-representation .legal-information .ER-claims .proposed-money {
+          color: #324a74;
+          font-size: 25px;
+          font-weight: 700;
+          justify-content: center;
+          display: flex; }
+        .result-page .legal-representation .legal-information .ER-claims .button-claim {
+          border-radius: 16px;
+          background: rgba(255, 64, 67, 0.24);
+          color: #324a74;
+          font-size: 16px;
+          font-weight: 700;
+          padding: 14px 27px;
+          margin: 0 auto;
+          display: flex;
+          margin-top: 14px; }
+      .result-page .legal-representation .legal-information .AVG-claims {
+        padding: 22px 18px;
+        max-width: 300px;
+        width: 100%;
+        border-radius: 24px;
+        background: #324a74;
+        box-shadow: 6px 12px 32px 0px rgba(0, 0, 0, 0.12);
+        align-items: center;
+        display: flex;
+        flex-direction: column; }
+        .result-page .legal-representation .legal-information .AVG-claims__name {
+          display: flex;
+          border-bottom: 1px solid #b4b4b4;
+          padding-bottom: 10px; }
+          .result-page .legal-representation .legal-information .AVG-claims__name h2 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            margin-right: 5px;
+            font-family: "Inter", sans-serif !important; }
+          .result-page .legal-representation .legal-information .AVG-claims__name p {
+            color: #ff4043;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 4px;
+            background: #fff;
+            padding: 8px; }
+        .result-page .legal-representation .legal-information .AVG-claims .revenue {
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 600;
+          padding-top: 4px;
+          padding-bottom: 30px; }
+        .result-page .legal-representation .legal-information .AVG-claims ul {
+          list-style: none; }
+          .result-page .legal-representation .legal-information .AVG-claims ul li {
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex; }
+            .result-page .legal-representation .legal-information .AVG-claims ul li span {
+              font-size: 16px;
+              font-weight: 400;
+              color: #fff; }
+            .result-page .legal-representation .legal-information .AVG-claims ul li b {
+              font-size: 16px;
+              font-weight: 600;
+              color: #fff; }
+            .result-page .legal-representation .legal-information .AVG-claims ul li p {
+              color: #fff; }
+        .result-page .legal-representation .legal-information .AVG-claims ul li:before {
+          content: "✓";
+          color: #fff;
+          padding-right: 15px; }
+        .result-page .legal-representation .legal-information .AVG-claims .proposed-money {
+          color: #fff;
+          font-size: 25px;
+          font-weight: 700;
+          justify-content: center;
+          display: flex; }
+        .result-page .legal-representation .legal-information .AVG-claims .button-claim {
+          border-radius: 16px;
+          background: #ff4043;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+          padding: 14px 27px;
+          margin: 0 auto;
+          display: flex;
+          margin-top: 14px; }
+      .result-page .legal-representation .legal-information .IR-claims {
+        padding: 22px 18px;
+        max-width: 300px;
+        width: 100%;
+        border-radius: 24px;
+        background: #fff;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        display: flex;
+        flex-direction: column; }
+        .result-page .legal-representation .legal-information .IR-claims__name {
+          display: flex;
+          border-bottom: 1px solid #b4b4b4;
+          padding-bottom: 10px; }
+          .result-page .legal-representation .legal-information .IR-claims__name h2 {
+            color: #181059;
+            font-size: 24px;
+            font-weight: 700;
+            margin-right: 5px;
+            font-family: "Inter", sans-serif !important; }
+          .result-page .legal-representation .legal-information .IR-claims__name p {
+            color: #ff4043;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 4px;
+            background: #ede8e8;
+            padding: 8px; }
+        .result-page .legal-representation .legal-information .IR-claims .revenue {
+          color: #324a74;
+          font-size: 16px;
+          font-weight: 600;
+          padding-top: 4px;
+          padding-bottom: 30px; }
+        .result-page .legal-representation .legal-information .IR-claims ul {
+          list-style: none; }
+          .result-page .legal-representation .legal-information .IR-claims ul li {
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex; }
+            .result-page .legal-representation .legal-information .IR-claims ul li span {
+              color: #fe474a;
+              font-size: 16px;
+              font-weight: 400; }
+            .result-page .legal-representation .legal-information .IR-claims ul li b {
+              font-size: 16px;
+              font-weight: 600; }
+        .result-page .legal-representation .legal-information .IR-claims ul li:before {
+          content: "✓";
+          color: #181059;
+          padding-right: 15px; }
+        .result-page .legal-representation .legal-information .IR-claims .proposed-money {
+          color: #324a74;
+          font-size: 25px;
+          font-weight: 700;
+          justify-content: center;
+          display: flex; }
+        .result-page .legal-representation .legal-information .IR-claims .button-claim {
+          border-radius: 16px;
+          background: rgba(255, 64, 67, 0.24);
+          color: #324a74;
+          font-size: 16px;
+          font-weight: 700;
+          padding: 14px 27px;
+          margin: 0 auto;
+          display: flex;
+          margin-top: 14px; }
+  .result-page .switch {
+    display: flex; }
+  .result-page .your-own {
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    padding: 14px 24px;
+    margin: 44px auto; }
+    .result-page .your-own h2 {
+      color: #181059;
+      font-size: 24px;
+      font-weight: 700;
+      margin-right: 5px;
+      font-family: "Inter", sans-serif !important;
+      border-bottom: 1px solid #b4b4b4;
+      padding-bottom: 10px; }
+    .result-page .your-own .revenue {
+      color: #324a74;
+      font-size: 16px;
+      font-weight: 600;
+      padding-top: 4px;
+      padding-bottom: 30px; }
+    .result-page .your-own ul {
+      list-style: none; }
+      .result-page .your-own ul li {
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex; }
+        .result-page .your-own ul li span {
+          color: #fe474a;
+          font-size: 16px;
+          font-weight: 400; }
+        .result-page .your-own ul li b {
+          font-size: 16px;
+          font-weight: 600; }
+    .result-page .your-own ul li:before {
+      content: "✓";
+      color: #181059;
+      padding-right: 15px; }
+    .result-page .your-own .proposed-money {
+      color: #324a74;
+      font-size: 25px;
+      font-weight: 700;
+      justify-content: center;
+      display: flex; }
+  .result-page .lawyer-representation {
+    border-radius: 24px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 45px; }
+    .result-page .lawyer-representation__company {
+      flex-direction: column;
+      display: flex; }
+      .result-page .lawyer-representation__company img {
+        width: 225px;
+        height: 28px; }
+      .result-page .lawyer-representation__company span {
+        color: #9d1b32;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 15px 0; }
+    .result-page .lawyer-representation p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; }
+  .result-page .content-request {
+    display: flex;
+    justify-content: space-between; }
+    .result-page .content-request .question-lawyer {
+      margin-top: 55px; }
+      .result-page .content-request .question-lawyer span {
+        color: #9d1b32;
+        font-size: 20px;
+        font-weight: 700; }
+      .result-page .content-request .question-lawyer p {
+        max-width: 447px;
+        width: 100%; }
+        .result-page .content-request .question-lawyer p a {
+          color: #000;
+          font-size: 16px;
+          font-weight: 700; }
+    .result-page .content-request .callback-form {
+      margin-top: 42px;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: rgba(244, 244, 244, 0.29);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+      max-width: 316px;
+      width: 100%; }
+      .result-page .content-request .callback-form__text {
+        border-radius: 8px 8px 0px 0px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: #324a74;
+        width: 100%;
+        height: 43px; }
+      .result-page .content-request .callback-form span {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 6px 31px;
+        display: flex;
+        text-align: center; }
+      .result-page .content-request .callback-form .form-request {
+        text-align: center;
+        margin-top: 26px; }
+        .result-page .content-request .callback-form .form-request select {
+          width: 100%;
+          max-width: 254px;
+          height: 28px;
+          margin-bottom: 14px; }
+        .result-page .content-request .callback-form .form-request input {
+          width: 100%;
+          max-width: 254px;
+          height: 28px;
+          margin-bottom: 14px; }
+    .result-page .content-request .button-element {
+      display: flex;
+      justify-content: end;
+      padding-right: 31px; }
+      .result-page .content-request .button-element .call-back {
+        border-radius: 4px;
+        background: #ff4043;
+        width: 168px;
+        height: 33px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 800;
+        margin-top: 15px;
+        text-transform: uppercase;
+        margin-bottom: 23px; }
+  .result-page .legend {
+    margin-top: 60px;
+    margin-left: 9%; }
+    .result-page .legend__text {
+      color: #bf5931;
+      font-size: 12px;
+      font-weight: 400;
+      padding-right: 10px; }
+    .result-page .legend .legend-information__text {
+      margin-bottom: 10px; }
+      .result-page .legend .legend-information__text p {
+        color: #000;
+        font-size: 14px;
+        font-weight: 600; }
+      .result-page .legend .legend-information__text ul {
+        list-style: none; }
+        .result-page .legend .legend-information__text ul li {
+          font-size: 12px;
+          display: flex; }
+          .result-page .legend .legend-information__text ul li p {
+            font-size: 12px;
+            font-weight: 400; }
+      .result-page .legend .legend-information__text ul li:before {
+        content: "•";
+        color: #181059;
+        padding-right: 15px; }
+    .result-page .legend span {
+      font-weight: 600; }
+    .result-page .legend .legal-fees {
+      color: #000;
+      font-size: 12px;
+      font-weight: 400; }
+      .result-page .legend .legal-fees b {
+        font-weight: 600;
+        font-size: 12px !important; }
