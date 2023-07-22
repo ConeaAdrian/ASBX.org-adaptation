@@ -899,7 +899,7 @@ h6 {
   margin-bottom: 0rem; }
 
 p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   color: #000;
   margin: 0; }
@@ -931,6 +931,19 @@ select {
   font-family: 'Inter', sans-serif;
   border-radius: 0;
   appearance: none; }
+
+select[type="checkbox"]:checked:before {
+  content: "\2714";
+  /* Unicode checkmark symbol */
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px; }
 
 input {
   border: 1px solid #dbdbdb;
@@ -1406,6 +1419,12 @@ button {
       .header-search .search-asbestos {
         flex-direction: column; } }
 
+.select-element .arrow-img {
+  transform: translate(-20px, -3px) !important; }
+
+.arrow-img {
+  transform: translateX(-20px); }
+
 footer {
   background-color: #faf7f0;
   padding-bottom: 55px !important; }
@@ -1449,8 +1468,7 @@ footer {
       footer .footer-content .request-call .form-request {
         display: flex;
         flex-direction: column;
-        gap: 15px;
-        align-items: end; }
+        gap: 15px; }
         footer .footer-content .request-call .form-request select {
           background: #ffffff;
           border: 1px solid #f0f0f0;
@@ -2799,7 +2817,8 @@ nav {
           width: 37px; }
         .general-claims .content-box__information .job p,
         .general-claims .content-box__information .time p {
-          width: 132px; }
+          width: 132px;
+          font-weight: 400; }
           @media (max-width: 767px) {
             .general-claims .content-box__information .job p,
             .general-claims .content-box__information .time p {
@@ -3844,7 +3863,6 @@ nav {
         border-radius: 24px;
         background: #fff;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-        align-items: center;
         display: flex;
         flex-direction: column; }
         .result-page .legal-representation .legal-information .ER-claims__name {
@@ -3869,7 +3887,8 @@ nav {
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          padding-bottom: 30px; }
+          padding-bottom: 30px;
+          text-align: center; }
         .result-page .legal-representation .legal-information .ER-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .ER-claims ul li {
@@ -3911,7 +3930,6 @@ nav {
         border-radius: 24px;
         background: #324a74;
         box-shadow: 6px 12px 32px 0px rgba(0, 0, 0, 0.12);
-        align-items: center;
         display: flex;
         flex-direction: column; }
         .result-page .legal-representation .legal-information .AVG-claims__name {
@@ -3936,7 +3954,8 @@ nav {
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          padding-bottom: 30px; }
+          padding-bottom: 30px;
+          text-align: center; }
         .result-page .legal-representation .legal-information .AVG-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .AVG-claims ul li {
@@ -3981,7 +4000,6 @@ nav {
         border-radius: 24px;
         background: #fff;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-        align-items: center;
         display: flex;
         flex-direction: column; }
         .result-page .legal-representation .legal-information .IR-claims__name {
@@ -4006,7 +4024,8 @@ nav {
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          padding-bottom: 30px; }
+          padding-bottom: 30px;
+          text-align: center; }
         .result-page .legal-representation .legal-information .IR-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .IR-claims ul li {
@@ -4064,7 +4083,8 @@ nav {
       font-size: 16px;
       font-weight: 600;
       padding-top: 4px;
-      padding-bottom: 30px; }
+      padding-bottom: 30px;
+      text-align: center; }
     .result-page .your-own ul {
       list-style: none; }
       .result-page .your-own ul li {
@@ -4211,3 +4231,66 @@ nav {
       .result-page .legend .legal-fees b {
         font-weight: 600;
         font-size: 12px !important; }
+
+.multiple-page .video {
+  width: 100%;
+  max-width: 662px;
+  height: 351px;
+  margin: 15px auto 55px auto;
+  display: flex; }
+
+.multiple-page .component-information {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  gap: 10px; }
+  .multiple-page .component-information .content-summarizer {
+    padding: 17px 27px;
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fcfaf6;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04); }
+    .multiple-page .component-information .content-summarizer p {
+      text-decoration-line: underline;
+      font-weight: 400; }
+    .multiple-page .component-information .content-summarizer li {
+      color: #c55d34;
+      text-decoration-line: underline;
+      text-transform: capitalize;
+      margin-top: 3px;
+      font-size: 14px;
+      font-weight: 500; }
+    .multiple-page .component-information .content-summarizer ol {
+      margin-bottom: 0;
+      padding-left: 1rem; }
+  .multiple-page .component-information img {
+    width: auto;
+    height: 209px; }
+
+.multiple-page ul li:before {
+  content: "•";
+  color: #767676;
+  padding-right: 15px; }
+
+.multiple-page ul {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+  .multiple-page ul li {
+    display: flex; }
+    .multiple-page ul li p {
+      color: #767676; }
+
+.multiple-page p {
+  line-height: 22px; }
+
+.multiple-page span {
+  color: #c55d34;
+  font-size: 18px; }
+
+.multiple-page h2 {
+  margin-top: 15px; }
+
+.multiple-page .bar {
+  margin-bottom: 15px !important;
+  margin-top: 10px !important; }

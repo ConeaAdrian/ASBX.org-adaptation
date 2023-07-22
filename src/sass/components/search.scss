@@ -147,3 +147,13 @@
     }
   }
 }
+
+.select-element {
+  .arrow-img {
+    transform: translate(-20px, -3px) !important;
+  }
+}
+
+.arrow-img {
+  transform: translateX(-20px);
+}

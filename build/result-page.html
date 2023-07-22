@@ -70,7 +70,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <script
       src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
@@ -179,7 +179,6 @@
       <div class="ER-claims">
         <div class="ER-claims__name">
           <h2>ER Claims*</h2>
-          <p>LEGAL FEES 28%</p>
         </div>
         <p class="revenue">Expedited Review + Defendants</p>
         <ul>
@@ -201,7 +200,6 @@
       <div class="AVG-claims">
         <div class="AVG-claims__name">
           <h2>AVG Claims*</h2>
-          <p>LEGAL FEES 33%</p>
         </div>
         <p class="revenue">Average Claims/Settlements</p>
         <ul>
@@ -222,7 +220,6 @@
       <div class="IR-claims">
         <div class="ER-claims__name">
           <h2>IR Claims*</h2>
-          <p>LEGAL FEES 38%</p>
         </div>
         <p class="revenue">Individual Review + Defendants + Trial</p>
         <ul>
@@ -393,12 +390,15 @@
       <div class="request-call">
         <p>Request Callback</p>
         <form action="" class="form-request">
-          <select id="select1">
-            <option value="">Select Question Type</option>
-            <option value="lista1">Family Member</option>
-            <option value="lista2">Listă 2</option>
-            <option value="lista3">Listă 3</option>
-          </select>
+          <div class="select-element">
+            <select id="select1">
+              <option value="">Select Question Type</option>
+              <option value="lista1">Family Member</option>
+              <option value="lista2">Listă 2</option>
+              <option value="lista3">Listă 3</option>
+            </select>
+            <img class="arrow-img" src="../../img/arrow.svg" alt="">
+          </div>
           <input type="text" placeholder="Your Name" />
           <input type="text" placeholder="Phone Number" />
           <button class="button-blue">Request</button>
