@@ -932,6 +932,9 @@ select {
   border-radius: 0;
   appearance: none; }
 
+ol {
+  padding-left: 1rem; }
+
 select[type="checkbox"]:checked:before {
   content: "\2714";
   /* Unicode checkmark symbol */
@@ -4246,6 +4249,7 @@ nav {
   margin-bottom: 20px;
   gap: 10px; }
   .multiple-page .component-information .content-summarizer {
+    width: 100%;
     padding: 17px 27px;
     border-radius: 4px 4px 0px 0px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -4262,22 +4266,25 @@ nav {
       font-size: 14px;
       font-weight: 500; }
     .multiple-page .component-information .content-summarizer ol {
+      margin-top: 0 !important;
       margin-bottom: 0;
       padding-left: 1rem; }
   .multiple-page .component-information img {
     width: auto;
-    height: 209px; }
+    height: auto; }
 
 .multiple-page ul li:before {
   content: "•";
   color: #767676;
-  padding-right: 15px; }
+  padding-right: 15px;
+  text-decoration-line: blink; }
 
 .multiple-page ul {
   margin-top: 10px;
   margin-bottom: 20px; }
   .multiple-page ul li {
-    display: flex; }
+    display: flex;
+    text-decoration-line: blink !important; }
     .multiple-page ul li p {
       color: #767676; }
 
@@ -4294,3 +4301,17 @@ nav {
 .multiple-page .bar {
   margin-bottom: 15px !important;
   margin-top: 10px !important; }
+
+.multiple-page ol {
+  margin-top: 16px; }
+  .multiple-page ol ul {
+    margin: 0; }
+  .multiple-page ol li {
+    color: #575757;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 4px; }
+    .multiple-page ol li b {
+      color: #575757;
+      font-size: 16px !important;
+      font-weight: 500; }

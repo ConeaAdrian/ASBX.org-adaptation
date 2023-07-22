@@ -14,6 +14,7 @@
     margin-bottom: 20px;
     gap: 10px;
     .content-summarizer {
+        width: 100%;
       padding: 17px 27px;
       border-radius: 4px 4px 0px 0px;
       border: 1px solid rgba(0, 0, 0, 0.1);
@@ -32,13 +33,14 @@
         font-weight: 500;
       }
       ol {
+        margin-top: 0 !important;
         margin-bottom: 0;
         padding-left: 1rem;
       }
     }
     img {
       width: auto;
-      height: 209px;
+      height: auto;
     }
   }
 
@@ -46,12 +48,14 @@
     content: "•";
     color: #767676;
     padding-right: 15px;
+    text-decoration-line: blink;
   }
   ul {
     margin-top: 10px;
     margin-bottom: 20px;
     li {
       display: flex;
+      text-decoration-line: blink !important;
       p {
         color: #767676;
       }
@@ -71,5 +75,22 @@
   .bar {
     margin-bottom: 15px !important;
     margin-top: 10px !important;
+  }
+  ol {
+    margin-top: 16px;
+    ul {
+        margin: 0;
+    }
+    li {
+        color: #575757;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 4px;
+        b {
+            color: #575757;
+            font-size: 16px !important;
+            font-weight: 500; 
+        }
+    }
   }
 }

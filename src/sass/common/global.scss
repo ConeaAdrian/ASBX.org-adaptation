@@ -105,6 +105,9 @@ select {
   appearance: none;
   
 }
+ol {
+  padding-left: 1rem;
+}
 select[type="checkbox"]:checked:before {
   content: "\2714"; /* Unicode checkmark symbol */
   display: block;
