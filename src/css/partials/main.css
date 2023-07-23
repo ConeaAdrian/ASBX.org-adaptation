@@ -930,7 +930,8 @@ select {
   font-size: 14px;
   font-family: 'Inter', sans-serif;
   border-radius: 0;
-  appearance: none; }
+  appearance: none;
+  outline: none; }
 
 ol {
   padding-left: 1rem; }
@@ -950,14 +951,15 @@ select[type="checkbox"]:checked:before {
 
 input {
   border: 1px solid #dbdbdb;
-  background: #fff; }
+  background: #fff;
+  outline: none; }
 
 label {
   font-family: 'Inter', sans-serif; }
 
 b,
 strong {
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'Inter', sans-serif;
   font-size: 18px !important; }
 
@@ -4315,3 +4317,12 @@ nav {
       color: #575757;
       font-size: 16px !important;
       font-weight: 500; }
+
+.multiple-page b {
+  font-size: 16px !important;
+  font-weight: 500; }
+
+.multiple-page tbody {
+  display: flex;
+  width: 100%;
+  max-width: none !important; }

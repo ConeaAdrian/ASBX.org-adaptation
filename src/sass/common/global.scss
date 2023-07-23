@@ -103,7 +103,7 @@ select {
   font-family: 'Inter', sans-serif;
   border-radius: 0;
   appearance: none;
-  
+  outline: none;
 }
 ol {
   padding-left: 1rem;
@@ -123,13 +123,14 @@ select[type="checkbox"]:checked:before {
 input {
   border: 1px solid #dbdbdb;
   background: #fff;
+  outline: none;
 }
 label {
   font-family: 'Inter', sans-serif;
 }
 b,
 strong {
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'Inter', sans-serif;
   font-size: 18px !important;
 }
