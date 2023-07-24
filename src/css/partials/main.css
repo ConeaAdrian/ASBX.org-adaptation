@@ -2924,11 +2924,11 @@ nav {
     font-size: 26px;
     margin-top: 8px; }
     .near-me h1 span {
-      font-family: 'Roboto Serif', serif;
+      font-family: "Roboto Serif", serif;
       text-decoration-line: underline;
       font-size: 26px; }
   .near-me h3 {
-    color: #BF5931; }
+    color: #bf5931; }
   .near-me .next-job {
     width: 100%;
     height: 30px;
@@ -2989,99 +2989,127 @@ nav {
   border: 1px solid #f1f1f1;
   background: #fdfdfd;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 6px 12px;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 20px;
   flex-direction: column;
-  /* Stilurile pentru mesajul de eroare */ }
-  .jobsite-card__content {
-    display: flex;
-    justify-content: space-between; }
-  .jobsite-card h2 {
+  padding: 7px 14px; }
+  .jobsite-card__content .sorting-job {
+    display: flex; }
+    .jobsite-card__content .sorting-job .content-input {
+      display: flex;
+      gap: 10px; }
+      .jobsite-card__content .sorting-job .content-input .select-element {
+        display: flex;
+        flex-direction: column;
+        max-width: 172px;
+        width: 100%;
+        height: 26px;
+        border: 1px solid #dbdbdb;
+        background: #fff;
+        display: flex;
+        position: relative; }
+        .jobsite-card__content .sorting-job .content-input .select-element .alternative {
+          position: absolute;
+          top: 15px; }
+        .jobsite-card__content .sorting-job .content-input .select-element input {
+          border: none;
+          max-width: 172px;
+          width: 100%; }
+        .jobsite-card__content .sorting-job .content-input .select-element .arrow-input {
+          position: absolute; }
+      .jobsite-card__content .sorting-job .content-input .from-data {
+        display: flex; }
+        .jobsite-card__content .sorting-job .content-input .from-data__content {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          flex-direction: column; }
+          .jobsite-card__content .sorting-job .content-input .from-data__content .information {
+            display: flex;
+            flex-direction: column; }
+            .jobsite-card__content .sorting-job .content-input .from-data__content .information__data {
+              display: flex; }
+          .jobsite-card__content .sorting-job .content-input .from-data__content .select-data {
+            display: flex;
+            border: 1px solid #dbdbdb;
+            background: #fff;
+            display: flex;
+            position: relative;
+            max-width: 93px;
+            height: 26px; }
+            .jobsite-card__content .sorting-job .content-input .from-data__content .select-data input {
+              border: none;
+              max-width: 93px;
+              width: 100%; }
+            .jobsite-card__content .sorting-job .content-input .from-data__content .select-data .arrow-input {
+              position: absolute; }
+      .jobsite-card__content .sorting-job .content-input .to-data {
+        display: flex; }
+        .jobsite-card__content .sorting-job .content-input .to-data__content {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          flex-direction: column; }
+          .jobsite-card__content .sorting-job .content-input .to-data__content .information {
+            display: flex;
+            flex-direction: column; }
+            .jobsite-card__content .sorting-job .content-input .to-data__content .information__data {
+              display: flex; }
+          .jobsite-card__content .sorting-job .content-input .to-data__content .select-data {
+            display: flex;
+            border: 1px solid #dbdbdb;
+            background: #fff;
+            display: flex;
+            position: relative;
+            max-width: 93px;
+            height: 26px; }
+            .jobsite-card__content .sorting-job .content-input .to-data__content .select-data input {
+              border: none;
+              max-width: 93px;
+              width: 100%; }
+            .jobsite-card__content .sorting-job .content-input .to-data__content .select-data .arrow-input {
+              position: absolute; }
+      .jobsite-card__content .sorting-job .content-input .select-job {
+        display: flex; }
+      .jobsite-card__content .sorting-job .content-input .arrow-input {
+        width: 10px;
+        height: 7px;
+        right: 4px;
+        top: 8px; }
+    .jobsite-card__content .sorting-job .available-trust-text {
+      margin-top: 10px;
+      font-weight: 500; }
+    .jobsite-card__content .sorting-job .add-button {
+      border-radius: 4px;
+      background: #ff4043;
+      width: 100%;
+      max-width: 70px;
+      height: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 6px;
+      margin-left: 30px; }
+      .jobsite-card__content .sorting-job .add-button p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 15px; }
+        @media (max-width: 475px) {
+          .jobsite-card__content .sorting-job .add-button p {
+            font-size: 14px; } }
+      .jobsite-card__content .sorting-job .add-button span {
+        font-size: 8px;
+        font-weight: 600;
+        color: #fff; }
+        @media (max-width: 380px) {
+          .jobsite-card__content .sorting-job .add-button span {
+            display: none; } }
+  .jobsite-card__content h2 {
     margin-bottom: 10px; }
-    .jobsite-card h2 a {
+    .jobsite-card__content h2 a {
       font-size: 16px;
       text-decoration-line: underline !important;
       font-weight: 500; }
-  .jobsite-card p {
-    font-size: 14px; }
-  .jobsite-card__sorting {
-    display: flex;
-    margin-top: 7px;
-    margin-bottom: 8px; }
-    @media (max-width: 830px) {
-      .jobsite-card__sorting {
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 315px; } }
-    .jobsite-card__sorting .form-element {
-      display: flex; }
-      @media (max-width: 830px) {
-        .jobsite-card__sorting .form-element {
-          margin-top: 15px; } }
-    .jobsite-card__sorting select {
-      height: 25px;
-      max-width: 200px;
-      width: 100%;
-      margin-right: 14px; }
-      @media (max-width: 830px) {
-        .jobsite-card__sorting select {
-          max-width: none; } }
-    .jobsite-card__sorting .from-data {
-      display: flex;
-      align-items: center; }
-      .jobsite-card__sorting .from-data select {
-        width: 100px;
-        margin-left: 7px; }
-        @media (max-width: 830px) {
-          .jobsite-card__sorting .from-data select {
-            max-width: none; } }
-        @media (max-width: 475px) {
-          .jobsite-card__sorting .from-data select {
-            width: 91px;
-            margin-left: 4px; } }
-    .jobsite-card__sorting .to-data {
-      display: flex;
-      align-items: center; }
-      .jobsite-card__sorting .to-data select {
-        width: 100px;
-        margin-left: 7px; }
-        @media (max-width: 475px) {
-          .jobsite-card__sorting .to-data select {
-            width: 91px;
-            margin-left: 4px; } }
-  .jobsite-card .add-button {
-    border-radius: 4px;
-    background: #ff4043;
-    width: 100%;
-    max-width: 70px;
-    height: 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
-    padding: 0 6px; }
-    .jobsite-card .add-button p {
-      color: #fff;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 15px; }
-      @media (max-width: 475px) {
-        .jobsite-card .add-button p {
-          font-size: 14px; } }
-    .jobsite-card .add-button span {
-      font-size: 8px;
-      font-weight: 600;
-      color: #fff; }
-      @media (max-width: 380px) {
-        .jobsite-card .add-button span {
-          display: none; } }
-  .jobsite-card .error-message {
-    display: none;
-    color: #ff4043;
-    font-size: 12px;
-    margin-top: 5px; }
 
 .boiler-card {
   width: 100%;

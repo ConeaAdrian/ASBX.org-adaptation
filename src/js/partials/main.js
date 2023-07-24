@@ -27,3 +27,20 @@
   });
 }
 
+  // Funcție care afișează sau ascunde div-ul cu clasa "alternative" în funcție de starea sa actuală
+  function toggleAlternativeDiv(inputId, alternativeId) {
+    const inputElement = document.getElementById(inputId);
+    const alternativeElement = document.getElementById(alternativeId);
+
+    if (alternativeElement.style.display === "block") {
+      alternativeElement.style.display = "none";
+    } else {
+      alternativeElement.style.display = "block";
+    }
+  }
+
+  // Adaugă evenimentul de click pentru fiecare input
+  document.getElementById("input1").addEventListener("click", function () {
+    toggleAlternativeDiv("input1", "alternative1");
+  });
+
