@@ -64,7 +64,7 @@
           line-height: 70px;
           color: #ffffff;
           @media (max-width: 640px) {
-            font-size: 42px;
+            font-size: 42px !important;
           }
         }
         h2 {
@@ -76,6 +76,7 @@
           margin-bottom: 21px !important;
           margin-top: 27px !important;
           margin: 0 auto;
+          font-family: "Inter", sans-serif !important;
           @media (max-width: 640px) {
             font-size: 20px;
           }
@@ -93,7 +94,6 @@
           font-weight: 400;
           font-size: 18px;
           color: #ffffff;
-          font-family: "Nunito";
           @media (max-width: 640px) {
             font-size: 16px;
           }
@@ -145,6 +145,7 @@
       .works-step {
         display: flex;
         justify-content: space-between;
+        gap: 10px;
         @media (max-width: 640px) {
           flex-direction: column;
           margin: 0 auto;
@@ -157,7 +158,6 @@
           height: auto;
           border: 1px solid rgba(0, 0, 0, 0.1);
           margin-top: 40px;
-          margin-bottom: 40px;
           padding: 10px;
           @media (max-width: 640px) {
             width: 80%;
@@ -214,6 +214,10 @@
         margin: 0 auto;
         right: 38%;
         transform: translateY(-2px);
+
+        @media (max-width: 400px) {
+          right: 34%;
+        }
       }
     }
   }
@@ -224,6 +228,9 @@
     margin-top: 100px;
   }
 }
+.choose-asbx {
+  margin-top: -55px !important;
+}
 .container-about {
   max-width: 848px;
   width: 100%;
@@ -232,7 +239,6 @@
   padding-bottom: 30px;
   justify-content: space-between;
   gap: 20px;
-  margin-top: -55px;
   @media (max-width: 720px) {
     flex-direction: column;
   }
@@ -361,6 +367,9 @@
   height: auto;
   width: 100%;
   padding: 25px;
+  @media (max-width: 475px) {
+    padding: 0;
+  }
 
   h3 {
     color: #000;

@@ -32,15 +32,24 @@
   margin: 0 auto;
   max-width: 617px;
   width: 100%;
+  margin-top: 20px;
   h2 {
+    font-size: 30px;
+    color: #000 !important;
+    margin-bottom: 12px;
     span {
       color: #bf5931;
+      font-size: 30px;
+      font-family: Roboto, serif !important;
+      @media (max-width: 475px) {
+        font-size: 20px !important;
+      }
     }
   }
 }
 .background-state {
   background: rgba(250, 247, 240, 0.31);
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 
   .state-select {
     margin: 0 auto;
@@ -91,6 +100,7 @@
 }
 
 .military-index {
+  margin-top: 45px;
   h3 {
     width: 328px !important;
   }
@@ -103,7 +113,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5px;
         flex-wrap: wrap;
         margin-top: 20px;
 

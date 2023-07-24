@@ -878,6 +878,9 @@ h1 {
   font-family: "Roboto Serif", serif !important;
   color: #324a74;
   font-size: 26px; }
+  @media (max-width: 475px) {
+    h1 {
+      font-size: 24px !important; } }
 
 h2 {
   font-style: normal;
@@ -885,6 +888,9 @@ h2 {
   font-size: 22px;
   color: #036;
   font-family: Roboto, serif !important; }
+  @media (max-width: 475px) {
+    h2 {
+      font-size: 20px !important; } }
 
 h3 {
   font-size: 18px;
@@ -903,6 +909,9 @@ p {
   font-size: 16px;
   color: #000;
   margin: 0; }
+  @media (max-width: 475px) {
+    p {
+      font-size: 14px; } }
 
 li {
   font-size: 16px;
@@ -962,6 +971,10 @@ strong {
   font-weight: 500;
   font-family: 'Inter', sans-serif;
   font-size: 18px !important; }
+  @media (max-width: 475px) {
+    b,
+    strong {
+      font-size: 14px !important; } }
 
 .position-relative {
   position: relative; }
@@ -1020,8 +1033,7 @@ body {
   border: none;
   padding: 0;
   color: #fff;
-  border: 0 !important;
-  font-family: "Nunito", sans-serif; }
+  border: 0 !important; }
   .button:hover {
     background-color: #000;
     box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16), inset 0 -2px 0 0 rgba(0, 0, 0, 0.11);
@@ -1035,8 +1047,7 @@ body {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  border: none;
-  font-family: "Nunito", sans-serif; }
+  border: none; }
   .button-blue:hover {
     background: #15528E;
     box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16), inset 0 -2px 0 0 rgba(0, 0, 0, 0.11);
@@ -1075,7 +1086,6 @@ button {
       background: #000;
       color: #fff !important;
       text-transform: uppercase;
-      font-family: "Nunito", sans-serif;
       padding: 7px 14px;
       margin-top: 17px;
       margin-bottom: 10px; }
@@ -1124,7 +1134,6 @@ button {
       color: white;
       margin: 0;
       font-size: 18px;
-      font-family: "Nunito", sans-serif !important;
       font-weight: 700;
       padding: 20px 17px; }
       @media (max-width: 548px) {
@@ -1817,13 +1826,23 @@ nav {
   text-align: center;
   margin: 0 auto;
   max-width: 617px;
-  width: 100%; }
-  .step-work h2 span {
-    color: #bf5931; }
+  width: 100%;
+  margin-top: 20px; }
+  .step-work h2 {
+    font-size: 30px;
+    color: #000 !important;
+    margin-bottom: 12px; }
+    .step-work h2 span {
+      color: #bf5931;
+      font-size: 30px;
+      font-family: Roboto, serif !important; }
+      @media (max-width: 475px) {
+        .step-work h2 span {
+          font-size: 20px !important; } }
 
 .background-state {
   background: rgba(250, 247, 240, 0.31);
-  margin-bottom: 40px; }
+  padding-bottom: 40px; }
   .background-state .state-select {
     margin: 0 auto;
     text-align: center;
@@ -1858,25 +1877,24 @@ nav {
           .background-state .state-select .state-list li {
             width: 48%; } }
 
-.military-index h3 {
-  width: 328px !important; }
-
-.military-index .advocacy-information .military-forces p {
-  margin-left: 20px; }
-
-.military-index .advocacy-information .military-forces__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  flex-wrap: wrap;
-  margin-top: 20px; }
-  .military-index .advocacy-information .military-forces__logo img {
-    margin-right: 25px; }
-    @media (max-width: 800px) {
-      .military-index .advocacy-information .military-forces__logo img {
-        width: 75px;
-        height: 75px; } }
+.military-index {
+  margin-top: 45px; }
+  .military-index h3 {
+    width: 328px !important; }
+  .military-index .advocacy-information .military-forces p {
+    margin-left: 20px; }
+  .military-index .advocacy-information .military-forces__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .military-index .advocacy-information .military-forces__logo img {
+      margin-right: 25px; }
+      @media (max-width: 800px) {
+        .military-index .advocacy-information .military-forces__logo img {
+          width: 75px;
+          height: 75px; } }
 
 .template-compensation {
   margin-top: 60px; }
@@ -1997,7 +2015,7 @@ nav {
           color: #ffffff; }
           @media (max-width: 640px) {
             .page-wrapper .container .hero-row .hero-row-context .logo-text {
-              font-size: 42px; } }
+              font-size: 42px !important; } }
         .page-wrapper .container .hero-row .hero-row-context h2 {
           font-weight: 500;
           font-size: 24px;
@@ -2006,7 +2024,8 @@ nav {
           color: #ffffff;
           margin-bottom: 21px !important;
           margin-top: 27px !important;
-          margin: 0 auto; }
+          margin: 0 auto;
+          font-family: "Inter", sans-serif !important; }
           @media (max-width: 640px) {
             .page-wrapper .container .hero-row .hero-row-context h2 {
               font-size: 20px; } }
@@ -2021,8 +2040,7 @@ nav {
         .page-wrapper .container .hero-row .hero-row-context p {
           font-weight: 400;
           font-size: 18px;
-          color: #ffffff;
-          font-family: "Nunito"; }
+          color: #ffffff; }
           @media (max-width: 640px) {
             .page-wrapper .container .hero-row .hero-row-context p {
               font-size: 16px; } }
@@ -2064,7 +2082,8 @@ nav {
             margin-bottom: 15px; } }
       .page-wrapper .working-stages__about .works-step {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        gap: 10px; }
         @media (max-width: 640px) {
           .page-wrapper .working-stages__about .works-step {
             flex-direction: column;
@@ -2076,7 +2095,6 @@ nav {
           height: auto;
           border: 1px solid rgba(0, 0, 0, 0.1);
           margin-top: 40px;
-          margin-bottom: 40px;
           padding: 10px; }
           @media (max-width: 640px) {
             .page-wrapper .working-stages__about .works-step__box {
@@ -2122,11 +2140,17 @@ nav {
         margin: 0 auto;
         right: 38%;
         transform: translateY(-2px); }
+        @media (max-width: 400px) {
+          .page-wrapper .index-content .form-claim img {
+            right: 34%; } }
   .page-wrapper .index-information {
     background: #f7fcff;
     height: auto;
     margin-bottom: 55px;
     margin-top: 100px; }
+
+.choose-asbx {
+  margin-top: -55px !important; }
 
 .container-about {
   max-width: 848px;
@@ -2135,8 +2159,7 @@ nav {
   display: flex;
   padding-bottom: 30px;
   justify-content: space-between;
-  gap: 20px;
-  margin-top: -55px; }
+  gap: 20px; }
   @media (max-width: 720px) {
     .container-about {
       flex-direction: column; } }
@@ -2245,6 +2268,9 @@ nav {
   height: auto;
   width: 100%;
   padding: 25px; }
+  @media (max-width: 475px) {
+    .compensation-asbestos {
+      padding: 0; } }
   .compensation-asbestos h3 {
     color: #000;
     font-size: 22px;
@@ -2866,8 +2892,7 @@ nav {
         outline: none;
         font-size: 12px;
         line-height: 15px;
-        font-weight: 400;
-        font-family: "Nunito", sans-serif; }
+        font-weight: 400; }
     .general-claims .content-box.special-content-box .special-text {
       align-items: center;
       color: #324a74;
@@ -2946,7 +2971,6 @@ nav {
 .introduction-text {
   color: #036;
   font-size: 16px;
-  font-family: 'Nunito', sans-serif;
   margin-bottom: 8px;
   font-weight: 700; }
   .introduction-text__documentation {
@@ -3394,7 +3418,6 @@ nav {
       background-color: white !important;
       color: #bf5931;
       font-size: 14px;
-      font-family: Nunito;
       font-weight: 600;
       text-transform: uppercase; }
 
@@ -3545,7 +3568,6 @@ nav {
     .navy-claims-section .navy-container h3 {
       font-size: 20px;
       color: #1c1b1b;
-      font-family: "Nunito", sans-serif !important;
       font-weight: 700;
       margin-top: 0;
       max-width: 475px;
@@ -4378,7 +4400,6 @@ nav {
     background-color: white !important;
     color: #bf5931;
     font-size: 14px;
-    font-family: Nunito;
     font-weight: 600;
     text-transform: uppercase; }
 
