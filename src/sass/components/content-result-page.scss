@@ -90,10 +90,11 @@
       display: flex;
       gap: 28px;
       padding-bottom: 44px;
+      justify-content: center;
 
       .ER-claims {
         padding: 22px 18px;
-        max-width: 300px;
+        max-width: 280px;
         width: 100%;
         height: fit-content;
         border-radius: 24px;
@@ -176,7 +177,7 @@
       }
       .AVG-claims {
         padding: 22px 18px;
-        max-width: 300px;
+        max-width: 280px;
         width: 100%;
         border-radius: 24px;
         background: #324a74;
@@ -262,7 +263,7 @@
       }
       .IR-claims {
         padding: 22px 18px;
-        max-width: 300px;
+        max-width: 280px;
         width: 100%;
         border-radius: 24px;
         background: #fff;

@@ -3859,10 +3859,11 @@ nav {
     .result-page .legal-representation .legal-information {
       display: flex;
       gap: 28px;
-      padding-bottom: 44px; }
+      padding-bottom: 44px;
+      justify-content: center; }
       .result-page .legal-representation .legal-information .ER-claims {
         padding: 22px 18px;
-        max-width: 300px;
+        max-width: 280px;
         width: 100%;
         height: fit-content;
         border-radius: 24px;
@@ -3930,7 +3931,7 @@ nav {
           margin-top: 14px; }
       .result-page .legal-representation .legal-information .AVG-claims {
         padding: 22px 18px;
-        max-width: 300px;
+        max-width: 280px;
         width: 100%;
         border-radius: 24px;
         background: #324a74;
@@ -4000,7 +4001,7 @@ nav {
           margin-top: 14px; }
       .result-page .legal-representation .legal-information .IR-claims {
         padding: 22px 18px;
-        max-width: 300px;
+        max-width: 280px;
         width: 100%;
         border-radius: 24px;
         background: #fff;
@@ -4271,6 +4272,11 @@ nav {
       margin-top: 0 !important;
       margin-bottom: 0;
       padding-left: 1rem; }
+    .multiple-page .component-information .content-summarizer ul p {
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration-line: underline;
+      color: #000 !important; }
   .multiple-page .component-information img {
     width: auto;
     height: auto; }
@@ -4326,3 +4332,66 @@ nav {
   display: flex;
   width: 100%;
   max-width: none !important; }
+
+.multiple-page .company-img {
+  display: flex;
+  flex-direction: column;
+  margin-left: 55px;
+  gap: 5px; }
+
+.multiple-page .compensation-section__table tbody {
+  display: flex;
+  width: 100%;
+  max-width: none; }
+  .multiple-page .compensation-section__table tbody .data-column-text .claims-type {
+    color: #000;
+    font-weight: 500; }
+  .multiple-page .compensation-section__table tbody .data-column-text th {
+    color: #324a74;
+    font-weight: 500 !important; }
+
+.multiple-page .compensation-section__table .data-column {
+  background-color: #faf7f0 !important; }
+  .multiple-page .compensation-section__table .data-column__diagnosed {
+    background-color: white !important;
+    color: #bf5931;
+    font-size: 14px;
+    font-family: Nunito;
+    font-weight: 600;
+    text-transform: uppercase; }
+
+.lawyers-available {
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  max-width: 550px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 19px;
+  gap: 30px; }
+  .lawyers-available__about h3 {
+    color: #036;
+    font-size: 20px;
+    font-weight: 400; }
+  .lawyers-available__about span {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500; }
+  .lawyers-available__about .number {
+    display: flex;
+    gap: 5px;
+    align-items: center; }
+  .lawyers-available__about .message {
+    display: flex;
+    gap: 5px;
+    align-items: center; }
+  .lawyers-available__about .chat {
+    display: flex;
+    gap: 5px;
+    align-items: center; }
+  .lawyers-available__about img {
+    height: 14px;
+    width: 14px; }

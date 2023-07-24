@@ -37,6 +37,14 @@
         margin-bottom: 0;
         padding-left: 1rem;
       }
+      ul {
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration-line: underline;
+          color: #000 !important;
+        }
+      }
     }
     img {
       width: auto;
@@ -97,9 +105,48 @@
     font-size: 16px !important;
     font-weight: 500;
   }
+  tbody {
+    display: flex;
+    width: 100%;
+    max-width: none !important;
+  }
+
+  .company-img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    gap: 5px;
+  }
+
+  .compensation-section__table {
     tbody {
       display: flex;
       width: 100%;
-      max-width: none !important;
+      max-width: none;
+
+      .data-column-text {
+        .claims-type {
+          color: #000;
+          font-weight: 500;
+        }
+        th {
+          color: #324a74;
+          font-weight: 500 !important;
+        }
+        
+      }
     }
+    .data-column {
+      background-color: #faf7f0 !important;
+
+      &__diagnosed {
+        background-color: white !important;
+        color: #bf5931;
+        font-size: 14px;
+        font-family: Nunito;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
