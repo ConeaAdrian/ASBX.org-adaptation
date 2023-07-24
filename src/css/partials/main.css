@@ -1089,12 +1089,14 @@ button {
       padding: 7px 14px;
       margin-top: 17px;
       margin-bottom: 10px; }
-  @media only screen and (max-width: 900px) and (min-width: 767px) {
-    .case-compensation img {
-      display: none; } }
-  @media (max-width: 620px) {
-    .case-compensation img {
-      display: none; } }
+  .case-compensation img {
+    object-fit: cover; }
+    @media only screen and (max-width: 900px) and (min-width: 767px) {
+      .case-compensation img {
+        display: none; } }
+    @media (max-width: 620px) {
+      .case-compensation img {
+        display: none; } }
 
 .breadcrumb {
   font-size: 13px;

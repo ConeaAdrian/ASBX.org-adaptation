@@ -41,6 +41,7 @@
     }
   }
   img {
+    object-fit: cover;
     @media only screen and (max-width: 900px) and (min-width: 767px) {
       display: none;
     }
@@ -48,4 +49,10 @@
       display: none;
     }
   }
+}
+
+@import 'nice-select';
+
+select {
+  display: none;
 }
