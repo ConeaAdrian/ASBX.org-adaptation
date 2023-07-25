@@ -116,7 +116,6 @@
           display: flex;
           position: relative;
 
-
           .alternative {
             position: absolute;
             top: 15px;
@@ -133,7 +132,7 @@
         }
         .from-data {
           display: flex;
-          
+
           &__content {
             display: flex;
             align-items: center;
@@ -213,7 +212,6 @@
           top: 8px;
         }
         .alternative {
-          
         }
       }
       .available-trust-text {
@@ -498,4 +496,99 @@
   height: 3px;
   margin-top: 11px;
   margin-bottom: 19px;
+}
+
+
+
+
+
+.all-selectors {
+  width: 100%;
+}
+.aloha {
+  width: 100%;
+  max-width: 172px;
+}
+.data-select {
+  width: 100%;
+  max-width: 93px;
+}
+.custom-select {
+  position: relative;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+  color: #000;
+  height: 26px;
+
+  option {
+    &:hover {
+      background-color: #000;
+      box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16),
+        inset 0 -2px 0 0 rgba(0, 0, 0, 0.11);
+      filter: brightness(105%);
+      border: none !important;
+    }
+  }
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.first-alternative {
+
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-color: #324a74 transparent transparent transparent;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: #000000;
+  cursor: pointer;
+  user-select: none;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-left: 6px;
+}
+.selector-data {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  max-width: 130px;
+
+  p {
+    font-size: 12px;
+  }
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
