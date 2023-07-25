@@ -78,16 +78,17 @@
           margin: 0 auto;
           font-family: "Inter", sans-serif !important;
           @media (max-width: 640px) {
-            font-size: 20px;
+            display: none;
           }
         }
         .organization-text {
-          font-weight: 700;
+          font-weight: 500;
           font-size: 18px;
           line-height: 28px;
           color: #ffffff;
           @media (max-width: 640px) {
-            font-size: 16px;
+            font-size: 18px;
+            margin-bottom: 25px;
           }
         }
         p {
@@ -124,6 +125,7 @@
       @media (max-width: 640px) {
         font-size: 24px;
         margin-bottom: 1.5rem;
+        line-height: 24px;
       }
     }
     p {
@@ -259,6 +261,9 @@
       @media (max-width: 800px) {
         font-size: 26px !important;
       }
+      @media (max-width: 475px) {
+        font-size: 20px !important;
+      }
     }
     ul {
       margin-top: 8px;
@@ -332,13 +337,17 @@
         width: 100%;
         max-width: 250px;
         margin-bottom: 0;
+        @media (max-width: 620px) {
+          margin-left: 20px;
+        }
       }
       p {
         font-weight: 700;
         font-size: 16px;
         line-height: 26px;
         color: #ffffff;
-        margin-left: 37px;
+        margin-left: 20px;
+       
       }
     }
   }
@@ -397,6 +406,9 @@
     margin-top: 12px;
     margin-bottom: 18px;
     line-height: 26px;
+    @media (max-width: 475px) {
+      font-size: 18px !important;
+    }
     span {
       color: #c55d34;
       font-size: 20px;

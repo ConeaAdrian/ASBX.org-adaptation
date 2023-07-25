@@ -843,7 +843,8 @@
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  object-fit: cover; }
 
 th {
   font-family: 'Inter', sans-serif;
@@ -880,7 +881,7 @@ h1 {
   font-size: 26px; }
   @media (max-width: 475px) {
     h1 {
-      font-size: 24px !important; } }
+      font-size: 22px !important; } }
 
 h2 {
   font-style: normal;
@@ -898,6 +899,9 @@ h3 {
   font-family: Roboto, serif !important;
   margin-bottom: 10px;
   margin-top: 10px; }
+  @media (max-width: 475px) {
+    h3 {
+      font-size: 18px !important; } }
 
 h4,
 h5,
@@ -1136,7 +1140,7 @@ button {
       color: white;
       margin: 0;
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 500;
       padding: 20px 17px; }
       @media (max-width: 548px) {
         .questions-lawyers__topbar h3 {
@@ -1170,7 +1174,7 @@ button {
           .questions-lawyers__select .general-select .select-lawyers {
             margin-right: 0; } }
         .questions-lawyers__select .general-select .select-lawyers p {
-          font-weight: 700;
+          font-weight: 500;
           font-size: 14px;
           margin-right: 5px;
           width: 222px; }
@@ -1201,7 +1205,7 @@ button {
             align-items: start; } }
         .questions-lawyers__select .general-select .profesion p {
           width: 40px;
-          font-weight: 700;
+          font-weight: 500;
           font-size: 14px;
           margin-right: 5px; }
         .questions-lawyers__select .general-select .profesion select {
@@ -1239,7 +1243,7 @@ button {
         flex-direction: column;
         align-items: start; } }
     .questions-lawyers .lawyers-information__elements p {
-      font-weight: 700;
+      font-weight: 500;
       font-size: 14px; }
     .questions-lawyers .lawyers-information__content {
       display: flex;
@@ -1255,7 +1259,7 @@ button {
         font-weight: 500; }
       .questions-lawyers .lawyers-information__content .data .experience {
         font-size: 12px;
-        font-weight: 700; }
+        font-weight: 500; }
         .questions-lawyers .lawyers-information__content .data .experience span {
           font-weight: 400; }
     .questions-lawyers .lawyers-information .button {
@@ -1606,8 +1610,8 @@ footer {
     height: 26px; }
     @media (max-width: 992px) {
       .navigation .brand img {
-        height: 32px;
-        width: 160px; } }
+        height: 30px;
+        width: 120px; } }
 
 nav {
   z-index: 1; }
@@ -1720,17 +1724,14 @@ nav {
 @media only screen and (max-width: 992px) {
   .nav-mobile {
     display: block; }
-  nav {
-    width: 100%;
-    padding: 1rem 0 15px; }
-    nav ul {
-      display: none; }
-      nav ul li {
-        float: none; }
-        nav ul li a {
-          padding: 15px;
-          line-height: 20px;
-          font-size: 24px; }
+  nav ul {
+    display: none; }
+    nav ul li {
+      float: none; }
+      nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+        font-size: 24px; }
   .nav-dropdown {
     position: static; } }
 
@@ -1754,16 +1755,16 @@ nav {
     cursor: pointer;
     border-radius: 1px;
     height: 2.5px;
-    width: 32px;
+    width: 30px;
     background: white;
     position: absolute;
     display: block;
     content: "";
     transition: all 300ms ease-in-out; }
   #nav-toggle span:before {
-    top: -10px; }
+    top: -8px; }
   #nav-toggle span:after {
-    bottom: -10px; }
+    bottom: -8px; }
   #nav-toggle.active span {
     background-color: transparent; }
     #nav-toggle.active span:before, #nav-toggle.active span:after {
@@ -1890,16 +1891,16 @@ nav {
   margin-top: 45px; }
   .military-index h3 {
     width: 328px !important; }
-  .military-index .advocacy-information .military-forces p {
-    margin-left: 20px; }
-  .military-index .advocacy-information .military-forces__logo {
+  .military-index .advocacy-information .military-forces {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px; }
-    .military-index .advocacy-information .military-forces__logo img {
-      margin-right: 25px; }
+    flex-direction: column;
+    align-items: center; }
+    .military-index .advocacy-information .military-forces__logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px; }
       @media (max-width: 800px) {
         .military-index .advocacy-information .military-forces__logo img {
           width: 75px;
@@ -1951,10 +1952,10 @@ nav {
             margin-left: 0; } }
     .template-compensation .quick-compensation img {
       max-width: 397px;
-      width: 100%; }
+      width: 100%;
+      object-fit: cover; }
       @media (max-width: 720px) {
         .template-compensation .quick-compensation img {
-          object-fit: unset;
           height: 250px;
           max-width: none; } }
     .template-compensation .quick-compensation button {
@@ -2037,15 +2038,16 @@ nav {
           font-family: "Inter", sans-serif !important; }
           @media (max-width: 640px) {
             .page-wrapper .container .hero-row .hero-row-context h2 {
-              font-size: 20px; } }
+              display: none; } }
         .page-wrapper .container .hero-row .hero-row-context .organization-text {
-          font-weight: 700;
+          font-weight: 500;
           font-size: 18px;
           line-height: 28px;
           color: #ffffff; }
           @media (max-width: 640px) {
             .page-wrapper .container .hero-row .hero-row-context .organization-text {
-              font-size: 16px; } }
+              font-size: 18px;
+              margin-bottom: 25px; } }
         .page-wrapper .container .hero-row .hero-row-context p {
           font-weight: 400;
           font-size: 18px;
@@ -2075,7 +2077,8 @@ nav {
       @media (max-width: 640px) {
         .page-wrapper .working-stages h1 {
           font-size: 24px;
-          margin-bottom: 1.5rem; } }
+          margin-bottom: 1.5rem;
+          line-height: 24px; } }
     .page-wrapper .working-stages p {
       max-width: 760px;
       width: 100%; }
@@ -2187,6 +2190,9 @@ nav {
       @media (max-width: 800px) {
         .container-about .choose-documentation h2 {
           font-size: 26px !important; } }
+      @media (max-width: 475px) {
+        .container-about .choose-documentation h2 {
+          font-size: 20px !important; } }
     .container-about .choose-documentation ul {
       margin-top: 8px;
       margin-left: 30px; }
@@ -2249,12 +2255,15 @@ nav {
         width: 100%;
         max-width: 250px;
         margin-bottom: 0; }
+        @media (max-width: 620px) {
+          .container-about .advocacy-img__quote h3 {
+            margin-left: 20px; } }
       .container-about .advocacy-img__quote p {
         font-weight: 700;
         font-size: 16px;
         line-height: 26px;
         color: #ffffff;
-        margin-left: 37px; }
+        margin-left: 20px; }
   .container-about .advocacy-information {
     width: 100%;
     max-width: 360px; }
@@ -2304,6 +2313,9 @@ nav {
     margin-top: 12px;
     margin-bottom: 18px;
     line-height: 26px; }
+    @media (max-width: 475px) {
+      .compensation-asbestos .made-easy-text {
+        font-size: 18px !important; } }
     .compensation-asbestos .made-easy-text span {
       color: #c55d34;
       font-size: 20px;
@@ -3820,7 +3832,7 @@ nav {
           margin-right: 10px; }
           @media (max-width: 475px) {
             .bottom-banner .banner-calculate .content-information .claims-result h3 {
-              font-size: 16px; } }
+              font-size: 16px !important; } }
         .bottom-banner .banner-calculate .content-information .claims-result p {
           color: white;
           margin: 0;

@@ -7,6 +7,7 @@
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 th {
@@ -45,7 +46,7 @@ h1 {
   font-size: 26px;
 
   @media (max-width: 475px) {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
 }
 h2 {
@@ -65,6 +66,9 @@ h3 {
   font-family: Roboto, serif !important;
   margin-bottom: 10px;
   margin-top: 10px;
+  @media (max-width: 475px) {
+    font-size: 18px !important;
+  }
 }
 
 h4,

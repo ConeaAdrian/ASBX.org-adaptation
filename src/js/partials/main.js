@@ -26,5 +26,3 @@
     });
   });
 }
-$('select').niceSelect('update');
-$('select').niceSelect('destroy');
