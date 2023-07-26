@@ -86,3 +86,4 @@ $(document).ready(function() {
 //   var legalQuestion = document.getElementById('legalQuestion');
 //   legalQuestion.scrollIntoView({ behavior: 'smooth' });
 // }
+

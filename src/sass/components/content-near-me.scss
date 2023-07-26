@@ -12,6 +12,9 @@
       font-family: "Roboto Serif", serif;
       text-decoration-line: underline;
       font-size: 26px;
+      @media (max-width: 475px) {
+        font-size: 18px;
+      }
     }
   }
   h3 {
@@ -80,7 +83,7 @@
   color: #036;
   font-size: 16px;
   margin-bottom: 8px;
-  font-weight: 700;
+  font-weight: 500;
 
   &__documentation {
     margin-bottom: 34px;

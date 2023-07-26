@@ -3,9 +3,15 @@
 }
 .result-page {
   margin-top: 55px;
+  @media (max-width: 992px) {
+    margin-top: 25px;
+  }
   .header-text {
     text-align: center;
     margin-bottom: 90px;
+    @media (max-width: 992px) {
+      margin-bottom: 40px;
+    }
 
     h1 {
       margin-bottom: 20px;
@@ -28,6 +34,10 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
+
+    @media (max-width: 475px) {
+      gap: 10px;
+    }
   }
 
   input[type="checkbox"] {
@@ -45,6 +55,11 @@
     display: block;
     border-radius: 100px;
     position: relative;
+
+    @media (max-width: 475px) {
+      width: 38px;
+      height: 20px;
+    }
   }
 
   label:after {
@@ -57,6 +72,11 @@
     background: #fff;
     border-radius: 90px;
     transition: 0.3s;
+    @media (max-width: 475px) {
+      top: 3px;
+      width: 14px;
+      height: 14px;
+    }
   }
 
   input:checked + label {
@@ -91,6 +111,12 @@
       gap: 28px;
       padding-bottom: 44px;
       justify-content: center;
+      padding: 10px;
+      @media (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
 
       .ER-claims {
         padding: 22px 18px;
@@ -102,6 +128,10 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
+        @media (max-width: 992px) {
+          border-radius: 24px 24px 0 0;
+          max-width: 500px;
+        }
 
         &__name {
           display: flex;
@@ -110,14 +140,14 @@
           h2 {
             color: #181059;
             font-size: 24px;
-            font-weight: 700;
+            font-weight: 500;
             margin-right: 5px;
             font-family: "Inter", sans-serif !important;
           }
           p {
             color: #ff4043;
             font-size: 12px;
-            font-weight: 700;
+            font-weight: 500;
             border-radius: 4px;
             background: #ede8e8;
             padding: 8px;
@@ -128,8 +158,11 @@
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          padding-bottom: 30px;
+          padding-bottom: 22px;
           text-align: center;
+          @media (max-width: 992px) {
+            text-align: left;
+          }
         }
         ul {
           list-style: none;
@@ -146,7 +179,7 @@
               font-weight: 400;
             }
             b {
-              font-size: 16px;
+              font-size: 16px !important;
               font-weight: 600;
             }
           }
@@ -159,7 +192,7 @@
         .proposed-money {
           color: #324a74;
           font-size: 25px;
-          font-weight: 700;
+          font-weight: 500;
           justify-content: center;
           display: flex;
         }
@@ -168,13 +201,22 @@
           background: rgba(255, 64, 67, 0.24);
           color: #324a74;
           font-size: 16px;
-          font-weight: 700;
+          font-weight: 500;
           padding: 14px 27px;
           margin: 0 auto;
           display: flex;
           margin-top: 14px;
+          @media (max-width: 992px) {
+            margin-bottom: 35px;
+          }
         }
       }
+      .information-benefits {
+        @media (max-width: 992px) {
+          display: none;
+        }
+      }
+
       .AVG-claims {
         padding: 22px 18px;
         max-width: 280px;
@@ -184,6 +226,12 @@
         box-shadow: 6px 12px 32px 0px rgba(0, 0, 0, 0.12);
         display: flex;
         flex-direction: column;
+        @media (max-width: 992px) {
+          border-radius: 24px 24px 0 0;
+          transform: translateY(-42px);
+          max-width: 500px;
+          margin-top: 10px;
+        }
 
         &__name {
           display: flex;
@@ -192,14 +240,14 @@
           h2 {
             color: #fff;
             font-size: 24px;
-            font-weight: 700;
+            font-weight: 500;
             margin-right: 5px;
             font-family: "Inter", sans-serif !important;
           }
           p {
             color: #ff4043;
             font-size: 12px;
-            font-weight: 700;
+            font-weight: 500;
             border-radius: 4px;
             background: #fff;
             padding: 8px;
@@ -210,8 +258,11 @@
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          padding-bottom: 30px;
           text-align: center;
+          padding-bottom: 22px;
+          @media (max-width: 992px) {
+            text-align: left;
+          }
         }
         ul {
           list-style: none;
@@ -228,7 +279,7 @@
               color: #fff;
             }
             b {
-              font-size: 16px;
+              font-size: 16px !important;
               font-weight: 600;
               color: #fff;
             }
@@ -245,7 +296,7 @@
         .proposed-money {
           color: #fff;
           font-size: 25px;
-          font-weight: 700;
+          font-weight: 500;
           justify-content: center;
           display: flex;
         }
@@ -254,11 +305,14 @@
           background: #ff4043;
           color: #fff;
           font-size: 16px;
-          font-weight: 700;
+          font-weight: 500;
           padding: 14px 27px;
           margin: 0 auto;
           display: flex;
           margin-top: 14px;
+          @media (max-width: 992px) {
+            margin-bottom: 15px;
+          }
         }
       }
       .IR-claims {
@@ -270,6 +324,10 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
+        @media (max-width: 992px) {
+          transform: translateY(-65px);
+          max-width: 500px;
+        }
 
         &__name {
           display: flex;
@@ -278,14 +336,14 @@
           h2 {
             color: #181059;
             font-size: 24px;
-            font-weight: 700;
+            font-weight: 500;
             margin-right: 5px;
             font-family: "Inter", sans-serif !important;
           }
           p {
             color: #ff4043;
             font-size: 12px;
-            font-weight: 700;
+            font-weight: 500;
             border-radius: 4px;
             background: #ede8e8;
             padding: 8px;
@@ -296,8 +354,11 @@
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          padding-bottom: 30px;
           text-align: center;
+          padding-bottom: 22px;
+          @media (max-width: 992px) {
+            text-align: left;
+          }
         }
         ul {
           list-style: none;
@@ -314,7 +375,7 @@
               font-weight: 400;
             }
             b {
-              font-size: 16px;
+              font-size: 16px !important;
               font-weight: 600;
             }
           }
@@ -327,7 +388,7 @@
         .proposed-money {
           color: #324a74;
           font-size: 25px;
-          font-weight: 700;
+          font-weight: 500;
           justify-content: center;
           display: flex;
         }
@@ -336,11 +397,14 @@
           background: rgba(255, 64, 67, 0.24);
           color: #324a74;
           font-size: 16px;
-          font-weight: 700;
+          font-weight: 500;
           padding: 14px 27px;
           margin: 0 auto;
           display: flex;
           margin-top: 14px;
+          @media (max-width: 992px) {
+            margin-bottom: 15px;
+          }
         }
       }
     }
@@ -361,7 +425,7 @@
     h2 {
       color: #181059;
       font-size: 24px;
-      font-weight: 700;
+      font-weight: 500;
       margin-right: 5px;
       font-family: "Inter", sans-serif !important;
       border-bottom: 1px solid #b4b4b4;
@@ -373,8 +437,11 @@
       font-size: 16px;
       font-weight: 600;
       padding-top: 4px;
-      padding-bottom: 30px;
+      padding-bottom: 22px;
       text-align: center;
+      @media (max-width: 992px) {
+        text-align: left;
+      }
     }
     ul {
       list-style: none;
@@ -391,7 +458,7 @@
           font-weight: 400;
         }
         b {
-          font-size: 16px;
+          font-size: 16px !important;
           font-weight: 600;
         }
       }
@@ -404,7 +471,7 @@
     .proposed-money {
       color: #324a74;
       font-size: 25px;
-      font-weight: 700;
+      font-weight: 500;
       justify-content: center;
       display: flex;
     }
@@ -415,7 +482,11 @@
     border: 1px solid #f1f1f1;
     background: #fff;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 45px;
+    padding: 43px;
+
+    @media (max-width: 992px) {
+      padding: 25px 10px;
+    }
 
     &__company {
       flex-direction: column;
@@ -428,7 +499,7 @@
       span {
         color: #9d1b32;
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         margin: 15px 0;
       }
     }
@@ -437,17 +508,31 @@
       font-style: normal;
       font-weight: 400;
       line-height: 26px;
+      @media (max-width: 475px) {
+        font-size: 14px;
+      }
     }
   }
   .content-request {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
     .question-lawyer {
       margin-top: 55px;
+      @media (max-width: 992px) {
+        margin-top: 25px;
+      }
+
       span {
         color: #9d1b32;
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
+        @media (max-width: 992px) {
+          font-size: 18px;
+        }
       }
 
       p {
@@ -456,7 +541,11 @@
         a {
           color: #000;
           font-size: 16px;
-          font-weight: 700;
+          font-weight: 500;
+          @media (max-width: 475px) {
+            flex-direction: column;
+            font-size: 14px;
+          }
         }
       }
     }
@@ -479,7 +568,7 @@
       span {
         color: #fff;
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         padding: 6px 31px;
         display: flex;
         text-align: center;
@@ -514,7 +603,7 @@
         height: 33px;
         color: #fff;
         font-size: 14px;
-        font-weight: 800;
+        font-weight: 500;
         margin-top: 15px;
         text-transform: uppercase;
         margin-bottom: 23px;
@@ -523,14 +612,28 @@
   }
   .legend {
     margin-top: 60px;
-    margin-left: 9%;
+
+    @media (max-width: 992px) {
+      margin-left: 0;
+      flex-direction: column;
+      margin-top: 35px;
+    }
     &__text {
       color: #bf5931;
       font-size: 12px;
       font-weight: 400;
       padding-right: 10px;
+      @media (max-width: 992px) {
+        font-size: 14px;
+        font-weight: 500;
+      }
     }
     .legend-information {
+      @media (max-width: 992px) {
+        border: none;
+        padding-left: 0;
+        padding-top: 10px;
+      }
       &__text {
         margin-bottom: 10px;
         p {
@@ -559,7 +662,7 @@
       }
     }
     span {
-        font-weight: 600;
+      font-weight: 600;
     }
     .legal-fees {
       color: #000;
@@ -571,5 +674,21 @@
         font-size: 12px !important;
       }
     }
+  }
+}
+
+.legal-text {
+  width: 168px;
+  @media (max-width: 475px) {
+    font-size: 14px !important;
+  }
+}
+.your-own-text {
+  width: 168px;
+  @media (max-width: 475px) {
+    font-size: 14px !important;
+  }
+  @media (max-width: 420px) {
+    width: 110px;
   }
 }

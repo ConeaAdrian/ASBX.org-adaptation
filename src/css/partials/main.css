@@ -881,7 +881,8 @@ h1 {
   font-size: 26px; }
   @media (max-width: 475px) {
     h1 {
-      font-size: 22px !important; } }
+      font-size: 18px !important;
+      font-weight: 600; } }
 
 h2 {
   font-style: normal;
@@ -891,7 +892,7 @@ h2 {
   font-family: Roboto, serif !important; }
   @media (max-width: 475px) {
     h2 {
-      font-size: 20px !important; } }
+      font-size: 16px !important; } }
 
 h3 {
   font-size: 18px;
@@ -901,7 +902,7 @@ h3 {
   margin-top: 10px; }
   @media (max-width: 475px) {
     h3 {
-      font-size: 18px !important; } }
+      font-size: 16px !important; } }
 
 h4,
 h5,
@@ -1385,7 +1386,7 @@ button {
               height: 18px; }
             .search-principal .search-asbestos .search-form .select-wrapper .input-wrapper__location p {
               font-size: 14px;
-              font-weight: 700;
+              font-weight: 500;
               color: #324a74;
               display: flex;
               align-items: center;
@@ -1900,7 +1901,8 @@ nav {
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      margin-top: 20px; }
+      margin-top: 20px;
+      gap: 15px; }
       @media (max-width: 800px) {
         .military-index .advocacy-information .military-forces__logo img {
           width: 75px;
@@ -2939,6 +2941,9 @@ nav {
       font-family: "Roboto Serif", serif;
       text-decoration-line: underline;
       font-size: 26px; }
+      @media (max-width: 475px) {
+        .near-me h1 span {
+          font-size: 18px; } }
   .near-me h3 {
     color: #bf5931; }
   .near-me .next-job {
@@ -2991,7 +2996,7 @@ nav {
   color: #036;
   font-size: 16px;
   margin-bottom: 8px;
-  font-weight: 700; }
+  font-weight: 500; }
   .introduction-text__documentation {
     margin-bottom: 34px; }
 
@@ -3519,7 +3524,7 @@ nav {
   margin-top: 26px; }
   .content-ship .trust-funds-claim span {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     color: #bf5931; }
   .content-ship .trust-funds-claim h3 {
@@ -3531,7 +3536,7 @@ nav {
     max-width: none; }
     .content-ship .trust-funds-claim .compensation-section__table tbody .data-column-text .claims-type {
       color: #000;
-      font-weight: 700; }
+      font-weight: 500; }
     .content-ship .trust-funds-claim .compensation-section__table tbody .data-column-text th {
       color: #324a74; }
   .content-ship .trust-funds-claim .compensation-section__table .data-column {
@@ -3553,7 +3558,7 @@ nav {
   margin-bottom: 28px; }
   .content-ship .civil-defendants span {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     color: #bf5931; }
   .content-ship .civil-defendants h3 {
@@ -3567,7 +3572,7 @@ nav {
     border: 1px solid #e3e3e3; }
   .content-ship .equipment-table th {
     background-color: #eeeeee;
-    font-weight: 700; }
+    font-weight: 500; }
   .content-ship .equipment-table td {
     background-color: white;
     width: auto;
@@ -3690,7 +3695,7 @@ nav {
     .navy-claims-section .navy-container h3 {
       font-size: 20px;
       color: #1c1b1b;
-      font-weight: 700;
+      font-weight: 500;
       margin-top: 0;
       max-width: 475px;
       width: 100%; }
@@ -3714,7 +3719,7 @@ nav {
           flex-direction: column;
           align-items: flex-start; } }
     .navy-claims-section .navy-container .add-navy p {
-      font-weight: 700; }
+      font-weight: 500; }
     .navy-claims-section .navy-container .add-navy__select {
       width: 100%;
       max-width: 172px; }
@@ -3833,7 +3838,7 @@ nav {
         flex-wrap: wrap; } }
     .job-site .mesothelioma-claim__sorting p {
       font-size: 14px;
-      font-weight: 700; }
+      font-weight: 500; }
     .job-site .mesothelioma-claim__sorting .job-type {
       max-width: 254px;
       width: 100%; }
@@ -3960,9 +3965,15 @@ nav {
 
 .result-page {
   margin-top: 55px; }
+  @media (max-width: 992px) {
+    .result-page {
+      margin-top: 25px; } }
   .result-page .header-text {
     text-align: center;
     margin-bottom: 90px; }
+    @media (max-width: 992px) {
+      .result-page .header-text {
+        margin-bottom: 40px; } }
     .result-page .header-text h1 {
       margin-bottom: 20px;
       font-family: "Inter", sans-serif !important;
@@ -3980,6 +3991,9 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 24px; }
+    @media (max-width: 475px) {
+      .result-page .button-active {
+        gap: 10px; } }
   .result-page input[type="checkbox"] {
     height: 0;
     width: 0;
@@ -3993,6 +4007,10 @@ nav {
     display: block;
     border-radius: 100px;
     position: relative; }
+    @media (max-width: 475px) {
+      .result-page label {
+        width: 38px;
+        height: 20px; } }
   .result-page label:after {
     content: "";
     position: absolute;
@@ -4003,6 +4021,11 @@ nav {
     background: #fff;
     border-radius: 90px;
     transition: 0.3s; }
+    @media (max-width: 475px) {
+      .result-page label:after {
+        top: 3px;
+        width: 14px;
+        height: 14px; } }
   .result-page input:checked + label {
     background: #565656; }
   .result-page input:checked + label:after {
@@ -4025,7 +4048,13 @@ nav {
       display: flex;
       gap: 28px;
       padding-bottom: 44px;
-      justify-content: center; }
+      justify-content: center;
+      padding: 10px; }
+      @media (max-width: 992px) {
+        .result-page .legal-representation .legal-information {
+          flex-direction: column;
+          align-items: center;
+          gap: 0; } }
       .result-page .legal-representation .legal-information .ER-claims {
         padding: 22px 18px;
         max-width: 280px;
@@ -4036,6 +4065,10 @@ nav {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column; }
+        @media (max-width: 992px) {
+          .result-page .legal-representation .legal-information .ER-claims {
+            border-radius: 24px 24px 0 0;
+            max-width: 500px; } }
         .result-page .legal-representation .legal-information .ER-claims__name {
           display: flex;
           border-bottom: 1px solid #b4b4b4;
@@ -4043,13 +4076,13 @@ nav {
           .result-page .legal-representation .legal-information .ER-claims__name h2 {
             color: #181059;
             font-size: 24px;
-            font-weight: 700;
+            font-weight: 500;
             margin-right: 5px;
             font-family: "Inter", sans-serif !important; }
           .result-page .legal-representation .legal-information .ER-claims__name p {
             color: #ff4043;
             font-size: 12px;
-            font-weight: 700;
+            font-weight: 500;
             border-radius: 4px;
             background: #ede8e8;
             padding: 8px; }
@@ -4058,8 +4091,11 @@ nav {
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          padding-bottom: 30px;
+          padding-bottom: 22px;
           text-align: center; }
+          @media (max-width: 992px) {
+            .result-page .legal-representation .legal-information .ER-claims .revenue {
+              text-align: left; } }
         .result-page .legal-representation .legal-information .ER-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .ER-claims ul li {
@@ -4072,7 +4108,7 @@ nav {
               font-size: 16px;
               font-weight: 400; }
             .result-page .legal-representation .legal-information .ER-claims ul li b {
-              font-size: 16px;
+              font-size: 16px !important;
               font-weight: 600; }
         .result-page .legal-representation .legal-information .ER-claims ul li:before {
           content: "✓";
@@ -4081,7 +4117,7 @@ nav {
         .result-page .legal-representation .legal-information .ER-claims .proposed-money {
           color: #324a74;
           font-size: 25px;
-          font-weight: 700;
+          font-weight: 500;
           justify-content: center;
           display: flex; }
         .result-page .legal-representation .legal-information .ER-claims .button-claim {
@@ -4089,11 +4125,17 @@ nav {
           background: rgba(255, 64, 67, 0.24);
           color: #324a74;
           font-size: 16px;
-          font-weight: 700;
+          font-weight: 500;
           padding: 14px 27px;
           margin: 0 auto;
           display: flex;
           margin-top: 14px; }
+          @media (max-width: 992px) {
+            .result-page .legal-representation .legal-information .ER-claims .button-claim {
+              margin-bottom: 35px; } }
+      @media (max-width: 992px) {
+        .result-page .legal-representation .legal-information .information-benefits {
+          display: none; } }
       .result-page .legal-representation .legal-information .AVG-claims {
         padding: 22px 18px;
         max-width: 280px;
@@ -4103,6 +4145,12 @@ nav {
         box-shadow: 6px 12px 32px 0px rgba(0, 0, 0, 0.12);
         display: flex;
         flex-direction: column; }
+        @media (max-width: 992px) {
+          .result-page .legal-representation .legal-information .AVG-claims {
+            border-radius: 24px 24px 0 0;
+            transform: translateY(-42px);
+            max-width: 500px;
+            margin-top: 10px; } }
         .result-page .legal-representation .legal-information .AVG-claims__name {
           display: flex;
           border-bottom: 1px solid #b4b4b4;
@@ -4110,13 +4158,13 @@ nav {
           .result-page .legal-representation .legal-information .AVG-claims__name h2 {
             color: #fff;
             font-size: 24px;
-            font-weight: 700;
+            font-weight: 500;
             margin-right: 5px;
             font-family: "Inter", sans-serif !important; }
           .result-page .legal-representation .legal-information .AVG-claims__name p {
             color: #ff4043;
             font-size: 12px;
-            font-weight: 700;
+            font-weight: 500;
             border-radius: 4px;
             background: #fff;
             padding: 8px; }
@@ -4125,8 +4173,11 @@ nav {
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          padding-bottom: 30px;
-          text-align: center; }
+          text-align: center;
+          padding-bottom: 22px; }
+          @media (max-width: 992px) {
+            .result-page .legal-representation .legal-information .AVG-claims .revenue {
+              text-align: left; } }
         .result-page .legal-representation .legal-information .AVG-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .AVG-claims ul li {
@@ -4139,7 +4190,7 @@ nav {
               font-weight: 400;
               color: #fff; }
             .result-page .legal-representation .legal-information .AVG-claims ul li b {
-              font-size: 16px;
+              font-size: 16px !important;
               font-weight: 600;
               color: #fff; }
             .result-page .legal-representation .legal-information .AVG-claims ul li p {
@@ -4151,7 +4202,7 @@ nav {
         .result-page .legal-representation .legal-information .AVG-claims .proposed-money {
           color: #fff;
           font-size: 25px;
-          font-weight: 700;
+          font-weight: 500;
           justify-content: center;
           display: flex; }
         .result-page .legal-representation .legal-information .AVG-claims .button-claim {
@@ -4159,11 +4210,14 @@ nav {
           background: #ff4043;
           color: #fff;
           font-size: 16px;
-          font-weight: 700;
+          font-weight: 500;
           padding: 14px 27px;
           margin: 0 auto;
           display: flex;
           margin-top: 14px; }
+          @media (max-width: 992px) {
+            .result-page .legal-representation .legal-information .AVG-claims .button-claim {
+              margin-bottom: 15px; } }
       .result-page .legal-representation .legal-information .IR-claims {
         padding: 22px 18px;
         max-width: 280px;
@@ -4173,6 +4227,10 @@ nav {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column; }
+        @media (max-width: 992px) {
+          .result-page .legal-representation .legal-information .IR-claims {
+            transform: translateY(-65px);
+            max-width: 500px; } }
         .result-page .legal-representation .legal-information .IR-claims__name {
           display: flex;
           border-bottom: 1px solid #b4b4b4;
@@ -4180,13 +4238,13 @@ nav {
           .result-page .legal-representation .legal-information .IR-claims__name h2 {
             color: #181059;
             font-size: 24px;
-            font-weight: 700;
+            font-weight: 500;
             margin-right: 5px;
             font-family: "Inter", sans-serif !important; }
           .result-page .legal-representation .legal-information .IR-claims__name p {
             color: #ff4043;
             font-size: 12px;
-            font-weight: 700;
+            font-weight: 500;
             border-radius: 4px;
             background: #ede8e8;
             padding: 8px; }
@@ -4195,8 +4253,11 @@ nav {
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          padding-bottom: 30px;
-          text-align: center; }
+          text-align: center;
+          padding-bottom: 22px; }
+          @media (max-width: 992px) {
+            .result-page .legal-representation .legal-information .IR-claims .revenue {
+              text-align: left; } }
         .result-page .legal-representation .legal-information .IR-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .IR-claims ul li {
@@ -4209,7 +4270,7 @@ nav {
               font-size: 16px;
               font-weight: 400; }
             .result-page .legal-representation .legal-information .IR-claims ul li b {
-              font-size: 16px;
+              font-size: 16px !important;
               font-weight: 600; }
         .result-page .legal-representation .legal-information .IR-claims ul li:before {
           content: "✓";
@@ -4218,7 +4279,7 @@ nav {
         .result-page .legal-representation .legal-information .IR-claims .proposed-money {
           color: #324a74;
           font-size: 25px;
-          font-weight: 700;
+          font-weight: 500;
           justify-content: center;
           display: flex; }
         .result-page .legal-representation .legal-information .IR-claims .button-claim {
@@ -4226,11 +4287,14 @@ nav {
           background: rgba(255, 64, 67, 0.24);
           color: #324a74;
           font-size: 16px;
-          font-weight: 700;
+          font-weight: 500;
           padding: 14px 27px;
           margin: 0 auto;
           display: flex;
           margin-top: 14px; }
+          @media (max-width: 992px) {
+            .result-page .legal-representation .legal-information .IR-claims .button-claim {
+              margin-bottom: 15px; } }
   .result-page .switch {
     display: flex; }
   .result-page .your-own {
@@ -4244,7 +4308,7 @@ nav {
     .result-page .your-own h2 {
       color: #181059;
       font-size: 24px;
-      font-weight: 700;
+      font-weight: 500;
       margin-right: 5px;
       font-family: "Inter", sans-serif !important;
       border-bottom: 1px solid #b4b4b4;
@@ -4254,8 +4318,11 @@ nav {
       font-size: 16px;
       font-weight: 600;
       padding-top: 4px;
-      padding-bottom: 30px;
+      padding-bottom: 22px;
       text-align: center; }
+      @media (max-width: 992px) {
+        .result-page .your-own .revenue {
+          text-align: left; } }
     .result-page .your-own ul {
       list-style: none; }
       .result-page .your-own ul li {
@@ -4268,7 +4335,7 @@ nav {
           font-size: 16px;
           font-weight: 400; }
         .result-page .your-own ul li b {
-          font-size: 16px;
+          font-size: 16px !important;
           font-weight: 600; }
     .result-page .your-own ul li:before {
       content: "✓";
@@ -4277,7 +4344,7 @@ nav {
     .result-page .your-own .proposed-money {
       color: #324a74;
       font-size: 25px;
-      font-weight: 700;
+      font-weight: 500;
       justify-content: center;
       display: flex; }
   .result-page .lawyer-representation {
@@ -4285,7 +4352,10 @@ nav {
     border: 1px solid #f1f1f1;
     background: #fff;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 45px; }
+    padding: 43px; }
+    @media (max-width: 992px) {
+      .result-page .lawyer-representation {
+        padding: 25px 10px; } }
     .result-page .lawyer-representation__company {
       flex-direction: column;
       display: flex; }
@@ -4295,29 +4365,45 @@ nav {
       .result-page .lawyer-representation__company span {
         color: #9d1b32;
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         margin: 15px 0; }
     .result-page .lawyer-representation p {
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
       line-height: 26px; }
+      @media (max-width: 475px) {
+        .result-page .lawyer-representation p {
+          font-size: 14px; } }
   .result-page .content-request {
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 992px) {
+      .result-page .content-request {
+        flex-direction: column; } }
     .result-page .content-request .question-lawyer {
       margin-top: 55px; }
+      @media (max-width: 992px) {
+        .result-page .content-request .question-lawyer {
+          margin-top: 25px; } }
       .result-page .content-request .question-lawyer span {
         color: #9d1b32;
         font-size: 20px;
-        font-weight: 700; }
+        font-weight: 500; }
+        @media (max-width: 992px) {
+          .result-page .content-request .question-lawyer span {
+            font-size: 18px; } }
       .result-page .content-request .question-lawyer p {
         max-width: 447px;
         width: 100%; }
         .result-page .content-request .question-lawyer p a {
           color: #000;
           font-size: 16px;
-          font-weight: 700; }
+          font-weight: 500; }
+          @media (max-width: 475px) {
+            .result-page .content-request .question-lawyer p a {
+              flex-direction: column;
+              font-size: 14px; } }
     .result-page .content-request .callback-form {
       margin-top: 42px;
       border-radius: 8px;
@@ -4335,7 +4421,7 @@ nav {
       .result-page .content-request .callback-form span {
         color: #fff;
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         padding: 6px 31px;
         display: flex;
         text-align: center; }
@@ -4363,18 +4449,31 @@ nav {
         height: 33px;
         color: #fff;
         font-size: 14px;
-        font-weight: 800;
+        font-weight: 500;
         margin-top: 15px;
         text-transform: uppercase;
         margin-bottom: 23px; }
   .result-page .legend {
-    margin-top: 60px;
-    margin-left: 9%; }
+    margin-top: 60px; }
+    @media (max-width: 992px) {
+      .result-page .legend {
+        margin-left: 0;
+        flex-direction: column;
+        margin-top: 35px; } }
     .result-page .legend__text {
       color: #bf5931;
       font-size: 12px;
       font-weight: 400;
       padding-right: 10px; }
+      @media (max-width: 992px) {
+        .result-page .legend__text {
+          font-size: 14px;
+          font-weight: 500; } }
+    @media (max-width: 992px) {
+      .result-page .legend .legend-information {
+        border: none;
+        padding-left: 0;
+        padding-top: 10px; } }
     .result-page .legend .legend-information__text {
       margin-bottom: 10px; }
       .result-page .legend .legend-information__text p {
@@ -4402,6 +4501,21 @@ nav {
       .result-page .legend .legal-fees b {
         font-weight: 600;
         font-size: 12px !important; }
+
+.legal-text {
+  width: 168px; }
+  @media (max-width: 475px) {
+    .legal-text {
+      font-size: 14px !important; } }
+
+.your-own-text {
+  width: 168px; }
+  @media (max-width: 475px) {
+    .your-own-text {
+      font-size: 14px !important; } }
+  @media (max-width: 420px) {
+    .your-own-text {
+      width: 110px; } }
 
 .multiple-page .video {
   width: 100%;

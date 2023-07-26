@@ -3,3 +3,4 @@
 @@include("partials/nav.js");
 @@include("partials/header.js");
 @@include("partials/map.js");
+@@include("partials/result-page.js");
