@@ -11,20 +11,45 @@ $link-hover-color: $main-red;
 .header-section {
   width: 100%;
   background: #324a74;
+
+  @media (max-width: 992px) {
+    background: #ffffff;
+  }
 }
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  .brand {
-    img {
+  .call-company {
+    display: none;
+    @media (max-width: 992px) {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      width: 26px;
       height: 26px;
-      @media (max-width: 992px) {
-        height: 30px;
-        width: 120px;
+      background-color: #bc2649;
+      border-radius: 4px;
+
+      i {
+        color: #fff;
       }
     }
+  }
+  .brand {
+    @media (max-width: 992px) {
+     display: none;
+    }
+    img {
+      height: 26px;
+      
+    }
+  }
+  .mobile-brand {
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+     }
   }
 }
 nav {
@@ -48,7 +73,7 @@ nav {
         @media (max-width: 992px) {
           color: black;
         }
-        
+
         &:not(:only-child):after {
           padding-left: 4px;
           content: " ▾";
@@ -73,7 +98,7 @@ nav {
   display: none;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  background-color: rgba(4,4,4,.5);
+  background-color: rgba(4, 4, 4, 0.5);
   @media (max-width: 992px) {
     background-color: transparent;
   }
@@ -93,7 +118,7 @@ nav {
     padding-top: 5rem !important;
   }
   .bar-top {
-    border-left: 1px solid #CDCDCD;
+    border-left: 1px solid #cdcdcd;
     margin-left: 20px;
 
     @media (max-width: 992px) {
@@ -137,16 +162,12 @@ nav {
       font-size: 10px;
       font-weight: 700;
       @media (max-width: 992px) {
-          flex-wrap: wrap;
-          color: black;
+        flex-wrap: wrap;
+        color: black;
       }
     }
   }
 }
-
-
-
-
 
 .nav-mobile {
   display: none;
@@ -191,8 +212,11 @@ nav {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
 
-  @media (max-width: 475px) {
+  @media (max-width: 992px) {
     padding: 3px 35px 16px 0px;
+  }
+  @media (max-width: 475px) {
+   right: -15px !important;
   }
   span,
   span:before,
@@ -201,7 +225,7 @@ nav {
     border-radius: 1px;
     height: 2.5px;
     width: 30px;
-    background: white;
+    background: #324A74;
     position: absolute;
     display: block;
     content: "";

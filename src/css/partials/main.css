@@ -1106,27 +1106,27 @@ button {
 .breadcrumb {
   font-size: 13px;
   align-items: center; }
-
-.breadcrumb a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.61) !important;
-  transition: color 0.3s;
-  text-decoration: underline !important;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 11px; }
-
-.breadcrumb span {
-  color: rgba(0, 0, 0, 0.61) !important;
-  margin: 0 4px;
-  font-size: 10px; }
-
-.breadcrumb .last-element {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #bf5931 !important;
-  font-weight: 500;
-  font-size: 11px; }
+  @media (max-width: 992px) {
+    .breadcrumb {
+      display: none; } }
+  .breadcrumb a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.61) !important;
+    transition: color 0.3s;
+    text-decoration: underline !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px; }
+  .breadcrumb span {
+    color: rgba(0, 0, 0, 0.61) !important;
+    margin: 0 4px;
+    font-size: 10px; }
+  .breadcrumb .last-element {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bf5931 !important;
+    font-weight: 500;
+    font-size: 11px; }
 
 .questions-lawyers {
   border-radius: 4px;
@@ -1316,6 +1316,9 @@ button {
 
 .search-principal {
   padding-top: 25px; }
+  @media (max-width: 992px) {
+    .search-principal {
+      display: none; } }
   .search-principal .search-asbestos {
     display: flex;
     align-items: center;
@@ -1327,11 +1330,6 @@ button {
     margin: 0 auto;
     gap: 8px;
     padding: 18px 24px; }
-    @media (max-width: 620px) {
-      .search-principal .search-asbestos {
-        flex-direction: column;
-        padding: 10px;
-        height: auto; } }
     .search-principal .search-asbestos__select {
       display: flex;
       align-items: center;
@@ -1423,6 +1421,9 @@ button {
 
 .header-search {
   background: #f7fcff; }
+  @media (max-width: 992px) {
+    .header-search {
+      background-color: #324A74; } }
   .header-search .search-asbestos {
     margin: 0 !important;
     width: 100%;
@@ -1602,17 +1603,37 @@ footer {
 .header-section {
   width: 100%;
   background: #324a74; }
+  @media (max-width: 992px) {
+    .header-section {
+      background: #ffffff; } }
 
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  .navigation .call-company {
+    display: none; }
+    @media (max-width: 992px) {
+      .navigation .call-company {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 26px;
+        height: 26px;
+        background-color: #bc2649;
+        border-radius: 4px; }
+        .navigation .call-company i {
+          color: #fff; } }
+  @media (max-width: 992px) {
+    .navigation .brand {
+      display: none; } }
   .navigation .brand img {
     height: 26px; }
+  .navigation .mobile-brand {
+    display: none; }
     @media (max-width: 992px) {
-      .navigation .brand img {
-        height: 30px;
-        width: 120px; } }
+      .navigation .mobile-brand {
+        display: block; } }
 
 nav {
   z-index: 1; }
@@ -1673,7 +1694,7 @@ nav {
       padding: 3rem;
       padding-top: 5rem !important; } }
   .nav-list .bar-top {
-    border-left: 1px solid #CDCDCD;
+    border-left: 1px solid #cdcdcd;
     margin-left: 20px; }
     @media (max-width: 992px) {
       .nav-list .bar-top {
@@ -1747,9 +1768,12 @@ nav {
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px; }
-  @media (max-width: 475px) {
+  @media (max-width: 992px) {
     #nav-toggle {
       padding: 3px 35px 16px 0px; } }
+  @media (max-width: 475px) {
+    #nav-toggle {
+      right: -15px !important; } }
   #nav-toggle span,
   #nav-toggle span:before,
   #nav-toggle span:after {
@@ -1757,7 +1781,7 @@ nav {
     border-radius: 1px;
     height: 2.5px;
     width: 30px;
-    background: white;
+    background: #324A74;
     position: absolute;
     display: block;
     content: "";
@@ -4673,3 +4697,62 @@ nav {
   .lawyers-available__about img {
     height: 14px;
     width: 14px; }
+
+@media (min-width: 992px) {
+  .top-search-mobile {
+    display: none; } }
+
+.top-search-mobile .button-search-mobile {
+  width: 100%; }
+  .top-search-mobile .button-search-mobile .search-button {
+    height: 35px;
+    background: #fff;
+    padding-inline: 0.75rem;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.02);
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: stretch;
+    margin-bottom: 14px;
+    font-size: 12px; }
+    .top-search-mobile .button-search-mobile .search-button img {
+      margin-inline-end: var(--icon-space, 0.5em); }
+
+.top-search-mobile p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400; }
+  @media (max-width: 552px) {
+    .top-search-mobile p {
+      text-align: center;
+      margin-bottom: 14px; } }
+
+@media (max-width: 992px) {
+  .top-search-mobile .breadcrumb {
+    display: block; } }
+
+.top-search-mobile .breadcrumb a {
+  color: #fff !important;
+  font-size: 8px; }
+
+.top-search-mobile .breadcrumb span {
+  color: #fff !important;
+  font-size: 8px;
+  margin: 2px 0; }
+
+.top-search-mobile .breadcrumb .last-element {
+  margin: 0; }
+
+.top-search-mobile .search-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+  padding: 3rem;
+  padding-top: 5rem !important; }
