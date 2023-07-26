@@ -57,7 +57,116 @@
     height: 100%;
     background-color: #fff;
     z-index: 10;
-    padding: 3rem;
-    padding-top: 5rem!important;
+
+    .search-dat {
+      background-color: #324a74;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+
+      .search-mobile {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        background: #fff;
+        display: flex;
+        padding: 3px 7px;
+        align-items: center;
+        input {
+          border: none;
+          width: 100%;
+          font-size: 12px;
+        }
+        .search-img {
+          width: 19px;
+          height: 19px;
+          margin-inline-end: var(--icon-space, 0.5em);
+        }
+        img {
+          width: 11px;
+          height: 11px;
+        }
+
+        &__compensation {
+          position: relative;
+          width: 100%;
+          .element-claims {
+            position: fixed;
+            top: 154px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            ul {
+              li {
+                display: flex;
+                width: 100%;
+                border-bottom: 1px solid #e3e3e3;
+                padding: 11px 26px;
+                padding-right: 0;
+                gap: 7px;
+                align-items: center;
+
+                img {
+                  width: 16px;
+                  height: 16px;
+                }
+                p {
+                  color: #000;
+                  font-size: 12px;
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .location-mobile {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        background: #fff;
+        display: flex;
+        padding: 3px 7px;
+        align-items: center;
+        input {
+          border: none;
+          width: 100%;
+          font-size: 12px;
+        }
+        .location-img {
+          width: 19px;
+          height: 19px;
+          margin-inline-end: var(--icon-space, 0.5em);
+        }
+        img {
+          width: 11px;
+          height: 11px;
+        }
+      }
+      .button-action {
+        display: flex;
+        justify-content: space-between;
+
+        .close {
+          border-radius: 2px;
+          background: #fff;
+          height: 22px;
+          max-width: 58px;
+          width: 100%;
+          color: #ff4042;
+          font-size: 10px;
+          font-weight: 600;
+        }
+        .search {
+          border-radius: 2px;
+          background: #ff4042;
+          height: 22px;
+          max-width: 58px;
+          width: 100%;
+          color: #ffffff;
+          font-size: 10px;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }
