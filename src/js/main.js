@@ -4,3 +4,5 @@
 @@include("partials/header.js");
 @@include("partials/map.js");
 @@include("partials/result-page.js");
+@@include("partials/search-mobile.js");
+

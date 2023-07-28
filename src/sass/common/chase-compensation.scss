@@ -2,31 +2,52 @@
   display: flex;
   margin-top: 44px;
   margin-bottom: 35px;
- 
+  max-width: 603px;
+  width: 100%;
+  @media (max-width: 620px) {
+    margin-top: 27px;
+  }
 
   &__content {
-    background-color: #941e1a;
-    padding: 12px 25px;
-    max-width: 340px;
+    background-color: #bc2649;
     width: 100%;
+    display: flex;
     @media only screen and (max-width: 900px) and (min-width: 767px) {
       max-width: none;
     }
     @media (max-width: 620px) {
       max-width: none;
+      flex-direction: column;
     }
-
-    h2 {
-      text-decoration-line: underline;
-      font-size: 22px;
-      color: #fff;
+    .text-information {
+      padding: 34px 27px;
+      @media (max-width: 620px) {
+       text-align: center;
+       padding: 34px 19px;
+       padding-top: 5px;
+      }
     }
     h3 {
+      font-size: 20px;
+      font-weight: 400;
       color: #fff !important;
+      font-family: 'Inter', sans-serif !important;
+      border-bottom: 1px solid #E8DFDF;
+      padding-bottom: 15px;
+      @media (max-width: 620px) {
+        font-size: 14px;
+        border: none;
+       }
     }
+
     p {
+      padding-top: 15px;
       color: #fff !important;
-      font-size: 14px;
+      font-size: 12px;
+      font-weight: 800;
+      @media (max-width: 620px) {
+        display: none;
+      }
     }
 
     button {
@@ -34,19 +55,25 @@
       background: #000;
       color: #fff !important;
       text-transform: uppercase;
-       // font-family: "Nunito", sans-serif;
       padding: 7px 14px;
-      margin-top: 17px;
-      margin-bottom: 10px;
     }
   }
-  img {
+  .img-compensation {
     object-fit: cover;
+    width: 100%;
+    max-width: 248px;
     @media only screen and (max-width: 900px) and (min-width: 767px) {
       display: none;
     }
     @media (max-width: 620px) {
       display: none;
+    }
+  }
+  .img-compensation-alternative {
+    display: none;
+    height: 213px;
+    @media (max-width: 620px) {
+      display: block;
     }
   }
 }

@@ -1,64 +1,48 @@
 function updateVisibility() {
-    if ($(window).width() <= 992) {
-      $(".ER-claims .information-benefits, .IR-claims .information-benefits").hide();
-      $(".AVG-claims .information-benefits").show();
-  
-      $(".ER-claims, .IR-claims").off('click').on('click', function() {
-        $(".information-benefits").hide();
-        $(this).find(".information-benefits").show();
-      });
-  
-      $(".AVG-claims").off('click').on('click', function() {
-        $(".information-benefits").hide();
-        $(this).find(".information-benefits").show();
-      });
-    } else {
-      $(".information-benefits").show();
-      $(".ER-claims, .IR-claims, .AVG-claims").off('click');
-    }
+  const isSmallScreen = $(window).width() <= 992;
+  const infoBenefits = $(".information-benefits");
+
+  infoBenefits.hide();
+
+  if (isSmallScreen) {
+    $(".AVG-claims .information-benefits").show();
+
+    $(".ER-claims, .IR-claims, .AVG-claims").off('click').on('click', function() {
+      infoBenefits.hide();
+      $(this).find(".information-benefits").show();
+    });
+  } else {
+    infoBenefits.show();
+    $(".ER-claims, .IR-claims, .AVG-claims").off('click');
   }
-  
-  $(document).ready(function() {
-    updateVisibility();
-    $(window).resize(updateVisibility);
+}
+
+$(document).ready(function() {
+  updateVisibility();
+  $(window).resize(updateVisibility);
+
+  const switchButton = $('#switch');
+  const legalText = $('.legal-text');
+  const yourOwnText = $('.your-own-text');
+  const legalRepresentationDiv = $('.legal-representation');
+  const yourOwnDiv = $('.your-own');
+
+  switchButton.prop('checked', false);
+  legalText.css({ color: '#181059', fontSize: '16px', fontWeight: '500' });
+  legalRepresentationDiv.show();
+  yourOwnDiv.hide();
+
+  switchButton.on('click', function() {
+    const isChecked = $(this).is(':checked');
+    const style = isChecked ? '' : '#181059';
+    const fontSize = $(window).width() <= 475 ? '14px' : '16px';
+
+    legalText.css({ color: style, fontSize: fontSize, fontWeight: isChecked ? '' : '500' });
+    yourOwnText.css({ color: isChecked ? '#181059' : '', fontSize: fontSize, fontWeight: isChecked ? '500' : '' });
+    legalRepresentationDiv.toggle();
+    yourOwnDiv.toggle();
   });
-  
-
-
-const switchButton = document.getElementById('switch');
-const legalText = document.querySelector('.legal-text');
-const yourOwnText = document.querySelector('.your-own-text');
-const legalRepresentationDiv = document.querySelector('.legal-representation');
-const yourOwnDiv = document.querySelector('.your-own');
-
-
-switchButton.checked = false;
-legalText.style.color = '#181059';
-legalText.style.fontSize = '16px';
-legalText.style.fontWeight = '500';
-legalRepresentationDiv.style.display = 'block';
-yourOwnDiv.style.display = 'none';
-
-switchButton.addEventListener('click', function() {
-  
-  legalText.style.color = this.checked ? '' : '#181059';
-  legalText.style.fontSize = this.checked ? '' : '16px';
-  legalText.style.fontWeight = this.checked ? '' : '500';
-  yourOwnText.style.color = this.checked ? '#181059' : '';
-  yourOwnText.style.fontSize = this.checked ? '16px' : '';
-  yourOwnText.style.fontWeight = this.checked ? '500' : '';
-
-
-  legalRepresentationDiv.style.display = this.checked ? 'none' : 'block';
-  yourOwnDiv.style.display = this.checked ? 'block' : 'none';
-
-  const deviceWidth = window.innerWidth;
-  if (deviceWidth <= 475) {
-    legalText.style.fontSize = this.checked ? '14px' : '14px';
-    yourOwnText.style.fontSize = this.checked ? '14px' : '14px';
-  }
 });
-
 
 
 

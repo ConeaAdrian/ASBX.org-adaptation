@@ -215,7 +215,7 @@
     </div>
 
     <div class="button-search-mobile">
-      <button class="search-button">
+      <button id="open-search-block" class="search-button">
         <img src="../../img/search-user.svg" alt="" />
         Find claims, compensation, legal advice
       </button>
@@ -226,32 +226,68 @@
     </p>
   </div>
 
-  <div class="search-block">
+  <div id="search-block" class="search-block">
     <div class="search-dat">
       <div class="search-mobile">
         <img class="search-img" src="../../img/search-user.svg" alt="" />
         <div class="search-mobile__compensation">
-          <input type="text" placeholder="Find claims, compensation, legal advice" 
+          <input
+            type="text"
+            id="compensation-input"
+            placeholder="Find claims, compensation, legal advice"
+            oninput="handleInput('compensation-input')"
           />
           <div class="element-claims">
             <ul>
-                <li><img src="../../img/donate.svg" alt=""><p>Mesothelioma Compensation</p></li>
-                <li><img src="../../img/donate.svg" alt=""><p>Lung Cancer Compensation</p></li>
-                <li><img src="../../img/donate.svg" alt=""><p>Severe Asbestosis Compensation</p></li>
-                <li><img src="../../img/user check.svg" alt=""><p>Free Legal Advise (talk to an attorney)</p></li>
-                <li><img src="../../img/location.svg" alt=""><p>Add a missing asbestos site to the data base</p></li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Mesothelioma Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Lung Cancer Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Severe Asbestosis Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/user check.svg" alt="" />
+                <p>Free Legal Advise (talk to an attorney)</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/location.svg" alt="" />
+                <p>Add a missing asbestos site to the data base</p>
+              </li>
             </ul>
           </div>
         </div>
-        <img src="../../img/close.svg" alt="" />
+        <!-- Butonul de ștergere, cu id-ul "close-button-compensation" -->
+        <img
+          id="close-button-compensation"
+          src="../../img/close.svg"
+          alt=""
+          onclick="clearInput('compensation-input')"
+        />
       </div>
       <div class="location-mobile">
         <img class="location-img" src="../../img/location 1.svg" alt="" />
-        <input type="text" placeholder="Current Location"/>
-        <img src="../../img/close.svg" alt="" />
+        <input
+          type="text"
+          id="location-input"
+          placeholder="Current Location"
+          oninput="handleInput('location-input')"
+        />
+        <img
+          id="close-button-location"
+          src="../../img/close.svg"
+          alt=""
+          onclick="clearInput('location-input')"
+        />
       </div>
+
       <div class="button-action">
-        <button class="close">Close</button>
+        <button id="close-search-block" class="close">Close</button>
         <button class="search">Search</button>
       </div>
     </div>
@@ -274,86 +310,107 @@
   <span class="last-element">Mesothelioma Compensation</span>
 </div>
 
-  <h1>Miami, FL Asbestos Exposure</h1>
+  <h1>
+    Compensation for mesothelioma victims that worked and lived in Miami, FL
+  </h1>
   <div class="bar"></div>
   <p class="data-info">
-    Showing: 124 asbestos exposure job-sites, 1674 boiler locations and 16
-    asbestos trust funds available to compensate asbestos victims in Miami, FL
+    Search result for available mesothelioma compensation sources and amounts in
+    Miami, FL.
   </p>
-  <div class="required-asbx">
-    <img src="../../img/Fact Check.svg" alt="" />
-    <span>Key requirements to file asbestos claims in Miami, FL</span>
-    <p>Jobs Location: Miami, FL</p>
-    <p>Asbestos Exposure Between: 1929 - 1982</p>
-    <p>Occupational Exposure: Yes</p>
-    <p>Asbestos-Related Diagnosis: Yes</p>
-  </div>
-  <div class="content-summarizer">
-    <p>Content Summarizer:</p>
-    <ul>
-      1. asbestos exposure sources
-    </ul>
-    <li>Miami, FL asbestos exposure job-sites</li>
-    <li>Miami, FL asbestos exposure by boilers location</li>
-    <ul>
-      2. Asbestos compensation amounts for workers exposed in Miami, FL
-    </ul>
-    <li>Mesothelioma compensation amounts</li>
-    <li>Lung Cancer compensation amounts</li>
-    <li>Asbestosis compensation amounts</li>
-    <ul>
-      3. Available trust funds to Compensate Miami,FL asbestos victims
-    </ul>
-    <ul>
-      4. Ask any legal question/100% Free Legal Advice
-    </ul>
-    <ul>
-      5. Asbestos Mesothelioma Attorney Helping Miami, FL Asbestos Victims
-    </ul>
-    <ul>
-      6. Asbestos Exposure Case Value Calculator
-    </ul>
+  <div class="content-table">
+    <div class="required-asbx">
+      <img src="../../img/Fact Check.svg" alt="" />
+      <span>Occupational Asbestos Exposure</span>
+      <p>
+        <b>124 verified job sites</b> have a history of asbestos exposure.
+        <b>16 asbestos trust funds</b> may provide compensation for those
+        affected by mesothelioma.
+      </p>
+      <span>Exposure by Boilers</span>
+      <p>
+        Additionally, <b>1674 boilers locations</b> that could serve as civil
+        defendants for mesothelioma victims that worked at boiler-related jobs
+      </p>
+      <span>Requirements for Obtaining Mesothelioma Compensation</span>
+      <p>
+        In order to be eligible to receive financial compensation for
+        mesothelioma from asbestos trust funds and other civil defendants in
+        <b>Miami, FL,</b> victims must meet the following requirements:
+      </p>
+      <div class="block-data">
+        <p><b>Jobs Location:</b> Miami, FL</p>
+        <p><b>Between:</b> 1929 - 1986</p>
+        <p><b>Occupational Exposure:</b> Yes</p>
+        <p><b>Mesothelioma Diagnosis:</b> Yes</p>
+      </div>
+    </div>
+    <div class="general-information-table">
+      <img class="flag-img" src="../../img/Flag_of_Florida.svg.png" alt="" />
+      <div class="content-summarizer">
+        <p>Table of Contents</p>
+        <ol>
+          <li>Mesothelioma compensation amounts</li>
+          <li>Add Jobs to your claim</li>
+          <div class="element">
+            <span>•</span>
+            <p>Job-sites location</p>
+          </div>
+          <div class="element">
+            <span>•</span>
+            <p>Boilers location</p>
+          </div>
+          <li>Available trust funds</li>
+          <li>100% Free Legal Advice</li>
+          <li>Mesothelioma Attorney Helping Miami, FL Asbestos Victims</li>
+          <li>Mesothelioma Case Value Calculator</li>
+        </ol>
+      </div>
+    </div>
   </div>
   <div class="information-steps-jobs">
-    <h2>How to add Miami, FL asbestos jobs-sites to your claims</h2>
-    <ul>
-      <li>1. Search by first letter or search box.</li>
-      <li>2. Select job-type that you performed</li>
-      <li>3. Select time frame of your employment</li>
-      <li>4. Click on “Add + to your claim” button</li>
-      <li>5. When finished adding all jobs, click on “Calculate” button</li>
-    </ul>
-    <p>
-      Remember to include as many jobs as you recall in your claims. If you've
-      worked in another state, utilize the search bar at the top of the page,
-      select your job and city, and add them to your list. Continuously updating
-      your job history enhances the accuracy of your records.
-    </p>
-  </div>
-  
-  <div class="exposure-job">
-    <h2>Miami, FL: Asbestos Exposure Job-Sites</h2>
+    <h2>
+      Mesothelioma Compensation from the 16 Asbestos Trust Funds Available in
+      Miami, FL
+    </h2>
     <div class="bar"></div>
     <p>
-      Every job-site in Miami, FL was rigorously checked and accredited by the
-      asbestos trust funds, acting as a financial resource for mesothelioma,
-      lung cancer and asbestosis victims who encountered asbestos exposure at
-      work.
+      If you have been affected by mesothelioma, the primary source of
+      compensation available is the asbestos trust fund. The maximum payouts
+      without any ratio calculation are as follows:
     </p>
-    <div class="nearby-cities">
-      <p>Nearby Cities (10 miles radius) with documented asbestos job-sites:</p>
-      <ul class="location-list">
-        <li><a href="#">North Miami Beach,</a></li>
-        <li><a href="#">Miami Beach,</a></li>
-        <li><a href="#">South Miami,</a></li>
-        <li><a href="#">North Miami Beach,</a></li>
-        <li><a href="#">Miami Beach,</a></li>
-        <li><a href="#">South Miami,</a></li>
-        <li><a href="#">North Miami Beach,</a></li>
-        <li><a href="#">Miami Beach,</a></li>
-        <li><a href="#">South Miami.</a></li>
-      </ul>
-    </div>
+    <table class="compensation-section__table">
+      <tr class="left-column">
+        <th class="claims-type">Claim Type</th>
+        <th>ER Claims</th>
+        <th>AVG Claims</th>
+        <th>IR Claims</th>
+      </tr>
+      <tr class="right-column">
+        <td class="price">Mesothelioma</td>
+        <td>$2,098,134</td>
+        <td>$2,549,594</td>
+        <td>$6,203,194</td>
+      </tr>
+    </table>
+    <h2>Miami, FL: Asbestos Job-Sites</h2>
+    <div class="bar"></div>
+    <h3 class="red-text">
+      Adding Asbestos Job-Site Claims to Your Mesothelioma Compensation
+      Calculator
+    </h3>
+    <ol>
+      <li>Search Job Site by Name or by First Letter.</li>
+      <li>Select job-type that you performed</li>
+      <li>Select time frame of your employment</li>
+      <li>Click on “Add + to your claim” button</li>
+      <li>When finished adding all jobs, click on “Calculate” button</li>
+    </ol>
+    <p class="notation">
+      Remember to include as many jobs as you recall in your claims. If you've
+      worked in another state, utilize the search bar at the top of the page,
+      select your job and city, and add them to your list.
+    </p>
   </div>
 
   <div id="jobSitesTitle" class="job-site-section">
@@ -361,6 +418,7 @@
       <div class="search-filter__table">
         <p class="search-text">Search Job Sites: Miami, FL</p>
         <div class="search-form">
+          <img src="../../img/search-user.svg" alt="" />
           <input
             type="text"
             placeholder="Search Job Site by Name"
@@ -404,265 +462,64 @@
     </div>
     <form class="jobsite-card">
       <div class="jobsite-card__content">
-          <h2><a href="">Atlas Flooring</a></h2>
-          <div class="sorting-job">
-              <div class="all-selectors">
-                  <div class="content-input">
-                      <div class="custom-select aloha">
-                          <select id="selectJob" class="">
-                              <option class="first-alternative" value="0">
-                                  Select job:
-                              </option>
-                              <option value="lista2">Listă 2</option>
-                              <option value="lista3">Listă 3</option>
-                          </select>
-                      </div>
-                      <div class="selector-data">
-                          <p>From</p>
-                          <div class="custom-select data-select">
-                              <select class="custom-select__data">
-                                  <option class="first-alternative" value="0">
-                                      Select year:
-                                  </option>
-                                  <option value="Before">Before 1970</option>
-                                  <option value="1980">1980</option>
-                                  <option value="1982">1982</option>
-                                  <option value="1984">1984</option>
-                                  <option value="1988">1988</option>
-                                  <option value="1990">1990</option>
-                              </select>
-                          </div>
-                      </div>
-                      <div class="selector-data">
-                          <p>To</p>
-                          <div class="custom-select data-select">
-                              <select class="custom-select__data">
-                                  <option class="first-alternative" value="0">
-                                      Select year:
-                                  </option>
-                                  <option value="1980">1980</option>
-                                  <option value="1983">1983</option>
-                                  <option value="1986">1986</option>
-                                  <option value="1989">1989</option>
-                                  <option value="1992">1992</option>
-                              </select>
-                          </div>
-                      </div>
+        <h2><a href="">Atlas Flooring</a></h2>
+        <p class="available-trust-text">
+          Asbestos Trust Funds Available : <span>3</span>
+        </p>
+        <div class="sorting-job">
+          <div class="all-selectors">
+            <div class="content-input">
+              <div class="custom-select search-element">
+                <select id="selectJob" class="">
+                  <option class="first-alternative" value="0">
+                    Select job:
+                  </option>
+                  <option value="lista2">Listă 2</option>
+                  <option value="lista3">Listă 3</option>
+                </select>
+              </div>
+              <div class="activity-years">
+                <div class="selector-data">
+                  <p>From</p>
+                  <div class="custom-select data-select">
+                    <select class="custom-select__data">
+                      <option class="first-alternative" value="0">
+                        Select year:
+                      </option>
+                      <option value="Before">Before 1970</option>
+                      <option value="1980">1980</option>
+                      <option value="1982">1982</option>
+                      <option value="1984">1984</option>
+                      <option value="1988">1988</option>
+                      <option value="1990">1990</option>
+                    </select>
                   </div>
-                  <p class="available-trust-text">
-                      Asbestos Trust Funds Available : <span>3</span>
-                  </p>
-              </div>
-              <button type="submit" class="add-button" id="addButton">
-                  <p>Add +</p>
-                  <span>to your claim</span>
-              </button>
-          </div>
-      </div>
-  </form>
-    <!-- <form class="jobsite-card">
-      <div class="jobsite-card__content">
-        <div>
-          <h2><a href="">Atlas Flooring</a></h2>
-          <div class="jobsite-card__sorting">
-            <div class="select-element">
-              <select id="select1">
-                <option value="">Select Question Type</option>
-                <option value="lista1">Family Member</option>
-                <option value="lista2">Listă 2</option>
-                <option value="lista3">Listă 3</option>
-              </select>
-              <img class="arrow-img" src="../../img/arrow.svg" alt="">
-            </div>
-            <div class="form-element">
-              <div class="from-data">
-                <p>From</p>
-                <select id="fromYearSelect">
-                  <option value="None">Select</option>
-                  <option value="Before">Before 1970</option>
-                  <option value="1980">1980</option>
-                  <option value="1982">1982</option>
-                  <option value="1984">1984</option>
-                  <option value="1988">1988</option>
-                  <option value="1990">1990</option>
-                </select>
-              </div>
-              <div class="to-data">
-                <p>To</p>
-                <select id="toYearSelect">
-                  <option value="None">Select</option>
-                  <option id="before" value="Before">Before 1975</option>
-                  <option value="1980">1980</option>
-                  <option value="1983">1983</option>
-                  <option value="1986">1986</option>
-                  <option value="1989">1989</option>
-                  <option value="1992">1992</option>
-                </select>
+                </div>
+                <div class="selector-data">
+                  <p>To</p>
+                  <div class="custom-select data-select">
+                    <select class="custom-select__data">
+                      <option class="first-alternative" value="0">
+                        Select year:
+                      </option>
+                      <option value="1980">1980</option>
+                      <option value="1983">1983</option>
+                      <option value="1986">1986</option>
+                      <option value="1989">1989</option>
+                      <option value="1992">1992</option>
+                    </select>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <p>Asbestos Trust Funds Available : <span>3</span></p>
+          <button type="submit" class="add-button" id="addButton">
+            <p>Add +</p>
+            <span>to your claim</span>
+          </button>
         </div>
-        <button type="submit" class="add-button" id="addButton">
-          <p>Add +</p>
-          <span>to your claim</span>
-        </button>
-      </div>
-      <div id="errorMessage" class="error-message">
-        <i class="fas fa-exclamation"></i>
-        Please select the required boxes
-      </div>
-    </form> -->
-    <!-- <form class="jobsite-card">
-      <div class="jobsite-card__content">
-        <div>
-          <h2><a href="">Atlas Flooring</a></h2>
-          <div class="jobsite-card__sorting">
-            <select id="jobTitleSelect">
-              <option value="None">Select Your Job</option>
-              <option value="lista1">Carpenter</option>
-              <option value="lista2">Welder</option>
-              <option value="lista3">Listă 3</option>
-            </select>
-            <div class="form-element">
-              <div class="from-data">
-                <p>From</p>
-                <select id="fromYearSelect">
-                  <option value="None">Select</option>
-                  <option value="1970">1970</option>
-                  <option value="1980">1980</option>
-                  <option value="1982">1982</option>
-                  <option value="1984">1984</option>
-                  <option value="1988">1988</option>
-                  <option value="1990">1990</option>
-                </select>
-              </div>
-              <div class="to-data">
-                <p>To</p>
-                <select id="toYearSelect">
-                  <option value="None">Select</option>
-                  <option value="1975">1975</option>
-                  <option value="1980">1980</option>
-                  <option value="1983">1983</option>
-                  <option value="1986">1986</option>
-                  <option value="1989">1989</option>
-                  <option value="1992">1992</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <p>Asbestos Trust Funds Available : <span>3</span></p>
-        </div>
-        <button type="submit" class="add-button" id="addButton">
-          <p>Add +</p>
-          <span>to your claim</span>
-        </button>
-      </div>
-      <div id="errorMessage" class="error-message">
-        <i class="fas fa-exclamation"></i>
-        Please select the required boxes
       </div>
     </form>
-    <form class="jobsite-card">
-      <div class="jobsite-card__content">
-        <div>
-          <h2><a href="">Atlas Flooring</a></h2>
-          <div class="jobsite-card__sorting">
-            <select id="jobTitleSelect">
-              <option value="None">Select Your Job</option>
-              <option value="lista1">Carpenter</option>
-              <option value="lista2">Welder</option>
-              <option value="lista3">Listă 3</option>
-            </select>
-            <div class="form-element">
-              <div class="from-data">
-                <p>From</p>
-                <select id="fromYearSelect">
-                  <option value="None">Select</option>
-                  <option value="1970">1970</option>
-                  <option value="1980">1980</option>
-                  <option value="1982">1982</option>
-                  <option value="1984">1984</option>
-                  <option value="1988">1988</option>
-                  <option value="1990">1990</option>
-                </select>
-              </div>
-              <div class="to-data">
-                <p>To</p>
-                <select id="toYearSelect">
-                  <option value="None">Select</option>
-                  <option value="1975">1975</option>
-                  <option value="1980">1980</option>
-                  <option value="1983">1983</option>
-                  <option value="1986">1986</option>
-                  <option value="1989">1989</option>
-                  <option value="1992">1992</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <p>Asbestos Trust Funds Available : <span>3</span></p>
-        </div>
-        <button type="submit" class="add-button" id="addButton">
-          <p>Add +</p>
-          <span>to your claim</span>
-        </button>
-      </div>
-      <div id="errorMessage" class="error-message">
-        <i class="fas fa-exclamation"></i>
-        Please select the required boxes
-      </div>
-    </form> -->
-    <!-- <form class="jobsite-card">
-      <div class="jobsite-card__content">
-        <div>
-          <h2><a href="">Atlas Flooring</a></h2>
-          <div class="jobsite-card__sorting">
-            <select id="jobTitleSelect">
-              <option value="None">Select Your Job</option>
-              <option value="lista1">Carpenter</option>
-              <option value="lista2">Welder</option>
-              <option value="lista3">Listă 3</option>
-            </select>
-            <div class="form-element">
-              <div class="from-data">
-                <p>From</p>
-                <select id="fromYearSelect">
-                  <option value="None">Select</option>
-                  <option value="1970">1970</option>
-                  <option value="1980">1980</option>
-                  <option value="1982">1982</option>
-                  <option value="1984">1984</option>
-                  <option value="1988">1988</option>
-                  <option value="1990">1990</option>
-                </select>
-              </div>
-              <div class="to-data">
-                <p>To</p>
-                <select id="toYearSelect">
-                  <option value="None">Select</option>
-                  <option value="1975">1975</option>
-                  <option value="1980">1980</option>
-                  <option value="1983">1983</option>
-                  <option value="1986">1986</option>
-                  <option value="1989">1989</option>
-                  <option value="1992">1992</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <p>Asbestos Trust Funds Available : <span>3</span></p>
-        </div>
-        <button type="submit" class="add-button" id="addButton">
-          <p>Add +</p>
-          <span>to your claim</span>
-        </button>
-      </div>
-      <div id="errorMessage" class="error-message">
-        <i class="fas fa-exclamation"></i>
-        Please select the required boxes
-      </div>
-    </form> -->
     <div class="page-navigation">
       <ul class="pagination__list">
         <li>
@@ -695,27 +552,36 @@
       </ul>
     </div>
   </div>
-  <div class="boiler-section">
-    <h2 id="boilerLocationsTitle">Miami, FL: Asbestos Exposure by Boilers</h2>
-    <div class="bar"></div>
-    <p>
-      12,345 boiler locations in Miami, FL that potentially had asbestos
-      exposure and may be recognized as 'civil defenders'
+  <div class="unable-locate">
+    <h3 class="red-text">
+      Adding Asbestos Job-Site Claims to Your Mesothelioma Compensation
+      Calculator
+    </h3>
+    <p class="notation">
+      Remember to include as many jobs as you recall in your claims. If you've
+      worked in another state, utilize the search bar at the top of the page,
+      select your job and city, and add them to your list.
     </p>
-    <form class="boiler-card">
-      <div class="boiler-card__content">
-        <div class="add-boiler">
-          <h2><a href="">107 Dry Cleaners</a></h2>
-          <p><b>Address:</b> 123 Apple Str. Miami, FL 12345</p>
-          <p><b>Boiler Manufacturer:</b> Mercedes Benz</p>
-          <div class="add-boiler__select">
-            <select id="select1">
-              <option value="">Select Job</option>
-              <option value="lista1">Family Member</option>
-              <option value="lista2">Listă 2</option>
-              <option value="lista3">Listă 3</option>
-            </select>
+    <form class="undiscovered-companies">
+      <div class="undiscovered-companies__content">
+        <div class="add-company">
+          <h3><a href="">Enter Company Name Bellow: </a></h3>
+
+          <div class="add-company__select">
+            <div class="select-company">
+              <input type="text" placeholder="Ex: Shell Company" />
+              <div class="custom-select search-element">
+                <select id="selectJob" class="">
+                  <option class="first-alternative" value="0">
+                    Select Job Type
+                  </option>
+                  <option value="lista2">Listă 2</option>
+                  <option value="lista3">Listă 3</option>
+                </select>
+              </div>
+            </div>
             <div class="checkbox">
+              <p>When:</p>
               <label for="beforeCheckbox">Before 1990</label>
               <input type="radio" name="drone" id="beforeCheckbox" />
               <br />
@@ -729,9 +595,60 @@
           <span>to your claim</span>
         </button>
       </div>
-      <div id="errorMessage" class="error-message">
-        <i class="fas fa-exclamation"></i>
-        Please select the required boxes
+    </form>
+    <div class="nearby-cities">
+      <span>Nearby Cities (10 miles radius)</span>
+      <ul class="location-list">
+        <li><a href="#">North Miami Beach,</a></li>
+        <li><a href="#">Miami Beach,</a></li>
+        <li><a href="#">South Miami,</a></li>
+        <li><a href="#">North Miami Beach,</a></li>
+        <li><a href="#">Miami Beach,</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="boiler-section">
+    <h2 id="boilerLocationsTitle">Miami, FL: Boilers Locations</h2>
+    <div class="bar"></div>
+    <h3 class="red-text">Adding Boiler Location to Your Claims</h3>
+    <ol>
+      <li>Select job-type that you performed at the location</li>
+      <li>Select Before or After 1990’s</li>
+      <li>Click on <b>“Add + to your claim”</b> button</li>
+      <li>When finished adding all jobs, click on <b>“Calculate”</b> button</li>
+    </ol>
+    <p class="notation">
+      Remember to include as many jobs as you recall in your claims. If you've
+      worked in another state, utilize the search bar at the top of the page,
+      select your job and city, and add them to your list.
+    </p>
+    <form class="boiler-card">
+      <div class="boiler-card__content">
+        <div class="add-boiler">
+          <h2><a href="">107 Dry Cleaners</a></h2>
+          <p>Address: 123 Apple Str. Miami, FL 12345</p>
+          <p>Boiler Manufacturer: Mercedes Benz</p>
+          <div class="add-boiler__select">
+            <div class="custom-select search-element">
+              <select id="selectJob" class="">
+                <option class="first-alternative" value="0">Select job:</option>
+                <option value="lista2">Listă 2</option>
+                <option value="lista3">Listă 3</option>
+              </select>
+            </div>
+            <div class="checkbox">
+              <label for="beforeCheckbox">Before 1990</label>
+              <input type="radio" name="drone" id="beforeCheckbox" />
+              <br />
+              <label for="afterCheckbox">After 1990</label>
+              <input type="radio" name="drone" id="afterCheckbox" />
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="add-button" id="boilerButton">
+          <p>Add +</p>
+          <span>to your claim</span>
+        </button>
       </div>
     </form>
     <div class="button-container">
@@ -796,110 +713,11 @@
   
 </div>
 </div>
-  <div class="compensation-section">
-    <h2 id="compensationAmountsTitle">
-      Compensation Available for Asbestos Victims In Miami, FL
-    </h2>
-    <div class="bar"></div>
-    <p>
-      If you or a loved one has been worked in Miami, FL and later been
-      diagnosed with an asbestos-related disease such as mesothelioma, lung
-      cancer, or asbestosis, there are various forms of compensation available
-      to you. The primary option include compensation from asbestos trust funds.
-      This information apply on the maximum payouts only from Asbestos Trust
-      Funds without ratio* calculation.
-    </p>
-    <h3>Mesothelioma Compensation Amounts</h3>
-    <p>
-      If you or a loved one has been diagnosed with mesothelioma due to
-      workplace exposure in Miami, FL, you may be eligible for financial
-      compensation from applicable trust funds. Below are the types of claims
-      and the total amount available.
-    </p>
-    <table class="compensation-section__table">
-      <tr class="left-column">
-        <th class="claims-type">Claim Type</th>
-        <th>ER Claims</th>
-        <th>AVG Claims</th>
-        <th>IR Claims</th>
-      </tr>
-      <tr class="right-column">
-        <td class="price">Mesothelioma</td>
-        <td>$2,098,134</td>
-        <td>$2,549,594</td>
-        <td>$6,203,194</td>
-      </tr>
-    </table>
-    <h3>Lung Cancer Compensation Amounts</h3>
-    <p>
-      If you or a loved one has been diagnosed with lung cancer caused by
-      workplace exposure in Miami, FL, you may be entitled to financial
-      compensation from applicable trust funds. The following are the types of
-      claims and their total available amount.
-    </p>
-    <table class="compensation-section__table">
-      <tr class="left-column">
-        <th class="claims-type">Claim Type</th>
-        <th>ER Claims</th>
-        <th>AVG Claims</th>
-        <th>IR Claims</th>
-      </tr>
-      <tr class="right-column">
-        <td class="price">Mesothelioma</td>
-        <td>$2,098,134</td>
-        <td>$2,549,594</td>
-        <td>$6,203,194</td>
-      </tr>
-    </table>
-    <h3>Asbestosis Compensation Amounts</h3>
-    <p>
-      If you have been diagnosed with severe asbestosis due to workplace
-      exposure in Miami, FL, you may qualify for financial compensation from
-      relevant trust funds. Below are the types of claims and their respective
-      total available amounts.
-    </p>
-    <table class="compensation-section__table">
-      <tr class="left-column">
-        <th class="claims-type">Claim Type</th>
-        <th>ER Claims</th>
-        <th>AVG Claims</th>
-        <th>IR Claims</th>
-      </tr>
-      <tr class="right-column">
-        <td class="price">Mesothelioma</td>
-        <td>$2,098,134</td>
-        <td>$2,549,594</td>
-        <td>$6,203,194</td>
-      </tr>
-    </table>
-  </div>
-  <div class="legend">
-    <p class="legend-text">Legend</p>
-    <div class="legend-information">
-      <p>
-        ER Claims = Expedite Review claims. Paid in 60 days after claims are
-        filed.
-      </p>
-      <p>
-        AVG Claims = Average Review claims. Paid in 90 - 120 days after claims
-        are filed.
-      </p>
-      <p>
-        IR Claims = Individual Review claims. Paid in one to two years after
-        claims are filed.
-      </p>
-      <p>Ratio = Current payout rate established by each trust.</p>
-    </div>
-  </div>
   <div class="calculator-section">
     <h2 id="trustFundsTitle">
-      Asbestos Trust Funds Available for Compensation in <span>Miami, FL</span>
+      Asbestos Trust Funds Available for Compensation in Miami, FL
     </h2>
     <div class="bar"></div>
-    <p>
-      Discover the 18 Asbestos Trust Funds available in Miami, FL to compensate
-      mesothelioma victims and their families.
-    </p>
     <ul class="trust-list">
       <li><a href="#">United States Gypsum Trust</a></li>
       <li><a href="#">Owens Corning Corporation Trust</a></li>
@@ -919,6 +737,76 @@
       <li><a href="#">DII Industries Trust</a></li>
     </ul>
   </div>
+  <h2>
+    Receive top-tier legal counsel for mesothelioma cases from leading asbestos
+    attorneys in the U. S.
+  </h2>
+  <div class="bar"></div>
+  <p>
+    If you have any questions regarding mesothelioma, we are pleased to connect
+    you with experienced mesothelioma lawyers for a 100% free legal
+    consultation.
+  </p>
+  <div class="container-lawyers">
+    <div class="questions-lawyers__select">
+      <div class="general-select">
+        <div class="custom-select search-element">
+          <select id="selectJob" class="">
+            <option class="first-alternative" value="0">Please Select</option>
+            <option value="lista2">Select 2</option>
+            <option value="lista3">Select 3</option>
+          </select>
+        </div>
+        <div class="custom-select search-element">
+          <div class="user">
+            <p>I am:</p>
+            <select id="selectJob" class="">
+              <option class="first-alternative" value="0">Please Select</option>
+              <option value="lista2">Select 2</option>
+              <option value="lista3">Select 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="input-container">
+        <textarea
+          class="input-field"
+          placeholder="Example: My husband was diagnosed with mesothelioma last year and passed two months ago. How can I receive compensation?"
+        ></textarea>
+      </div>
+      <button class="button">Request Answer</button>
+    </div>
+    <div class="lawyers-information">
+      <h2>Mesothelioma Attorney Helping Miami Mesothelioma Victims</h2>
+      <div class="bar"></div>
+      <p>
+        We have selected top-notch asbestos lawyers who offer free legal
+        consultation for mesothelioma victims in Miami, FL. Our ultimate goal is
+        to create a bridge between asbestos victims and the organizations that
+        can help.
+      </p>
+      <div class="block-lawyers">
+        <div class="block-lawyers__about">
+          <img src="../../img/lawyers-img-av.svg" alt="" />
+          <div class="lawyers-data">
+            <h3>Ethan Flint</h3>
+            <p>Mesothelioma Attorney</p>
+            <p><b>Experience:</b> 17 Years</p>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="number">
+            <img src="../../img/call.svg" alt="" />
+            <a href="tel:8446789445">(844)678-9445</a>
+          </div>
+          <div class="message">
+            <img src="../../img/message.svg" alt="" />
+            <a href="mailto:twolf@asbx.org">twolf@asbx.org</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="calculator-section">
     <h2 id="calculatorTitle">Express Mesothelioma Compensation Calculator</h2>
     <div class="bar"></div>
@@ -929,18 +817,25 @@
 
     <div class="case-compensation">
   <div class="case-compensation__content">
-    <h2>Asbestos Exposure Case Compensation Calculator</h2>
-    <h3>
-      Find out in few minutes how much mesothelioma compensetion is available
-      for you or a loved one.
-    </h3>
-    <p>
-      Leverage our expedient calculator, tailored to consider factors such as
-      your age, occupations, and job sites.You will receive an instant result.
-    </p>
-    <button>Start Here</button>
+    <img
+      class="img-compensation-alternative"
+      src="../../img/img-compensation-alternative.png"
+      alt=""
+    />
+    <div class="text-information">
+      <h3>
+        Leverage our expedient calculator, tailored to consider factors such as
+        your age, occupations, and job sites.You will receive an instant result.
+      </h3>
+      <p>You will receive an instant result.</p>
+      <button>Start Here</button>
+    </div>
+    <img
+      class="img-compensation"
+      src="../../img/img-compensation-alternative.png"
+      alt=""
+    />
   </div>
-  <img src="../../img/img-compensation.png" alt="">
 </div>
 
   </div>

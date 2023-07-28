@@ -18,14 +18,14 @@
     }
   }
   h3 {
-    color: #bf5931;
+    color: #bc2649;
   }
 
   .next-job {
     width: 100%;
     height: 30px;
     border-radius: 4px;
-    background: #ff4043;
+    background: #bc2649;
     margin-top: 35px;
     color: white;
     border: none;
@@ -103,10 +103,18 @@
   &__content {
     .sorting-job {
       display: flex;
+      align-items: center;
+      @media (max-width: 580px) {
+        flex-direction: column;
+        align-items: end;
+      }
 
       .content-input {
         display: flex;
         gap: 10px;
+        @media (max-width: 475px) {
+          flex-direction: column;
+        }
 
         .select-element {
           display: flex;
@@ -156,11 +164,10 @@
               background: #fff;
               display: flex;
               position: relative;
-              max-width: 93px;
+
               height: 26px;
               input {
                 border: none;
-                max-width: 93px;
                 width: 100%;
               }
               .arrow-input {
@@ -192,11 +199,9 @@
               background: #fff;
               display: flex;
               position: relative;
-              max-width: 93px;
               height: 26px;
               input {
                 border: none;
-                max-width: 93px;
                 width: 100%;
               }
               .arrow-input {
@@ -214,42 +219,6 @@
           right: 4px;
           top: 8px;
         }
-        .alternative {
-        }
-      }
-      .available-trust-text {
-        margin-top: 10px;
-        font-weight: 500;
-      }
-      .add-button {
-        border-radius: 4px;
-        background: #ff4043;
-        width: 100%;
-        max-width: 70px;
-        height: 36px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 6px;
-        margin-left: 30px;
-
-        p {
-          color: #fff;
-          font-size: 14px;
-          font-weight: 600;
-          line-height: 15px;
-          @media (max-width: 475px) {
-            font-size: 14px;
-          }
-        }
-        span {
-          font-size: 8px;
-          font-weight: 600;
-          color: #fff;
-          @media (max-width: 380px) {
-            display: none;
-          }
-        }
       }
     }
     h2 {
@@ -259,6 +228,43 @@
         text-decoration-line: underline !important;
         font-weight: 500;
       }
+    }
+    .available-trust-text {
+      margin-bottom: 10px;
+    }
+  }
+  
+}
+.add-button {
+  border-radius: 4px;
+  background: #bc2649;
+  width: 100%;
+  max-width: 70px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6px;
+  margin-left: 15px;
+  @media (max-width: 580px) {
+    margin-top: 12px;
+  }
+
+  p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    @media (max-width: 475px) {
+      font-size: 14px;
+    }
+  }
+  span {
+    font-size: 8px;
+    font-weight: 600;
+    color: #fff;
+    @media (max-width: 380px) {
+      display: none;
     }
   }
 }
@@ -395,23 +401,31 @@
 .boiler-card {
   width: 100%;
   border-radius: 4px;
-  border: 1px solid #f1f1f1;
-  background: #fdfdfd;
+  border: 1px solid #fff;
+  background: #fffcf8;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 6px 12px;
+  padding: 6px 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
+  &__content {
+    align-items: end;
+    @media (max-width: 620px) {
+     flex-direction: column;
+     align-items:baseline;
+    }
+  }
 
   .add-boiler {
     h2 {
       a {
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 500;
       }
     }
     p {
+      margin-top: 3px;
       font-size: 14px;
 
       b {
@@ -441,9 +455,10 @@
         }
 
         label {
-          width: 92px;
-          margin-right: 7px;
-          margin-left: 15px;
+          font-size: 14px;
+          width: 86px;
+
+          margin-left: 13px;
           @media (max-width: 620px) {
             margin-left: 0;
             font-size: 14px;
@@ -461,11 +476,10 @@
     height: 36px;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
     justify-content: center;
     padding: 0 6px;
-    @media (max-width: 620px) {
-      margin-top: 90px;
+    @media (max-width: 475px) {
+      margin-top: 7px;
     }
 
     p {
@@ -487,41 +501,45 @@
   }
   .error-message {
     display: none;
-    color: #ff4043;
+    color: #bc2649;
     font-size: 12px;
     margin-top: 5px;
   }
 }
 .bar {
-  background: #c55d34;
+  background: #bc2649;
   width: 100%;
   max-width: 110px;
   height: 3px;
   margin-top: 11px;
   margin-bottom: 19px;
+  @media (max-width: 992px) {
+    margin-bottom: 10px !important;
+    margin-top: 6px !important;
+  }
+  @media (max-width: 475px) {
+    background: #c0cad6;
+    margin: 0 auto;
+  }
 }
-
-
-
-
 
 .all-selectors {
   width: 100%;
 }
-.aloha {
+.search-element {
   width: 100%;
-  max-width: 172px;
+  align-items: center;
+  display: flex;
+  font-family: "Inter", sans-serif !important;
 }
 .data-select {
   width: 100%;
-  max-width: 93px;
+  align-items: center;
+  display: flex;
+  font-family: "Inter", sans-serif !important;
 }
 .custom-select {
   position: relative;
-  border: 1px solid #dbdbdb;
-  background: #fff;
-  color: #000;
-  height: 26px;
 
   option {
     &:hover {
@@ -535,13 +553,9 @@
 }
 
 .custom-select select {
-  display: none; /*hide original SELECT element:*/
+  display: none;
 }
 
-.first-alternative {
-
-}
-/*style the arrow inside the select element:*/
 .select-selected:after {
   position: absolute;
   content: "";
@@ -556,22 +570,36 @@
 /*style the items (options), including the selected item:*/
 .select-items div,
 .select-selected {
-  color: #000000;
-  cursor: pointer;
-  user-select: none;
-  font-size: 12px;
-  margin-top: 2px;
-  margin-left: 6px;
-}
-.selector-data {
-  display: flex;
-  align-items: center;
-  gap: 5px;
   width: 100%;
-  max-width: 130px;
+  cursor: pointer;
+  font-size: 12px;
+  height: 26px;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+  align-items: center;
+  display: flex;
+  padding-left: 4px;
+}
+.activity-years {
+  display: flex;
+  width: 100%;
+  min-width: 260px;
+  gap: 7px;
 
-  p {
-    font-size: 12px;
+  .selector-data {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 130px;
+    @media (max-width: 475px) {
+      max-width: none;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 600;
+    }
   }
 }
 

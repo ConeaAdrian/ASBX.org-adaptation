@@ -49,6 +49,8 @@
       margin: 0;
     }
   }
+
+
   .search-block {
     position: fixed;
     top: 0;
@@ -57,6 +59,7 @@
     height: 100%;
     background-color: #fff;
     z-index: 10;
+    display: none;
 
     .search-dat {
       background-color: #324a74;
@@ -85,6 +88,7 @@
         img {
           width: 11px;
           height: 11px;
+          cursor: pointer;
         }
 
         &__compensation {
@@ -140,6 +144,7 @@
         img {
           width: 11px;
           height: 11px;
+          cursor: pointer;
         }
       }
       .button-action {
@@ -170,3 +175,18 @@
     }
   }
 }
+
+// #close-button-compensation {
+//     display: none;
+//   }
+
+  
+//   #compensation-input:not(:placeholder-shown) + #close-button-compensation {
+//     display: block;
+//   }
+
+  
+// #search-block:not(.active) {
+//     display: none;
+//   }
+  

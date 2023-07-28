@@ -50,6 +50,9 @@ $link-hover-color: $main-red;
     @media (max-width: 992px) {
       display: block;
      }
+     a {
+      display: flex;
+     }
   }
 }
 nav {
@@ -127,6 +130,7 @@ nav {
     }
   }
   li {
+    margin-bottom: 0;
     a {
       font-family: "Roboto Condensed", sans-serif !important;
     }
@@ -217,6 +221,7 @@ nav {
   }
   @media (max-width: 475px) {
    right: -15px !important;
+   top: 19px;
   }
   span,
   span:before,

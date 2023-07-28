@@ -74,7 +74,7 @@
     line-height: 22px;
   }
   span {
-    color: #c55d34;
+    color: #bc2649;
     font-size: 18px;
   }
   h2 {
@@ -83,6 +83,10 @@
   .bar {
     margin-bottom: 15px !important;
     margin-top: 10px !important;
+    @media (max-width: 992px) {
+      margin-bottom: 10px !important;
+      margin-top: 6px !important;
+    }
   }
   ol {
     margin-top: 16px;
