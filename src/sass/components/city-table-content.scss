@@ -4,6 +4,8 @@
   gap: 23px;
   justify-content: space-between;
   margin-bottom: 50px;
+  border-bottom: 1px solid #F3F3F3;
+  padding-bottom: 27px;
   @media (max-width: 475px) {
     flex-direction: column;
   }
@@ -85,7 +87,119 @@
       }
     }
   }
-  
+}
+.required-asbx {
+  width: 100%;
+  max-width: 336px;
+  border-radius: 4px;
+  border: 1px solid #dbdbdb;
+  background: #fbfcff;
+  position: relative;
+  padding: 11px 17px;
+  @media (max-width: 620px) {
+    padding: 11px 6px;
+  }
+  @media (max-width: 475px) {
+    background-color: transparent;
+    border: none;
+  }
+  img {
+    position: absolute;
+    right: 0;
+    transform: translate(15px, -30px);
+    @media (max-width: 475px) {
+      display: none;
+    }
+  }
+  span {
+    color: #324a74;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+
+    b {
+      font-size: 14px !important;
+    }
+  }
+  .block-data {
+    gap: 4px !important;
+    display: grid;
+    p {
+      margin: 0;
+    }
+  }
+}
+.general-information-table {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  .content-summarizer {
+    border-radius: 4px;
+    border: 1px solid #c0cad6;
+    background: rgba(240, 245, 255, 0.3);
+    max-width: 300px;
+    min-width: 221px;
+    width: 100%;
+    padding: 16px 9px;
+    @media (max-width: 475px) {
+      max-width: none;
+    }
+
+    p {
+      color: #4f4f4f;
+      text-transform: capitalize;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 5px;
+    }
+    ol {
+      margin-top: 5px;
+      margin-bottom: 0;
+      .element {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-left: -10px;
+        height: 22px;
+        p {
+          margin-top: 0;
+        }
+      }
+      li {
+        a {
+          color: #466d92;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 22px;
+          text-decoration-line: underline;
+          text-transform: capitalize;
+          margin-bottom: 2px;
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        text-decoration-line: underline;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .flag-img {
+    width: 100%;
+    max-width: 297px;
+    border-radius: 4px;
+    border: 1px solid #dfdfdf;
+    @media (max-width: 475px) {
+      max-width: none;
+    }
+  }
 }
 .table-navigator {
   border-radius: 4px 4px 0px 0px;

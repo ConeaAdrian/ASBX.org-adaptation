@@ -6,9 +6,9 @@
   }
 }
 .claims-select-mobile {
-  @media (min-width: 767px) {
-    display: none;
-  }
+  // @media (min-width: 767px) {
+  //   display: none;
+  // }
   .general-claims {
     display: flex;
     flex-direction: column;
@@ -23,9 +23,9 @@
       width: 100%;
       position: inherit;
     }
-    .badge {
-      display: none;
-    }
+    // .badge {
+    //   display: none;
+    // }
   }
 }
 .general-claims {

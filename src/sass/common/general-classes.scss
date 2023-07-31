@@ -26,4 +26,8 @@ body {
 .general-page {
   display: flex;
   gap: 55px;
+
+  @media (max-width: 992px) {
+    gap: 25px;
+  }
 }
