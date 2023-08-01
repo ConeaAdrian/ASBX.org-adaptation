@@ -229,6 +229,33 @@
     margin-bottom: 55px;
     margin-top: 100px;
   }
+
+  .lawyers-asociation {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+    .questions-lawyers__select {
+      margin: 20px auto;
+    }
+    .bar {
+      display: none;
+    }
+    .block-lawyers {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
 }
 .choose-asbx {
   margin-top: -55px !important;
