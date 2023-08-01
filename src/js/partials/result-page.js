@@ -43,7 +43,10 @@ $(document).ready(function() {
     yourOwnDiv.toggle();
   });
 });
-
+function toggleInformationBenefits(element) {
+  const infoBenefits = $(element).find(".information-benefits");
+  infoBenefits.toggle();
+}
 
 
 // (function ($) {
