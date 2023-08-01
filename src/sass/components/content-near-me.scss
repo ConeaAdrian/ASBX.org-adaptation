@@ -395,6 +395,7 @@
   @media (max-width: 475px) {
     background: #c0cad6;
     margin: 0 auto;
+    display: none;
   }
 }
 
@@ -454,6 +455,7 @@
   align-items: center;
   display: flex;
   padding-left: 4px;
+  color: #000;
 }
 .activity-years {
   display: flex;

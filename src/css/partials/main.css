@@ -3409,7 +3409,8 @@ nav {
   @media (max-width: 475px) {
     .bar {
       background: #c0cad6;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      display: none; } }
 
 .all-selectors {
   width: 100%; }
@@ -3458,7 +3459,8 @@ nav {
   background: #fff;
   align-items: center;
   display: flex;
-  padding-left: 4px; }
+  padding-left: 4px;
+  color: #000; }
 
 .activity-years {
   display: flex;
