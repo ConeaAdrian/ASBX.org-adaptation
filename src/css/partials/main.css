@@ -854,6 +854,9 @@ td {
   font-size: 14px;
   font-family: "Inter", sans-serif; }
 
+button {
+  font-family: "Inter", sans-serif; }
+
 ul {
   font-size: 14px;
   list-style-type: none;
@@ -2922,7 +2925,7 @@ nav {
       border-radius: 20px; }
 
 .claims-select {
-  max-width: 202px;
+  max-width: 223px;
   width: 100%; }
   @media (max-width: 767px) {
     .claims-select {
@@ -2948,7 +2951,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 200px;
+  max-width: 223px;
   width: 100%;
   justify-content: flex-start; }
   .general-claims .claims-selected {
@@ -2960,8 +2963,6 @@ nav {
     margin-top: 5rem;
     text-align: center;
     margin-bottom: 22px; }
-    .general-claims .claims-selected p {
-      font-family: Roboto, sans-serif !important; }
     .general-claims .claims-selected img {
       display: flex;
       text-align: center;
@@ -2975,8 +2976,7 @@ nav {
       margin-top: -4rem; }
       .general-claims .claims-selected .content-information h2 {
         font-size: 20px;
-        color: #324a74;
-        font-family: "Roboto Condensed", sans-serif !important; }
+        color: #324a74; }
       .general-claims .claims-selected .content-information p {
         color: #324a74;
         font-size: 16px;
@@ -2994,8 +2994,7 @@ nav {
       .general-claims .claims-selected .back-ground p {
         font-size: 64px;
         margin: 0;
-        color: #fff;
-        font-family: "Roboto Condensed", sans-serif; }
+        color: #fff; }
     .general-claims .claims-selected .claims-buttons {
       margin-bottom: 16px;
       display: flex;
@@ -3011,8 +3010,7 @@ nav {
         font-style: normal;
         border: none;
         text-transform: uppercase;
-        font-size: 14px;
-        font-family: "Roboto Condensed", sans-serif; }
+        font-size: 14px; }
       .general-claims .claims-selected .claims-buttons button:first-child {
         background: #BC2649;
         color: white; }
@@ -3034,7 +3032,8 @@ nav {
         gap: 20px; } }
     .general-claims .content-box img {
       position: absolute;
-      transform: translate(14px, -13px);
+      transform: translate(14px, -14px);
+      top: 0;
       right: 0;
       border-radius: 26px;
       width: 26px;
@@ -3113,6 +3112,8 @@ nav {
       margin-top: 5px; }
     .general-claims .content-box p {
       font-size: 12px; }
+  .general-claims button {
+    background-color: transparent; }
 
 @media only screen and (max-width: 2440px) and (min-width: 767px) {
   .claims-select {
