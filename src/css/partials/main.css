@@ -2759,13 +2759,21 @@ nav {
     display: flex;
     margin-top: 13px;
     margin-bottom: 21px; }
+    .compensation-section__table tbody {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fcfaf6; }
     .compensation-section__table .left-column {
-      width: 100%; }
+      width: 100%;
+      background: #fcfaf6 !important; }
       .compensation-section__table .left-column th {
-        color: #324a74;
-        font-weight: 400;
+        color: #bc2649;
+        font-weight: 300;
         align-items: start;
-        display: flex; }
+        display: flex;
+        background: #fcfaf6 !important; }
       .compensation-section__table .left-column .claims-type {
         text-transform: uppercase;
         font-weight: 500;
@@ -2776,7 +2784,8 @@ nav {
     .compensation-section__table .right-column {
       width: 100%; }
       .compensation-section__table .right-column td {
-        font-weight: 400; }
+        font-weight: 400;
+        background: #fcfaf6 !important; }
       .compensation-section__table .right-column .price {
         font-size: 16px;
         text-transform: uppercase;
@@ -2816,8 +2825,11 @@ nav {
       .calculator-section h2 {
         margin-bottom: 10px; } }
     .calculator-section h2 span {
-      color: #324A74;
+      color: #324a74;
       font-size: 22px; }
+      @media (max-width: 475px) {
+        .calculator-section h2 span {
+          font-size: 16px; } }
   @media (max-width: 767px) {
     .calculator-section .bar {
       display: none; } }
@@ -2839,21 +2851,6 @@ nav {
   .calculator-section span {
     color: #bc2649;
     font-size: 22px; }
-
-.legend {
-  max-width: 690px;
-  width: 100%;
-  display: flex;
-  margin-bottom: 41px; }
-  .legend .legend-text {
-    margin-right: 11px;
-    font-size: 12px; }
-  .legend .legend-information {
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    padding-left: 10px; }
-    .legend .legend-information p {
-      color: #bc2649;
-      font-size: 12px; }
 
 .red-text {
   color: #bc2649;
@@ -3500,11 +3497,11 @@ nav {
   background-color: rgba(0, 0, 0, 0.1); }
 
 .content-table {
-  margin-top: 16px;
+  margin-top: 18px;
   display: flex;
   gap: 23px;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border-bottom: 1px solid #F3F3F3;
   padding-bottom: 27px; }
   @media (max-width: 475px) {
@@ -3541,35 +3538,6 @@ nav {
     @media (max-width: 475px) {
       .content-table .necessary-information p {
         font-size: 14px; } }
-    .content-table .necessary-information tbody {
-      display: flex; }
-      .content-table .necessary-information tbody .left-column {
-        flex-direction: column;
-        display: flex;
-        border-right: 1px solid rgba(0, 0, 0, 0.1);
-        padding-right: 10px;
-        margin-right: 10px;
-        text-align: right;
-        margin-left: 20px; }
-        .content-table .necessary-information tbody .left-column__about {
-          color: #15528e;
-          text-transform: uppercase;
-          text-decoration-line: underline; }
-          @media (max-width: 992px) {
-            .content-table .necessary-information tbody .left-column__about {
-              text-transform: capitalize;
-              font-weight: 600; } }
-      .content-table .necessary-information tbody .right-column {
-        flex-direction: column;
-        display: flex; }
-        .content-table .necessary-information tbody .right-column p {
-          color: #c55d34 !important;
-          width: 130px; }
-        .content-table .necessary-information tbody .right-column .none {
-          color: #fffef9 !important; }
-      .content-table .necessary-information tbody .left-column,
-      .content-table .necessary-information tbody .right-column {
-        max-width: 270px; }
 
 .required-asbx {
   width: 100%;
@@ -3663,7 +3631,8 @@ nav {
     border: 1px solid #dfdfdf; }
     @media (max-width: 475px) {
       .general-information-table .flag-img {
-        max-width: none; } }
+        width: 220px;
+        height: 80px; } }
 
 .table-navigator {
   border-radius: 4px 4px 0px 0px;
@@ -3755,139 +3724,48 @@ nav {
       width: 100%;
       text-transform: uppercase !important; }
 
-.content-ship .add-claim {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 17px; }
-  .content-ship .add-claim button {
-    max-width: 144px;
-    width: 100%;
-    height: 27px; }
-  .content-ship .add-claim img {
-    height: 10px; }
-
-.content-ship .content-table-ship {
-  margin-top: 28px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.19);
-  gap: 15px; }
-  @media only screen and (max-width: 880px) and (min-width: 768px) {
-    .content-ship .content-table-ship {
-      flex-direction: column;
-      padding-bottom: 65px; } }
-  @media (max-width: 640px) {
-    .content-ship .content-table-ship {
-      flex-direction: column;
-      padding-bottom: 60px; } }
-  .content-ship .content-table-ship .table-navigator {
-    max-width: 360px;
-    width: 100%;
-    margin-bottom: 80px; }
-    @media only screen and (max-width: 880px) and (min-width: 768px) {
-      .content-ship .content-table-ship .table-navigator {
-        margin-bottom: 20px !important;
-        max-width: none; } }
-    @media (max-width: 640px) {
-      .content-ship .content-table-ship .table-navigator {
-        margin-bottom: 20px !important;
-        max-width: none; } }
-    .content-ship .content-table-ship .table-navigator__content li p {
-      margin-left: 20px;
-      font-size: 14px;
-      font-weight: 400;
-      margin-bottom: 0;
-      text-transform: inherit;
-      text-decoration-line: underline; }
-  .content-ship .content-table-ship .ship-img {
-    width: 100%;
-    max-width: 345px;
-    height: 200px; }
-    @media only screen and (max-width: 992px) and (min-width: 768px) {
-      .content-ship .content-table-ship .ship-img {
-        max-width: none; } }
-    @media (max-width: 640px) {
-      .content-ship .content-table-ship .ship-img {
-        max-width: none; } }
-    .content-ship .content-table-ship .ship-img img {
-      height: 230px;
-      width: 100%; }
-    .content-ship .content-table-ship .ship-img p {
-      color: #036;
-      font-size: 12px; }
-
-@media (max-width: 495px) {
-  .content-ship .ship-trust th, .content-ship .ship-trust td {
-    font-size: 12px; } }
-
-@media (max-width: 495px) {
-  .content-ship .ship-trust .data-column__diagnosed {
-    text-transform: capitalize !important;
-    font-size: 12px !important; } }
-
-.content-ship .trust-funds-claim {
-  margin-top: 26px; }
-  .content-ship .trust-funds-claim span {
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #bf5931; }
-  .content-ship .trust-funds-claim h3 {
-    color: #324a74;
-    font-size: 18px; }
-  .content-ship .trust-funds-claim .compensation-section__table tbody {
+.content-ship .ship-claims {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #f1f1f1;
+  background: #fdfdfd;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 7px;
+  padding: 18px 16px;
+  height: 92px; }
+  .content-ship .ship-claims__content {
     display: flex;
-    width: 100%;
-    max-width: none; }
-    .content-ship .trust-funds-claim .compensation-section__table tbody .data-column-text .claims-type {
-      color: #000;
-      font-weight: 500; }
-    .content-ship .trust-funds-claim .compensation-section__table tbody .data-column-text th {
-      color: #324a74; }
-  .content-ship .trust-funds-claim .compensation-section__table .data-column {
-    background-color: #faf7f0 !important; }
-    .content-ship .trust-funds-claim .compensation-section__table .data-column__diagnosed {
-      background-color: white !important;
-      color: #bf5931;
+    align-items: center; }
+    .content-ship .ship-claims__content .add-ship {
+      display: flex;
+      width: 100%; }
+      .content-ship .ship-claims__content .add-ship .ship-select {
+        max-width: 172px;
+        width: 100%;
+        margin-right: 15px; }
+        .content-ship .ship-claims__content .add-ship .ship-select p {
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 5px; }
+    .content-ship .ship-claims__content .checkbox p {
       font-size: 14px;
-      font-weight: 600;
-      text-transform: uppercase; }
-
-.content-ship .legend .legend-text {
-  color: #BF5931; }
-
-.content-ship .legend .legend-information p {
-  color: #000 !important; }
-
-.content-ship .civil-defendants {
-  margin-bottom: 28px; }
-  .content-ship .civil-defendants span {
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #bf5931; }
-  .content-ship .civil-defendants h3 {
-    color: #324a74;
-    font-size: 18px; }
-
-.content-ship .equipment-table {
-  border-collapse: collapse;
-  margin-top: 30px; }
-  .content-ship .equipment-table th, .content-ship .equipment-table td {
-    border: 1px solid #e3e3e3; }
-  .content-ship .equipment-table th {
-    background-color: #eeeeee;
-    font-weight: 500; }
-  .content-ship .equipment-table td {
-    background-color: white;
-    width: auto;
-    padding: 3px; }
-  .content-ship .equipment-table .background {
-    background-color: #FAF7F0;
-    color: #324A74;
-    cursor: pointer;
-    text-decoration-line: underline; }
+      font-weight: 500;
+      margin-bottom: 6px; }
+    .content-ship .ship-claims__content .checkbox-item {
+      display: flex;
+      align-items: center; }
+      .content-ship .ship-claims__content .checkbox-item label {
+        font-size: 12px;
+        font-weight: 600; }
+      .content-ship .ship-claims__content .checkbox-item input {
+        margin-right: 25px;
+        margin-left: 5px; }
+  .content-ship .ship-claims img {
+    position: absolute;
+    right: -6px;
+    top: 0;
+    right: -5px;
+    top: -1px; }
 
 .contact .hreader-contact {
   width: 100%;
@@ -4079,9 +3957,20 @@ nav {
       color: #324a74;
       text-decoration-line: underline; }
 
+.job-site .red-text {
+  margin-bottom: 7px; }
+  @media (max-width: 475px) {
+    .job-site .red-text {
+      font-size: 14px; } }
+
 .job-site .content-products {
   display: flex;
-  gap: 25px; }
+  gap: 25px;
+  margin-top: 31px;
+  margin-bottom: 33px; }
+  @media (max-width: 520px) {
+    .job-site .content-products {
+      flex-direction: column; } }
   .job-site .content-products__categorization-cart {
     border-radius: 4px;
     border: 1px solid #dbdbdb;
@@ -4089,6 +3978,9 @@ nav {
     padding: 17px 13px;
     max-width: 331px;
     width: 100%; }
+    @media (max-width: 520px) {
+      .job-site .content-products__categorization-cart {
+        max-width: none; } }
     .job-site .content-products__categorization-cart p {
       color: #bc2649;
       font-size: 20px;
@@ -4101,6 +3993,53 @@ nav {
         font-size: 16px;
         font-weight: 300;
         margin-bottom: 0; }
+
+.job-site .occupational {
+  margin-top: 18px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 22px; }
+
+.job-site .sort-chase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  margin-top: 26px;
+  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 34px;
+  margin-bottom: 19px;
+  align-items: end; }
+  .job-site .sort-chase__content {
+    width: 100%;
+    max-width: 300px; }
+    .job-site .sort-chase__content p {
+      color: #324a74;
+      font-size: 18px;
+      font-weight: 600; }
+    .job-site .sort-chase__content .compensation-section__table {
+      margin-bottom: 0; }
+  .job-site .sort-chase .legend {
+    width: 100%;
+    max-width: 300px; }
+    .job-site .sort-chase .legend span {
+      color: #000;
+      font-size: 12px;
+      font-weight: 600; }
+    .job-site .sort-chase .legend .legend-nots {
+      border-top: 1px solid #f3f3f3;
+      padding-top: 10px;
+      margin-top: 4px; }
+    .job-site .sort-chase .legend p {
+      color: #bc2649;
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 5px; }
+
+.job-site .jobsite-card {
+  padding: 21px 16px;
+  margin-top: 22px;
+  max-width: 583px;
+  width: 100%; }
 
 .bottom-banner {
   position: fixed;
@@ -4681,54 +4620,6 @@ nav {
         margin-top: 15px;
         text-transform: uppercase;
         margin-bottom: 23px; }
-  .result-page .legend {
-    margin-top: 60px; }
-    @media (max-width: 992px) {
-      .result-page .legend {
-        margin-left: 0;
-        flex-direction: column;
-        margin-top: 35px; } }
-    .result-page .legend__text {
-      color: #bf5931;
-      font-size: 12px;
-      font-weight: 400;
-      padding-right: 10px; }
-      @media (max-width: 992px) {
-        .result-page .legend__text {
-          font-size: 14px;
-          font-weight: 500; } }
-    @media (max-width: 992px) {
-      .result-page .legend .legend-information {
-        border: none;
-        padding-left: 0;
-        padding-top: 10px; } }
-    .result-page .legend .legend-information__text {
-      margin-bottom: 10px; }
-      .result-page .legend .legend-information__text p {
-        color: #000;
-        font-size: 14px;
-        font-weight: 600; }
-      .result-page .legend .legend-information__text ul {
-        list-style: none; }
-        .result-page .legend .legend-information__text ul li {
-          font-size: 12px;
-          display: flex; }
-          .result-page .legend .legend-information__text ul li p {
-            font-size: 12px;
-            font-weight: 400; }
-      .result-page .legend .legend-information__text ul li:before {
-        content: "•";
-        color: #181059;
-        padding-right: 15px; }
-    .result-page .legend span {
-      font-weight: 600; }
-    .result-page .legend .legal-fees {
-      color: #000;
-      font-size: 12px;
-      font-weight: 400; }
-      .result-page .legend .legal-fees b {
-        font-weight: 600;
-        font-size: 12px !important; }
 
 .legal-text {
   width: 168px; }

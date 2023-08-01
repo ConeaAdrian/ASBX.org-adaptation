@@ -12,9 +12,20 @@
       }
     }
   }
+  .red-text {
+    margin-bottom: 7px;
+    @media (max-width: 475px) {
+      font-size: 14px;
+    }
+  }
   .content-products {
     display: flex;
     gap: 25px;
+    margin-top: 31px;
+    margin-bottom: 33px;
+    @media (max-width: 520px) {
+      flex-direction: column;
+    }
 
     &__categorization-cart {
       border-radius: 4px;
@@ -23,6 +34,9 @@
       padding: 17px 13px;
       max-width: 331px;
       width: 100%;
+      @media (max-width: 520px) {
+        max-width: none;
+      }
 
       p {
         color: #bc2649;
@@ -41,5 +55,63 @@
         }
       }
     }
+  }
+  .occupational {
+    margin-top: 18px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 22px;
+  }
+
+  .sort-chase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    margin-top: 26px;
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 34px;
+    margin-bottom: 19px;
+    align-items: end;
+    &__content {
+      width: 100%;
+      max-width: 300px;
+      p {
+        color: #324a74;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .compensation-section__table {
+        margin-bottom: 0;
+      }
+    }
+    .legend {
+      width: 100%;
+      max-width: 300px;
+
+      span {
+        color: #000;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .legend-nots {
+        border-top: 1px solid #f3f3f3;
+        padding-top: 10px;
+        margin-top: 4px;
+      }
+      p {
+        color: #bc2649;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .jobsite-card {
+    padding: 21px 16px;
+    margin-top: 22px;
+    max-width: 583px;
+    width: 100%;
   }
 }
