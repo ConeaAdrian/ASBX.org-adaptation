@@ -1960,8 +1960,7 @@ nav {
     margin-bottom: 12px; }
     .step-work h2 span {
       color: #bf5931;
-      font-size: 30px;
-      font-family: Roboto, serif !important; }
+      font-size: 30px; }
       @media (max-width: 475px) {
         .step-work h2 span {
           font-size: 20px !important; } }
