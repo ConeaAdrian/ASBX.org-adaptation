@@ -7,7 +7,6 @@
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     margin-top: 7px;
     padding: 18px 16px;
-    height: 92px;
     width: 100%;
     max-width: 583px;
     margin-top: 20px;
@@ -16,15 +15,25 @@
     &__content {
       display: flex;
       align-items: center;
+      @media (max-width: 475px) {
+        flex-direction: column;
+        align-items: start;
+      }
 
       .add-ship {
         display: flex;
         width: 100%;
+        @media (max-width: 620px) {
+          flex-direction: column;
+        }
 
         .ship-select {
           max-width: 172px;
           width: 100%;
           margin-right: 15px;
+          @media (max-width: 620px) {
+            max-width: none;
+          }
           p {
             font-size: 14px;
             font-weight: 500;
@@ -33,6 +42,9 @@
         }
       }
       .checkbox {
+        @media (max-width: 620px) {
+          margin-top: 15px;
+        }
         p {
           font-size: 14px;
           font-weight: 500;
@@ -63,6 +75,9 @@
     }
     .add-button {
       margin-right: 15px;
+      @media (max-width: 475px) {
+        margin-left: 0;
+      }
     }
   }
   .equipment {
@@ -70,27 +85,37 @@
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  
     .equipment-box {
       border-radius: 4px;
       border: 1px solid rgba(0, 0, 0, 0.1);
       background: #fbfbfb;
+      padding: 18px 12px;
       width: 100%;
       max-width: 300px;
-      padding: 18px 12px;
-
+  
       a {
         color: #15528e;
         font-size: 14px;
         font-weight: 500;
+        text-decoration-line: underline;
       }
+  
       b {
         font-size: 14px !important;
         font-weight: 600 !important;
       }
+  
       p {
         font-size: 14px;
         font-weight: 400;
       }
+  
+      @media screen and (min-width: 520px) {
+        flex: 0 0 calc(50% - 20px);
+      }
     }
   }
+  
 }
