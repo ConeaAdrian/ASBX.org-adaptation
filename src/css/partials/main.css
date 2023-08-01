@@ -984,7 +984,7 @@ b,
 strong {
   font-weight: 500;
   font-family: "Inter", sans-serif;
-  font-size: 18px !important; }
+  font-size: 14px !important; }
   @media (max-width: 475px) {
     b,
     strong {
@@ -2678,7 +2678,8 @@ nav {
   border: 1px solid #fbf8f4;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 23px;
-  margin-top: 27px; }
+  margin-top: 27px;
+  background-color: #BC2649; }
   .city-content .unable-locate .undiscovered-companies__content {
     display: flex;
     justify-content: space-between;
@@ -2687,9 +2688,10 @@ nav {
       .city-content .unable-locate .undiscovered-companies__content {
         flex-direction: column;
         align-items: end; } }
-    .city-content .unable-locate .undiscovered-companies__content h3 {
+    .city-content .unable-locate .undiscovered-companies__content h3 a {
       font-size: 16px;
-      font-weight: 600; }
+      font-weight: 600;
+      color: #fff; }
     .city-content .unable-locate .undiscovered-companies__content .add-company {
       width: 100%; }
       .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company {
@@ -2715,14 +2717,21 @@ nav {
               max-width: none; } }
     .city-content .unable-locate .undiscovered-companies__content .checkbox {
       display: flex;
-      margin-top: 18px; }
+      margin-top: 18px;
+      align-items: center; }
+    .city-content .unable-locate .undiscovered-companies__content .add-button {
+      background-color: #fff; }
+      .city-content .unable-locate .undiscovered-companies__content .add-button p, .city-content .unable-locate .undiscovered-companies__content .add-button span {
+        color: #324A74; }
     .city-content .unable-locate .undiscovered-companies__content .checkbox p {
       font-size: 14px;
-      font-weight: 600; }
+      font-weight: 600;
+      color: #fff; }
     .city-content .unable-locate .undiscovered-companies__content .checkbox label {
       margin-left: 5px;
       font-size: 14px;
-      font-weight: 600; }
+      font-weight: 600;
+      color: #fff; }
     .city-content .unable-locate .undiscovered-companies__content .checkbox input {
       margin: 2px 5px; }
 
@@ -3707,14 +3716,17 @@ nav {
         height: 22px; }
         .general-information-table .content-summarizer ol .element p {
           margin-top: 0; }
-      .general-information-table .content-summarizer ol li a {
-        color: #466d92;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 22px;
+      .general-information-table .content-summarizer ol li {
         text-decoration-line: underline;
-        text-transform: capitalize;
-        margin-bottom: 2px; }
+        text-transform: capitalize; }
+        .general-information-table .content-summarizer ol li a {
+          color: #466d92;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 22px;
+          text-decoration-line: underline;
+          text-transform: capitalize;
+          margin-bottom: 2px; }
       .general-information-table .content-summarizer ol p {
         font-size: 14px;
         font-weight: 500;
@@ -4699,7 +4711,8 @@ nav {
     border: 1px solid #f1f1f1;
     background: #fff;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 43px; }
+    padding: 43px;
+    margin-top: 33px; }
     @media (max-width: 992px) {
       .result-page .lawyer-representation {
         padding: 25px 10px; } }

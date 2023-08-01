@@ -197,6 +197,7 @@
       box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
       margin-bottom: 23px;
       margin-top: 27px;
+      background-color: #BC2649;
 
       &__content {
         display: flex;
@@ -208,14 +209,15 @@
         }
 
         h3 {
+         a {
           font-size: 16px;
           font-weight: 600;
+          color: #fff;
+         }
         }
 
         .add-company {
           width: 100%;
-          h3 {
-          }
           &__select {
             .select-company {
               gap: 20px;
@@ -247,17 +249,27 @@
         .checkbox {
           display: flex;
           margin-top: 18px;
+          align-items: center;
+        }
+        .add-button {
+          background-color: #fff;
+
+          p, span {
+            color: #324A74;
+          }
         }
 
         .checkbox {
           p {
             font-size: 14px;
             font-weight: 600;
+            color: #fff;
           }
           label {
             margin-left: 5px;
             font-size: 14px;
             font-weight: 600;
+            color: #fff;
           }
           input {
             margin: 2px 5px;
