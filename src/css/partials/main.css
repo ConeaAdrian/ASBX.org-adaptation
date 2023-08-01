@@ -1013,6 +1013,23 @@ strong {
   .body-page h1 {
     text-align: center; } }
 
+@media (max-width: 475px) {
+  .body-page .bar {
+    display: none; } }
+
+.body-page .principal-bar {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background: #bc2649;
+  width: 116px;
+  height: 3px; }
+  @media (max-width: 475px) {
+    .body-page .principal-bar {
+      width: 72px;
+      height: 2px;
+      background: #c0cad6;
+      margin: 12px auto 19px; } }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 980px;
@@ -3444,11 +3461,6 @@ nav {
     .bar {
       margin-bottom: 10px !important;
       margin-top: 6px !important; } }
-  @media (max-width: 475px) {
-    .bar {
-      background: #c0cad6;
-      margin: 0 auto;
-      display: none; } }
 
 .all-selectors {
   width: 100%; }
