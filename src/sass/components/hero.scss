@@ -7,6 +7,33 @@
     z-index: 10;
     background: transparent !important;
   }
+  .index-image-logo {
+    @media (max-width: 992px) {
+      display: block !important;
+    }
+    img {
+      @media (max-width: 992px) {
+       height: 30px !important;
+      }
+     }
+  }
+  .index-image-color {
+    display: none !important;
+  }
+  .nav-mobile {
+    span,
+    span:before,
+    span:after {
+      cursor: pointer;
+      background-color: #f7fcff !important;
+    }
+  }
+  #nav-toggle.active span:after, #nav-toggle.active span:before {
+    background-color: #324A74 !important;
+}
+  #nav-toggle.active span {
+    background-color: transparent !important;
+}
 }
 .page-wrapper {
   position: relative;
@@ -256,6 +283,17 @@
       margin-top: 20px;
     }
   }
+
+  .search-principal {
+    @media (max-width: 992px) {
+      display: block !important;
+    }
+    .search-asbestos {
+      @media (max-width: 992px) {
+        flex-direction: column;
+      }
+    }
+  }
 }
 .choose-asbx {
   margin-top: -55px !important;
@@ -374,7 +412,6 @@
         line-height: 26px;
         color: #ffffff;
         margin-left: 20px;
-       
       }
     }
   }

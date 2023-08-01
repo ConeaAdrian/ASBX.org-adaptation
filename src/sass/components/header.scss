@@ -257,4 +257,12 @@ nav {
       transform: rotate(-45deg);
     }
   }
+  .search-principal {
+    @media (max-width: 992px) {
+      display: block !important;
+     }
+  }
+}
+.index-image-logo {
+  display: none !important;
 }

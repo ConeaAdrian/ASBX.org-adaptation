@@ -1391,7 +1391,8 @@ button {
     .scroll-up {
       width: 50px;
       height: 50px;
-      bottom: 70px; } }
+      bottom: 70px;
+      margin-bottom: 30px; } }
   @media (max-width: 767px) {
     .scroll-up i {
       transform: translateY(-3px); } }
@@ -1909,6 +1910,12 @@ nav {
     #nav-toggle.active span:after {
       background-color: #324a74;
       transform: rotate(-45deg); }
+  @media (max-width: 992px) {
+    #nav-toggle .search-principal {
+      display: block !important; } }
+
+.index-image-logo {
+  display: none !important; }
 
 .container {
   max-width: 980px;
@@ -2110,6 +2117,29 @@ nav {
   left: 0;
   z-index: 10;
   background: transparent !important; }
+
+@media (max-width: 992px) {
+  .index-page .index-image-logo {
+    display: block !important; } }
+
+@media (max-width: 992px) {
+  .index-page .index-image-logo img {
+    height: 30px !important; } }
+
+.index-page .index-image-color {
+  display: none !important; }
+
+.index-page .nav-mobile span,
+.index-page .nav-mobile span:before,
+.index-page .nav-mobile span:after {
+  cursor: pointer;
+  background-color: #f7fcff !important; }
+
+.index-page #nav-toggle.active span:after, .index-page #nav-toggle.active span:before {
+  background-color: #324A74 !important; }
+
+.index-page #nav-toggle.active span {
+  background-color: transparent !important; }
 
 .page-wrapper {
   position: relative;
@@ -2314,6 +2344,12 @@ nav {
     .page-wrapper .lawyers-asociation .block-lawyers {
       margin: 0 auto;
       margin-top: 20px; }
+  @media (max-width: 992px) {
+    .page-wrapper .search-principal {
+      display: block !important; } }
+  @media (max-width: 992px) {
+    .page-wrapper .search-principal .search-asbestos {
+      flex-direction: column; } }
 
 .choose-asbx {
   margin-top: -55px !important; }
