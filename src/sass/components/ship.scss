@@ -1,4 +1,13 @@
 .content-ship {
+  .about-text-ship {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    span {
+      color: #15528e;
+      font-weight: 500;
+      text-decoration-line: underline;
+    }
+  }
   .ship-claims {
     position: relative;
     border-radius: 4px;
@@ -80,13 +89,24 @@
       }
     }
   }
+  .compensation-navi {
+    margin: 18px 0;
+  }
+  .ship-img {
+    margin-top: 11px;
+    margin-bottom: 26px;
+  }
+  .red-text {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
   .equipment {
     margin-top: 18px;
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
+
     .equipment-box {
       border-radius: 4px;
       border: 1px solid rgba(0, 0, 0, 0.1);
@@ -94,28 +114,35 @@
       padding: 18px 12px;
       width: 100%;
       max-width: 300px;
-  
+
       a {
         color: #15528e;
         font-size: 14px;
         font-weight: 500;
         text-decoration-line: underline;
       }
-  
+
       b {
         font-size: 14px !important;
         font-weight: 600 !important;
       }
-  
+
       p {
         font-size: 14px;
         font-weight: 400;
       }
-  
+
       @media screen and (min-width: 520px) {
         flex: 0 0 calc(50% - 20px);
       }
     }
   }
-  
+  .notation {
+    max-width: none;
+  }
+  .sort-chase {
+    @media (max-width: 665px) {
+      justify-content: center;
+    }
+  }
 }

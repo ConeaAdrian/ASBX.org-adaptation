@@ -919,7 +919,8 @@ p {
   font-weight: 300;
   font-size: 16px;
   color: #000;
-  margin: 0; }
+  margin: 0;
+  line-height: 22px; }
   @media (max-width: 475px) {
     p {
       font-size: 14px; } }
@@ -2761,7 +2762,7 @@ nav {
   .city-content .information-steps-jobs ul li {
     margin-top: 4px; }
 
-.city-content .notation {
+.notation {
   width: 100%;
   max-width: 387px;
   margin-top: 13px;
@@ -2950,6 +2951,7 @@ nav {
       position: inherit; } }
 
 .general-claims {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3341,9 +3343,6 @@ nav {
     font-size: 8px;
     font-weight: 600;
     color: #fff; }
-    @media (max-width: 380px) {
-      .add-button span {
-        display: none; } }
 
 .boiler-card {
   width: 100%;
@@ -3587,7 +3586,7 @@ nav {
   border: 1px solid #dbdbdb;
   background: #fbfcff;
   position: relative;
-  padding: 11px 17px; }
+  padding: 15px 20px; }
   @media (max-width: 620px) {
     .required-asbx {
       padding: 11px 6px; } }
@@ -3667,7 +3666,7 @@ nav {
         text-transform: capitalize; }
   .general-information-table .flag-img {
     width: 100%;
-    max-width: 297px;
+    max-width: 222px;
     border-radius: 4px;
     border: 1px solid #dfdfdf; }
     @media (max-width: 475px) {
@@ -3765,6 +3764,14 @@ nav {
       width: 100%;
       text-transform: uppercase !important; }
 
+.content-ship .about-text-ship {
+  margin-top: 18px;
+  margin-bottom: 15px; }
+  .content-ship .about-text-ship span {
+    color: #15528e;
+    font-weight: 500;
+    text-decoration-line: underline; }
+
 .content-ship .ship-claims {
   position: relative;
   border-radius: 4px;
@@ -3829,6 +3836,17 @@ nav {
       .content-ship .ship-claims .add-button {
         margin-left: 0; } }
 
+.content-ship .compensation-navi {
+  margin: 18px 0; }
+
+.content-ship .ship-img {
+  margin-top: 11px;
+  margin-bottom: 26px; }
+
+.content-ship .red-text {
+  margin-top: 18px;
+  margin-bottom: 18px; }
+
 .content-ship .equipment {
   margin-top: 18px;
   gap: 20px;
@@ -3856,6 +3874,13 @@ nav {
     @media screen and (min-width: 520px) {
       .content-ship .equipment .equipment-box {
         flex: 0 0 calc(50% - 20px); } }
+
+.content-ship .notation {
+  max-width: none; }
+
+@media (max-width: 665px) {
+  .content-ship .sort-chase {
+    justify-content: center; } }
 
 .contact .hreader-contact {
   width: 100%;
@@ -4090,7 +4115,13 @@ nav {
   border-bottom: 1px solid #f3f3f3;
   padding-bottom: 22px; }
 
-.job-site .sort-chase {
+.job-site .jobsite-card {
+  padding: 21px 16px;
+  margin-top: 22px;
+  max-width: 583px;
+  width: 100%; }
+
+.sort-chase {
   display: flex;
   flex-wrap: wrap;
   gap: 33px;
@@ -4099,37 +4130,39 @@ nav {
   padding-bottom: 34px;
   margin-bottom: 19px;
   align-items: end; }
-  .job-site .sort-chase__content {
+  .sort-chase__content {
     width: 100%;
     max-width: 300px; }
-    .job-site .sort-chase__content p {
+    .sort-chase__content p {
       color: #324a74;
       font-size: 18px;
       font-weight: 600; }
-    .job-site .sort-chase__content .compensation-section__table {
+    .sort-chase__content .compensation-section__table {
       margin-bottom: 0; }
-  .job-site .sort-chase .legend {
+  .sort-chase .legend {
     width: 100%;
     max-width: 300px; }
-    .job-site .sort-chase .legend span {
+    .sort-chase .legend span {
       color: #000;
       font-size: 12px;
       font-weight: 600; }
-    .job-site .sort-chase .legend .legend-nots {
+    .sort-chase .legend .legend-nots {
       border-top: 1px solid #f3f3f3;
       padding-top: 10px;
       margin-top: 4px; }
-    .job-site .sort-chase .legend p {
+    .sort-chase .legend p {
       color: #bc2649;
       font-size: 12px;
       font-weight: 400;
       margin-bottom: 5px; }
 
-.job-site .jobsite-card {
-  padding: 21px 16px;
-  margin-top: 22px;
-  max-width: 583px;
-  width: 100%; }
+@media screen and (min-width: 520px) {
+  .sort-chase__content {
+    flex: 0 0 calc(50% - 20px); } }
+
+@media screen and (min-width: 767px) {
+  .legend {
+    flex: 0 0 calc(50% - 20px); } }
 
 .bottom-banner {
   position: fixed;

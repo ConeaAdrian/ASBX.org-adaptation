@@ -265,9 +265,6 @@
         }
       }
     }
-
-    .add-button {
-    }
   }
   .page-navigation {
     display: flex;
@@ -387,14 +384,14 @@
       }
     }
   }
-  .notation {
-    width: 100%;
-    max-width: 387px;
-    margin-top: 13px;
-    border-left: 3px solid #bc2649;
-    padding-left: 15px;
-    font-size: 14px !important;
-  }
+}
+.notation {
+  width: 100%;
+  max-width: 387px;
+  margin-top: 13px;
+  border-left: 3px solid #bc2649;
+  padding-left: 15px;
+  font-size: 14px !important;
 }
 
 .exposure-job {
