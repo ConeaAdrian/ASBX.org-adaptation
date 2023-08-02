@@ -174,7 +174,7 @@
             display: flex;
 
             span {
-              color: #BC2649;
+              color: #bc2649;
               font-size: 16px;
               font-weight: 400;
             }
@@ -378,7 +378,7 @@
             display: flex;
 
             span {
-              color: #BC2649;
+              color: #bc2649;
               font-size: 16px;
               font-weight: 400;
             }
@@ -461,7 +461,7 @@
         display: flex;
 
         span {
-          color: #BC2649;
+          color: #bc2649;
           font-size: 16px;
           font-weight: 400;
         }
@@ -586,19 +586,30 @@
       }
 
       .form-request {
-        text-align: center;
         margin-top: 26px;
+        padding: 0 32px;
+
+        input {
+          width: 100%;
+          margin-bottom: 11px;
+          padding: 0 12px;
+          &::placeholder {
+            color: #000;
+            font-size: 12px !important;
+            font-weight: 400;
+          }
+        }
         select {
           width: 100%;
           max-width: 254px;
           height: 28px;
-          margin-bottom: 14px;
+          margin-bottom: 11px;
         }
         .custom-select {
           width: 100%;
           max-width: 254px;
           height: 28px;
-          margin-bottom: 14px;
+          margin-bottom: 11px;
 
           .select-selected {
             max-width: none;
@@ -669,7 +680,7 @@
   max-width: 560px;
   width: 100%;
   @media (max-width: 767px) {
-   margin-left: 0;
+    margin-left: 0;
   }
   &__text {
     color: #bc2649;

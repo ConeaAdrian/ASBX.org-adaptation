@@ -3567,20 +3567,7 @@ nav {
   align-items: center;
   display: flex;
   padding-left: 4px;
-  color: #000;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  overflow: hidden;
-  box-sizing: border-box;
-  display: grid;
-  padding: 0px 11px;
-  white-space: nowrap;
-  max-width: 200px;
-  width: 100%; }
-  @media (max-width: 620px) {
-    .select-items div,
-    .select-selected {
-      max-width: none; } }
+  color: #000; }
 
 .activity-years {
   display: flex;
@@ -4477,7 +4464,7 @@ nav {
             font-weight: 400;
             display: flex; }
             .result-page .legal-representation .legal-information .ER-claims ul li span {
-              color: #BC2649;
+              color: #bc2649;
               font-size: 16px;
               font-weight: 400; }
             .result-page .legal-representation .legal-information .ER-claims ul li b {
@@ -4644,7 +4631,7 @@ nav {
             font-weight: 400;
             display: flex; }
             .result-page .legal-representation .legal-information .IR-claims ul li span {
-              color: #BC2649;
+              color: #bc2649;
               font-size: 16px;
               font-weight: 400; }
             .result-page .legal-representation .legal-information .IR-claims ul li b {
@@ -4709,7 +4696,7 @@ nav {
         font-weight: 400;
         display: flex; }
         .result-page .your-own ul li span {
-          color: #BC2649;
+          color: #bc2649;
           font-size: 16px;
           font-weight: 400; }
         .result-page .your-own ul li b {
@@ -4807,18 +4794,26 @@ nav {
         display: flex;
         text-align: center; }
       .result-page .content-request .callback-form .form-request {
-        text-align: center;
-        margin-top: 26px; }
+        margin-top: 26px;
+        padding: 0 32px; }
+        .result-page .content-request .callback-form .form-request input {
+          width: 100%;
+          margin-bottom: 11px;
+          padding: 0 12px; }
+          .result-page .content-request .callback-form .form-request input::placeholder {
+            color: #000;
+            font-size: 12px !important;
+            font-weight: 400; }
         .result-page .content-request .callback-form .form-request select {
           width: 100%;
           max-width: 254px;
           height: 28px;
-          margin-bottom: 14px; }
+          margin-bottom: 11px; }
         .result-page .content-request .callback-form .form-request .custom-select {
           width: 100%;
           max-width: 254px;
           height: 28px;
-          margin-bottom: 14px; }
+          margin-bottom: 11px; }
           .result-page .content-request .callback-form .form-request .custom-select .select-selected {
             max-width: none; }
     .result-page .content-request .button-element {
