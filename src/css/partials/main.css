@@ -1202,6 +1202,12 @@ button {
   max-width: 570px;
   text-align: end;
   margin-bottom: 30px; }
+  .questions-lawyers__select h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: start; }
   .questions-lawyers__select .general-select {
     display: flex; }
     @media (max-width: 540px) {
