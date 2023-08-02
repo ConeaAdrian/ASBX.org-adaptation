@@ -869,8 +869,7 @@ ul {
   ul li {
     display: flex;
     gap: 4px;
-    display: list-item;
-    list-style-type: disc; }
+    display: list-item; }
 
 h1,
 h2,
@@ -2962,11 +2961,6 @@ nav {
   font-size: 16px;
   font-style: normal;
   font-weight: 600; }
-
-.page-navigation ul, .alphabet ul, .calculator-section ul, .navigation ul {
-  padding-left: 0px; }
-  .page-navigation ul li, .alphabet ul li, .calculator-section ul li, .navigation ul li {
-    list-style-type: none; }
 
 .baner-company {
   width: 100%;
@@ -5188,4 +5182,29 @@ nav {
     color: #bc2649;
     font-size: 14px;
     font-weight: 600;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex; }
+
+.manufacture .ship-list {
+  width: 100%;
+  max-width: 439px;
+  margin: 15px 0; }
+  .manufacture .ship-list ul {
+    margin-bottom: 15px; }
+    .manufacture .ship-list ul li {
+      color: #15528e;
+      font-size: 16px;
+      font-weight: 300;
+      text-decoration-line: underline; }
+  .manufacture .ship-list .show-more-ship {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 6px 19px;
+    color: #bc2649;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex; }
+
+.ship-list ul li, .equipment-ship ul li {
+  list-style-type: disc; }
