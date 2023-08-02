@@ -3441,42 +3441,45 @@ nav {
       .boiler-card__content {
         flex-direction: column;
         align-items: normal; } }
-  .boiler-card .add-boiler h2 a {
-    font-size: 16px;
-    font-weight: 500; }
-  .boiler-card .add-boiler p {
-    margin-top: 3px;
-    font-size: 14px; }
-    .boiler-card .add-boiler p b {
-      font-size: 14px !important; }
-  .boiler-card .add-boiler__select {
-    display: flex;
-    margin-top: 13px; }
-    @media (max-width: 620px) {
-      .boiler-card .add-boiler__select {
-        flex-wrap: wrap; } }
-    .boiler-card .add-boiler__select select {
-      max-width: 200px;
-      width: 100%;
-      height: 25px; }
-    .boiler-card .add-boiler__select .checkbox {
+  .boiler-card .add-boiler {
+    max-width: 420px;
+    width: 100%; }
+    .boiler-card .add-boiler h2 a {
+      font-size: 16px;
+      font-weight: 500; }
+    .boiler-card .add-boiler p {
+      margin-top: 3px;
+      font-size: 14px; }
+      .boiler-card .add-boiler p b {
+        font-size: 14px !important; }
+    .boiler-card .add-boiler__select {
       display: flex;
-      width: 340px;
-      align-items: center; }
+      margin-top: 13px; }
       @media (max-width: 620px) {
-        .boiler-card .add-boiler__select .checkbox {
-          width: auto;
-          gap: 10px;
-          margin-top: 10px; } }
-      .boiler-card .add-boiler__select .checkbox label {
-        font-size: 14px;
-        width: 86px;
-        margin-left: 13px; }
+        .boiler-card .add-boiler__select {
+          flex-wrap: wrap; } }
+      .boiler-card .add-boiler__select select {
+        max-width: 200px;
+        width: 100%;
+        height: 25px; }
+      .boiler-card .add-boiler__select .checkbox {
+        display: flex;
+        width: 340px;
+        align-items: center; }
         @media (max-width: 620px) {
-          .boiler-card .add-boiler__select .checkbox label {
-            margin-left: 0;
-            font-size: 14px;
-            width: auto; } }
+          .boiler-card .add-boiler__select .checkbox {
+            width: auto;
+            gap: 10px;
+            margin-top: 10px; } }
+        .boiler-card .add-boiler__select .checkbox label {
+          font-size: 14px;
+          width: 86px;
+          margin-left: 13px; }
+          @media (max-width: 620px) {
+            .boiler-card .add-boiler__select .checkbox label {
+              margin-left: 0;
+              font-size: 14px;
+              width: auto; } }
   .boiler-card .add-button {
     border-radius: 4px;
     background: #036;
@@ -3564,7 +3567,20 @@ nav {
   align-items: center;
   display: flex;
   padding-left: 4px;
-  color: #000; }
+  color: #000;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: grid;
+  padding: 0px 11px;
+  white-space: nowrap;
+  max-width: 200px;
+  width: 100%; }
+  @media (max-width: 620px) {
+    .select-items div,
+    .select-selected {
+      max-width: none; } }
 
 .activity-years {
   display: flex;
@@ -4317,7 +4333,7 @@ nav {
           font-weight: 700;
           font-family: 'Inter', sans-serif; }
 
-.body-result {
+.body-calculator {
   background: #f3f3f3; }
 
 .result-page {
@@ -5199,3 +5215,8 @@ nav {
 
 .ship-list ul li, .equipment-ship ul li {
   list-style-type: disc; }
+
+.legend-information__text ul {
+  padding-left: 20px; }
+  .legend-information__text ul li {
+    list-style-type: disc; }
