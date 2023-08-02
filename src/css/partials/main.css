@@ -2019,7 +2019,8 @@ nav {
       margin-top: 48px;
       margin-left: 9%; }
       .background-state .state-select .state-list li {
-        width: 25%; }
+        width: 25%;
+        color: #000; }
         .background-state .state-select .state-list li::before {
           content: "\2022";
           margin-right: 6px;
@@ -2035,7 +2036,10 @@ nav {
               font-size: 14px; } }
         @media (max-width: 767px) {
           .background-state .state-select .state-list li {
-            width: 48%; } }
+            width: 40%; } }
+        @media (max-width: 375px) {
+          .background-state .state-select .state-list li {
+            width: 50%; } }
 
 .military-index {
   margin-top: 45px; }
@@ -4253,7 +4257,7 @@ nav {
     justify-content: center;
     border-radius: inherit; }
     .bottom-banner .banner-calculate .container {
-      padding: 0 20px; }
+      padding: 7px 20px; }
       @media (max-width: 475px) {
         .bottom-banner .banner-calculate .container {
           padding: 10px; } }

@@ -46,7 +46,3 @@ document.getElementById("open-search-block").addEventListener("click", function(
 document.getElementById("close-search-block").addEventListener("click", function() {
     document.getElementById("search-block").style.display = "none";
 });
-
-
-
-//problem
