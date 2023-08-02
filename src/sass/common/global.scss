@@ -28,10 +28,14 @@ ul {
   margin-top: 0;
   padding-left: 0;
   font-family: "Inter", sans-serif;
+  display: list-item;
+  padding-left: 12px;
 
   li {
     display: flex;
     gap: 4px;
+    display: list-item;
+    list-style-type: disc;
   }
 }
 h1,

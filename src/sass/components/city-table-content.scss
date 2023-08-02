@@ -162,10 +162,7 @@
     max-width: 222px;
     border-radius: 4px;
     border: 1px solid #dfdfdf;
-    @media (max-width: 475px) {
-      width: 220px;
-      height: 80px;
-    }
+    height: 80px;
   }
 }
 .table-navigator {

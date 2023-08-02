@@ -863,10 +863,14 @@ ul {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
-  font-family: "Inter", sans-serif; }
+  font-family: "Inter", sans-serif;
+  display: list-item;
+  padding-left: 12px; }
   ul li {
     display: flex;
-    gap: 4px; }
+    gap: 4px;
+    display: list-item;
+    list-style-type: disc; }
 
 h1,
 h2,
@@ -2593,7 +2597,8 @@ nav {
       .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul {
         display: flex;
         flex-wrap: wrap;
-        gap: 5px; }
+        gap: 5px;
+        list-style-type: none; }
         .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul li {
           font-size: 14px; }
     .city-content .job-site-section .search-filter__table .search-form {
@@ -2772,7 +2777,8 @@ nav {
     color: #ffffff; }
   .city-content .page-navigation .pagination__list {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    list-style-type: none; }
     .city-content .page-navigation .pagination__list .pagination__list__prev,
     .city-content .page-navigation .pagination__list .pagination__list__next {
       background: #ffffff;
@@ -2835,6 +2841,10 @@ nav {
   margin-bottom: 10px; }
   .city-content .information-steps-jobs ul li {
     margin-top: 4px; }
+
+.city-content .sort-chase__content {
+  margin-top: 17px;
+  margin-bottom: 34px; }
 
 .notation {
   width: 100%;
@@ -2916,17 +2926,15 @@ nav {
   @media (max-width: 475px) {
     .calculator-section {
       text-align: center; } }
-  .calculator-section h2 {
-    color: #bc2649 !important; }
+  @media (max-width: 475px) {
+    .calculator-section h2 {
+      margin-bottom: 10px; } }
+  .calculator-section h2 span {
+    color: #324a74;
+    font-size: 22px; }
     @media (max-width: 475px) {
-      .calculator-section h2 {
-        margin-bottom: 10px; } }
-    .calculator-section h2 span {
-      color: #324a74;
-      font-size: 22px; }
-      @media (max-width: 475px) {
-        .calculator-section h2 span {
-          font-size: 16px; } }
+      .calculator-section h2 span {
+        font-size: 16px; } }
   @media (max-width: 767px) {
     .calculator-section .bar {
       display: none; } }
@@ -2954,6 +2962,11 @@ nav {
   font-size: 16px;
   font-style: normal;
   font-weight: 600; }
+
+.page-navigation ul, .alphabet ul, .calculator-section ul {
+  padding-left: 0px; }
+  .page-navigation ul li, .alphabet ul li, .calculator-section ul li {
+    list-style-type: none; }
 
 .baner-company {
   width: 100%;
@@ -3740,11 +3753,8 @@ nav {
     width: 100%;
     max-width: 222px;
     border-radius: 4px;
-    border: 1px solid #dfdfdf; }
-    @media (max-width: 475px) {
-      .general-information-table .flag-img {
-        width: 220px;
-        height: 80px; } }
+    border: 1px solid #dfdfdf;
+    height: 80px; }
 
 .table-navigator {
   border-radius: 4px 4px 0px 0px;
@@ -5158,3 +5168,24 @@ nav {
         color: #ffffff;
         font-size: 10px;
         font-weight: 600; }
+
+.manufacture .general-information-table {
+  display: flex;
+  flex-direction: revert;
+  margin-top: 32px;
+  margin-bottom: 44px; }
+
+.manufacture .equipment-ship {
+  width: 100%;
+  max-width: 439px;
+  margin: 15px 0; }
+  .manufacture .equipment-ship ul {
+    margin-bottom: 15px; }
+  .manufacture .equipment-ship .button-show-more {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 6px 19px;
+    color: #bc2649;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 auto; }

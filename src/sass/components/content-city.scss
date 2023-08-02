@@ -83,6 +83,7 @@
               display: flex;
               flex-wrap: wrap;
               gap: 5px;
+              list-style-type: none;
               li {
                 font-size: 14px;
               }
@@ -320,6 +321,7 @@
     .pagination__list {
       display: flex;
       align-items: center;
+      list-style-type: none;
 
       .pagination__list__prev,
       .pagination__list__next {
@@ -395,6 +397,10 @@
         margin-top: 4px;
       }
     }
+  }
+  .sort-chase__content {
+    margin-top: 17px;
+    margin-bottom: 34px;
   }
 }
 .notation {
@@ -497,7 +503,6 @@
     text-align: center;
   }
   h2 {
-    color: #bc2649 !important;
     @media (max-width: 475px) {
       margin-bottom: 10px;
     }
@@ -519,6 +524,7 @@
     margin-bottom: 21px;
   }
   .trust-list {
+
     @media (max-width: 767px) {
       margin-top: 6px;
     }
@@ -546,4 +552,14 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
+}
+
+.page-navigation, .alphabet, .calculator-section {
+  ul {
+    padding-left: 0px;
+    li {
+      list-style-type: none;
+      
+    }
+  }
 }
