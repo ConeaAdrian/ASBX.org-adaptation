@@ -3503,11 +3503,6 @@ nav {
   .boiler-card__content {
     display: flex;
     justify-content: space-between; }
-  .boiler-card .error-message {
-    display: none;
-    color: #bc2649;
-    font-size: 12px;
-    margin-top: 5px; }
 
 .bar {
   background: #bc2649;
@@ -4108,11 +4103,6 @@ nav {
       display: flex;
       width: 100%;
       align-items: center; }
-    .navy-claims-section .navy-container .add-navy .error-message {
-      display: none;
-      color: #BC2649;
-      font-size: 12px;
-      margin-top: 5px; }
   .navy-claims-section .add-button {
     border-radius: 4px;
     background: #036;
@@ -4131,6 +4121,12 @@ nav {
       font-size: 8px;
       font-weight: 600;
       color: #fff; }
+
+.error-message {
+  display: none;
+  color: #bc2649;
+  font-size: 12px;
+  margin-top: 5px; }
 
 .job-site .responsible-company {
   margin: 11px 0; }

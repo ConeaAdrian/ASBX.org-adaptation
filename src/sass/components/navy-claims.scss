@@ -76,12 +76,6 @@
         width: 100%;
         align-items: center;
       }
-      .error-message {
-        display: none;
-        color: #BC2649;
-        font-size: 12px;
-        margin-top: 5px;
-      }
     }
   }
   .add-button {
@@ -107,4 +101,10 @@
       color: #fff;
     }
   }
+}
+.error-message {
+  display: none;
+  color: #bc2649;
+  font-size: 12px;
+  margin-top: 5px;
 }
