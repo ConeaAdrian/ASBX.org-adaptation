@@ -908,7 +908,8 @@ h3 {
   font-size: 18px;
   color: #036;
   margin-bottom: 10px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-weight: 500; }
   @media (max-width: 475px) {
     h3 {
       font-size: 16px !important; } }
@@ -1021,8 +1022,8 @@ strong {
     display: none; } }
 
 .body-page .principal-bar {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 19px;
+  margin-bottom: 25px;
   background: #bc2649;
   width: 116px;
   height: 3px; }
@@ -2123,14 +2124,6 @@ nav {
       font-weight: 800;
       text-transform: uppercase;
       margin-top: 21px; }
-
-.location-mobile {
-  position: relative; }
-  .location-mobile .albastru {
-    position: absolute;
-    top: 30px;
-    width: 100%;
-    background-color: #fff; }
 
 .index-page .header-section {
   position: absolute;
@@ -5228,7 +5221,9 @@ nav {
     margin: 0 auto;
     display: flex; }
 
-.ship-list ul li, .equipment-ship ul li, .content-products__categorization-cart ul li {
+.ship-list ul li,
+.equipment-ship ul li,
+.content-products__categorization-cart ul li {
   list-style-type: disc; }
 
 .legend-information__text ul {
@@ -5239,4 +5234,9 @@ nav {
 .occupational {
   padding-left: 20px; }
   .occupational li {
+    list-style-type: disc; }
+
+.responsible-company {
+  padding-left: 20px; }
+  .responsible-company li {
     list-style-type: disc; }

@@ -48,25 +48,32 @@
     }
   }
 }
-.ship-list, .equipment-ship, .content-products__categorization-cart{
-    ul {
-        li {
-            list-style-type: disc;
-        }
+.ship-list,
+.equipment-ship,
+.content-products__categorization-cart {
+  ul {
+    li {
+      list-style-type: disc;
     }
+  }
 }
 .legend-information__text {
-
   ul {
     padding-left: 20px;
     li {
       list-style-type: disc;
-  }
+    }
   }
 }
 .occupational {
   padding-left: 20px;
   li {
     list-style-type: disc;
+  }
 }
+.responsible-company {
+  padding-left: 20px;
+  li {
+    list-style-type: disc;
+  }
 }

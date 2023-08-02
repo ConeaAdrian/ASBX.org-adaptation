@@ -46,26 +46,3 @@ document.getElementById("open-search-block").addEventListener("click", function(
 document.getElementById("close-search-block").addEventListener("click", function() {
     document.getElementById("search-block").style.display = "none";
 });
-
-
-
-
-function handleInput(inputId) {
-    const inputElement = document.getElementById(inputId);
-    const resultsContainer = document.getElementById('mobile_results_search');
-  
-    if (inputElement.value.trim() === '') {
-      resultsContainer.style.display = 'none';
-    } else {
-      resultsContainer.style.display = 'block';
-    }
-  }
-  
-  // Funcție pentru a șterge conținutul input-ului și ascunde rezultatele
-  function clearInput(inputId) {
-    const inputElement = document.getElementById(inputId);
-    const resultsContainer = document.getElementById('mobile_results_search');
-  
-    inputElement.value = '';
-    resultsContainer.style.display = 'none';
-  }
