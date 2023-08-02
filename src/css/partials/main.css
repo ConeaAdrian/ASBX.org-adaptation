@@ -4422,7 +4422,7 @@ nav {
       gap: 28px;
       padding-bottom: 44px;
       justify-content: center;
-      padding: 10px; }
+      padding: 10px 10px 30px 10px; }
       @media (max-width: 992px) {
         .result-page .legal-representation .legal-information {
           flex-direction: column;
@@ -4477,7 +4477,7 @@ nav {
             font-weight: 400;
             display: flex; }
             .result-page .legal-representation .legal-information .ER-claims ul li span {
-              color: #fe474a;
+              color: #BC2649;
               font-size: 16px;
               font-weight: 400; }
             .result-page .legal-representation .legal-information .ER-claims ul li b {
@@ -4644,7 +4644,7 @@ nav {
             font-weight: 400;
             display: flex; }
             .result-page .legal-representation .legal-information .IR-claims ul li span {
-              color: #fe474a;
+              color: #BC2649;
               font-size: 16px;
               font-weight: 400; }
             .result-page .legal-representation .legal-information .IR-claims ul li b {
@@ -4709,7 +4709,7 @@ nav {
         font-weight: 400;
         display: flex; }
         .result-page .your-own ul li span {
-          color: #fe474a;
+          color: #BC2649;
           font-size: 16px;
           font-weight: 400; }
         .result-page .your-own ul li b {
@@ -4814,11 +4814,13 @@ nav {
           max-width: 254px;
           height: 28px;
           margin-bottom: 14px; }
-        .result-page .content-request .callback-form .form-request input {
+        .result-page .content-request .callback-form .form-request .custom-select {
           width: 100%;
           max-width: 254px;
           height: 28px;
           margin-bottom: 14px; }
+          .result-page .content-request .callback-form .form-request .custom-select .select-selected {
+            max-width: none; }
     .result-page .content-request .button-element {
       display: flex;
       justify-content: end;
