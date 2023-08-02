@@ -1988,7 +1988,7 @@ nav {
       font-size: 40px;
       line-height: 47px;
       text-align: center;
-      color: #bf5931; }
+      color: #BC2649; }
 
 .step-work {
   text-align: center;
@@ -2001,7 +2001,7 @@ nav {
     color: #000 !important;
     margin-bottom: 12px; }
     .step-work h2 span {
-      color: #bf5931;
+      color: #BC2649;
       font-size: 30px; }
       @media (max-width: 475px) {
         .step-work h2 span {
@@ -2016,7 +2016,7 @@ nav {
     max-width: 720px;
     width: 100%; }
     .background-state .state-select h2 {
-      color: #bf5931; }
+      color: #BC2649; }
     .background-state .state-select .state-list {
       display: flex;
       flex-wrap: wrap;
@@ -2072,7 +2072,7 @@ nav {
   margin-top: 60px; }
   .template-compensation h2 {
     font-size: 30px;
-    color: #c55d34;
+    color: #BC2649;
     font-weight: 400;
     margin: 0 auto;
     width: 100%;
@@ -2271,7 +2271,7 @@ nav {
   .page-wrapper .working-stages__about {
     margin-top: 40px; }
     .page-wrapper .working-stages__about h2 {
-      color: #c55d34; }
+      color: #BC2649; }
       @media (max-width: 640px) {
         .page-wrapper .working-stages__about h2 {
           margin-bottom: 15px; } }
@@ -2299,7 +2299,7 @@ nav {
         .page-wrapper .working-stages__about .works-step__box img {
           margin-bottom: 15px; }
         .page-wrapper .working-stages__about .works-step__box span {
-          color: #c55d34; }
+          color: #BC2649; }
 
 .page-wrapper .index-content {
   display: flex;
@@ -2307,7 +2307,7 @@ nav {
   align-items: center;
   transform: translateY(-120px); }
   .page-wrapper .index-content h2 {
-    color: #c55d34;
+    color: #BC2649;
     font-size: 30px;
     margin-bottom: 17px; }
   .page-wrapper .index-content .form-claim {
@@ -2400,7 +2400,7 @@ nav {
     .container-about .choose-documentation h2 {
       font-weight: 400;
       font-size: 30px;
-      color: #c55d34; }
+      color: #BC2649; }
       @media (max-width: 800px) {
         .container-about .choose-documentation h2 {
           font-size: 26px !important; } }
@@ -2440,9 +2440,18 @@ nav {
     justify-content: center;
     text-transform: uppercase;
     margin-top: 40px; }
+  .container-about .advocacy-img__quote {
+    height: 128px !important;
+    width: 100%; }
+    @media (max-width: 800px) {
+      .container-about .advocacy-img__quote {
+        display: none; } }
   .container-about .military-img .advocacy-img__quote {
     height: 128px !important;
     width: 100%; }
+    @media (max-width: 800px) {
+      .container-about .military-img .advocacy-img__quote {
+        display: none; } }
   .container-about .advocacy-img {
     position: relative; }
     .container-about .advocacy-img img {
@@ -2490,7 +2499,7 @@ nav {
     .container-about .advocacy-information h2 {
       font-weight: 400;
       font-size: 30px;
-      color: #c55d34;
+      color: #BC2649;
       margin-bottom: 15px;
       margin-top: 10px; }
       @media (max-width: 800px) {
@@ -2500,13 +2509,16 @@ nav {
 .military-veteran .advocacy-information {
   width: 100%;
   max-width: 420px !important; }
+  @media (max-width: 767px) {
+    .military-veteran .advocacy-information {
+      margin: 0 auto; } }
 
 .military-veteran .military-forces__logo img {
   margin-right: 5px !important; }
 
 .compensation-asbestos {
   margin-top: 20px;
-  background: #f8fbff;
+  background: rgba(248, 251, 255, 0.52);
   height: auto;
   width: 100%;
   padding: 25px; }
@@ -2541,12 +2553,12 @@ nav {
       .compensation-asbestos .made-easy-text {
         font-size: 18px !important; } }
     .compensation-asbestos .made-easy-text span {
-      color: #c55d34;
+      color: #BC2649;
       font-size: 20px;
       font-family: "Roboto Serif", serif;
       font-weight: 500; }
   .compensation-asbestos .text-color {
-    color: #c55d34;
+    color: #BC2649;
     font-size: 14px;
     font-weight: 700; }
 
@@ -3308,7 +3320,7 @@ nav {
     margin: 0 auto;
     margin-top: 23px; }
     .near-me .compensation-asabestos h2 {
-      color: #c55d34;
+      color: #BC2649;
       font-size: 30px;
       margin-bottom: 11px; }
     .near-me .compensation-asabestos p {
@@ -4973,7 +4985,7 @@ nav {
       text-decoration-line: underline;
       font-weight: 400; }
     .multiple-page .component-information .content-summarizer li {
-      color: #c55d34;
+      color: #BC2649;
       text-decoration-line: underline;
       text-transform: capitalize;
       margin-top: 3px;

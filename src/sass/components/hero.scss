@@ -164,7 +164,7 @@
     &__about {
       margin-top: 40px;
       h2 {
-        color: #c55d34;
+        color: #BC2649;
         @media (max-width: 640px) {
           margin-bottom: 15px;
         }
@@ -196,7 +196,7 @@
           }
 
           span {
-            color: #c55d34;
+            color: #BC2649;
           }
         }
       }
@@ -209,7 +209,7 @@
     transform: translateY(-120px);
 
     h2 {
-      color: #c55d34;
+      color: #BC2649;
       font-size: 30px;
       margin-bottom: 17px;
     }
@@ -320,7 +320,7 @@
     h2 {
       font-weight: 400;
       font-size: 30px;
-      color: #c55d34;
+      color: #BC2649;
       @media (max-width: 800px) {
         font-size: 26px !important;
       }
@@ -369,11 +369,21 @@
     text-transform: uppercase;
     margin-top: 40px;
   }
+  .advocacy-img__quote {
+    height: 128px!important;
+    width: 100%;
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
 .military-img {
 
   .advocacy-img__quote {
     height: 128px!important;
     width: 100%;
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 }
   .advocacy-img {
@@ -429,7 +439,7 @@
     h2 {
       font-weight: 400;
       font-size: 30px;
-      color: #c55d34;
+      color: #BC2649;
       margin-bottom: 15px;
       margin-top: 10px;
       @media (max-width: 800px) {
@@ -442,6 +452,10 @@
   .advocacy-information {
     width: 100%;
     max-width: 420px !important;
+    @media (max-width: 767px) {
+      margin: 0 auto;
+    }
+  
     
   }
   .military-forces__logo {
@@ -452,7 +466,7 @@
 }
 .compensation-asbestos {
   margin-top: 20px;
-  background: #f8fbff;
+  background: rgba(248, 251, 255, 0.52);
   height: auto;
   width: 100%;
   padding: 25px;
@@ -490,14 +504,14 @@
       font-size: 18px !important;
     }
     span {
-      color: #c55d34;
+      color: #BC2649;
       font-size: 20px;
       font-family: "Roboto Serif", serif;
       font-weight: 500;
     }
   }
   .text-color {
-    color: #c55d34;
+    color: #BC2649;
     font-size: 14px;
     font-weight: 700;
   }
