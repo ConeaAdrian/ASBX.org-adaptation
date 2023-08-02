@@ -5,5 +5,3 @@
 @@include("partials/result-page.js");
 @@include("partials/search-mobile.js");
 @@include("partials/claims-calculator.js");
-
-

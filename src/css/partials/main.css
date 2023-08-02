@@ -2124,6 +2124,14 @@ nav {
       text-transform: uppercase;
       margin-top: 21px; }
 
+.location-mobile {
+  position: relative; }
+  .location-mobile .albastru {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    background-color: #fff; }
+
 .index-page .header-section {
   position: absolute;
   width: 100%;
