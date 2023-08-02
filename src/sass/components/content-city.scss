@@ -499,9 +499,6 @@
   border-bottom: 1px solid #f3f3f3;
   padding-bottom: 18px;
   margin-bottom: 28px;
-  @media (max-width: 475px) {
-    text-align: center;
-  }
   h2 {
     @media (max-width: 475px) {
       margin-bottom: 10px;
@@ -524,9 +521,9 @@
     margin-bottom: 21px;
   }
   .trust-list {
-
+    padding-left: 0;
     @media (max-width: 767px) {
-      margin-top: 6px;
+     margin-top: 10px;
     }
     li {
       text-decoration-line: underline;
@@ -554,12 +551,4 @@
   font-weight: 600;
 }
 
-// .page-navigation, .alphabet, .calculator-section, .navigation, .nearby-cities {
-//   ul {
-//     padding-left: 0px;
-//     li {
-//       list-style-type: none;
-      
-//     }
-//   }
-// }
+

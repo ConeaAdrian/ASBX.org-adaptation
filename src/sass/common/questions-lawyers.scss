@@ -148,6 +148,9 @@
     background: #fbfbfb;
     display: flex;
     flex-direction: column;
+    @media (max-width: 475px) {
+      max-width: none;
+    }
 
     &__about {
       display: flex;

@@ -443,21 +443,9 @@
   display: flex;
   padding-left: 4px;
   color: #000;
-  // text-overflow: ellipsis;
-  // word-wrap: break-word;
-  // overflow: hidden;
-  // box-sizing: border-box;
-  // display: grid;
-  // padding: 0px 11px;
-  // white-space: nowrap;
-  // max-width: 200px;
-  // width: 100%;
-  // @media (max-width: 620px) {
-  //   max-width: none;
-  // }
-  // @media (max-width: 475px) {
-  //   max-width: 200px;
-  // }
+  text-overflow: ellipsis;
+  padding: 0 11px;
+  overflow: hidden;
 }
 .activity-years {
   display: flex;
