@@ -165,52 +165,135 @@
     </section>
   </div>
 </header>
+<div class="header-search"><div class="search-principal container">
+  <form class="search-asbestos">
+    <div class="custom-select search-element">
+      <div class="text"><img src="../../img/search-user.svg" alt=""></div>
+      <select id="selectJob" class="">
+        <option class="first-alternative" value="0">
+          Select job:
+        </option>
+        <option value="lista2">Listă 2</option>
+        <option value="lista3">Listă 3</option>
+      </select>
+    </div>
+    <div class="search-form">
+      <div class="select-wrapper search-wrapper">
+        <div class="input-wrapper">
+          <div class="input-wrapper__location">
+            <img src="../../img/location-user.svg" alt="">
+          </div>
+          <input
+            type="text"
+            id="search"
+            placeholder="city, state or zip"
+          />
+        </div>
+      </div>
+      <button class="button" type="submit">Find</button>
+    </div>
+  </form>
+</div>
 
+  <div class="top-search-mobile">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="#">Home</a>
+      <span>|</span>
+      <a href="#">Florida</a>
+      <span>|</span>
+      <a href="#">Miami</a>
+      <span>|</span>
+      <span class="last-element">Mesothelioma Compensation</span>
+    </div>
+
+    <div class="button-search-mobile">
+      <button id="open-search-block" class="search-button">
+        <img src="../../img/search-user.svg" alt="" />
+        Find claims, compensation, legal advice
+      </button>
+    </div>
+    <p>
+      Search result for available mesothelioma compensation sources and amounts
+      in Miami, FL.
+    </p>
+  </div>
+
+  <div id="search-block" class="search-block">
+    <div class="search-dat">
+      <div class="search-mobile">
+        <img class="search-img" src="../../img/search-user.svg" alt="" />
+        <div class="search-mobile__compensation">
+          <input
+            type="text"
+            id="compensation-input"
+            placeholder="Find claims, compensation, legal advice"
+            oninput="handleInput('compensation-input')"
+          />
+          <div class="element-claims">
+            <ul>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Mesothelioma Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Lung Cancer Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Severe Asbestosis Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/user check.svg" alt="" />
+                <p>Free Legal Advise (talk to an attorney)</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/location.svg" alt="" />
+                <p>Add a missing asbestos site to the data base</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Butonul de ștergere, cu id-ul "close-button-compensation" -->
+        <img
+          id="close-button-compensation"
+          src="../../img/close.svg"
+          alt=""
+          onclick="clearInput('compensation-input')"
+        />
+      </div>
+      <div class="location-mobile">
+        <img class="location-img" src="../../img/location 1.svg" alt="" />
+        <input
+          type="text"
+          id="location-input"
+          placeholder="Current Location"
+          oninput="handleInput('location-input')"
+        />
+        <img
+          id="close-button-location"
+          src="../../img/close.svg"
+          alt=""
+          onclick="clearInput('location-input')"
+        />
+      </div>
+
+      <div class="button-action">
+        <button id="close-search-block" class="close">Close</button>
+        <button class="search">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 <div class="body-page">
   <div class="container">
-    <div class="general-page page-suplimentar">
-      <section class="contact">
-  <div class="container">
-    <div class="hreader-contact">
-      <h1>Contact Us</h1>
-      <p>
-        Need assistance or have questions regarding asbestos-related illness?
-        Contact us today for specialized information and guidance. We are here
-        to provide support and help you navigate through this challenging
-        journey.
-      </p>
-    </div>
-    <div class="contact-company">
-      <div class="contact-company__information">
-        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-        <p>2118 Thornridge Cir. Syracuse, California 208434</p>
-      </div>
-      <div class="contact-company__information">
-        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-        <p>+088 (246) 642-27-10</p>
-        <p>+088 (246) 642-27-10</p>
-      </div>
-      <div class="contact-company__information">
-        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-        <p>ASBX@gmail.com</p>
-        <p>ASBX@gmail.com</p>
-      </div>
-    </div>
-    <div class="custom-section">
-        <div class="custom-section__image">
-          <img src="../../img/Map.png" alt="Image">
-        </div>
-        <div class="custom-section__content">
-          <input type="text" class="custom-section__input" placeholder="Enter your name">
-          <input type="email" class="custom-section__input" placeholder="Enter your email address">
-          <textarea class="custom-section__textarea" placeholder="Write your message"></textarea>
-          <button class="button">Send Message</button>
-        </div>
-      </div>
-      
-  </div>
-</section>
 
+    <div class="general-page page-suplimentar">
+        
+        <div class="claims-select"></div>
     </div>
   </div>
 </div>

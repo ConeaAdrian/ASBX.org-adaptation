@@ -194,8 +194,100 @@
     </div>
   </form>
 </div>
+
+  <div class="top-search-mobile">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="#">Home</a>
+      <span>|</span>
+      <a href="#">Florida</a>
+      <span>|</span>
+      <a href="#">Miami</a>
+      <span>|</span>
+      <span class="last-element">Mesothelioma Compensation</span>
+    </div>
+
+    <div class="button-search-mobile">
+      <button id="open-search-block" class="search-button">
+        <img src="../../img/search-user.svg" alt="" />
+        Find claims, compensation, legal advice
+      </button>
+    </div>
+    <p>
+      Search result for available mesothelioma compensation sources and amounts
+      in Miami, FL.
+    </p>
+  </div>
+
+  <div id="search-block" class="search-block">
+    <div class="search-dat">
+      <div class="search-mobile">
+        <img class="search-img" src="../../img/search-user.svg" alt="" />
+        <div class="search-mobile__compensation">
+          <input
+            type="text"
+            id="compensation-input"
+            placeholder="Find claims, compensation, legal advice"
+            oninput="handleInput('compensation-input')"
+          />
+          <div class="element-claims">
+            <ul>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Mesothelioma Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Lung Cancer Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Severe Asbestosis Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/user check.svg" alt="" />
+                <p>Free Legal Advise (talk to an attorney)</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/location.svg" alt="" />
+                <p>Add a missing asbestos site to the data base</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Butonul de ștergere, cu id-ul "close-button-compensation" -->
+        <img
+          id="close-button-compensation"
+          src="../../img/close.svg"
+          alt=""
+          onclick="clearInput('compensation-input')"
+        />
+      </div>
+      <div class="location-mobile">
+        <img class="location-img" src="../../img/location 1.svg" alt="" />
+        <input
+          type="text"
+          id="location-input"
+          placeholder="Current Location"
+          oninput="handleInput('location-input')"
+        />
+        <img
+          id="close-button-location"
+          src="../../img/close.svg"
+          alt=""
+          onclick="clearInput('location-input')"
+        />
+      </div>
+
+      <div class="button-action">
+        <button id="close-search-block" class="close">Close</button>
+        <button class="search">Search</button>
+      </div>
+    </div>
+  </div>
 </div>
 
+</div>
 
 <div class="body-page">
   <div class="container">
@@ -412,6 +504,66 @@
       <p>Steelworker</p>
     </li>
   </ul>
+  <div class="claims-select-mobile"><div class="general-claims">
+  <div class="claims-selected">
+    <img src="../../img/calculator_iconred.png" alt="" />
+    <div class="content-information">
+      <h2>Claims Selected</h2>
+      <div class="back-ground">
+        <p>10</p>
+      </div>
+      <p>From 3 Jobs</p>
+      <div class="claims-buttons">
+        <button>Calculate</button>
+        <button>+ Add Job</button>
+      </div>
+    </div>
+  </div>
+  <div class="content-box">
+    <div class="content-box__information">
+      <b>Currituck (AV-7)</b>
+      <div class="job">
+        <b>Job:</b>
+        <p>Boiler-man</p>
+      </div>
+      <div class="time">
+        <b>Time:</b>
+        <p>Over 1 Year</p>
+      </div>
+    </div>
+    <div class="content-box__logo">
+      <img src="../../img/State.svg" alt="">
+      <i class="fas fa-times"></i>
+    </div>
+  </div>
+  
+  <div class="content-box special-content-box">
+    <div class="content-box__information">
+      <b>107 Dry Cleaners</b>
+      <p class="special-text">12703 14Th Avenue Miami, FL</p>
+      <div class="job">
+        <b>Job:</b>
+        <p>Boiler-man</p>
+      </div>
+      <div class="time">
+        <b>Time:</b>
+        <p>Over 1 Year</p>
+      </div>
+    </div>
+    <div class="content-box__logo">
+      <img src="../../img/City.svg" alt="">
+      <button><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+  <div class="content-box special-content-box">
+    <div class="content-box__information">
+      <b>107 Dry Cleaners</b>
+    </div>
+  </div>
+  
+  
+</div>
+</div>
   <h2>Available Compensation Amounts</h2>
   <div class="bar"></div>
   <p>
@@ -576,59 +728,7 @@
   </div>
 </section>
 
-        <div class="claims-select"><!-- <div class="general-claims">
-  <div class="claims-selected">
-    <img src="../../img/calculator_iconred.png" alt="" />
-    <div class="content-information">
-      <h2>Claims Selected</h2>
-      <div class="back-ground">
-        <p>10</p>
-      </div>
-      <p>From 3 Jobs</p>
-      <div class="claims-buttons">
-        <button>Calculate</button>
-        <button>+ Add Job</button>
-      </div>
-    </div>
-  </div>
-  <div class="content-box">
-    <div class="content-box__information">
-      <b>Currituck (AV-7)</b>
-      <div class="job">
-        <b>Job:</b>
-        <p>Boiler-man</p>
-      </div>
-      <div class="time">
-        <b>Time:</b>
-        <p>Over 1 Year</p>
-      </div>
-    </div>
-    <div class="content-box__logo">
-      <i class="fas fa-times"></i>
-    </div>
-    <img src="../../img/State.svg" alt="">
-  </div>
-  
-  <div class="content-box special-content-box">
-    <div class="content-box__information">
-      <b>107 Dry Cleaners</b>
-      <p class="special-text">12703 14Th Avenue Miami, FL</p>
-      <div class="job">
-        <b>Job:</b>
-        <p>Boiler-man</p>
-      </div>
-      <div class="time">
-        <b>Time:</b>
-        <p>Over 1 Year</p>
-      </div>
-    </div>
-    <div class="content-box__logo">
-      <i class="fas fa-times"></i>
-    </div>
-    <img src="../../img/City.svg" alt="">
-  </div>
-</div> -->
-</div>
+        <div class="claims-select"></div>
     </div>
   </div>
 </div>
@@ -696,7 +796,7 @@
         <p>From 3 Jobs</p>
       </div>
       <div class="claims-buttons">
-        <button class="add-city">+ Add <span>New</span> City/State </button>
+        <button class="add-city">+ Add <span>New</span> Claim </button>
         <button class="calculate">Calculate <span>Your</span> Claims </button>
       </div>
     </div>
