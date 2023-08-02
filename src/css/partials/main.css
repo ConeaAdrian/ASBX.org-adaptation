@@ -2963,9 +2963,9 @@ nav {
   font-style: normal;
   font-weight: 600; }
 
-.page-navigation ul, .alphabet ul, .calculator-section ul {
+.page-navigation ul, .alphabet ul, .calculator-section ul, .navigation ul {
   padding-left: 0px; }
-  .page-navigation ul li, .alphabet ul li, .calculator-section ul li {
+  .page-navigation ul li, .alphabet ul li, .calculator-section ul li, .navigation ul li {
     list-style-type: none; }
 
 .baner-company {
