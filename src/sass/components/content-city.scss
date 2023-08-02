@@ -380,6 +380,7 @@
       display: flex;
       flex-wrap: wrap;
       margin-top: 8px;
+      padding-left: 0;
       li {
         a {
           margin-right: 4px;
@@ -492,6 +493,9 @@
     }
   }
 }
+.text-asbestos-link {
+  color: #324A74 !important;
+}
 .calculator-section {
   max-width: 690px;
   width: 100%;
@@ -550,5 +554,29 @@
   font-style: normal;
   font-weight: 600;
 }
+.expres-calculator {
+  max-width: 690px;
+  width: 100%;
+  margin-top: 42px;
+  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 18px;
+  margin-bottom: 28px;
+  @media (max-width: 475px) {
+    text-align: center;
+  }
+  h2 {
+    color: #BC2649;
+    @media (max-width: 475px) {
+      margin-bottom: 10px;
+    }
 
+    span {
+      color: #324a74;
+      font-size: 22px;
+      @media (max-width: 475px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
 
