@@ -369,7 +369,13 @@
     text-transform: uppercase;
     margin-top: 40px;
   }
+.military-img {
 
+  .advocacy-img__quote {
+    height: 128px!important;
+    width: 100%;
+  }
+}
   .advocacy-img {
     position: relative;
     img {
@@ -388,7 +394,7 @@
       position: absolute;
       bottom: 0;
       background: rgba(0, 0, 0, 0.22);
-      height: 104px;
+      height: 90px;
       width: 100%;
       h3 {
         margin-top: 20px;
@@ -398,7 +404,7 @@
         color: #ffffff;
         margin-left: 37px;
         width: 100%;
-        max-width: 250px;
+        max-width: 330px;
         margin-bottom: 0;
         @media (max-width: 620px) {
           margin-left: 20px;
@@ -409,7 +415,7 @@
         font-size: 16px;
         line-height: 26px;
         color: #ffffff;
-        margin-left: 20px;
+        margin-left: 37px;
       }
     }
   }
@@ -429,6 +435,18 @@
       @media (max-width: 800px) {
         font-size: 22px;
       }
+    }
+  }
+}
+.military-veteran {
+  .advocacy-information {
+    width: 100%;
+    max-width: 420px !important;
+    
+  }
+  .military-forces__logo {
+    img {
+      margin-right: 5px !important;
     }
   }
 }

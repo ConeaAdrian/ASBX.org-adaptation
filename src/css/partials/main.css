@@ -2440,6 +2440,9 @@ nav {
     justify-content: center;
     text-transform: uppercase;
     margin-top: 40px; }
+  .container-about .military-img .advocacy-img__quote {
+    height: 128px !important;
+    width: 100%; }
   .container-about .advocacy-img {
     position: relative; }
     .container-about .advocacy-img img {
@@ -2457,7 +2460,7 @@ nav {
       position: absolute;
       bottom: 0;
       background: rgba(0, 0, 0, 0.22);
-      height: 104px;
+      height: 90px;
       width: 100%; }
       .container-about .advocacy-img__quote h3 {
         margin-top: 20px;
@@ -2467,7 +2470,7 @@ nav {
         color: #ffffff;
         margin-left: 37px;
         width: 100%;
-        max-width: 250px;
+        max-width: 330px;
         margin-bottom: 0; }
         @media (max-width: 620px) {
           .container-about .advocacy-img__quote h3 {
@@ -2477,7 +2480,7 @@ nav {
         font-size: 16px;
         line-height: 26px;
         color: #ffffff;
-        margin-left: 20px; }
+        margin-left: 37px; }
   .container-about .advocacy-information {
     width: 100%;
     max-width: 360px; }
@@ -2493,6 +2496,13 @@ nav {
       @media (max-width: 800px) {
         .container-about .advocacy-information h2 {
           font-size: 22px; } }
+
+.military-veteran .advocacy-information {
+  width: 100%;
+  max-width: 420px !important; }
+
+.military-veteran .military-forces__logo img {
+  margin-right: 5px !important; }
 
 .compensation-asbestos {
   margin-top: 20px;
