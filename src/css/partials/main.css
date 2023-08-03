@@ -2762,7 +2762,8 @@ nav {
           .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company .custom-select .select-selected {
             padding-left: 9px;
             height: 32px;
-            font-size: 14px; }
+            font-size: 14px;
+            padding-left: 5px; }
             .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company .custom-select .select-selected:after {
               top: 14px !important;
               right: 7px !important; }
@@ -3654,7 +3655,8 @@ nav {
   color: #000;
   text-overflow: ellipsis;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-left: 5px; }
 
 .activity-years {
   display: flex;
@@ -5293,6 +5295,7 @@ nav {
       display: flex;
       justify-content: space-between; }
       .top-search-mobile .search-block .search-dat .button-action .close {
+        text-align: center;
         border-radius: 2px;
         background: #fff;
         height: 22px;
