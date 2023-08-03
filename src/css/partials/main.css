@@ -4329,7 +4329,8 @@ nav {
 .job-site .content-products {
   display: flex;
   gap: 25px;
-  margin-top: 31px; }
+  margin-top: 31px;
+  flex-wrap: wrap; }
   @media (max-width: 520px) {
     .job-site .content-products {
       flex-direction: column; } }
@@ -4339,7 +4340,8 @@ nav {
     background: #fbfcff;
     padding: 17px 13px;
     max-width: 331px;
-    width: 100%; }
+    width: 100%;
+    flex: 0 0 calc(50% - 20px); }
     @media (max-width: 520px) {
       .job-site .content-products__categorization-cart {
         max-width: none; } }
