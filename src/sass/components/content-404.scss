@@ -82,14 +82,24 @@
     }
   }
   .alternative-result {
+    padding: 11px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.1);
+    background: #fffdf8;
+    max-width: 426px;
+    width: 100%;
     margin-top: 15px;
-    p {
-      margin-bottom: 3px;
-     a {
-      color: #bc2649;
-      font-size: 18px;
-      font-weight: 500;
-     }
+    ul {
+      li {
+        margin-bottom: 3px;
+        list-style-type: disc;
+        text-decoration-line: underline;
+       a {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+       }
+      }
     }
   }
 }
