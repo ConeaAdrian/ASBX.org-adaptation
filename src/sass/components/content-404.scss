@@ -55,3 +55,30 @@
     }
   }
 }
+
+.non-result {
+  .how-search {
+    padding: 11px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fffdf8;
+    max-width: 426px;
+    width: 100%;
+    margin-top: 19px;
+    ul {
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
+  .invalid-message {
+    margin-top: 5px;
+    color: #bc2649;
+    font-size: 16px;
+    font-weight: 400;
+    @media (max-width: 475px) {
+      font-size: 14px;
+      text-align: center;
+     }
+  }
+}

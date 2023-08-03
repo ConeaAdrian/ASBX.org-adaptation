@@ -1179,7 +1179,7 @@ button {
     font-size: 10px; }
   .breadcrumb .last-element {
     text-decoration: none;
-    color: #777;
+    color: #BC2649 !important;
     font-size: 12px;
     font-weight: 700; }
 
@@ -2987,8 +2987,9 @@ nav {
 .expres-calculator {
   max-width: 690px;
   width: 100%;
-  margin-top: 42px;
-  border-bottom: 1px solid #f3f3f3;
+  margin-top: 30px;
+  padding-top: 26px;
+  border-top: 1px solid #f3f3f3;
   padding-bottom: 18px;
   margin-bottom: 28px; }
   @media (max-width: 475px) {
@@ -3885,6 +3886,27 @@ nav {
       margin-top: 2rem;
       width: 100%;
       text-transform: uppercase !important; }
+
+.non-result .how-search {
+  padding: 11px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fffdf8;
+  max-width: 426px;
+  width: 100%;
+  margin-top: 19px; }
+  .non-result .how-search ul li {
+    list-style-type: disc; }
+
+.non-result .invalid-message {
+  margin-top: 5px;
+  color: #bc2649;
+  font-size: 16px;
+  font-weight: 400; }
+  @media (max-width: 475px) {
+    .non-result .invalid-message {
+      font-size: 14px;
+      text-align: center; } }
 
 .content-ship .about-text-ship {
   margin-top: 18px;
