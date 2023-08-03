@@ -68,7 +68,8 @@
     .custom-section__image {
       img {
         width: 550px;
-        height: 420px;
+        max-height: 459px;
+        height: 100%;
         object-fit: cover;
         @media (max-width: 850px) {
           width: 100%;
