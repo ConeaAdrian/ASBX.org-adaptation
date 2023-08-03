@@ -3235,7 +3235,7 @@ nav {
       padding: 10px;
       display: flex;
       flex-direction: column;
-      max-width: 185px;
+      max-width: 200px;
       width: 100%;
       padding-right: 0; }
       @media (max-width: 767px) {
