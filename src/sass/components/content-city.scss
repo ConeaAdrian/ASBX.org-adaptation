@@ -221,6 +221,7 @@
           width: 100%;
           &__select {
             .select-company {
+              margin-top: 19px;
               gap: 20px;
               display: flex;
               @media (max-width: 475px) {

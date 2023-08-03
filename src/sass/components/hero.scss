@@ -369,21 +369,11 @@
     text-transform: uppercase;
     margin-top: 40px;
   }
-  .advocacy-img__quote {
-    height: 128px!important;
-    width: 100%;
-    @media (max-width: 800px) {
-      display: none;
-    }
-  }
 .military-img {
 
   .advocacy-img__quote {
     height: 128px!important;
     width: 100%;
-    @media (max-width: 800px) {
-      display: none;
-    }
   }
 }
   .advocacy-img {
@@ -453,7 +443,7 @@
     width: 100%;
     max-width: 420px !important;
     @media (max-width: 767px) {
-      margin: 0 auto;
+        margin: 0 auto;
     }
   
     

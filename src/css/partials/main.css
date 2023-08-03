@@ -907,8 +907,6 @@ h2 {
 h3 {
   font-size: 18px;
   color: #036;
-  margin-bottom: 10px;
-  margin-top: 10px;
   font-weight: 500; }
   @media (max-width: 475px) {
     h3 {
@@ -2050,8 +2048,6 @@ nav {
 
 .military-index {
   margin-top: 45px; }
-  .military-index h3 {
-    width: 328px !important; }
   .military-index .advocacy-information .military-forces {
     display: flex;
     flex-direction: column;
@@ -2440,18 +2436,9 @@ nav {
     justify-content: center;
     text-transform: uppercase;
     margin-top: 40px; }
-  .container-about .advocacy-img__quote {
-    height: 128px !important;
-    width: 100%; }
-    @media (max-width: 800px) {
-      .container-about .advocacy-img__quote {
-        display: none; } }
   .container-about .military-img .advocacy-img__quote {
     height: 128px !important;
     width: 100%; }
-    @media (max-width: 800px) {
-      .container-about .military-img .advocacy-img__quote {
-        display: none; } }
   .container-about .advocacy-img {
     position: relative; }
     .container-about .advocacy-img img {
@@ -2733,6 +2720,7 @@ nav {
     .city-content .unable-locate .undiscovered-companies__content .add-company {
       width: 100%; }
       .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company {
+        margin-top: 19px;
         gap: 20px;
         display: flex; }
         @media (max-width: 475px) {
@@ -4518,10 +4506,7 @@ nav {
           font-weight: 600;
           padding-top: 4px;
           padding-bottom: 22px;
-          text-align: center; }
-          @media (max-width: 992px) {
-            .result-page .legal-representation .legal-information .ER-claims .revenue {
-              text-align: left; } }
+          text-align: left; }
         .result-page .legal-representation .legal-information .ER-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .ER-claims ul li {
@@ -4599,11 +4584,8 @@ nav {
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          text-align: center;
+          text-align: left;
           padding-bottom: 22px; }
-          @media (max-width: 992px) {
-            .result-page .legal-representation .legal-information .AVG-claims .revenue {
-              text-align: left; } }
         .result-page .legal-representation .legal-information .AVG-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .AVG-claims ul li {
@@ -4684,11 +4666,8 @@ nav {
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
-          text-align: center;
+          text-align: left;
           padding-bottom: 22px; }
-          @media (max-width: 992px) {
-            .result-page .legal-representation .legal-information .IR-claims .revenue {
-              text-align: left; } }
         .result-page .legal-representation .legal-information .IR-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .IR-claims ul li {
@@ -4750,10 +4729,7 @@ nav {
       font-weight: 600;
       padding-top: 4px;
       padding-bottom: 22px;
-      text-align: center; }
-      @media (max-width: 992px) {
-        .result-page .your-own .revenue {
-          text-align: left; } }
+      text-align: left; }
     .result-page .your-own ul {
       list-style: none; }
       .result-page .your-own ul li {
