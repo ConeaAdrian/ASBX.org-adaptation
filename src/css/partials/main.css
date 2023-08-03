@@ -2598,10 +2598,12 @@ nav {
     background: rgba(147, 186, 255, 0.18) !important; }
   .city-content .job-site-section .search-filter p {
     text-transform: uppercase;
-    font-weight: 700; }
+    font-weight: 700;
+    color: #BC2649; }
   .city-content .job-site-section .search-filter .search-text {
     font-size: 14px;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #BC2649; }
   .city-content .job-site-section .search-filter__table {
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -2613,6 +2615,9 @@ nav {
     margin-bottom: 40px;
     gap: 6px;
     display: grid; }
+    @media (max-width: 475px) {
+      .city-content .job-site-section .search-filter__table {
+        text-align: center; } }
     .city-content .job-site-section .search-filter__table p {
       text-transform: inherit; }
     .city-content .job-site-section .search-filter__table .search-alphabet {
@@ -2630,7 +2635,8 @@ nav {
         gap: 5px;
         list-style-type: none; }
         .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul li {
-          font-size: 14px; }
+          font-size: 14px;
+          color: #324A74; }
     .city-content .job-site-section .search-filter__table .search-form {
       max-width: 520px;
       align-items: center;
