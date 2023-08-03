@@ -2594,6 +2594,9 @@ nav {
     border-left: 3px solid #bc2649;
     padding-left: 10px;
     margin-bottom: 36px; }
+  .city-content .job-site-section .boiler-search__table {
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    background: rgba(147, 186, 255, 0.18) !important; }
   .city-content .job-site-section .search-filter p {
     text-transform: uppercase;
     font-weight: 700; }
