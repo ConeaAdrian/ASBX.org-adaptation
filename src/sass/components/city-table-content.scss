@@ -59,7 +59,10 @@
   border: 1px solid #dbdbdb;
   background: #fbfcff;
   position: relative;
-  padding: 15px 20px;
+  padding: 15px 17px;
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
   @media (max-width: 620px) {
     padding: 11px 6px;
   }
@@ -83,19 +86,19 @@
   }
   p {
     font-size: 14px;
-    margin-top: 8px;
-    margin-bottom: 10px;
 
     b {
       font-size: 14px !important;
     }
   }
   .block-data {
-    gap: 4px !important;
     display: grid;
     p {
       margin: 0;
     }
+  }
+  li {
+    margin-bottom: 0;
   }
 }
 .general-information-table {
