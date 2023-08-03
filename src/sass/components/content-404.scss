@@ -79,6 +79,26 @@
     @media (max-width: 475px) {
       font-size: 14px;
       text-align: center;
-     }
+    }
+  }
+}
+
+.text-available {
+  color: #324a74;
+  font-size: 16px;
+  font-weight: 500;
+  @media (max-width: 475px) {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.no-verified {
+  color: #324a74;
+  font-size: 16px;
+  font-weight: 300;
+
+  b {
+    font-weight: 500;
   }
 }
