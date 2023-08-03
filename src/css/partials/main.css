@@ -2867,7 +2867,7 @@ nav {
 
 .notation {
   width: 100%;
-  max-width: 387px;
+  max-width: 625px;
   margin-top: 13px;
   border-left: 3px solid #bc2649;
   padding-left: 15px;
@@ -3907,6 +3907,24 @@ nav {
     .non-result .invalid-message {
       font-size: 14px;
       text-align: center; } }
+
+.text-available {
+  color: #324a74;
+  font-size: 16px;
+  font-weight: 500; }
+  @media (max-width: 475px) {
+    .text-available {
+      font-size: 14px;
+      text-align: center; } }
+
+.no-verified {
+  color: #324a74;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 25px; }
+  .no-verified b {
+    font-weight: 500; }
 
 .content-ship .about-text-ship {
   margin-top: 18px;
