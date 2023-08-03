@@ -1784,7 +1784,13 @@ nav {
         nav ul li a:not(:only-child):after,
         nav ul li a:visited:not(:only-child):after {
           padding-left: 4px;
-          content: " ▾"; }
+          content: " ▾";
+          top: -1px;
+          position: absolute; }
+          @media (max-width: 992px) {
+            nav ul li a:not(:only-child):after,
+            nav ul li a:visited:not(:only-child):after {
+              top: 14px; } }
       nav ul li ul li {
         min-width: 190px; }
         nav ul li ul li a {
@@ -1908,7 +1914,7 @@ nav {
     border-radius: 1px;
     height: 2.5px;
     width: 30px;
-    background: #324A74;
+    background: #324a74;
     position: absolute;
     display: block;
     content: "";
