@@ -3376,6 +3376,10 @@ nav {
   margin-bottom: 20px;
   flex-direction: column;
   padding: 7px 14px; }
+  .jobsite-card h2 {
+    border: none;
+    padding-top: 0;
+    margin-top: 0; }
   .jobsite-card__content .sorting-job {
     display: flex;
     align-items: center; }
@@ -3511,6 +3515,10 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px; }
+  .boiler-card h2 {
+    border: none;
+    margin-top: 0;
+    padding-top: 0; }
   .boiler-card__content {
     align-items: end; }
     @media (max-width: 620px) {

@@ -98,6 +98,11 @@
   margin-bottom: 20px;
   flex-direction: column;
   padding: 7px 14px;
+  h2 {
+    border: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
 
   &__content {
     .sorting-job {
@@ -275,6 +280,12 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  h2 {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
   &__content {
     align-items: end;
     @media (max-width: 620px) {
