@@ -119,6 +119,7 @@
       }
 
       .ER-claims {
+        height: fit-content;
         padding: 22px 16px;
         max-width: 280px;
         width: 100%;
@@ -215,6 +216,7 @@
       }
 
       .AVG-claims {
+        height: fit-content;
         padding: 22px 16px;
         max-width: 280px;
         width: 100%;
@@ -319,6 +321,7 @@
         }
       }
       .IR-claims {
+        height: fit-content;
         padding: 22px 16px;
         max-width: 280px;
         width: 100%;
@@ -584,6 +587,8 @@
           width: 100%;
           margin-bottom: 11px;
           padding: 0 12px;
+          height: 28px;
+          font-size: 12px;
           &::placeholder {
             color: #000;
             font-size: 12px !important;
