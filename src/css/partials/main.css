@@ -3052,8 +3052,8 @@ nav {
   padding-bottom: 18px;
   border-bottom: 1px solid #F3F3F3; }
   .bar-jobcity .search-filter__table {
-    margin-bottom: 0;
-    margin-top: 22px; }
+    margin-bottom: 0 !important;
+    margin-top: 22px !important; }
 
 .baner-company {
   width: 100%;
