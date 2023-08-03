@@ -1301,84 +1301,82 @@ button {
       font-weight: 600;
       font-size: 12px; }
 
-.lawyers-information {
-  padding-top: 26px;
-  margin-top: 30px;
-  border-top: 1px solid #f3f3f3; }
-  .lawyers-information .block-lawyers {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 4px;
-    margin-top: 20px;
-    padding: 13px;
-    border: 1px solid #ebebeb;
-    background: #fbfbfb;
+.lawyers-information .block-lawyers {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 13px;
+  border: 1px solid #ebebeb;
+  background: #fbfbfb;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 475px) {
+    .lawyers-information .block-lawyers {
+      max-width: none; } }
+  .lawyers-information .block-lawyers__about {
     display: flex;
-    flex-direction: column; }
-    @media (max-width: 475px) {
-      .lawyers-information .block-lawyers {
-        max-width: none; } }
-    .lawyers-information .block-lawyers__about {
-      display: flex;
-      gap: 17px;
-      align-items: center; }
-      .lawyers-information .block-lawyers__about .lawyers-data h3 {
-        margin: 0;
-        color: #324a74;
-        font-size: 16px;
-        font-weight: 500;
-        text-decoration-line: underline;
-        margin-bottom: 3px; }
-      .lawyers-information .block-lawyers__about .lawyers-data p {
-        color: #202020;
-        font-size: 14px;
-        font-weight: 400; }
-        .lawyers-information .block-lawyers__about .lawyers-data p b {
-          color: #202020;
-          font-size: 14px !important; }
-    .lawyers-information .block-lawyers .contact {
-      display: flex;
-      gap: 7px;
-      margin-top: 14px; }
-      .lawyers-information .block-lawyers .contact img {
-        color: #bc2649;
-        width: 14px;
-        height: 14px; }
-      .lawyers-information .block-lawyers .contact a {
-        color: #202020;
-        font-size: 14px;
-        font-weight: 400; }
-      .lawyers-information .block-lawyers .contact .number {
-        text-align: center;
-        display: flex;
-        gap: 5px; }
-      .lawyers-information .block-lawyers .contact .message {
-        text-align: center;
-        display: flex;
-        gap: 5px; }
-  .lawyers-information__content {
-    display: flex;
-    gap: 11px;
-    margin-top: 8px;
+    gap: 17px;
     align-items: center; }
-    .lawyers-information__content .data .name {
-      text-decoration-line: underline;
-      margin-bottom: 5px; }
-    .lawyers-information__content .data .disease {
+    .lawyers-information .block-lawyers__about .lawyers-data h3 {
+      margin: 0;
       color: #324a74;
-      font-size: 12px;
-      font-weight: 500; }
-    .lawyers-information__content .data .experience {
-      font-size: 12px;
-      font-weight: 500; }
-      .lawyers-information__content .data .experience span {
-        font-weight: 400; }
-  .lawyers-information .button {
-    width: 160px;
-    height: 36px; }
-    @media (max-width: 500px) {
-      .lawyers-information .button {
-        margin-top: 15px; } }
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration-line: underline;
+      margin-bottom: 3px; }
+    .lawyers-information .block-lawyers__about .lawyers-data p {
+      color: #202020;
+      font-size: 14px;
+      font-weight: 400; }
+      .lawyers-information .block-lawyers__about .lawyers-data p b {
+        color: #202020;
+        font-size: 14px !important; }
+  .lawyers-information .block-lawyers .contact {
+    display: flex;
+    gap: 7px;
+    margin-top: 14px; }
+    .lawyers-information .block-lawyers .contact img {
+      color: #bc2649;
+      width: 14px;
+      height: 14px; }
+    .lawyers-information .block-lawyers .contact a {
+      color: #202020;
+      font-size: 14px;
+      font-weight: 400; }
+    .lawyers-information .block-lawyers .contact .number {
+      text-align: center;
+      display: flex;
+      gap: 5px; }
+    .lawyers-information .block-lawyers .contact .message {
+      text-align: center;
+      display: flex;
+      gap: 5px; }
+
+.lawyers-information__content {
+  display: flex;
+  gap: 11px;
+  margin-top: 8px;
+  align-items: center; }
+  .lawyers-information__content .data .name {
+    text-decoration-line: underline;
+    margin-bottom: 5px; }
+  .lawyers-information__content .data .disease {
+    color: #324a74;
+    font-size: 12px;
+    font-weight: 500; }
+  .lawyers-information__content .data .experience {
+    font-size: 12px;
+    font-weight: 500; }
+    .lawyers-information__content .data .experience span {
+      font-weight: 400; }
+
+.lawyers-information .button {
+  width: 160px;
+  height: 36px; }
+  @media (max-width: 500px) {
+    .lawyers-information .button {
+      margin-top: 15px; } }
 
 .scroll-up {
   position: fixed;
@@ -2562,6 +2560,11 @@ nav {
 .city-content h3 {
   color: #bc2649; }
 
+.city-content h2 {
+  margin-top: 27px;
+  padding-top: 23px;
+  border-top: 1px solid #F3F3F3; }
+
 .city-content .claim-type-column {
   width: 150px; }
 
@@ -2570,10 +2573,7 @@ nav {
 
 .city-content .job-site-section {
   max-width: 580px;
-  width: 100%;
-  border-bottom: 1px solid #f3f3f3;
-  padding-bottom: 30px;
-  margin-bottom: 25px; }
+  width: 100%; }
   .city-content .job-site-section .information-steps {
     list-style-type: none;
     counter-reset: list-item;
@@ -2684,10 +2684,7 @@ nav {
 
 .city-content .boiler-section {
   width: 100%;
-  max-width: 580px;
-  padding-top: 26px;
-  margin-top: 30px;
-  border-top: 1px solid #f3f3f3; }
+  max-width: 580px; }
   .city-content .boiler-section .boiler-card {
     margin-top: 21px; }
   .city-content .boiler-section .button-container {
@@ -2865,9 +2862,7 @@ nav {
 
 .city-content .content-table {
   display: flex;
-  gap: 10px;
-  border-bottom: 1px solid #f3f3f3;
-  padding-bottom: 40px; }
+  gap: 10px; }
 
 .city-content .nearby-cities {
   max-width: 580px;
@@ -2982,10 +2977,7 @@ nav {
 .calculator-section {
   max-width: 690px;
   width: 100%;
-  margin-top: 42px;
-  border-bottom: 1px solid #f3f3f3;
-  padding-bottom: 18px;
-  margin-bottom: 28px; }
+  margin-top: 42px; }
   @media (max-width: 475px) {
     .calculator-section h2 {
       margin-bottom: 10px; } }
@@ -3028,9 +3020,6 @@ nav {
 .expres-calculator {
   max-width: 690px;
   width: 100%;
-  margin-top: 30px;
-  padding-top: 26px;
-  border-top: 1px solid #f3f3f3;
   padding-bottom: 18px;
   margin-bottom: 28px; }
   @media (max-width: 475px) {
@@ -3704,10 +3693,7 @@ nav {
   margin-top: 18px;
   display: flex;
   gap: 23px;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #F3F3F3;
-  padding-bottom: 27px; }
+  justify-content: space-between; }
   @media (max-width: 475px) {
     .content-table {
       flex-direction: column; } }
@@ -4288,6 +4274,14 @@ nav {
   font-size: 12px;
   margin-top: 5px; }
 
+.job-site h2 {
+  margin-top: 27px;
+  padding-top: 23px;
+  border-top: 1px solid #F3F3F3; }
+
+.job-site h3 {
+  padding-top: 19px; }
+
 .job-site .responsible-company {
   margin: 11px 0; }
   .job-site .responsible-company li {
@@ -4308,8 +4302,7 @@ nav {
 .job-site .content-products {
   display: flex;
   gap: 25px;
-  margin-top: 31px;
-  margin-bottom: 33px; }
+  margin-top: 31px; }
   @media (max-width: 520px) {
     .job-site .content-products {
       flex-direction: column; } }
@@ -4337,10 +4330,7 @@ nav {
         margin-bottom: 0; }
 
 .job-site .occupational {
-  margin-top: 18px;
-  margin-bottom: 17px;
-  border-bottom: 1px solid #f3f3f3;
-  padding-bottom: 22px; }
+  margin-top: 18px; }
 
 .job-site .jobsite-card {
   padding: 21px 16px;
@@ -4353,9 +4343,6 @@ nav {
   flex-wrap: wrap;
   gap: 33px;
   margin-top: 26px;
-  border-bottom: 1px solid #f3f3f3;
-  padding-bottom: 34px;
-  margin-bottom: 19px;
   align-items: end; }
   .sort-chase__content {
     width: 100%;

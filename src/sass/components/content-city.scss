@@ -2,6 +2,11 @@
   h3 {
     color: #bc2649;
   }
+  h2 {
+    margin-top: 27px;
+    padding-top: 23px;
+    border-top: 1px solid #F3F3F3;
+  }
 
   .claim-type-column {
     width: 150px;
@@ -14,9 +19,6 @@
   .job-site-section {
     max-width: 580px;
     width: 100%;
-    border-bottom: 1px solid #f3f3f3;
-    padding-bottom: 30px;
-    margin-bottom: 25px;
     .information-steps {
       list-style-type: none;
       counter-reset: list-item;
@@ -165,9 +167,6 @@
   .boiler-section {
     width: 100%;
     max-width: 580px;
-    padding-top: 26px;
-    margin-top: 30px;
-    border-top: 1px solid #f3f3f3;
     .boiler-card {
       margin-top: 21px;
     }
@@ -390,8 +389,6 @@
   .content-table {
     display: flex;
     gap: 10px;
-    border-bottom: 1px solid #f3f3f3;
-    padding-bottom: 40px;
   }
   .nearby-cities {
     max-width: 580px;
@@ -537,9 +534,6 @@
   max-width: 690px;
   width: 100%;
   margin-top: 42px;
-  border-bottom: 1px solid #f3f3f3;
-  padding-bottom: 18px;
-  margin-bottom: 28px;
   h2 {
     @media (max-width: 475px) {
       margin-bottom: 10px;
@@ -594,9 +588,7 @@
 .expres-calculator {
   max-width: 690px;
   width: 100%;
-  margin-top: 30px;
-  padding-top: 26px;
-  border-top: 1px solid #f3f3f3;
+ 
   padding-bottom: 18px;
   margin-bottom: 28px;
   @media (max-width: 475px) {

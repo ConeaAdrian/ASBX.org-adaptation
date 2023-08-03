@@ -1,4 +1,12 @@
 .job-site {
+  h2 {
+    margin-top: 27px;
+    padding-top: 23px;
+    border-top: 1px solid #F3F3F3;
+  }
+  h3 {
+    padding-top: 19px;
+  }
   .responsible-company {
     margin: 11px 0;
     li {
@@ -22,7 +30,6 @@
     display: flex;
     gap: 25px;
     margin-top: 31px;
-    margin-bottom: 33px;
     @media (max-width: 520px) {
       flex-direction: column;
     }
@@ -58,9 +65,6 @@
   }
   .occupational {
     margin-top: 18px;
-    margin-bottom: 17px;
-    border-bottom: 1px solid #f3f3f3;
-    padding-bottom: 22px;
   }
 
   .jobsite-card {
@@ -75,9 +79,6 @@
   flex-wrap: wrap;
   gap: 33px;
   margin-top: 26px;
-  border-bottom: 1px solid #f3f3f3;
-  padding-bottom: 34px;
-  margin-bottom: 19px;
   align-items: end;
   &__content {
     width: 100%;
