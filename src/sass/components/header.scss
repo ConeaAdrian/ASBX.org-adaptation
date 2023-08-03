@@ -73,8 +73,10 @@ nav {
         font-weight: 500;
         font-size: 13px;
         text-transform: uppercase;
+        height: 15px;
         @media (max-width: 992px) {
           color: black;
+          height: auto;
         }
 
         &:not(:only-child):after {
