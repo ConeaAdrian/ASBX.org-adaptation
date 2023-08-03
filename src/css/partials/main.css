@@ -4044,6 +4044,9 @@ nav {
   .content-ship .sort-chase {
     justify-content: center; } }
 
+.content-ship .equipment-box ul li {
+  list-style-type: disc; }
+
 .contact .hreader-contact {
   width: 100%;
   max-width: 580px;
