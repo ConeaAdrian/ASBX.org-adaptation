@@ -2571,7 +2571,7 @@ nav {
 .city-content h2 {
   margin-top: 27px;
   padding-top: 23px;
-  border-top: 1px solid #F3F3F3; }
+  border-top: 1px solid #f3f3f3; }
 
 .city-content .claim-type-column {
   width: 150px; }
@@ -2607,11 +2607,11 @@ nav {
   .city-content .job-site-section .search-filter p {
     text-transform: uppercase;
     font-weight: 700;
-    color: #BC2649; }
+    color: #bc2649; }
   .city-content .job-site-section .search-filter .search-text {
     font-size: 14px;
     font-weight: 500;
-    color: #BC2649; }
+    color: #bc2649; }
   .city-content .job-site-section .search-filter__table {
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -2644,7 +2644,7 @@ nav {
         list-style-type: none; }
         .city-content .job-site-section .search-filter__table .search-alphabet .alphabet ul li {
           font-size: 14px;
-          color: #324A74; }
+          color: #324a74; }
     .city-content .job-site-section .search-filter__table .search-form {
       max-width: 520px;
       align-items: center;
@@ -2694,7 +2694,9 @@ nav {
   width: 100%;
   max-width: 580px; }
   .city-content .boiler-section .boiler-card {
-    margin-top: 21px; }
+    margin-top: 21px;
+    width: 100%;
+    max-width: 580px; }
   .city-content .boiler-section .button-container {
     margin-top: 39px;
     display: flex;
