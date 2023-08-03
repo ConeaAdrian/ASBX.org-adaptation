@@ -86,6 +86,9 @@
       color: #324a74;
       font-size: 18px;
       font-weight: 600;
+      @media (max-width: 475px) {
+        font-size: 16px;
+      }
     }
 
     .compensation-section__table {

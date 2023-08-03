@@ -1,0 +1,48 @@
+.trust-fund {
+    h2 {
+        border-top: 1px solid #F3F3F3;
+    margin-top: 21px;
+    padding-top: 21px;
+    }
+  .general-information-table {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 21px 0;
+
+    .company-logo {
+        @media (max-width: 475px) {
+            margin: 0 auto;
+          }
+    }
+  }
+  .status-active {
+    color: #324a74;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 21px;
+
+    span {
+      color: #bc2649;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .expres-calculator {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .sort-chase {
+    border: none;
+    padding-bottom: 0;
+  }
+}
+
+.mark-text {
+    
+    li {
+        list-style-type: disc;
+    }
+}
