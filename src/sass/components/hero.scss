@@ -502,6 +502,9 @@
       font-size: 20px;
       font-family: "Roboto Serif", serif;
       font-weight: 500;
+      @media (max-width: 475px) {
+        font-size: 18px !important;
+      }
     }
   }
   .text-color {
