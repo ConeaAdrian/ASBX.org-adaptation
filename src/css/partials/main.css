@@ -3919,10 +3919,12 @@ nav {
 
 .non-result .alternative-result {
   margin-top: 15px; }
-  .non-result .alternative-result p a {
-    color: #324a74;
-    font-size: 18px;
-    font-weight: 500; }
+  .non-result .alternative-result p {
+    margin-bottom: 3px; }
+    .non-result .alternative-result p a {
+      color: #bc2649;
+      font-size: 18px;
+      font-weight: 500; }
 
 .text-available {
   color: #324a74;
