@@ -407,7 +407,7 @@
         max-width: 330px;
         margin-bottom: 0;
         @media (max-width: 620px) {
-          margin-left: 20px;
+          margin-left: 5px;
         }
       }
       p {
@@ -416,6 +416,10 @@
         line-height: 26px;
         color: #ffffff;
         margin-left: 37px;
+        @media (max-width: 620px) {
+          margin-left: 5px;
+          font-size: 14px;
+        }
       }
     }
   }

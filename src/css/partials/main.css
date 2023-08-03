@@ -2470,13 +2470,17 @@ nav {
         margin-bottom: 0; }
         @media (max-width: 620px) {
           .container-about .advocacy-img__quote h3 {
-            margin-left: 20px; } }
+            margin-left: 5px; } }
       .container-about .advocacy-img__quote p {
         font-weight: 700;
         font-size: 16px;
         line-height: 26px;
         color: #ffffff;
         margin-left: 37px; }
+        @media (max-width: 620px) {
+          .container-about .advocacy-img__quote p {
+            margin-left: 5px;
+            font-size: 14px; } }
   .container-about .advocacy-information {
     width: 100%;
     max-width: 360px; }
