@@ -4439,7 +4439,7 @@ nav {
       padding: 7px 20px; }
       @media (max-width: 475px) {
         .bottom-banner .banner-calculate .container {
-          padding: 10px; } }
+          padding: 7px; } }
     .bottom-banner .banner-calculate .content-information {
       display: flex;
       justify-content: space-between; }
@@ -4459,7 +4459,7 @@ nav {
           margin-right: 10px; }
           @media (max-width: 475px) {
             .bottom-banner .banner-calculate .content-information .claims-result h3 {
-              font-size: 16px !important; } }
+              font-size: 14px !important; } }
         .bottom-banner .banner-calculate .content-information .claims-result p {
           color: white;
           margin: 0;
@@ -4468,7 +4468,7 @@ nav {
           margin-left: 10px; }
           @media (max-width: 475px) {
             .bottom-banner .banner-calculate .content-information .claims-result p {
-              font-size: 16px; } }
+              font-size: 14px; } }
         .bottom-banner .banner-calculate .content-information .claims-result__number {
           display: flex;
           align-items: center; }
@@ -4483,6 +4483,10 @@ nav {
         margin-top: 10px;
         align-items: center;
         justify-content: center; }
+        @media (max-width: 475px) {
+          .bottom-banner .banner-calculate .content-information .claims-buttons {
+            margin-top: 7px;
+            margin-bottom: 6px; } }
         .bottom-banner .banner-calculate .content-information .claims-buttons button {
           padding: 8px 12px;
           border-radius: 5px;
@@ -4490,7 +4494,8 @@ nav {
           font-size: 14px; }
           @media (max-width: 475px) {
             .bottom-banner .banner-calculate .content-information .claims-buttons button {
-              font-size: 14px; } }
+              font-size: 14px;
+              padding: 3px 7px !important; } }
           @media (max-width: 840px) {
             .bottom-banner .banner-calculate .content-information .claims-buttons button span {
               display: none; } }
@@ -4500,6 +4505,9 @@ nav {
           border-radius: 5px;
           border: 0;
           font-family: 'Inter', sans-serif; }
+          @media (max-width: 475px) {
+            .bottom-banner .banner-calculate .content-information .claims-buttons .calculate {
+              font-weight: 500; } }
         .bottom-banner .banner-calculate .content-information .claims-buttons .add-city {
           color: #324A74;
           background: transparent;
@@ -4508,6 +4516,9 @@ nav {
           background-color: white;
           font-weight: 700;
           font-family: 'Inter', sans-serif; }
+          @media (max-width: 475px) {
+            .bottom-banner .banner-calculate .content-information .claims-buttons .add-city {
+              font-weight: 500; } }
 
 .body-calculator {
   background: #f3f3f3; }
