@@ -562,6 +562,9 @@
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
       max-width: 316px;
       width: 100%;
+      @media (max-width: 475px) {
+        max-width: none;
+      }
 
       &__text {
         border-radius: 8px 8px 0px 0px;
@@ -606,6 +609,9 @@
           max-width: 254px;
           height: 28px;
           margin-bottom: 11px;
+          @media (max-width: 475px) {
+            max-width: none;
+          }
 
           .select-selected {
             max-width: none;
