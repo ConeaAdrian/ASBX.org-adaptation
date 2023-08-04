@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ro">
   <head>
@@ -195,203 +194,172 @@
     </div>
   </form>
 </div>
+
+  <div class="top-search-mobile">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="#">Home</a>
+      <span>|</span>
+      <a href="#">Florida</a>
+      <span>|</span>
+      <a href="#">Miami</a>
+      <span>|</span>
+      <span class="last-element">Mesothelioma Compensation</span>
+    </div>
+
+    <div class="button-search-mobile">
+      <button id="open-search-block" class="search-button">
+        <img src="../../img/search-user.svg" alt="" />
+        Find claims, compensation, legal advice
+      </button>
+    </div>
+    <p>
+      Search result for available mesothelioma compensation sources and amounts
+      in Miami, FL.
+    </p>
+  </div>
+
+  <div id="search-block" class="search-block">
+    <div class="search-dat">
+      <div class="search-mobile">
+        <img class="search-img" src="../../img/search-user.svg" alt="" />
+        <div class="search-mobile__compensation">
+          <input
+            type="text"
+            id="compensation-input"
+            placeholder="Find claims, compensation, legal advice"
+            oninput="handleInput('compensation-input')"
+          />
+          <div class="element-claims">
+            <ul>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Mesothelioma Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Lung Cancer Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/donate.svg" alt="" />
+                <p>Severe Asbestosis Compensation</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/user check.svg" alt="" />
+                <p>Free Legal Advise (talk to an attorney)</p>
+              </li>
+              <li onclick="populateInput(this)">
+                <img src="../../img/location.svg" alt="" />
+                <p>Add a missing asbestos site to the data base</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Butonul de ștergere, cu id-ul "close-button-compensation" -->
+        <img
+          id="close-button-compensation"
+          src="../../img/close.svg"
+          alt=""
+          onclick="clearInput('compensation-input')"
+        />
+      </div>
+      <div class="location-mobile">
+        <img class="location-img" src="../../img/location 1.svg" alt="" />
+        <input
+          type="text"
+          id="location-input"
+          placeholder="Current Location"
+          oninput="handleInput('location-input')"
+        />
+        <img
+          id="close-button-location"
+          src="../../img/close.svg"
+          alt=""
+          onclick="clearInput('location-input')"
+        />
+      </div>
+
+      <div class="button-action">
+        <button id="close-search-block" class="close">Close</button>
+        <button class="search">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
 <div class="body-page">
   <div class="container">
 
     <div class="general-page page-suplimentar">
-        <section class="asbestos multiple-page">
-  <h1>Asbestos Exposure and Cancer Risk</h1>
-  <div class="bar"></div>
-  <p>
-    Asbestos, a group of naturally occurring minerals known for their resistance
-    to heat, fire, and chemicals, is widely used in various industries. However,
-    it poses significant health risks, such as mesothelioma, lung cancer, and
-    other diseases. This article provides insights into asbestos, its uses, and
-    the associated health hazards of exposure.
+        <section class="add-job">
+  <h1>
+    Mesothelioma Compensation for asbestos victims that worked and lived in
+    Leipers Fork, TN
+  </h1>
+  <div class="principal-bar"></div>
+  <p class="text-information">
+    Search result for available mesothelioma compensation sources and amounts in
+    Leipers Fork, TN
   </p>
-
-  <div class="component-information">
-    <div class="content-summarizer">
-      <p>Content Summarizer:</p>
-      <ol>
-        <li>Asbestos Overview</li>
-        <li>Commercial Use of Asbestos</li>
-        <li>Health Impacts of Asbestos Exposure</li>
-        <li>At-risk Populations for Asbestos-related Diseases</li>
-        <li>Key Factors Influencing Asbestos Exposure Risks</li>
-        <li>Smoking and Asbestos Exposure</li>
-        <li>Detection of Asbestos-related Diseases</li>
-      </ol>
+  <span class="no-verifide-element"
+    >There are no verified asbestos job-sites in:
+    <b>“Leipers Fork, TN, 37064”</b></span
+  >
+  <p class="notation">
+    If you have worked at any job sites in Miami, FL that are not included in
+    our database, please add them. Simply provide your job details in the box
+    below and click the "Add" button to submit your claim.
+  </p>
+  <form class="undiscovered-companies">
+    <div class="undiscovered-companies__content">
+      <div class="add-company">
+        <h3><a href="">Add a Miami, FL Job-site</a></h3>
+        <div class="add-company__select">
+          <p>Enter Company Name Bellow:</p>
+          <div class="select-company">
+            <input type="text" placeholder="Ex: Shell Company" />
+            <div class="custom-select search-element">
+              <select id="selectJob" class="">
+                <option class="first-alternative" value="0">
+                  Select Job Type
+                </option>
+                <option value="lista2">Listă 2</option>
+                <option value="lista3">Listă 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="checkbox">
+            <p>When did you worked there?:</p>
+            <div class="checkbox__select">
+              <div class="selected-item">
+                <label for="beforeCheckbox">Before 1990</label>
+                <input type="radio" name="drone" id="beforeCheckbox" />
+                <br />
+                <label for="afterCheckbox">After 1990</label>
+                <input type="radio" name="drone" id="afterCheckbox" />
+              </div>
+              <button type="submit" class="add-button-job" id="boilerButton">
+                Add To Your Claim
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <img src="../../img/asbestos-img.png" alt="">
+  </form>
+  <h3 class="red-text">Nearby Cities</h3>
+  <div class="nearby-cities">
+    <span>Check out Leipers Fork, TN Nearby Cities </span>
+    <ul class="location-list">
+      <li><a href="#">North Miami Beach,</a></li>
+      <li><a href="#">Miami Beach,</a></li>
+      <li><a href="#">South Miami,</a></li>
+      <li><a href="#">North Miami Beach,</a></li>
+      <li><a href="#">Miami Beach,</a></li>
+    </ul>
   </div>
-  <h2>Asbestos Overview</h2>
-  <div class="bar"></div>
-  <img class="video" src="../../img/Rectangle 895.png" alt="" />
-  <p>
-    Asbestos refers to a group of six naturally-occurring minerals. They are
-    divided into two main groups:
-  </p>
-  <ul>
-    <li>
-      <p>
-        Serpentine asbestos, which includes chrysotile, has long, curly fibers
-        used extensively in commerce.
-      </p>
-    </li>
-    <li>
-      <p>
-        Amphibole asbestos, including minerals like actinolite, tremolite,
-        anthophyllite, crocidolite, and amosite, has straight, brittle fibers
-        and limited fabrication capabilities.
-      </p>
-    </li>
-  </ul>
-  <p>
-    Apart from these, asbestos-like minerals like erionite are also present in
-    nature.
-  </p>
-
-  <h2>Commercial Use of Asbestos</h2>
-  <div class="bar"></div>
-  <span>Historical Context</span>
-  <p>
-    Asbestos use began to surge during World War II. From insulation in the
-    construction industry to fireproofing materials and strengthening plastics,
-    asbestos found broad applications across industries. It even found its way
-    into consumer goods, like certain garden products and crayons.
-  </p>
-  <span>Current Regulations</span>
-  <p>
-    Since the late 1970s, asbestos use has faced restrictions due to its
-    potential health risks. Regulations were established to minimize asbestos
-    exposure, from banning certain applications to enforcing regular inspections
-    for its presence in buildings. Efforts to mitigate asbestos risks have
-    significantly reduced its usage in the U.S.
-  </p>
-
-  <h2>Health Impacts of Asbestos Exposure</h2>
-  <div class="bar"></div>
-  <p>
-    Long-term asbestos exposure can lead to serious health issues. When tiny
-    asbestos fibers are disturbed, they can be breathed in and get stuck in the
-    lungs. This can lead to scarring and inflammation over a prolonged period.
-    Various health and environmental organizations classify asbestos as a human
-    carcinogen and link it to:
-  </p>
-  <ul>
-    <li>
-      <p>
-        Mesothelioma is a rare cancer affecting the chest and abdomen lining.
-      </p>
-    </li>
-    <li><p>Lung, larynx, and ovary cancers.</p></li>
-    <li>
-      <p>
-        Possible increase in the risk of stomach, pharynx, and colorectal
-        cancers.
-      </p>
-    </li>
-  </ul>
-  <p>
-    In addition to cancer, asbestos exposure can result in non-cancerous
-    diseases like asbestosis, inflammatory lung disease, and pleural disorders.
-  </p>
-
-  <h2>At-risk Populations for Asbestos-related Diseases</h2>
-  <div class="bar"></div>
-  <ul>
-    <li>
-      <p>
-        Regular asbestos contact, primarily in work environments, significantly
-        increases the disease risk.
-      </p>
-    </li>
-    <li>
-      <p>
-        Certain professions, including asbestos mining, construction,
-        shipbuilding, and other asbestos-related trades, carry higher exposure
-        risks.
-      </p>
-    </li>
-    <li>
-      <p>
-        Emergency personnel involved in significant events, like the September
-        11 attacks, are also at risk due to potential asbestos release into the
-        air.
-      </p>
-    </li>
-    <li>
-      <p>
-        Even brief exposures can result in asbestos-related diseases, which
-        might not manifest until decades after the initial exposure.
-      </p>
-    </li>
-  </ul>
-  <h2>Key Factors Influencing Asbestos Exposure Risks</h2>
-  <div class="bar"></div>
-  <p>Several factors can escalate the risk of mesothelioma:</p>
-  <ul>
-    <li><p>The extent and duration of asbestos exposure</p></li>
-    <li><p>Physical properties of the asbestos fibers</p></li>
-    <li><p>Source of exposure</p></li>
-    <li><p>Individual factors like smoking and existing lung diseases</p></li>
-    <li><p>Genetic mutations like BAP1</p></li>
-  </ul>
-  <h2>Smoking and Asbestos Exposure</h2>
-  <div class="bar"></div>
-  <p>
-    Asbestos exposure coupled with smoking can heighten the chances of
-    developing lung cancer. However, there's no evidence linking smoking to an
-    increased risk of mesothelioma. Asbestos-exposed individuals, regardless of
-    exposure level, are strongly advised against smoking.
-  </p>
-
-  <h2>Detection of Asbestos-related Diseases</h2>
-  <div class="bar"></div>
-  <p>
-    Individuals who may have been exposed to asbestos should seek medical advice
-    promptly, especially if they experience symptoms such as persistent cough,
-    shortness of breath, chest pain, difficulty swallowing, and weight loss.
-    Various diagnostic tools like chest X-rays, lung biopsies, and
-    bronchoscopies can help detect asbestos-related diseases. However, these
-    tests can't quantify the extent of asbestos exposure or predict disease
-    onset.
-  </p>
-  <h2>Express Mesothelioma Case Compensation Calculator</h2>
-  <div class="bar"></div>
-  <p>
-    Find out in few minutes how much compensation is available for you or a
-    family member
-  </p>
-  <div class="case-compensation">
-  <div class="case-compensation__content">
-    <img
-      class="img-compensation-alternative"
-      src="../../img/img-compensation-alternative.png"
-      alt=""
-    />
-    <div class="text-information">
-      <h3>
-        Leverage our expedient calculator, tailored to consider factors such as
-        your age, occupations, and job sites.
-      </h3>
-      <p>You will receive an instant result.</p>
-      <button>Start Here</button>
-    </div>
-    <img
-      class="img-compensation"
-      src="../../img/img-compensation-alternative.png"
-      alt=""
-    />
-  </div>
-</div>
-
-</section>
-
-        <div class="claims-select"><!-- <div class="general-claims">
+  <div class="claims-select-mobile"><div class="general-claims">
   <div class="claims-selected">
     <img src="../../img/calculator_iconred.png" alt="" />
     <div class="content-information">
@@ -419,9 +387,9 @@
       </div>
     </div>
     <div class="content-box__logo">
+      <img src="../../img/State.svg" alt="">
       <i class="fas fa-times"></i>
     </div>
-    <img src="../../img/State.svg" alt="">
   </div>
   
   <div class="content-box special-content-box">
@@ -438,12 +406,56 @@
       </div>
     </div>
     <div class="content-box__logo">
-      <i class="fas fa-times"></i>
+      <img src="../../img/City.svg" alt="">
+      <button><i class="fas fa-times"></i></button>
     </div>
-    <img src="../../img/City.svg" alt="">
   </div>
-</div> -->
+  <div class="content-box special-content-box">
+    <div class="content-box__information">
+      <b>107 Dry Cleaners</b>
+    </div>
+  </div>
+  
+  
 </div>
+</div>
+  <div class="expres-calculator">
+    <h2 id="sixth-information">
+      No Sure What To Do? <br />
+      <span>Try our Express Asbestos Case Value Calculator</span>
+    </h2>
+    <div class="bar"></div>
+    <p>
+      Discover the amount of compensation available for you or a loved one in
+      just a few minutes. (This calculator is recommended for family members.)
+    </p>
+    <div class="case-compensation">
+  <div class="case-compensation__content">
+    <img
+      class="img-compensation-alternative"
+      src="../../img/img-compensation-alternative.png"
+      alt=""
+    />
+    <div class="text-information">
+      <h3>
+        Leverage our expedient calculator, tailored to consider factors such as
+        your age, occupations, and job sites.
+      </h3>
+      <p>You will receive an instant result.</p>
+      <button>Start Here</button>
+    </div>
+    <img
+      class="img-compensation"
+      src="../../img/img-compensation-alternative.png"
+      alt=""
+    />
+  </div>
+</div>
+
+  </div>
+</section>
+
+        <div class="claims-select"></div>
     </div>
   </div>
 </div>

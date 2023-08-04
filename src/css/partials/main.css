@@ -1124,8 +1124,8 @@ button {
       font-size: 20px;
       font-weight: 400;
       color: #fff !important;
-      font-family: 'Inter', sans-serif !important;
-      border-bottom: 1px solid #E8DFDF;
+      font-family: "Inter", sans-serif !important;
+      border-bottom: 1px solid #e8dfdf;
       padding-bottom: 15px; }
       @media (max-width: 620px) {
         .case-compensation__content h3 {
@@ -1135,11 +1135,16 @@ button {
       padding-top: 15px;
       color: #fff !important;
       font-size: 12px;
-      font-weight: 800; }
+      font-weight: 800;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      font-size: 12px; }
       @media (max-width: 620px) {
         .case-compensation__content p {
           display: none; } }
     .case-compensation__content button {
+      font-size: 12px;
+      font-weight: 800;
       border-radius: 4px;
       background: #000;
       color: #fff !important;
@@ -2723,94 +2728,6 @@ nav {
   .city-content .boiler-section b {
     font-size: 14px !important; }
 
-.city-content .unable-locate .undiscovered-companies {
-  padding: 12px 19px;
-  width: 100%;
-  max-width: 580px;
-  border-radius: 4px;
-  border: 1px solid #fbf8f4;
-  background: #efefef;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-bottom: 38px;
-  margin-top: 38px; }
-  .city-content .unable-locate .undiscovered-companies__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    @media (max-width: 475px) {
-      .city-content .unable-locate .undiscovered-companies__content {
-        flex-direction: column;
-        align-items: end; } }
-    .city-content .unable-locate .undiscovered-companies__content h3 {
-      margin-bottom: 22px; }
-      .city-content .unable-locate .undiscovered-companies__content h3 a {
-        font-size: 16px;
-        font-weight: 600;
-        color: #000; }
-    .city-content .unable-locate .undiscovered-companies__content p {
-      color: #000;
-      font-size: 14px;
-      font-weight: 500; }
-    .city-content .unable-locate .undiscovered-companies__content .add-company {
-      width: 100%; }
-      .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company {
-        margin-top: 7px;
-        gap: 25px;
-        display: flex; }
-        @media (max-width: 475px) {
-          .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company {
-            flex-direction: column;
-            gap: 15px; } }
-        .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company input {
-          width: 100%;
-          border: 1px solid #dbdbdb;
-          background: #fff;
-          padding-bottom: 4px;
-          height: 32px;
-          padding-left: 9px; }
-          .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company input::placeholder {
-            color: #000;
-            font-size: 14px;
-            font-weight: 400; }
-        .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company .custom-select {
-          width: 100%; }
-          .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company .custom-select .select-selected {
-            padding-left: 9px;
-            height: 32px;
-            font-size: 14px;
-            padding-left: 5px; }
-            .city-content .unable-locate .undiscovered-companies__content .add-company__select .select-company .custom-select .select-selected:after {
-              top: 14px !important;
-              right: 7px !important; }
-    .city-content .unable-locate .undiscovered-companies__content .checkbox {
-      margin-top: 20px; }
-      .city-content .unable-locate .undiscovered-companies__content .checkbox input {
-        margin: 2px 5px; }
-      .city-content .unable-locate .undiscovered-companies__content .checkbox .add-button-job {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 600;
-        border-radius: 4px;
-        background: #26bc7d;
-        padding: 9px;
-        text-transform: uppercase; }
-        @media (max-width: 475px) {
-          .city-content .unable-locate .undiscovered-companies__content .checkbox .add-button-job {
-            margin-top: 23px; } }
-      .city-content .unable-locate .undiscovered-companies__content .checkbox__select {
-        display: flex;
-        justify-content: space-between; }
-        @media (max-width: 475px) {
-          .city-content .unable-locate .undiscovered-companies__content .checkbox__select {
-            flex-direction: column; } }
-        .city-content .unable-locate .undiscovered-companies__content .checkbox__select .selected-item {
-          display: flex;
-          align-items: center; }
-          .city-content .unable-locate .undiscovered-companies__content .checkbox__select .selected-item label {
-            color: #464545;
-            font-size: 14px;
-            font-weight: 600; }
-
 .city-content .page-navigation {
   display: flex;
   align-items: center;
@@ -2876,34 +2793,6 @@ nav {
   display: flex;
   gap: 10px; }
 
-.city-content .nearby-cities {
-  max-width: 580px;
-  margin-top: 17px;
-  border-radius: 4px;
-  border: 1px solid #d1d1d1;
-  background: #fbfcff;
-  padding: 21px 19px;
-  width: 100%; }
-  @media (max-width: 475px) {
-    .city-content .nearby-cities {
-      border: none;
-      background: transparent;
-      padding: 0; } }
-  .city-content .nearby-cities span {
-    color: #324a74;
-    font-size: 16px;
-    font-weight: 500; }
-  .city-content .nearby-cities .location-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 8px;
-    padding-left: 0; }
-    .city-content .nearby-cities .location-list li a {
-      margin-right: 4px;
-      font-size: 14px;
-      color: #324a74;
-      text-decoration-line: underline !important; }
-
 .city-content .information-steps-jobs ul {
   margin-bottom: 10px; }
   .city-content .information-steps-jobs ul li {
@@ -2912,6 +2801,34 @@ nav {
 .city-content .sort-chase__content {
   margin-top: 17px;
   margin-bottom: 34px; }
+
+.nearby-cities {
+  max-width: 580px;
+  margin-top: 17px;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  background: #fbfcff;
+  padding: 21px 19px;
+  width: 100%; }
+  @media (max-width: 475px) {
+    .nearby-cities {
+      border: none;
+      background: transparent;
+      padding: 0; } }
+  .nearby-cities span {
+    color: #324a74;
+    font-size: 16px;
+    font-weight: 500; }
+  .nearby-cities .location-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    padding-left: 0; }
+    .nearby-cities .location-list li a {
+      margin-right: 4px;
+      font-size: 14px;
+      color: #324a74;
+      text-decoration-line: underline !important; }
 
 .notation {
   width: 100%;
@@ -3056,6 +2973,94 @@ nav {
   .bar-jobcity .search-filter__table {
     margin-bottom: 0 !important;
     margin-top: 22px !important; }
+
+.undiscovered-companies {
+  padding: 12px 19px;
+  width: 100%;
+  max-width: 580px;
+  border-radius: 4px;
+  border: 1px solid #fbf8f4;
+  background: #efefef;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 38px;
+  margin-top: 38px; }
+  .undiscovered-companies__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 475px) {
+      .undiscovered-companies__content {
+        flex-direction: column;
+        align-items: end; } }
+    .undiscovered-companies__content h3 {
+      margin-bottom: 22px; }
+      .undiscovered-companies__content h3 a {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000; }
+    .undiscovered-companies__content p {
+      color: #000;
+      font-size: 14px;
+      font-weight: 500; }
+    .undiscovered-companies__content .add-company {
+      width: 100%; }
+      .undiscovered-companies__content .add-company__select .select-company {
+        margin-top: 7px;
+        gap: 25px;
+        display: flex; }
+        @media (max-width: 475px) {
+          .undiscovered-companies__content .add-company__select .select-company {
+            flex-direction: column;
+            gap: 15px; } }
+        .undiscovered-companies__content .add-company__select .select-company input {
+          width: 100%;
+          border: 1px solid #dbdbdb;
+          background: #fff;
+          padding-bottom: 4px;
+          height: 32px;
+          padding-left: 9px; }
+          .undiscovered-companies__content .add-company__select .select-company input::placeholder {
+            color: #000;
+            font-size: 14px;
+            font-weight: 400; }
+        .undiscovered-companies__content .add-company__select .select-company .custom-select {
+          width: 100%; }
+          .undiscovered-companies__content .add-company__select .select-company .custom-select .select-selected {
+            padding-left: 9px;
+            height: 32px;
+            font-size: 14px;
+            padding-left: 5px; }
+            .undiscovered-companies__content .add-company__select .select-company .custom-select .select-selected:after {
+              top: 14px !important;
+              right: 7px !important; }
+    .undiscovered-companies__content .checkbox {
+      margin-top: 20px; }
+      .undiscovered-companies__content .checkbox input {
+        margin: 2px 5px; }
+      .undiscovered-companies__content .checkbox .add-button-job {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 4px;
+        background: #26bc7d;
+        padding: 9px;
+        text-transform: uppercase; }
+        @media (max-width: 475px) {
+          .undiscovered-companies__content .checkbox .add-button-job {
+            margin-top: 23px; } }
+      .undiscovered-companies__content .checkbox__select {
+        display: flex;
+        justify-content: space-between; }
+        @media (max-width: 475px) {
+          .undiscovered-companies__content .checkbox__select {
+            flex-direction: column; } }
+        .undiscovered-companies__content .checkbox__select .selected-item {
+          display: flex;
+          align-items: center; }
+          .undiscovered-companies__content .checkbox__select .selected-item label {
+            color: #464545;
+            font-size: 14px;
+            font-weight: 600; }
 
 .baner-company {
   width: 100%;
@@ -5470,3 +5475,23 @@ nav {
   .mark-text li {
     font-size: 16px;
     list-style-type: disc; }
+
+.add-job .text-information {
+  color: #324a74;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px; }
+
+.add-job .no-verifide-element {
+  color: #324a74;
+  font-size: 16px;
+  font-weight: 300; }
+  .add-job .no-verifide-element b {
+    color: #324a74;
+    font-size: 16px;
+    font-weight: 500; }
+
+.add-job h2 {
+  margin-top: 27px;
+  padding-top: 23px;
+  border-top: 1px solid #f3f3f3; }
