@@ -1840,8 +1840,10 @@ nav {
   .nav-list li {
     margin-bottom: 0; }
     .nav-list li a {
-      padding: 15px 0 !important;
       font-family: "Roboto Condensed", sans-serif !important; }
+      @media (max-width: 992px) {
+        .nav-list li a {
+          padding: 15px 0 !important; } }
   .nav-list .button-question {
     border: 1px solid #ffffff;
     border-radius: 4px;
