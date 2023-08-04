@@ -1318,20 +1318,22 @@ button {
     display: flex;
     gap: 17px;
     align-items: center; }
-    .lawyers-information .block-lawyers__about .lawyers-data h3 {
-      margin: 0;
-      color: #324a74;
-      font-size: 16px;
-      font-weight: 500;
-      text-decoration-line: underline;
-      margin-bottom: 3px; }
-    .lawyers-information .block-lawyers__about .lawyers-data p {
-      color: #202020;
-      font-size: 14px;
-      font-weight: 400; }
-      .lawyers-information .block-lawyers__about .lawyers-data p b {
+    .lawyers-information .block-lawyers__about .lawyers-data {
+      text-align: start; }
+      .lawyers-information .block-lawyers__about .lawyers-data h3 {
+        margin: 0;
+        color: #324a74;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration-line: underline;
+        margin-bottom: 3px; }
+      .lawyers-information .block-lawyers__about .lawyers-data p {
         color: #202020;
-        font-size: 14px !important; }
+        font-size: 14px;
+        font-weight: 400; }
+        .lawyers-information .block-lawyers__about .lawyers-data p b {
+          color: #202020;
+          font-size: 14px !important; }
   .lawyers-information .block-lawyers .contact {
     display: flex;
     gap: 7px;
@@ -3270,7 +3272,8 @@ nav {
         .general-claims .content-box__information .job p,
         .general-claims .content-box__information .time p {
           width: 132px;
-          font-weight: 400; }
+          font-weight: 400;
+          line-height: 16px; }
           @media (max-width: 767px) {
             .general-claims .content-box__information .job p,
             .general-claims .content-box__information .time p {
