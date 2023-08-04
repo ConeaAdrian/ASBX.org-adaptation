@@ -5495,3 +5495,47 @@ nav {
   margin-top: 27px;
   padding-top: 23px;
   border-top: 1px solid #f3f3f3; }
+
+.city-state h2 {
+  margin-top: 27px;
+  padding-top: 23px;
+  border-top: 1px solid #f3f3f3; }
+
+.city-state h3 {
+  padding-top: 19px;
+  margin-bottom: 11px; }
+
+.city-state .text-otation a {
+  font-weight: 500;
+  color: #15528e;
+  font-size: 16px;
+  text-decoration-line: underline !important; }
+  @media (max-width: 475px) {
+    .city-state .text-otation a {
+      font-size: 14px !important; } }
+
+.city-state .today-data {
+  color: #324a74;
+  font-size: 16px;
+  font-weight: 300; }
+  .city-state .today-data span {
+    color: #bc2649;
+    font-size: 16px;
+    font-weight: 500; }
+
+.city-state .search-option h3 {
+  margin-top: 30px;
+  padding-top: 19px;
+  border-top: 1px solid #f3f3f3; }
+
+.city-state .search-option ul {
+  margin-left: 10px; }
+  .city-state .search-option ul li {
+    list-style-type: disc;
+    margin-bottom: 0; }
+    .city-state .search-option ul li a {
+      color: #324a74;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-decoration-line: underline; }
