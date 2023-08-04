@@ -3169,7 +3169,10 @@ nav {
       .general-claims .claims-selected .content-information h2 {
         font-size: 16px;
         color: #324a74;
-        font-weight: 600; }
+        font-weight: 600;
+        border: 0;
+        margin-top: 0;
+        padding-top: 0; }
       .general-claims .claims-selected .content-information p {
         color: #324a74;
         font-size: 16px;
