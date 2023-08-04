@@ -3957,6 +3957,11 @@ nav {
       width: 100%;
       text-transform: uppercase !important; }
 
+.non-result h2 {
+  margin-top: 27px;
+  padding-top: 23px;
+  border-top: 1px solid #f3f3f3; }
+
 .non-result .how-search {
   padding: 11px 8px;
   border-radius: 4px;
