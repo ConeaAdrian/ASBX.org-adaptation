@@ -4004,6 +4004,15 @@ nav {
   .no-verified b {
     font-weight: 500; }
 
+.content-ship h2 {
+  margin-top: 27px;
+  padding-top: 23px;
+  border-top: 1px solid #F3F3F3; }
+
+.content-ship h3 {
+  padding-top: 19px;
+  margin-bottom: 11px; }
+
 .content-ship .about-text-ship {
   margin-top: 18px;
   margin-bottom: 15px; }
@@ -4022,8 +4031,7 @@ nav {
   padding: 18px 16px;
   width: 100%;
   max-width: 583px;
-  margin-top: 20px;
-  margin-bottom: 40px; }
+  margin-top: 20px; }
   .content-ship .ship-claims__content {
     display: flex;
     align-items: center; }
@@ -5439,5 +5447,15 @@ nav {
   border: none;
   padding-bottom: 0; }
 
-.mark-text li {
-  list-style-type: disc; }
+.trust-fund .contact-company b {
+  font-size: 16px !important; }
+
+.trust-fund .contact-company a {
+  text-decoration-line: underline !important; }
+
+.mark-text {
+  margin-top: 21px;
+  margin-left: 10px; }
+  .mark-text li {
+    font-size: 16px;
+    list-style-type: disc; }
