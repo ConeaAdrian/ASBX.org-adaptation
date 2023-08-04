@@ -33,9 +33,13 @@
 .equipment-ship {
   width: 100%;
   max-width: 439px;
-  margin: 15px 0;
+  margin: 21px 0;
   ul {
     margin-bottom: 15px;
+    li {
+      font-size: 16px;
+      font-weight: 300;
+    }
   }
   .button-show-more {
     border: 1px solid rgba(0, 0, 0, 0.1);

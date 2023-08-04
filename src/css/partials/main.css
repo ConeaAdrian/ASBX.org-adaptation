@@ -5402,9 +5402,12 @@ nav {
 .equipment-ship {
   width: 100%;
   max-width: 439px;
-  margin: 15px 0; }
+  margin: 21px 0; }
   .equipment-ship ul {
     margin-bottom: 15px; }
+    .equipment-ship ul li {
+      font-size: 16px;
+      font-weight: 300; }
   .equipment-ship .button-show-more {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
@@ -5435,45 +5438,44 @@ nav {
   .responsible-company li {
     list-style-type: disc; }
 
-.trust-fund h2 {
-  border-top: 1px solid #F3F3F3;
-  margin-top: 21px;
-  padding-top: 21px; }
-
-.trust-fund .general-information-table {
-  display: flex;
-  flex-direction: initial;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 21px 0; }
-  @media (max-width: 475px) {
+.trust-fund {
+  margin-bottom: 40px; }
+  .trust-fund h2 {
+    border-top: 1px solid #F3F3F3;
+    margin-top: 21px;
+    padding-top: 21px; }
+  .trust-fund .general-information-table {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 21px 0; }
     .trust-fund .general-information-table .company-logo {
-      margin: 0 auto; } }
-
-.trust-fund .status-active {
-  color: #324a74;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 21px; }
-  .trust-fund .status-active span {
-    color: #bc2649;
+      min-height: 192px;
+      height: 100%; }
+      @media (max-width: 475px) {
+        .trust-fund .general-information-table .company-logo {
+          margin: 0 auto; } }
+  .trust-fund .status-active {
+    color: #324a74;
     font-size: 16px;
-    font-weight: 600; }
-
-.trust-fund .expres-calculator {
-  border: none;
-  padding-top: 0;
-  padding-bottom: 0; }
-
-.trust-fund .sort-chase {
-  border: none;
-  padding-bottom: 0; }
-
-.trust-fund .contact-company b {
-  font-size: 16px !important; }
-
-.trust-fund .contact-company a {
-  text-decoration-line: underline !important; }
+    font-weight: 400;
+    margin-top: 21px; }
+    .trust-fund .status-active span {
+      color: #bc2649;
+      font-size: 16px;
+      font-weight: 600; }
+  .trust-fund .expres-calculator {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0; }
+  .trust-fund .sort-chase {
+    border: none;
+    padding-bottom: 0; }
+  .trust-fund .contact-company b {
+    font-size: 16px !important; }
+  .trust-fund .contact-company a {
+    text-decoration-line: underline !important; }
 
 .mark-text {
   margin-top: 21px;
