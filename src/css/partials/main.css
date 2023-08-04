@@ -3829,6 +3829,7 @@ nav {
       font-weight: 600;
       margin-top: 5px; }
     .general-information-table .content-summarizer ol {
+      padding-left: 19px;
       margin-top: 5px;
       margin-bottom: 0;
       color: #466d92; }
