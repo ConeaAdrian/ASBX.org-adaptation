@@ -1840,6 +1840,7 @@ nav {
   .nav-list li {
     margin-bottom: 0; }
     .nav-list li a {
+      padding: 15px 0 !important;
       font-family: "Roboto Condensed", sans-serif !important; }
   .nav-list .button-question {
     border: 1px solid #ffffff;
@@ -5403,7 +5404,8 @@ nav {
 .equipment-ship {
   width: 100%;
   max-width: 439px;
-  margin: 21px 0; }
+  margin: 21px 0;
+  margin-left: 10px; }
   .equipment-ship ul {
     margin-bottom: 15px; }
     .equipment-ship ul li {
