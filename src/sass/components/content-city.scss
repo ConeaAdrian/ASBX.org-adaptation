@@ -3,621 +3,115 @@
     color: #bc2649;
   }
   h2 {
-    margin-top: 27px;
-    padding-top: 23px;
+    margin-top: 20px;
+    padding-top: 20px;
     border-top: 1px solid #f3f3f3;
   }
 
-  .claim-type-column {
-    width: 150px;
+  .walking-steps {
+    li {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+    }
   }
-
-  .mesothelioma-column {
-    width: 200px;
-  }
-
-  .job-site-section {
-    max-width: 580px;
+}
+.content-job {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  &__search {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fbfbfb;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
     width: 100%;
-    .information-steps {
-      list-style-type: none;
-      counter-reset: list-item;
-      padding-left: 0;
-      padding-top: 6px;
-      padding-bottom: 10px;
-
-      li {
-        position: relative;
-        margin-bottom: 5px;
-        margin-left: 35px;
-
-        &::before {
-          content: counter(list-item) ". ";
-          margin-right: 5px;
-          position: absolute;
-          left: -20px;
-        }
-      }
+    padding: 20px;
+    @media only screen and (max-width: 948px) and (min-width: 767px) {
+      max-width: none;
     }
-    &__information {
-      border-left: 3px solid #bc2649;
-      padding-left: 10px;
-      margin-bottom: 36px;
+    @media (max-width: 699px) {
+      max-width: none;
     }
-    .boiler-search {
-      &__table {
-        border: 1px solid rgba(0, 0, 0, 0.06) !important;
-        background: rgba(147, 186, 255, 0.18) !important;
-      }
-    }
-    .search-filter {
-      p {
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #bc2649;
-      }
-      .search-text {
-        font-size: 14px;
-        font-weight: 500;
-        color: #bc2649;
-      }
 
-      &__table {
-        border-radius: 6px;
-        border: 1px solid rgba(0, 0, 0, 0.06);
-        background: #fbf8f4;
-        padding: 9px 14px;
-        margin-right: 8px;
+    p {
+      margin-bottom: 10px;
+    }
+    .select-job {
+      display: flex;
+      width: 100%;
+      height: 44px;
+
+      select {
         width: 100%;
-        margin-top: 31px;
-        margin-bottom: 40px;
-        gap: 6px;
-        display: grid;
-        @media (max-width: 475px) {
-          text-align: center;
+        max-width: 242px;
+        padding-left: 10px;
+        @media only screen and (max-width: 948px) and (min-width: 767px) {
+          max-width: none;
         }
-        p {
-          text-transform: inherit;
+        @media (max-width: 699px) {
+          max-width: none;
         }
+      }
+      .button-search {
+        border-radius: 0px 4px 4px 0px;
+        background: #bc2649;
+        width: 46px;
+        height: 44px;
 
-        .search-alphabet {
-          align-items: center;
-          @media (max-width: 767px) {
-            flex-direction: column;
-          }
-          p {
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 11px;
-          }
-          .alphabet {
-            ul {
-              display: flex;
-              flex-wrap: wrap;
-              gap: 5px;
-              list-style-type: none;
-              li {
-                font-size: 14px;
-                color: #324a74;
-              }
-            }
-          }
-        }
-        .search-form {
-          max-width: 520px;
-          align-items: center;
-          display: flex;
-          border: 1px solid rgba(0, 0, 0, 0.05);
-          background: rgba(255, 255, 255, 0.83);
-          width: 100%;
-          height: 32px;
-          img {
-            padding: 8px;
-          }
-          input {
-            width: 100%;
-            height: 32px;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            border-left: none;
-
-            &::placeholder {
-              font-size: 12px;
-              font-weight: 400;
-            }
-          }
-          .search-button {
-            border-radius: 0px 6px 6px 0px;
-            background: #bc2649;
-            width: 87px;
-            height: 32px;
-            font-size: 14px;
-            color: #fff;
-            font-weight: 800;
-            text-transform: uppercase;
-
-            i {
-              color: white;
-            }
-          }
-        }
-
-        .space-form {
-          display: flex;
-          align-items: center;
-          margin: 20px 0;
-
-          p {
-            margin: 0;
-            padding: 0 15px;
-            width: 200px;
-            font-weight: 600;
-            font-size: 14px;
-          }
-          .space-bar {
-            height: 1px;
-            width: 100%;
-            color: #000;
-            border: 0.7px solid #d4d4d4;
-          }
+        img {
+          color: white !important;
         }
       }
     }
   }
-  .boiler-section {
+  .search-alphabet {
+    max-width: 320px;
     width: 100%;
-    max-width: 580px;
-    .boiler-card {
-      margin-top: 21px;
-      width: 100%;
-      max-width: 580px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fbfbfb;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    @media only screen and (max-width: 948px) and (min-width: 767px) {
+      max-width: none;
     }
-    .button-container {
-      margin-top: 39px;
-      display: flex;
-      justify-content: flex-end;
+    @media (max-width: 699px) {
+      max-width: none;
     }
-    .button-blue {
-      width: 174px;
-      height: 30px;
-      text-transform: uppercase !important;
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 4px;
-      border: 1px solid rgba(0, 0, 0, 0.24);
-      background: #324a74;
-      color: white;
-      gap: 18px;
-
-      p {
-        color: #fff;
-        font-size: 12px;
-        font-weight: 800;
-      }
-    }
-    b {
-      font-size: 14px !important;
-    }
-  }
-  .page-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 31px;
-    width: 100%;
-    .page-button,
-    .pagination__list__prev,
-    .pagination__list__next {
-      background: #ffffff;
-      border: 1px solid #ededed;
-      border-radius: 8px;
-      width: 32px;
-      height: 32px;
-      margin: 0 4px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      @media (max-width: 475px) {
-        margin: 0 3px;
-      }
-    }
-
-    .page-button.active {
-      background: $main-red;
-      color: #ffffff;
-    }
-
-    .arrow-left {
-      transform: rotate(180deg);
-    }
-
-    .page-button:hover {
-      background: $main-red;
-      color: #ffffff;
-    }
-
-    .pagination__list {
-      display: flex;
-      align-items: center;
-      list-style-type: none;
-
-      .pagination__list__prev,
-      .pagination__list__next {
-        background: #ffffff;
-        border: 1px solid #ededed;
-        border-radius: 8px;
-        width: 32px;
-        height: 32px;
-        margin: 0 4px;
-        cursor: pointer;
-        padding: 0;
+    .alphabet {
+      ul {
         display: flex;
-        align-items: center;
-        justify-content: center;
-
-        @media (max-width: 475px) {
-          padding: 10px 12px;
-          margin: 0 1px;
-        }
-      }
-    }
-  }
-  .data-info {
-    color: #324a74;
-    @media (max-width: 992px) {
-      display: none;
-    }
-  }
-  .content-table {
-    display: flex;
-    gap: 10px;
-  }
-  .information-steps-jobs {
-    ul {
-      margin-bottom: 10px;
-      li {
-        margin-top: 4px;
-      }
-    }
-  }
-  .sort-chase__content {
-    margin-top: 17px;
-    margin-bottom: 34px;
-  }
-}
-
-.nearby-cities {
-  max-width: 580px;
-  margin-top: 17px;
-  border-radius: 4px;
-  border: 1px solid #d1d1d1;
-  background: #fbfcff;
-  padding: 21px 19px;
-  width: 100%;
-  @media (max-width: 475px) {
-    border: none;
-    background: transparent;
-    padding: 0;
-  }
-
-  span {
-    color: #324a74;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  .location-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 8px;
-    padding-left: 0;
-    li {
-      a {
-        margin-right: 4px;
-        font-size: 14px;
-        color: #324a74;
-        text-decoration-line: underline !important;
-      }
-    }
-  }
-}
-.notation {
-  width: 100%;
-  max-width: 625px;
-  margin-top: 13px;
-  border-left: 3px solid #bc2649;
-  padding-left: 15px;
-  font-size: 14px !important;
-}
-
-.exposure-job {
-  margin-top: 29px;
-}
-.compensation-section {
-  margin-top: 30px;
-
-  h3 {
-    margin-top: 14px;
-  }
-  &__table {
-    border-collapse: collapse;
-    display: flex;
-    margin-top: 13px;
-    margin-bottom: 21px;
-    tbody {
-      max-width: 300px;
-      width: 100%;
-      border-radius: 4px;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background: #fcfaf6;
-    }
-    .left-column {
-      width: 100%;
-      background: #fcfaf6 !important;
-      th {
-        color: #bc2649;
-        font-weight: 300;
-        align-items: start;
-        display: flex;
-        background: #fcfaf6 !important;
-      }
-      .claims-type {
-        text-transform: uppercase;
-        font-weight: 500;
-        color: #324a74 !important;
-        font-size: 16px;
-        align-items: start;
-        display: flex;
-      }
-    }
-    .right-column {
-      width: 100%;
-      td {
-        font-weight: 400;
-        background: #fcfaf6 !important;
-      }
-      .price {
-        font-size: 16px;
-        text-transform: uppercase;
-        color: #bc2649;
-        font-weight: 500;
-      }
-    }
-    tbody {
-      display: flex;
-      max-width: 289px;
-      width: 100%;
-    }
-
-    tr {
-      flex-direction: column;
-      display: flex;
-    }
-    th,
-    td {
-      padding: 8px;
-      border: 1px solid #e6e6e6;
-    }
-
-    th {
-      background-color: #ffffff;
-      color: #000000;
-      font-weight: bold;
-    }
-
-    tr:nth-child(even) td {
-      background-color: #faf7f0;
-    }
-  }
-}
-.text-asbestos-link {
-  color: #324a74 !important;
-}
-.calculator-section {
-  max-width: 690px;
-  width: 100%;
-  margin-top: 42px;
-  h2 {
-    @media (max-width: 475px) {
-      margin-bottom: 10px;
-    }
-
-    span {
-      color: #324a74;
-      font-size: 22px;
-      @media (max-width: 475px) {
-        font-size: 16px;
-      }
-    }
-  }
-  .bar {
-    @media (max-width: 767px) {
-      display: none;
-    }
-  }
-  p {
-    margin-bottom: 21px;
-  }
-  .trust-list {
-    padding-left: 0;
-    @media (max-width: 767px) {
-      margin-top: 10px;
-    }
-    li {
-      text-decoration-line: underline;
-      margin-bottom: 12px;
-
-      a {
-        color: #324a74;
-        font-weight: 400;
-        font-size: 16px;
-        @media (max-width: 767px) {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-  span {
-    color: #bc2649;
-    font-size: 22px;
-  }
-}
-.red-text {
-  color: #bc2649;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-}
-.expres-calculator {
-  max-width: 690px;
-  width: 100%;
-
-  padding-bottom: 18px;
-  margin-bottom: 28px;
-  @media (max-width: 475px) {
-    text-align: center;
-  }
-  h2 {
-    color: #bc2649;
-    @media (max-width: 475px) {
-      margin-bottom: 10px;
-    }
-
-    span {
-      color: #324a74;
-      font-size: 22px;
-      @media (max-width: 475px) {
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-.bar-jobcity {
-  margin-bottom: 18px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid #F3F3F3;
-
-  .search-filter__table {
-    margin-bottom: 0 !important;
-    margin-top: 22px !important;
-  }
-}
-
-  .undiscovered-companies {
-    padding: 12px 19px;
-    width: 100%;
-    max-width: 580px;
-    border-radius: 4px;
-    border: 1px solid #fbf8f4;
-    background: #efefef;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-bottom: 38px;
-    margin-top: 38px;
-
-    &__content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      @media (max-width: 475px) {
-        flex-direction: column;
-        align-items: end;
-      }
-
-      h3 {
-        margin-bottom: 22px;
-        a {
+        flex-wrap: wrap;
+        padding-left: 0;
+        li {
+          color: #15528e;
           font-size: 16px;
-          font-weight: 600;
-          color: #000;
-        }
-      }
-      p {
-        color: #000;
-        font-size: 14px;
-        font-weight: 500;
-      }
+          font-weight: 500;
+          line-height: 28px;
 
-      .add-company {
-        width: 100%;
-        &__select {
-          .select-company {
-            margin-top: 7px;
-            gap: 25px;
-            display: flex;
-            @media (max-width: 475px) {
-              flex-direction: column;
-              gap: 15px;
-            }
-
-            input {
-              width: 100%;
-              border: 1px solid #dbdbdb;
-              background: #fff;
-              padding-bottom: 4px;
-              height: 32px;
-              padding-left: 9px;
-              &::placeholder {
-                color: #000;
-                font-size: 14px;
-                font-weight: 400;
-              }
-            }
-            .custom-select {
-              width: 100%;
-              .select-selected {
-                padding-left: 9px;
-                height: 32px;
-                font-size: 14px;
-                padding-left: 5px;
-                &:after {
-                  top: 14px !important;
-                  right: 7px !important;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .checkbox {
-        margin-top: 20px;
-        input {
-          margin: 2px 5px;
-        }
-        .add-button-job {
-          color: #fff;
-          font-size: 14px;
-          font-weight: 600;
-          border-radius: 4px;
-          background: #26bc7d;
-          padding: 9px;
-          text-transform: uppercase;
-          @media (max-width: 475px) {
-            margin-top: 23px;
-          }
-        }
-        &__select {
-          display: flex;
-          justify-content: space-between;
-          @media (max-width: 475px) {
-            flex-direction: column;
-          }
-
-          .selected-item {
-            display: flex;
-            align-items: center;
-
-            label {
-              color: #464545;
-              font-size: 14px;
-              font-weight: 600;
-            }
-          }
+          text-decoration-line: underline;
+          margin-right: 12px;
         }
       }
     }
   }
+}
+.trust-list {
+  padding-left: 0;
+  gap: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  li {
+    
+    a {
+      color: #324a74;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      text-decoration-line: underline;
+    }
+  }
+}

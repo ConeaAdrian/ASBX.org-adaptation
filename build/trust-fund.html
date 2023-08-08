@@ -67,8 +67,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
 
@@ -83,7 +85,6 @@
     ></script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
-   
   </head>
 
   <body></body>
@@ -92,9 +93,7 @@
 <header class="header-section">
   <div class="container">
     <section class="navigation">
-      <div class="call-company">
-        <img src="../../img/phone-mobile.svg" alt="">
-      </div>
+     
       <div class="brand">
         <a href="index.html" aria-current="page" class="w-nav-brand w--current"
           ><img src="../../img/ASBX_logo.svg" alt="" class="logo"
@@ -108,7 +107,12 @@
         ><img src="../../img/ASBX_logo.svg" alt="" class="logo"
       /></a>
       </div>
+     
       <nav>
+        <div class="claims-mobile">
+          <button>view claims</button>
+          <p>0</p>
+        </div>
         <div class="nav-mobile">
           <a id="nav-toggle" href="#!"><span></span></a>
         </div>
@@ -154,11 +158,8 @@
             <li>
               <a href="#!">Contact Us</a>
             </li>
-            <button class="button-question">Ask Any Legal Question</button>
-            <div class="free-chat">
-              <img src="../../img/Vector.svg" alt="">
-              <p>free</p>
-            </div>
+            <button class="button-question">Ask Any Legal Question <img src="../../img/Free.svg" alt=""></button>
+            
           </ul>
         </div>
       </nav>
@@ -167,56 +168,37 @@
 </header>
 <div class="header-search"><div class="search-principal container">
   <form class="search-asbestos">
-    <div class="custom-select search-element">
-      <div class="text"><img src="../../img/search-user.svg" alt=""></div>
-      <select id="selectJob" class="">
-        <option class="first-alternative" value="0">
-          Select job:
+    <div class="select-search">
+      <img src="../../img/uiw_search.svg" alt="" />
+      <select name="cars" id="cars">
+        <option value="compensation, legal advice, lawyers">
+          compensation, legal advice, lawyers
         </option>
-        <option value="lista2">Listă 2</option>
-        <option value="lista3">Listă 3</option>
+        <option value="">select 1</option>
+        <option value="">Select 2</option>
+        <option value="">Select 3</option>
       </select>
     </div>
     <div class="search-form">
-      <div class="select-wrapper search-wrapper">
+      <div class="select-wrapper">
         <div class="input-wrapper">
-          <div class="input-wrapper__location">
-            <img src="../../img/location-user.svg" alt="">
-          </div>
-          <input
-            type="text"
-            id="search"
-            placeholder="city, state or zip"
-          />
+            <img src="../../img/location-user.svg" alt="" />
+          <input type="text" id="search" placeholder="city, state or zip" />
         </div>
       </div>
-      <button class="button" type="submit">Find</button>
+      <button class="button-red" type="submit">Find</button>
     </div>
   </form>
 </div>
 
   <div class="top-search-mobile">
   <div class="container">
-    <div class="breadcrumb">
-      <a href="#">Home</a>
-      <span>|</span>
-      <a href="#">Florida</a>
-      <span>|</span>
-      <a href="#">Miami</a>
-      <span>|</span>
-      <span class="last-element">Mesothelioma Compensation</span>
-    </div>
-
     <div class="button-search-mobile">
       <button id="open-search-block" class="search-button">
         <img src="../../img/search-user.svg" alt="" />
         Find claims, compensation, legal advice
       </button>
     </div>
-    <p>
-      Search result for available mesothelioma compensation sources and amounts
-      in Miami, FL.
-    </p>
   </div>
 
   <div id="search-block" class="search-block">
@@ -565,7 +547,7 @@
     </div>
   </div>
 </div>
-<footer>
+<!-- <footer>
   <div class="container">
     <div class="footer-content">
       <div class="request-call">
@@ -636,7 +618,7 @@
   </div>
 </div>
 </div>
-</footer>
+</footer> -->
 
 <!-- end widgets -->
 <!-- Scroll up -->

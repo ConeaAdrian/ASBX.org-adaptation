@@ -1,0 +1,105 @@
+.content-boiler {
+  padding-top: 20px;
+  border-top: 1px solid #f3f3f3;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  .card-boiler {
+    max-width: 320px;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fbfbfb;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+
+    @media only screen and (max-width: 948px) and (min-width: 767px) {
+      max-width: none;
+    }
+    @media (max-width: 699px) {
+      max-width: none;
+    }
+    span {
+      color: #bc2649;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+    }
+    p {
+      color: #000;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    select {
+      height: 44px;
+      width: 100%;
+      padding-left: 10px;
+    }
+    .select-job {
+    }
+    .data-select {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  .alternative {
+    display: block;
+    position: relative;
+    padding-right: 20px;
+    cursor: pointer;
+    user-select: none;
+    
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    .checkmark {
+      position: absolute;
+      top: 4px;
+      right: 0;
+      height: 16px;
+      width: 16px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 1px solid #000;
+      
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+    }
+    
+    &:hover input ~ .checkmark {
+      background-color: #ffffff;
+    }
+    
+    input:checked ~ .checkmark {
+      background-color: #ffffff;
+      
+      &:after {
+        display: block;
+        top: 3.5px;
+        left: 3.5px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: rgb(0, 0, 0);
+      }
+    }
+  }
+}
+.button-boiler {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

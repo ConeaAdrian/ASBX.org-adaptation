@@ -20,6 +20,7 @@
     position: fixed;
     
     @media (max-width: 767px) {
+      display: none;
       max-width: none;
       width: 100%;
       position: inherit;

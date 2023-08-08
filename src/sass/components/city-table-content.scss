@@ -1,8 +1,9 @@
 .content-table {
-  margin-top: 18px;
+  margin-top: 20px;
   display: flex;
-  gap: 23px;
+  gap: 20px;
   justify-content: space-between;
+  margin-bottom: 50px;
   @media (max-width: 475px) {
     flex-direction: column;
   }
@@ -46,82 +47,82 @@
         font-size: 14px;
       }
     }
-   
+  }
+  span {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+}
+.nearby-cities {
+  width: 100%;
+
+  .location-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-top: 10px;
+    li {
+      font-weight: 400;
+      a {
+        font-size: 16px;
+        color: #324a74;
+        text-decoration-line: underline !important;
+      }
+    }
   }
 }
 .required-asbx {
   width: 100%;
-  max-width: 336px;
-  border-radius: 4px;
-  border: 1px solid #dbdbdb;
-  background: #fbfcff;
-  position: relative;
-  padding: 15px 17px;
-  gap: 6px;
+  max-width: 280px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
-  @media (max-width: 620px) {
-    padding: 11px 6px;
-  }
   @media (max-width: 475px) {
-    background-color: transparent;
-    border: none;
+   max-width: none;
   }
-  img {
-    position: absolute;
-    right: 0;
-    transform: translate(15px, -30px);
-    @media (max-width: 475px) {
-      display: none;
-    }
-  }
-  span {
+  a {
     color: #324a74;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: capitalize;
-  }
-  p {
-    font-size: 14px;
-
-    b {
-      font-size: 14px !important;
-    }
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration-line: underline;
   }
   .block-data {
     display: grid;
+    border-left: 1px solid #bc2649;
+    padding-left: 10px;
     p {
-      margin: 0;
+      color: #000;
     }
-  }
-  li {
-    margin-bottom: 0;
+    b {
+      font-weight: 500;
+    }
   }
 }
 .general-information-table {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 20px;
+  max-width: 320px;
+  width: 100%;
+  @media (max-width: 475px) {
+    max-width: none;
+  }
 
   .content-summarizer {
     border-radius: 4px;
     border: 1px solid #c0cad6;
     background: rgba(240, 245, 255, 0.3);
-    max-width: 300px;
+    max-width: 320px;
     min-width: 221px;
     width: 100%;
-    padding: 16px 9px;
+    padding: 10px;
     @media (max-width: 475px) {
       max-width: none;
     }
 
-    p {
-      color: #4f4f4f;
-      text-transform: capitalize;
-      font-size: 16px;
-      font-weight: 600;
-      margin-top: 5px;
-    }
     ol {
       padding-left: 19px;
       margin-top: 5px;
@@ -133,6 +134,7 @@
         gap: 4px;
         margin-left: -10px;
         height: 22px;
+        margin-top: 3px;
         p {
           margin-top: 0;
         }
@@ -142,7 +144,7 @@
         text-transform: capitalize;
         a {
           color: #466d92;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 500;
           line-height: 22px;
           text-decoration-line: underline;
@@ -151,11 +153,15 @@
         }
       }
       p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 22px;
         text-decoration-line: underline;
         text-transform: capitalize;
+
+        a {
+          font-size: 16px;
+        }
       }
     }
   }

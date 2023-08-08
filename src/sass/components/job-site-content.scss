@@ -43,7 +43,6 @@
       padding: 17px 13px;
       max-width: 331px;
       width: 100%;
-      flex: 0 0 calc(50% - 20px);
       @media (max-width: 520px) {
         max-width: none;
       }
@@ -94,10 +93,6 @@
         font-size: 16px;
       }
     }
-
-    .compensation-section__table {
-      margin-bottom: 0;
-    }
   }
   .legend {
     width: 100%;
@@ -118,15 +113,5 @@
       font-size: 12px;
       font-weight: 400;
     }
-  }
-}
-@media screen and (min-width: 520px) {
-  .sort-chase__content {
-    flex: 0 0 calc(50% - 20px);
-  }
-}
-@media screen and (min-width: 767px) {
-  .legend {
-    flex: 0 0 calc(50% - 20px);
   }
 }

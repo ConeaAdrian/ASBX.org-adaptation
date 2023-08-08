@@ -1,153 +1,7 @@
-.questions-lawyers {
-  .container-lawyers {
-    padding: 21px 15px;
-
-    .custom-select {
-      .user {
-        display: flex;
-        p {
-          width: 200px;
-        }
-      }
-    }
-  }
-  &__select {
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    background: rgba(50, 74, 116, 0.05);
-    padding: 20px 23px;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 570px;
-    text-align: end;
-    margin-bottom: 30px;
-
-    h3 {
-      margin-top: 0;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      text-align: start;
-      margin-bottom: 10px;
-      color: #BC2649;
-    }
-    .general-select {
-      display: flex;
-      @media (max-width: 540px) {
-        flex-direction: column;
-      }
-
-      .select-lawyers {
-        display: flex;
-        align-items: center;
-        margin-right: 10px;
-        @media only screen and (max-width: 992px) and (min-width: 767px) {
-          flex-direction: column;
-          align-items: start;
-        }
-        @media (max-width: 767px) {
-          flex-direction: column;
-          align-items: start;
-        }
-        @media (max-width: 540px) {
-          margin-right: 0;
-        }
-        p {
-          font-weight: 500;
-          font-size: 14px;
-          margin-right: 5px;
-          width: 222px;
-          @media (max-width: 540px) {
-            width: auto !important;
-          }
-        }
-        select {
-          max-width: 150px;
-          height: 25px;
-          @media only screen and (max-width: 992px) and (min-width: 767px) {
-            max-width: none;
-            width: 100%;
-          }
-          @media (max-width: 767px) {
-            max-width: none;
-            width: 100%;
-          }
-        }
-      }
-      .profesion {
-        display: flex;
-        align-items: center;
-        @media only screen and (max-width: 992px) and (min-width: 767px) {
-          flex-direction: column;
-          align-items: start;
-        }
-        @media (max-width: 767px) {
-          flex-direction: column;
-          align-items: start;
-        }
-        p {
-          width: 40px;
-          font-weight: 500;
-          font-size: 14px;
-          margin-right: 5px;
-        }
-        select {
-          max-width: 150px;
-          height: 25px;
-
-          @media only screen and (max-width: 992px) and (min-width: 767px) {
-            max-width: none;
-            width: 100%;
-          }
-          @media (max-width: 767px) {
-            max-width: none;
-            width: 100%;
-          }
-        }
-      }
-    }
-    .input-field {
-      width: 100%;
-      height: 86px;
-      padding: 10px;
-      color: #000;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      resize: none;
-      margin-top: 20px;
-
-      &::placeholder {
-        font-size: 16px;
-        font-size: 12px;
-        font-weight: 500;
-        font-family: "Inter", sans-serif !important;
-
-        @media (max-width: 680px) {
-          font-size: 10px;
-        }
-      }
-    }
-    .button {
-      padding: 6px 9px;
-      margin-top: 22px;
-    }
-    .general-select {
-      gap: 7px;
-
-      .custom-select {
-        p {
-          width: 28px;
-          font-weight: 600;
-          font-size: 12px;
-        }
-      }
-    }
-  }
-}
 .lawyers-information {
   .block-lawyers {
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
     border-radius: 4px;
     margin-top: 20px;
     padding: 13px;
@@ -167,46 +21,41 @@
       .lawyers-data {
         text-align: start;
         h3 {
+          font-weight: 700;
           margin: 0;
           color: #324a74;
-          font-size: 16px;
-          font-weight: 500;
+          font-size: 18px;
           text-decoration-line: underline;
           margin-bottom: 3px;
         }
         p {
           color: #202020;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 400;
-
-          b {
-            color: #202020;
-            font-size: 14px !important;
-          }
         }
       }
     }
     .contact {
       display: flex;
-      gap: 7px;
+      gap: 10px;
       margin-top: 14px;
       img {
-        color: #bc2649;
+        color: #BC2649;
         width: 14px;
         height: 14px;
       }
       a {
         color: #202020;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
       }
       .number {
-        text-align: center;
+        align-items: center;
         display: flex;
         gap: 5px;
       }
       .message {
-        text-align: center;
+        align-items: center;
         display: flex;
         gap: 5px;
       }

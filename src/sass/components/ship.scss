@@ -113,7 +113,6 @@
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 
     .equipment-box {
       border-radius: 4px;
@@ -122,6 +121,9 @@
       padding: 18px 12px;
       width: 100%;
       max-width: 300px;
+      @media (max-width: 520px) {
+       max-width: none;
+      }
 
       a {
         color: #15528e;
