@@ -15,11 +15,11 @@
     background: #fbfbfb;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
     @media only screen and (max-width: 948px) and (min-width: 767px) {
-        max-width: none;
-      }
-      @media (max-width: 699px) {
-        max-width: none;
-      }
+      max-width: none;
+    }
+    @media (max-width: 699px) {
+      max-width: none;
+    }
 
     a {
       color: #15528e;
@@ -97,9 +97,6 @@
 
 .section-question {
   display: flex;
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #f3f3f3;
   gap: 20px;
   @media (max-width: 475px) {
     flex-direction: column;
@@ -108,8 +105,8 @@
     width: 100%;
     max-width: 320px;
     @media (max-width: 475px) {
-        max-width: none;
-      }
+      max-width: none;
+    }
     a {
       color: #466d92 !important;
       font-size: 18px;
@@ -117,10 +114,14 @@
       line-height: 26px;
       text-decoration-line: underline !important;
     }
-    h2 {
-      border: none !important;
-      margin: 0;
-      padding: 0;
+    img {
+      width: 100%;
+      max-width: 320px;
+      height: 151px;
+      margin-bottom: 20px;
+      @media (max-width: 475px) {
+        display: none;
+      }
     }
   }
 }
@@ -151,11 +152,11 @@
     height: 44px;
     padding-left: 10px;
     &::placeholder {
-        color: #000;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-      }
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
   }
   .input-field {
     font-family: "Roboto Condensed", sans-serif;

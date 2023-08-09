@@ -64,6 +64,14 @@
         gap: 5px;
       }
     }
+    
+  }
+  .red-text {
+    font-size: 18px;
+    b {
+      color: #bc2649;
+      font-size: 18px;
+    }
   }
   &__content {
     display: flex;

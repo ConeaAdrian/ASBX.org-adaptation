@@ -2,6 +2,9 @@
 
 .breadcrumb {
   margin-bottom: 20px;
+  @media (max-width: 475px) {
+   justify-content: center;
+  }
 
   a {
     font-size: 14px;
