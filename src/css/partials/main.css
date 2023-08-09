@@ -836,11 +836,6 @@
 .pr-25 {
   padding-right: 25rem !important; }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box; }
-
 img {
   max-width: 100%;
   height: auto;
@@ -883,21 +878,26 @@ a {
 
 h1 {
   color: #324a74;
-  font-size: 30px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   line-height: 38px; }
+  @media (max-width: 475px) {
+    h1 {
+      font-size: 30px !important;
+      line-height: 36px; } }
 
 h2 {
-  color: #56698b;
+  color: #003366;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px; }
+  line-height: 28px;
+  padding-top: 30px; }
   @media (max-width: 475px) {
     h2 {
-      font-size: 20px !important; } }
+      font-size: 26px !important; } }
 
 h3 {
   font-size: 18px;
@@ -914,12 +914,9 @@ h6 {
 
 p {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   color: #000;
   line-height: normal; }
-  @media (max-width: 475px) {
-    p {
-      font-size: 14px; } }
 
 li {
   font-size: 14px;
@@ -955,7 +952,8 @@ select {
   outline: none; }
 
 ol {
-  padding-left: 20px; }
+  padding-left: 20px;
+  margin-bottom: 0; }
 
 select[type="checkbox"]:checked:before {
   content: "\2714";
@@ -983,10 +981,6 @@ strong {
   font-weight: 700;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px !important; }
-  @media (max-width: 475px) {
-    b,
-    strong {
-      font-size: 14px !important; } }
 
 .position-relative {
   position: relative; }
@@ -1042,6 +1036,9 @@ strong {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px; }
+  @media (max-width: 475px) {
+    .data-info {
+      text-align: center; } }
 
 @media (min-width: 1200px) {
   .container {
@@ -1170,6 +1167,7 @@ button {
       padding: 7px 14px; }
   .case-compensation .img-compensation {
     object-fit: cover;
+    height: auto;
     width: 100%;
     max-width: 248px; }
     @media only screen and (max-width: 900px) and (min-width: 767px) {
@@ -1180,7 +1178,8 @@ button {
         display: none; } }
   .case-compensation .img-compensation-alternative {
     display: none;
-    height: 213px; }
+    height: 213px;
+    width: 100%; }
     @media (max-width: 620px) {
       .case-compensation .img-compensation-alternative {
         display: block; } }
@@ -1244,6 +1243,9 @@ button {
         color: #202020;
         font-size: 16px;
         font-weight: 400; }
+  .lawyers-information .block-lawyers img {
+    width: 104px;
+    height: 104px; }
   .lawyers-information .block-lawyers .contact {
     display: flex;
     gap: 10px;
@@ -1425,10 +1427,6 @@ button {
   height: 2px;
   margin-top: 10px;
   margin-bottom: 20px; }
-  @media (max-width: 992px) {
-    .bar {
-      margin-bottom: 10px !important;
-      margin-top: 6px !important; } }
 
 footer {
   background-color: #faf7f0;
@@ -1641,6 +1639,9 @@ footer {
       align-items: center;
       justify-content: center;
       display: flex; }
+  .navigation .logo {
+    height: 22px;
+    width: 91px; }
 
 nav {
   z-index: 1; }
@@ -2438,11 +2439,6 @@ nav {
 .city-content h3 {
   color: #bc2649; }
 
-.city-content h2 {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #f3f3f3; }
-
 .city-content .walking-steps li {
   color: #000;
   font-size: 16px;
@@ -2489,7 +2485,9 @@ nav {
         width: 46px;
         height: 44px; }
         .content-job__search .select-job .button-search img {
-          color: white !important; }
+          color: white !important;
+          width: 20px;
+          height: 20px; }
   .content-job .search-alphabet {
     max-width: 320px;
     width: 100%;
@@ -2798,7 +2796,7 @@ nav {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  margin-bottom: 50px; }
+  margin-bottom: 40px; }
   @media (max-width: 475px) {
     .content-table {
       flex-direction: column; } }
@@ -2841,15 +2839,22 @@ nav {
     text-transform: capitalize; }
 
 .nearby-cities {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 40px; }
+  .nearby-cities span {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize; }
   .nearby-cities .location-list {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-    margin-top: 10px; }
+    margin-top: 5px; }
     .nearby-cities .location-list li {
       font-weight: 400; }
       .nearby-cities .location-list li a {
+        margin-right: 5px;
         font-size: 16px;
         color: #324a74;
         text-decoration-line: underline !important; }
@@ -2891,7 +2896,6 @@ nav {
     border: 1px solid #c0cad6;
     background: rgba(240, 245, 255, 0.3);
     max-width: 320px;
-    min-width: 221px;
     width: 100%;
     padding: 10px; }
     @media (max-width: 475px) {
@@ -3027,9 +3031,7 @@ nav {
       text-transform: uppercase !important; }
 
 .non-result h2 {
-  margin-top: 27px;
-  padding-top: 23px;
-  border-top: 1px solid #f3f3f3; }
+  padding-top: 40px; }
 
 .non-result .how-search {
   padding: 11px 8px;
@@ -3086,15 +3088,6 @@ nav {
   margin-bottom: 25px; }
   .no-verified b {
     font-weight: 500; }
-
-.content-ship h2 {
-  margin-top: 27px;
-  padding-top: 23px;
-  border-top: 1px solid #F3F3F3; }
-
-.content-ship h3 {
-  padding-top: 19px;
-  margin-bottom: 11px; }
 
 .content-ship .about-text-ship {
   margin-top: 18px;
@@ -3398,15 +3391,6 @@ nav {
   color: #bc2649;
   font-size: 12px;
   margin-top: 5px; }
-
-.job-site h2 {
-  margin-top: 27px;
-  padding-top: 23px;
-  border-top: 1px solid #F3F3F3; }
-
-.job-site h3 {
-  padding-top: 19px;
-  margin-bottom: 11px; }
 
 .job-site .responsible-company {
   margin: 11px 0; }
@@ -4282,6 +4266,9 @@ nav {
     text-align: center;
     justify-content: stretch;
     font-size: 12px; }
+  .top-search-mobile .button-search-mobile img {
+    width: 20px;
+    height: 20px; }
 
 .top-search-mobile p {
   color: #fff;
@@ -4395,15 +4382,19 @@ nav {
 .manufacture .general-information-table {
   display: flex;
   flex-direction: revert;
-  margin-top: 32px;
-  margin-bottom: 44px; }
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 100% !important; }
+  @media (max-width: 475px) {
+    .manufacture .general-information-table {
+      flex-direction: column; } }
 
 .manufacture .ship-list {
   width: 100%;
   max-width: 439px;
-  margin: 15px 0; }
+  margin: 10px 0; }
   .manufacture .ship-list ul {
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
     .manufacture .ship-list ul li {
       color: #15528e;
       font-size: 16px;
@@ -4422,7 +4413,7 @@ nav {
 .equipment-ship {
   width: 100%;
   max-width: 439px;
-  margin: 21px 0;
+  margin: 10px 0;
   margin-left: 10px; }
   .equipment-ship ul {
     margin-bottom: 15px; }
@@ -4461,10 +4452,6 @@ nav {
 
 .trust-fund {
   margin-bottom: 40px; }
-  .trust-fund h2 {
-    border-top: 1px solid #F3F3F3;
-    margin-top: 21px;
-    padding-top: 21px; }
   .trust-fund .general-information-table {
     display: flex;
     flex-direction: initial;
@@ -4521,14 +4508,10 @@ nav {
     font-weight: 500; }
 
 .add-job h2 {
-  margin-top: 27px;
-  padding-top: 23px;
-  border-top: 1px solid #f3f3f3; }
+  padding-top: 40px; }
 
 .city-state h2 {
-  margin-top: 27px;
-  padding-top: 23px;
-  border-top: 1px solid #f3f3f3; }
+  padding-top: 40px; }
 
 .city-state h3 {
   padding-top: 19px;
@@ -4626,7 +4609,6 @@ nav {
 
 .content-card-job {
   padding-top: 20px;
-  border-top: 1px solid #f3f3f3;
   gap: 20px;
   display: flex;
   flex-wrap: wrap; }
@@ -4774,7 +4756,6 @@ nav {
 
 .content-boiler {
   padding-top: 20px;
-  border-top: 1px solid #f3f3f3;
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -4853,3 +4834,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 5px; }
+  .button-boiler img {
+    height: 6px;
+    width: 20px; }

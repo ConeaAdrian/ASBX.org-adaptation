@@ -2,15 +2,19 @@
   .general-information-table {
     display: flex;
     flex-direction: revert;
-    margin-top: 32px;
-    margin-bottom: 44px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: 100% !important;
+    @media (max-width: 475px) {
+      flex-direction: column;
+    }
   }
   .ship-list {
     width: 100%;
     max-width: 439px;
-    margin: 15px 0;
+    margin: 10px 0;
     ul {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       li {
         color: #15528e;
         font-size: 16px;
@@ -33,7 +37,7 @@
 .equipment-ship {
   width: 100%;
   max-width: 439px;
-  margin: 21px 0;
+  margin: 10px 0;
   margin-left: 10px;
   ul {
     margin-bottom: 15px;

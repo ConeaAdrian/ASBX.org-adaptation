@@ -2,11 +2,6 @@
   h3 {
     color: #bc2649;
   }
-  h2 {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #f3f3f3;
-  }
 
   .walking-steps {
     li {
@@ -63,6 +58,8 @@
 
         img {
           color: white !important;
+          width: 20px;
+          height: 20px;
         }
       }
     }

@@ -1,6 +1,5 @@
 .content-boiler {
   padding-top: 20px;
-  border-top: 1px solid #f3f3f3;
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -102,4 +101,9 @@
     display: flex;
     align-items: center;
     gap: 5px;
+
+    img {
+      height: 6px;
+      width: 20px;
+    }
 }

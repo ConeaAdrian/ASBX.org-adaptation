@@ -65,6 +65,7 @@
   }
   .img-compensation {
     object-fit: cover;
+    height: auto;
     width: 100%;
     max-width: 248px;
     @media only screen and (max-width: 900px) and (min-width: 767px) {
@@ -77,6 +78,7 @@
   .img-compensation-alternative {
     display: none;
     height: 213px;
+    width: 100%;
     @media (max-width: 620px) {
       display: block;
     }
