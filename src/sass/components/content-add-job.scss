@@ -1,45 +1,7 @@
-.add-job {
-  .text-information {
-    color: #324a74;
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 15px;
-  }
-  .no-verifide-element {
-    color: #324a74;
-    font-size: 16px;
-    font-weight: 300;
-
-    b {
-      color: #324a74;
-      font-size: 16px;
-      font-weight: 500;
-    }
-  }
-  h2 {
-    padding-top: 40px;
-  }
-}
-
 .city-state {
-  h2 {
-    padding-top: 40px;
-  }
-  h3 {
-    padding-top: 19px;
-    margin-bottom: 11px;
-  }
-  .text-otation {
-    a {
-      font-weight: 500;
-      color: #15528e;
-      font-size: 16px;
-      text-decoration-line: underline !important;
-      @media (max-width: 475px) {
-        font-size: 14px !important;
-      }
-    }
-  }
+ .data-info {
+  margin-bottom: 0;
+ }
   .today-data {
     color: #324a74;
     font-size: 16px;
@@ -52,9 +14,7 @@
   }
   .search-option {
     h3 {
-      margin-top: 30px;
-      padding-top: 19px;
-      border-top: 1px solid #f3f3f3;
+
     }
     ul {
       margin-left: 10px;
