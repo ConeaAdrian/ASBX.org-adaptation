@@ -46,52 +46,52 @@
       gap: 10px;
     }
   }
-  .alternative {
-    display: block;
-    position: relative;
-    padding-right: 20px;
+}
+.alternative {
+  display: block;
+  position: relative;
+  padding-right: 25px;
+  cursor: pointer;
+  user-select: none;
+  
+  input {
+    position: absolute;
+    opacity: 0;
     cursor: pointer;
-    user-select: none;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #000;
     
-    input {
+    &:after {
+      content: "";
       position: absolute;
-      opacity: 0;
-      cursor: pointer;
+      display: none;
     }
+  }
+  
+  &:hover input ~ .checkmark {
+    background-color: #ffffff;
+  }
+  
+  input:checked ~ .checkmark {
+    background-color: #ffffff;
     
-    .checkmark {
-      position: absolute;
-      top: 4px;
-      right: 0;
-      height: 16px;
-      width: 16px;
-      background-color: #ffffff;
+    &:after {
+      display: block;
+      top: 3.5px;
+      left: 3.5px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
-      border: 1px solid #000;
-      
-      &:after {
-        content: "";
-        position: absolute;
-        display: none;
-      }
-    }
-    
-    &:hover input ~ .checkmark {
-      background-color: #ffffff;
-    }
-    
-    input:checked ~ .checkmark {
-      background-color: #ffffff;
-      
-      &:after {
-        display: block;
-        top: 3.5px;
-        left: 3.5px;
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: rgb(0, 0, 0);
-      }
+      background: rgb(0, 0, 0);
     }
   }
 }

@@ -1,5 +1,5 @@
 .claims-select {
-  max-width: 223px;
+  max-width: 250px;
   width: 100%;
   @media (max-width: 767px) {
     display: none;
@@ -21,7 +21,6 @@
     @media (max-width: 767px) {
       max-width: none;
       padding: 10px;
-      position: inherit;
     }
   }
 }
@@ -47,16 +46,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 223px;
-  width: 100%;
   justify-content: flex-start;
 
   .claims-selected {
     width: 100%;
     height: auto;
     border-radius: 4px;
-    border: 1px solid #324a74;
-    background: #fcfaf6;
+    border: 0.6px solid rgba(0, 0, 0, 0.20);
+    background: #FBFBFB;
     margin-top: 2rem;
     text-align: center;
     margin-bottom: 22px;
@@ -73,7 +70,7 @@
       height: 90px;
       max-width: 90px;
       width: 100%;
-      right: 65px;
+      right: 78px;
       @media (max-width: 767px) {
         position: relative;
         right: 0;
@@ -81,23 +78,23 @@
     }
 
     .content-information {
-      margin-top: 58px;
+      margin-top: 48px;
       @media (max-width: 767px) {
         margin-top: -35px;
       }
       h2 {
-        font-size: 16px;
+        font-size: 18px;
         color: #324a74;
-        font-weight: 600;
+        font-weight: 500;
         border: 0;
         margin-top: 0;
         padding-top: 0;
       }
       p {
         color: #324a74;
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 6px;
-        font-weight: 600;
+        font-weight: 500;
       }
       b {
         font-size: 14px;
@@ -131,7 +128,7 @@
 
       button {
         width: 100%;
-        max-width: 129px;
+        max-width: 150px;
         height: 30px;
         border-radius: 4px;
         font-style: normal;

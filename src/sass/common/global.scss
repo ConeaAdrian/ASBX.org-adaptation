@@ -131,6 +131,16 @@ select {
   appearance: none;
   outline: none;
 }
+select:after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-color: #324a74 transparent transparent transparent; }
+  
 ol {
   padding-left: 20px;
   margin-bottom: 0;

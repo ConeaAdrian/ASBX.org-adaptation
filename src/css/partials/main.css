@@ -123,6 +123,16 @@ select {
   appearance: none;
   outline: none; }
 
+select:after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-color: #324a74 transparent transparent transparent; }
+
 ol {
   padding-left: 20px;
   margin-bottom: 0; }
@@ -541,6 +551,9 @@ button {
       height: 44px;
       align-items: center;
       width: 100%; }
+      .search-principal .search-form .select-wrapper .input-wrapper {
+        display: flex;
+        align-items: center; }
       .search-principal .search-form .select-wrapper input {
         height: 100%;
         border: none; }
@@ -1731,7 +1744,7 @@ nav {
       border-radius: 20px; }
 
 .claims-select {
-  max-width: 223px;
+  max-width: 250px;
   width: 100%; }
   @media (max-width: 767px) {
     .claims-select {
@@ -1752,8 +1765,7 @@ nav {
 @media (max-width: 767px) {
   .claims-select-mobile .general-claims {
     max-width: none;
-    padding: 10px;
-    position: inherit; } }
+    padding: 10px; } }
 
 .close-claims-calculator {
   display: none;
@@ -1777,15 +1789,13 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 223px;
-  width: 100%;
   justify-content: flex-start; }
   .general-claims .claims-selected {
     width: 100%;
     height: auto;
     border-radius: 4px;
-    border: 1px solid #324a74;
-    background: #fcfaf6;
+    border: 0.6px solid rgba(0, 0, 0, 0.2);
+    background: #FBFBFB;
     margin-top: 2rem;
     text-align: center;
     margin-bottom: 22px;
@@ -1801,28 +1811,28 @@ nav {
       height: 90px;
       max-width: 90px;
       width: 100%;
-      right: 65px; }
+      right: 78px; }
       @media (max-width: 767px) {
         .general-claims .claims-selected img {
           position: relative;
           right: 0; } }
     .general-claims .claims-selected .content-information {
-      margin-top: 58px; }
+      margin-top: 48px; }
       @media (max-width: 767px) {
         .general-claims .claims-selected .content-information {
           margin-top: -35px; } }
       .general-claims .claims-selected .content-information h2 {
-        font-size: 16px;
+        font-size: 18px;
         color: #324a74;
-        font-weight: 600;
+        font-weight: 500;
         border: 0;
         margin-top: 0;
         padding-top: 0; }
       .general-claims .claims-selected .content-information p {
         color: #324a74;
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 6px;
-        font-weight: 600; }
+        font-weight: 500; }
       .general-claims .claims-selected .content-information b {
         font-size: 14px; }
     .general-claims .claims-selected .back-ground {
@@ -1847,7 +1857,7 @@ nav {
       flex-direction: column; }
       .general-claims .claims-selected .claims-buttons button {
         width: 100%;
-        max-width: 129px;
+        max-width: 150px;
         height: 30px;
         border-radius: 4px;
         font-style: normal;
@@ -3695,39 +3705,47 @@ nav {
       font-weight: 400;
       line-height: 24px; }
 
-.add-job .missing-job {
-  max-width: 320px;
-  width: 100%;
-  padding: 20px;
-  gap: 10px;
+.content-missing-job {
   display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #fbfbfb;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1); }
-  @media only screen and (max-width: 948px) and (min-width: 767px) {
-    .add-job .missing-job {
-      max-width: none; } }
-  @media (max-width: 699px) {
-    .add-job .missing-job {
-      max-width: none; } }
-  .add-job .missing-job span {
-    color: #bc2649;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; }
-  .add-job .missing-job p {
-    color: #000;
-    font-size: 16px;
-    font-weight: 400; }
-  .add-job .missing-job select {
-    height: 44px;
+  gap: 20px; }
+  @media (max-width: 475px) {
+    .content-missing-job {
+      flex-direction: column; } }
+  .content-missing-job__text {
+    max-width: 320px;
+    width: 100%; }
+    .content-missing-job__text .red-text {
+      margin-top: 0; }
+  .content-missing-job .missing-job {
+    max-width: 320px;
     width: 100%;
-    padding-left: 10px; }
-  .add-job .missing-job .data-select {
+    padding: 20px;
+    gap: 10px;
     display: flex;
-    gap: 10px; }
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fbfbfb;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1); }
+    .content-missing-job .missing-job p {
+      font-weight: 400; }
+    .content-missing-job .missing-job input {
+      border: 1px solid #dbdbdb;
+      background: #fff;
+      height: 44px;
+      padding-left: 10px; }
+    .content-missing-job .missing-job select {
+      height: 44px;
+      width: 100%;
+      padding-left: 10px; }
+    .content-missing-job .missing-job .data-select {
+      display: flex;
+      gap: 10px; }
+    .content-missing-job .missing-job button {
+      border-radius: 4px;
+      background: #26bc7d;
+      height: 44px;
+      text-transform: uppercase;
+      font-weight: 700; }
 
 .page-navigation {
   display: flex;
@@ -3970,41 +3988,42 @@ nav {
     .content-boiler .card-boiler .data-select {
       display: flex;
       gap: 10px; }
-  .content-boiler .alternative {
-    display: block;
-    position: relative;
-    padding-right: 20px;
-    cursor: pointer;
-    user-select: none; }
-    .content-boiler .alternative input {
+
+.alternative {
+  display: block;
+  position: relative;
+  padding-right: 25px;
+  cursor: pointer;
+  user-select: none; }
+  .alternative input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+  .alternative .checkmark {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #000; }
+    .alternative .checkmark:after {
+      content: "";
       position: absolute;
-      opacity: 0;
-      cursor: pointer; }
-    .content-boiler .alternative .checkmark {
-      position: absolute;
-      top: 4px;
-      right: 0;
-      height: 16px;
-      width: 16px;
-      background-color: #ffffff;
+      display: none; }
+  .alternative:hover input ~ .checkmark {
+    background-color: #ffffff; }
+  .alternative input:checked ~ .checkmark {
+    background-color: #ffffff; }
+    .alternative input:checked ~ .checkmark:after {
+      display: block;
+      top: 3.5px;
+      left: 3.5px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
-      border: 1px solid #000; }
-      .content-boiler .alternative .checkmark:after {
-        content: "";
-        position: absolute;
-        display: none; }
-    .content-boiler .alternative:hover input ~ .checkmark {
-      background-color: #ffffff; }
-    .content-boiler .alternative input:checked ~ .checkmark {
-      background-color: #ffffff; }
-      .content-boiler .alternative input:checked ~ .checkmark:after {
-        display: block;
-        top: 3.5px;
-        left: 3.5px;
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: black; }
+      background: black; }
 
 .button-boiler {
   margin: 0 auto;
