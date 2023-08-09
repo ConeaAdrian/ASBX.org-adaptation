@@ -3,79 +3,48 @@
     Mesothelioma Compensation for asbestos victims that worked and lived in
     Leipers Fork, TN
   </h1>
-  <div class="principal-bar"></div>
-  <p class="text-information">
-    Search result for available mesothelioma compensation sources and amounts in
-    Leipers Fork, TN
-  </p>
-  <span class="no-verifide-element"
-    >There are no verified asbestos job-sites in:
-    <b>“Leipers Fork, TN, 37064”</b></span
-  >
-  <p class="notation">
-    If you have worked at any job sites in Miami, FL that are not included in
-    our database, please add them. Simply provide your job details in the box
-    below and click the "Add" button to submit your claim.
-  </p>
-  <form class="undiscovered-companies">
-    <div class="undiscovered-companies__content">
-      <div class="add-company">
-        <h3><a href="">Add a Miami, FL Job-site</a></h3>
-        <div class="add-company__select">
-          <p>Enter Company Name Bellow:</p>
-          <div class="select-company">
-            <input type="text" placeholder="Ex: Shell Company" />
-            <div class="custom-select search-element">
-              <select id="selectJob" class="">
-                <option class="first-alternative" value="0">
-                  Select Job Type
-                </option>
-                <option value="lista2">Listă 2</option>
-                <option value="lista3">Listă 3</option>
-              </select>
-            </div>
-          </div>
-          <div class="checkbox">
-            <p>When did you worked there?:</p>
-            <div class="checkbox__select">
-              <div class="selected-item">
-                <label for="beforeCheckbox">Before 1990</label>
-                <input type="radio" name="drone" id="beforeCheckbox" />
-                <br />
-                <label for="afterCheckbox">After 1990</label>
-                <input type="radio" name="drone" id="afterCheckbox" />
-              </div>
-              <button type="submit" class="add-button-job" id="boilerButton">
-                Add To Your Claim
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="bar"></div>
+
+  <h2>Add an Unverified Asbestos Exposure Location to Your Claims</h2>
+  <div class="bar"></div>
+
+  <div class="">
+    <div class="">
+      <h3>A known Asbestos Exposure job site is missing from our records?</h3>
+      <p>
+        If you've previously worked at a job location in Miami, FL, where you
+        may have encountered asbestos products prior to the 1990s, just add your
+        job in the box below. Click the "Add To Your Claim" button.
+      </p>
     </div>
-  </form>
-  <h3 class="red-text">Nearby Cities</h3>
-  <div class="nearby-cities">
-    <span>Check out Leipers Fork, TN Nearby Cities </span>
-    <ul class="location-list">
-      <li><a href="#">North Miami Beach,</a></li>
-      <li><a href="#">Miami Beach,</a></li>
-      <li><a href="#">South Miami,</a></li>
-      <li><a href="#">North Miami Beach,</a></li>
-      <li><a href="#">Miami Beach,</a></li>
-    </ul>
+    <div class="missing-job">
+      <p>Enter Company Name</p>
+      <input type="text" placeholder="Ex: John Doe Auto Shop" />
+      <select>
+        <option value="compensation, legal advice, lawyers">
+          Enter Your Job Type
+        </option>
+        <option value="">select 1</option>
+        <option value="">Select 2</option>
+        <option value="">Select 3</option>
+      </select>
+      <div class="data-select">
+        <label class="alternative"
+          >Before 1982
+          <input type="radio" checked="checked" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="alternative"
+          >After 1982
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <button>Add To Your Claim</button>
+    </div>
   </div>
-  <div class="claims-select-mobile">@@include('./claims-calculator.html')</div>
-  <div class="expres-calculator">
-    <h2 id="sixth-information">
-      No Sure What To Do? <br />
-      <span>Try our Express Asbestos Case Value Calculator</span>
-    </h2>
-    <div class="bar"></div>
-    <p>
-      Discover the amount of compensation available for you or a loved one in
-      just a few minutes. (This calculator is recommended for family members.)
-    </p>
-    @@include('../common/case-compensation.html')
+  @@include('../common/case-compensation.html')
+  <div id="claims-select-mobile" class="claims-select-mobile">
+    @@include('./claims-calculator.html')
   </div>
 </section>
