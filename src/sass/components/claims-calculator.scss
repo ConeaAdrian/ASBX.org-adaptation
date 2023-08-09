@@ -7,27 +7,38 @@
 }
 .claims-select-mobile {
   @media (max-width: 767px) {
-    margin-top: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e3e3e3;
+    z-index: 10;
+    display: none;
+    z-index: 10000;
   }
   .general-claims {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 320px;
-    width: 100%;
-    justify-content: flex-start;
-    position: fixed;
-    
     @media (max-width: 767px) {
-      display: none;
       max-width: none;
-      width: 100%;
+      padding: 10px;
       position: inherit;
     }
-    // .badge {
-    //   display: none;
-    // }
+  }
+}
+.close-claims-calculator {
+  display: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #bc2649;
+  padding: 0 12px;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  @media (max-width: 767px) {
+    position: absolute;
+    right: 11px;
+    display: block;
   }
 }
 .general-claims {
@@ -158,13 +169,13 @@
 
     img {
       position: absolute;
-      transform: translate(14px,-14px);
+      transform: translate(14px, -14px);
       top: 0;
       right: 0;
       border-radius: 26px;
       width: 26px;
       height: 26px;
-      border: 0.7px solid #BFBFBF;
+      border: 0.7px solid #bfbfbf;
       @media (max-width: 767px) {
         max-width: none;
         position: inherit;
@@ -184,7 +195,7 @@
       width: 100%;
       padding-right: 0;
       @media (max-width: 767px) {
-       max-width: none;
+        max-width: none;
       }
       b {
         font-size: 14px !important;
@@ -212,7 +223,7 @@
           line-height: 16px;
           @media (max-width: 767px) {
             width: 100%;
-           }
+          }
         }
       }
     }
@@ -241,7 +252,6 @@
         font-size: 12px;
         line-height: 15px;
         font-weight: 400;
-
       }
     }
 
