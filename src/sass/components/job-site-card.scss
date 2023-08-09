@@ -39,6 +39,9 @@
       height: 44px;
       width: 100%;
       padding-left: 10px;
+      @media (max-width: 699px) {
+        height: 40px;
+      }
     }
     .select-job {
     }
@@ -78,6 +81,7 @@
       align-items: center;
       padding-left: 10px;
       color: #bc2649;
+      text-transform: uppercase !important;
     }
   }
   .right-column {

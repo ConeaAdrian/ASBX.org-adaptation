@@ -98,6 +98,9 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 475px) {
+    gap: 5px;
+  }
   li {
     text-decoration-line: underline;
     a {

@@ -182,29 +182,34 @@
           deserve, in the pursuit of the compensation you are entitled to.
         </p>
       </div>
-      <div class="search-principal container">
-  <form class="search-asbestos">
-    <div class="select-search">
-      <img src="../../img/uiw_search.svg" alt="" />
-      <select name="cars" id="cars">
-        <option value="compensation, legal advice, lawyers">
-          compensation, legal advice, lawyers
-        </option>
-        <option value="">select 1</option>
-        <option value="">Select 2</option>
-        <option value="">Select 3</option>
-      </select>
-    </div>
-    <div class="search-form">
-      <div class="select-wrapper">
-        <div class="input-wrapper">
-            <img src="../../img/location-user.svg" alt="" />
-          <input type="text" id="search" placeholder="city, state or zip" />
+      <div id="search-principal" class="search-principal container">
+  <form class="custom-search-form" id="main-search-form">
+    <input type="hidden" id="search-state-data" name="state-abbr"></input>
+    <input type="hidden" id="search-city-data" name="city-name"></input>
+    <input type="hidden" id="search-zip-data" name="zip-code"></input>
+    <div class="search-form-select-container">
+    <select id="search-form-select" class="search-form-select" name="disease-name" onclick="openCustomSelect(this) ,openSearch(this)">
+    <option style="display: none" selected >Find claims, compensation, legal advice</option>
+    </select>
+        <div id="custom-search-select-items" class="custom-search-items" style="display: none">
+            <div data-type="disease" data-compensation="Mesothelioma" onclick="selectItemSelect(this)">Mesothelioma Compensation</div>
+            <div data-type="disease" data-compensation="Lung Cancer" onclick="selectItemSelect(this)">Lung Cancer Compensation</div>
+            <div data-type="disease" data-compensation="Severe Asbestosis" onclick="selectItemSelect(this)">Severe Asbestosis Compensation</div>
+            <div data-type="help" data-compensation="Legal Help" onclick="selectItemSelect(this)">Legal Help</div>
         </div>
-      </div>
-      <button class="button-red" type="submit">Find</button>
     </div>
-  </form>
+    <div class="search-form-input-container">
+        <input class="search-form-input" id='search-form-input' type="text" placeholder="City, State or Zip"
+               onkeyup="searchEngine(this)" onclick="openCustomSelect(this)"></input>
+        <div id="custom-search-input-items" class="custom-search-items" style="display: none">
+            <div data-city="" data-state="" id="current-location-item" onclick="selectItemInput(this)">Current Location</div>
+        </div>
+    </div>
+    <div class="search-form-button-container">
+        <button class="close-form-button" type="button" onclick="closeSearch(this)">Close</button>
+        <button class="search-form-button" type="button">Find</button>
+    </div>
+</form>
 </div>
 
     </div>

@@ -165,105 +165,43 @@
     </section>
   </div>
 </header>
-<div class="header-search"><div class="search-principal container">
-  <form class="search-asbestos">
-    <div class="select-search">
-      <img src="../../img/uiw_search.svg" alt="" />
-      <select name="cars" id="cars">
-        <option value="compensation, legal advice, lawyers">
-          compensation, legal advice, lawyers
-        </option>
-        <option value="">select 1</option>
-        <option value="">Select 2</option>
-        <option value="">Select 3</option>
-      </select>
-    </div>
-    <div class="search-form">
-      <div class="select-wrapper">
-        <div class="input-wrapper">
-            <img src="../../img/location-user.svg" alt="" />
-          <input type="text" id="search" placeholder="city, state or zip" />
+<div class="header-search"><div id="search-principal" class="search-principal container">
+  <form class="custom-search-form" id="main-search-form">
+    <input type="hidden" id="search-state-data" name="state-abbr"></input>
+    <input type="hidden" id="search-city-data" name="city-name"></input>
+    <input type="hidden" id="search-zip-data" name="zip-code"></input>
+    <div class="search-form-select-container">
+    <select id="search-form-select" class="search-form-select" name="disease-name" onclick="openCustomSelect(this) ,openSearch(this)">
+    <option style="display: none" selected >Find claims, compensation, legal advice</option>
+    </select>
+        <div id="custom-search-select-items" class="custom-search-items" style="display: none">
+            <div data-type="disease" data-compensation="Mesothelioma" onclick="selectItemSelect(this)">Mesothelioma Compensation</div>
+            <div data-type="disease" data-compensation="Lung Cancer" onclick="selectItemSelect(this)">Lung Cancer Compensation</div>
+            <div data-type="disease" data-compensation="Severe Asbestosis" onclick="selectItemSelect(this)">Severe Asbestosis Compensation</div>
+            <div data-type="help" data-compensation="Legal Help" onclick="selectItemSelect(this)">Legal Help</div>
         </div>
-      </div>
-      <button class="button-red" type="submit">Find</button>
     </div>
-  </form>
+    <div class="search-form-input-container">
+        <input class="search-form-input" id='search-form-input' type="text" placeholder="City, State or Zip"
+               onkeyup="searchEngine(this)" onclick="openCustomSelect(this)"></input>
+        <div id="custom-search-input-items" class="custom-search-items" style="display: none">
+            <div data-city="" data-state="" id="current-location-item" onclick="selectItemInput(this)">Current Location</div>
+        </div>
+    </div>
+    <div class="search-form-button-container">
+        <button class="close-form-button" type="button" onclick="closeSearch(this)">Close</button>
+        <button class="search-form-button" type="button">Find</button>
+    </div>
+</form>
 </div>
 
   <div class="top-search-mobile">
   <div class="container">
     <div class="button-search-mobile">
-      <button id="open-search-block" class="search-button">
+      <button onclick="TestOpen()" id="open-search-block" class="search-button">
         <img src="../../img/search-user.svg" alt="" />
         Find claims, compensation, legal advice
       </button>
-    </div>
-  </div>
-
-  <div id="search-block" class="search-block">
-    <div class="search-dat">
-      <div class="search-mobile">
-        <img class="search-img" src="../../img/search-user.svg" alt="" />
-        <div class="search-mobile__compensation">
-          <input
-            type="text"
-            id="compensation-input"
-            placeholder="Find claims, compensation, legal advice"
-            oninput="handleInput('compensation-input')"
-          />
-          <div class="element-claims">
-            <ul>
-              <li onclick="populateInput(this)">
-                <img src="../../img/donate.svg" alt="" />
-                <p>Mesothelioma Compensation</p>
-              </li>
-              <li onclick="populateInput(this)">
-                <img src="../../img/donate.svg" alt="" />
-                <p>Lung Cancer Compensation</p>
-              </li>
-              <li onclick="populateInput(this)">
-                <img src="../../img/donate.svg" alt="" />
-                <p>Severe Asbestosis Compensation</p>
-              </li>
-              <li onclick="populateInput(this)">
-                <img src="../../img/user check.svg" alt="" />
-                <p>Free Legal Advise (talk to an attorney)</p>
-              </li>
-              <li onclick="populateInput(this)">
-                <img src="../../img/location.svg" alt="" />
-                <p>Add a missing asbestos site to the data base</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- Butonul de ștergere, cu id-ul "close-button-compensation" -->
-        <img
-          id="close-button-compensation"
-          src="../../img/close.svg"
-          alt=""
-          onclick="clearInput('compensation-input')"
-        />
-      </div>
-      <div class="location-mobile">
-        <img class="location-img" src="../../img/location 1.svg" alt="" />
-        <input
-          type="text"
-          id="location-input"
-          placeholder="Current Location"
-          oninput="handleInput('location-input')"
-        />
-        <img
-          id="close-button-location"
-          src="../../img/close.svg"
-          alt=""
-          onclick="clearInput('location-input')"
-        />
-      </div>
-
-      <div class="button-action">
-        <button id="close-search-block" class="close">Close</button>
-        <button class="search">Search</button>
-      </div>
     </div>
   </div>
 </div>
