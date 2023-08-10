@@ -855,9 +855,8 @@ nav {
         color: #ffffff;
         text-decoration: none;
         font-weight: 500;
-        font-size: 13px;
-        text-transform: uppercase;
-        height: 15px; }
+        font-size: 14px;
+        text-transform: uppercase; }
         @media (max-width: 992px) {
           nav ul li a,
           nav ul li a:visited {
@@ -913,7 +912,7 @@ nav {
         border: none;
         margin-left: 0; } }
   .nav-list li {
-    margin-bottom: 0; }
+    margin-top: 0; }
     .nav-list li a {
       font-family: "Roboto Condensed", sans-serif !important; }
       @media (max-width: 992px) {
@@ -923,15 +922,22 @@ nav {
     border: 1px solid #ffffff;
     border-radius: 4px;
     background: transparent;
-    padding: 4px 29px;
+    padding: 3px 29px;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 13px;
-    color: #ffffff; }
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px; }
     @media (max-width: 992px) {
       .nav-list .button-question {
         color: black;
         border: 1px solid black; } }
+    @media (max-width: 992px) {
+      .nav-list .button-question img {
+        background-color: black;
+        border-radius: 6px; } }
 
 .nav-mobile {
   display: none;
@@ -1999,7 +2005,8 @@ nav {
       height: 90px;
       max-width: 90px;
       width: 100%;
-      right: 78px; }
+      right: 32%;
+      left: 30%; }
       @media (max-width: 767px) {
         .general-claims .claims-selected img {
           position: relative;

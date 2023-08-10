@@ -95,9 +95,8 @@ nav {
         color: #ffffff;
         text-decoration: none;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 14px;
         text-transform: uppercase;
-        height: 15px;
         @media (max-width: 992px) {
           color: black;
           height: auto;
@@ -161,7 +160,7 @@ nav {
     }
   }
   li {
-    margin-bottom: 0;
+    margin-top: 0;
     a {
       font-family: "Roboto Condensed", sans-serif !important;
       @media (max-width: 992px) {
@@ -174,15 +173,25 @@ nav {
     border: 1px solid #ffffff;
     border-radius: 4px;
     background: transparent;
-    padding: 4px 29px;
+    padding: 3px 29px;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
     color: #ffffff;
+    // height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
     @media (max-width: 992px) {
       color: black;
       border: 1px solid black;
+    }
+    img {
+      @media (max-width: 992px) {
+        background-color: black;
+        border-radius: 6px;
+      }
     }
   }
 }
