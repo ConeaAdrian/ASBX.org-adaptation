@@ -1808,7 +1808,7 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fbfbfb;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-    width: 47%;
+    width: 48.35%;
     padding: 20px; }
     @media only screen and (max-width: 930px) and (min-width: 767px) {
       .content-job__search {
@@ -1851,7 +1851,7 @@ nav {
           width: 20px;
           height: 20px; }
   .content-job .search-alphabet {
-    width: 47%;
+    width: 48.35%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fbfbfb;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -2005,7 +2005,7 @@ nav {
       height: 90px;
       max-width: 90px;
       width: 100%;
-      right: 32%;
+      right: 30%;
       left: 30%; }
       @media (max-width: 767px) {
         .general-claims .claims-selected img {
@@ -2071,7 +2071,8 @@ nav {
     border: 0.6px solid #aaa;
     background: #fff;
     padding: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    width: 100%; }
     .general-claims .claims-result__principal-information {
       display: flex;
       align-items: center;
@@ -2085,8 +2086,32 @@ nav {
         width: 26px;
         height: 26px; }
       .general-claims .claims-result__principal-information .arrow-claim {
-        height: 5px;
-        width: 8px; }
+        height: 7px;
+        width: 10px; }
+    .general-claims .claims-result__data-information {
+      margin-top: 10px;
+      position: relative; }
+      .general-claims .claims-result__data-information .data-city {
+        display: flex;
+        align-items: center; }
+        .general-claims .claims-result__data-information .data-city b {
+          width: 45px;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal; }
+        .general-claims .claims-result__data-information .data-city p {
+          font-size: 14px;
+          line-height: normal; }
+      .general-claims .claims-result__data-information .button-remove-claims {
+        color: black;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration-line: underline;
+        padding: 0;
+        position: absolute;
+        right: 10px;
+        bottom: 0; }
   .general-claims button {
     background-color: transparent; }
 
@@ -3929,7 +3954,7 @@ nav {
   display: flex;
   flex-wrap: wrap; }
   .content-card-job .card-job-site {
-    width: 47%;
+    width: 48.35%;
     padding: 20px;
     gap: 10px;
     display: flex;
@@ -4086,7 +4111,7 @@ nav {
   flex-wrap: wrap;
   margin-bottom: 20px; }
   .content-boiler .card-boiler {
-    width: 47%;
+    width: 48.35%;
     padding: 20px;
     gap: 10px;
     display: flex;
