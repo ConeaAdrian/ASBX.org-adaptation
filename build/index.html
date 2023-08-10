@@ -261,34 +261,36 @@
       <p class="made-easy-text">
         Compensation for asbestos victims <span>Made Easy</span>
       </p>
-      <div id="search-principal" class="search-principal container">
-  <form class="custom-search-form" id="main-search-form">
-    <input type="hidden" id="search-state-data" name="state-abbr"></input>
-    <input type="hidden" id="search-city-data" name="city-name"></input>
-    <input type="hidden" id="search-zip-data" name="zip-code"></input>
-    <div class="search-form-select-container">
-    <select id="search-form-select" class="search-form-select" name="disease-name" onclick="openCustomSelect(this) ,openSearch(this)">
-    <option style="display: none" selected >Find claims, compensation, legal advice</option>
-    </select>
-        <div id="custom-search-select-items" class="custom-search-items" style="display: none">
-            <div data-type="disease" data-compensation="Mesothelioma" onclick="selectItemSelect(this)"><p>Mesothelioma Compensation</p></div>
-            <div data-type="disease" data-compensation="Lung Cancer" onclick="selectItemSelect(this)"><p>Lung Cancer Compensation</p></div>
-            <div data-type="disease" data-compensation="Severe Asbestosis" onclick="selectItemSelect(this)"><p>Severe Asbestosis Compensation</p></div>
-            <div data-type="help" data-compensation="Legal Help" onclick="selectItemSelect(this)"><p>Legal Help</p></div>
+      <div id="search-principal" class="search-principal">
+  <div class="container">
+    <form class="custom-search-form" id="main-search-form">
+        <input type="hidden" id="search-state-data" name="state-abbr"></input>
+        <input type="hidden" id="search-city-data" name="city-name"></input>
+        <input type="hidden" id="search-zip-data" name="zip-code"></input>
+        <div class="search-form-select-container">
+        <select id="search-form-select" class="search-form-select" name="disease-name" onclick="openCustomSelect(this) ,openSearch(this)">
+        <option style="display: none" selected >Find claims, compensation, legal advice</option>
+        </select>
+            <div id="custom-search-select-items" class="custom-search-items" style="display: none">
+                <div data-type="disease" data-compensation="Mesothelioma" onclick="selectItemSelect(this)"><p>Mesothelioma Compensation</p></div>
+                <div data-type="disease" data-compensation="Lung Cancer" onclick="selectItemSelect(this)"><p>Lung Cancer Compensation</p></div>
+                <div data-type="disease" data-compensation="Severe Asbestosis" onclick="selectItemSelect(this)"><p>Severe Asbestosis Compensation</p></div>
+                <div data-type="help" data-compensation="Legal Help" onclick="selectItemSelect(this)"><p>Legal Help</p></div>
+            </div>
         </div>
-    </div>
-    <div class="search-form-input-container">
-        <input class="search-form-input" id='search-form-input' type="text" placeholder="City, State or Zip"
-               onkeyup="searchEngine(this)" onclick="openCustomSelect(this)"></input>
-        <div id="custom-search-input-items" class="custom-search-items" style="display: none">
-            <div data-city="" data-state="" id="current-location-item" onclick="selectItemInput(this)"><p>Current Location</p></div>
+        <div class="search-form-input-container">
+            <input class="search-form-input" id='search-form-input' type="text" placeholder="City, State or Zip"
+                   onkeyup="searchEngine(this)" onclick="openCustomSelect(this)"></input>
+            <div id="custom-search-input-items" class="custom-search-items" style="display: none">
+                <div data-city="" data-state="" id="current-location-item" onclick="selectItemInput(this)"><p>Current Location</p></div>
+            </div>
         </div>
-    </div>
-    <div class="search-form-button-container">
-        <button class="close-form-button" type="button" onclick="closeSearch(this)">Close</button>
-        <button class="search-form-button" type="button">Find</button>
-    </div>
-</form>
+        <div class="search-form-button-container">
+            <button class="close-form-button" type="button" onclick="closeSearch(this)">Close</button>
+            <button class="search-form-button" type="button">Find</button>
+        </div>
+    </form>
+  </div>
 </div>
 
       <p class="">

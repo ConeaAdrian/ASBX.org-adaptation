@@ -334,7 +334,10 @@ nav {
     background-size: 14px;
   }
 }
-
+.search-principal {
+  background: #FBFBFB;
+box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+}
 .custom-search-form {
   position: relative;
   width: 100%;
@@ -350,6 +353,7 @@ nav {
   position: absolute;
   box-sizing: border-box;
   width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.06);
 
   > div {
     cursor: pointer;

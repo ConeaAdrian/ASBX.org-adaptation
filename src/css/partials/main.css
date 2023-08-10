@@ -520,7 +520,6 @@ button {
   display: none; }
 
 .search-principal {
-  padding-top: 25px;
   z-index: 100; }
   @media (max-width: 767px) {
     .search-principal {
@@ -1052,6 +1051,10 @@ nav {
     align-items: center;
     background-size: 14px; }
 
+.search-principal {
+  background: #FBFBFB;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1); }
+
 .custom-search-form {
   position: relative;
   width: 100%;
@@ -1065,7 +1068,8 @@ nav {
 .custom-search-items {
   position: absolute;
   box-sizing: border-box;
-  width: 100%; }
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.06); }
   .custom-search-items > div {
     cursor: pointer;
     position: relative;
@@ -1942,6 +1946,7 @@ nav {
 
 .claims-select {
   max-width: 250px;
+  min-width: 220px;
   width: 100%; }
   @media (max-width: 767px) {
     .claims-select {
@@ -3604,7 +3609,9 @@ nav {
   gap: 5px; }
 
 .top-search-mobile {
-  display: none; }
+  display: none;
+  background: #FBFBFB;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1); }
   @media (max-width: 767px) {
     .top-search-mobile {
       display: block; } }
@@ -3836,6 +3843,60 @@ nav {
     font-size: 16px !important; }
   .trust-fund .contact-company a {
     text-decoration-line: underline !important; }
+
+.compensation-section__table {
+  border-collapse: collapse;
+  display: flex;
+  margin-top: 13px;
+  margin-bottom: 21px; }
+  .compensation-section__table tbody {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fcfaf6;
+    display: flex;
+    max-width: 289px;
+    width: 100%; }
+  .compensation-section__table tr {
+    flex-direction: column;
+    display: flex; }
+    .compensation-section__table tr:nth-child(even) td {
+      background-color: #faf7f0; }
+  .compensation-section__table th,
+  .compensation-section__table td {
+    padding: 8px;
+    border: 1px solid #e6e6e6; }
+  .compensation-section__table th {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold; }
+  .compensation-section__table .left-column {
+    width: 100%;
+    background: #fcfaf6 !important; }
+    .compensation-section__table .left-column th {
+      color: #bc2649;
+      font-weight: 300;
+      align-items: start;
+      display: flex;
+      background: #fcfaf6 !important; }
+    .compensation-section__table .left-column .claims-type {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #324a74 !important;
+      font-size: 16px;
+      align-items: start;
+      display: flex; }
+  .compensation-section__table .right-column {
+    width: 100%; }
+    .compensation-section__table .right-column td {
+      font-weight: 400;
+      background: #fcfaf6 !important; }
+    .compensation-section__table .right-column .price {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #bc2649;
+      font-weight: 500; }
 
 .mark-text {
   margin-top: 21px;
