@@ -1,6 +1,6 @@
 .button-red {
   border-radius: 4px;
-  background: #BC2649;
+  background: #bc2649;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -22,7 +22,7 @@
 
 .button-blue {
   border-radius: 4px;
-  background: #324A74;
+  background: #324a74;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -49,4 +49,11 @@ button {
   font-size: 16px;
   border-radius: 4px;
   color: #fff;
+}
+
+.search-button {
+  color: #564d4d;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
 }

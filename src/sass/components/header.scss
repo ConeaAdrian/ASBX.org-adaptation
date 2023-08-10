@@ -39,17 +39,17 @@ $link-hover-color: $main-red;
     display: flex;
     gap: 10px;
     padding-right: 45px;
-    @media (min-width: 992px) {
+    @media (min-width: 767px) {
       display: none;
     }
     button {
-      height: 24px;
-      width: 34px;
+      height: 26px;
+      width: 80px;
       border-radius: 4px;
       background: #bc2649;
       color: #fff;
       text-transform: uppercase;
-      font-size: 8px;
+      font-size: 12px;
       align-items: center;
       justify-content: center;
       display: flex;
@@ -58,8 +58,8 @@ $link-hover-color: $main-red;
 
     p {
       background: #324a74;
-      height: 24px;
-      width: 24px;
+      height: 26px;
+      width: 26px;
       color: #fff;
       font-size: 16px;
       font-weight: 500;
@@ -73,6 +73,10 @@ $link-hover-color: $main-red;
   .logo {
     height: 22px;
     width: 91px;
+    @media (max-width: 767px) {
+      height: 25px;
+      width: 103px;
+    }
   }
 }
 nav {
@@ -230,281 +234,7 @@ nav {
   }
   @media (max-width: 475px) {
     right: -15px !important;
-    top: 18px;
-  }
-  span,
-  span:before,
-  span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 1.5px;
-    width: 30px;
-    background: #324a74;
-    position: absolute;
-    display: block;
-    content: "";
-    transition: all 300ms ease-in-out;
-  }
-  span:before {
-    top: -7px;
-  }
-  span:after {
-    bottom: -7px;
-  }
-  &.active span {
-    background-color: transparent;
-    &:before,
-    &:after {
-      top: 0;
-    }
-    &:before {
-      background-color: #324a74;
-      transform: rotate(45deg);
-    }
-    &:after {
-      background-color: #324a74;
-      transform: rotate(-45deg);
-    }
-  }
-}
-.index-image-logo {
-  display: none !important;
-}
-
-//--------------------
-// Navigation Variables
-$content-width: 980px;
-$breakpoint: 992px;
-$nav-height: 60px;
-$nav-background: #ffffff;
-$nav-font-color: $bluish;
-$link-hover-color: $main-red;
-
-// Navigation
-
-.header-section {
-  width: 100%;
-  background: #324a74;
-
-  @media (max-width: 992px) {
-    background: #ffffff;
-  }
-}
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .brand {
-    @media (max-width: 992px) {
-      display: none;
-    }
-  }
-  .mobile-brand {
-    display: none;
-    @media (max-width: 992px) {
-      display: block;
-    }
-    a {
-      display: flex;
-    }
-  }
-
-  .claims-mobile {
-    display: flex;
-    gap: 10px;
-    padding-right: 45px;
-    @media (min-width: 992px) {
-      display: none;
-    }
-    button {
-      height: 24px;
-      width: 34px;
-      border-radius: 4px;
-      background: #bc2649;
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 8px;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      font-weight: 700;
-    }
-
-    p {
-      background: #324a74;
-      height: 24px;
-      width: 24px;
-      color: #fff;
-      font-size: 16px;
-      font-weight: 500;
-      text-transform: capitalize;
-      border-radius: 4px;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-    }
-  }
-  .logo {
-    height: 22px;
-    width: 91px;
-  }
-}
-nav {
-  z-index: 1;
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      float: left;
-      position: relative;
-      a,
-      a:visited {
-        display: block;
-        padding: 0 10px;
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 13px;
-        text-transform: uppercase;
-        height: 15px;
-        @media (max-width: 992px) {
-          color: black;
-          height: auto;
-        }
-
-        &:not(:only-child):after {
-          padding-left: 4px;
-          content: " ▾";
-          top: -1px;
-          position: absolute;
-          @media (max-width: 992px) {
-            top: 14px;
-          }
-        }
-      } // Dropdown list
-      ul li {
-        min-width: 190px;
-        a {
-          padding: 15px;
-          line-height: 20px;
-        }
-      }
-      .FAQs {
-        color: $main-red !important;
-      }
-    }
-  }
-}
-
-.nav-dropdown {
-  position: absolute;
-  display: none;
-  z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  background-color: rgba(4, 4, 4, 0.5);
-  @media (max-width: 992px) {
-    background-color: transparent;
-  }
-}
-.nav-list {
-  background-color: white;
-  align-items: center;
-  @media (max-width: 992px) {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 10;
-    padding: 3rem;
-    padding-top: 5rem !important;
-  }
-  .bar-top {
-    border-left: 1px solid #cdcdcd;
-    margin-left: 20px;
-
-    @media (max-width: 992px) {
-      border: none;
-      margin-left: 0;
-    }
-  }
-  li {
-    margin-bottom: 0;
-    a {
-      font-family: "Roboto Condensed", sans-serif !important;
-      @media (max-width: 992px) {
-        padding: 15px 0 !important;
-      }
-    }
-  }
-
-  .button-question {
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    background: transparent;
-    padding: 4px 29px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 13px;
-    color: #ffffff;
-
-    @media (max-width: 992px) {
-      color: black;
-      border: 1px solid black;
-    }
-  }
-}
-
-.nav-mobile {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 20px;
-  height: 2rem;
-  z-index: 100;
-}
-@media only screen and (max-width: 992px) {
-  .nav-mobile {
-    display: block;
-  }
-  nav {
-    ul {
-      display: none;
-      li {
-        float: none;
-        a {
-          padding: 15px;
-          line-height: 20px;
-          font-size: 24px;
-        }
-      }
-    }
-  }
-  .nav-dropdown {
-    position: static;
-  }
-}
-@media screen and (min-width: 993px) {
-  .nav-list {
-    display: flex !important;
-    background: transparent;
-  }
-}
-#nav-toggle {
-  position: absolute;
-  right: 0;
-  top: 22px;
-  cursor: pointer;
-  padding: 10px 35px 16px 0px;
-
-  @media (max-width: 992px) {
-    padding: 3px 35px 16px 0px;
-  }
-  @media (max-width: 475px) {
-    right: -15px !important;
-    top: 18px;
+    top: 20px;
   }
   span,
   span:before,
