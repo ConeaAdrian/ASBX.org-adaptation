@@ -1989,10 +1989,10 @@ nav {
     height: auto;
     border-radius: 4px;
     border: 0.6px solid rgba(0, 0, 0, 0.2);
-    background: #FBFBFB;
+    background: #fbfbfb;
     margin-top: 2rem;
     text-align: center;
-    margin-bottom: 22px;
+    margin-bottom: 10px;
     position: relative;
     min-height: 267px;
     height: 100%; }
@@ -2058,7 +2058,7 @@ nav {
         font-style: normal;
         border: none;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700; }
       .general-claims .claims-selected .claims-buttons button:first-child {
         background: #BC2649;
@@ -2066,102 +2066,27 @@ nav {
       .general-claims .claims-selected .claims-buttons button:last-child {
         background: #324a74;
         color: white; }
-  .general-claims .content-box {
+  .general-claims .claims-result {
     border-radius: 5px;
-    border: 1px solid #ececec;
+    border: 0.6px solid #aaa;
     background: #fff;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 4px;
-    margin-bottom: 17px;
-    position: relative; }
-    @media (max-width: 767px) {
-      .general-claims .content-box {
-        gap: 20px; } }
-    .general-claims .content-box img {
-      position: absolute;
-      transform: translate(14px, -14px);
-      top: 0;
-      right: 0;
-      border-radius: 26px;
-      width: 26px;
-      height: 26px;
-      border: 0.7px solid #bfbfbf; }
-      @media (max-width: 767px) {
-        .general-claims .content-box img {
-          max-width: none;
-          position: inherit;
-          position: static;
-          transform: none; } }
-    .general-claims .content-box p {
-      transform: none; }
-    .general-claims .content-box__information {
-      padding: 10px;
+    padding: 10px;
+    margin-bottom: 10px; }
+    .general-claims .claims-result__principal-information {
       display: flex;
-      flex-direction: column;
-      max-width: 200px;
-      width: 100%;
-      padding-right: 0; }
-      @media (max-width: 767px) {
-        .general-claims .content-box__information {
-          max-width: none; } }
-      .general-claims .content-box__information b {
-        font-size: 14px !important;
-        line-height: 15px; }
-      .general-claims .content-box__information .job {
-        margin-top: 5px;
-        margin-bottom: 3px; }
-      .general-claims .content-box__information .job,
-      .general-claims .content-box__information .time {
-        display: flex;
-        align-items: center;
-        align-items: baseline; }
-        .general-claims .content-box__information .job b,
-        .general-claims .content-box__information .time b {
-          font-size: 12px !important;
-          margin-right: 4px;
-          width: 37px; }
-        .general-claims .content-box__information .job p,
-        .general-claims .content-box__information .time p {
-          width: 132px;
-          font-weight: 400;
-          line-height: 16px; }
-          @media (max-width: 767px) {
-            .general-claims .content-box__information .job p,
-            .general-claims .content-box__information .time p {
-              width: 100%; } }
-    .general-claims .content-box__logo {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: space-between;
-      padding-bottom: 10px;
-      justify-content: end; }
-      @media (max-width: 767px) {
-        .general-claims .content-box__logo {
-          justify-content: space-between;
-          padding: 5px;
-          align-items: center; } }
-      .general-claims .content-box__logo i {
-        cursor: pointer; }
-      .general-claims .content-box__logo .delete {
-        background: none;
-        border: none;
-        font: inherit;
-        cursor: pointer;
-        outline: none;
-        font-size: 12px;
-        line-height: 15px;
-        font-weight: 400; }
-    .general-claims .content-box.special-content-box .special-text {
       align-items: center;
-      color: #324a74;
-      font-size: 12px;
-      line-height: 15px;
-      margin-top: 5px; }
-    .general-claims .content-box p {
-      font-size: 12px; }
+      gap: 10px; }
+      .general-claims .claims-result__principal-information p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; }
+      .general-claims .claims-result__principal-information .city-img {
+        width: 26px;
+        height: 26px; }
+      .general-claims .claims-result__principal-information .arrow-claim {
+        height: 5px;
+        width: 8px; }
   .general-claims button {
     background-color: transparent; }
 
