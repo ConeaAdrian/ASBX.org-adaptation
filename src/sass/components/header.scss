@@ -203,6 +203,9 @@ nav {
   right: 20px;
   height: 2rem;
   z-index: 100;
+  @media (max-width: 767px) {
+    right: 10px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .nav-mobile {
@@ -241,8 +244,7 @@ nav {
   @media (max-width: 992px) {
     padding: 3px 35px 16px 0px;
   }
-  @media (max-width: 475px) {
-    right: -15px !important;
+  @media (max-width: 375px) {
     top: 20px;
   }
   span,

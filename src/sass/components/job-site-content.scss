@@ -67,37 +67,3 @@
     width: 100%;
   }
 }
-.sort-chase {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
-  align-items: end;
-  &__content {
-    width: 100%;
-    max-width: 300px;
-    p {
-      color: #324a74;
-      font-size: 18px;
-      font-weight: 600;
-      @media (max-width: 475px) {
-        font-size: 16px;
-      }
-    }
-  }
-  .legend {
-    width: 100%;
-    max-width: 310px;
-    margin-left: 0;
-
-    .legend-nots {
-      border-top: 1px solid #f3f3f3;
-      padding-top: 9px;
-    }
-    p {
-      color: #bc2649;
-      font-size: 14px;
-      font-weight: 400;
-    }
-  }
-}

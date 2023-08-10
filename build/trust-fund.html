@@ -233,13 +233,7 @@
           <a href="#third-information">Claim Submission and Resolution</a>
         </li>
         <li>
-          <a href="#third-information">Claim Submission and Resolution</a>
-        </li>
-        <li>
-          <a href="#third-information">Current Payment Percentage</a>
-        </li>
-        <li>
-          <a href="#third-information">CCurrent Payment by Claim Type</a>
+          <a href="#third-information">Current Payment by Claim Type</a>
         </li>
         <li>
           <a href="#third-information">USG Asbestos Product</a>
@@ -279,16 +273,6 @@
     asbestos personal injury settlements on February 19, 2007, starting at 10:00
     A.M. EST.
   </p>
-  <h2>Current Payment Percentage</h2>
-  <div class="bar"></div>
-  <p>
-    At present, the payment percentage for USG stands at 12.7%. This applies to
-    both:
-  </p>
-  <ul class="mark-text">
-    <li>12.7% of the scheduled value for Expedited Review</li>
-    <li>12.7% of the gross settlement value for Individual Review</li>
-  </ul>
   <h2>Current Payment by Claim Type</h2>
   <div class="bar"></div>
   <p>
@@ -300,14 +284,14 @@
       <p>Mesothelioma Claims</p>
       <table class="compensation-section__table">
         <tr class="left-column">
-          <th>ER Claims</th>
-          <th>AVG Claims</th>
-          <th>IR Claims</th>
+          <th>Expedited Review</th>
+          <th>Individual Review</th>
+          <th>Ratio</th>
         </tr>
         <tr class="right-column">
           <td>$2,098,134</td>
           <td>$2,549,594</td>
-          <td>$6,203,194</td>
+          <td>12.7%</td>
         </tr>
       </table>
     </div>
@@ -315,9 +299,9 @@
       <p>Lung Cancer Claims</p>
       <table class="compensation-section__table">
         <tr class="left-column">
-          <th>ER Claims</th>
-          <th>AVG Claims</th>
-          <th>IR Claims</th>
+          <th>Expedited Review</th>
+          <th>Individual Review</th>
+          <th>Ratio</th>
         </tr>
         <tr class="right-column">
           <td>$2,098,134</td>
@@ -330,9 +314,9 @@
       <p>Asbestosis Claims</p>
       <table class="compensation-section__table">
         <tr class="left-column">
-          <th>ER Claims</th>
-          <th>AVG Claims</th>
-          <th>IR Claims</th>
+          <th>Expedited Review</th>
+          <th>Individual Review</th>
+          <th>Ratio</th>
         </tr>
         <tr class="right-column">
           <td>$2,098,134</td>
@@ -341,15 +325,24 @@
         </tr>
       </table>
     </div>
-    <div class="legend">
-      <span>Legend</span>
-      <div class="legend-nots">
-        <p>ER Claim = Expedite Review Trust Claim.</p>
-        <p>AVG Claim = Average Review Trust and Civil Lawsuit</p>
-        <p>IR Claim = Individual Review Trust Claim.</p>
-        <p>*Ratio = payment percentage established by the trust.</p>
-      </div>
+    <div class="sort-chase__content">
+      <p>Other Cancer Claims</p>
+      <table class="compensation-section__table">
+        <tr class="left-column">
+          <th>Expedited Review</th>
+          <th>Individual Review</th>
+          <th>Ratio</th>
+        </tr>
+        <tr class="right-column">
+          <td>$2,098,134</td>
+          <td>$2,549,594</td>
+          <td>$6,203,194</td>
+        </tr>
+      </table>
     </div>
+  </div>
+  <div class="legend-ratio">
+    <p><span>*</span><b>Ratio</b> = payment percentage of the scheduled value established  by the trust.</p>
   </div>
   <h2>USG Asbestos Product</h2>
   <div class="bar"></div>
@@ -443,8 +436,10 @@
       class="claims-result__principal-information"
       onclick="toggleClaims(this)"
     >
-      <img class="city-img" src="../../img/State.svg" alt="" />
-      <p>Schlitz Brewing Company</p>
+      <div class="content-claims">
+        <img class="city-img" src="../../img/State.svg" alt="" />
+        <p>Schlitz Brewing Company</p>
+      </div>
       <img class="arrow-claim" src="../../img/arrow-claims.svg" alt="" />
     </div>
     <div class="claims-result__data-information">
