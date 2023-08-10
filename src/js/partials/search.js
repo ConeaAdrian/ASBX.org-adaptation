@@ -280,6 +280,8 @@ async function selectItemInput(e, is_city = true) {
     e.parentElement.style.display = "none"
 }
 
+
+
 async function TestOpen() {
     var searchPrincipal = document.getElementById("search-principal");
     if (window.innerWidth <= 767) {

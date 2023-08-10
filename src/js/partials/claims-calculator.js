@@ -19,6 +19,46 @@ window.addEventListener("resize", function() {
 window.dispatchEvent(new Event('resize'));
 
 
+//claims calculator functional
+function toggleClaims(element) {
+    const parentDiv = element.closest('.claims-result');
+    const dataDiv = parentDiv.querySelector('.claims-result__data-information');
+    const arrowImg = parentDiv.querySelector('.arrow-claim');
+    
+    const isActive = parentDiv.id === 'active';
+  
+    if (!isActive) {
+      dataDiv.style.display = 'block';
+      arrowImg.classList.add('rotate');
+      parentDiv.id = 'active';
+    } else {
+      dataDiv.style.display = 'none';
+      arrowImg.classList.remove('rotate');
+      parentDiv.id = '';
+    }
+}
+
+function openActiveClaim() {
+    const activeClaim = document.getElementById('active');
+    if (activeClaim) {
+        const dataDiv = activeClaim.querySelector('.claims-result__data-information');
+        const arrowImg = activeClaim.querySelector('.arrow-claim');
+
+        dataDiv.style.display = 'block';
+        arrowImg.classList.add('rotate');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    openActiveClaim();
+});
+
+
+
+
+
+
+
 
 
 

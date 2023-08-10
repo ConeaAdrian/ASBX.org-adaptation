@@ -24,6 +24,31 @@
     }
   }
 }
+.claims-result {
+  .claims-result__data-information {
+    display: none; 
+  }
+
+  .arrow-claim {
+    // Aici poți adăuga stiluri pentru săgeată, dacă este necesar
+    &.rotate {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+// Pentru a deschide elementul cu id "active" la încărcarea paginii:
+#active {
+  .claims-result__data-information {
+    display: block;
+  }
+  .arrow-claim {
+    transform: rotate(180deg);
+  }
+}
+
+
+
 .close-claims-calculator {
   display: none;
   font-size: 14px;
@@ -75,6 +100,8 @@
       @media (max-width: 767px) {
         position: relative;
         right: 0;
+        right: auto;
+        left: auto;
       }
     }
 
@@ -209,6 +236,9 @@
       }
     }
   }
+  
+
+  
 
   button {
     background-color: transparent;

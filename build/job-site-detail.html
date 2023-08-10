@@ -158,7 +158,6 @@
               <a href="#!">Contact Us</a>
             </li>
             <button class="button-question">Ask Any Legal Question <img src="../../img/Free.svg" alt=""></button>
-            
           </ul>
         </div>
       </nav>
@@ -175,17 +174,17 @@
     <option style="display: none" selected >Find claims, compensation, legal advice</option>
     </select>
         <div id="custom-search-select-items" class="custom-search-items" style="display: none">
-            <div data-type="disease" data-compensation="Mesothelioma" onclick="selectItemSelect(this)">Mesothelioma Compensation</div>
-            <div data-type="disease" data-compensation="Lung Cancer" onclick="selectItemSelect(this)">Lung Cancer Compensation</div>
-            <div data-type="disease" data-compensation="Severe Asbestosis" onclick="selectItemSelect(this)">Severe Asbestosis Compensation</div>
-            <div data-type="help" data-compensation="Legal Help" onclick="selectItemSelect(this)">Legal Help</div>
+            <div data-type="disease" data-compensation="Mesothelioma" onclick="selectItemSelect(this)"><p>Mesothelioma Compensation</p></div>
+            <div data-type="disease" data-compensation="Lung Cancer" onclick="selectItemSelect(this)"><p>Lung Cancer Compensation</p></div>
+            <div data-type="disease" data-compensation="Severe Asbestosis" onclick="selectItemSelect(this)"><p>Severe Asbestosis Compensation</p></div>
+            <div data-type="help" data-compensation="Legal Help" onclick="selectItemSelect(this)"><p>Legal Help</p></div>
         </div>
     </div>
     <div class="search-form-input-container">
         <input class="search-form-input" id='search-form-input' type="text" placeholder="City, State or Zip"
                onkeyup="searchEngine(this)" onclick="openCustomSelect(this)"></input>
         <div id="custom-search-input-items" class="custom-search-items" style="display: none">
-            <div data-city="" data-state="" id="current-location-item" onclick="selectItemInput(this)">Current Location</div>
+            <div data-city="" data-state="" id="current-location-item" onclick="selectItemInput(this)"><p>Current Location</p></div>
         </div>
     </div>
     <div class="search-form-button-container">
@@ -482,11 +481,15 @@
       </div>
     </div>
   </div>
-  <div class="claims-result">
-    <div class="claims-result__principal-information">
+  <div class="claims-result" id="active">
+    <div
+      id="principal-information"
+      class="claims-result__principal-information"
+      onclick="toggleClaims(this)"
+    >
       <img class="city-img" src="../../img/State.svg" alt="" />
       <p>Schlitz Brewing Company</p>
-      <img class="arrow-claim" src="../../img/arrow-claims.svg" alt="">
+      <img class="arrow-claim" src="../../img/arrow-claims.svg" alt="" />
     </div>
     <div class="claims-result__data-information">
       <div class="data-city">
@@ -495,7 +498,38 @@
       </div>
       <div class="data-city">
         <b>Job: </b>
-        <p> Laborer</p>
+        <p>Laborer</p>
+      </div>
+      <div class="data-city">
+        <b>From:</b>
+        <p>1963</p>
+      </div>
+      <div class="data-city">
+        <b>To:</b>
+        <p>1971</p>
+      </div>
+      <button class="button-remove-claims">Remove</button>
+    </div>
+  </div>
+
+  <div class="claims-result">
+    <div
+      id="principal-information"
+      class="claims-result__principal-information"
+      onclick="toggleClaims(this)"
+    >
+      <img class="city-img" src="../../img/State.svg" alt="" />
+      <p>Schlitz Brewing Company</p>
+      <img class="arrow-claim" src="../../img/arrow-claims.svg" alt="" />
+    </div>
+    <div id="data-information" class="claims-result__data-information">
+      <div class="data-city">
+        <b>City: </b>
+        <p>Miami, FL</p>
+      </div>
+      <div class="data-city">
+        <b>Job: </b>
+        <p>Laborer</p>
       </div>
       <div class="data-city">
         <b>From:</b>
@@ -509,10 +543,33 @@
     </div>
   </div>
   <div class="claims-result">
-    <div class="claims-result__principal-information">
+    <div
+      id="principal-information"
+      class="claims-result__principal-information"
+      onclick="toggleClaims(this)"
+    >
       <img class="city-img" src="../../img/City.svg" alt="" />
       <p>Schlitz Brewing Company</p>
-      <img class="arrow-claim" src="../../img/arrow-claims.svg" alt="">
+      <img class="arrow-claim" src="../../img/arrow-claims.svg" alt="" />
+    </div>
+    <div id="data-information" class="claims-result__data-information">
+      <div class="data-city">
+        <b>City: </b>
+        <p>Miami, FL</p>
+      </div>
+      <div class="data-city">
+        <b>Job: </b>
+        <p>Laborer</p>
+      </div>
+      <div class="data-city">
+        <b>From:</b>
+        <p>1963</p>
+      </div>
+      <div class="data-city">
+        <b>To:</b>
+        <p>1971</p>
+      </div>
+      <button class="button-remove-claims">Remove</button>
     </div>
   </div>
 </div>

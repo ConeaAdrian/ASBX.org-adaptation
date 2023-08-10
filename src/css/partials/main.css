@@ -969,7 +969,7 @@ nav {
 #nav-toggle {
   position: absolute;
   right: 0;
-  top: 22px;
+  top: 24px;
   cursor: pointer;
   padding: 10px 35px 16px 0px; }
   @media (max-width: 992px) {
@@ -1128,7 +1128,10 @@ nav {
   .custom-search-items {
     position: absolute;
     left: 0;
-    top: 100%; } }
+    top: 100%; }
+    .custom-search-items p {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 18px; } }
   @media (max-width: 767px) and (max-width: 767px) {
     .custom-search-items {
       margin-top: 20px; } }
@@ -1961,6 +1964,18 @@ nav {
     max-width: none;
     padding: 10px; } }
 
+.claims-result .claims-result__data-information {
+  display: none; }
+
+.claims-result .arrow-claim.rotate {
+  transform: rotate(180deg); }
+
+#active .claims-result__data-information {
+  display: block; }
+
+#active .arrow-claim {
+  transform: rotate(180deg); }
+
 .close-claims-calculator {
   display: none;
   font-size: 14px;
@@ -2010,7 +2025,9 @@ nav {
       @media (max-width: 767px) {
         .general-claims .claims-selected img {
           position: relative;
-          right: 0; } }
+          right: 0;
+          right: auto;
+          left: auto; } }
     .general-claims .claims-selected .content-information {
       margin-top: 48px; }
       @media (max-width: 767px) {

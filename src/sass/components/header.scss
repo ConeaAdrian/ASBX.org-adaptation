@@ -234,7 +234,7 @@ nav {
 #nav-toggle {
   position: absolute;
   right: 0;
-  top: 22px;
+  top: 24px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
 
@@ -432,6 +432,11 @@ nav {
     position: absolute;
     left: 0;
     top: 100%;
+
+    p {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 18px;
+    }
     @media (max-width: 767px) {
       margin-top: 20px;
     }
