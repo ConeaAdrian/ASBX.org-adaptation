@@ -1,20 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
    
-    document.getElementById("viewClaims").addEventListener("click", function () {
-        console.log("Butonul yes");
+    // document.getElementById("viewClaims").addEventListener("click", function () {
+    //     console.log("Butonul yes");
     
-        var claimsDiv = document.getElementById("claims-select-mobile");
-        if (claimsDiv.style.display === "none" || claimsDiv.style.display === "") {
-            claimsDiv.style.display = "block";
-        } else {
-            claimsDiv.style.display = "none";
-        }
-    });
+    //     var claimsDiv = document.getElementById("claims-select-mobile");
+    //     if (claimsDiv.style.display === "none" || claimsDiv.style.display === "") {
+    //         claimsDiv.style.display = "block";
+    //     } else {
+    //         claimsDiv.style.display = "none";
+    //     }
+    // });
     
-    document.getElementById("close-claims-calculator").addEventListener("click", function () {
-        var claimsDiv = document.getElementById("claims-select-mobile");
-        claimsDiv.style.display = "none";
-    });
+    // document.getElementById("close-claims-calculator").addEventListener("click", function () {
+    //     var claimsDiv = document.getElementById("claims-select-mobile");
+    //     claimsDiv.style.display = "none";
+    // });
     
   
     let navLinks = document.querySelectorAll("nav ul li a:not(:only-child)");

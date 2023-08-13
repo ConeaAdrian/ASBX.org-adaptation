@@ -109,9 +109,9 @@
      
       <nav>
         <div id="viewClaims" class="claims-mobile">
-          <button>view claims</button>
+          <button onclick="openClaims()">view claims</button>
           <p>0</p>
-        </div>
+      </div>
         <div class="nav-mobile">
           <a aria-label="nav-toggle" id="nav-toggle" href="#!"><span></span></a>
         </div>
@@ -291,7 +291,7 @@
 
   <div id="claims-select-mobile" class="claims-select-mobile">
     <div class="general-claims">
-  <p id="close-claims-calculator" class="close-claims-calculator">Close</p>
+  <p id="close-claims-calculator" class="close-claims-calculator" onclick="closeClaims()">Close</p>
   <div class="claims-selected">
     <img src="../../img/calculator_iconred.svg" alt="" />
     <div class="content-information">
