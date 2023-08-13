@@ -148,7 +148,11 @@
   @media (max-width: 475px) {
     max-width: none;
   }
-
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
   select {
     border: 1px solid #dbdbdb;
     background: #fff;
@@ -177,6 +181,8 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    border: 1px solid #f1f1f1;
+    background: #fff;
   }
   .red-text {
     margin: 0;

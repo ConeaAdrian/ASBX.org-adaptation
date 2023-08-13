@@ -117,6 +117,7 @@ a {
 select {
   border: 1px solid #dbdbdb;
   background: #fff;
+  color: #000;
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
   border-radius: 0;
@@ -125,6 +126,8 @@ select {
   @media (max-width: 699px) {
     select {
       height: 40px !important; } }
+  select:hover {
+    border: 1px solid #dbdbdb; }
 
 select:after {
   position: absolute;
@@ -160,6 +163,9 @@ input {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   font-weight: 400; }
+  @media (max-width: 699px) {
+    input {
+      height: 40px !important; } }
 
 label {
   font-family: "Roboto Condensed", sans-serif; }
@@ -779,7 +785,11 @@ footer {
 
 .header-section {
   width: 100%;
-  background: #324a74; }
+  background: #324a74;
+  position: sticky;
+  height: fit-content;
+  top: 0;
+  z-index: 1; }
   @media (max-width: 992px) {
     .header-section {
       background: #ffffff; } }
@@ -806,17 +816,13 @@ footer {
       .navigation .claims-mobile {
         display: none; } }
     .navigation .claims-mobile button {
-      height: 26px;
-      width: 80px;
-      border-radius: 4px;
+      padding: 0px 5px;
       background: #bc2649;
-      color: #fff;
       text-transform: uppercase;
       font-size: 12px;
       align-items: center;
       justify-content: center;
-      display: flex;
-      font-weight: 700; }
+      display: flex; }
     .navigation .claims-mobile p {
       background: #324a74;
       height: 26px;
@@ -1096,25 +1102,22 @@ nav {
   .search-form-button-container .close-form-button {
     display: none;
     border-radius: 4px;
-    width: 55px;
-    background-color: #324a74; }
+    padding: 10px 20px;
+    background-color: #324a74;
+    text-transform: uppercase; }
     @media (max-width: 767px) {
       .search-form-button-container .close-form-button {
-        display: block;
-        width: 87px;
-        padding: 10px 25px; } }
+        display: block; } }
   .search-form-button-container .search-form-button {
     border-radius: 0px 4px 4px 0px;
     background: #bc2649;
-    width: 87px;
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase; }
     @media (max-width: 767px) {
       .search-form-button-container .search-form-button {
         display: block;
-        width: 87px;
-        padding: 10px 25px;
         border-radius: 4px; } }
 
 #custom-search-select-items > div {
@@ -2078,7 +2081,7 @@ nav {
       .general-claims .claims-selected .claims-buttons button {
         width: 100%;
         max-width: 150px;
-        height: 30px;
+        padding: 3px;
         border-radius: 4px;
         font-style: normal;
         border: none;
@@ -2114,7 +2117,8 @@ nav {
         line-height: normal; }
       .general-claims .claims-result__principal-information .city-img {
         width: 26px;
-        height: 26px; }
+        height: 26px;
+        border-radius: 50%; }
       .general-claims .claims-result__principal-information .arrow-claim {
         height: 7px;
         width: 10px; }
@@ -2149,7 +2153,7 @@ nav {
   .claims-select {
     position: sticky;
     height: fit-content;
-    top: 0; } }
+    top: 70px; } }
 
 .content-table {
   margin-top: 20px;
@@ -3824,7 +3828,13 @@ nav {
   justify-content: space-between;
   margin-top: 20px; }
   .sort-chase__content {
-    width: 46.5%; }
+    width: 47.5%; }
+    @media only screen and (max-width: 787px) and (min-width: 767px) {
+      .sort-chase__content {
+        width: 100%; } }
+    @media (max-width: 540px) {
+      .sort-chase__content {
+        width: 100%; } }
     .sort-chase__content p {
       font-size: 20px;
       font-weight: 500;
@@ -4154,6 +4164,10 @@ nav {
   @media (max-width: 475px) {
     .question-card {
       max-width: none; } }
+  .question-card p {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize; }
   .question-card select {
     border: 1px solid #dbdbdb;
     background: #fff;
@@ -4178,7 +4192,9 @@ nav {
     color: #555;
     font-style: normal;
     font-weight: 300;
-    line-height: normal; }
+    line-height: normal;
+    border: 1px solid #f1f1f1;
+    background: #fff; }
   .question-card .red-text {
     margin: 0; }
 

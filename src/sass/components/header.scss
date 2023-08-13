@@ -11,6 +11,11 @@ $link-hover-color: $main-red;
 .header-section {
   width: 100%;
   background: #324a74;
+  position: sticky;
+  height: fit-content;
+  top: 0;
+  z-index: 1;
+
 
   @media (max-width: 992px) {
     background: #ffffff;
@@ -43,17 +48,13 @@ $link-hover-color: $main-red;
       display: none;
     }
     button {
-      height: 26px;
-      width: 80px;
-      border-radius: 4px;
+      padding: 0px 5px;
       background: #bc2649;
-      color: #fff;
       text-transform: uppercase;
       font-size: 12px;
       align-items: center;
       justify-content: center;
       display: flex;
-      font-weight: 700;
     }
 
     p {
@@ -383,26 +384,23 @@ nav {
   .close-form-button {
     display: none;
     border-radius: 4px;
-    width: 55px;
+    padding: 10px 20px;
     background-color: #324a74;
+    text-transform: uppercase;
 
     @media (max-width: 767px) {
       display: block;
-      width: 87px;
-      padding: 10px 25px;
     }
   }
   .search-form-button {
     border-radius: 0px 4px 4px 0px;
     background: #bc2649;
-    width: 87px;
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     @media (max-width: 767px) {
       display: block;
-      width: 87px;
-      padding: 10px 25px;
       border-radius: 4px;
     }
   }
