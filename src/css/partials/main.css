@@ -907,6 +907,14 @@ nav {
       .nav-list .bar-top {
         border: none;
         margin-left: 0; } }
+  .nav-list .header-number {
+    border-left: 1px solid #cdcdcd;
+    margin-left: 5px;
+    font-size: 18px; }
+    @media (max-width: 992px) {
+      .nav-list .header-number {
+        border: none;
+        margin-left: 0; } }
   .nav-list li {
     margin-top: 0; }
     .nav-list li a {
@@ -1029,9 +1037,8 @@ nav {
   line-height: normal;
   color: #3d3d3d;
   appearance: none;
-  border-radius: 2px;
   height: 44px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.17);
   background: #fff;
   font-size: 14px; }
   .search-form-select.search-form-select,
@@ -1052,7 +1059,8 @@ nav {
 
 .search-principal {
   background: #fbfbfb;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  height: fit-content; }
 
 .custom-search-form {
   position: relative;
@@ -1070,11 +1078,14 @@ nav {
   cursor: pointer;
   position: relative;
   font-size: 16px;
-  padding: 12px 16px;
+  padding: 12px 8px;
   text-transform: capitalize;
   border-bottom: 0.5px solid #3d3d3d80;
   background: #fff;
-  color: #564D4D; }
+  color: #564d4d;
+  border: 1px solid rgba(0, 0, 0, 0.17);
+  background: #fff;
+  border-top: transparent; }
 
 .search-form-select-container,
 .search-form-input-container {
@@ -2112,7 +2123,7 @@ nav {
   .claims-select {
     position: sticky;
     height: fit-content;
-    top: 70px; } }
+    top: 150px; } }
 
 .content-table {
   margin-top: 20px;
@@ -2177,10 +2188,10 @@ nav {
     .nearby-cities .location-list li {
       font-weight: 400; }
       .nearby-cities .location-list li a {
-        margin-right: 5px;
         font-size: 16px;
-        color: #324a74;
-        text-decoration-line: underline !important; }
+        color: #324a74; }
+    .nearby-cities .location-list p {
+      margin-right: 5px; }
 
 .required-asbx {
   width: 100%;
@@ -2192,89 +2203,80 @@ nav {
     .required-asbx {
       max-width: none; } }
   .required-asbx__title {
-    color: #000 !important;
-    font-size: 20px !important;
-    font-weight: 400;
+    color: #324a74;
+    font-size: 20px;
+    font-weight: 500;
     line-height: normal;
     text-transform: capitalize; }
-  .required-asbx span {
-    color: #324a74;
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration-line: underline !important; }
-  .required-asbx p {
-    color: #4f4f4f;
-    font-size: 16px;
-    line-height: normal; }
-    .required-asbx p b {
-      color: #4f4f4f;
-      font-size: 16px !important;
-      font-weight: 400;
-      line-height: normal; }
   .required-asbx .block-data {
     display: grid;
     border-left: 2px solid #bc2649;
     padding-left: 10px; }
     .required-asbx .block-data p {
       color: #000;
-      font-weight: 300; }
+      font-weight: 300;
+      font-size: 16px; }
     .required-asbx .block-data b {
-      color: #000; }
+      font-weight: 400;
+      color: #000;
+      font-size: 16px; }
 
 .general-information-table {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   max-width: 320px;
   width: 100%; }
   @media (max-width: 475px) {
     .general-information-table {
       max-width: none; } }
-  .general-information-table .content-summarizer {
-    border-radius: 4px;
-    border: 1px solid #c0cad6;
-    background: rgba(240, 245, 255, 0.3);
-    max-width: 320px;
-    width: 100%;
-    padding: 10px; }
-    @media (max-width: 475px) {
-      .general-information-table .content-summarizer {
-        max-width: none; } }
-    .general-information-table .content-summarizer span {
-      font-size: 20px; }
-    .general-information-table .content-summarizer ol {
-      padding-left: 19px;
-      margin-top: 5px;
-      margin-bottom: 0;
-      color: #466d92; }
-      .general-information-table .content-summarizer ol .element {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        margin-left: -10px;
-        height: 22px;
-        margin-top: 3px; }
-        .general-information-table .content-summarizer ol .element p {
-          margin-top: 0; }
-      .general-information-table .content-summarizer ol li {
-        text-decoration-line: underline;
-        text-transform: capitalize; }
-        .general-information-table .content-summarizer ol li a {
-          color: #466d92;
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 22px;
-          text-decoration-line: underline;
-          text-transform: capitalize;
-          margin-bottom: 2px; }
-      .general-information-table .content-summarizer ol p {
+
+.content-summarizer {
+  border-radius: 4px;
+  border: 1px solid #c0cad6;
+  background: rgba(240, 245, 255, 0.3);
+  max-width: 320px;
+  width: 100%;
+  padding: 10px; }
+  @media (max-width: 475px) {
+    .content-summarizer {
+      max-width: none; } }
+  .content-summarizer span {
+    font-size: 20px; }
+  .content-summarizer ol {
+    padding-left: 19px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #466d92; }
+    .content-summarizer ol .element {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: -10px;
+      height: 22px;
+      margin-top: 3px; }
+      .content-summarizer ol .element p {
+        margin-top: 0; }
+    .content-summarizer ol li {
+      text-decoration-line: underline;
+      text-transform: capitalize;
+      margin-top: 0; }
+      .content-summarizer ol li a {
+        color: #466d92;
         font-size: 16px;
         font-weight: 500;
         line-height: 22px;
         text-decoration-line: underline;
-        text-transform: capitalize; }
-        .general-information-table .content-summarizer ol p a {
-          font-size: 16px; }
+        text-transform: capitalize;
+        margin-bottom: 2px; }
+    .content-summarizer ol p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      text-decoration-line: underline;
+      text-transform: capitalize; }
+      .content-summarizer ol p a {
+        font-size: 16px; }
 
 .mobile-flag-img {
   display: none; }
@@ -4331,7 +4333,6 @@ nav {
   border-collapse: collapse;
   display: flex;
   margin-top: 10px;
-  max-width: 660px;
   width: 100%;
   margin-top: 30px; }
   .state .city-statistic__table tbody {
