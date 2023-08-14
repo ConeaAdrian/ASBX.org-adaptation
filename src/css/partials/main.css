@@ -97,6 +97,7 @@ li {
   margin-top: 5px; }
 
 span {
+  color: #000000;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -526,15 +527,6 @@ button {
 
 .search-principal {
   z-index: 100; }
-  @media (max-width: 767px) {
-    .search-principal {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #F2F9FF;
-      display: none; } }
   .search-principal .search-asbestos {
     display: flex;
     align-items: center;
@@ -1067,10 +1059,6 @@ nav {
   width: 100%;
   display: flex;
   max-width: 660px; }
-  @media (max-width: 767px) {
-    .custom-search-form {
-      max-width: none;
-      gap: 20px; } }
 
 .custom-search-items {
   position: absolute;
@@ -1117,8 +1105,7 @@ nav {
     text-transform: uppercase; }
     @media (max-width: 767px) {
       .search-form-button-container .search-form-button {
-        display: block;
-        border-radius: 4px; } }
+        height: 40px; } }
 
 #custom-search-select-items > div {
   display: flex;
@@ -1135,33 +1122,6 @@ nav {
   #custom-search-select-items > div[data-type="help"] {
     background-image: url("../../img/user%20check.svg"); }
 
-@media (max-width: 767px) {
-  .custom-search-form {
-    flex-direction: column; }
-  .custom-search-items {
-    position: absolute;
-    left: 0;
-    top: 100%; } }
-  @media (max-width: 767px) and (max-width: 767px) {
-    .custom-search-items {
-      margin-top: 20px; } }
-
-@media (max-width: 767px) {
-    .custom-search-items > div {
-      padding: 12px 20px;
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 18px; }
-  .close-form-button {
-    display: inherit; }
-  .search-form-input {
-    background-image: url("../../img/location%201.svg"); }
-  .search-form-select-container,
-  .search-form-input-container,
-  .search-form-button-container {
-    position: initial;
-    max-width: none;
-    display: flex; } }
-
 .search-form-select-container {
   margin-right: 10px;
   max-width: 300px; }
@@ -1170,11 +1130,9 @@ nav {
       max-width: none;
       margin-right: 0; } }
 
-.search-form-input-container {
-  max-width: 260px; }
-  @media (max-width: 767px) {
-    .search-form-input-container {
-      max-width: none; } }
+@media (max-width: 767px) {
+  .search-form-input-container {
+    max-width: none; } }
 
 .container {
   max-width: 980px;
@@ -2281,6 +2239,8 @@ nav {
     @media (max-width: 475px) {
       .general-information-table .content-summarizer {
         max-width: none; } }
+    .general-information-table .content-summarizer span {
+      font-size: 20px; }
     .general-information-table .content-summarizer ol {
       padding-left: 19px;
       margin-top: 5px;
@@ -4283,3 +4243,47 @@ nav {
   .button-boiler img {
     height: 6px;
     width: 20px; }
+
+.state .general-information-table {
+  max-width: none !important;
+  flex-direction: initial; }
+  @media (max-width: 600px) {
+    .state .general-information-table {
+      flex-direction: column; } }
+  .state .general-information-table .state-logo {
+    width: 100%;
+    max-width: 318px;
+    height: 185px; }
+
+.state .state-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; }
+  .state .state-content .state-card {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    width: 47.8%; }
+    @media (max-width: 600px) {
+      .state .state-content .state-card {
+        width: 100%; } }
+    .state .state-content .state-card__data {
+      padding: 10px; }
+      .state .state-content .state-card__data .content-information {
+        margin-top: 10px; }
+      .state .state-content .state-card__data span {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500; }
+      .state .state-content .state-card__data p {
+        font-weight: 300;
+        line-height: normal;
+        font-size: 16px; }
+        .state .state-content .state-card__data p b {
+          font-weight: 400; }
+    .state .state-content .state-card .cities-top {
+      border-radius: 4px 4px 0px 0px; }

@@ -170,17 +170,7 @@
         <input type="hidden" id="search-state-data" name="state-abbr"></input>
         <input type="hidden" id="search-city-data" name="city-name"></input>
         <input type="hidden" id="search-zip-data" name="zip-code"></input>
-        <div class="search-form-select-container">
-        <select id="search-form-select" class="search-form-select" name="disease-name" onclick="openCustomSelect(this) ,openSearch(this)">
-        <option style="display: none" selected >Find claims, compensation, legal advice</option>
-        </select>
-            <div id="custom-search-select-items" class="custom-search-items" style="display: none">
-                <div data-type="disease" data-compensation="Mesothelioma" onclick="selectItemSelect(this)">Mesothelioma Compensation</div>
-                <div data-type="disease" data-compensation="Lung Cancer" onclick="selectItemSelect(this)">Lung Cancer Compensation</div>
-                <div data-type="disease" data-compensation="Severe Asbestosis" onclick="selectItemSelect(this)">Severe Asbestosis Compensation</div>
-                <div data-type="help" data-compensation="Legal Help" onclick="selectItemSelect(this)">Legal Help</div>
-            </div>
-        </div>
+        
         <div class="search-form-input-container">
             <input class="search-form-input" id='search-form-input' type="text" placeholder="City, State or Zip"
                    onkeyup="searchEngine(this)" onclick="openCustomSelect(this)"></input>
@@ -189,14 +179,13 @@
             </div>
         </div>
         <div class="search-form-button-container">
-            <button class="close-form-button" type="button" onclick="closeSearch(this)">Close</button>
             <button class="search-form-button" type="button">Find</button>
         </div>
     </form>
   </div>
 </div>
 
-<div class="top-search-mobile">
+<!-- <div class="top-search-mobile">
   <div class="container">
     <div class="button-search-mobile">
       <button onclick="TestOpen()" id="open-search-block" class="search-button">
@@ -205,7 +194,7 @@
       </button>
     </div>
   </div>
-</div>
+</div> -->
 
 
 <div class="body-page">

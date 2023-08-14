@@ -1,14 +1,6 @@
 .search-principal {
   z-index: 100;
-  @media (max-width: 767px) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #F2F9FF;
-    display: none;
-  }
+
   .search-asbestos {
     display: flex;
     align-items: center;

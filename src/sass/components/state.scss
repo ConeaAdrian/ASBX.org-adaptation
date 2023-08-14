@@ -1,0 +1,57 @@
+.state {
+  .general-information-table {
+    max-width: none !important;
+    flex-direction: initial;
+    @media (max-width: 600px) {
+        flex-direction: column;
+       }
+
+    .state-logo {
+      width: 100%;
+      max-width: 318px;
+      height: 185px;
+    }
+  }
+  .state-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    .state-card {
+      display: flex;
+      flex-direction: column;
+      width: 47%;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      width: 47.8%;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+
+      &__data {
+        padding: 10px;
+
+        .content-information {
+          margin-top: 10px;
+        }
+        span {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+        }
+        p {
+          font-weight: 300;
+          line-height: normal;
+          font-size: 16px;
+          b {
+            font-weight: 400;
+          }
+        }
+      }
+      .cities-top {
+        border-radius: 4px 4px 0px 0px;
+      }
+    }
+  }
+}

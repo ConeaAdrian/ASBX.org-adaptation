@@ -31,14 +31,13 @@
   }
 
   .arrow-claim {
-    // Aici poți adăuga stiluri pentru săgeată, dacă este necesar
     &.rotate {
       transform: rotate(180deg);
     }
   }
 }
 
-// Pentru a deschide elementul cu id "active" la încărcarea paginii:
+
 #active {
   .claims-result__data-information {
     display: block;
