@@ -115,35 +115,47 @@
       tr {
         flex-direction: column;
         display: flex;
-    
       }
-      // .city-column,
-      // .trust-fund-column,
-      // .job-sites-column {
-      //   display: flex;
-      //   gap: 100px;
-      //   flex-direction: column;
-      // }
+      .city-column,
+      .trust-fund-column,
+      .job-sites-column {
+        width: 100%;
+      }
       .city-column {
-       
         th {
-          border-bottom:1px solid #DEDEDE;
-          width: 150%;
+          border-bottom: 1px solid #dedede;
+          padding: 5px 0;
+          line-height: 26px;
+
+          a {
+            font-weight: 400;
+            text-decoration-line: underline !important;
+            padding-left: 10px;
+          }
         }
       }
       .trust-fund-column {
-        
         td {
-          border-bottom:1px solid #DEDEDE;
+          border-bottom: 1px solid #dedede;
           width: 100%;
+          padding: 5px 0;
+          line-height: 26px;
         }
       }
       .job-sites-column {
-       
         td {
-          border-bottom:1px solid #DEDEDE;
+          border-bottom: 1px solid #dedede;
           width: 100%;
+          padding: 5px 0;
+          line-height: 26px;
         }
+      }
+      .static-text {
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .city-text {
+        padding-left: 10px !important;
       }
     }
   }
