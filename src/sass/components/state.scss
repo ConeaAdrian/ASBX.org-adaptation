@@ -97,4 +97,54 @@
       }
     }
   }
+  .city-statistic {
+    &__table {
+      border-collapse: collapse;
+      display: flex;
+      margin-top: 10px;
+      max-width: 660px;
+      width: 100%;
+      margin-top: 30px;
+
+      tbody {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      tr {
+        flex-direction: column;
+        display: flex;
+    
+      }
+      // .city-column,
+      // .trust-fund-column,
+      // .job-sites-column {
+      //   display: flex;
+      //   gap: 100px;
+      //   flex-direction: column;
+      // }
+      .city-column {
+       
+        th {
+          border-bottom:1px solid #DEDEDE;
+          width: 150%;
+        }
+      }
+      .trust-fund-column {
+        
+        td {
+          border-bottom:1px solid #DEDEDE;
+          width: 100%;
+        }
+      }
+      .job-sites-column {
+       
+        td {
+          border-bottom:1px solid #DEDEDE;
+          width: 100%;
+        }
+      }
+    }
+  }
 }
