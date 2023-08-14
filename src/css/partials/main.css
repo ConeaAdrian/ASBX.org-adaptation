@@ -1226,10 +1226,9 @@ nav {
       justify-content: space-between;
       text-align: start;
       align-items: center;
-      margin-top: 48px;
-      margin-left: 9%; }
+      margin-top: 48px; }
       .background-state .state-select .state-list li {
-        width: 25%;
+        width: 28%;
         color: #000; }
         .background-state .state-select .state-list li::before {
           content: "\2022";
@@ -1853,12 +1852,14 @@ nav {
   gap: 10px;
   margin-top: 20px;
   display: flex;
-  flex-direction: column; }
-  @media (max-width: 475px) {
-    .trust-list {
-      gap: 5px; } }
+  flex-wrap: wrap;
+  justify-content: space-between; }
   .trust-list li {
-    text-decoration-line: underline; }
+    text-decoration-line: underline;
+    width: 48%; }
+    @media (max-width: 660px) {
+      .trust-list li {
+        width: 100%; } }
     .trust-list li a {
       color: #324a74;
       font-size: 18px;
@@ -4287,3 +4288,41 @@ nav {
           font-weight: 400; }
     .state .state-content .state-card .cities-top {
       border-radius: 4px 4px 0px 0px; }
+
+.state .block-data {
+  display: grid;
+  border-left: 2px solid #bc2649;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px; }
+
+.state .state-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: start;
+  align-items: center;
+  margin-top: 20px; }
+  .state .state-list li {
+    width: 28%;
+    color: #000; }
+    .state .state-list li::before {
+      margin-right: 6px;
+      text-decoration-line: none; }
+    .state .state-list li a {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000000;
+      text-decoration-line: underline !important; }
+      @media (max-width: 475px) {
+        .state .state-list li a {
+          font-size: 14px; } }
+    @media (max-width: 550px) {
+      .state .state-list li {
+        width: 34%; } }
+    @media (max-width: 375px) {
+      .state .state-list li {
+        width: 50%; } }
