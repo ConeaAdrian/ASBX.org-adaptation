@@ -4184,6 +4184,8 @@ nav {
     @media (max-width: 475px) {
       .section-question__text {
         max-width: none; } }
+    .section-question__text b {
+      font-size: 18px !important; }
     .section-question__text a {
       color: #466d92 !important;
       font-size: 18px;
