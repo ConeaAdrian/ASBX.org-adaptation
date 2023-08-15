@@ -4350,7 +4350,8 @@ nav {
   .state .city-statistic__table .city-column th {
     border-bottom: 1px solid #dedede;
     padding: 5px 0;
-    line-height: 26px; }
+    line-height: 26px;
+    text-align: start; }
     .state .city-statistic__table .city-column th a {
       font-weight: 400;
       text-decoration-line: underline !important;
