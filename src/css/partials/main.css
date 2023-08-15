@@ -75,9 +75,6 @@ h3 {
   font-size: 18px;
   color: #036;
   font-weight: 500; }
-  @media (max-width: 475px) {
-    h3 {
-      font-size: 16px !important; } }
 
 h4,
 h5,
@@ -213,6 +210,13 @@ strong {
   @media (max-width: 475px) {
     .data-info {
       text-align: center; } }
+
+.red-not {
+  color: #BC2649; }
+
+.not-text {
+  font-size: 16px;
+  line-height: normal; }
 
 @media (min-width: 1200px) {
   .container {
@@ -2289,15 +2293,20 @@ nav {
   .required-asbx .block-data {
     display: grid;
     border-left: 2px solid #bc2649;
-    padding-left: 10px; }
+    padding-left: 10px;
+    gap: 2px; }
     .required-asbx .block-data p {
       color: #000;
       font-weight: 300;
-      font-size: 16px; }
+      font-size: 16px;
+      line-height: normal; }
+      .required-asbx .block-data p span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline !important; }
     .required-asbx .block-data b {
-      font-weight: 400;
-      color: #000;
-      font-size: 16px; }
+      font-weight: 400; }
 
 .general-information-table {
   display: flex;
@@ -3894,6 +3903,9 @@ nav {
     background: #fcfaf6;
     display: flex;
     width: 100%; }
+    @media (max-width: 475px) {
+      .compensation-section__table tbody {
+        max-width: none; } }
   .compensation-section__table tr {
     flex-direction: column;
     display: flex; }

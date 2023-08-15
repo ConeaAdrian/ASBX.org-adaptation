@@ -74,6 +74,9 @@
     background: #fcfaf6;
     display: flex;
     width: 100%;
+    @media (max-width: 475px) {
+      max-width: none;
+    }
   }
 
   tr {

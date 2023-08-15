@@ -109,15 +109,21 @@
     display: grid;
     border-left: 2px solid #bc2649;
     padding-left: 10px;
+    gap: 2px;
     p {
       color: #000;
       font-weight: 300;
       font-size: 16px;
+      line-height: normal;
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline !important;
+      }
     }
     b {
       font-weight: 400;
-      color: #000;
-      font-size: 16px;
     }
   }
 }
