@@ -65,22 +65,28 @@
     font-weight: 500;
     text-transform: capitalize;
   }
-
-  .location-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-top: 5px;
-    li {
-      font-weight: 400;
-      a {
-        font-size: 16px;
-        color: #324a74;
-      }
+}
+.nearby-location {
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+.location-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-top: 5px;
+  li {
+    font-weight: 400;
+    a {
+      font-size: 16px;
+      color: #324a74;
     }
-    p {
-      margin-right: 5px;
-    }
+  }
+  p {
+    margin-right: 5px;
   }
 }
 .required-asbx {

@@ -81,7 +81,7 @@
     display: flex;
 
     &:nth-child(even) td {
-      background-color: #faf7f0;
+      background: #FBFBFB;
     }
   }
 
@@ -100,14 +100,14 @@
 
   .left-column {
     width: 100%;
-    background: #fcfaf6 !important;
+    background: #FBFBFB;
 
     th {
       color: #bc2649;
       font-weight: 700;
       align-items: start;
       display: flex;
-      background: #fcfaf6 !important;
+      background: #FBFBFB;
     }
 
     .claims-type {
@@ -125,7 +125,6 @@
 
     td {
       font-weight: 400;
-      background: #fcfaf6 !important;
       justify-content: start;
       padding-left: 20px;
     }

@@ -1773,12 +1773,86 @@ nav {
     font-weight: 700; }
 
 .city-content .walking-steps {
-  margin-bottom: 20px; }
-  .city-content .walking-steps li {
-    color: #000;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px; }
+  @media only screen and (max-width: 845px) and (min-width: 767px) {
+    .city-content .walking-steps {
+      flex-direction: column; } }
+  @media (max-width: 620px) {
+    .city-content .walking-steps {
+      flex-direction: column; } }
+  .city-content .walking-steps__content {
+    max-width: 285px;
+    width: 100%; }
+    @media only screen and (max-width: 845px) and (min-width: 767px) {
+      .city-content .walking-steps__content {
+        width: 100%;
+        max-height: none;
+        max-width: none;
+        height: auto; } }
+    @media (max-width: 620px) {
+      .city-content .walking-steps__content {
+        width: 100%;
+        max-height: none;
+        max-width: none;
+        height: auto; } }
+    .city-content .walking-steps__content ol {
+      margin-bottom: 10px; }
+    .city-content .walking-steps__content p span {
+      text-decoration-line: underline !important;
+      font-weight: 300; }
+    .city-content .walking-steps__content h3 {
+      color: #bc2649;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px; }
+  .city-content .walking-steps .video-add-claims {
+    border-radius: 8px;
+    border: 1px solid #e4e4e4;
+    width: 100%;
+    max-width: 360px;
+    max-height: 300px;
+    height: 100%; }
+    @media only screen and (max-width: 845px) and (min-width: 767px) {
+      .city-content .walking-steps .video-add-claims {
+        width: 100%;
+        max-height: none;
+        max-width: none;
+        height: auto; } }
+    @media (max-width: 620px) {
+      .city-content .walking-steps .video-add-claims {
+        width: 100%;
+        max-height: none;
+        max-width: none;
+        height: auto; } }
+
+.city-content .text-exampe {
+  margin-top: 10px; }
+
+.city-content .sort-chase {
+  display: block;
+  margin: 20px 0;
+  gap: 20px; }
+  .city-content .sort-chase__content {
+    margin-bottom: 20px; }
+    .city-content .sort-chase__content h3 {
+      color: #324a74;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px; }
+    .city-content .sort-chase__content td,
+    .city-content .sort-chase__content th {
+      font-weight: 400 !important; }
+  .city-content .sort-chase .text-initial {
+    color: #000 !important;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 300; }
+    font-weight: 700 !important;
+    line-height: normal;
+    text-transform: capitalize; }
 
 .content-job {
   margin-top: 20px;
@@ -1832,31 +1906,29 @@ nav {
           width: 20px;
           height: 20px; }
   .content-job .search-alphabet {
-    width: 48.35%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #fbfbfb;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-    padding: 20px; }
-    @media only screen and (max-width: 930px) and (min-width: 767px) {
-      .content-job .search-alphabet {
-        width: 100%; } }
-    @media (max-width: 767px) {
-      .content-job .search-alphabet {
-        padding: 10px; } }
-    @media (max-width: 667px) {
-      .content-job .search-alphabet {
-        width: 100%; } }
-    .content-job .search-alphabet .alphabet ul {
-      display: flex;
-      flex-wrap: wrap;
-      padding-left: 0; }
-      .content-job .search-alphabet .alphabet ul li {
-        color: #15528e;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 28px;
-        text-decoration-line: underline;
-        margin-right: 12px; }
+    width: 100%; }
+    .content-job .search-alphabet h3 {
+      color: #000;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: normal; }
+    .content-job .search-alphabet .alphabet {
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 20px;
+      margin-bottom: 10px; }
+      .content-job .search-alphabet .alphabet ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        gap: 10px;
+        margin-top: 10px; }
+        .content-job .search-alphabet .alphabet ul li {
+          color: #15528e;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: 3.6px;
+          text-decoration-line: underline; }
 
 .trust-list {
   padding-left: 0;
@@ -2180,18 +2252,24 @@ nav {
     font-size: 20px;
     font-weight: 500;
     text-transform: capitalize; }
-  .nearby-cities .location-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-top: 5px; }
-    .nearby-cities .location-list li {
-      font-weight: 400; }
-      .nearby-cities .location-list li a {
-        font-size: 16px;
-        color: #324a74; }
-    .nearby-cities .location-list p {
-      margin-right: 5px; }
+
+.nearby-location p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal; }
+
+.location-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-top: 5px; }
+  .location-list li {
+    font-weight: 400; }
+    .location-list li a {
+      font-size: 16px;
+      color: #324a74; }
+  .location-list p {
+    margin-right: 5px; }
 
 .required-asbx {
   width: 100%;
@@ -3820,7 +3898,7 @@ nav {
     flex-direction: column;
     display: flex; }
     .compensation-section__table tr:nth-child(even) td {
-      background-color: #faf7f0; }
+      background: #FBFBFB; }
   .compensation-section__table th,
   .compensation-section__table td {
     padding: 6px 10px;
@@ -3832,13 +3910,13 @@ nav {
     font-weight: bold; }
   .compensation-section__table .left-column {
     width: 100%;
-    background: #fcfaf6 !important; }
+    background: #FBFBFB; }
     .compensation-section__table .left-column th {
       color: #bc2649;
       font-weight: 700;
       align-items: start;
       display: flex;
-      background: #fcfaf6 !important; }
+      background: #FBFBFB; }
     .compensation-section__table .left-column .claims-type {
       text-transform: uppercase;
       font-weight: 500;
@@ -3850,7 +3928,6 @@ nav {
     width: 70%; }
     .compensation-section__table .right-column td {
       font-weight: 400;
-      background: #fcfaf6 !important;
       justify-content: start;
       padding-left: 20px; }
     .compensation-section__table .right-column .price {

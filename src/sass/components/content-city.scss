@@ -1,11 +1,97 @@
 .city-content {
   .walking-steps {
-    margin-bottom: 20px;
-    li {
-      color: #000;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+    @media only screen and (max-width: 845px) and (min-width: 767px) {
+      flex-direction: column;
+    }
+    @media (max-width: 620px) {
+      flex-direction: column;
+    }
+    &__content {
+      max-width: 285px;
+      width: 100%;
+      @media only screen and (max-width: 845px) and (min-width: 767px) {
+        width: 100%;
+        max-height: none;
+        max-width: none;
+        height: auto;
+      }
+      @media (max-width: 620px) {
+        width: 100%;
+        max-height: none;
+        max-width: none;
+        height: auto;
+      }
+      ol {
+        margin-bottom: 10px;
+      }
+      p {
+        span {
+          text-decoration-line: underline !important;
+          font-weight: 300;
+        }
+      }
+      h3 {
+        color: #bc2649;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+      }
+    }
+    .video-add-claims {
+      border-radius: 8px;
+      border: 1px solid #e4e4e4;
+      width: 100%;
+      max-width: 360px;
+      max-height: 300px;
+      height: 100%;
+      @media only screen and (max-width: 845px) and (min-width: 767px) {
+        width: 100%;
+        max-height: none;
+        max-width: none;
+        height: auto;
+      }
+      @media (max-width: 620px) {
+        width: 100%;
+        max-height: none;
+        max-width: none;
+        height: auto;
+      }
+    }
+  }
+  .text-exampe {
+    margin-top: 10px;
+  }
+  .sort-chase {
+    display: block;
+    margin: 20px 0;
+    gap: 20px;
+
+    &__content {
+      margin-bottom: 20px;
+      h3 {
+        color: #324a74;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+      }
+
+      td,
+      th {
+        font-weight: 400 !important;
+      }
+    }
+    .text-initial {
+      color: #000 !important;
       font-size: 16px;
-      font-style: normal;
-      font-weight: 300;
+      font-weight: 700 !important;
+      line-height: normal;
+      text-transform: capitalize;
     }
   }
 }
@@ -70,33 +156,30 @@
     }
   }
   .search-alphabet {
-    width: 48.35%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #fbfbfb;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    @media only screen and (max-width: 930px) and (min-width: 767px) {
-      width: 100%;
-    }
-    @media (max-width: 767px) {
-      padding: 10px;
-    }
-    @media (max-width: 667px) {
-      width: 100%;
+    width: 100%;
+    h3 {
+      color: #000;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: normal;
     }
     .alphabet {
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 20px;
+      margin-bottom: 10px;
       ul {
         display: flex;
         flex-wrap: wrap;
         padding-left: 0;
+        gap: 10px;
+        margin-top: 10px;
         li {
           color: #15528e;
-          font-size: 16px;
-          font-weight: 500;
+          font-size: 20px;
+          font-weight: 700;
           line-height: 28px;
-
+          letter-spacing: 3.6px;
           text-decoration-line: underline;
-          margin-right: 12px;
         }
       }
     }
