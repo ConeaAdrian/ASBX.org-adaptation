@@ -67,7 +67,23 @@
     }
   }
   .occupational {
-    margin-top: 18px;
+    margin-top: 20px;
+    li {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      span {
+        color: #466D92;
+        font-size: 18px !important;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px;
+        line-height: 26px;
+        text-decoration-line: underline !important;
+      }
+    }
+  }
+  .high-risk {
     li {
       font-size: 14px;
       font-style: normal;
@@ -86,5 +102,38 @@
     margin-top: 22px;
     max-width: 583px;
     width: 100%;
+  }
+  .add-to-claims {
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: 870px) and (min-width: 767px) {
+      flex-direction: column;
+    }
+    @media (max-width: 660px) {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 300px;
+      @media only screen and (max-width: 870px) and (min-width: 767px) {
+        max-width: none;
+      }
+      @media (max-width: 660px) {
+        max-width: none;
+      }
+      h2 {
+        padding-top: 0;
+      }
+    }
+    .card-job-site {
+      p {
+        color: #000 !important;
+      }
+    }
   }
 }

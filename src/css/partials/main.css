@@ -2774,22 +2774,62 @@ nav {
         margin-bottom: 0; }
 
 .job-site .occupational {
-  margin-top: 18px; }
+  margin-top: 20px; }
   .job-site .occupational li {
     font-size: 14px;
     font-style: normal;
     font-weight: 300; }
     .job-site .occupational li span {
+      color: #466D92;
       font-size: 18px !important;
       font-style: normal;
       font-weight: 300;
-      line-height: 26px; }
+      line-height: 26px;
+      line-height: 26px;
+      text-decoration-line: underline !important; }
+
+.job-site .high-risk li {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300; }
+  .job-site .high-risk li span {
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; }
 
 .job-site .jobsite-card {
   padding: 21px 16px;
   margin-top: 22px;
   max-width: 583px;
   width: 100%; }
+
+.job-site .add-to-claims {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 870px) and (min-width: 767px) {
+    .job-site .add-to-claims {
+      flex-direction: column; } }
+  @media (max-width: 660px) {
+    .job-site .add-to-claims {
+      flex-direction: column;
+      margin-top: 30px; } }
+  .job-site .add-to-claims__text {
+    width: 100%;
+    max-width: 300px; }
+    @media only screen and (max-width: 870px) and (min-width: 767px) {
+      .job-site .add-to-claims__text {
+        max-width: none; } }
+    @media (max-width: 660px) {
+      .job-site .add-to-claims__text {
+        max-width: none; } }
+    .job-site .add-to-claims__text h2 {
+      padding-top: 0; }
+  .job-site .add-to-claims .card-job-site p {
+    color: #000 !important; }
 
 .bottom-banner {
   position: fixed;
@@ -3753,9 +3793,9 @@ nav {
   .legend-information__text ul li {
     list-style-type: disc; }
 
-.occupational {
+.occupational, .high-risk {
   padding-left: 20px; }
-  .occupational li {
+  .occupational li, .high-risk li {
     list-style-type: disc; }
 
 .responsible-company {
@@ -4011,54 +4051,55 @@ nav {
   display: flex;
   flex-wrap: wrap;
   width: 100%; }
-  .content-card-job .card-job-site {
-    width: 48.35%;
-    padding: 20px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #fbfbfb;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-    position: relative; }
-    @media only screen and (max-width: 930px) and (min-width: 767px) {
-      .content-card-job .card-job-site {
-        width: 100%; } }
-    @media (max-width: 767px) {
-      .content-card-job .card-job-site {
-        padding: 10px; } }
-    @media (max-width: 667px) {
-      .content-card-job .card-job-site {
-        width: 100%; } }
-    .content-card-job .card-job-site a {
-      color: #15528e;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 22px;
-      text-decoration-line: underline !important; }
-    .content-card-job .card-job-site p {
-      color: #bc2649;
-      font-size: 16px;
-      font-weight: 400; }
-    .content-card-job .card-job-site select {
-      height: 44px;
-      width: 100%;
-      padding-left: 10px; }
-      @media (max-width: 699px) {
-        .content-card-job .card-job-site select {
-          height: 40px; } }
-    .content-card-job .card-job-site .data-select {
-      display: flex;
-      gap: 10px; }
-    .content-card-job .card-job-site .done {
-      width: 28px;
-      height: 28px;
-      position: absolute;
-      right: 5px;
-      top: 5px; }
   .content-card-job .button-red {
     width: 100%; }
+
+.card-job-site {
+  width: 48.35%;
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fbfbfb;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  position: relative; }
+  @media only screen and (max-width: 930px) and (min-width: 767px) {
+    .card-job-site {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .card-job-site {
+      padding: 10px; } }
+  @media (max-width: 667px) {
+    .card-job-site {
+      width: 100%; } }
+  .card-job-site a {
+    color: #15528e;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    text-decoration-line: underline !important; }
+  .card-job-site p {
+    color: #bc2649;
+    font-size: 16px;
+    font-weight: 400; }
+  .card-job-site select {
+    height: 44px;
+    width: 100%;
+    padding-left: 10px; }
+    @media (max-width: 699px) {
+      .card-job-site select {
+        height: 40px; } }
+  .card-job-site .data-select {
+    display: flex;
+    gap: 10px; }
+  .card-job-site .done {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 5px;
+    top: 5px; }
 
 .compensation-table {
   margin-top: 20px;

@@ -4,65 +4,64 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
-  .card-job-site {
-    width: 48.35%;
-    padding: 20px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #fbfbfb;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-    position: relative;
-    @media only screen and (max-width: 930px) and (min-width: 767px) {
-      width: 100%;
-    }
-    @media (max-width: 767px) {
-      padding: 10px;
-    }
-    @media (max-width: 667px) {
-      width: 100%;
-    }
-
-    a {
-      color: #15528e;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 22px;
-      text-decoration-line: underline !important;
-    }
-    p {
-      color: #bc2649;
-      font-size: 16px;
-      font-weight: 400;
-    }
-
-    select {
-      height: 44px;
-      width: 100%;
-      padding-left: 10px;
-      @media (max-width: 699px) {
-        height: 40px;
-      }
-    }
-    .select-job {
-    }
-    .data-select {
-      display: flex;
-      gap: 10px;
-    }
-    .done {
-      width: 28px;
-      height: 28px;
-      position: absolute;
-      right: 5px;
-      top: 5px;
-    }
-  }
   .button-red {
     width: 100%;
+  }
+}
+.card-job-site {
+  width: 48.35%;
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fbfbfb;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  @media only screen and (max-width: 930px) and (min-width: 767px) {
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    padding: 10px;
+  }
+  @media (max-width: 667px) {
+    width: 100%;
+  }
+
+  a {
+    color: #15528e;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    text-decoration-line: underline !important;
+  }
+  p {
+    color: #bc2649;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  select {
+    height: 44px;
+    width: 100%;
+    padding-left: 10px;
+    @media (max-width: 699px) {
+      height: 40px;
+    }
+  }
+  .select-job {
+  }
+  .data-select {
+    display: flex;
+    gap: 10px;
+  }
+  .done {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
   }
 }
 
