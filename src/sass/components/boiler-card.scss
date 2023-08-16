@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  margin-top: 20px;
 
   .card-boiler {
     width: 48.35%;
@@ -46,6 +47,8 @@
     .data-select {
       display: flex;
       gap: 10px;
+      align-items: center;
+    text-align: center;
     }
   }
 }

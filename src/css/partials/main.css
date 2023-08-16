@@ -378,7 +378,7 @@ button {
     font-weight: 400;
     line-height: 20px;
     text-decoration-line: underline !important;
-    color: rgba(0, 0, 0, 0.61); }
+    color: #466D92; }
     @media (max-width: 475px) {
       .breadcrumb a {
         font-size: 12px; } }
@@ -390,7 +390,7 @@ button {
     line-height: 20px;
     margin: 0 4px; }
   .breadcrumb .last-element {
-    color: #bc2649 !important;
+    color: #BC2649 !important;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1804,15 +1804,23 @@ nav {
         height: auto; } }
     .city-content .walking-steps__content ol {
       margin-bottom: 10px; }
+      .city-content .walking-steps__content ol li {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        margin-top: 0; }
     .city-content .walking-steps__content p span {
       text-decoration-line: underline !important;
       font-weight: 300; }
+    .city-content .walking-steps__content p b {
+      font-size: 18px !important; }
     .city-content .walking-steps__content h3 {
       color: #bc2649;
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
-      line-height: 26px; }
+      line-height: 26px;
+      margin-bottom: 5px; }
   .city-content .walking-steps .video-add-claims {
     border-radius: 8px;
     border: 1px solid #e4e4e4;
@@ -1835,6 +1843,8 @@ nav {
 
 .city-content .text-exampe {
   margin-top: 10px; }
+  .city-content .text-exampe b {
+    font-size: 18px !important; }
 
 .city-content .sort-chase {
   display: block;
@@ -4091,7 +4101,8 @@ nav {
   padding-top: 20px;
   gap: 20px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 100%; }
   .content-card-job .card-job-site {
     width: 48.35%;
     padding: 20px;
@@ -4256,7 +4267,8 @@ nav {
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 20px; }
   .content-boiler .card-boiler {
     width: 48.35%;
     padding: 20px;
@@ -4291,7 +4303,9 @@ nav {
       padding-left: 10px; }
     .content-boiler .card-boiler .data-select {
       display: flex;
-      gap: 10px; }
+      gap: 10px;
+      align-items: center;
+      text-align: center; }
 
 .alternative {
   display: block;

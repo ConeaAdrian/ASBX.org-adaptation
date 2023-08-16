@@ -27,11 +27,21 @@
       }
       ol {
         margin-bottom: 10px;
+
+        li {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 22px;
+          margin-top: 0;
+        }
       }
       p {
         span {
           text-decoration-line: underline !important;
           font-weight: 300;
+        }
+        b {
+          font-size: 18px !important;
         }
       }
       h3 {
@@ -40,6 +50,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: 26px;
+        margin-bottom: 5px;
       }
     }
     .video-add-claims {
@@ -65,6 +76,9 @@
   }
   .text-exampe {
     margin-top: 10px;
+    b {
+      font-size: 18px !important;
+    }
   }
   .sort-chase {
     display: block;
