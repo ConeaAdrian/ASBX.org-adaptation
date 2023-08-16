@@ -330,6 +330,12 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.17);
   background: #fff;
   font-size: 14px;
+  @media (max-width: 767px) {
+    height: 40px;
+  }
+  @media (max-width: 475px) {
+    height: 34px !important;
+  }
 
   &.search-form-select {
     background-image: url("../../img/search-user.svg");
@@ -352,6 +358,9 @@ nav {
   background: #fbfbfb;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
   height: fit-content;
+  @media (max-width: 992px) {
+    background: #324a74;
+  }
 }
 .custom-search-form {
   position: relative;
@@ -385,7 +394,6 @@ nav {
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  height: 44px;
 }
 .search-form-button-container {
   max-width: max-content;
@@ -410,8 +418,14 @@ nav {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
     @media (max-width: 767px) {
       height: 40px;
+    }
+    @media (max-width: 475px) {
+      height: 34px;
+      padding: 10px;
     }
   }
 }
