@@ -1,14 +1,14 @@
 .job-site {
   .responsible-company {
-    margin: 11px 0;
+    margin: 10px 0;
     li {
       color: #324a74;
+      margin-top: 0;
       a {
         font-size: 16px;
         font-weight: 400;
-        text-decoration-line: underline;
         color: #324a74;
-        text-decoration-line: underline;
+        text-decoration-line: underline !important;
       }
     }
   }
@@ -18,35 +18,45 @@
       font-size: 14px;
     }
   }
+  .general-information-table {
+    gap: 15px;
+  }
   .content-products {
     display: flex;
-    gap: 25px;
-    margin-top: 31px;
+    gap: 20px;
+    margin-top: 20px;
     flex-wrap: wrap;
     @media (max-width: 520px) {
       flex-direction: column;
     }
 
     &__categorization-cart {
-      border-radius: 4px;
-      border: 1px solid #dbdbdb;
-      background: #fbfcff;
-      padding: 17px 13px;
-      max-width: 331px;
       width: 100%;
       @media (max-width: 520px) {
         max-width: none;
       }
 
       p {
-        color: #bc2649;
+        margin-bottom: 10px;
         font-size: 20px;
         font-weight: 500;
-        margin-bottom: 5px;
+        line-height: normal;
+        text-transform: capitalize;
       }
 
       ul {
         margin-left: 10px;
+        li {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          span {
+            font-size: 18px !important;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 26px;
+          }
+        }
         p {
           color: #000 !important;
           font-size: 16px;
@@ -58,6 +68,17 @@
   }
   .occupational {
     margin-top: 18px;
+    li {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      span {
+        font-size: 18px !important;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px;
+      }
+    }
   }
 
   .jobsite-card {
