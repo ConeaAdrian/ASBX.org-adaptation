@@ -2042,16 +2042,7 @@ nav {
         padding: 3px;
         border-radius: 4px;
         font-style: normal;
-        border: none;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 700; }
-      .general-claims .claims-selected .claims-buttons button:first-child {
-        background: #BC2649;
-        color: white; }
-      .general-claims .claims-selected .claims-buttons button:last-child {
-        background: #324a74;
-        color: white; }
+        text-transform: uppercase; }
   .general-claims .claims-result {
     border-radius: 5px;
     border: 0.6px solid #aaa;
@@ -2104,8 +2095,6 @@ nav {
         position: absolute;
         right: 0;
         bottom: 0; }
-  .general-claims button {
-    background-color: transparent; }
 
 @media only screen and (max-width: 2440px) and (min-width: 767px) {
   .claims-select {

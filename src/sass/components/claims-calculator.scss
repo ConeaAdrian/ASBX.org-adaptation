@@ -160,21 +160,10 @@
         padding: 3px;
         border-radius: 4px;
         font-style: normal;
-        border: none;
         text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 700;
       }
 
-      button:first-child {
-        background: $main-red;
-        color: white;
-      }
-
-      button:last-child {
-        background: #324a74;
-        color: white;
-      }
+     
     }
   }
   .claims-result {
@@ -242,13 +231,6 @@
         bottom: 0;
       }
     }
-  }
-  
-
-  
-
-  button {
-    background-color: transparent;
   }
 }
 
