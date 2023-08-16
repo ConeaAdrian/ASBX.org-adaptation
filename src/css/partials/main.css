@@ -1795,6 +1795,12 @@ nav {
     font-size: 14px;
     font-weight: 700; }
 
+.city-content .data-free-consultation {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; }
+
 .city-content .walking-steps {
   display: flex;
   gap: 20px;
@@ -1938,30 +1944,31 @@ nav {
           color: white !important;
           width: 20px;
           height: 20px; }
-  .content-job .search-alphabet {
-    width: 100%; }
-    .content-job .search-alphabet h3 {
-      color: #000;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: normal; }
-    .content-job .search-alphabet .alphabet {
-      border-bottom: 1px solid #e8e8e8;
-      padding-bottom: 20px;
-      margin-bottom: 10px; }
-      .content-job .search-alphabet .alphabet ul {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-        gap: 10px;
-        margin-top: 10px; }
-        .content-job .search-alphabet .alphabet ul li {
-          color: #15528e;
-          font-size: 20px;
-          font-weight: 700;
-          line-height: 28px;
-          letter-spacing: 3.6px;
-          text-decoration-line: underline; }
+
+.search-alphabet {
+  width: 100%; }
+  .search-alphabet h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal; }
+  .search-alphabet .alphabet {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 20px;
+    margin-bottom: 10px; }
+    .search-alphabet .alphabet ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      gap: 10px;
+      margin-top: 10px; }
+      .search-alphabet .alphabet ul li {
+        color: #15528e;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 3.6px;
+        text-decoration-line: underline; }
 
 .trust-list {
   padding-left: 0;
@@ -1981,6 +1988,9 @@ nav {
       font-size: 18px;
       font-style: normal;
       font-weight: 300; }
+
+.next-city .search-alphabet {
+  margin-top: 20px; }
 
 .baner-company {
   width: 100%;
@@ -2302,7 +2312,9 @@ nav {
       font-size: 16px;
       color: #324a74; }
   .location-list p {
-    margin-right: 5px; }
+    margin-right: 5px;
+    display: flex;
+    align-items: end; }
 
 .required-asbx {
   width: 100%;
