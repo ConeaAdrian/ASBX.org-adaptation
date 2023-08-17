@@ -1253,10 +1253,6 @@ nav {
   .index-page .index-image-logo {
     display: block !important; } }
 
-@media (max-width: 992px) {
-  .index-page .index-image-logo img {
-    height: 30px !important; } }
-
 .index-page .index-image-color {
   display: none !important; }
 
