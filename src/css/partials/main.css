@@ -1670,6 +1670,11 @@ nav {
     color: #BC2649;
     font-size: 14px;
     font-weight: 700; }
+  .compensation-asbestos .search-principal {
+    margin-bottom: 20px;
+    background: #fbfbfb !important; }
+  .compensation-asbestos .custom-search-form {
+    margin: 0 auto; }
 
 .city-content .data-free-consultation {
   font-size: 18px;
