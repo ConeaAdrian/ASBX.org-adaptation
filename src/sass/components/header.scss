@@ -414,9 +414,7 @@ nav {
   .search-form-button {
     border-radius: 0px 4px 4px 0px;
     background: #bc2649;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 700;
+    width: 45px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -426,6 +424,12 @@ nav {
     @media (max-width: 475px) {
       height: 34px;
       padding: 10px;
+    }
+    .search-white {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      margin: 0 auto;
     }
   }
 }
