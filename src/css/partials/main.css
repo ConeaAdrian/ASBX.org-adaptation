@@ -2726,9 +2726,10 @@ nav {
   margin: 10px 0; }
   .job-site .responsible-company li {
     color: #324a74;
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 3px; }
     .job-site .responsible-company li a {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 400;
       color: #324a74;
       text-decoration-line: underline !important; }
