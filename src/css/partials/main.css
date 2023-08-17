@@ -2097,7 +2097,8 @@ nav {
         padding: 0;
         position: absolute;
         right: 0;
-        bottom: 0; }
+        bottom: 0;
+        background: transparent; }
 
 @media only screen and (max-width: 2440px) and (min-width: 767px) {
   .claims-select {
@@ -4391,7 +4392,7 @@ nav {
       padding: 10px; }
       .state .state-content .state-card__data .content-information {
         margin-top: 10px; }
-      .state .state-content .state-card__data span {
+      .state .state-content .state-card__data a {
         font-size: 20px;
         font-style: normal;
         font-weight: 500; }
@@ -4464,11 +4465,15 @@ nav {
     border-bottom: 1px solid #dedede;
     padding: 5px 0;
     line-height: 26px;
-    text-align: start; }
+    text-align: start;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
     .state .city-statistic__table .city-column th a {
       font-weight: 400;
-      text-decoration-line: underline !important;
-      padding-left: 10px; }
+      text-decoration-line: underline !important; }
   .state .city-statistic__table .trust-fund-column td {
     border-bottom: 1px solid #dedede;
     width: 100%;
