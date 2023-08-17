@@ -12,6 +12,10 @@
       width: 100%;
       max-width: 303px;
       height: 192px;
+      @media (max-width: 475px) {
+        max-width: none;
+        height: auto;
+      }
     }
   }
   .status-active {

@@ -3822,6 +3822,10 @@ nav {
       width: 100%;
       max-width: 303px;
       height: 192px; }
+      @media (max-width: 475px) {
+        .trust-fund .general-information-table .company-logo {
+          max-width: none;
+          height: auto; } }
   .trust-fund .status-active {
     color: #324a74;
     font-weight: 400;
