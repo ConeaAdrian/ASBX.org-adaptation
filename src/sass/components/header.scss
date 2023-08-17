@@ -375,6 +375,7 @@ nav {
   width: 100%;
 }
 .custom-search-items > div {
+  z-index: 10000;
   font-family: "Roboto Condensed", sans-serif;
   cursor: pointer;
   position: relative;
