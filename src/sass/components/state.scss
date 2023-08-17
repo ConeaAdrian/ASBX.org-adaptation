@@ -131,15 +131,12 @@
           line-height: 26px;
           text-align: start;
           padding-left: 10px;
-
           display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
 
           a {
             font-weight: 400;
             text-decoration-line: underline !important;
+            line-height: 26px;
           }
         }
       }
