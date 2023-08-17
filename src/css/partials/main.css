@@ -4462,31 +4462,48 @@ nav {
   .state .city-statistic__table tr {
     flex-direction: column;
     display: flex; }
-  .state .city-statistic__table .city-column,
   .state .city-statistic__table .trust-fund-column,
   .state .city-statistic__table .job-sites-column {
+    width: 70%; }
+    @media (max-width: 620px) {
+      .state .city-statistic__table .trust-fund-column,
+      .state .city-statistic__table .job-sites-column {
+        width: 50%; } }
+  .state .city-statistic__table .city-column {
     width: 100%; }
-  .state .city-statistic__table .city-column th {
-    border-bottom: 1px solid #dedede;
-    padding: 5px 0;
-    line-height: 26px;
-    text-align: start;
-    padding-left: 10px;
-    display: flex; }
-    .state .city-statistic__table .city-column th a {
-      font-weight: 400;
-      text-decoration-line: underline !important;
-      line-height: 26px; }
+    .state .city-statistic__table .city-column th {
+      border-bottom: 1px solid #dedede;
+      padding: 5px 0;
+      line-height: 26px;
+      text-align: start;
+      padding-left: 10px;
+      display: flex; }
+      @media (max-width: 475px) {
+        .state .city-statistic__table .city-column th {
+          font-size: 14px; } }
+      .state .city-statistic__table .city-column th a {
+        font-weight: 400;
+        text-decoration-line: underline !important;
+        line-height: 26px; }
+        @media (max-width: 475px) {
+          .state .city-statistic__table .city-column th a {
+            font-size: 14px; } }
   .state .city-statistic__table .trust-fund-column td {
     border-bottom: 1px solid #dedede;
     width: 100%;
     padding: 5px 0;
     line-height: 26px; }
+    @media (max-width: 475px) {
+      .state .city-statistic__table .trust-fund-column td {
+        font-size: 14px; } }
   .state .city-statistic__table .job-sites-column td {
     border-bottom: 1px solid #dedede;
     width: 100%;
     padding: 5px 0;
     line-height: 26px; }
+    @media (max-width: 475px) {
+      .state .city-statistic__table .job-sites-column td {
+        font-size: 14px; } }
   .state .city-statistic__table .static-text {
     font-weight: 700;
     text-transform: capitalize; }
