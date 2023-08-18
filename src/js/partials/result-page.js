@@ -28,14 +28,14 @@ $(document).ready(function() {
   const yourOwnDiv = $('.your-own');
 
   switchButton.prop('checked', false);
-  legalText.css({ color: '#181059', fontSize: '16px', fontWeight: '500' });
+  legalText.css({ color: '#181059', fontSize: '18px', fontWeight: '500' });
   legalRepresentationDiv.show();
   yourOwnDiv.hide();
 
   switchButton.on('click', function() {
     const isChecked = $(this).is(':checked');
     const style = isChecked ? '' : '#181059';
-    const fontSize = $(window).width() <= 475 ? '14px' : '16px';
+    const fontSize = $(window).width() <= 475 ? '16px' : '18px';
 
     legalText.css({ color: style, fontSize: fontSize, fontWeight: isChecked ? '' : '500' });
     yourOwnText.css({ color: isChecked ? '#181059' : '', fontSize: fontSize, fontWeight: isChecked ? '500' : '' });

@@ -34,6 +34,9 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
     @media (max-width: 475px) {
       gap: 10px;
@@ -56,10 +59,10 @@
     border-radius: 100px;
     position: relative;
 
-    @media (max-width: 475px) {
-      width: 38px;
-      height: 20px;
-    }
+    // @media (max-width: 475px) {
+    //   width: 38px;
+    //   height: 20px;
+    // }
   }
 
   label:after {
@@ -72,11 +75,11 @@
     background: #fff;
     border-radius: 90px;
     transition: 0.3s;
-    @media (max-width: 475px) {
-      top: 3px;
-      width: 14px;
-      height: 14px;
-    }
+    // @media (max-width: 475px) {
+    //   top: 3.5px;
+    // width: 18px;
+    // height: 18px;
+    // }
   }
 
   input:checked + label {
@@ -415,6 +418,7 @@
   }
   .switch {
     display: flex;
+    align-items: center;
   }
 
   .your-own {
@@ -627,7 +631,7 @@
       .call-back {
         border-radius: 4px;
         background: #bc2649;
-        width: 168px;
+        width: 130px;
         height: 33px;
         color: #fff;
         font-size: 14px;
@@ -642,14 +646,15 @@
 
 .legal-text {
   width: 168px;
+  font-size: 18px;
   @media (max-width: 475px) {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 }
 .your-own-text {
-  width: 168px;
+  width: 120px;
   @media (max-width: 475px) {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
   @media (max-width: 420px) {
     width: 110px;

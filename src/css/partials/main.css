@@ -2964,7 +2964,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px; }
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
     @media (max-width: 475px) {
       .result-page .button-active {
         gap: 10px; } }
@@ -2981,10 +2984,6 @@ nav {
     display: block;
     border-radius: 100px;
     position: relative; }
-    @media (max-width: 475px) {
-      .result-page label {
-        width: 38px;
-        height: 20px; } }
   .result-page label:after {
     content: "";
     position: absolute;
@@ -2995,11 +2994,6 @@ nav {
     background: #fff;
     border-radius: 90px;
     transition: 0.3s; }
-    @media (max-width: 475px) {
-      .result-page label:after {
-        top: 3px;
-        width: 14px;
-        height: 14px; } }
   .result-page input:checked + label {
     background: #565656; }
   .result-page input:checked + label:after {
@@ -3269,7 +3263,8 @@ nav {
             .result-page .legal-representation .legal-information .IR-claims .button-claim {
               margin-bottom: 15px; } }
   .result-page .switch {
-    display: flex; }
+    display: flex;
+    align-items: center; }
   .result-page .your-own {
     border-radius: 24px;
     background: #fff;
@@ -3436,7 +3431,7 @@ nav {
       .result-page .content-request .button-element .call-back {
         border-radius: 4px;
         background: #bc2649;
-        width: 168px;
+        width: 130px;
         height: 33px;
         color: #fff;
         font-size: 14px;
@@ -3446,16 +3441,17 @@ nav {
         margin-bottom: 23px; }
 
 .legal-text {
-  width: 168px; }
+  width: 168px;
+  font-size: 18px; }
   @media (max-width: 475px) {
     .legal-text {
-      font-size: 14px !important; } }
+      font-size: 16px !important; } }
 
 .your-own-text {
-  width: 168px; }
+  width: 120px; }
   @media (max-width: 475px) {
     .your-own-text {
-      font-size: 14px !important; } }
+      font-size: 16px !important; } }
   @media (max-width: 420px) {
     .your-own-text {
       width: 110px; } }
