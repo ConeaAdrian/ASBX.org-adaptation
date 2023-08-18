@@ -1771,7 +1771,6 @@ nav {
     text-transform: capitalize; }
 
 .content-job {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px; }
@@ -1823,6 +1822,7 @@ nav {
           height: 20px; }
 
 .search-alphabet {
+  margin-top: 20px;
   width: 100%; }
   .search-alphabet h3 {
     color: #000;
