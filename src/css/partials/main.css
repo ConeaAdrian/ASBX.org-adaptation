@@ -3917,12 +3917,16 @@ nav {
       font-weight: 500; }
 
 .legend-ratio {
-  font-size: 15px;
   font-style: normal;
   font-weight: 300;
   line-height: 21px;
   margin-top: 20px; }
+  .legend-ratio p {
+    font-size: 16px; }
+  .legend-ratio b {
+    font-size: 16px; }
   .legend-ratio span {
+    font-size: 16px;
     color: #BC2649; }
 
 .mark-text {
