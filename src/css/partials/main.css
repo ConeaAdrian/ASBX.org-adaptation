@@ -3003,8 +3003,7 @@ nav {
     width: 30px; }
   .result-page .legal-representation {
     border-radius: 24px;
-    background: rgba(255, 255, 255, 0.74);
-    margin-top: 42px; }
+    background: rgba(255, 255, 255, 0.74); }
     .result-page .legal-representation .recommended {
       padding-top: 42px;
       margin-bottom: 5px;
@@ -3448,7 +3447,7 @@ nav {
       font-size: 16px !important; } }
 
 .your-own-text {
-  width: 120px; }
+  width: 168px; }
   @media (max-width: 475px) {
     .your-own-text {
       font-size: 16px !important; } }
