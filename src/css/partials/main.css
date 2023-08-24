@@ -2080,7 +2080,7 @@ nav {
       position: relative; }
       .general-claims .claims-result__data-information .data-city {
         display: flex;
-        align-items: start; }
+        align-items: center; }
         .general-claims .claims-result__data-information .data-city b {
           width: 45px;
           font-size: 14px !important;
@@ -2089,8 +2089,7 @@ nav {
           line-height: normal; }
         .general-claims .claims-result__data-information .data-city p {
           font-size: 14px;
-          line-height: normal;
-          width: 100%; }
+          line-height: normal; }
       .general-claims .claims-result__data-information .button-remove-claims {
         color: black;
         font-size: 12px;
