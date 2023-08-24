@@ -141,7 +141,6 @@
 
 .no-job {
   .data-info {
-    margin-bottom: 0;
     b {
       color: #324a74;
     }
@@ -149,5 +148,9 @@
     .red-text {
       font-size: 26px;
       font-weight: 700;
+    }
+    .nearby-location {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+      padding-bottom: 10px;
     }
 }
