@@ -4477,3 +4477,6 @@ nav {
     text-transform: capitalize; }
   .state .city-statistic__table .city-text {
     padding-left: 10px !important; }
+
+.state .hidden-column {
+  display: none !important; }

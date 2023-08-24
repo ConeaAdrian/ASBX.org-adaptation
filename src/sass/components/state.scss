@@ -127,6 +127,7 @@
       }
       .city-column {
         width: 100%;
+
         th {
           border-bottom: 1px solid #dedede;
           padding: 5px 0;
@@ -178,5 +179,10 @@
         padding-left: 10px !important;
       }
     }
+   
+    
+  }
+  .hidden-column {
+    display: none !important;
   }
 }
