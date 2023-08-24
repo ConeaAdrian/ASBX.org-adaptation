@@ -173,7 +173,7 @@ strong {
   color: #000;
   font-weight: 700;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 16px !important; }
+  font-size: 18px !important; }
 
 .position-relative {
   position: relative; }
@@ -2172,16 +2172,13 @@ nav {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-top: 5px; }
+  margin-top: 5px;
+  gap: 5px; }
   .location-list li {
     font-weight: 400; }
     .location-list li a {
       font-size: 16px;
       color: #324a74; }
-  .location-list p {
-    margin-right: 5px;
-    display: flex;
-    align-items: end; }
 
 .required-asbx {
   width: 100%;
@@ -2842,10 +2839,8 @@ nav {
   .no-job .data-info b {
     color: #324a74; }
 
-.no-job h2 span {
-  color: #bc2649;
+.no-job .red-text {
   font-size: 26px;
-  font-style: normal;
   font-weight: 700; }
 
 .bottom-banner {
@@ -4124,7 +4119,7 @@ nav {
     .card-job-site {
       width: 100%; } }
   .card-job-site a {
-    color: #15528e;
+    color: #15528e !important;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -4150,6 +4145,11 @@ nav {
     position: absolute;
     right: 5px;
     top: 5px; }
+  .card-job-site .city-location a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    color: #000 !important; }
 
 .compensation-table {
   margin-top: 20px;

@@ -78,17 +78,13 @@
   flex-wrap: wrap;
   padding-left: 0;
   margin-top: 5px;
+  gap: 5px;
   li {
     font-weight: 400;
     a {
       font-size: 16px;
       color: #324a74;
     }
-  }
-  p {
-    margin-right: 5px;
-    display: flex;
-    align-items: end;
   }
 }
 .required-asbx {

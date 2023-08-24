@@ -29,7 +29,7 @@
   }
 
   a {
-    color: #15528e;
+    color: #15528e !important;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -62,6 +62,14 @@
     position: absolute;
     right: 5px;
     top: 5px;
+  }
+  .city-location {
+    a {
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration-line: underline;
+      color: #000 !important;
+    }
   }
 }
 
