@@ -3512,101 +3512,21 @@ nav {
     margin-top: 0;
     margin-bottom: 0; }
 
-.multiple-page .video {
-  width: 100%;
-  max-width: 662px;
-  height: 351px;
-  margin: 15px auto 55px auto;
-  display: flex; }
+.mesothelioma .content-summarizer {
+  margin-top: 30px;
+  max-width: none; }
 
-.multiple-page .component-information {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 18px;
-  margin-bottom: 20px;
-  gap: 10px; }
-  .multiple-page .component-information .content-summarizer {
-    width: 100%;
-    padding: 17px 27px;
-    border-radius: 4px 4px 0px 0px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #fcfaf6;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04); }
-    .multiple-page .component-information .content-summarizer p {
-      text-decoration-line: underline;
-      font-weight: 400; }
-    .multiple-page .component-information .content-summarizer li {
-      color: #BC2649;
-      text-decoration-line: underline;
-      text-transform: capitalize;
-      margin-top: 3px;
-      font-size: 14px;
-      font-weight: 500; }
-    .multiple-page .component-information .content-summarizer ol {
-      margin-top: 0 !important;
-      margin-bottom: 0; }
-    .multiple-page .component-information .content-summarizer ul p {
-      font-size: 14px;
-      font-weight: 400;
-      text-decoration-line: underline;
-      color: #000 !important; }
-  .multiple-page .component-information img {
-    width: auto;
-    height: auto; }
+.mesothelioma .red-text {
+  margin-bottom: 2px;
+  font-weight: 700; }
 
-.multiple-page ul li:before {
-  content: "•";
-  color: #767676;
-  padding-right: 15px;
-  text-decoration-line: blink; }
-
-.multiple-page ul {
-  margin-top: 10px;
-  margin-bottom: 20px; }
-  .multiple-page ul li {
-    display: flex;
-    text-decoration-line: blink !important; }
-    .multiple-page ul li p {
-      color: #767676; }
-
-.multiple-page p {
-  line-height: 22px; }
-
-.multiple-page span {
-  color: #bc2649;
-  font-size: 18px; }
-
-.multiple-page h2 {
-  margin-top: 15px; }
-
-.multiple-page ol {
-  margin-top: 16px; }
-  .multiple-page ol ul {
-    margin: 0; }
-  .multiple-page ol li {
-    color: #575757;
+.mesothelioma ul {
+  padding-left: 25px; }
+  .mesothelioma ul li {
+    list-style-type: disc;
     font-size: 16px;
-    font-weight: 400;
-    margin-top: 4px; }
-    .multiple-page ol li b {
-      color: #575757;
-      font-size: 16px !important;
-      font-weight: 500; }
-
-.multiple-page b {
-  font-size: 16px !important;
-  font-weight: 500; }
-
-.multiple-page tbody {
-  display: flex;
-  width: 100%;
-  max-width: none !important; }
-
-.multiple-page .company-img {
-  display: flex;
-  flex-direction: column;
-  margin-left: 55px;
-  gap: 5px; }
+    font-weight: 300;
+    line-height: 22px; }
 
 .top-search-mobile {
   display: none;

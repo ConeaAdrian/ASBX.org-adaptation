@@ -1,115 +1,137 @@
-.multiple-page {
-  .video {
-    width: 100%;
-    max-width: 662px;
-    height: 351px;
-    margin: 15px auto 55px auto;
-    display: flex;
+.mesothelioma {
+  .content-summarizer {
+    margin-top: 30px;
+    max-width: none;
   }
-
-  .component-information {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 18px;
-    margin-bottom: 20px;
-    gap: 10px;
-    .content-summarizer {
-      width: 100%;
-      padding: 17px 27px;
-      border-radius: 4px 4px 0px 0px;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background: #fcfaf6;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
-      p {
-        text-decoration-line: underline;
-        font-weight: 400;
-      }
-      li {
-        color: #BC2649;
-        text-decoration-line: underline;
-        text-transform: capitalize;
-        margin-top: 3px;
-        font-size: 14px;
-        font-weight: 500;
-      }
-      ol {
-        margin-top: 0 !important;
-        margin-bottom: 0;
-      }
-      ul {
-        p {
-          font-size: 14px;
-          font-weight: 400;
-          text-decoration-line: underline;
-          color: #000 !important;
-        }
-      }
-    }
-    img {
-      width: auto;
-      height: auto;
-    }
+  .red-text {
+    margin-bottom: 2px;
+    font-weight: 700;
   }
-
-  ul li:before {
-    content: "•";
-    color: #767676;
-    padding-right: 15px;
-    text-decoration-line: blink;
+  .mesothelioma-types {
   }
   ul {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding-left: 25px;
     li {
-      display: flex;
-      text-decoration-line: blink !important;
-      p {
-        color: #767676;
-      }
-    }
-  }
-
-  p {
-    line-height: 22px;
-  }
-  span {
-    color: #bc2649;
-    font-size: 18px;
-  }
-  h2 {
-    margin-top: 15px;
-  }
-  ol {
-    margin-top: 16px;
-    ul {
-      margin: 0;
-    }
-    li {
-      color: #575757;
+      list-style-type: disc;
       font-size: 16px;
-      font-weight: 400;
-      margin-top: 4px;
-      b {
-        color: #575757;
-        font-size: 16px !important;
-        font-weight: 500;
-      }
+      font-weight: 300;
+      line-height: 22px;
     }
-  }
-  b {
-    font-size: 16px !important;
-    font-weight: 500;
-  }
-  tbody {
-    display: flex;
-    width: 100%;
-    max-width: none !important;
-  }
-
-  .company-img {
-    display: flex;
-    flex-direction: column;
-    margin-left: 55px;
-    gap: 5px;
   }
 }
+
+// .multiple-page {
+//   .video {
+//     width: 100%;
+//     max-width: 662px;
+//     height: 351px;
+//     margin: 15px auto 55px auto;
+//     display: flex;
+//   }
+
+//   .component-information {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 18px;
+//     margin-bottom: 20px;
+//     gap: 10px;
+//     .content-summarizer {
+//       width: 100%;
+//       padding: 17px 27px;
+//       border-radius: 4px 4px 0px 0px;
+//       border: 1px solid rgba(0, 0, 0, 0.1);
+//       background: #fcfaf6;
+//       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+//       p {
+//         text-decoration-line: underline;
+//         font-weight: 400;
+//       }
+//       li {
+//         color: #BC2649;
+//         text-decoration-line: underline;
+//         text-transform: capitalize;
+//         margin-top: 3px;
+//         font-size: 14px;
+//         font-weight: 500;
+//       }
+//       ol {
+//         margin-top: 0 !important;
+//         margin-bottom: 0;
+//       }
+//       ul {
+//         p {
+//           font-size: 14px;
+//           font-weight: 400;
+//           text-decoration-line: underline;
+//           color: #000 !important;
+//         }
+//       }
+//     }
+//     img {
+//       width: auto;
+//       height: auto;
+//     }
+//   }
+
+//   ul li:before {
+//     content: "•";
+//     color: #767676;
+//     padding-right: 15px;
+//     text-decoration-line: blink;
+//   }
+//   ul {
+//     margin-top: 10px;
+//     margin-bottom: 20px;
+//     li {
+//       display: flex;
+//       text-decoration-line: blink !important;
+//       p {
+//         color: #767676;
+//       }
+//     }
+//   }
+
+//   p {
+//     line-height: 22px;
+//   }
+//   span {
+//     color: #bc2649;
+//     font-size: 18px;
+//   }
+//   h2 {
+//     margin-top: 15px;
+//   }
+//   ol {
+//     margin-top: 16px;
+//     ul {
+//       margin: 0;
+//     }
+//     li {
+//       color: #575757;
+//       font-size: 16px;
+//       font-weight: 400;
+//       margin-top: 4px;
+//       b {
+//         color: #575757;
+//         font-size: 16px !important;
+//         font-weight: 500;
+//       }
+//     }
+//   }
+//   b {
+//     font-size: 16px !important;
+//     font-weight: 500;
+//   }
+//   tbody {
+//     display: flex;
+//     width: 100%;
+//     max-width: none !important;
+//   }
+
+//   .company-img {
+//     display: flex;
+//     flex-direction: column;
+//     margin-left: 55px;
+//     gap: 5px;
+//   }
+// }
