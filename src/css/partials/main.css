@@ -3819,6 +3819,9 @@ nav {
     max-width: none;
     flex-direction: inherit;
     margin-bottom: 20px; }
+    @media only screen and (max-width: 850px) and (min-width: 767px) {
+      .trust-fund .general-information-table {
+        flex-direction: column; } }
     @media (max-width: 590px) {
       .trust-fund .general-information-table {
         flex-direction: column; } }
@@ -3827,10 +3830,16 @@ nav {
       max-width: 303px;
       height: 192px;
       object-fit: contain !important; }
+      @media only screen and (max-width: 850px) and (min-width: 767px) {
+        .trust-fund .general-information-table .company-logo {
+          max-width: none; } }
       @media (max-width: 475px) {
         .trust-fund .general-information-table .company-logo {
           max-width: none;
           height: auto; } }
+    @media only screen and (max-width: 850px) and (min-width: 767px) {
+      .trust-fund .general-information-table .content-summarizer {
+        max-width: none; } }
   .trust-fund .status-active {
     color: #324a74;
     font-weight: 400;
