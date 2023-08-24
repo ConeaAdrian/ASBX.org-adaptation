@@ -3739,15 +3739,17 @@ nav {
     .equipment-ship ul li {
       font-size: 18px;
       font-weight: 300; }
-  .equipment-ship .button-show-more {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #fff;
-    padding: 6px 19px;
-    color: #bc2649;
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0 auto;
-    display: flex; }
+
+.button-show-more {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 6px 19px;
+  color: #bc2649;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 30px; }
 
 .ship-list ul li,
 .equipment-ship ul li,
@@ -4397,7 +4399,8 @@ nav {
   margin-top: 20px; }
   .state .state-list li {
     width: 28%;
-    color: #000; }
+    color: #000;
+    list-style-type: disc; }
     .state .state-list li::before {
       margin-right: 6px;
       text-decoration-line: none; }
