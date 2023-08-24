@@ -12,6 +12,7 @@
       width: 100%;
       max-width: 303px;
       height: 192px;
+      object-fit: contain !important;
       @media (max-width: 475px) {
         max-width: none;
         height: auto;

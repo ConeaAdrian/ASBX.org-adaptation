@@ -3825,7 +3825,8 @@ nav {
     .trust-fund .general-information-table .company-logo {
       width: 100%;
       max-width: 303px;
-      height: 192px; }
+      height: 192px;
+      object-fit: contain !important; }
       @media (max-width: 475px) {
         .trust-fund .general-information-table .company-logo {
           max-width: none;
