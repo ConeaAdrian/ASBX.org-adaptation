@@ -3740,6 +3740,15 @@ nav {
       font-size: 18px;
       font-weight: 300; }
 
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px; }
+  .button-container .button-bar {
+    background: rgba(0, 0, 0, 0.1);
+    height: 1px;
+    width: 100%; }
+
 .button-show-more {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
@@ -3749,7 +3758,8 @@ nav {
   font-weight: 600;
   margin: 0 auto;
   display: flex;
-  margin-top: 30px; }
+  width: 187px;
+  justify-content: center; }
 
 .ship-list ul li,
 .equipment-ship ul li,
