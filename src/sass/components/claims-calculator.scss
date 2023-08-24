@@ -206,7 +206,7 @@
       position: relative;
       .data-city {
         display: flex;
-        align-items: center;
+        align-items: start;
 
         b {
           width: 45px;
@@ -218,6 +218,7 @@
         p {
           font-size: 14px;
           line-height: normal;
+          width: 100%;
         }
       }
       .button-remove-claims {
