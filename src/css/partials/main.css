@@ -2083,7 +2083,7 @@ nav {
         align-items: center; }
         .general-claims .claims-result__data-information .data-city b {
           width: 45px;
-          font-size: 14px;
+          font-size: 14px !important;
           font-style: normal;
           font-weight: 500;
           line-height: normal; }
@@ -2772,21 +2772,6 @@ nav {
         font-size: 16px;
         font-weight: 300;
         margin-bottom: 0; }
-
-.job-site .occupational {
-  margin-top: 20px; }
-  .job-site .occupational li {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300; }
-    .job-site .occupational li span {
-      color: #466d92;
-      font-size: 18px !important;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 26px;
-      line-height: 26px;
-      text-decoration-line: underline !important; }
 
 .job-site .high-risk li {
   font-size: 14px;
@@ -3528,6 +3513,49 @@ nav {
     font-weight: 300;
     line-height: 22px; }
 
+.occupational .content-summarizer {
+  margin-top: 30px;
+  max-width: none; }
+
+.occupational .trust-list {
+  margin-left: 15px; }
+
+.occupational .boiler-occupation {
+  padding-left: 25px;
+  padding-top: 20px; }
+  .occupational .boiler-occupation li {
+    font-weight: 300;
+    list-style-type: disc;
+    font-size: 18px;
+    line-height: 26px; }
+
+.occupational .text-exampe {
+  margin-top: 10px; }
+  .occupational .text-exampe b {
+    font-size: 18px !important; }
+
+.occupational .sort-chase {
+  display: block;
+  margin: 20px 0;
+  gap: 20px; }
+  .occupational .sort-chase__content {
+    margin-bottom: 20px; }
+    .occupational .sort-chase__content h3 {
+      color: #324a74;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px; }
+    .occupational .sort-chase__content td,
+    .occupational .sort-chase__content th {
+      font-weight: 400 !important; }
+  .occupational .sort-chase .text-initial {
+    color: #000 !important;
+    font-size: 16px;
+    font-weight: 700 !important;
+    line-height: normal;
+    text-transform: capitalize; }
+
 .top-search-mobile {
   display: none;
   background: #FBFBFB;
@@ -3721,11 +3749,6 @@ nav {
 .legend-information__text ul {
   padding-left: 20px; }
   .legend-information__text ul li {
-    list-style-type: disc; }
-
-.occupational, .high-risk {
-  padding-left: 20px; }
-  .occupational li, .high-risk li {
     list-style-type: disc; }
 
 .responsible-company {

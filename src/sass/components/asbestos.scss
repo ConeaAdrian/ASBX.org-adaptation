@@ -20,6 +20,59 @@
   }
 }
 
+.occupational {
+  .content-summarizer {
+    margin-top: 30px;
+    max-width: none;
+  }
+  .trust-list {
+    margin-left: 15px;
+  }
+  .boiler-occupation {
+    padding-left: 25px;
+    padding-top: 20px;
+    li {
+      font-weight: 300;
+      list-style-type: disc;
+      font-size: 18px;
+      line-height: 26px; 
+    }
+  }
+  .text-exampe {
+    margin-top: 10px;
+    b {
+      font-size: 18px !important;
+    }
+  }
+  .sort-chase {
+    display: block;
+    margin: 20px 0;
+    gap: 20px;
+
+    &__content {
+      margin-bottom: 20px;
+      h3 {
+        color: #324a74;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+      }
+
+      td,
+      th {
+        font-weight: 400 !important;
+      }
+    }
+    .text-initial {
+      color: #000 !important;
+      font-size: 16px;
+      font-weight: 700 !important;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+}
 // .multiple-page {
 //   .video {
 //     width: 100%;
