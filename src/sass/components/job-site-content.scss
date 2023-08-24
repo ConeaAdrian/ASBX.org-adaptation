@@ -71,7 +71,7 @@
       font-style: normal;
       font-weight: 300;
       span {
-        color: #466D92;
+        color: #466d92;
         font-size: 18px !important;
         font-style: normal;
         font-weight: 300;
@@ -136,5 +136,22 @@
   }
   .red-text {
     font-weight: 700;
+  }
+}
+
+.no-job {
+  .data-info {
+    margin-bottom: 0;
+    b {
+      color: #324a74;
+    }
+  }
+  h2 {
+    span {
+      color: #bc2649;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+    }
   }
 }

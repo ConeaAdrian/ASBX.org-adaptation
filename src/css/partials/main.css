@@ -2783,7 +2783,7 @@ nav {
     font-style: normal;
     font-weight: 300; }
     .job-site .occupational li span {
-      color: #466D92;
+      color: #466d92;
       font-size: 18px !important;
       font-style: normal;
       font-weight: 300;
@@ -2835,6 +2835,17 @@ nav {
     color: #000 !important; }
 
 .job-site .red-text {
+  font-weight: 700; }
+
+.no-job .data-info {
+  margin-bottom: 0; }
+  .no-job .data-info b {
+    color: #324a74; }
+
+.no-job h2 span {
+  color: #bc2649;
+  font-size: 26px;
+  font-style: normal;
   font-weight: 700; }
 
 .bottom-banner {
