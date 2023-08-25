@@ -230,6 +230,11 @@ strong {
     .container {
       padding: 0 4.5rem; } }
 
+@media (min-width: 767px) {
+  .container-desktop {
+    width: 100%;
+    max-width: 660px; } }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -1913,6 +1918,9 @@ nav {
   max-width: 250px;
   min-width: 220px;
   width: 100%; }
+  @media (max-width: 940px) {
+    .claims-select {
+      max-width: 220px; } }
   @media (max-width: 767px) {
     .claims-select {
       display: none; } }
