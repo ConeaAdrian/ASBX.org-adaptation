@@ -42,12 +42,18 @@
     }
   }
   .contact-company {
-    b {
+    strong {
       font-size: 18px !important;
       font-weight: 500;
     }
     a {
       text-decoration-line: underline !important;
+    }
+    .claimant-relations {
+      margin-top: 10px;
+    }
+    h3 {
+      color: #000;
     }
   }
 }

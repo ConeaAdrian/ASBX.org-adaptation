@@ -3771,7 +3771,7 @@ nav {
 .button-show-more {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
-  padding: 6px 19px;
+  padding: 6px 18px;
   color: #bc2649;
   font-size: 14px;
   font-weight: 600;
@@ -3829,11 +3829,15 @@ nav {
     .trust-fund .status-active span {
       color: #bc2649;
       font-weight: 600; }
-  .trust-fund .contact-company b {
+  .trust-fund .contact-company strong {
     font-size: 18px !important;
     font-weight: 500; }
   .trust-fund .contact-company a {
     text-decoration-line: underline !important; }
+  .trust-fund .contact-company .claimant-relations {
+    margin-top: 10px; }
+  .trust-fund .contact-company h3 {
+    color: #000; }
 
 .sort-chase {
   display: flex;

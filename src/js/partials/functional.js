@@ -10,7 +10,7 @@ if (button) {
       }
       button.innerText = "Hide";
     } else {
-      var columnsToHide = document.querySelectorAll('.city-column th:nth-child(n+5), .trust-fund-column td:nth-child(n+5), .job-sites-column td:nth-child(n+5)');
+      var columnsToHide = document.querySelectorAll('.city-column th:nth-child(n+7), .trust-fund-column td:nth-child(n+7), .job-sites-column td:nth-child(n+7)');
       for (var j = 0; j < columnsToHide.length; j++) {
         columnsToHide[j].classList.add('hidden-column');
       }
