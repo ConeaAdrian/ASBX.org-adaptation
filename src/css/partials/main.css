@@ -954,6 +954,15 @@ nav {
     .search-principal {
       background: #324a74; } }
 
+.sticky {
+  position: fixed;
+  top: 55px;
+  width: 100%;
+  transition: top 0.3s; }
+
+.hidden {
+  top: -100%; }
+
 .custom-search-form {
   position: relative;
   width: 100%;
