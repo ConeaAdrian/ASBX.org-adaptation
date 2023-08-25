@@ -119,7 +119,6 @@ select {
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
   border-radius: 0;
-  appearance: none;
   outline: none; }
   @media (max-width: 699px) {
     select {
@@ -1798,7 +1797,7 @@ nav {
       .content-job__search .select-job select {
         width: 100%;
         max-width: 242px;
-        padding-left: 10px; }
+        padding-left: 5px; }
         @media only screen and (max-width: 930px) and (min-width: 767px) {
           .content-job__search .select-job select {
             max-width: none; } }
@@ -2080,7 +2079,7 @@ nav {
       position: relative; }
       .general-claims .claims-result__data-information .data-city {
         display: flex;
-        align-items: center; }
+        align-items: start; }
         .general-claims .claims-result__data-information .data-city b {
           width: 45px;
           font-size: 14px !important;
@@ -2089,7 +2088,8 @@ nav {
           line-height: normal; }
         .general-claims .claims-result__data-information .data-city p {
           font-size: 14px;
-          line-height: normal; }
+          line-height: normal;
+          width: 100%; }
       .general-claims .claims-result__data-information .button-remove-claims {
         color: black;
         font-size: 12px;
@@ -4107,7 +4107,7 @@ nav {
   .card-job-site select {
     height: 44px;
     width: 100%;
-    padding-left: 10px; }
+    padding-left: 5px; }
     @media (max-width: 699px) {
       .card-job-site select {
         height: 40px; } }
@@ -4284,7 +4284,7 @@ nav {
     .content-boiler .card-boiler select {
       height: 44px;
       width: 100%;
-      padding-left: 10px; }
+      padding-left: 5px; }
     .content-boiler .card-boiler .data-select {
       display: flex;
       gap: 10px;
