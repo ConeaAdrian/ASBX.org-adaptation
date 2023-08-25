@@ -21,18 +21,19 @@ if (button) {
 
 
 //--scrop search
-let lastScrollTop = 0;
 
-window.addEventListener('scroll', function() {
-  let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  let searchElement = document.getElementById('search-principal');
+let lastScroll = 0
+const search_containe = document.querySelector(".header-search")
+const header_containe = document.querySelector(".header-section")
+if (search_containe && header_containe) {
+    window.addEventListener("scroll", async function () {
+        const currentScroll = window.pageYOffset
+        if (currentScroll < lastScroll) {
+            search_containe.style.top = `${header_containe.offsetHeight}px`
+        } else {
+            search_containe.style.top = `-30px`
+        }
+        lastScroll = currentScroll
 
-  if (currentScrollTop > lastScrollTop) {
-    searchElement.classList.add('hidden-search');
-    searchElement.classList.remove('sticky-search');
-  } else {
-    searchElement.classList.add('sticky-search');
-    searchElement.classList.remove('hidden-search');
-  }
-  lastScrollTop = currentScrollTop;
-});
+    }, true)
+}
