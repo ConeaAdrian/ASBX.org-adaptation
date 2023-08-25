@@ -21,18 +21,16 @@ if (button) {
 
 
 
-let lastScrollTop = 0; // Variabilă pentru a ține evidența ultimei poziții de scroll
+let lastScrollTop = 0;
 
 window.addEventListener('scroll', function() {
   let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
   let searchElement = document.getElementById('search-principal');
 
   if (currentScrollTop > lastScrollTop) {
-    // Utilizatorul face scroll în jos
     searchElement.classList.add('hidden');
     searchElement.classList.remove('sticky');
   } else {
-    // Utilizatorul face scroll în sus
     searchElement.classList.add('sticky');
     searchElement.classList.remove('hidden');
   }

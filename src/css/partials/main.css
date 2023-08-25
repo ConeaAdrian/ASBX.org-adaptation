@@ -661,7 +661,7 @@ footer {
   position: sticky;
   height: fit-content;
   top: 0;
-  z-index: 1; }
+  z-index: 100; }
   @media (max-width: 992px) {
     .header-section {
       background: #ffffff; } }
@@ -949,7 +949,8 @@ nav {
 .search-principal {
   background: #fbfbfb;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-  height: fit-content; }
+  height: fit-content;
+  z-index: 10; }
   @media (max-width: 992px) {
     .search-principal {
       background: #324a74; } }
@@ -959,6 +960,9 @@ nav {
   top: 55px;
   width: 100%;
   transition: top 0.3s; }
+  @media (max-width: 375px) {
+    .sticky {
+      top: 45px; } }
 
 .hidden {
   top: -100%; }
