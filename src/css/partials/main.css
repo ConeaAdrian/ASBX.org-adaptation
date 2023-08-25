@@ -955,16 +955,16 @@ nav {
     .search-principal {
       background: #324a74; } }
 
-.sticky {
+.sticky-search {
   position: sticky;
   top: 55px;
   width: 100%;
   transition: top 0.3s; }
   @media (max-width: 375px) {
-    .sticky {
+    .sticky-search {
       top: 45px; } }
 
-.hidden {
+.hidden-search {
   top: -100%; }
 
 .custom-search-form {

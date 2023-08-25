@@ -28,11 +28,11 @@ window.addEventListener('scroll', function() {
   let searchElement = document.getElementById('search-principal');
 
   if (currentScrollTop > lastScrollTop) {
-    searchElement.classList.add('hidden');
-    searchElement.classList.remove('sticky');
+    searchElement.classList.add('hidden-search');
+    searchElement.classList.remove('sticky-search');
   } else {
-    searchElement.classList.add('sticky');
-    searchElement.classList.remove('hidden');
+    searchElement.classList.add('sticky-search');
+    searchElement.classList.remove('hidden-search');
   }
   lastScrollTop = currentScrollTop;
 });
