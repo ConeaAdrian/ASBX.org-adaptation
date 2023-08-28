@@ -320,16 +320,8 @@ nav {
   box-sizing: border-box;
   font-size: 16px;
   font-weight: 400;
- border: none;
+  border: none;
   height: 100%;
-  // padding: 8px 8px 8px 36px;
-  // text-transform: capitalize;
-  // line-height: normal;
-  // color: #3d3d3d;
-  // appearance: none;
-  // height: 44px;
-  // border: 1px solid rgba(0, 0, 0, 0.17);
-  // background: #fff;
   @media (max-width: 767px) {
     height: 38px !important;
   }
