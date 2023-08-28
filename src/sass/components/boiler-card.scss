@@ -52,7 +52,7 @@
       display: flex;
       gap: 10px;
       align-items: center;
-    text-align: center;
+      text-align: center;
     }
     .done {
       width: 28px;
@@ -69,13 +69,16 @@
   padding-right: 25px;
   cursor: pointer;
   user-select: none;
-  
+  align-items: center;
+  display: flex;
+  text-align: center;
+
   input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
-  
+
   .checkmark {
     position: absolute;
     top: 4px;
@@ -85,21 +88,21 @@
     background-color: #ffffff;
     border-radius: 50%;
     border: 1px solid #000;
-    
+
     &:after {
       content: "";
       position: absolute;
       display: none;
     }
   }
-  
+
   &:hover input ~ .checkmark {
     background-color: #ffffff;
   }
-  
+
   input:checked ~ .checkmark {
     background-color: #ffffff;
-    
+
     &:after {
       display: block;
       top: 3px;
@@ -112,15 +115,15 @@
   }
 }
 .button-boiler {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 4.5px 16px !important;
-    text-transform: capitalize;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4.5px 16px !important;
+  text-transform: capitalize;
 
-    img {
-      height: 6px;
-      width: 20px;
-    }
+  img {
+    height: 6px;
+    width: 20px;
+  }
 }

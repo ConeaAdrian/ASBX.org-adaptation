@@ -11,43 +11,43 @@
       font-size: 18px !important;
     }
   }
-  .sort-chase {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
+}
+.sort-chase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-    &__content {
-      width: 47.5%;
+  &__content {
+    width: 47.5%;
 
-      @media only screen and (max-width: 891px) and (min-width: 767px) {
-        width: 100%;
-      }
-      @media (max-width: 640px) {
-        width: 100%;
-      }
-      h3 {
-        color: #324a74;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 26px;
-      }
-
-      td,
-      th {
-        font-weight: 400 !important;
-      }
+    @media only screen and (max-width: 891px) and (min-width: 767px) {
+      width: 100%;
     }
-    .text-initial {
-      color: #000 !important;
-      font-size: 16px;
-      font-weight: 700 !important;
-      line-height: normal;
-      text-transform: capitalize;
+    @media (max-width: 640px) {
+      width: 100%;
     }
+    h3 {
+      color: #324a74;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px;
+    }
+
+    td,
+    th {
+      font-weight: 400 !important;
+    }
+  }
+  .text-initial {
+    color: #000 !important;
+    font-size: 16px;
+    font-weight: 700 !important;
+    line-height: normal;
+    text-transform: capitalize;
   }
 }
 .content-job {

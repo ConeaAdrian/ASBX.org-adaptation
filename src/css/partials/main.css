@@ -435,6 +435,7 @@ button {
         font-size: 16px;
         font-weight: 400; }
   .lawyers-information .block-lawyers img {
+    border-radius: 50%;
     width: 104px;
     height: 104px; }
   .lawyers-information .block-lawyers .contact {
@@ -1724,31 +1725,31 @@ nav {
   .city-content .text-exampe b {
     font-size: 18px !important; }
 
-.city-content .sort-chase {
+.sort-chase {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 20px; }
-  .city-content .sort-chase__content {
+  .sort-chase__content {
     width: 47.5%; }
     @media only screen and (max-width: 891px) and (min-width: 767px) {
-      .city-content .sort-chase__content {
+      .sort-chase__content {
         width: 100%; } }
     @media (max-width: 640px) {
-      .city-content .sort-chase__content {
+      .sort-chase__content {
         width: 100%; } }
-    .city-content .sort-chase__content h3 {
+    .sort-chase__content h3 {
       color: #324a74;
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
       line-height: 26px; }
-    .city-content .sort-chase__content td,
-    .city-content .sort-chase__content th {
+    .sort-chase__content td,
+    .sort-chase__content th {
       font-weight: 400 !important; }
-  .city-content .sort-chase .text-initial {
+  .sort-chase .text-initial {
     color: #000 !important;
     font-size: 16px;
     font-weight: 700 !important;
@@ -4311,7 +4312,10 @@ nav {
   position: relative;
   padding-right: 25px;
   cursor: pointer;
-  user-select: none; }
+  user-select: none;
+  align-items: center;
+  display: flex;
+  text-align: center; }
   .alternative input {
     position: absolute;
     opacity: 0;
