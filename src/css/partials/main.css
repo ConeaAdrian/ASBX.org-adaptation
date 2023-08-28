@@ -262,7 +262,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 10px; }
+  padding: 5px; }
   .button-red:hover {
     box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16), inset 0 -2px 0 0 rgba(0, 0, 0, 0.11);
     filter: brightness(105%);
@@ -281,7 +281,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 10px; }
+  padding: 5px; }
   .button-blue:hover {
     box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16), inset 0 -2px 0 0 rgba(0, 0, 0, 0.11);
     filter: brightness(105%);
@@ -434,7 +434,7 @@ button {
         color: #202020;
         font-size: 16px;
         font-weight: 400; }
-  .lawyers-information .block-lawyers img {
+  .lawyers-information .block-lawyers .img-lawyers {
     border-radius: 50%;
     width: 104px;
     height: 104px; }
@@ -2819,6 +2819,9 @@ nav {
 
 .job-site .red-text {
   font-weight: 700; }
+
+.no-job-site .nearby-location {
+  margin-top: 20px; }
 
 .no-job .data-info b {
   color: #324a74; }
