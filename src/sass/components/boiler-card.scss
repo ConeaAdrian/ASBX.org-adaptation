@@ -116,6 +116,8 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    padding: 4.5px 16px !important;
+    text-transform: capitalize;
 
     img {
       height: 6px;

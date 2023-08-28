@@ -1719,82 +1719,26 @@ nav {
   font-weight: 400;
   line-height: 26px; }
 
-.city-content .walking-steps {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 40px; }
-  @media only screen and (max-width: 845px) and (min-width: 767px) {
-    .city-content .walking-steps {
-      flex-direction: column; } }
-  @media (max-width: 620px) {
-    .city-content .walking-steps {
-      flex-direction: column; } }
-  .city-content .walking-steps__content {
-    max-width: 285px;
-    width: 100%; }
-    @media only screen and (max-width: 845px) and (min-width: 767px) {
-      .city-content .walking-steps__content {
-        width: 100%;
-        max-height: none;
-        max-width: none;
-        height: auto; } }
-    @media (max-width: 620px) {
-      .city-content .walking-steps__content {
-        width: 100%;
-        max-height: none;
-        max-width: none;
-        height: auto; } }
-    .city-content .walking-steps__content ol {
-      margin-bottom: 10px; }
-      .city-content .walking-steps__content ol li {
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 22px;
-        margin-top: 0; }
-    .city-content .walking-steps__content p span {
-      text-decoration-line: underline !important;
-      font-weight: 300; }
-    .city-content .walking-steps__content p b {
-      font-size: 18px !important; }
-    .city-content .walking-steps__content h3 {
-      color: #bc2649;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 26px;
-      margin-bottom: 5px; }
-  .city-content .walking-steps .video-add-claims {
-    border-radius: 8px;
-    border: 1px solid #e4e4e4;
-    width: 100%;
-    max-width: 360px;
-    max-height: 300px;
-    height: 100%; }
-    @media only screen and (max-width: 845px) and (min-width: 767px) {
-      .city-content .walking-steps .video-add-claims {
-        width: 100%;
-        max-height: none;
-        max-width: none;
-        height: auto; } }
-    @media (max-width: 620px) {
-      .city-content .walking-steps .video-add-claims {
-        width: 100%;
-        max-height: none;
-        max-width: none;
-        height: auto; } }
-
 .city-content .text-exampe {
   margin-top: 10px; }
   .city-content .text-exampe b {
     font-size: 18px !important; }
 
 .city-content .sort-chase {
-  display: block;
-  margin: 20px 0;
-  gap: 20px; }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px; }
   .city-content .sort-chase__content {
-    margin-bottom: 20px; }
+    width: 47.5%; }
+    @media only screen and (max-width: 891px) and (min-width: 767px) {
+      .city-content .sort-chase__content {
+        width: 100%; } }
+    @media (max-width: 640px) {
+      .city-content .sort-chase__content {
+        width: 100%; } }
     .city-content .sort-chase__content h3 {
       color: #324a74;
       font-size: 20px;
@@ -1878,7 +1822,7 @@ nav {
       display: flex;
       flex-wrap: wrap;
       padding-left: 0;
-      gap: 10px;
+      gap: 7px;
       margin-top: 10px; }
       .search-alphabet .alphabet ul li {
         color: #15528e;
@@ -4065,7 +4009,8 @@ nav {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 40px; }
   .page-navigation .page-button,
   .page-navigation .pagination__list__prev,
   .page-navigation .pagination__list__next {
@@ -4387,7 +4332,9 @@ nav {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 5px; }
+  gap: 5px;
+  padding: 4.5px 16px !important;
+  text-transform: capitalize; }
   .button-boiler img {
     height: 6px;
     width: 20px; }
