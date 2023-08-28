@@ -10,8 +10,11 @@
   .red-text {
     margin-bottom: 2px;
     font-weight: 700;
+    text-decoration-line: underline !important;
   }
   .mesothelioma-types {
+    display: flex;
+    flex-direction: column;
   }
   ul {
     padding-left: 25px;
