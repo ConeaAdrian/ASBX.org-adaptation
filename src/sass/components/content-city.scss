@@ -22,12 +22,12 @@
     &__content {
       width: 47.5%;
 
-    @media only screen and (max-width: 891px) and (min-width: 767px) {
-      width: 100%;
-    }
-    @media (max-width: 640px) {
-      width: 100%;
-    }
+      @media only screen and (max-width: 891px) and (min-width: 767px) {
+        width: 100%;
+      }
+      @media (max-width: 640px) {
+        width: 100%;
+      }
       h3 {
         color: #324a74;
         font-size: 20px;
@@ -110,6 +110,25 @@
     }
   }
 }
+.search-result {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  li {
+    font-size: 14px ;
+    list-style-type: disc !important;
+    line-height: 20px;
+    
+    span {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
 .search-alphabet {
   margin-top: 20px;
   width: 100%;
@@ -120,9 +139,7 @@
     line-height: normal;
   }
   .alphabet {
-    border-bottom: 1px solid #e8e8e8;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
+
     ul {
       display: flex;
       flex-wrap: wrap;
