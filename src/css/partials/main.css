@@ -2166,6 +2166,8 @@ nav {
     border-left: 2px solid #bc2649;
     padding-left: 10px;
     gap: 2px; }
+    .required-asbx .block-data b {
+      font-size: 16px !important; }
     .required-asbx .block-data p {
       color: #000;
       font-weight: 300;
@@ -2173,7 +2175,7 @@ nav {
       line-height: normal; }
       .required-asbx .block-data p span {
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 300;
         line-height: normal;
         text-decoration-line: underline !important; }
     .required-asbx .block-data b {
