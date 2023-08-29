@@ -1749,8 +1749,7 @@ nav {
 
 .content-job {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px; }
+  flex-wrap: wrap; }
   .content-job__search {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fbfbfb;
@@ -4073,7 +4072,8 @@ nav {
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  padding-top: 20px; }
   .content-card-job .button-red {
     width: 100%; }
 
