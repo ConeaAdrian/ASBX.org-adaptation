@@ -145,6 +145,21 @@ select:after {
   border-color: #324a74 transparent transparent transparent;
 }
 
+select {
+  width: 100%;
+  padding: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('../../img/arrow-select.png') no-repeat right 5px center;
+  background-size: 16px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
 ol {
   padding-left: 20px;
   margin-bottom: 0;
