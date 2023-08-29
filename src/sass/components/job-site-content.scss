@@ -45,15 +45,8 @@
       ul {
         margin-left: 10px;
         li {
-          font-size: 14px;
-          font-style: normal;
+          font-size: 18px;
           font-weight: 300;
-          span {
-            font-size: 18px !important;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 26px;
-          }
         }
         p {
           color: #000 !important;
@@ -64,34 +57,14 @@
       }
     }
   }
-  // .occupational {
-  //   margin-top: 20px;
-  //   li {
-  //     font-size: 14px;
-  //     font-style: normal;
-  //     font-weight: 300;
-  //     span {
-  //       color: #466d92;
-  //       font-size: 18px !important;
-  //       font-style: normal;
-  //       font-weight: 300;
-  //       line-height: 26px;
-  //       line-height: 26px;
-  //       text-decoration-line: underline !important;
-  //     }
-  //   }
-  // }
+
   .high-risk {
+    padding-left: 20px;
+    margin-top: 10px;
     li {
-      font-size: 14px;
-      font-style: normal;
+      font-size: 18px;
+      list-style-type: disc;
       font-weight: 300;
-      span {
-        font-size: 18px !important;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 26px;
-      }
     }
   }
 
@@ -136,6 +109,16 @@
   }
   .red-text {
     font-weight: 700;
+  }
+  .occupational {
+    margin-top: 10px;
+      li {
+        list-style-type: disc;
+        font-weight: 400;
+        font-size: 18px;
+        color: #466D92;
+        text-decoration-line: underline;
+      }
   }
 }
 .no-job-site {

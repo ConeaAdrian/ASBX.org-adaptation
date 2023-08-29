@@ -145,9 +145,6 @@ select {
   background: url("../../img/arrow-select.png") no-repeat right 5px center;
   background-size: 16px; }
 
-select::-ms-expand {
-  display: none; }
-
 ol {
   padding-left: 20px;
   margin-bottom: 0; }
@@ -2219,7 +2216,8 @@ nav {
   background: rgba(240, 245, 255, 0.3);
   max-width: 320px;
   width: 100%;
-  padding: 10px; }
+  padding: 10px;
+  height: fit-content; }
   @media (max-width: 475px) {
     .content-summarizer {
       max-width: none; } }
@@ -2749,29 +2747,21 @@ nav {
     .job-site .content-products__categorization-cart ul {
       margin-left: 10px; }
       .job-site .content-products__categorization-cart ul li {
-        font-size: 14px;
-        font-style: normal;
+        font-size: 18px;
         font-weight: 300; }
-        .job-site .content-products__categorization-cart ul li span {
-          font-size: 18px !important;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 26px; }
       .job-site .content-products__categorization-cart ul p {
         color: #000 !important;
         font-size: 16px;
         font-weight: 300;
         margin-bottom: 0; }
 
-.job-site .high-risk li {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 300; }
-  .job-site .high-risk li span {
-    font-size: 18px !important;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 26px; }
+.job-site .high-risk {
+  padding-left: 20px;
+  margin-top: 10px; }
+  .job-site .high-risk li {
+    font-size: 18px;
+    list-style-type: disc;
+    font-weight: 300; }
 
 .job-site .jobsite-card {
   padding: 21px 16px;
@@ -2808,6 +2798,15 @@ nav {
 
 .job-site .red-text {
   font-weight: 700; }
+
+.job-site .occupational {
+  margin-top: 10px; }
+  .job-site .occupational li {
+    list-style-type: disc;
+    font-weight: 400;
+    font-size: 18px;
+    color: #466D92;
+    text-decoration-line: underline; }
 
 .no-job-site .nearby-location {
   margin-top: 20px; }

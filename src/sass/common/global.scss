@@ -125,7 +125,6 @@ select {
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
   border-radius: 0;
-
   outline: none;
   @media (max-width: 699px) {
     height: 40px !important;
@@ -154,11 +153,6 @@ select {
   background: url('../../img/arrow-select.png') no-repeat right 5px center;
   background-size: 16px;
 }
-
-select::-ms-expand {
-  display: none;
-}
-
 
 ol {
   padding-left: 20px;

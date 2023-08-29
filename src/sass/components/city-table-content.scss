@@ -143,6 +143,7 @@
   max-width: 320px;
   width: 100%;
   padding: 10px;
+  height: fit-content;
   @media (max-width: 475px) {
     max-width: none;
   }
