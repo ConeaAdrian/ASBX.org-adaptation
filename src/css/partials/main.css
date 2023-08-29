@@ -2693,7 +2693,8 @@ nav {
   .job-site .responsible-company li {
     color: #324a74;
     margin-top: 0;
-    margin-bottom: 3px; }
+    margin-bottom: 3px;
+    line-height: 26px; }
     .job-site .responsible-company li a {
       font-size: 18px;
       font-weight: 400;
@@ -2729,7 +2730,8 @@ nav {
       margin-left: 10px; }
       .job-site .content-products__categorization-cart ul li {
         font-size: 18px;
-        font-weight: 300; }
+        font-weight: 300;
+        line-height: 26px; }
       .job-site .content-products__categorization-cart ul p {
         color: #000 !important;
         font-size: 16px;
@@ -2742,7 +2744,8 @@ nav {
   .job-site .high-risk li {
     font-size: 18px;
     list-style-type: disc;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 26px; }
 
 .job-site .jobsite-card {
   padding: 21px 16px;
@@ -2783,6 +2786,7 @@ nav {
 .job-site .occupational {
   margin-top: 10px; }
   .job-site .occupational li {
+    line-height: 26px;
     list-style-type: disc;
     font-weight: 400;
     font-size: 18px;
@@ -3996,7 +4000,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   width: 100%;
   margin-bottom: 40px; }
   .page-navigation .page-button,
@@ -4053,7 +4056,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .content-card-job .button-red {
     width: 100%; }
 
