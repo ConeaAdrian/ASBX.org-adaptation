@@ -69,7 +69,8 @@ h2 {
   padding-top: 40px; }
   @media (max-width: 475px) {
     h2 {
-      font-size: 26px !important; } }
+      font-size: 26px !important;
+      padding-top: 30px; } }
 
 h3 {
   font-size: 18px;
@@ -1913,7 +1914,8 @@ nav {
       font-weight: 300; }
 
 .next-city .search-alphabet {
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .baner-company {
   width: 100%;
@@ -2164,7 +2166,8 @@ nav {
   margin-bottom: 30px; }
   @media (max-width: 475px) {
     .content-table {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-bottom: 10px; } }
   .content-table__facts {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fffef9;
@@ -2223,12 +2226,12 @@ nav {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-top: 5px;
+  margin-top: 15px;
   gap: 5px; }
   .location-list li {
     font-weight: 400; }
     .location-list li a {
-      font-size: 16px;
+      font-size: 18px;
       color: #324a74;
       text-decoration-line: underline !important; }
 
@@ -2890,6 +2893,9 @@ nav {
 
 .no-job-site .nearby-location {
   margin-top: 20px; }
+
+.no-job-site .content-card-job {
+  padding-top: 40px; }
 
 .no-job .data-info b {
   color: #324a74; }

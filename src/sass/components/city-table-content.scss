@@ -6,6 +6,7 @@
   margin-bottom: 30px;
   @media (max-width: 475px) {
     flex-direction: column;
+    margin-bottom: 10px;
   }
 
   &__facts {
@@ -79,12 +80,12 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-top: 5px;
+  margin-top: 15px;
   gap: 5px;
   li {
     font-weight: 400;
     a {
-      font-size: 16px;
+      font-size: 18px;
       color: #324a74;
       text-decoration-line: underline !important;
     }
