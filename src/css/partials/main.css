@@ -293,76 +293,12 @@ button {
   font-style: normal;
   font-weight: 400; }
 
-.expres-calculator h3 {
-  color: #bc2649; }
-
-.expres-calculator .case-compensation {
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 603px;
-  width: 100%; }
-  @media (max-width: 620px) {
-    .expres-calculator .case-compensation {
-      margin-top: 27px; } }
-  .expres-calculator .case-compensation__content {
-    background-color: #bc2649;
-    width: 100%;
-    display: flex; }
-    @media only screen and (max-width: 900px) and (min-width: 767px) {
-      .expres-calculator .case-compensation__content {
-        max-width: none; } }
-    @media (max-width: 620px) {
-      .expres-calculator .case-compensation__content {
-        max-width: none;
-        flex-direction: column; } }
-    .expres-calculator .case-compensation__content .text-information {
-      padding: 20px; }
-      @media (max-width: 620px) {
-        .expres-calculator .case-compensation__content .text-information {
-          text-align: center;
-          padding: 34px 19px;
-          padding-top: 5px; } }
-      .expres-calculator .case-compensation__content .text-information p {
-        color: #fff;
-        font-size: 20px;
-        font-weight: 400;
-        border-bottom: 1px solid #e8dfdf;
-        padding-bottom: 20px;
-        margin-bottom: 20px; }
-      .expres-calculator .case-compensation__content .text-information span {
-        color: #fff;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        text-transform: uppercase; }
-    .expres-calculator .case-compensation__content button {
-      background: #000;
-      text-transform: uppercase;
-      width: 100%;
-      padding: 7px;
-      margin-top: 20px; }
-    .expres-calculator .case-compensation__content h3 {
-      color: #bc2649; }
-  .expres-calculator .case-compensation .img-compensation {
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-    max-width: 248px; }
-    @media only screen and (max-width: 900px) and (min-width: 767px) {
-      .expres-calculator .case-compensation .img-compensation {
-        display: none; } }
-    @media (max-width: 620px) {
-      .expres-calculator .case-compensation .img-compensation {
-        display: none; } }
-  .expres-calculator .case-compensation .img-compensation-alternative {
-    display: none;
-    height: 213px;
-    width: 100%; }
-    @media (max-width: 620px) {
-      .expres-calculator .case-compensation .img-compensation-alternative {
-        display: block; } }
+.expres-calculator {
+  background: #233961;
+  margin-top: 40px; }
+  .expres-calculator h2, .expres-calculator h3, .expres-calculator p {
+    padding: 0 !important;
+    color: white; }
 
 .breadcrumb {
   margin-bottom: 20px; }
@@ -620,36 +556,111 @@ button {
   margin-bottom: 20px; }
 
 footer {
-  background-color: #FBFBFB;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px 0; }
-  footer .contact {
-    gap: 20px;
-    display: flex;
-    display: flex;
-    flex-direction: column; }
-  footer .container {
-    padding: 0; }
-  footer p, footer a {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal; }
-  footer .contact-direct {
-    display: flex;
-    flex-direction: column; }
-  footer .contact-media {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center; }
-  footer .contact-about {
-    display: flex;
-    gap: 10px;
+  background: #324a74;
+  display: flex; }
+  footer p,
+  footer a,
+  footer b {
+    color: white; }
+  footer .instant-result {
+    width: 100%;
+    background-color: #bc2649; }
+    footer .instant-result__content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column; }
+      footer .instant-result__content p {
+        font-size: 20px;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        margin-bottom: 10px; }
+      footer .instant-result__content b {
+        font-size: 17px !important;
+        text-transform: uppercase; }
+      footer .instant-result__content button {
+        margin-top: 15px;
+        background: #000;
+        text-transform: uppercase;
+        padding: 7px 14px; }
+    footer .instant-result img {
+      height: auto;
+      width: 100%; }
+  footer .important-links {
+    width: 100%;
+    border-right: 1px solid rgba(226, 226, 226, 0.36);
+    height: 80%;
     align-items: center;
     justify-content: center;
-    flex-direction: column; }
+    display: flex; }
+    footer .important-links .content-links {
+      align-items: start;
+      display: flex;
+      flex-direction: column; }
+    footer .important-links p {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      margin-bottom: 10px; }
+    footer .important-links__aplicate {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: start;
+      display: flex;
+      flex-direction: column; }
+      footer .important-links__aplicate a {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px;
+        /* 144.444% */
+        text-decoration-line: underline !important; }
+  footer .contact {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex; }
+    footer .contact .contact-content {
+      align-items: start;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+  footer .container {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center; }
+    @media (max-width: 767px) {
+      footer .container {
+        flex-wrap: wrap; } }
+  footer .contact-direct {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px; }
+    footer .contact-direct p {
+      font-size: 16px; }
+    footer .contact-direct .get-text {
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: capitalize; }
+  footer .contact-media {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center; }
+    footer .contact-media img {
+      height: 20px;
+      width: 20px; }
+  footer .contact-about {
+    color: #fff; }
+    footer .contact-about a {
+      font-size: 18px;
+      text-decoration-line: underline !important;
+      font-weight: 300; }
 
 .header-section {
   width: 100%;
