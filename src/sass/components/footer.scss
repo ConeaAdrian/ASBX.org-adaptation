@@ -1,6 +1,7 @@
 footer {
-  background: #324a74;
   display: flex;
+  background: #324a74;
+  flex-direction: column;
 
   p,
   a,
@@ -45,11 +46,26 @@ footer {
     align-items: center;
     justify-content: center;
     display: flex;
+    height: 280px;
+    @media (max-width: 767px) {
+      height: auto;
+      margin-top: 30px;
+      height: auto;
+      border-right: none;
+    }
+    @media (max-width: 425px) {
+      border: none;
+     }
 
     .content-links {
       align-items: start;
       display: flex;
       flex-direction: column;
+      @media (max-width: 425px) {
+        width: 100%;
+        align-items: start;
+        margin-left: 30px;
+       }
     }
     p {
       font-size: 20px;
@@ -73,6 +89,16 @@ footer {
       }
     }
   }
+  .grup-element {
+    width: 200%;
+    display: flex;
+    @media (max-width: 425px) {
+     flex-direction: column;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
   .contact {
     width: 100%;
     gap: 20px;
@@ -81,6 +107,14 @@ footer {
     align-items: center;
     justify-content: center;
     display: flex;
+    @media (max-width: 767px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 425px) {
+      margin-left: 30px;
+      align-items: start;
+      width: auto;
+     }
     .contact-content {
       align-items: start;
       display: flex;
@@ -90,6 +124,8 @@ footer {
   }
   .container {
     padding: 0;
+  }
+  .footer-content {
     display: flex;
     align-items: center;
     text-align: center;
@@ -110,6 +146,20 @@ footer {
       font-size: 20px;
       font-weight: 500;
       text-transform: capitalize;
+    }
+  }
+  .footer-text {
+    background-color: #fff;
+    justify-content: center;
+    display: flex;
+    .final-text {
+      font-size: 16px;
+      padding: 15px 0;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      text-align: center;
     }
   }
   .contact-media {

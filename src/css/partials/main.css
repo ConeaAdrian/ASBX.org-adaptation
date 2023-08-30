@@ -556,8 +556,9 @@ button {
   margin-bottom: 20px; }
 
 footer {
+  display: flex;
   background: #324a74;
-  display: flex; }
+  flex-direction: column; }
   footer p,
   footer a,
   footer b {
@@ -591,11 +592,26 @@ footer {
     height: 80%;
     align-items: center;
     justify-content: center;
-    display: flex; }
+    display: flex;
+    height: 280px; }
+    @media (max-width: 767px) {
+      footer .important-links {
+        height: auto;
+        margin-top: 30px;
+        height: auto;
+        border-right: none; } }
+    @media (max-width: 425px) {
+      footer .important-links {
+        border: none; } }
     footer .important-links .content-links {
       align-items: start;
       display: flex;
       flex-direction: column; }
+      @media (max-width: 425px) {
+        footer .important-links .content-links {
+          width: 100%;
+          align-items: start;
+          margin-left: 30px; } }
     footer .important-links p {
       font-size: 20px;
       font-style: normal;
@@ -615,6 +631,15 @@ footer {
         line-height: 26px;
         /* 144.444% */
         text-decoration-line: underline !important; }
+  footer .grup-element {
+    width: 200%;
+    display: flex; }
+    @media (max-width: 425px) {
+      footer .grup-element {
+        flex-direction: column; } }
+    @media (max-width: 767px) {
+      footer .grup-element {
+        margin-bottom: 30px; } }
   footer .contact {
     width: 100%;
     gap: 20px;
@@ -623,18 +648,27 @@ footer {
     align-items: center;
     justify-content: center;
     display: flex; }
+    @media (max-width: 767px) {
+      footer .contact {
+        margin-top: 30px; } }
+    @media (max-width: 425px) {
+      footer .contact {
+        margin-left: 30px;
+        align-items: start;
+        width: auto; } }
     footer .contact .contact-content {
       align-items: start;
       display: flex;
       flex-direction: column;
       gap: 10px; }
   footer .container {
-    padding: 0;
+    padding: 0; }
+  footer .footer-content {
     display: flex;
     align-items: center;
     text-align: center; }
     @media (max-width: 767px) {
-      footer .container {
+      footer .footer-content {
         flex-wrap: wrap; } }
   footer .contact-direct {
     display: flex;
@@ -647,6 +681,18 @@ footer {
       font-size: 20px;
       font-weight: 500;
       text-transform: capitalize; }
+  footer .footer-text {
+    background-color: #fff;
+    justify-content: center;
+    display: flex; }
+    footer .footer-text .final-text {
+      font-size: 16px;
+      padding: 15px 0;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      text-align: center; }
   footer .contact-media {
     display: flex;
     gap: 20px;
