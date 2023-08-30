@@ -131,7 +131,8 @@ select {
   background: url("../../img/arrow-select.png") no-repeat right 5px center;
   background-size: 16px;
   border: 1px solid #dbdbdb;
-  font-size: 14px;
+  color: #000;
+  font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
   border-radius: 0;
   outline: none; }
@@ -252,9 +253,9 @@ body {
   color: #fff;
   border: 0 !important;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
-  padding: 5px; }
+  padding: 8.5px; }
   .button-red:hover {
     box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16), inset 0 -2px 0 0 rgba(0, 0, 0, 0.11);
     filter: brightness(105%);
@@ -271,9 +272,9 @@ body {
   color: #fff;
   border: 0 !important;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
-  padding: 5px; }
+  padding: 8.5px; }
   .button-blue:hover {
     box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.16), inset 0 -2px 0 0 rgba(0, 0, 0, 0.11);
     filter: brightness(105%);
@@ -283,9 +284,10 @@ button {
   font-weight: 700;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 4px;
-  color: #fff; }
+  color: #fff;
+  padding: 8.5px; }
 
 .search-button {
   color: #564d4d;
@@ -296,13 +298,21 @@ button {
 .expres-calculator {
   background: #233961;
   margin-top: 40px; }
-  .expres-calculator h2, .expres-calculator h3, .expres-calculator p {
+  .expres-calculator h2,
+  .expres-calculator h3,
+  .expres-calculator p {
     padding: 0 !important;
     color: white; }
+  .expres-calculator h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px; }
   .expres-calculator .container {
     display: flex;
     flex-direction: column;
-    gap: 5px; }
+    gap: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 .breadcrumb {
   margin-bottom: 20px; }
@@ -586,7 +596,7 @@ footer {
         margin-top: 15px;
         background: #000;
         text-transform: uppercase;
-        padding: 7px 14px; }
+        padding: 10px 14px; }
     footer .instant-result img {
       height: auto;
       width: 100%; }
@@ -695,7 +705,7 @@ footer {
     display: flex; }
     footer .footer-text .final-text {
       font-size: 16px;
-      padding: 15px 0;
+      padding: 15px 10px;
       color: #000;
       display: flex;
       align-items: center;
@@ -808,7 +818,7 @@ nav {
           @media (max-width: 992px) {
             nav ul li a:not(:only-child):after,
             nav ul li a:visited:not(:only-child):after {
-              top: 14px; } }
+              top: 10px; } }
       nav ul li ul li {
         min-width: 190px; }
         nav ul li ul li a {
@@ -821,11 +831,15 @@ nav {
   position: absolute;
   display: none;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   background-color: rgba(4, 4, 4, 0.5); }
   @media (max-width: 992px) {
     .nav-dropdown {
       background-color: transparent; } }
+  .nav-dropdown li {
+    padding-left: 15px; }
+    .nav-dropdown li a {
+      font-size: 18px;
+      padding: 10px 0 !important; }
 
 .nav-list {
   background-color: white;
@@ -839,8 +853,8 @@ nav {
       height: 100%;
       background-color: white;
       z-index: 10;
-      padding: 3rem;
-      padding-top: 5rem !important; } }
+      padding: 2rem;
+      padding-top: 4rem !important; } }
   .nav-list .diseases {
     padding-right: 18px; }
   .nav-list .bar-top {
@@ -856,6 +870,7 @@ nav {
     font-size: 18px; }
     @media (max-width: 992px) {
       .nav-list .header-number {
+        font-size: 20px;
         border: none;
         margin-left: 0; } }
   .nav-list li {
@@ -864,7 +879,7 @@ nav {
       font-family: "Roboto Condensed", sans-serif !important; }
       @media (max-width: 992px) {
         .nav-list li a {
-          padding: 15px 0 !important; } }
+          padding: 12px 0 !important; } }
   .nav-list .button-question {
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -907,7 +922,7 @@ nav {
       nav ul li a {
         padding: 15px;
         line-height: 20px;
-        font-size: 24px; }
+        font-size: 20px; }
   .nav-dropdown {
     position: static; } }
 
@@ -1856,10 +1871,11 @@ nav {
   margin-top: 20px;
   width: 100%; }
   .search-alphabet h3 {
-    color: #000;
+    color: #324a74;
     font-size: 20px;
-    font-weight: 500;
-    line-height: normal; }
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize; }
   .search-alphabet .alphabet ul {
     display: flex;
     flex-wrap: wrap;
@@ -1873,6 +1889,9 @@ nav {
       line-height: 28px;
       letter-spacing: 3.6px;
       text-decoration-line: underline; }
+      @media (max-width: 475px) {
+        .search-alphabet .alphabet ul li {
+          line-height: 20px; } }
 
 .trust-list {
   padding-left: 0;
@@ -2071,7 +2090,7 @@ nav {
       flex-direction: column; }
       .general-claims .claims-selected .claims-buttons button {
         width: 100%;
-        max-width: 150px;
+        max-width: 165px;
         padding: 3px;
         border-radius: 4px;
         font-style: normal;
@@ -2194,9 +2213,11 @@ nav {
     text-transform: capitalize; }
 
 .nearby-location p {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: normal; }
+  color: #324a74;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize; }
 
 .location-list {
   display: flex;
@@ -2223,7 +2244,7 @@ nav {
   .required-asbx__title {
     color: #324a74;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
     text-transform: capitalize; }
   .required-asbx .block-data {
@@ -2877,7 +2898,11 @@ nav {
 
 .no-job .nearby-location {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  padding-top: 20px; }
+
+.no-job .content-card-job {
+  padding-top: 0; }
 
 .bottom-banner {
   position: fixed;
@@ -4044,11 +4069,15 @@ nav {
   @media only screen and (max-width: 870px) and (min-width: 767px) {
     .missing-job {
       max-width: none; } }
+  @media (max-width: 767px) {
+    .missing-job {
+      padding: 10px; } }
   @media (max-width: 660px) {
     .missing-job {
       max-width: none; } }
   .missing-job p {
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 20px; }
   .missing-job input {
     border: 1px solid #dbdbdb;
     background: #fff;
@@ -4064,9 +4093,9 @@ nav {
   .missing-job button {
     border-radius: 4px;
     background: #26bc7d;
-    height: 44px;
     text-transform: uppercase;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 8.5px; }
 
 .page-navigation {
   display: flex;
@@ -4154,14 +4183,14 @@ nav {
       width: 100%; } }
   .card-job-site a {
     color: #15528e !important;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 22px;
     text-decoration-line: underline !important; }
   .card-job-site p {
     color: #bc2649;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400; }
   .card-job-site select {
     height: 44px;
@@ -4330,13 +4359,13 @@ nav {
       font-weight: 700; }
     .content-boiler .card-boiler span {
       color: #bc2649;
-      font-size: 18px;
+      font-size: 20px;
       font-style: normal;
       font-weight: 700;
       line-height: 24px; }
     .content-boiler .card-boiler p {
       color: #000;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 400; }
     .content-boiler .card-boiler select {
       height: 44px;
@@ -4362,14 +4391,15 @@ nav {
   user-select: none;
   align-items: center;
   display: flex;
-  text-align: center; }
+  text-align: center;
+  font-size: 18px; }
   .alternative input {
     position: absolute;
     opacity: 0;
     cursor: pointer; }
   .alternative .checkmark {
     position: absolute;
-    top: 4px;
+    top: 5px;
     right: 0;
     height: 16px;
     width: 16px;

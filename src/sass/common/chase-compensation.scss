@@ -1,13 +1,22 @@
 .expres-calculator {
   background: #233961;
   margin-top: 40px;
-  h2, h3, p {
+  h2,
+  h3,
+  p {
     padding: 0 !important;
     color: white;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
   }
   .container {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

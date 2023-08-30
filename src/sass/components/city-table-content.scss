@@ -68,9 +68,11 @@
 }
 .nearby-location {
   p {
-    font-size: 18px;
-    font-weight: 500;
+    color: #324a74;
+    font-size: 20px;
+    font-weight: 700;
     line-height: normal;
+    text-transform: capitalize;
   }
 }
 .location-list {
@@ -100,7 +102,7 @@
   &__title {
     color: #324a74;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
   }

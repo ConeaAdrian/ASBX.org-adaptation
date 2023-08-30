@@ -108,7 +108,7 @@ nav {
           top: -1px;
           position: absolute;
           @media (max-width: 992px) {
-            top: 14px;
+            top: 10px;
           }
         }
       } // Dropdown list
@@ -130,10 +130,16 @@ nav {
   position: absolute;
   display: none;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   background-color: rgba(4, 4, 4, 0.5);
   @media (max-width: 992px) {
     background-color: transparent;
+  }
+  li {
+    padding-left: 15px;
+    a {
+      font-size: 18px;
+      padding: 10px 0 !important;
+    }
   }
 }
 .nav-list {
@@ -147,8 +153,8 @@ nav {
     height: 100%;
     background-color: white;
     z-index: 10;
-    padding: 3rem;
-    padding-top: 5rem !important;
+    padding: 2rem;
+    padding-top: 4rem !important;
   }
   .diseases {
     padding-right: 18px;
@@ -168,6 +174,7 @@ nav {
     font-size: 18px;
 
     @media (max-width: 992px) {
+      font-size: 20px;
       border: none;
       margin-left: 0;
     }
@@ -177,7 +184,7 @@ nav {
     a {
       font-family: "Roboto Condensed", sans-serif !important;
       @media (max-width: 992px) {
-        padding: 15px 0 !important;
+        padding: 12px 0 !important;
       }
     }
   }
@@ -232,7 +239,7 @@ nav {
         a {
           padding: 15px;
           line-height: 20px;
-          font-size: 24px;
+          font-size: 20px;
         }
       }
     }

@@ -82,12 +82,16 @@
   @media only screen and (max-width: 870px) and (min-width: 767px) {
     max-width: none;
   }
+  @media (max-width: 767px) {
+    padding: 10px;
+  }
   @media (max-width: 660px) {
     max-width: none;
   }
 
   p {
     font-weight: 400;
+    font-size: 20px;
   }
   input {
     border: 1px solid #dbdbdb;
@@ -110,8 +114,8 @@
   button {
     border-radius: 4px;
     background: #26bc7d;
-    height: 44px;
     text-transform: uppercase;
     font-weight: 700;
+    padding: 8.5px;
   }
 }
