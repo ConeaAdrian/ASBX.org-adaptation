@@ -299,6 +299,10 @@ button {
   .expres-calculator h2, .expres-calculator h3, .expres-calculator p {
     padding: 0 !important;
     color: white; }
+  .expres-calculator .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; }
 
 .breadcrumb {
   margin-bottom: 20px; }
@@ -662,7 +666,11 @@ footer {
       flex-direction: column;
       gap: 10px; }
   footer .container {
-    padding: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
+    @media (max-width: 767px) {
+      footer .container {
+        padding: 0; } }
   footer .footer-content {
     display: flex;
     align-items: center;
