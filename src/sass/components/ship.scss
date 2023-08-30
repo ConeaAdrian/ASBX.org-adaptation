@@ -113,7 +113,7 @@
       width: 100%;
       max-width: 300px;
       @media (max-width: 520px) {
-       max-width: none;
+        max-width: none;
       }
 
       a {
@@ -146,6 +146,15 @@
       li {
         list-style-type: disc;
       }
+    }
+  }
+  .list-nomerotation {
+    li {
+      color: #324a74;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 26px;
+      text-decoration-line: underline;
     }
   }
 }
