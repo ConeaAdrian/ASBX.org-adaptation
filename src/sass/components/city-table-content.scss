@@ -152,8 +152,10 @@
   @media (max-width: 475px) {
     max-width: none;
   }
-  span {
+  p {
     font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
   }
 
   ol {
