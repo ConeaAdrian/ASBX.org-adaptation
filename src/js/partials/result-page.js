@@ -1,49 +1,67 @@
 function updateVisibility() {
-  const isSmallScreen = $(window).width() <= 992;
-  const infoBenefits = $(".information-benefits");
+  const isSmallScreen = window.innerWidth <= 992;
+  const infoBenefits = document.querySelectorAll(".information-benefits");
 
-  infoBenefits.hide();
+  infoBenefits.forEach(info => info.style.display = 'none');
 
   if (isSmallScreen) {
-    $(".AVG-claims .information-benefits").show();
+    document.querySelector(".AVG-claims .information-benefits").style.display = 'block';
 
-    $(".ER-claims, .IR-claims, .AVG-claims").off('click').on('click', function() {
-      infoBenefits.hide();
-      $(this).find(".information-benefits").show();
+    document.querySelectorAll(".ER-claims, .IR-claims, .AVG-claims").forEach(el => {
+      el.removeEventListener('click', toggleOnClick);
+      el.addEventListener('click', toggleOnClick);
     });
   } else {
-    infoBenefits.show();
-    $(".ER-claims, .IR-claims, .AVG-claims").off('click');
+    infoBenefits.forEach(info => info.style.display = 'block');
+    document.querySelectorAll(".ER-claims, .IR-claims, .AVG-claims").forEach(el => {
+      el.removeEventListener('click', toggleOnClick);
+    });
   }
 }
 
-$(document).ready(function() {
+function toggleOnClick(event) {
+  const infoBenefits = event.currentTarget.querySelector(".information-benefits");
+  toggleInformationBenefits(infoBenefits);
+}
+
+function toggleInformationBenefits(element) {
+  const isDesktop = window.innerWidth > 992;
+  if (isDesktop) return;
+
+  const infoBenefits = document.querySelectorAll(".information-benefits");
+  infoBenefits.forEach(info => info.style.display = 'none');
+  element.style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
   updateVisibility();
-  $(window).resize(updateVisibility);
+  window.addEventListener('resize', updateVisibility);
 
-  const switchButton = $('#switch');
-  const legalText = $('.legal-text');
-  const yourOwnText = $('.your-own-text');
-  const legalRepresentationDiv = $('.legal-representation');
-  const yourOwnDiv = $('.your-own');
+  const switchButton = document.getElementById('switch');
+  const legalText = document.querySelector('.legal-text');
+  const yourOwnText = document.querySelector('.your-own-text');
+  const legalRepresentationDiv = document.querySelector('.legal-representation');
+  const yourOwnDiv = document.querySelector('.your-own');
 
-  switchButton.prop('checked', false);
-  legalText.css({ color: '#181059', fontSize: '18px', fontWeight: '500' });
-  legalRepresentationDiv.show();
-  yourOwnDiv.hide();
+  switchButton.checked = false;
+  legalText.style.color = '#181059';
+  legalText.style.fontSize = '18px';
+  legalText.style.fontWeight = '500';
+  legalRepresentationDiv.style.display = 'block';
+  yourOwnDiv.style.display = 'none';
 
-  switchButton.on('click', function() {
-    const isChecked = $(this).is(':checked');
+  switchButton.addEventListener('click', function() {
+    const isChecked = this.checked;
     const style = isChecked ? '' : '#181059';
-    const fontSize = $(window).width() <= 475 ? '16px' : '18px';
+    const fontSize = window.innerWidth <= 475 ? '16px' : '18px';
 
-    legalText.css({ color: style, fontSize: fontSize, fontWeight: isChecked ? '' : '500' });
-    yourOwnText.css({ color: isChecked ? '#181059' : '', fontSize: fontSize, fontWeight: isChecked ? '500' : '' });
-    legalRepresentationDiv.toggle();
-    yourOwnDiv.toggle();
+    legalText.style.color = style;
+    legalText.style.fontSize = fontSize;
+    legalText.style.fontWeight = isChecked ? '' : '500';
+    yourOwnText.style.color = isChecked ? '#181059' : '';
+    yourOwnText.style.fontSize = fontSize;
+    yourOwnText.style.fontWeight = isChecked ? '500' : '';
+    legalRepresentationDiv.style.display = isChecked ? 'none' : 'block';
+    yourOwnDiv.style.display = isChecked ? 'block' : 'none';
   });
 });
-function toggleInformationBenefits(element) {
-  const infoBenefits = $(element).find(".information-benefits");
-  infoBenefits.toggle();
-}
