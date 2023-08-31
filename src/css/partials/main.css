@@ -763,13 +763,10 @@ footer {
       padding: 2px 6px;
       background: #bc2649;
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: 14px;
       align-items: center;
       justify-content: center;
       display: flex; }
-      @media (max-width: 375px) {
-        .navigation .claims-mobile button {
-          font-size: 14px; } }
     .navigation .claims-mobile p {
       background: #324a74;
       height: 30px;
