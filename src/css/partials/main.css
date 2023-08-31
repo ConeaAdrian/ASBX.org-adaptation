@@ -760,17 +760,17 @@ footer {
       .navigation .claims-mobile {
         display: none; } }
     .navigation .claims-mobile button {
-      padding: 0px 5px;
+      padding: 2px 6px;
       background: #bc2649;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: 14px;
       align-items: center;
       justify-content: center;
       display: flex; }
     .navigation .claims-mobile p {
       background: #324a74;
-      height: 26px;
-      width: 26px;
+      height: 30px;
+      width: 30px;
       color: #fff;
       font-size: 16px;
       font-weight: 500;
@@ -782,10 +782,10 @@ footer {
   .navigation .logo {
     height: 22px;
     width: 91px; }
-    @media (max-width: 767px) {
+    @media (max-width: 992px) {
       .navigation .logo {
-        height: 25px;
-        width: 103px; } }
+        height: 27px;
+        width: 115px; } }
 
 nav {
   z-index: 1; }
@@ -940,7 +940,7 @@ nav {
   padding: 10px 35px 16px 0px; }
   @media (max-width: 992px) {
     #nav-toggle {
-      padding: 3px 35px 16px 0px; } }
+      padding: 4px 35px 16px 0px; } }
   @media (max-width: 375px) {
     #nav-toggle {
       top: 20px; } }
@@ -949,7 +949,7 @@ nav {
   #nav-toggle span:after {
     cursor: pointer;
     border-radius: 1px;
-    height: 1.5px;
+    height: 2px;
     width: 30px;
     background: #324a74;
     position: absolute;
