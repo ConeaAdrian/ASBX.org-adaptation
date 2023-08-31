@@ -66,10 +66,10 @@
   &__content {
     width: 47.5%;
 
-    @media only screen and (max-width: 787px) and (min-width: 767px) {
+    @media only screen and (max-width: 890px) and (min-width: 767px) {
       width: 100%;
     }
-    @media (max-width: 540px) {
+    @media (max-width: 640px) {
       width: 100%;
     }
 

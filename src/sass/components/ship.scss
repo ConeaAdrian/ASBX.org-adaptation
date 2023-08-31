@@ -8,20 +8,70 @@
       text-decoration-line: underline;
     }
   }
+  .content-box-ship {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    @media only screen and (max-width: 870px) and (min-width: 767px) {
+      flex-direction: column;
+    }
+    @media (max-width: 660px) {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    @media (max-width: 475px) {
+      flex-direction: column;
+    }
+    &__text {
+      max-width: 300px;
+      width: 100%;
+      gap: 30px;
+      display: flex;
+      flex-direction: column;
+      @media only screen and (max-width: 870px) and (min-width: 767px) {
+        max-width: none;
+      }
+      @media (max-width: 660px) {
+        max-width: none;
+      }
+    }
+  }
   .ship-claims {
     position: relative;
     border-radius: 4px;
-    border: 1px solid #f1f1f1;
-    background: #fdfdfd;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-top: 7px;
-    padding: 18px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: #fbfbfb;
+    padding: 20px;
     width: 100%;
-    max-width: 583px;
-    margin-top: 20px;
+    max-width: 320px;
+    @media only screen and (max-width: 870px) and (min-width: 767px) {
+      max-width: none;
+    }
+    @media (max-width: 767px) {
+      padding: 10px;
+    }
+    @media (max-width: 660px) {
+      max-width: none;
+    }
+    .ship-select {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
 
+      span {
+        color: #15528e;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p {
+        color: #bc2649;
+        font-weight: 400;
+      }
+    }
     &__content {
       display: flex;
+      flex-direction: column;
       align-items: center;
       @media (max-width: 475px) {
         flex-direction: column;
@@ -30,50 +80,21 @@
 
       .add-ship {
         display: flex;
+        flex-direction: column;
         width: 100%;
-        @media (max-width: 620px) {
-          flex-direction: column;
-        }
-
-        .ship-select {
-          max-width: 172px;
-          width: 100%;
-          margin-right: 15px;
-          @media (max-width: 620px) {
-            max-width: none;
-          }
-          p {
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 5px;
-          }
-        }
       }
-      .checkbox {
-        @media (max-width: 620px) {
-          margin-top: 15px;
-        }
-        p {
-          font-size: 14px;
-          font-weight: 500;
-          margin-bottom: 6px;
-        }
-      }
-      .checkbox-item {
+      .data-select {
         display: flex;
-        align-items: center;
-
-        label {
-          font-size: 12px;
-          font-weight: 600;
-        }
-        input {
-          margin-right: 25px;
-          margin-left: 5px;
-        }
+        gap: 10px;
       }
     }
-
+    .custom-select {
+      margin-bottom: 15px;
+    }
+    .button-blue {
+      width: 100%;
+      margin-top: 30px;
+    }
     img {
       position: absolute;
       right: -6px;
@@ -91,10 +112,6 @@
   .compensation-navi {
     margin: 18px 0;
   }
-  .ship-img {
-    margin-top: 11px;
-    margin-bottom: 26px;
-  }
   .red-text {
     margin-top: 18px;
     margin-bottom: 18px;
@@ -111,31 +128,38 @@
       background: #fbfbfb;
       padding: 18px 12px;
       width: 100%;
-      max-width: 300px;
+      max-width: 320px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
       @media (max-width: 520px) {
         max-width: none;
       }
 
       a {
         color: #15528e;
-        font-size: 14px;
-        font-weight: 500;
-        text-decoration-line: underline;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration-line: underline !important;
       }
 
       b {
-        font-size: 14px !important;
-        font-weight: 600 !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
       }
 
       p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
       }
 
       @media screen and (min-width: 520px) {
         flex: 0 0 calc(50% - 20px);
       }
+    }
+    .red-text {
+      margin: 0;
     }
   }
   .notation {
