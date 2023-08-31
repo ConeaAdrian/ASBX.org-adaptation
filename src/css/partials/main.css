@@ -4468,7 +4468,8 @@ nav {
   text-transform: capitalize; }
   .button-boiler img {
     height: 6px;
-    width: 20px; }
+    width: 20px;
+    transform: translateY(1px); }
 
 .state .general-information-table {
   max-width: none !important;
