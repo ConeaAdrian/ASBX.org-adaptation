@@ -90,8 +90,12 @@
   }
 
   p {
-    font-weight: 400;
-    font-size: 20px;
+    text-transform: capitalize;
+    color: #15528e!important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
   }
   input {
     border: 1px solid #dbdbdb;
@@ -114,7 +118,7 @@
   }
   button {
     border-radius: 4px;
-    background: #26bc7d;
+    background: #1B8A5B;
     text-transform: uppercase;
     font-weight: 700;
     padding: 8.5px;

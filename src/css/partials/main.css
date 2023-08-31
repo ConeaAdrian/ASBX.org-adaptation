@@ -64,8 +64,8 @@ h2 {
   color: #003366;
   font-size: 26px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
+  font-weight: 400;
+  line-height: 32px;
   padding-top: 40px; }
   @media (max-width: 475px) {
     h2 {
@@ -2216,8 +2216,8 @@ nav {
     text-transform: capitalize; }
 
 .nearby-location p {
-  color: #324a74;
-  font-size: 20px;
+  color: #bc2649;
+  font-size: 18px;
   font-weight: 700;
   line-height: normal;
   text-transform: capitalize; }
@@ -2226,12 +2226,12 @@ nav {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-top: 15px;
+  margin-top: 10px;
   gap: 5px; }
   .location-list li {
     font-weight: 400; }
     .location-list li a {
-      font-size: 18px;
+      font-size: 16px;
       color: #324a74;
       text-decoration-line: underline !important; }
 
@@ -2247,7 +2247,7 @@ nav {
   .required-asbx__title {
     color: #324a74;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
     text-transform: capitalize; }
   .required-asbx .block-data {
@@ -2256,6 +2256,7 @@ nav {
     padding-left: 10px;
     gap: 2px; }
     .required-asbx .block-data b {
+      color: #bc2649;
       font-size: 16px !important; }
     .required-asbx .block-data p {
       color: #000;
@@ -4110,8 +4111,12 @@ nav {
     .missing-job {
       max-width: none; } }
   .missing-job p {
-    font-weight: 400;
-    font-size: 20px; }
+    text-transform: capitalize;
+    color: #15528e !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; }
   .missing-job input {
     border: 1px solid #dbdbdb;
     background: #fff;
@@ -4127,7 +4132,7 @@ nav {
     align-items: center; }
   .missing-job button {
     border-radius: 4px;
-    background: #26bc7d;
+    background: #1B8A5B;
     text-transform: uppercase;
     font-weight: 700;
     padding: 8.5px; }
@@ -4218,14 +4223,14 @@ nav {
       width: 100%; } }
   .card-job-site a {
     color: #15528e !important;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 22px;
     text-decoration-line: underline !important; }
   .card-job-site p {
     color: #bc2649;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400; }
   .card-job-site select {
     height: 44px;
@@ -4337,7 +4342,12 @@ nav {
   .question-card p {
     font-size: 20px;
     font-weight: 500;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    color: #15528e !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; }
   .question-card select {
     border: 1px solid #dbdbdb;
     height: 44px;
@@ -4428,7 +4438,7 @@ nav {
   align-items: center;
   display: flex;
   text-align: center;
-  font-size: 18px; }
+  font-size: 16px; }
   .alternative input {
     position: absolute;
     opacity: 0;
