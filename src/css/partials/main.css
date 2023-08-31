@@ -4115,7 +4115,7 @@ nav {
     color: #15528e !important;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 22px; }
   .missing-job input {
     border: 1px solid #dbdbdb;
@@ -4225,7 +4225,7 @@ nav {
     color: #15528e !important;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 22px;
     text-decoration-line: underline !important; }
   .card-job-site p {
@@ -4340,13 +4340,11 @@ nav {
     .question-card {
       max-width: none; } }
   .question-card p {
-    font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: capitalize;
     color: #15528e !important;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
     line-height: 22px; }
   .question-card select {
     border: 1px solid #dbdbdb;
@@ -4407,7 +4405,7 @@ nav {
       color: #bc2649;
       font-size: 20px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 24px; }
     .content-boiler .card-boiler p {
       color: #000;
