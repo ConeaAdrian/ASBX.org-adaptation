@@ -2183,6 +2183,18 @@ nav {
     .content-table {
       flex-direction: column;
       margin-bottom: 10px; } }
+  .content-table .company-logo {
+    width: 100%;
+    max-width: 303px;
+    height: 192px;
+    object-fit: contain !important; }
+    @media only screen and (max-width: 850px) and (min-width: 767px) {
+      .content-table .company-logo {
+        max-width: none; } }
+    @media (max-width: 475px) {
+      .content-table .company-logo {
+        max-width: none;
+        height: auto; } }
   .content-table__facts {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fffef9;
@@ -3895,31 +3907,12 @@ nav {
 
 .trust-fund {
   margin-bottom: 40px; }
-  .trust-fund .general-information-table {
-    max-width: none;
-    flex-direction: inherit;
-    margin-bottom: 20px; }
-    @media only screen and (max-width: 850px) and (min-width: 767px) {
-      .trust-fund .general-information-table {
-        flex-direction: column; } }
-    @media (max-width: 590px) {
-      .trust-fund .general-information-table {
-        flex-direction: column; } }
-    .trust-fund .general-information-table .company-logo {
-      width: 100%;
-      max-width: 303px;
-      height: 192px;
-      object-fit: contain !important; }
-      @media only screen and (max-width: 850px) and (min-width: 767px) {
-        .trust-fund .general-information-table .company-logo {
-          max-width: none; } }
-      @media (max-width: 475px) {
-        .trust-fund .general-information-table .company-logo {
-          max-width: none;
-          height: auto; } }
-    @media only screen and (max-width: 850px) and (min-width: 767px) {
-      .trust-fund .general-information-table .content-summarizer {
-        max-width: none; } }
+  @media only screen and (max-width: 850px) and (min-width: 767px) {
+    .trust-fund .content-table {
+      flex-direction: column; } }
+  @media only screen and (max-width: 850px) and (min-width: 767px) {
+    .trust-fund .content-summarizer {
+      max-width: 100%; } }
   .trust-fund .status-active {
     color: #324a74;
     font-weight: 400;
@@ -4482,20 +4475,32 @@ nav {
     width: 20px;
     transform: translateY(1px); }
 
-.state .general-information-table {
+.state .content-table {
   max-width: none !important;
   flex-direction: initial; }
   @media (max-width: 600px) {
-    .state .general-information-table {
+    .state .content-table {
       flex-direction: column; } }
-  .state .general-information-table .state-logo {
+  .state .content-table .state-logo {
     width: 100%;
     max-width: 318px;
-    height: 185px; }
+    height: 185px;
+    object-fit: contain !important; }
+    @media only screen and (max-width: 850px) and (min-width: 767px) {
+      .state .content-table .state-logo {
+        max-width: none; } }
     @media (max-width: 475px) {
-      .state .general-information-table .state-logo {
+      .state .content-table .state-logo {
         max-width: none;
         height: auto; } }
+
+@media only screen and (max-width: 850px) and (min-width: 767px) {
+  .state .content-table {
+    flex-direction: column; } }
+
+@media only screen and (max-width: 850px) and (min-width: 767px) {
+  .state .content-summarizer {
+    max-width: 100%; } }
 
 .state .state-content {
   display: flex;

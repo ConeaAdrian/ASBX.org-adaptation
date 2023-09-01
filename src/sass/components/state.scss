@@ -1,5 +1,5 @@
 .state {
-  .general-information-table {
+  .content-table {
     max-width: none !important;
     flex-direction: initial;
     @media (max-width: 600px) {
@@ -10,10 +10,24 @@
       width: 100%;
       max-width: 318px;
       height: 185px;
+      object-fit: contain !important;
+      @media only screen and (max-width: 850px) and (min-width: 767px) {
+       max-width: none;
+      }
       @media (max-width: 475px) {
         max-width: none;
         height: auto;
       }
+    }
+  }
+  .content-table {
+    @media only screen and (max-width: 850px) and (min-width: 767px) {
+      flex-direction: column;
+    }
+  }
+  .content-summarizer {
+    @media only screen and (max-width: 850px) and (min-width: 767px) {
+      max-width: 100%;
     }
   }
   .state-content {

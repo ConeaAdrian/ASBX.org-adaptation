@@ -1,33 +1,14 @@
 .trust-fund {
   margin-bottom: 40px;
-  .general-information-table {
-    max-width: none;
-    flex-direction: inherit;
-    margin-bottom: 20px;
+
+  .content-table {
     @media only screen and (max-width: 850px) and (min-width: 767px) {
       flex-direction: column;
     }
-
-    @media (max-width: 590px) {
-      flex-direction: column;
-    }
-    .company-logo {
-      width: 100%;
-      max-width: 303px;
-      height: 192px;
-      object-fit: contain !important;
-      @media only screen and (max-width: 850px) and (min-width: 767px) {
-       max-width: none;
-      }
-      @media (max-width: 475px) {
-        max-width: none;
-        height: auto;
-      }
-    }
-    .content-summarizer {
-      @media only screen and (max-width: 850px) and (min-width: 767px) {
-        max-width: none;
-       }
+  }
+  .content-summarizer {
+    @media only screen and (max-width: 850px) and (min-width: 767px) {
+      max-width: 100%;
     }
   }
   .status-active {
