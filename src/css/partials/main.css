@@ -2136,7 +2136,8 @@ nav {
       .general-claims .claims-result__principal-information .city-img {
         width: 26px;
         height: 26px;
-        border-radius: 50%; }
+        border-radius: 50%;
+        border: 0.5px solid #aaa; }
       .general-claims .claims-result__principal-information .arrow-claim {
         height: 7px;
         width: 10px; }
