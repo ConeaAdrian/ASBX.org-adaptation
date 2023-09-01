@@ -1,23 +1,26 @@
-// var button = document.getElementById('ShowButton');
+document.addEventListener('DOMContentLoaded', function() {
+  let lis = document.querySelectorAll('.state-list li:nth-child(n+26)');
+  for (let li of lis) {
+      li.style.display = 'none';
+  }
 
-// if (button) {
-//   button.addEventListener('click', function() {
-//     var hiddenColumns = document.querySelectorAll('.hidden-column');
-  
-//     if (hiddenColumns.length > 0) {
-//       for (var i = 0; i < hiddenColumns.length; i++) {
-//         hiddenColumns[i].classList.remove('hidden-column');
-//       }
-//       button.innerText = "Hide";
-//     } else {
-//       var columnsToHide = document.querySelectorAll('.city-column th:nth-child(n+7), .trust-fund-column td:nth-child(n+7), .job-sites-column td:nth-child(n+7)');
-//       for (var j = 0; j < columnsToHide.length; j++) {
-//         columnsToHide[j].classList.add('hidden-column');
-//       }
-//       button.innerText = "Show More";
-//     }
-//   });
-// }
+  document.getElementById('ShowButton').addEventListener('click', function() {
+      let lis = document.querySelectorAll('.state-list li:nth-child(n+26)');
+      let button = document.getElementById('ShowButton');
+      
+      if (lis[0].style.display === 'none' || lis[0].style.display === '') {
+          for (let li of lis) {
+              li.style.display = 'list-item';
+          }
+          button.innerText = 'Hide';
+      } else {
+          for (let li of lis) {
+              li.style.display = 'none';
+          }
+          button.innerText = 'Show More';
+      }
+  });
+});
 
 
 //--scrop search
