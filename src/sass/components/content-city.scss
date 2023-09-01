@@ -133,34 +133,36 @@
 .search-alphabet {
   margin-top: 20px;
   width: 100%;
+  
   h3 {
-    color: #bc2649;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
+      color: #bc2649;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
   }
+  
   .alphabet {
-    ul {
       display: flex;
       flex-wrap: wrap;
-      padding-left: 0;
       gap: 7px;
       margin-top: 10px;
-      li {
-        color: #15528e;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 28px;
-        letter-spacing: 3.6px;
-        text-decoration-line: underline;
-        @media (max-width: 475px) {
-          line-height: 20px;
-        }
+
+      a {
+          color: #15528e;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: 3.6px;
+          text-decoration-line: underline !important;
+
+          @media (max-width: 475px) {
+              line-height: 20px;
+          }
       }
-    }
   }
 }
+
 .trust-list {
   padding-left: 0;
   gap: 10px;

@@ -1880,21 +1880,20 @@ nav {
     font-weight: 400;
     line-height: normal;
     text-transform: capitalize; }
-  .search-alphabet .alphabet ul {
+  .search-alphabet .alphabet {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
     gap: 7px;
     margin-top: 10px; }
-    .search-alphabet .alphabet ul li {
+    .search-alphabet .alphabet a {
       color: #15528e;
       font-size: 20px;
       font-weight: 700;
       line-height: 28px;
       letter-spacing: 3.6px;
-      text-decoration-line: underline; }
+      text-decoration-line: underline !important; }
       @media (max-width: 475px) {
-        .search-alphabet .alphabet ul li {
+        .search-alphabet .alphabet a {
           line-height: 20px; } }
 
 .trust-list {
