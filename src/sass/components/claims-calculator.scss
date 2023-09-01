@@ -16,7 +16,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #FFF;
+    background-color: #fff;
     z-index: 10;
     display: none;
     z-index: 10000;
@@ -30,7 +30,7 @@
 }
 .claims-result {
   .claims-result__data-information {
-    display: none; 
+    display: none;
   }
 
   .arrow-claim {
@@ -40,18 +40,24 @@
   }
 }
 
-
 #active {
   .claims-result__data-information {
-    display: block;
+    display: flex !important;
+    gap: 3px;
+    flex-direction: column;
   }
   .arrow-claim {
     transform: rotate(180deg);
   }
 }
-
-.red-placeholder::placeholder{
-  color: #BC2649;
+.address-text {
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.red-placeholder::placeholder {
+  color: #bc2649;
 }
 
 .close-claims-calculator {
@@ -167,8 +173,6 @@
         font-style: normal;
         text-transform: uppercase;
       }
-
-     
     }
   }
   .claims-result {
@@ -195,6 +199,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        width: 100%;
       }
       .city-img {
         width: 26px;
