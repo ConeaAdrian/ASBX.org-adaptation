@@ -2003,6 +2003,9 @@ nav {
 #active .arrow-claim {
   transform: rotate(180deg); }
 
+.red-placeholder::placeholder {
+  color: #BC2649; }
+
 .close-claims-calculator {
   display: none;
   font-size: 14px;
@@ -2012,7 +2015,8 @@ nav {
   padding: 0 12px;
   color: #fff;
   border-radius: 4px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
   @media (max-width: 767px) {
     .close-claims-calculator {
       position: absolute;
