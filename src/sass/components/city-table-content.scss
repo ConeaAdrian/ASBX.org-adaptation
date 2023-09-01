@@ -56,23 +56,6 @@
     line-height: normal;
     text-transform: capitalize;
   }
-  .content-summarizer {
-    counter-reset: itemNumber;
-
-    .table-item {
-      display: flex;
-.item-number {
-  color: #466d92;
-      font-size: 16px;
-      font-weight: 400;
-}
-      .item-number::before {
-        counter-increment: itemNumber;
-        content: counter(itemNumber) ".";
-        margin-right: 5px;
-      }
-    }
-  }
 
   .table-item {
     a {
@@ -223,6 +206,7 @@
     max-width: none;
   }
 }
+
 .content-summarizer {
   border-radius: 4px;
   border: 1px solid #c0cad6;
@@ -231,56 +215,33 @@
   width: 100%;
   padding: 10px;
   height: fit-content;
+  counter-reset: itemNumber;
   @media (max-width: 620px) {
     max-width: none;
   }
+
+  .table-item {
+    display: flex;
+    margin-left: 10px;
+    p {
+      margin-bottom: 0;
+    }
+    .item-number {
+      color: #466d92;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .item-number::before {
+      counter-increment: itemNumber;
+      content: counter(itemNumber) ".";
+      margin-right: 5px;
+    }
+  }
   p {
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
     text-transform: capitalize;
-  }
-
-  ol {
-    padding-left: 19px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    color: #466d92;
-    .element {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      margin-left: -10px;
-      height: 22px;
-      margin-top: 3px;
-      p {
-        margin-top: 0;
-      }
-    }
-    li {
-      text-decoration-line: underline;
-      text-transform: capitalize;
-      margin-top: 0;
-      a {
-        color: #466d92;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 28px;
-        text-decoration-line: underline;
-        text-transform: capitalize;
-        margin-bottom: 2px;
-      }
-    }
-    p {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 22px;
-      text-decoration-line: underline;
-      text-transform: capitalize;
-
-      a {
-        font-size: 16px;
-      }
-    }
   }
 }
 .mobile-flag-img {

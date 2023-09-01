@@ -2220,18 +2220,6 @@ nav {
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize; }
-  .content-table .content-summarizer {
-    counter-reset: itemNumber; }
-    .content-table .content-summarizer .table-item {
-      display: flex; }
-      .content-table .content-summarizer .table-item .item-number {
-        color: #466d92;
-        font-size: 16px;
-        font-weight: 400; }
-      .content-table .content-summarizer .table-item .item-number::before {
-        counter-increment: itemNumber;
-        content: counter(itemNumber) ".";
-        margin-right: 5px; }
   .content-table .table-item a {
     color: #466d92;
     font-size: 16px;
@@ -2322,48 +2310,29 @@ nav {
   max-width: 320px;
   width: 100%;
   padding: 10px;
-  height: fit-content; }
+  height: fit-content;
+  counter-reset: itemNumber; }
   @media (max-width: 620px) {
     .content-summarizer {
       max-width: none; } }
+  .content-summarizer .table-item {
+    display: flex;
+    margin-left: 10px; }
+    .content-summarizer .table-item p {
+      margin-bottom: 0; }
+    .content-summarizer .table-item .item-number {
+      color: #466d92;
+      font-size: 16px;
+      font-weight: 400; }
+    .content-summarizer .table-item .item-number::before {
+      counter-increment: itemNumber;
+      content: counter(itemNumber) ".";
+      margin-right: 5px; }
   .content-summarizer p {
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
     text-transform: capitalize; }
-  .content-summarizer ol {
-    padding-left: 19px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    color: #466d92; }
-    .content-summarizer ol .element {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      margin-left: -10px;
-      height: 22px;
-      margin-top: 3px; }
-      .content-summarizer ol .element p {
-        margin-top: 0; }
-    .content-summarizer ol li {
-      text-decoration-line: underline;
-      text-transform: capitalize;
-      margin-top: 0; }
-      .content-summarizer ol li a {
-        color: #466d92;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 28px;
-        text-decoration-line: underline;
-        text-transform: capitalize;
-        margin-bottom: 2px; }
-    .content-summarizer ol p {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 22px;
-      text-decoration-line: underline;
-      text-transform: capitalize; }
-      .content-summarizer ol p a {
-        font-size: 16px; }
 
 .mobile-flag-img {
   display: none; }
