@@ -585,6 +585,9 @@
       @media (max-width: 475px) {
         max-width: none;
       }
+      p {
+        margin-bottom: 0;
+      }
 
       &__text {
         border-radius: 8px 8px 0px 0px;
@@ -609,6 +612,17 @@
       .checkbox-request {
         display: flex;
         gap: 5px;
+
+        label {
+          font-size: 14px;
+        }
+      }
+      .green-button {
+        border-radius: 4px;
+        background: #048011;
+        width: 86px !important;
+        height: 31px !important;
+        padding: initial;
       }
       .secure-confirm {
         display: flex;

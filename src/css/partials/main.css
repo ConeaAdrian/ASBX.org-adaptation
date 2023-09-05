@@ -3587,6 +3587,8 @@ nav {
       @media (max-width: 475px) {
         .result-page .content-request .callback-form {
           max-width: none; } }
+      .result-page .content-request .callback-form p {
+        margin-bottom: 0; }
       .result-page .content-request .callback-form__text {
         border-radius: 8px 8px 0px 0px;
         border: 1px solid rgba(0, 0, 0, 0.1);
@@ -3606,6 +3608,14 @@ nav {
       .result-page .content-request .callback-form .checkbox-request {
         display: flex;
         gap: 5px; }
+        .result-page .content-request .callback-form .checkbox-request label {
+          font-size: 14px; }
+      .result-page .content-request .callback-form .green-button {
+        border-radius: 4px;
+        background: #048011;
+        width: 86px !important;
+        height: 31px !important;
+        padding: initial; }
       .result-page .content-request .callback-form .secure-confirm {
         display: flex;
         align-items: center;
