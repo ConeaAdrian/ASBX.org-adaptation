@@ -1330,6 +1330,9 @@ nav {
       position: absolute;
       left: 0;
       z-index: 101; }
+      @media (min-width: 1520px) {
+        .index-page .principal-content .information-hero::before {
+          width: 55vw; } }
       @media (max-width: 992px) {
         .index-page .principal-content .information-hero::before {
           width: 100%; } }
@@ -1370,6 +1373,9 @@ nav {
       position: absolute;
       right: 0;
       z-index: 100; }
+      @media (min-width: 1520px) {
+        .index-page .principal-content .information-hero::after {
+          width: 45vw; } }
       @media (max-width: 992px) {
         .index-page .principal-content .information-hero::after {
           width: 100%;
