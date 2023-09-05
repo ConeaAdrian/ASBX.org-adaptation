@@ -326,16 +326,42 @@
       }
     }
   }
+  .medical-img,
+  .choose-med,
+  .military-img {
+    border-radius: 0px 24px 0px 0px;
+    height: 100% !important;
+    width: 100%;
+    min-width: 380px;
+    @media (max-width: 767px) {
+      border-radius: 0;
+      height: auto !important;
+      min-width: auto;
+      max-height: 528px;
+    }
+  }
+  .lawyer-img {
+    border-radius: 24px 0px 0px 0px;
+    height: 100% !important;
+    width: 100%;
+    min-width: 380px;
+    @media (max-width: 767px) {
+      border-radius: 0;
+      height: auto !important;
+      min-width: auto;
+      max-height: 528px;
+    }
+  }
   .section-meso {
     position: relative;
 
-    img {
-      width: 508px;
-      height: 528px;
-      @media (max-width: 767px) {
-        width: 100%;
-      }
-    }
+    // img {
+    //   width: 508px;
+    //   height: 528px;
+    //   @media (max-width: 767px) {
+    //     width: 100%;
+    //   }
+    // }
     .active-section {
       margin: 0 auto;
       align-items: center;
@@ -508,6 +534,7 @@
       justify-content: space-between;
       @media (max-width: 767px) {
         flex-direction: column;
+        margin-top: 40px;
       }
 
       .information {

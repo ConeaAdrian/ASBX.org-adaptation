@@ -1472,14 +1472,36 @@ nav {
             font-size: 18px;
             line-height: 22px; } }
 
+.index-page .medical-img,
+.index-page .choose-med,
+.index-page .military-img {
+  border-radius: 0px 24px 0px 0px;
+  height: 100% !important;
+  width: 100%;
+  min-width: 380px; }
+  @media (max-width: 767px) {
+    .index-page .medical-img,
+    .index-page .choose-med,
+    .index-page .military-img {
+      border-radius: 0;
+      height: auto !important;
+      min-width: auto;
+      max-height: 528px; } }
+
+.index-page .lawyer-img {
+  border-radius: 24px 0px 0px 0px;
+  height: 100% !important;
+  width: 100%;
+  min-width: 380px; }
+  @media (max-width: 767px) {
+    .index-page .lawyer-img {
+      border-radius: 0;
+      height: auto !important;
+      min-width: auto;
+      max-height: 528px; } }
+
 .index-page .section-meso {
   position: relative; }
-  .index-page .section-meso img {
-    width: 508px;
-    height: 528px; }
-    @media (max-width: 767px) {
-      .index-page .section-meso img {
-        width: 100%; } }
   .index-page .section-meso .active-section {
     margin: 0 auto;
     align-items: center;
@@ -1625,7 +1647,8 @@ nav {
     justify-content: space-between; }
     @media (max-width: 767px) {
       .index-page .choose-asbx__content {
-        flex-direction: column; } }
+        flex-direction: column;
+        margin-top: 40px; } }
     .index-page .choose-asbx__content .information {
       max-width: 550px;
       width: 100%;
