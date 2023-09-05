@@ -1062,7 +1062,6 @@ nav {
   position: relative;
   font-size: 16px;
   padding: 12px 8px;
-  text-transform: capitalize;
   border-bottom: 0.5px solid #3d3d3d80;
   background: #fff;
   color: #564d4d;
@@ -3158,19 +3157,19 @@ nav {
     @media (max-width: 475px) {
       .result-page .button-active {
         gap: 10px; } }
-  .result-page input[type="checkbox"] {
-    height: 0;
-    width: 0;
-    visibility: hidden; }
-  .result-page label {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 56px;
-    height: 24px;
-    background: #324a74;
-    display: block;
-    border-radius: 100px;
-    position: relative; }
+    .result-page .button-active input[type="checkbox"] {
+      height: 0;
+      width: 0;
+      visibility: hidden; }
+    .result-page .button-active label {
+      cursor: pointer;
+      text-indent: -9999px;
+      width: 56px;
+      height: 24px;
+      background: #324a74;
+      display: block;
+      border-radius: 100px;
+      position: relative; }
   .result-page label:after {
     content: "";
     position: absolute;
@@ -3552,33 +3551,39 @@ nav {
       @media (max-width: 992px) {
         .result-page .content-request .question-lawyer {
           margin-top: 25px; } }
+      .result-page .content-request .question-lawyer .red-text {
+        color: #bc2649;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px; }
       .result-page .content-request .question-lawyer span {
-        color: #9d1b32;
-        font-size: 20px;
-        font-weight: 500; }
-        @media (max-width: 992px) {
-          .result-page .content-request .question-lawyer span {
-            font-size: 18px; } }
+        color: #324a74;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 26px; }
       .result-page .content-request .question-lawyer p {
         margin-top: 8px;
         max-width: 447px;
         width: 100%; }
         .result-page .content-request .question-lawyer p a {
           color: #000;
-          font-size: 16px;
-          font-weight: 500; }
+          font-size: 20px;
+          font-weight: 300; }
           @media (max-width: 475px) {
             .result-page .content-request .question-lawyer p a {
-              flex-direction: column;
-              font-size: 14px; } }
+              flex-direction: column; } }
     .result-page .content-request .callback-form {
       margin-top: 42px;
       border-radius: 8px;
       border: 1px solid rgba(0, 0, 0, 0.1);
       background: rgba(244, 244, 244, 0.29);
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
-      max-width: 316px;
-      width: 100%; }
+      max-width: 360px;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px; }
       @media (max-width: 475px) {
         .result-page .content-request .callback-form {
           max-width: none; } }
@@ -3598,31 +3603,21 @@ nav {
       .result-page .content-request .callback-form .form-request {
         margin-top: 20px;
         padding: 0 32px; }
-        .result-page .content-request .callback-form .form-request input {
-          width: 100%;
-          margin-bottom: 11px;
-          padding: 0 12px;
-          height: 28px;
-          font-size: 12px; }
-          .result-page .content-request .callback-form .form-request input::placeholder {
-            color: #000;
-            font-size: 12px !important;
-            font-weight: 400; }
-        .result-page .content-request .callback-form .form-request select {
-          width: 100%;
-          max-width: 254px;
-          height: 28px;
-          margin-bottom: 11px; }
-        .result-page .content-request .callback-form .form-request .custom-select {
-          width: 100%;
-          max-width: 254px;
-          height: 28px;
-          margin-bottom: 11px; }
-          @media (max-width: 475px) {
-            .result-page .content-request .callback-form .form-request .custom-select {
-              max-width: none; } }
-          .result-page .content-request .callback-form .form-request .custom-select .select-selected {
-            max-width: none; }
+      .result-page .content-request .callback-form .checkbox-request {
+        display: flex;
+        gap: 5px; }
+      .result-page .content-request .callback-form .secure-confirm {
+        display: flex;
+        align-items: center;
+        gap: 5px; }
+        .result-page .content-request .callback-form .secure-confirm img {
+          width: 20px;
+          height: 20px; }
+        .result-page .content-request .callback-form .secure-confirm p {
+          margin-bottom: 0;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16px; }
     .result-page .content-request .button-element {
       display: flex;
       justify-content: end;
