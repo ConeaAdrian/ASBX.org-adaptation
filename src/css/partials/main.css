@@ -1181,6 +1181,19 @@ nav {
     .row.mobile-only {
       display: flex; } }
 
+.index-page h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px; }
+  @media (max-width: 475px) {
+    .index-page h2 {
+      font-size: 38px;
+      line-height: 44px; } }
+
 .index-page .header-section {
   position: absolute;
   width: 100%;
@@ -1208,7 +1221,6 @@ nav {
       width: 100%;
       padding-top: 70px; }
       .index-page .principal-content .container .hero-content h1,
-      .index-page .principal-content .container .hero-content h2,
       .index-page .principal-content .container .hero-content p,
       .index-page .principal-content .container .hero-content span {
         color: #fff; }
@@ -1227,18 +1239,19 @@ nav {
             font-size: 80px;
             line-height: 100px;
             display: flex; } }
-      .index-page .principal-content .container .hero-content h2 {
+      .index-page .principal-content .container .hero-content .principal-content-text {
         color: #fff;
         font-size: 36px;
         font-weight: 400;
         line-height: 42px;
         margin-bottom: 14px;
-        padding-top: 115px; }
+        padding-top: 115px;
+        text-transform: inherit !important; }
         @media (max-width: 767px) {
-          .index-page .principal-content .container .hero-content h2 {
+          .index-page .principal-content .container .hero-content .principal-content-text {
             font-size: 30px; } }
         @media (max-width: 475px) {
-          .index-page .principal-content .container .hero-content h2 {
+          .index-page .principal-content .container .hero-content .principal-content-text {
             font-size: 26px;
             line-height: 32px;
             display: flex;
@@ -1285,12 +1298,16 @@ nav {
           padding: 15px; } }
       @media (max-width: 475px) {
         .index-page .principal-content .information-hero .statistic {
-          flex-direction: column; } }
+          flex-direction: column;
+          gap: 15px; } }
       .index-page .principal-content .information-hero .statistic__data {
         display: flex;
         flex-direction: column;
         gap: 20px;
         align-items: center; }
+        @media (max-width: 475px) {
+          .index-page .principal-content .information-hero .statistic__data {
+            gap: 10px; } }
       .index-page .principal-content .information-hero .statistic p {
         color: #fff;
         font-size: 48px;
@@ -1327,16 +1344,18 @@ nav {
       z-index: 105;
       width: 35%;
       padding: 40px;
+      margin-left: 38px;
       width: 100%; }
       @media (max-width: 992px) {
         .index-page .principal-content .information-hero .principal-text {
-          padding: 30px; } }
+          padding: 30px;
+          margin-left: 0; } }
       @media (max-width: 767px) {
         .index-page .principal-content .information-hero .principal-text {
           padding: 15px; } }
       .index-page .principal-content .information-hero .principal-text p {
         color: #fff;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase; }
@@ -1381,14 +1400,6 @@ nav {
     max-width: 795px;
     width: 100%; }
 
-.index-page .our-mision h2 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 28px;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center; }
-
 .index-page .our-mision__nomerotation {
   margin-top: 40px;
   display: flex;
@@ -1402,7 +1413,8 @@ nav {
     flex-direction: column;
     gap: 20px;
     max-width: 550px;
-    width: 100%; }
+    width: 100%;
+    justify-content: space-between; }
     @media (max-width: 767px) {
       .index-page .our-mision__nomerotation .box-element {
         max-width: none; } }
@@ -1412,33 +1424,53 @@ nav {
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
       padding: 10px;
       justify-content: space-between;
-      gap: 15px; }
+      gap: 15px;
+      align-items: center; }
       .index-page .our-mision__nomerotation .box-element__content .nomerotation {
         background-color: #bc2649;
-        width: 96px;
+        width: 100%;
+        min-width: 85px;
+        max-width: 85px;
         height: 85px;
         border-radius: 50%;
         transform: translate(-28px); }
         @media (max-width: 767px) {
           .index-page .our-mision__nomerotation .box-element__content .nomerotation {
             transform: none; } }
+        @media (max-width: 475px) {
+          .index-page .our-mision__nomerotation .box-element__content .nomerotation {
+            width: 100%;
+            min-width: 65px;
+            max-width: 65px;
+            height: 65px; } }
         .index-page .our-mision__nomerotation .box-element__content .nomerotation p {
           color: #fff;
           font-size: 96px;
           font-weight: 700;
           line-height: 30px;
           transform: translate(34px, 22px); }
+          @media (max-width: 475px) {
+            .index-page .our-mision__nomerotation .box-element__content .nomerotation p {
+              font-size: 68px;
+              transform: translate(28px, 16px); } }
       .index-page .our-mision__nomerotation .box-element__content .text h3 {
         color: #324a74;
         font-size: 36px;
         font-weight: 700;
         line-height: 30px;
         margin-bottom: 5px; }
+        @media (max-width: 475px) {
+          .index-page .our-mision__nomerotation .box-element__content .text h3 {
+            font-size: 32px; } }
       .index-page .our-mision__nomerotation .box-element__content .text p {
         font-size: 22px;
         font-style: normal;
         font-weight: 400;
         line-height: 30px; }
+        @media (max-width: 475px) {
+          .index-page .our-mision__nomerotation .box-element__content .text p {
+            font-size: 18px;
+            line-height: 22px; } }
 
 .index-page .section-meso {
   position: relative; }
@@ -1474,11 +1506,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .index-page .working-stages h2 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 28px;
-    margin-bottom: 40px; }
   .index-page .working-stages__text {
     width: 100%;
     max-width: 515px;
@@ -1487,23 +1514,25 @@ nav {
     font-weight: 400;
     line-height: 34px;
     text-align: center; }
+    @media (max-width: 475px) {
+      .index-page .working-stages__text {
+        font-size: 22px; } }
     .index-page .working-stages__text b {
       font-size: 26px !important; }
   .index-page .working-stages .works-step {
     display: flex;
     justify-content: space-between;
-    gap: 30px; }
+    gap: 30px;
+    margin-top: 40px; }
     @media (max-width: 640px) {
       .index-page .working-stages .works-step {
         flex-direction: column;
-        margin: 0 auto;
         align-items: center; } }
     .index-page .working-stages .works-step__box {
       width: 100%;
       max-width: 230px;
       height: auto;
       border: 1px solid rgba(0, 0, 0, 0.1);
-      margin-top: 40px;
       gap: 30px;
       display: flex;
       flex-direction: column;
@@ -1512,8 +1541,7 @@ nav {
       @media (max-width: 640px) {
         .index-page .working-stages .works-step__box {
           width: 80%;
-          max-width: none;
-          margin-top: 0; } }
+          max-width: none; } }
       .index-page .working-stages .works-step__box span {
         color: #bc2649;
         font-size: 64px;
@@ -1563,6 +1591,19 @@ nav {
       font-weight: 700;
       line-height: normal;
       text-transform: uppercase; }
+      @media (max-width: 992px) {
+        .index-page .index-search__content p {
+          left: 7rem; } }
+      @media (max-width: 767px) {
+        .index-page .index-search__content p {
+          left: 6px; } }
+      @media (max-width: 475px) {
+        .index-page .index-search__content p {
+          top: 25px;
+          font-size: 24px; } }
+    @media (max-width: 767px) {
+      .index-page .index-search__content .search-form-input {
+        height: 40px !important; } }
     .index-page .index-search__content .custom-search-form {
       max-width: 620px;
       height: 55px;
@@ -1570,16 +1611,13 @@ nav {
       margin: 0 auto; }
       .index-page .index-search__content .custom-search-form input {
         height: 55px; }
+    @media (max-width: 767px) {
+      .index-page .index-search__content .search-form-button {
+        height: 40px !important; } }
 
 .index-page .choose-asbx {
   background: #fafafa;
   margin-top: 60px; }
-  .index-page .choose-asbx h2 {
-    text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    text-transform: uppercase; }
   .index-page .choose-asbx__content {
     margin-top: 60px;
     display: flex;
@@ -1631,13 +1669,6 @@ nav {
         width: 100%;
         text-align: center; }
 
-.index-page .state-connection h2 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  text-transform: uppercase;
-  text-align: center; }
-
 .index-page .state-connection p {
   font-size: 26px;
   font-weight: 400;
@@ -1663,12 +1694,6 @@ nav {
 
 .index-page .veterans {
   background: #fafafa; }
-  .index-page .veterans h2 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    text-align: center;
-    margin-bottom: 40px; }
   .index-page .veterans .veterans-content {
     display: flex;
     gap: 20px;
@@ -1690,6 +1715,9 @@ nav {
         font-size: 36px;
         font-weight: 700;
         line-height: 30px; }
+        @media (max-width: 475px) {
+          .index-page .veterans .veterans-content .military-forces h3 {
+            font-size: 32px; } }
       .index-page .veterans .veterans-content .military-forces p {
         font-size: 20px;
         font-weight: 400;
@@ -1710,13 +1738,6 @@ nav {
         @media (max-width: 767px) {
           .index-page .veterans .veterans-content .military-forces__img {
             max-width: none; } }
-
-.index-page .lawyer-specialist h2 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  text-align: center;
-  margin-bottom: 40px; }
 
 .index-page .lawyer-specialist__content {
   display: flex;
@@ -1740,6 +1761,10 @@ nav {
     font-size: 36px;
     font-weight: 700;
     line-height: 44px; }
+    @media (max-width: 767px) {
+      .index-page .lawyer-specialist .about-lawyer h3 {
+        font-size: 32px;
+        line-height: 34px; } }
   .index-page .lawyer-specialist .about-lawyer p {
     font-size: 20px;
     font-weight: 400;
@@ -1748,6 +1773,9 @@ nav {
     margin-top: 30px;
     width: 100%;
     max-width: 280px; }
+    @media (max-width: 767px) {
+      .index-page .lawyer-specialist .about-lawyer .button-red {
+        margin-top: 0; } }
 
 .index-page .lawyer-specialist .active-section p {
   font-weight: 400; }
