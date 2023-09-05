@@ -1709,17 +1709,39 @@ nav {
   text-align: center;
   margin: 15px auto 40px; }
 
-.index-page .state-connection .state-list {
+.index-page .state-connection .state-list-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: start;
+  align-items: center;
+  margin-top: 20px;
   padding-left: 10rem; }
   @media (max-width: 992px) {
-    .index-page .state-connection .state-list {
+    .index-page .state-connection .state-list-index {
       padding-left: 4rem; } }
-  .index-page .state-connection .state-list li a {
-    color: #324a74 !important;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-decoration-line: underline; }
+  .index-page .state-connection .state-list-index li {
+    width: 28%;
+    color: #000;
+    list-style-type: disc; }
+    .index-page .state-connection .state-list-index li::before {
+      margin-right: 6px;
+      text-decoration-line: none; }
+    .index-page .state-connection .state-list-index li a {
+      color: #324a74 !important;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+      text-decoration-line: underline !important; }
+      @media (max-width: 475px) {
+        .index-page .state-connection .state-list-index li a {
+          font-size: 14px; } }
+    @media (max-width: 550px) {
+      .index-page .state-connection .state-list-index li {
+        width: 34%; } }
+    @media (max-width: 375px) {
+      .index-page .state-connection .state-list-index li {
+        width: 50%; } }
 
 .index-page .veterans {
   background: #fafafa; }
@@ -3122,8 +3144,7 @@ nav {
       max-width: 726px;
       opacity: 0.6800000071525574;
       color: #000;
-      margin: 0 auto;
-      line-height: 26px; }
+      margin: 0 auto; }
   .result-page .button-active {
     display: flex;
     align-items: center;
@@ -3229,7 +3250,8 @@ nav {
         .result-page .legal-representation .legal-information .ER-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .ER-claims ul li {
-            margin-bottom: 15px;
+            margin-bottom: 8px;
+            margin-top: 0;
             font-size: 18px;
             font-weight: 400;
             display: flex; }
@@ -3243,7 +3265,7 @@ nav {
         .result-page .legal-representation .legal-information .ER-claims ul li:before {
           content: "✓";
           color: #181059;
-          padding-right: 15px; }
+          padding-right: 10px; }
         .result-page .legal-representation .legal-information .ER-claims .proposed-money {
           color: #bc2649;
           font-size: 25px;
@@ -3263,6 +3285,10 @@ nav {
           @media (max-width: 992px) {
             .result-page .legal-representation .legal-information .ER-claims .button-claim {
               margin-bottom: 35px; } }
+      .result-page .legal-representation .legal-information .information-benefits ul {
+        padding-left: 0; }
+      .result-page .legal-representation .legal-information .information-benefits li p {
+        line-height: normal !important; }
       @media (max-width: 992px) {
         .result-page .legal-representation .legal-information .information-benefits {
           display: none; } }
@@ -3309,7 +3335,8 @@ nav {
         .result-page .legal-representation .legal-information .AVG-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .AVG-claims ul li {
-            margin-bottom: 15px;
+            margin-bottom: 8px;
+            margin-top: 0;
             font-size: 18px;
             font-weight: 400;
             display: flex; }
@@ -3326,7 +3353,7 @@ nav {
         .result-page .legal-representation .legal-information .AVG-claims ul li:before {
           content: "✓";
           color: #fff;
-          padding-right: 15px; }
+          padding-right: 10px; }
         .result-page .legal-representation .legal-information .AVG-claims .proposed-money {
           color: #fff;
           font-size: 25px;
@@ -3392,7 +3419,8 @@ nav {
         .result-page .legal-representation .legal-information .IR-claims ul {
           list-style: none; }
           .result-page .legal-representation .legal-information .IR-claims ul li {
-            margin-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 8px;
             font-size: 18px;
             font-weight: 400;
             display: flex; }
@@ -3406,7 +3434,7 @@ nav {
         .result-page .legal-representation .legal-information .IR-claims ul li:before {
           content: "✓";
           color: #181059;
-          padding-right: 15px; }
+          padding-right: 10px; }
         .result-page .legal-representation .legal-information .IR-claims .proposed-money {
           color: #bc2649;
           font-size: 25px;
@@ -3455,7 +3483,8 @@ nav {
     .result-page .your-own ul {
       list-style: none; }
       .result-page .your-own ul li {
-        margin-bottom: 15px;
+        margin-bottom: 8px;
+        margin-top: 0;
         font-size: 18px;
         font-weight: 400;
         display: flex; }
@@ -3501,8 +3530,7 @@ nav {
     .result-page .lawyer-representation p {
       font-size: 16px;
       font-style: normal;
-      font-weight: 400;
-      line-height: 26px; }
+      font-weight: 400; }
       @media (max-width: 475px) {
         .result-page .lawyer-representation p {
           font-size: 14px; } }

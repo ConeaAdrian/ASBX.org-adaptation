@@ -28,7 +28,6 @@
       opacity: 0.6800000071525574;
       color: #000;
       margin: 0 auto;
-      line-height: 26px;
     }
   }
 
@@ -172,7 +171,8 @@
           list-style: none;
 
           li {
-            margin-bottom: 15px;
+            margin-bottom: 8px;
+            margin-top: 0;
             font-size: 18px;
             font-weight: 400;
             display: flex;
@@ -191,7 +191,7 @@
         ul li:before {
           content: "✓";
           color: #181059;
-          padding-right: 15px;
+          padding-right: 10px;
         }
         .proposed-money {
           color: #bc2649;
@@ -216,6 +216,14 @@
         }
       }
       .information-benefits {
+        ul {
+          padding-left: 0;
+        }
+        li {
+          p {
+            line-height: normal !important;
+          }
+        }
         @media (max-width: 992px) {
           display: none;
         }
@@ -271,7 +279,8 @@
           list-style: none;
 
           li {
-            margin-bottom: 15px;
+            margin-bottom: 8px;
+            margin-top: 0;
             font-size: 18px;
             font-weight: 400;
             display: flex;
@@ -294,7 +303,7 @@
         ul li:before {
           content: "✓";
           color: #fff;
-          padding-right: 15px;
+          padding-right: 10px;
         }
         .proposed-money {
           color: #fff;
@@ -374,7 +383,8 @@
           list-style: none;
 
           li {
-            margin-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 8px;
             font-size: 18px;
             font-weight: 400;
             display: flex;
@@ -393,7 +403,7 @@
         ul li:before {
           content: "✓";
           color: #181059;
-          padding-right: 15px;
+          padding-right: 10px;
         }
         .proposed-money {
           color: #bc2649;
@@ -456,7 +466,8 @@
       list-style: none;
 
       li {
-        margin-bottom: 15px;
+        margin-bottom: 8px;
+        margin-top: 0;
         font-size: 18px;
         font-weight: 400;
         display: flex;
@@ -518,7 +529,6 @@
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 26px;
       @media (max-width: 475px) {
         font-size: 14px;
       }
