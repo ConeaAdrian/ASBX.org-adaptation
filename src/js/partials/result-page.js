@@ -65,3 +65,22 @@ document.addEventListener("DOMContentLoaded", function() {
     yourOwnDiv.style.display = isChecked ? 'block' : 'none';
   });
 });
+
+
+
+function startClaims() {
+  document.getElementById('claimForm').style.display = 'block';
+  document.body.appendChild(createOverlay());
+}
+
+function createOverlay() {
+  const overlay = document.createElement('div');
+  overlay.classList.add('overlay');
+  
+  overlay.addEventListener('click', function() {
+    document.getElementById('claimForm').style.display = 'none';
+    document.body.removeChild(overlay);
+  });
+  
+  return overlay;
+}

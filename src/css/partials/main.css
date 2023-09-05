@@ -3542,92 +3542,41 @@ nav {
           font-size: 16px; } }
   .result-page .content-request {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 40px; }
     @media (max-width: 992px) {
       .result-page .content-request {
         flex-direction: column; } }
-    .result-page .content-request .question-lawyer {
-      margin-top: 55px; }
-      @media (max-width: 992px) {
-        .result-page .content-request .question-lawyer {
-          margin-top: 25px; } }
-      .result-page .content-request .question-lawyer .red-text {
-        color: #bc2649;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 26px; }
-      .result-page .content-request .question-lawyer span {
-        color: #324a74;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 26px; }
-      .result-page .content-request .question-lawyer p {
-        margin-top: 8px;
-        max-width: 447px;
-        width: 100%; }
-        .result-page .content-request .question-lawyer p a {
-          color: #000;
-          font-size: 20px;
-          font-weight: 300; }
-          @media (max-width: 475px) {
-            .result-page .content-request .question-lawyer p a {
-              flex-direction: column; } }
-    .result-page .content-request .callback-form {
-      margin-top: 42px;
-      border-radius: 8px;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background: rgba(244, 244, 244, 0.29);
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
-      max-width: 360px;
+    @media (max-width: 992px) {
+      .result-page .content-request .question-lawyer {
+        margin-top: 25px; } }
+    .result-page .content-request .question-lawyer .red-text {
+      color: #bc2649;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 26px; }
+    .result-page .content-request .question-lawyer span {
+      color: #324a74;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 26px; }
+    .result-page .content-request .question-lawyer p {
+      margin-top: 8px;
+      max-width: 447px;
       width: 100%;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px; }
-      @media (max-width: 475px) {
-        .result-page .content-request .callback-form {
-          max-width: none; } }
-      .result-page .content-request .callback-form p {
-        margin-bottom: 0; }
-      .result-page .content-request .callback-form__text {
-        border-radius: 8px 8px 0px 0px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background: #324a74;
-        width: 100%;
-        height: 43px; }
-      .result-page .content-request .callback-form span {
-        color: #fff;
+      font-size: 20px; }
+      .result-page .content-request .question-lawyer p a {
+        color: #000;
         font-size: 20px;
-        font-weight: 500;
-        padding: 6px 31px;
-        display: flex;
-        text-align: center; }
-      .result-page .content-request .callback-form .form-request {
-        margin-top: 20px;
-        padding: 0 32px; }
-      .result-page .content-request .callback-form .checkbox-request {
-        display: flex;
-        gap: 5px; }
-        .result-page .content-request .callback-form .checkbox-request label {
-          font-size: 14px; }
-      .result-page .content-request .callback-form .green-button {
-        border-radius: 4px;
-        background: #048011;
-        width: 86px !important;
-        height: 31px !important;
-        padding: initial; }
-      .result-page .content-request .callback-form .secure-confirm {
-        display: flex;
-        align-items: center;
-        gap: 5px; }
-        .result-page .content-request .callback-form .secure-confirm img {
-          width: 20px;
-          height: 20px; }
-        .result-page .content-request .callback-form .secure-confirm p {
-          margin-bottom: 0;
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 16px; }
+        font-weight: 300; }
+        @media (max-width: 475px) {
+          .result-page .content-request .question-lawyer p a {
+            flex-direction: column; } }
+    .result-page .content-request .question-lawyer .text-callback {
+      margin-top: 25px; }
+      .result-page .content-request .question-lawyer .text-callback p {
+        font-size: 18px;
+        margin-top: 15px; }
     .result-page .content-request .button-element {
       display: flex;
       justify-content: end;
@@ -3721,6 +3670,104 @@ nav {
     font-style: normal;
     font-weight: 300;
     line-height: 22px; }
+
+.callback-form {
+  border-radius: 8px;
+  border: 1px solid #dbdbdb;
+  background: rgba(240, 245, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  max-width: 360px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+  @media (max-width: 475px) {
+    .callback-form {
+      max-width: none; } }
+  .callback-form p {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 400; }
+  .callback-form__text {
+    border-radius: 8px 8px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #324a74;
+    width: 100%;
+    height: 43px; }
+  .callback-form span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 31px;
+    display: flex;
+    text-align: center; }
+  .callback-form .form-request {
+    margin-top: 20px;
+    padding: 0 32px; }
+  .callback-form .checkbox-request {
+    display: flex;
+    gap: 5px;
+    align-items: center; }
+    .callback-form .checkbox-request label {
+      font-size: 14px; }
+  .callback-form .green-button {
+    border-radius: 4px;
+    background: #048011;
+    width: 86px !important;
+    height: 31px !important;
+    padding: initial; }
+  .callback-form .secure-confirm {
+    display: flex;
+    align-items: center;
+    gap: 5px; }
+    .callback-form .secure-confirm img {
+      width: 20px;
+      height: 20px; }
+    .callback-form .secure-confirm p {
+      margin-bottom: 0;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px; }
+  .callback-form .chase-element {
+    height: 36px;
+    color: #606060;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #fff; }
+    .callback-form .chase-element::placeholder {
+      color: #606060; }
+
+.form-claim-proces {
+  display: none;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  background: rgba(25, 37, 58, 0.5); }
+
+.claim-form {
+  margin: 0 auto;
+  background: #FBFBFB;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FBFBFB; }
+  .claim-form .chase-element {
+    width: 100%; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(25, 37, 58, 0.5);
+  z-index: 999; }
 
 .mesothelioma .content-summarizer {
   margin-top: 30px;
