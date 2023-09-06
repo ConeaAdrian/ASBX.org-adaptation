@@ -137,9 +137,6 @@ select {
   font-family: "Roboto Condensed", sans-serif;
   border-radius: 0;
   outline: none; }
-  @media (max-width: 699px) {
-    select {
-      height: 40px !important; } }
   select:hover {
     border: 1px solid #dbdbdb; }
 
@@ -154,9 +151,6 @@ input {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: 400; }
-  @media (max-width: 699px) {
-    input {
-      height: 40px !important; } }
 
 label {
   font-family: "Roboto Condensed", sans-serif; }
@@ -3180,8 +3174,6 @@ nav {
     background: #fff;
     border-radius: 90px;
     transition: 0.3s; }
-  .result-page input:checked + label {
-    background: #565656; }
   .result-page input:checked + label:after {
     left: calc(100% - 5px);
     transform: translateX(-100%); }
@@ -3228,7 +3220,6 @@ nav {
           .result-page .legal-representation .legal-information .ER-claims__name h2 {
             color: #181059;
             font-size: 24px;
-            font-weight: 500;
             margin-right: 5px;
             font-family: "Inter", sans-serif !important; }
           .result-page .legal-representation .legal-information .ER-claims__name p {
@@ -3313,7 +3304,6 @@ nav {
           .result-page .legal-representation .legal-information .AVG-claims__name h2 {
             color: #fff;
             font-size: 24px;
-            font-weight: 500;
             margin-right: 5px;
             font-family: "Inter", sans-serif !important; }
           .result-page .legal-representation .legal-information .AVG-claims__name p {
@@ -3397,7 +3387,6 @@ nav {
           .result-page .legal-representation .legal-information .IR-claims__name h2 {
             color: #181059;
             font-size: 24px;
-            font-weight: 500;
             margin-right: 5px;
             font-family: "Inter", sans-serif !important; }
           .result-page .legal-representation .legal-information .IR-claims__name p {
@@ -3466,7 +3455,6 @@ nav {
     .result-page .your-own h2 {
       color: #181059;
       font-size: 24px;
-      font-weight: 500;
       margin-right: 5px;
       font-family: "Inter", sans-serif !important;
       border-bottom: 1px solid #b4b4b4;
@@ -3532,14 +3520,7 @@ nav {
       font-weight: 400;
       line-height: 26px; }
     .result-page .lawyer-representation p {
-      margin-bottom: 15px;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 26px; }
-      @media (max-width: 475px) {
-        .result-page .lawyer-representation p {
-          font-size: 16px; } }
+      margin-bottom: 15px; }
   .result-page .content-request {
     display: flex;
     justify-content: space-between;
@@ -3681,13 +3662,13 @@ nav {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px; }
+  gap: 15px; }
   @media (max-width: 475px) {
     .callback-form {
       max-width: none; } }
   .callback-form p {
     font-size: 20px;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
     font-weight: 400; }
   .callback-form__text {
     border-radius: 8px 8px 0px 0px;
@@ -3729,13 +3710,11 @@ nav {
       font-size: 12px;
       font-weight: 400;
       line-height: 16px; }
-  .callback-form .chase-element {
-    height: 36px;
+  .callback-form input, .callback-form select {
+    padding: 5px 10px;
     color: #606060;
-    font-size: 16px;
-    padding: 5px;
     background-color: #fff; }
-    .callback-form .chase-element::placeholder {
+    .callback-form input::placeholder, .callback-form select::placeholder {
       color: #606060; }
 
 .form-claim-proces {
@@ -3756,6 +3735,9 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #FBFBFB; }
+  @media (max-width: 475px) {
+    .claim-form {
+      max-width: 300px; } }
   .claim-form .chase-element {
     width: 100%; }
 
@@ -4358,7 +4340,6 @@ nav {
     line-height: 22px;
     text-decoration-line: underline !important; }
   .card-job-site p {
-    color: #bc2649;
     font-size: 16px;
     font-weight: 400; }
   .card-job-site select {
