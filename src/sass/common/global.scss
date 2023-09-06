@@ -164,9 +164,6 @@ input {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  // @media (max-width: 699px) {
-  //   height: 40px !important;
-  // }
 }
 label {
   font-family: "Roboto Condensed", sans-serif;
@@ -176,7 +173,7 @@ strong {
   color: #000;
   font-weight: 700;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 18px !important;
+  font-size: 18px;
 }
 
 .position-relative {
