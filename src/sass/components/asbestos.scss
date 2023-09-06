@@ -1,29 +1,29 @@
 .mesothelioma {
-  .content-summarizer {
-    margin-top: 30px;
-    max-width: none;
-  }
   .meso-img {
     width: 100%;
+    max-width: 358px;
     height: auto;
   }
-  .red-text {
-    margin-bottom: 2px;
-    font-weight: 700;
-    text-decoration-line: underline !important;
+  .mesothelioma-facts {
+    .red-text {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+    }
+    li {
+      color: #15528e;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 26px;
+    }
   }
-  .mesothelioma-types {
+  .cause-symptoms-text {
+    margin-top: 15px;
+  }
+  .life-expectancy-content {
+    gap: 20px;
     display: flex;
     flex-direction: column;
-  }
-  ul {
-    padding-left: 25px;
-    li {
-      list-style-type: disc;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 22px;
-    }
   }
 }
 
@@ -46,7 +46,7 @@
       font-weight: 300;
       list-style-type: disc;
       font-size: 18px;
-      line-height: 26px; 
+      line-height: 26px;
     }
   }
   .text-exampe {

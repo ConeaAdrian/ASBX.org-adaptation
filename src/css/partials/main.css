@@ -283,8 +283,7 @@ button {
   cursor: pointer;
   font-size: 16px;
   border-radius: 4px;
-  color: #fff;
-  padding: 8.5px; }
+  color: #fff; }
 
 .search-button {
   color: #564d4d;
@@ -1056,8 +1055,6 @@ nav {
   position: relative;
   font-size: 16px;
   padding: 12px 8px;
-  border-bottom: 0.5px solid #3d3d3d80;
-  background: #fff;
   color: #564d4d;
   border: 1px solid rgba(0, 0, 0, 0.17);
   background: #fff;
@@ -3751,30 +3748,29 @@ nav {
   background-color: rgba(25, 37, 58, 0.5);
   z-index: 999; }
 
-.mesothelioma .content-summarizer {
-  margin-top: 30px;
-  max-width: none; }
-
 .mesothelioma .meso-img {
   width: 100%;
+  max-width: 358px;
   height: auto; }
 
-.mesothelioma .red-text {
-  margin-bottom: 2px;
-  font-weight: 700;
-  text-decoration-line: underline !important; }
+.mesothelioma .mesothelioma-facts .red-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500; }
 
-.mesothelioma .mesothelioma-types {
+.mesothelioma .mesothelioma-facts li {
+  color: #15528e;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px; }
+
+.mesothelioma .cause-symptoms-text {
+  margin-top: 15px; }
+
+.mesothelioma .life-expectancy-content {
+  gap: 20px;
   display: flex;
   flex-direction: column; }
-
-.mesothelioma ul {
-  padding-left: 25px; }
-  .mesothelioma ul li {
-    list-style-type: disc;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px; }
 
 .occupational .content-summarizer {
   margin-top: 30px;

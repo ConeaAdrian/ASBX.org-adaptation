@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
           for (let li of lis) {
               li.style.display = 'none';
           }
-          button.innerText = 'Show More';
+          button.innerText = 'Show All';
       }
   });
 });
