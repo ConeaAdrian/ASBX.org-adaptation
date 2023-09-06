@@ -134,7 +134,7 @@ select {
   border: 1px solid #dbdbdb;
   background-color: #fff;
   color: #000;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
   border-radius: 0;
   outline: none; }
@@ -4328,6 +4328,8 @@ nav {
   @media (max-width: 667px) {
     .card-job-site {
       width: 100%; } }
+  .card-job-site select {
+    font-size: 15px; }
   .card-job-site a {
     color: #15528e !important;
     font-size: 18px;
@@ -4520,7 +4522,8 @@ nav {
     .content-boiler .card-boiler select {
       height: 44px;
       width: 100%;
-      padding-left: 5px; }
+      padding-left: 5px;
+      font-size: 15px; }
     .content-boiler .card-boiler .data-select {
       display: flex;
       gap: 10px;
