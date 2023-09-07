@@ -351,6 +351,12 @@ from {
   height: 44px;
   border: 1px solid rgba(0, 0, 0, 0.17);
   background: #fff;
+  // &::placeholder {
+  //   color: #3d3d3d;
+  //   &:hover {
+  //     background-color: ;
+  //   }
+  // }
 
   @media (max-width: 767px) {
     height: 40px;
