@@ -4662,7 +4662,9 @@ nav {
       .state .state-content .state-card__data a {
         font-size: 20px;
         font-style: normal;
-        font-weight: 500; }
+        font-weight: 500;
+        text-decoration-line: underline !important;
+        color: #466D92; }
       .state .state-content .state-card__data p {
         font-weight: 300;
         line-height: normal;
