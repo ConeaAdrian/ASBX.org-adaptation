@@ -1186,6 +1186,25 @@ nav {
       font-size: 38px;
       line-height: 44px; } }
 
+@media (max-width: 992px) {
+  .index-page .index-image-logo {
+    display: block !important; } }
+
+.index-page .index-image-color {
+  display: none !important; }
+
+.index-page .nav-mobile span,
+.index-page .nav-mobile span:before,
+.index-page .nav-mobile span:after {
+  cursor: pointer;
+  background-color: #f7fcff !important; }
+
+.index-page #nav-toggle.active span:after, .index-page #nav-toggle.active span:before {
+  background-color: #324A74 !important; }
+
+.index-page #nav-toggle.active span {
+  background-color: transparent !important; }
+
 .index-page .header-section {
   position: absolute;
   width: 100%;
@@ -1290,8 +1309,7 @@ nav {
           padding: 15px; } }
       @media (max-width: 475px) {
         .index-page .principal-content .information-hero .statistic {
-          flex-direction: column;
-          gap: 15px; } }
+          gap: 8px; } }
       .index-page .principal-content .information-hero .statistic__data {
         display: flex;
         flex-direction: column;
@@ -1307,6 +1325,9 @@ nav {
         @media (max-width: 767px) {
           .index-page .principal-content .information-hero .statistic p {
             font-size: 32px; } }
+        @media (max-width: 475px) {
+          .index-page .principal-content .information-hero .statistic p {
+            font-size: 26px; } }
       .index-page .principal-content .information-hero .statistic span {
         color: #fff;
         font-size: 14px;
@@ -1314,6 +1335,9 @@ nav {
         @media (max-width: 767px) {
           .index-page .principal-content .information-hero .statistic span {
             font-size: 12px; } }
+        @media (max-width: 475px) {
+          .index-page .principal-content .information-hero .statistic span {
+            font-size: 10px; } }
     .index-page .principal-content .information-hero::before {
       content: "";
       background: #bc2649;
@@ -1333,7 +1357,7 @@ nav {
           height: 90px; } }
       @media (max-width: 475px) {
         .index-page .principal-content .information-hero::before {
-          height: 80%; } }
+          height: 50%; } }
     .index-page .principal-content .information-hero .principal-text {
       position: relative;
       z-index: 105;

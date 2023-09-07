@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function startClaims() {
   document.getElementById('claimForm').style.display = 'block';
-  document.body.appendChild(createOverlay());
+
 }
 
 function createOverlay() {
