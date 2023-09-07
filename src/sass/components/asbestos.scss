@@ -25,6 +25,54 @@
     display: flex;
     flex-direction: column;
   }
+  .tick-section {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    .interogativ-sentence {
+      background-color: #bc2649;
+      color: #fff;
+      font-size: 70px;
+      border-radius: 50%;
+      stroke-width: 1px;
+      stroke: rgba(50, 74, 116, 0.31);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      width: 80px;
+      height: 80px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      position: absolute;
+      top: -45px;
+      left: 20px;
+    }
+    .tick-element {
+      padding: 50px 20px 20px;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      &__information {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+
+        p {
+          color: #324a74;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
 }
 
 .occupational {
@@ -84,118 +132,59 @@
     }
   }
 }
-// .multiple-page {
-//   .video {
-//     width: 100%;
-//     max-width: 662px;
-//     height: 351px;
-//     margin: 15px auto 55px auto;
-//     display: flex;
-//   }
 
-//   .component-information {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-top: 18px;
-//     margin-bottom: 20px;
-//     gap: 10px;
-//     .content-summarizer {
-//       width: 100%;
-//       padding: 17px 27px;
-//       border-radius: 4px 4px 0px 0px;
-//       border: 1px solid rgba(0, 0, 0, 0.1);
-//       background: #fcfaf6;
-//       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
-//       p {
-//         text-decoration-line: underline;
-//         font-weight: 400;
-//       }
-//       li {
-//         color: #BC2649;
-//         text-decoration-line: underline;
-//         text-transform: capitalize;
-//         margin-top: 3px;
-//         font-size: 14px;
-//         font-weight: 500;
-//       }
-//       ol {
-//         margin-top: 0 !important;
-//         margin-bottom: 0;
-//       }
-//       ul {
-//         p {
-//           font-size: 14px;
-//           font-weight: 400;
-//           text-decoration-line: underline;
-//           color: #000 !important;
-//         }
-//       }
-//     }
-//     img {
-//       width: auto;
-//       height: auto;
-//     }
-//   }
+.faq-component {
+  background: #f7f7f7;
+  h2 {
+    text-align: center;
+  }
+  .bar {
+    margin: 7px auto;
+  }
+}
 
-//   ul li:before {
-//     content: "•";
-//     color: #767676;
-//     padding-right: 15px;
-//     text-decoration-line: blink;
-//   }
-//   ul {
-//     margin-top: 10px;
-//     margin-bottom: 20px;
-//     li {
-//       display: flex;
-//       text-decoration-line: blink !important;
-//       p {
-//         color: #767676;
-//       }
-//     }
-//   }
+.faq-answer {
+  display: block;
+}
 
-//   p {
-//     line-height: 22px;
-//   }
-//   span {
-//     color: #bc2649;
-//     font-size: 18px;
-//   }
-//   h2 {
-//     margin-top: 15px;
-//   }
-//   ol {
-//     margin-top: 16px;
-//     ul {
-//       margin: 0;
-//     }
-//     li {
-//       color: #575757;
-//       font-size: 16px;
-//       font-weight: 400;
-//       margin-top: 4px;
-//       b {
-//         color: #575757;
-//         font-size: 16px !important;
-//         font-weight: 500;
-//       }
-//     }
-//   }
-//   b {
-//     font-size: 16px !important;
-//     font-weight: 500;
-//   }
-//   tbody {
-//     display: flex;
-//     width: 100%;
-//     max-width: none !important;
-//   }
 
-//   .company-img {
-//     display: flex;
-//     flex-direction: column;
-//     margin-left: 55px;
-//     gap: 5px;
-//   }
-// }
+.faq-container {
+  border-radius: 18px;
+  box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+  width: 80%;
+  margin: 20px auto;
+  padding: 60px 90px;
+  background-color: #fff;
+
+  .faq-item {
+    border-bottom: 1px solid #ccc;
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      cursor: pointer;
+      font-weight: bold;
+      border-bottom: 1px solid #d9dbe9;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      color: #324A74;
+
+      .toggle-icon {
+        transition: transform 0.3s;
+      }
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 0 10px 0;
+    }
+  }
+}

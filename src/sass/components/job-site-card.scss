@@ -28,9 +28,9 @@
   @media (max-width: 667px) {
     width: 100%;
   }
-select {
-  font-size: 15px;
-}
+  select {
+    font-size: 15px;
+  }
   a {
     color: #15528e !important;
     font-size: 18px;
@@ -73,6 +73,11 @@ select {
       text-decoration-line: underline;
       color: #000 !important;
     }
+  }
+  &__select {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -173,7 +178,7 @@ select {
   p {
     font-weight: 400;
     text-transform: capitalize;
-    color: #15528e!important;
+    color: #15528e !important;
     font-size: 18px;
     font-style: normal;
     line-height: 22px;

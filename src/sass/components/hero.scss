@@ -410,10 +410,16 @@
         button {
           width: 280px;
         }
+        b {
+          color: #fff;
+          font-size: 20px;
+          line-height: normal;
+          text-transform: uppercase;
+        }
         p {
           color: #fff;
           font-size: 20px;
-          font-weight: 700;
+          font-weight: 500;
           line-height: normal;
           text-transform: uppercase;
         }
@@ -650,6 +656,9 @@
         @media (max-width: 992px) {
           padding-left: 4rem;
         }
+        @media (max-width: 475px) {
+          padding-left: 3rem;
+        }
   
         li {
           width: 28%;
@@ -667,14 +676,14 @@
             line-height: 26px;
             text-decoration-line: underline !important;
             @media (max-width: 475px) {
-              font-size: 14px;
+              font-size: 18px;
             }
           }
           @media (max-width: 550px) {
             width: 34%;
           }
           @media (max-width: 375px) {
-            width: 50%;
+            width: 42%;
           }
         }
       }

@@ -64,7 +64,7 @@ h2 {
   color: #003366;
   font-size: 26px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 32px;
   padding-top: 40px; }
   @media (max-width: 475px) {
@@ -974,6 +974,19 @@ nav {
   color: #3d3d3d;
   outline: none; }
 
+.pulse-arrow {
+  background-image: url("/static/common/img/search/arrow-red.svg");
+  background-position: 8px center !important;
+  background-size: 18px !important;
+  transition: background-image 0.2s ease-in-out;
+  animation: pulse_arrow 0.7s infinite; }
+
+@keyframes pulse_arrow {
+  from {
+    background-image: url("/static/common/img/search/arrow-red.svg"); }
+  to {
+    background-image: none; } }
+
 .search-form-select,
 .search-form-input {
   position: relative;
@@ -1002,11 +1015,9 @@ nav {
       height: 34px !important; } }
   .search-form-select.search-form-select,
   .search-form-input.search-form-select {
-    background-image: url("../../img/search-user.svg");
     background-repeat: no-repeat;
     background-position: 8px center;
-    background-size: 18px;
-    background-size: 14px; }
+    background-size: 18px; }
   .search-form-select.search-form-input,
   .search-form-input.search-form-input {
     background-image: url("../../img/location-user.svg");
@@ -1014,7 +1025,6 @@ nav {
     background-position: 12px center;
     background-size: 18px;
     align-items: center;
-    background-size: 14px;
     border-radius: 0; }
 
 .search-principal {
@@ -1538,10 +1548,15 @@ nav {
     width: 100%; }
     .index-page .section-meso .active-section button {
       width: 280px; }
+    .index-page .section-meso .active-section b {
+      color: #fff;
+      font-size: 20px;
+      line-height: normal;
+      text-transform: uppercase; }
     .index-page .section-meso .active-section p {
       color: #fff;
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 500;
       line-height: normal;
       text-transform: uppercase; }
 
@@ -1738,6 +1753,9 @@ nav {
   @media (max-width: 992px) {
     .index-page .state-connection .state-list-index {
       padding-left: 4rem; } }
+  @media (max-width: 475px) {
+    .index-page .state-connection .state-list-index {
+      padding-left: 3rem; } }
   .index-page .state-connection .state-list-index li {
     width: 28%;
     color: #000;
@@ -1753,13 +1771,13 @@ nav {
       text-decoration-line: underline !important; }
       @media (max-width: 475px) {
         .index-page .state-connection .state-list-index li a {
-          font-size: 14px; } }
+          font-size: 18px; } }
     @media (max-width: 550px) {
       .index-page .state-connection .state-list-index li {
         width: 34%; } }
     @media (max-width: 375px) {
       .index-page .state-connection .state-list-index li {
-        width: 50%; } }
+        width: 42%; } }
 
 .index-page .veterans {
   background: #fafafa; }
@@ -2004,7 +2022,10 @@ nav {
 
 .next-city .search-alphabet {
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; }
 
 .baner-company {
   width: 100%;
@@ -2590,6 +2611,9 @@ nav {
     color: #15528e;
     font-weight: 500;
     text-decoration-line: underline; }
+
+.content-ship .ship-img {
+  padding: 15px 0; }
 
 .content-ship .content-box-ship {
   display: flex;
@@ -3764,6 +3788,31 @@ nav {
   background-color: rgba(25, 37, 58, 0.5);
   z-index: 999; }
 
+.close-popup-button {
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+  background: #bc2649;
+  height: 16px;
+  width: 16px;
+  border-radius: 4px; }
+
+.close-popup-button:after, .close-popup-button:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  height: 2px;
+  width: 12px;
+  background: #fff; }
+
+.close-popup-button:after {
+  transform: rotate(45deg); }
+
+.close-popup-button:before {
+  transform: rotate(-45deg); }
+
 .mesothelioma .meso-img {
   width: 100%;
   max-width: 358px;
@@ -3787,6 +3836,47 @@ nav {
   gap: 20px;
   display: flex;
   flex-direction: column; }
+
+.mesothelioma .tick-section {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  position: relative; }
+  .mesothelioma .tick-section .interogativ-sentence {
+    background-color: #bc2649;
+    color: #fff;
+    font-size: 70px;
+    border-radius: 50%;
+    stroke-width: 1px;
+    stroke: rgba(50, 74, 116, 0.31);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: -45px;
+    left: 20px; }
+  .mesothelioma .tick-section .tick-element {
+    padding: 50px 20px 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column; }
+    .mesothelioma .tick-section .tick-element__information {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start; }
+      .mesothelioma .tick-section .tick-element__information p {
+        color: #324a74;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+      .mesothelioma .tick-section .tick-element__information img {
+        width: 18px;
+        height: 18px; }
 
 .occupational .content-summarizer {
   margin-top: 30px;
@@ -3834,6 +3924,47 @@ nav {
     font-weight: 700 !important;
     line-height: normal;
     text-transform: capitalize; }
+
+.faq-component {
+  background: #f7f7f7; }
+  .faq-component h2 {
+    text-align: center; }
+  .faq-component .bar {
+    margin: 7px auto; }
+
+.faq-answer {
+  display: block; }
+
+.faq-container {
+  border-radius: 18px;
+  box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+  width: 80%;
+  margin: 20px auto;
+  padding: 60px 90px;
+  background-color: #fff; }
+  .faq-container .faq-item {
+    border-bottom: 1px solid #ccc; }
+    .faq-container .faq-item:last-child {
+      border-bottom: none; }
+    .faq-container .faq-item .faq-question {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      cursor: pointer;
+      font-weight: bold;
+      border-bottom: 1px solid #d9dbe9;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      color: #324A74; }
+      .faq-container .faq-item .faq-question .toggle-icon {
+        transition: transform 0.3s; }
+    .faq-container .faq-item .faq-answer {
+      display: none;
+      padding: 0 0 10px 0; }
 
 .top-search-mobile {
   display: none;
@@ -4378,6 +4509,10 @@ nav {
     font-weight: 400;
     text-decoration-line: underline;
     color: #000 !important; }
+  .card-job-site__select {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
 
 .compensation-table {
   margin-top: 20px;
@@ -4551,6 +4686,10 @@ nav {
       position: absolute;
       right: 5px;
       top: 5px; }
+    .content-boiler .card-boiler__select {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
 
 .alternative {
   display: block;

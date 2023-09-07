@@ -782,3 +782,29 @@
   background-color: rgba(25, 37, 58, 0.5);
   z-index: 999;
 }
+
+.close-popup-button{
+  position: absolute;
+  cursor: pointer;
+  right:10px;
+  top:10px;
+  background: #bc2649;
+  height:16px;
+  width:16px;
+  border-radius: 4px;
+}
+.close-popup-button:after,.close-popup-button:before{
+  content: "";
+  position: absolute;
+  top:7px;
+  left:2px;
+  height:2px;
+  width: 12px;
+  background: #fff;
+}
+.close-popup-button:after{
+  transform: rotate(45deg);
+}
+.close-popup-button:before{
+  transform: rotate(-45deg);
+}
