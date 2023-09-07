@@ -542,7 +542,6 @@
         }
         .custom-search-form {
           max-width: 620px;
-          height: 55px;
           width: 100%;
           margin: 0 auto;
   
@@ -551,8 +550,12 @@
           }
         }
         .search-form-button {
+          // padding: 18px;
+          width: 55px;
           @media (max-width: 767px) {
             height: 40px !important;
+            width: 40px;
+            // padding: none;
           }
         }
       }

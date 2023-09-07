@@ -1650,14 +1650,16 @@ nav {
         height: 40px !important; } }
     .index-page .index-search__content .custom-search-form {
       max-width: 620px;
-      height: 55px;
       width: 100%;
       margin: 0 auto; }
       .index-page .index-search__content .custom-search-form input {
         height: 55px; }
-    @media (max-width: 767px) {
-      .index-page .index-search__content .search-form-button {
-        height: 40px !important; } }
+    .index-page .index-search__content .search-form-button {
+      width: 55px; }
+      @media (max-width: 767px) {
+        .index-page .index-search__content .search-form-button {
+          height: 40px !important;
+          width: 40px; } }
 
 .index-page .choose-asbx {
   background: #fafafa;
@@ -2947,7 +2949,6 @@ nav {
       .job-site .content-products__categorization-cart {
         max-width: none; } }
     .job-site .content-products__categorization-cart p {
-      margin-bottom: 10px;
       font-size: 20px;
       font-weight: 500;
       line-height: normal;
@@ -2963,15 +2964,6 @@ nav {
         font-size: 16px;
         font-weight: 300;
         margin-bottom: 0; }
-
-.job-site .high-risk {
-  padding-left: 20px;
-  margin-top: 10px; }
-  .job-site .high-risk li {
-    font-size: 18px;
-    list-style-type: disc;
-    font-weight: 300;
-    line-height: 26px; }
 
 .job-site .jobsite-card {
   padding: 21px 16px;
