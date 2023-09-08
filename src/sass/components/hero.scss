@@ -521,6 +521,12 @@
         .container {
           padding: 30px 10px;
         }
+        .search-general {
+          display: block;
+          .search-arrow {
+            display: none;
+          }
+        }
       }
       &__content {
         width: 100%;

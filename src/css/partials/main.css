@@ -1652,6 +1652,10 @@ nav {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1) !important; }
     .index-page .index-search .search-principal .container {
       padding: 30px 10px; }
+    .index-page .index-search .search-principal .search-general {
+      display: block; }
+      .index-page .index-search .search-principal .search-general .search-arrow {
+        display: none; }
   .index-page .index-search__content {
     width: 100%;
     padding-top: 40px;
