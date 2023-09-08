@@ -183,12 +183,12 @@
 </header>
 
 <div class="header-search"><div id="search-principal" class="search-principal">
-  <div class="container">
+  <div class="container search-general">
+    <img class="search-arrow" src="../../img/Search-arrow.svg" alt="">
     <form class="custom-search-form" id="main-search-form">
         <input type="hidden" id="search-state-data" name="state-abbr"></input>
         <input type="hidden" id="search-city-data" name="city-name"></input>
         <input type="hidden" id="search-zip-data" name="zip-code"></input>
-        
         <div class="search-form-input-container">
             <input class="search-form-input" id='search-form-input' type="text" placeholder="city, state or zip code"
                    onkeyup="searchEngine(this)" onclick="openCustomSelect(this)"></input>

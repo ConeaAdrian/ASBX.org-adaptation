@@ -318,7 +318,7 @@ nav {
   //   outline: none;
   // }
 }
-.pulse-arrow{
+.pulse-arrow {
   background-image: url("/static/common/img/search/arrow-red.svg");
   background-position: 8px center !important;
   background-size: 18px !important;
@@ -326,10 +326,10 @@ nav {
   animation: pulse_arrow 0.7s infinite;
 }
 @keyframes pulse_arrow {
-from {
-  background-image: url("/static/common/img/search/arrow-red.svg");
-}
-  to{
+  from {
+    background-image: url("/static/common/img/search/arrow-red.svg");
+  }
+  to {
     background-image: none;
   }
 }
@@ -387,6 +387,14 @@ from {
   @media (max-width: 992px) {
     background: #324a74;
   }
+  .search-general {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
 }
 
 .sticky-search {
@@ -395,7 +403,7 @@ from {
   width: 100%;
   transition: top 0.3s;
   @media (max-width: 375px) {
-   top: 45px;
+    top: 45px;
   }
 }
 .hidden-search {
@@ -427,7 +435,10 @@ from {
   background: #fff;
   border-top: transparent;
 }
-
+.search-arrow {
+  width: 19px;
+  height: 17px;
+}
 .search-form-select-container,
 .search-form-input-container {
   position: relative;
