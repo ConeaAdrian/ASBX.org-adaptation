@@ -3892,9 +3892,13 @@ nav {
         font-style: normal;
         font-weight: 400;
         line-height: normal; }
-      .mesothelioma .tick-section .tick-element__information img {
+      .mesothelioma .tick-section .tick-element__information::before {
+        content: "";
+        background-image: url("../../img/Vector-.svg");
         width: 18px;
-        height: 18px; }
+        height: 18px;
+        display: inline-block;
+        padding-right: 18px; }
 
 .occupational .content-summarizer {
   margin-top: 30px;
