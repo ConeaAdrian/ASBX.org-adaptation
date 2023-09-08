@@ -1704,6 +1704,9 @@ nav {
 .index-page .choose-asbx {
   background: #fafafa;
   margin-top: 60px; }
+  @media (max-width: 475px) {
+    .index-page .choose-asbx {
+      margin-top: 0px; } }
   .index-page .choose-asbx__content {
     margin-top: 60px;
     display: flex;
@@ -1876,8 +1879,7 @@ nav {
 .index-page .red-text-hero {
   color: #bc2649;
   font-size: 36px;
-  font-weight: 700;
-  line-height: 30px; }
+  font-weight: 700; }
   @media (max-width: 767px) {
     .index-page .red-text-hero {
       text-align: center;

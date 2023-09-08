@@ -573,12 +573,10 @@
         }
       }
       .search-form-button {
-        // padding: 18px;
         width: 55px;
         @media (max-width: 767px) {
           height: 40px !important;
           width: 40px;
-          // padding: none;
         }
       }
     }
@@ -586,6 +584,9 @@
   .choose-asbx {
     background: #fafafa;
     margin-top: 60px;
+    @media (max-width: 475px) {
+      margin-top: 0px;
+    }
     &__content {
       margin-top: 60px;
       display: flex;
@@ -787,7 +788,6 @@
     color: #bc2649;
     font-size: 36px;
     font-weight: 700;
-    line-height: 30px;
     @media (max-width: 767px) {
       text-align: center;
       font-size: 26px;
