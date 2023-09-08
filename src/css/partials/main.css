@@ -1196,16 +1196,18 @@ nav {
 .index-page h2 {
   font-size: 48px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: normal;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    .index-page h2 {
+      text-align: center; } }
   @media (max-width: 475px) {
     .index-page h2 {
-      font-size: 38px;
-      line-height: 44px;
-      text-align: center; } }
+      font-size: 36px;
+      margin-bottom: 30px; } }
 
 @media (max-width: 992px) {
   .index-page .index-image-logo {
@@ -1220,8 +1222,9 @@ nav {
   cursor: pointer;
   background-color: #f7fcff !important; }
 
-.index-page #nav-toggle.active span:after, .index-page #nav-toggle.active span:before {
-  background-color: #324A74 !important; }
+.index-page #nav-toggle.active span:after,
+.index-page #nav-toggle.active span:before {
+  background-color: #324a74 !important; }
 
 .index-page #nav-toggle.active span {
   background-color: transparent !important; }
@@ -1592,7 +1595,10 @@ nav {
       .index-page .working-stages__text {
         font-size: 22px; } }
     .index-page .working-stages__text b {
-      font-size: 26px !important; }
+      font-size: 26px; }
+      @media (max-width: 475px) {
+        .index-page .working-stages__text b {
+          font-size: 22px; } }
   .index-page .working-stages .works-step {
     display: flex;
     justify-content: space-between;
@@ -1716,11 +1722,6 @@ nav {
       @media (max-width: 767px) {
         .index-page .choose-asbx__content .information {
           max-width: none; } }
-      .index-page .choose-asbx__content .information h3 {
-        color: #bc2649;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 30px; }
       .index-page .choose-asbx__content .information .list-nomerotation {
         margin-top: 0; }
         .index-page .choose-asbx__content .information .list-nomerotation li {
@@ -1779,6 +1780,9 @@ nav {
     width: 28%;
     color: #000;
     list-style-type: disc; }
+    @media (max-width: 767px) {
+      .index-page .state-connection .state-list-index li {
+        width: 30%; } }
     .index-page .state-connection .state-list-index li::before {
       margin-right: 6px;
       text-decoration-line: none; }
@@ -1794,9 +1798,9 @@ nav {
     @media (max-width: 550px) {
       .index-page .state-connection .state-list-index li {
         width: 34%; } }
-    @media (max-width: 375px) {
+    @media (max-width: 475px) {
       .index-page .state-connection .state-list-index li {
-        width: 42%; } }
+        width: 45%; } }
 
 .index-page .veterans {
   background: #fafafa; }
@@ -1816,14 +1820,6 @@ nav {
       @media (max-width: 767px) {
         .index-page .veterans .veterans-content .military-forces {
           max-width: none; } }
-      .index-page .veterans .veterans-content .military-forces h3 {
-        color: #bc2649;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 30px; }
-        @media (max-width: 475px) {
-          .index-page .veterans .veterans-content .military-forces h3 {
-            font-size: 32px; } }
       .index-page .veterans .veterans-content .military-forces p {
         font-size: 20px;
         font-weight: 400;
@@ -1862,15 +1858,6 @@ nav {
   @media (max-width: 767px) {
     .index-page .lawyer-specialist .about-lawyer {
       max-width: none; } }
-  .index-page .lawyer-specialist .about-lawyer h3 {
-    color: #bc2649;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 44px; }
-    @media (max-width: 767px) {
-      .index-page .lawyer-specialist .about-lawyer h3 {
-        font-size: 32px;
-        line-height: 34px; } }
   .index-page .lawyer-specialist .about-lawyer p {
     font-size: 20px;
     font-weight: 400;
@@ -1885,6 +1872,16 @@ nav {
 
 .index-page .lawyer-specialist .active-section p {
   font-weight: 400; }
+
+.index-page .red-text-hero {
+  color: #bc2649;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px; }
+  @media (max-width: 767px) {
+    .index-page .red-text-hero {
+      text-align: center;
+      font-size: 26px; } }
 
 .city-content .data-free-consultation {
   font-size: 18px;
