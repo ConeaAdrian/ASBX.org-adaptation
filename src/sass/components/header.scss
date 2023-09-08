@@ -391,9 +391,6 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    @media (max-width: 767px) {
-      display: none;
-    }
   }
 }
 
@@ -438,6 +435,9 @@ nav {
 .search-arrow {
   width: 19px;
   height: 17px;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 .search-form-select-container,
 .search-form-input-container {
