@@ -1356,13 +1356,14 @@ nav {
       .index-page .principal-content .information-hero .statistic span {
         color: #fff;
         font-size: 14px;
-        font-weight: 400; }
+        font-weight: 700;
+        text-transform: uppercase; }
         @media (max-width: 767px) {
           .index-page .principal-content .information-hero .statistic span {
             font-size: 12px; } }
         @media (max-width: 475px) {
           .index-page .principal-content .information-hero .statistic span {
-            font-size: 10px; } }
+            font-size: 9px; } }
     .index-page .principal-content .information-hero::before {
       content: "";
       background: #bc2649;
@@ -1665,7 +1666,8 @@ nav {
   .index-page .index-search__content {
     width: 100%;
     padding-top: 40px;
-    position: relative; }
+    position: relative;
+    z-index: 2; }
     .index-page .index-search__content p {
       top: 18px;
       left: 14rem;
