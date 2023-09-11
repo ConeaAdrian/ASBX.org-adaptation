@@ -1,12 +1,12 @@
 .content-table {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   @media (max-width: 620px) {
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .company-logo {
     width: 100%;
@@ -74,63 +74,12 @@
       color: #466d92;
       font-size: 16px;
       font-weight: 400;
-      line-height: 28px;
+      line-height: 30px;
       text-decoration-line: underline !important;
       text-transform: capitalize;
     }
   }
 }
-
-// .content-table {
-//   margin-top: 20px;
-//   display: flex;
-//   gap: 20px;
-//   justify-content: space-between;
-//   margin-bottom: 30px;
-
-//   @media (max-width: 475px) {
-//     flex-direction: column;
-//     margin-bottom: 10px;
-//   }
-
-//   .content-summarizer {
-//     counter-reset: itemNumber; // Inițializează contorul
-
-//     .table-item::before {
-//       counter-increment: itemNumber; // Incrementăm contorul
-//       content: counter(itemNumber) ". "; // Afișează numărul
-//       margin-right: 5px; // Un mic spațiu între număr și text
-//     }
-//   }
-
-//   .general-information-table {
-//     img {
-//       position: absolute;
-//       right: -14px;
-//       transform: translateY(-15px);
-
-//       @media (max-width: 475px) {
-//         right: -7px;
-//       }
-//     }
-
-//     .required-asbx {
-//       p {
-//         @media (max-width: 475px) {
-//           font-size: 14px;
-//         }
-//       }
-//     }
-//   }
-
-//   span {
-//     color: #000;
-//     font-size: 20px;
-//     font-weight: 500;
-//     line-height: normal;
-//     text-transform: capitalize;
-//   }
-// }
 
 .nearby-cities {
   width: 100%;
@@ -169,7 +118,7 @@
 .required-asbx {
   width: 100%;
   max-width: 280px;
-  gap: 10px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   @media (max-width: 620px) {
@@ -186,7 +135,7 @@
     display: grid;
     border-left: 2px solid #bc2649;
     padding-left: 10px;
-    gap: 2px;
+    gap: 4px;
     b {
       color: #bc2649;
       font-size: 16px !important;
@@ -242,6 +191,7 @@
       color: #466d92;
       font-size: 16px;
       font-weight: 400;
+      line-height: 34px;
     }
     .item-number::before {
       counter-increment: itemNumber;

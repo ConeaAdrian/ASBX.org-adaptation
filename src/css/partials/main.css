@@ -66,7 +66,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
-  padding-top: 40px; }
+  padding-top: 20px; }
   @media (max-width: 475px) {
     h2 {
       font-size: 26px;
@@ -323,16 +323,13 @@ button {
     line-height: 20px;
     text-decoration-line: underline !important;
     color: #466D92; }
-    @media (max-width: 475px) {
-      .breadcrumb a {
-        font-size: 12px; } }
   .breadcrumb span {
     color: rgba(0, 0, 0, 0.61);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    margin: 0 4px; }
+    margin: 0 3px; }
   .breadcrumb .last-element {
     color: #BC2649 !important;
     font-size: 14px;
@@ -563,7 +560,7 @@ button {
   width: 100%;
   max-width: 110px;
   height: 2px;
-  margin-top: 10px;
+  margin-top: 4px;
   margin-bottom: 20px; }
 
 footer {
@@ -1206,7 +1203,7 @@ nav {
       text-align: center; } }
   @media (max-width: 475px) {
     .index-page h2 {
-      font-size: 36px;
+      font-size: 30px;
       margin-bottom: 30px; } }
 
 @media (max-width: 992px) {
@@ -1766,6 +1763,9 @@ nav {
   margin-top: 15px;
   text-align: center;
   margin: 15px auto 40px; }
+  @media (max-width: 475px) {
+    .index-page .state-connection p {
+      font-size: 22px; } }
 
 .index-page .state-connection .state-list-index {
   display: flex;
@@ -1833,7 +1833,8 @@ nav {
         border-bottom: 1px solid #c7c7c7;
         padding-bottom: 5px;
         max-width: 380px;
-        width: 100%; }
+        width: 100%;
+        text-align: center; }
       .index-page .veterans .veterans-content .military-forces__img {
         max-width: 390px;
         width: 100%;
@@ -1873,7 +1874,10 @@ nav {
     max-width: 280px; }
     @media (max-width: 767px) {
       .index-page .lawyer-specialist .about-lawyer .button-red {
-        margin-top: 0; } }
+        margin-top: 0;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center; } }
 
 .index-page .lawyer-specialist .active-section p {
   font-weight: 400; }
@@ -1984,38 +1988,41 @@ nav {
 
 .search-result {
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 28px; }
   .search-result p {
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400; }
   .search-result ul {
     padding-left: 25px; }
     .search-result ul li {
+      line-height: 26px;
       font-size: 18px;
       font-weight: 300;
       list-style-type: disc !important; }
 
 .search-alphabet {
   margin-top: 20px;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
   .search-alphabet h3 {
     color: #bc2649;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
     text-transform: capitalize; }
   .search-alphabet .alphabet {
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: 14px;
     margin-top: 10px; }
     .search-alphabet .alphabet a {
       color: #15528e;
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 28px;
-      letter-spacing: 3.6px;
       text-decoration-line: underline !important; }
       @media (max-width: 475px) {
         .search-alphabet .alphabet a {
@@ -2302,15 +2309,15 @@ nav {
     top: 150px; } }
 
 .content-table {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  margin-bottom: 30px; }
+  margin-bottom: 60px; }
   @media (max-width: 620px) {
     .content-table {
       flex-direction: column;
-      margin-bottom: 10px; } }
+      margin-bottom: 20px; } }
   .content-table .company-logo {
     width: 100%;
     max-width: 303px;
@@ -2364,7 +2371,7 @@ nav {
     color: #466d92;
     font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 30px;
     text-decoration-line: underline !important;
     text-transform: capitalize; }
 
@@ -2400,7 +2407,7 @@ nav {
 .required-asbx {
   width: 100%;
   max-width: 280px;
-  gap: 10px;
+  gap: 20px;
   display: flex;
   flex-direction: column; }
   @media (max-width: 620px) {
@@ -2416,7 +2423,7 @@ nav {
     display: grid;
     border-left: 2px solid #bc2649;
     padding-left: 10px;
-    gap: 2px; }
+    gap: 4px; }
     .required-asbx .block-data b {
       color: #bc2649;
       font-size: 16px !important; }
@@ -2463,7 +2470,8 @@ nav {
     .content-summarizer .table-item .item-number {
       color: #466d92;
       font-size: 16px;
-      font-weight: 400; }
+      font-weight: 400;
+      line-height: 34px; }
     .content-summarizer .table-item .item-number::before {
       counter-increment: itemNumber;
       content: counter(itemNumber) ".";
@@ -2961,12 +2969,14 @@ nav {
   margin-top: 5px; }
 
 .job-site .responsible-company {
-  margin: 10px 0; }
+  margin: 10px 0;
+  padding-left: 20px; }
   .job-site .responsible-company li {
     color: #324a74;
     margin-top: 0;
     margin-bottom: 3px;
-    line-height: 26px; }
+    line-height: 26px;
+    list-style-type: disc; }
     .job-site .responsible-company li a {
       font-size: 18px;
       font-weight: 400;
@@ -4479,7 +4489,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px; }
   .content-card-job .button-red {
     width: 100%; }

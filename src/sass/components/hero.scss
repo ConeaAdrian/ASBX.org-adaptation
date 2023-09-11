@@ -11,7 +11,7 @@
       text-align: center;
     }
     @media (max-width: 475px) {
-      font-size: 36px;
+      font-size: 30px;
       margin-bottom: 30px;
     }
   }
@@ -656,6 +656,9 @@
       margin-top: 15px;
       text-align: center;
       margin: 15px auto 40px;
+      @media (max-width: 475px) {
+        font-size: 22px;
+      }
     }
     .state-list-index {
       display: flex;
@@ -731,6 +734,7 @@
           padding-bottom: 5px;
           max-width: 380px;
           width: 100%;
+          text-align: center;
         }
 
         &__img {
@@ -777,6 +781,9 @@
         max-width: 280px;
         @media (max-width: 767px) {
           margin-top: 0;
+          display: flex;
+          margin: 0 auto;
+          justify-content: center;
         }
       }
     }
