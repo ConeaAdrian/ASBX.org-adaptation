@@ -69,6 +69,8 @@
         max-width: 415px;
         width: 100%;
         padding-top: 70px;
+        position: inherit;
+        z-index: 100;
         h1,
         p,
         span {
@@ -182,6 +184,7 @@
           font-size: 14px;
           font-weight: 700;
           text-transform: uppercase;
+          text-align: center;
           @media (max-width: 767px) {
             font-size: 12px;
           }
