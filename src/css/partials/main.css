@@ -1804,7 +1804,7 @@ nav {
   list-style-type: disc;
   break-inside: avoid;
   margin-top: 0;
-  padding-top: 5; }
+  padding-top: 8px; }
   .index-page .state-connection .state-list-index li::before {
     margin-right: 6px;
     text-decoration-line: none; }
@@ -4336,6 +4336,7 @@ nav {
 
 .mark-text {
   margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 10px;
   font-size: 18px;
   font-weight: 300; }
