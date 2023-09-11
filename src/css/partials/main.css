@@ -2042,23 +2042,29 @@ nav {
           line-height: 20px; } }
 
 .trust-list {
-  padding-left: 0;
-  gap: 10px;
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .trust-list li {
-    text-decoration-line: underline;
-    width: 48%; }
-    @media (max-width: 660px) {
-      .trust-list li {
-        width: 100%; } }
-    .trust-list li a {
-      color: #324a74;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 300; }
+  column-count: 2;
+  margin-top: 20px; }
+  @media (max-width: 992px) {
+    .trust-list {
+      column-count: 1; } }
+
+.trust-list li {
+  color: #000;
+  break-inside: avoid;
+  margin-top: 0;
+  padding-top: 8px; }
+  .trust-list li::before {
+    margin-right: 6px;
+    text-decoration-line: none; }
+  .trust-list li a {
+    color: #324a74 !important;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    text-decoration-line: underline !important; }
+    @media (max-width: 475px) {
+      .trust-list li a {
+        font-size: 18px; } }
 
 .next-city .search-alphabet {
   margin-top: 20px;
@@ -3935,9 +3941,6 @@ nav {
 .occupational .boiler-general-img {
   width: 100%;
   height: auto; }
-
-.occupational .trust-list {
-  margin-left: 15px; }
 
 .occupational .boiler-occupation {
   padding-left: 25px;
