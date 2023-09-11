@@ -4346,21 +4346,29 @@ nav {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   gap: 8px;
   display: flex;
   flex-direction: column; }
   .mark-text li {
-    font-size: 18px;
+    font-size: 20px;
     list-style-type: disc;
     line-height: 26px;
     margin-top: 0; }
-    .mark-text li strong a {
-      color: #466d92;
-      font-size: 18px;
-      line-height: 26px;
-      text-decoration-line: underline !important; }
+    .mark-text li strong {
+      font-size: 20px !important;
+      font-weight: 400 !important; }
+      .mark-text li strong a {
+        color: #466d92;
+        font-size: 20px;
+        line-height: 26px;
+        text-decoration-line: underline !important; }
+
+.dinamic-element {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
 
 .dinamic-page h3 {
   margin-top: 20px;
@@ -4370,6 +4378,9 @@ nav {
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize; }
+
+.adapt-img {
+  color: #bc2649; }
 
 .city-state .data-info {
   margin-bottom: 0; }
