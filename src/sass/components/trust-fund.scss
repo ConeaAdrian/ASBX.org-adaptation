@@ -163,11 +163,15 @@
   margin-left: 10px;
   font-size: 18px;
   font-weight: 300;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
 
   li {
     font-size: 18px;
     list-style-type: disc;
     line-height: 26px;
+    margin-top: 0;
 
     strong {
       a {
