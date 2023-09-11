@@ -667,46 +667,40 @@
       }
     }
     .state-list-index {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      text-align: start;
-      align-items: center;
+      column-count: 3;
       margin-top: 20px;
       padding-left: 10rem;
-      @media (max-width: 992px) {
-        padding-left: 4rem;
+
+      @media (max-width: 767px) {
+        padding-left: 20%;
+        column-count: 2; /* optional, dacă dorești să reduci la 2 coloane pe ecrane mai mici */
       }
       @media (max-width: 475px) {
-        padding-left: 2rem;
+        padding-left: 15%;
+      }
+    }
+
+    .state-list-index li {
+      color: #000;
+      list-style-type: disc;
+      break-inside: avoid;
+      margin-top: 0;
+      padding-top: 5;
+
+      &::before {
+        margin-right: 6px;
+        text-decoration-line: none;
       }
 
-      li {
-        width: 28%;
-        color: #000;
-        list-style-type: disc;
-        @media (max-width: 767px) {
-          width: 30%;
-        }
-        &::before {
-          margin-right: 6px;
-          text-decoration-line: none;
-        }
-        a {
-          color: #324a74 !important;
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 26px;
-          text-decoration-line: underline !important;
-          @media (max-width: 475px) {
-            font-size: 18px;
-          }
-        }
-        @media (max-width: 550px) {
-          width: 34%;
-        }
+      a {
+        color: #324a74 !important;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        text-decoration-line: underline !important;
+
         @media (max-width: 475px) {
-          width: 45%;
+          font-size: 18px;
         }
       }
     }
