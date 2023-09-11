@@ -4346,7 +4346,8 @@ nav {
   font-weight: 300; }
   .mark-text li {
     font-size: 18px;
-    list-style-type: disc; }
+    list-style-type: disc;
+    line-height: 26px; }
     .mark-text li strong a {
       color: #466d92;
       font-size: 18px;
