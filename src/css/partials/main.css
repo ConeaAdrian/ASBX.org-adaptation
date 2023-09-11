@@ -163,6 +163,9 @@ strong {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px; }
 
+dl, dt, dd {
+  font-family: "Roboto Condensed", sans-serif; }
+
 .position-relative {
   position: relative; }
 
@@ -4011,7 +4014,8 @@ nav {
     padding: 0 0 20px 0;
     font-size: 18px;
     font-weight: 400;
-    line-height: 24px; }
+    line-height: 24px;
+    margin-left: 0; }
 
 .top-search-mobile {
   display: none;
