@@ -85,7 +85,7 @@
     display: flex;
 
     &:nth-child(even) td {
-      background: #FBFBFB;
+      background: #fbfbfb;
     }
   }
 
@@ -104,14 +104,14 @@
 
   .left-column {
     width: 100%;
-    background: #FBFBFB;
+    background: #fbfbfb;
 
     th {
       color: #bc2649;
       font-weight: 700;
       align-items: start;
       display: flex;
-      background: #FBFBFB;
+      background: #fbfbfb;
     }
 
     .claims-type {
@@ -154,7 +154,7 @@
   }
   span {
     font-size: 16px;
-    color: #BC2649;
+    color: #bc2649;
   }
 }
 .mark-text {
@@ -166,5 +166,26 @@
   li {
     font-size: 18px;
     list-style-type: disc;
+
+    b {
+      a {
+        color: #466d92;
+        font-size: 18px;
+        line-height: 26px;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}
+
+.dinamic-page {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  h3 {
+    color: #324a74;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
   }
 }

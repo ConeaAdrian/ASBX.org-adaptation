@@ -1844,8 +1844,11 @@ nav {
         border-bottom: 1px solid #c7c7c7;
         padding-bottom: 5px;
         max-width: 380px;
-        width: 100%;
-        text-align: center; }
+        width: 100%; }
+        @media (max-width: 767px) {
+          .index-page .veterans .veterans-content .military-forces b {
+            text-align: center;
+            margin: 0 auto; } }
       .index-page .veterans .veterans-content .military-forces__img {
         max-width: 390px;
         width: 100%;
@@ -4278,7 +4281,7 @@ nav {
     flex-direction: column;
     display: flex; }
     .compensation-section__table tr:nth-child(even) td {
-      background: #FBFBFB; }
+      background: #fbfbfb; }
   .compensation-section__table th,
   .compensation-section__table td {
     padding: 6px 10px;
@@ -4290,13 +4293,13 @@ nav {
     font-weight: bold; }
   .compensation-section__table .left-column {
     width: 100%;
-    background: #FBFBFB; }
+    background: #fbfbfb; }
     .compensation-section__table .left-column th {
       color: #bc2649;
       font-weight: 700;
       align-items: start;
       display: flex;
-      background: #FBFBFB; }
+      background: #fbfbfb; }
     .compensation-section__table .left-column .claims-type {
       text-transform: uppercase;
       font-weight: 500;
@@ -4327,7 +4330,7 @@ nav {
     font-size: 16px; }
   .legend-ratio span {
     font-size: 16px;
-    color: #BC2649; }
+    color: #bc2649; }
 
 .mark-text {
   margin-top: 20px;
@@ -4337,6 +4340,21 @@ nav {
   .mark-text li {
     font-size: 18px;
     list-style-type: disc; }
+    .mark-text li b a {
+      color: #466d92;
+      font-size: 18px;
+      line-height: 26px;
+      text-decoration-line: underline; }
+
+.dinamic-page {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .dinamic-page h3 {
+    color: #324a74;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize; }
 
 .city-state .data-info {
   margin-bottom: 0; }

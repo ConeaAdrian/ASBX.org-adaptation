@@ -734,7 +734,10 @@
           padding-bottom: 5px;
           max-width: 380px;
           width: 100%;
-          text-align: center;
+          @media (max-width: 767px) {
+            text-align: center;
+            margin: 0 auto;
+          }
         }
 
         &__img {
