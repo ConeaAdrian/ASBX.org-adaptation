@@ -183,7 +183,11 @@
     }
   }
 }
-
+.dinamic-element {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .dinamic-page {
   h3 {
     margin-top: 20px;
