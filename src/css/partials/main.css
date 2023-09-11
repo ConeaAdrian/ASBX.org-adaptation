@@ -1240,6 +1240,9 @@ nav {
   width: 100%;
   height: 900px;
   padding-top: 60px; }
+  @media (max-width: 475px) {
+    .index-page .principal-content {
+      height: 680px; } }
   .index-page .principal-content img {
     width: 100%;
     height: 100%;
@@ -3056,7 +3059,8 @@ nav {
   font-weight: 700; }
 
 .job-site .occupational {
-  margin-top: 10px; }
+  margin-top: 10px;
+  padding-left: 20px; }
   .job-site .occupational li {
     line-height: 26px;
     list-style-type: disc;
