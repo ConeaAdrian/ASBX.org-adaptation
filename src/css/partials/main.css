@@ -4980,6 +4980,10 @@ nav {
       .state .state-list li a {
         font-size: 18px; } }
 
+.dinamic-page-notice {
+  border-left: 2px solid #bc2649;
+  padding-left: 10px; }
+
 .asbestos-trust .content-summarizer {
   max-width: 480px; }
 
