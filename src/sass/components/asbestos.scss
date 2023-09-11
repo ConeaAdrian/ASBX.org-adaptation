@@ -163,6 +163,13 @@
   margin: 20px auto;
   padding: 60px 90px;
   background-color: #fff;
+  @media (max-width: 767px) {
+    padding: 30px 40px;
+   }
+   @media (max-width: 475px) {
+    padding: 20px;
+   }
+
 
   dt.faq-question,
   dd.faq-answer {
@@ -173,12 +180,12 @@
   }
 
   dt.faq-question {
+    gap: 20px;
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     cursor: pointer;
     font-weight: bold;
-    // border-bottom: 1px solid #d9dbe9;
     border-bottom: none;
     padding-bottom: 30px;
     font-size: 22px;
