@@ -134,6 +134,7 @@ nav {
   margin-top: 19px;
   @media (max-width: 992px) {
     background-color: transparent;
+    margin-top: 0;
   }
   li {
     padding-left: 10px;
@@ -250,6 +251,7 @@ nav {
     }
   }
   .nav-dropdown {
+
     position: static;
   }
 }
