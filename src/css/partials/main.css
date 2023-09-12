@@ -73,9 +73,9 @@ h2 {
       padding-top: 30px; } }
 
 h3 {
-  font-size: 22px;
+  font-size: 24px;
   color: #036;
-  font-weight: 400; }
+  font-weight: 700; }
 
 h4,
 h5,
@@ -206,7 +206,7 @@ dl, dt, dd {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #324a74;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400; }
   @media (max-width: 475px) {
@@ -2502,7 +2502,7 @@ nav {
     color: #15528e;
     margin-bottom: 10px;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: capitalize; }
   .content-summarizer__notice li {
     display: flex;
@@ -2510,7 +2510,7 @@ nav {
     .content-summarizer__notice li a {
       color: #15528e;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 30px;
       text-decoration-line: underline !important;
       text-transform: capitalize; }
@@ -3956,7 +3956,7 @@ nav {
     flex-direction: column-reverse;
     margin-bottom: 50px; }
     .mesothelioma .content-table img {
-      height: 250px; } }
+      height: 310px; } }
 
 @media (max-width: 475px) {
   .mesothelioma .content-table img {
