@@ -188,6 +188,8 @@
   }
   &__notice {
     li {
+      display: flex;
+      align-items: baseline;
       a {
         color: #15528e;
         font-size: 20px;

@@ -2500,13 +2500,16 @@ nav {
     font-size: 22px;
     font-weight: 500;
     text-transform: capitalize; }
-  .content-summarizer__notice li a {
-    color: #15528e;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-decoration-line: underline !important;
-    text-transform: capitalize; }
+  .content-summarizer__notice li {
+    display: flex;
+    align-items: baseline; }
+    .content-summarizer__notice li a {
+      color: #15528e;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      text-decoration-line: underline !important;
+      text-transform: capitalize; }
   .content-summarizer__notice li::before {
     color: #15528e;
     text-decoration-line: none;
@@ -3938,6 +3941,13 @@ nav {
 @media only screen and (max-width: 992px) and (min-width: 767px) {
   .mesothelioma .content-table {
     flex-direction: column; } }
+
+@media (max-width: 620px) {
+  .mesothelioma .content-table {
+    flex-direction: column-reverse;
+    margin-bottom: 50px; }
+    .mesothelioma .content-table img {
+      height: 250px; } }
 
 @media only screen and (max-width: 992px) and (min-width: 767px) {
   .mesothelioma .content-summarizer {

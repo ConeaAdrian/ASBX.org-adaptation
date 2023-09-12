@@ -76,6 +76,14 @@
     @media only screen and (max-width: 992px) and (min-width: 767px) {
       flex-direction: column;
     }
+    @media (max-width: 620px) {
+      flex-direction: column-reverse;
+
+      margin-bottom: 50px;
+      img {
+        height: 250px;
+      }
+     }
   }
   .content-summarizer {
     @media only screen and (max-width: 992px) and (min-width: 767px) {
