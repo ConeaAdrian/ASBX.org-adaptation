@@ -88,11 +88,11 @@
       .disease {
         color: #324a74;
         font-size: 12px;
-        font-weight: 500;
+        font-weight: 400;
       }
       .experience {
         font-size: 12px;
-        font-weight: 500;
+        font-weight: 400;
         span {
           font-weight: 400;
         }
@@ -102,7 +102,7 @@
   .button {
     width: 160px;
     height: 36px;
-    @media (max-width: 500px) {
+    @media (max-width: 400px) {
       margin-top: 15px;
     }
   }

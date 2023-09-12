@@ -431,17 +431,17 @@ button {
   .lawyers-information__content .data .disease {
     color: #324a74;
     font-size: 12px;
-    font-weight: 500; }
+    font-weight: 400; }
   .lawyers-information__content .data .experience {
     font-size: 12px;
-    font-weight: 500; }
+    font-weight: 400; }
     .lawyers-information__content .data .experience span {
       font-weight: 400; }
 
 .lawyers-information .button {
   width: 160px;
   height: 36px; }
-  @media (max-width: 500px) {
+  @media (max-width: 400px) {
     .lawyers-information .button {
       margin-top: 15px; } }
 
@@ -642,7 +642,7 @@ footer {
     footer .important-links p {
       font-size: 20px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       margin-bottom: 10px; }
     footer .important-links__aplicate {
       display: flex;
@@ -710,7 +710,7 @@ footer {
       font-size: 16px; }
     footer .contact-direct .get-text {
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 400;
       text-transform: capitalize; }
   footer .footer-text {
     background-color: #fff;
@@ -814,7 +814,7 @@ nav {
         padding: 0 10px;
         color: #ffffff;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 14px;
         text-transform: uppercase; }
         @media (max-width: 992px) {
@@ -903,7 +903,7 @@ nav {
     background: transparent;
     padding: 3px 29px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     color: #ffffff;
     display: flex;
@@ -1603,7 +1603,7 @@ nav {
     .index-page .section-meso .active-section p {
       color: #fff;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
       text-transform: uppercase; }
 
@@ -2179,7 +2179,7 @@ nav {
 .address-text {
   font-size: 14px !important;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal; }
 
 .red-placeholder::placeholder {
@@ -2253,7 +2253,7 @@ nav {
         color: #324a74;
         font-size: 18px;
         margin-bottom: 6px;
-        font-weight: 500; }
+        font-weight: 400; }
       .general-claims .claims-selected .content-information b {
         font-size: 14px; }
     .general-claims .claims-selected .back-ground {
@@ -2301,7 +2301,7 @@ nav {
       .general-claims .claims-result__principal-information p {
         font-size: 16px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: normal;
         width: 100%; }
       .general-claims .claims-result__principal-information .city-img {
@@ -2322,7 +2322,7 @@ nav {
           width: 45px;
           font-size: 14px !important;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 400;
           line-height: normal; }
         .general-claims .claims-result__data-information .data-city p {
           font-size: 14px;
@@ -2331,7 +2331,7 @@ nav {
       .general-claims .claims-result__data-information .button-remove-claims {
         color: black;
         font-size: 12px;
-        font-weight: 500;
+        font-weight: 400;
         text-decoration-line: underline;
         padding: 0;
         position: absolute;
@@ -2401,7 +2401,7 @@ nav {
   .content-table span {
     color: #000;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     text-transform: capitalize; }
   .content-table .table-item a {
@@ -2418,7 +2418,7 @@ nav {
   .nearby-cities span {
     color: #000;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: capitalize; }
 
 .nearby-location p {
@@ -2502,7 +2502,7 @@ nav {
   .content-summarizer p {
     color: #15528e;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: capitalize; }
   .content-summarizer__notice li {
@@ -2510,15 +2510,15 @@ nav {
     align-items: baseline; }
     .content-summarizer__notice li a {
       color: #15528e;
-      font-size: 20px;
-      font-weight: 300;
+      font-size: 18px;
+      font-weight: 400;
       line-height: 30px;
       text-decoration-line: underline !important;
       text-transform: capitalize; }
   .content-summarizer__notice li::before {
     color: #15528e;
     text-decoration-line: none;
-    font-size: 20px;
+    font-size: 18px;
     content: "•";
     margin-right: 5px; }
 
@@ -2536,7 +2536,6 @@ nav {
 
 .flag-img {
   width: 100%;
-  max-width: 220px;
   border-radius: 4px;
   border-radius: 4px;
   border: 1px solid rgba(186, 186, 186, 0.31);
@@ -2603,18 +2602,18 @@ nav {
         padding: 40px;
         height: 100%; } }
     .error-page__container .error-text {
-      font-weight: 500;
+      font-weight: 400;
       font-size: 80px !important;
       line-height: 100px;
       color: #15528E;
       margin: 0 auto; }
       @media (max-width: 768px) {
         .error-page__container .error-text {
-          font-weight: 500;
+          font-weight: 400;
           font-size: 60px !important;
           line-height: 120px; } }
     .error-page__container h3 {
-      font-weight: 500;
+      font-weight: 400;
       font-size: 38px;
       line-height: 120%;
       color: #15528E;
@@ -2641,7 +2640,7 @@ nav {
 .non-result .how-search p {
   color: #4f4f4f;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: capitalize; }
 
 .non-result .how-search ul {
@@ -2657,7 +2656,7 @@ nav {
 .text-available {
   color: #324a74;
   font-size: 16px;
-  font-weight: 500; }
+  font-weight: 400; }
   @media (max-width: 475px) {
     .text-available {
       font-size: 14px;
@@ -2670,14 +2669,14 @@ nav {
   margin-top: 15px;
   margin-bottom: 25px; }
   .no-verified b {
-    font-weight: 500; }
+    font-weight: 400; }
 
 .content-ship .about-text-ship {
   margin-top: 18px;
   margin-bottom: 15px; }
   .content-ship .about-text-ship span {
     color: #15528e;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration-line: underline; }
 
 .content-ship .ship-img {
@@ -2940,7 +2939,7 @@ nav {
     .navy-claims-section .navy-container h3 {
       font-size: 20px;
       color: #1c1b1b;
-      font-weight: 500;
+      font-weight: 400;
       margin-top: 0;
       max-width: 475px;
       width: 100%; }
@@ -2964,7 +2963,7 @@ nav {
           flex-direction: column;
           align-items: flex-start; } }
     .navy-claims-section .navy-container .add-navy p {
-      font-weight: 500; }
+      font-weight: 400; }
     .navy-claims-section .navy-container .add-navy__select {
       width: 100%;
       max-width: 172px; }
@@ -3044,7 +3043,7 @@ nav {
         max-width: none; } }
     .job-site .content-products__categorization-cart p {
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
       text-transform: capitalize; }
     .job-site .content-products__categorization-cart ul {
@@ -3208,7 +3207,7 @@ nav {
           font-family: 'Inter', sans-serif; }
           @media (max-width: 475px) {
             .bottom-banner .banner-calculate .content-information .claims-buttons .calculate {
-              font-weight: 500; } }
+              font-weight: 400; } }
         .bottom-banner .banner-calculate .content-information .claims-buttons .add-city {
           color: #324A74;
           background: transparent;
@@ -3219,7 +3218,7 @@ nav {
           font-family: 'Inter', sans-serif; }
           @media (max-width: 475px) {
             .bottom-banner .banner-calculate .content-information .claims-buttons .add-city {
-              font-weight: 500; } }
+              font-weight: 400; } }
 
 .body-calculator {
   background: #f3f3f3; }
@@ -3333,7 +3332,7 @@ nav {
           .result-page .legal-representation .legal-information .ER-claims__name p {
             color: #bc2649;
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 400;
             border-radius: 4px;
             background: #ede8e8;
             padding: 8px; }
@@ -3366,7 +3365,7 @@ nav {
         .result-page .legal-representation .legal-information .ER-claims .proposed-money {
           color: #bc2649;
           font-size: 25px;
-          font-weight: 500;
+          font-weight: 400;
           justify-content: center;
           display: flex; }
         .result-page .legal-representation .legal-information .ER-claims .button-claim {
@@ -3403,7 +3402,7 @@ nav {
           .result-page .legal-representation .legal-information .AVG-claims {
             border-radius: 24px 24px 0 0;
             transform: translateY(-42px);
-            max-width: 500px;
+            max-width: 400px;
             margin-top: 10px; } }
         .result-page .legal-representation .legal-information .AVG-claims__name {
           display: flex;
@@ -3417,7 +3416,7 @@ nav {
           .result-page .legal-representation .legal-information .AVG-claims__name p {
             color: #bc2649;
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 400;
             border-radius: 4px;
             background: #fff;
             padding: 8px; }
@@ -3453,7 +3452,7 @@ nav {
         .result-page .legal-representation .legal-information .AVG-claims .proposed-money {
           color: #fff;
           font-size: 25px;
-          font-weight: 500;
+          font-weight: 400;
           justify-content: center;
           display: flex; }
         .result-page .legal-representation .legal-information .AVG-claims .button-claim {
@@ -3500,7 +3499,7 @@ nav {
           .result-page .legal-representation .legal-information .IR-claims__name p {
             color: #bc2649;
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 400;
             border-radius: 4px;
             background: #ede8e8;
             padding: 8px; }
@@ -3533,7 +3532,7 @@ nav {
         .result-page .legal-representation .legal-information .IR-claims .proposed-money {
           color: #bc2649;
           font-size: 25px;
-          font-weight: 500;
+          font-weight: 400;
           justify-content: center;
           display: flex; }
         .result-page .legal-representation .legal-information .IR-claims .button-claim {
@@ -3596,7 +3595,7 @@ nav {
     .result-page .your-own .proposed-money {
       color: #bc2649;
       font-size: 25px;
-      font-weight: 500;
+      font-weight: 400;
       justify-content: center;
       display: flex; }
   .result-page .lawyer-representation {
@@ -3677,7 +3676,7 @@ nav {
         height: 33px;
         color: #fff;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 400;
         margin-top: 15px;
         text-transform: uppercase;
         margin-bottom: 23px; }
@@ -3747,7 +3746,7 @@ nav {
 
 .legend-information__text p {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 10px;
   margin-bottom: 7px; }
 
@@ -3787,7 +3786,7 @@ nav {
   .callback-form span {
     color: #fff;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     padding: 6px 31px;
     display: flex;
     text-align: center; }
@@ -3895,7 +3894,7 @@ nav {
 .mesothelioma .mesothelioma-facts .red-text {
   font-size: 20px;
   font-style: normal;
-  font-weight: 500; }
+  font-weight: 400; }
 
 .mesothelioma .mesothelioma-facts li {
   color: #15528e;
@@ -4278,7 +4277,7 @@ nav {
       font-weight: 600; }
   .trust-fund .contact-company strong {
     font-size: 18px !important;
-    font-weight: 500; }
+    font-weight: 400; }
   .trust-fund .contact-company a {
     text-decoration-line: underline !important; }
   .trust-fund .contact-company .claimant-relations {
@@ -4302,7 +4301,7 @@ nav {
         width: 100%; } }
     .sort-chase__content p {
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
       text-transform: capitalize; }
 
@@ -4346,7 +4345,7 @@ nav {
       background: #fbfbfb; }
     .compensation-section__table .left-column .claims-type {
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 400;
       color: #324a74 !important;
       font-size: 16px;
       align-items: start;
@@ -4361,7 +4360,7 @@ nav {
       font-size: 16px;
       text-transform: uppercase;
       color: #bc2649;
-      font-weight: 500; }
+      font-weight: 400; }
 
 .legend-ratio {
   font-style: normal;
@@ -4409,7 +4408,7 @@ nav {
   margin-bottom: 20px;
   color: #324a74;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   text-transform: capitalize; }
 
@@ -4426,7 +4425,7 @@ nav {
   .city-state .today-data span {
     color: #bc2649;
     font-size: 16px;
-    font-weight: 500; }
+    font-weight: 400; }
 
 .city-state .search-option ul {
   margin-left: 10px; }
@@ -4922,7 +4921,7 @@ nav {
       .state .state-content .state-card__data a {
         font-size: 20px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         text-decoration-line: underline !important;
         color: #466d92; }
       .state .state-content .state-card__data p {

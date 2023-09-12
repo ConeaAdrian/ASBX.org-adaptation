@@ -64,7 +64,7 @@
   span {
     color: #000;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     text-transform: capitalize;
   }
@@ -87,7 +87,7 @@
   span {
     color: #000;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: capitalize;
   }
 }
@@ -183,7 +183,7 @@
   p {
     color: #15528e;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
   }
@@ -193,8 +193,8 @@
       align-items: baseline;
       a {
         color: #15528e;
-        font-size: 20px;
-        font-weight: 300;
+        font-size: 18px;
+        font-weight: 400;
         line-height: 30px;
         text-decoration-line: underline !important;
         text-transform: capitalize;
@@ -203,7 +203,7 @@
     li::before {
       color: #15528e;
       text-decoration-line: none;
-      font-size: 20px;
+      font-size: 18px;
       content: "•";
       margin-right: 5px;
     }
@@ -224,7 +224,6 @@
 }
 .flag-img {
   width: 100%;
-  max-width: 220px;
   border-radius: 4px;
   border-radius: 4px;
   border: 1px solid rgba(186, 186, 186, 0.31);
