@@ -48,23 +48,23 @@ a {
 }
 h1 {
   color: #324a74;
-  font-size: 32px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  line-height: 38px;
+  line-height: 46px;
   @media (max-width: 475px) {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 38px;
     text-align: center;
   }
 }
 h2 {
   color: #003366;
-  font-size: 26px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 36px;
   padding-top: 20px;
   @media (max-width: 475px) {
     font-size: 26px;
@@ -73,9 +73,9 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   color: #036;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h4,
@@ -172,7 +172,7 @@ label {
 b,
 strong {
   color: #000;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
 }
@@ -222,10 +222,9 @@ dl, dt, dd {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #324a74;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 300;
-  line-height: 28px;
+  font-weight: 400;
   @media (max-width: 475px) {
     text-align: center;
   }

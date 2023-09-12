@@ -7,27 +7,37 @@
   }
 
   a {
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     text-decoration-line: underline !important;
     color: #466D92;
+    @media (max-width: 767px) {
+      font-size: 14px;
+     }
   }
 
   span {
     color: rgba(0, 0, 0, 0.61);
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     margin: 0 3px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+     }
   }
   .last-element {
     color: #BC2649 !important;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    margin: 0;
+    @media (max-width: 767px) {
+      font-size: 14px;
+     }
   }
 }

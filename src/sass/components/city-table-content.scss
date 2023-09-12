@@ -14,7 +14,7 @@
     height: 192px;
     object-fit: contain !important;
     @media only screen and (max-width: 850px) and (min-width: 767px) {
-     max-width: none;
+      max-width: none;
     }
     @media (max-width: 475px) {
       max-width: none;
@@ -72,7 +72,7 @@
   .table-item {
     a {
       color: #466d92;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 400;
       line-height: 30px;
       text-decoration-line: underline !important;
@@ -93,7 +93,7 @@
 }
 .nearby-location {
   p {
-    color: #bc2649;
+    color: #324a74;
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
@@ -176,36 +176,37 @@
   width: 100%;
   padding: 10px;
   height: fit-content;
-  counter-reset: itemNumber;
   @media (max-width: 620px) {
     max-width: none;
   }
-
-  .table-item {
-    display: flex;
-    margin-left: 10px;
-    p {
-      margin-bottom: 0;
-    }
-    .item-number {
-      color: #466d92;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 34px;
-    }
-    .item-number::before {
-      counter-increment: itemNumber;
-      content: counter(itemNumber) ".";
-      margin-right: 5px;
-    }
-  }
   p {
+    color: #15528e;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     text-transform: capitalize;
   }
+  &__notice {
+    li {
+      a {
+        color: #15528e;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-decoration-line: underline !important;
+        text-transform: capitalize;
+      }
+    }
+    li::before {
+      color: #15528e;
+      text-decoration-line: none;
+      font-size: 20px;
+      content: "•";
+      margin-right: 5px;
+    }
+  }
 }
+
 .mobile-flag-img {
   display: none;
   @media (max-width: 620px) {

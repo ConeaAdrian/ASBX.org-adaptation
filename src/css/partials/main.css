@@ -49,23 +49,23 @@ a {
 
 h1 {
   color: #324a74;
-  font-size: 32px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  line-height: 38px; }
+  line-height: 46px; }
   @media (max-width: 475px) {
     h1 {
-      font-size: 30px;
-      line-height: 36px;
+      font-size: 32px;
+      line-height: 38px;
       text-align: center; } }
 
 h2 {
   color: #003366;
-  font-size: 26px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 36px;
   padding-top: 20px; }
   @media (max-width: 475px) {
     h2 {
@@ -73,9 +73,9 @@ h2 {
       padding-top: 30px; } }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   color: #036;
-  font-weight: 500; }
+  font-weight: 400; }
 
 h4,
 h5,
@@ -159,7 +159,7 @@ label {
 b,
 strong {
   color: #000;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px; }
 
@@ -206,10 +206,9 @@ dl, dt, dd {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #324a74;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 300;
-  line-height: 28px; }
+  font-weight: 400; }
   @media (max-width: 475px) {
     .data-info {
       text-align: center; } }
@@ -330,25 +329,35 @@ button {
     .breadcrumb {
       justify-content: center; } }
   .breadcrumb a {
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     text-decoration-line: underline !important;
     color: #466D92; }
+    @media (max-width: 767px) {
+      .breadcrumb a {
+        font-size: 14px; } }
   .breadcrumb span {
     color: rgba(0, 0, 0, 0.61);
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     margin: 0 3px; }
+    @media (max-width: 767px) {
+      .breadcrumb span {
+        font-size: 14px; } }
   .breadcrumb .last-element {
     color: #BC2649 !important;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; }
+    line-height: 20px;
+    margin: 0; }
+    @media (max-width: 767px) {
+      .breadcrumb .last-element {
+        font-size: 14px; } }
 
 .lawyers-information .block-lawyers {
   width: 100%;
@@ -1331,12 +1340,13 @@ nav {
     .index-page .principal-content .information-hero .statistic {
       padding: 35px 0;
       display: flex;
-      width: 65%;
-      gap: 40px;
+      width: 100%;
+      gap: 74px;
       position: relative;
       z-index: 105; }
       @media (max-width: 992px) {
         .index-page .principal-content .information-hero .statistic {
+          gap: 50px;
           padding: 30px;
           width: 100%; } }
       @media (max-width: 767px) {
@@ -1345,16 +1355,17 @@ nav {
           padding: 15px; } }
       @media (max-width: 475px) {
         .index-page .principal-content .information-hero .statistic {
-          gap: 8px;
           justify-content: center; } }
       .index-page .principal-content .information-hero .statistic__data {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        align-items: center; }
+        align-items: center;
+        width: 125px; }
         @media (max-width: 475px) {
           .index-page .principal-content .information-hero .statistic__data {
-            gap: 10px; } }
+            gap: 10px;
+            width: 80px; } }
       .index-page .principal-content .information-hero .statistic p {
         color: #fff;
         font-size: 48px;
@@ -1368,7 +1379,7 @@ nav {
       .index-page .principal-content .information-hero .statistic span {
         color: #fff;
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 400;
         text-transform: uppercase;
         text-align: center; }
         @media (max-width: 767px) {
@@ -1599,6 +1610,7 @@ nav {
   align-items: center; }
   .index-page .working-stages__text {
     width: 100%;
+    color: #000;
     max-width: 515px;
     font-size: 26px;
     font-style: normal;
@@ -2020,12 +2032,14 @@ nav {
   gap: 10px;
   padding-bottom: 20px; }
   .search-alphabet h3 {
-    color: #324a74;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 300;
     line-height: normal;
     text-transform: capitalize;
     line-height: 28px; }
+    .search-alphabet h3 a {
+      color: #324a74;
+      font-weight: 400; }
   .search-alphabet .alphabet {
     display: flex;
     flex-wrap: wrap;
@@ -2205,11 +2219,11 @@ nav {
     .general-claims .claims-selected img {
       display: flex;
       text-align: center;
-      top: -46px;
+      top: -52px;
       position: absolute;
       margin: 0 auto;
-      height: 90px;
-      max-width: 90px;
+      height: 100px;
+      max-width: 100px;
       width: 100%;
       right: 30%;
       left: 30%; }
@@ -2225,9 +2239,9 @@ nav {
         .general-claims .claims-selected .content-information {
           margin-top: -35px; } }
       .general-claims .claims-selected .content-information h2 {
-        font-size: 18px;
+        font-size: 20px;
         color: #324a74;
-        font-weight: 500;
+        font-weight: 700;
         border: 0;
         margin-top: 0;
         padding-top: 0; }
@@ -2388,7 +2402,7 @@ nav {
     text-transform: capitalize; }
   .content-table .table-item a {
     color: #466d92;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     text-decoration-line: underline !important;
@@ -2404,7 +2418,7 @@ nav {
     text-transform: capitalize; }
 
 .nearby-location p {
-  color: #bc2649;
+  color: #324a74;
   font-size: 18px;
   font-weight: 700;
   line-height: normal;
@@ -2476,30 +2490,29 @@ nav {
   max-width: 320px;
   width: 100%;
   padding: 10px;
-  height: fit-content;
-  counter-reset: itemNumber; }
+  height: fit-content; }
   @media (max-width: 620px) {
     .content-summarizer {
       max-width: none; } }
-  .content-summarizer .table-item {
-    display: flex;
-    margin-left: 10px; }
-    .content-summarizer .table-item p {
-      margin-bottom: 0; }
-    .content-summarizer .table-item .item-number {
-      color: #466d92;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 34px; }
-    .content-summarizer .table-item .item-number::before {
-      counter-increment: itemNumber;
-      content: counter(itemNumber) ".";
-      margin-right: 5px; }
   .content-summarizer p {
+    color: #15528e;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     text-transform: capitalize; }
+  .content-summarizer__notice li a {
+    color: #15528e;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration-line: underline !important;
+    text-transform: capitalize; }
+  .content-summarizer__notice li::before {
+    color: #15528e;
+    text-decoration-line: none;
+    font-size: 20px;
+    content: "•";
+    margin-right: 5px; }
 
 .mobile-flag-img {
   display: none; }
@@ -3135,7 +3148,7 @@ nav {
           color: white;
           margin: 0;
           font-weight: 700;
-          font-size: 18px;
+          font-size: 20px;
           margin-right: 10px; }
           @media (max-width: 475px) {
             .bottom-banner .banner-calculate .content-information .claims-result h3 {
@@ -3896,21 +3909,12 @@ nav {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   position: relative; }
   .mesothelioma .tick-section .interogativ-sentence {
-    background-color: #bc2649;
-    color: #fff;
-    font-size: 50px;
-    border-radius: 50%;
     stroke-width: 1px;
     stroke: rgba(50, 74, 116, 0.31);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     position: absolute;
-    top: -25px;
-    left: 5px; }
+    top: -30px;
+    left: 10px; }
   .mesothelioma .tick-section .tick-element {
     padding: 40px 20px 20px;
     gap: 10px;
@@ -3921,18 +3925,23 @@ nav {
       gap: 10px;
       align-items: flex-start; }
       .mesothelioma .tick-section .tick-element__information p {
-        color: #324a74;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal; }
+        color: #324a74; }
       .mesothelioma .tick-section .tick-element__information::before {
         content: "";
         background-image: url("../../img/Vector-.svg");
         width: 18px;
         height: 18px;
         display: inline-block;
-        padding-right: 18px; }
+        padding-right: 18px;
+        margin-top: 5px; }
+
+@media only screen and (max-width: 992px) and (min-width: 767px) {
+  .mesothelioma .content-table {
+    flex-direction: column; } }
+
+@media only screen and (max-width: 992px) and (min-width: 767px) {
+  .mesothelioma .content-summarizer {
+    max-width: 100%; } }
 
 .occupational .content-summarizer {
   margin-top: 30px;
@@ -3992,7 +4001,7 @@ nav {
 .faq-container {
   border-radius: 18px;
   box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
-  margin: 20px auto;
+  margin: 35px auto;
   padding: 60px 90px;
   background-color: #fff; }
   @media (max-width: 767px) {

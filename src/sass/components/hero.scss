@@ -141,11 +141,12 @@
       .statistic {
         padding: 35px 0;
         display: flex;
-        width: 65%;
-        gap: 40px;
+        width: 100%;
+        gap: 74px;
         position: relative;
         z-index: 105;
         @media (max-width: 992px) {
+          gap: 50px;
           padding: 30px;
           width: 100%;
         }
@@ -154,7 +155,6 @@
           padding: 15px;
         }
         @media (max-width: 475px) {
-          gap: 8px;
           justify-content: center;
         }
 
@@ -163,8 +163,10 @@
           flex-direction: column;
           gap: 20px;
           align-items: center;
+          width: 125px;
           @media (max-width: 475px) {
             gap: 10px;
+          width: 80px;
           }
         }
 
@@ -182,7 +184,7 @@
         span {
           color: #fff;
           font-size: 14px;
-          font-weight: 700;
+          font-weight: 400;
           text-transform: uppercase;
           text-align: center;
           @media (max-width: 767px) {
@@ -447,6 +449,7 @@
     align-items: center;
     &__text {
       width: 100%;
+      color: #000;
       max-width: 515px;
       font-size: 26px;
       font-style: normal;
