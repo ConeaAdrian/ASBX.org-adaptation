@@ -90,20 +90,19 @@
       line-height: normal;
       text-transform: capitalize;
       font-weight: 700 !important;
-
     }
   }
   tbody {
-      .review {
-        color: #bc2649;
-        font-size: 16px;
-        line-height: normal;
-      }
-      .amount-result {
-        color: #000;
-        font-size: 16px;
-        font-weight: 400;
-      }
+    .review {
+      color: #bc2649;
+      font-size: 16px;
+      line-height: normal;
+    }
+    .amount-result {
+      color: #000;
+      font-size: 16px;
+      font-weight: 400;
+    }
   }
   tfoot {
     .review {
@@ -229,15 +228,11 @@
     line-height: 26px;
     margin-top: 0;
 
-    strong {
-      font-size: 20px !important;
+    .dinamic-page-link {
+      color: #1a73f5;
+      font-size: 20px;
+      line-height: 26px;
       font-weight: 400 !important;
-      a {
-        color: #466d92;
-        font-size: 20px;
-        line-height: 26px;
-        text-decoration-line: underline !important;
-      }
     }
   }
 }

@@ -4346,14 +4346,11 @@ nav {
     list-style-type: disc;
     line-height: 26px;
     margin-top: 0; }
-    .mark-text li strong {
-      font-size: 20px !important;
+    .mark-text li .dinamic-page-link {
+      color: #1a73f5;
+      font-size: 20px;
+      line-height: 26px;
       font-weight: 400 !important; }
-      .mark-text li strong a {
-        color: #466d92;
-        font-size: 20px;
-        line-height: 26px;
-        text-decoration-line: underline !important; }
 
 .dinamic-element {
   display: flex;
