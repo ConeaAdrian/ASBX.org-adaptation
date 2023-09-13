@@ -31,6 +31,11 @@
     }
     .claimant-relations {
       margin-top: 10px;
+
+      a {
+        color: #1c1b1b;
+        font-size: 20px;
+      }
     }
     h3 {
       color: #000;
@@ -85,6 +90,7 @@
   }
   thead {
     th {
+      text-align: start;
       color: #000;
       font-size: 16px;
       line-height: normal;

@@ -4208,9 +4208,10 @@ nav {
   max-width: 439px;
   margin-top: 10px;
   margin-left: 10px; }
-  .equipment-ship ul {
+  .equipment-ship .mark-text {
+    gap: 5px;
     margin-bottom: 20px; }
-    .equipment-ship ul li {
+    .equipment-ship .mark-text li {
       font-size: 18px;
       font-weight: 300; }
 
@@ -4257,6 +4258,9 @@ nav {
     text-decoration-line: underline !important; }
   .trust-fund .contact-company .claimant-relations {
     margin-top: 10px; }
+    .trust-fund .contact-company .claimant-relations a {
+      color: #1c1b1b;
+      font-size: 20px; }
   .trust-fund .contact-company h3 {
     color: #000; }
 
@@ -4297,6 +4301,7 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 6px 10px; }
   .compensation-section__table thead th {
+    text-align: start;
     color: #000;
     font-size: 16px;
     line-height: normal;
