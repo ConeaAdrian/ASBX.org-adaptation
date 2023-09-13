@@ -252,6 +252,7 @@
     break-inside: avoid;
     margin-top: 0;
     padding-top: 5;
+    color: #1A73F5;
 
     &::before {
       margin-right: 6px;
@@ -259,11 +260,9 @@
     }
 
     a {
-      color: #324a74 !important;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 26px;
-      text-decoration-line: underline !important;
 
       @media (max-width: 475px) {
         font-size: 18px;

@@ -4934,16 +4934,15 @@ nav {
   list-style-type: disc;
   break-inside: avoid;
   margin-top: 0;
-  padding-top: 5; }
+  padding-top: 5;
+  color: #1A73F5; }
   .state .state-list li::before {
     margin-right: 6px;
     text-decoration-line: none; }
   .state .state-list li a {
-    color: #324a74 !important;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-decoration-line: underline !important; }
+    font-weight: 300;
+    line-height: 26px; }
     @media (max-width: 475px) {
       .state .state-list li a {
         font-size: 18px; } }
