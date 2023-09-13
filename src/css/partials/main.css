@@ -161,7 +161,7 @@ strong {
   color: #000;
   font-weight: 400;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 18px; }
+  font-size: 20px; }
 
 dl, dt, dd {
   font-family: "Roboto Condensed", sans-serif; }
@@ -2063,17 +2063,18 @@ nav {
       column-count: 1; } }
 
 .trust-list li {
-  color: #000;
+  color: #1A73F5;
   break-inside: avoid;
   margin-top: 0;
-  padding-top: 8px; }
+  padding-top: 8px;
+  list-style-type: disc; }
   .trust-list li::before {
     margin-right: 6px;
     text-decoration-line: none; }
   .trust-list li a {
     font-size: 20px;
     font-weight: 300;
-    line-height: 26px; }
+    line-height: 28px; }
     @media (max-width: 475px) {
       .trust-list li a {
         font-size: 18px; } }
@@ -4912,7 +4913,8 @@ nav {
   .state .city-statistic__table tbody {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   .state .city-statistic__table th, .state .city-statistic__table td {
-    padding: 6px 10px; }
+    padding: 6px 10px;
+    font-size: 18px; }
     @media (max-width: 475px) {
       .state .city-statistic__table th, .state .city-statistic__table td {
         padding: 6px;

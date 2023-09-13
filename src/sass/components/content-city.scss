@@ -175,10 +175,11 @@
 }
 
 .trust-list li {
-  color: #000;
+  color: #1A73F5;
   break-inside: avoid;
   margin-top: 0;
   padding-top: 8px;
+  list-style-type: disc;
 
   &::before {
     margin-right: 6px;
@@ -188,7 +189,7 @@
   a {
     font-size: 20px;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 28px;
 
     @media (max-width: 475px) {
       font-size: 18px;
