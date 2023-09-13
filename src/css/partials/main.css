@@ -4291,7 +4291,8 @@ nav {
   border-radius: 4px;
   background: #fbfbfb;
   max-width: 300px;
-  width: 100%; }
+  width: 100%;
+  border-collapse: collapse; }
   @media (max-width: 475px) {
     .compensation-section__table {
       max-width: none; } }
