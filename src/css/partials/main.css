@@ -2071,11 +2071,9 @@ nav {
     margin-right: 6px;
     text-decoration-line: none; }
   .trust-list li a {
-    color: #324a74 !important;
     font-size: 20px;
     font-weight: 300;
-    line-height: 26px;
-    text-decoration-line: underline !important; }
+    line-height: 26px; }
     @media (max-width: 475px) {
       .trust-list li a {
         font-size: 18px; } }
