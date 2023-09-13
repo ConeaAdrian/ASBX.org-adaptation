@@ -3986,28 +3986,6 @@ nav {
   .occupational .text-exampe b {
     font-size: 18px !important; }
 
-.occupational .sort-chase {
-  display: block;
-  margin: 20px 0;
-  gap: 20px; }
-  .occupational .sort-chase__content {
-    margin-bottom: 20px; }
-    .occupational .sort-chase__content h3 {
-      color: #324a74;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 26px; }
-    .occupational .sort-chase__content td,
-    .occupational .sort-chase__content th {
-      font-weight: 400 !important; }
-  .occupational .sort-chase .text-initial {
-    color: #000 !important;
-    font-size: 16px;
-    font-weight: 700 !important;
-    line-height: normal;
-    text-transform: capitalize; }
-
 .faq-component {
   margin-top: 40px;
   background: #f7f7f7; }
@@ -4301,63 +4279,45 @@ nav {
       font-weight: 400;
       line-height: normal;
       text-transform: capitalize; }
+    .sort-chase__content .review {
+      font-weight: 700 !important; }
 
 .compensation-section__table {
-  border-collapse: collapse;
-  display: flex;
-  margin-top: 10px; }
-  .compensation-section__table tbody {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #fcfaf6;
-    display: flex;
-    width: 100%; }
-    @media (max-width: 475px) {
-      .compensation-section__table tbody {
-        max-width: none; } }
-  .compensation-section__table tr {
-    flex-direction: column;
-    display: flex; }
-    .compensation-section__table tr:nth-child(even) td {
-      background: #fbfbfb; }
+  margin-top: 10px;
+  border-radius: 4px;
+  background: #fbfbfb;
+  max-width: 300px;
+  width: 100%; }
+  @media (max-width: 475px) {
+    .compensation-section__table {
+      max-width: none; } }
+  .compensation-section__table table,
   .compensation-section__table th,
   .compensation-section__table td {
-    padding: 6px 10px;
-    border: 1px solid #e6e6e6;
-    display: flex; }
-  .compensation-section__table th {
-    background-color: #ffffff;
-    color: #000000;
-    font-weight: bold; }
-  .compensation-section__table .left-column {
-    width: 100%;
-    background: #fbfbfb; }
-    .compensation-section__table .left-column th {
-      color: #bc2649;
-      font-weight: 700;
-      align-items: start;
-      display: flex;
-      background: #fbfbfb; }
-    .compensation-section__table .left-column .claims-type {
-      text-transform: uppercase;
-      font-weight: 400;
-      color: #324a74 !important;
-      font-size: 16px;
-      align-items: start;
-      display: flex; }
-  .compensation-section__table .right-column {
-    width: 70%; }
-    .compensation-section__table .right-column td {
-      font-weight: 400;
-      justify-content: start;
-      padding-left: 20px; }
-    .compensation-section__table .right-column .price {
-      font-size: 16px;
-      text-transform: uppercase;
-      color: #bc2649;
-      font-weight: 400; }
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px 10px; }
+  .compensation-section__table thead th {
+    color: #000;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: capitalize;
+    font-weight: 700 !important; }
+  .compensation-section__table tbody .review {
+    color: #bc2649;
+    font-size: 16px;
+    line-height: normal; }
+  .compensation-section__table tbody .amount-result {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400; }
+  .compensation-section__table tfoot .review {
+    color: #bc2649;
+    font-size: 16px;
+    line-height: normal; }
+  .compensation-section__table tfoot .amount-result {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400; }
 
 .legend-ratio {
   font-style: normal;
