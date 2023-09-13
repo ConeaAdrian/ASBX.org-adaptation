@@ -1,16 +1,7 @@
 .trust-fund {
   margin-bottom: 40px;
 
-  .content-table {
-    @media only screen and (max-width: 850px) and (min-width: 767px) {
-      flex-direction: column;
-    }
-  }
-  .content-summarizer {
-    @media only screen and (max-width: 850px) and (min-width: 767px) {
-      max-width: 100%;
-    }
-  }
+
   .status-active {
     color: #324a74;
     font-weight: 400;

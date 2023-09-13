@@ -233,7 +233,7 @@ dl, dt, dd {
     .container {
       padding: 0 4.5rem; } }
 
-@media (min-width: 767px) {
+@media (min-width: 992px) {
   .container-desktop {
     width: 100%;
     max-width: 660px; } }
@@ -2355,9 +2355,6 @@ nav {
     max-width: 303px;
     height: 192px;
     object-fit: contain !important; }
-    @media only screen and (max-width: 850px) and (min-width: 767px) {
-      .content-table .company-logo {
-        max-width: none; } }
     @media (max-width: 475px) {
       .content-table .company-logo {
         max-width: none;
@@ -2488,6 +2485,9 @@ nav {
   max-width: 320px;
   padding: 10px;
   height: fit-content; }
+  @media (max-width: 992px) {
+    .content-summarizer {
+      max-width: none; } }
 
 @media (max-width: 620px) {
   .content-summarizer {
@@ -4237,12 +4237,6 @@ nav {
 
 .trust-fund {
   margin-bottom: 40px; }
-  @media only screen and (max-width: 850px) and (min-width: 767px) {
-    .trust-fund .content-table {
-      flex-direction: column; } }
-  @media only screen and (max-width: 850px) and (min-width: 767px) {
-    .trust-fund .content-summarizer {
-      max-width: 100%; } }
   .trust-fund .status-active {
     color: #324a74;
     font-weight: 400;
@@ -4842,21 +4836,10 @@ nav {
     max-width: 320px;
     height: 185px;
     object-fit: contain !important; }
-    @media only screen and (max-width: 850px) and (min-width: 767px) {
-      .state .content-table .state-logo {
-        max-width: none; } }
     @media (max-width: 475px) {
       .state .content-table .state-logo {
         max-width: none;
         height: auto; } }
-
-@media only screen and (max-width: 850px) and (min-width: 767px) {
-  .state .content-table {
-    flex-direction: column; } }
-
-@media only screen and (max-width: 850px) and (min-width: 767px) {
-  .state .content-summarizer {
-    max-width: 100%; } }
 
 .state .state-content {
   display: flex;

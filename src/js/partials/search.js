@@ -16,7 +16,7 @@ function closeSearch(button) {
 
 async function openClaims() {
     var claimsSection = document.getElementById("claims-select-mobile");
-    if (window.innerWidth <= 767) {
+    if (window.innerWidth <= 992) {
         if (claimsSection.style.display === "none" || claimsSection.style.display === "") {
             claimsSection.style.display = "block";
         } else {
