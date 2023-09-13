@@ -5,12 +5,12 @@
   @media (max-width: 940px) {
     max-width: 220px;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 992px) {
     display: none;
   }
 }
 .claims-select-mobile {
-  @media (max-width: 767px) {
+  @media (max-width: 992px) {
     position: fixed;
     top: 0;
     left: 0;
@@ -22,7 +22,7 @@
     z-index: 10000;
   }
   .general-claims {
-    @media (max-width: 767px) {
+    @media (max-width: 992px) {
       max-width: none;
       padding: 10px;
     }

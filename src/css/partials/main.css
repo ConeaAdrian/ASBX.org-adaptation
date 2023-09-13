@@ -768,7 +768,7 @@ footer {
     display: flex;
     gap: 10px;
     padding-right: 45px; }
-    @media (min-width: 767px) {
+    @media (min-width: 992px) {
       .navigation .claims-mobile {
         display: none; } }
     .navigation .claims-mobile button {
@@ -2136,11 +2136,11 @@ nav {
   @media (max-width: 940px) {
     .claims-select {
       max-width: 220px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 992px) {
     .claims-select {
       display: none; } }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .claims-select-mobile {
     position: fixed;
     top: 0;
@@ -2152,7 +2152,7 @@ nav {
     display: none;
     z-index: 10000; } }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .claims-select-mobile .general-claims {
     max-width: none;
     padding: 10px; } }
@@ -4907,8 +4907,11 @@ nav {
   margin-top: 10px;
   width: 100%;
   margin-top: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px; }
+  .state .city-statistic__table tr {
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+    .state .city-statistic__table tr th {
+      text-align: start; }
   .state .city-statistic__table thead,
   .state .city-statistic__table tbody {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }

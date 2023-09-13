@@ -43,7 +43,7 @@ $link-hover-color: $main-red;
     display: flex;
     gap: 10px;
     padding-right: 45px;
-    @media (min-width: 767px) {
+    @media (min-width: 992px) {
       display: none;
     }
     button {
