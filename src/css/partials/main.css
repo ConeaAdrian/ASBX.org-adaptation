@@ -4905,62 +4905,20 @@ nav {
   margin-top: 10px; }
 
 .state .city-statistic__table {
-  border-collapse: collapse;
-  display: flex;
   margin-top: 10px;
   width: 100%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px; }
+  .state .city-statistic__table thead,
   .state .city-statistic__table tbody {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    display: flex;
-    width: 100%;
-    justify-content: space-between; }
-  .state .city-statistic__table tr {
-    flex-direction: column;
-    display: flex; }
-  .state .city-statistic__table .trust-fund-column,
-  .state .city-statistic__table .job-sites-column {
-    width: 50%; }
-  .state .city-statistic__table .city-column {
-    width: 100%; }
-    .state .city-statistic__table .city-column th {
-      border-bottom: 1px solid #dedede;
-      padding: 5px 0;
-      line-height: 26px;
-      text-align: start;
-      padding-left: 10px;
-      display: flex; }
-      @media (max-width: 475px) {
-        .state .city-statistic__table .city-column th {
-          font-size: 14px; } }
-      .state .city-statistic__table .city-column th a {
-        font-weight: 400;
-        text-decoration-line: underline !important;
-        line-height: 26px; }
-        @media (max-width: 475px) {
-          .state .city-statistic__table .city-column th a {
-            font-size: 14px; } }
-  .state .city-statistic__table .trust-fund-column td {
-    border-bottom: 1px solid #dedede;
-    width: 100%;
-    padding: 5px 0;
-    line-height: 26px; }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .state .city-statistic__table th, .state .city-statistic__table td {
+    padding: 6px 10px; }
     @media (max-width: 475px) {
-      .state .city-statistic__table .trust-fund-column td {
+      .state .city-statistic__table th, .state .city-statistic__table td {
+        padding: 6px;
         font-size: 14px; } }
-  .state .city-statistic__table .job-sites-column td {
-    border-bottom: 1px solid #dedede;
-    width: 100%;
-    padding: 5px 0;
-    line-height: 26px; }
-    @media (max-width: 475px) {
-      .state .city-statistic__table .job-sites-column td {
-        font-size: 14px; } }
-  .state .city-statistic__table .static-text {
-    font-weight: 700;
-    text-transform: capitalize; }
-  .state .city-statistic__table .city-text {
-    padding-left: 10px !important; }
 
 .state .hidden-column {
   display: none !important; }
