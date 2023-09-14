@@ -3050,7 +3050,8 @@ nav {
     list-style-type: disc;
     color: #054ac3; }
     .job-site .occupational li a {
-      text-decoration-line: underline !important; }
+      text-decoration-line: underline !important;
+      font-size: 18px; }
 
 .job-site .content-table .general-blue-text {
   margin: 0; }
@@ -4813,7 +4814,8 @@ nav {
   margin-top: 10px;
   width: 100%;
   margin-top: 30px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  border-collapse: collapse; }
   .state .city-statistic__table tr {
     border: 1px solid rgba(0, 0, 0, 0.1); }
     .state .city-statistic__table tr th {
