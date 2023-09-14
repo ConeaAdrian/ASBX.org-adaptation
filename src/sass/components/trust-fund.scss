@@ -41,11 +41,7 @@
   margin-top: 20px;
 
   &__content {
-    width: 47.5%;
-
-    @media only screen and (max-width: 890px) and (min-width: 767px) {
-      width: 100%;
-    }
+    width: 48.485%;
     @media (max-width: 640px) {
       width: 100%;
     }
@@ -58,16 +54,16 @@
     }
 
     .review {
-      font-weight: 700 !important;
+      font-weight: 400 !important;
     }
   }
 }
 
 .compensation-section__table {
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 4px;
   background: #fbfbfb;
-  max-width: 300px;
+  max-width: 320px;
   width: 100%;
   border-collapse: collapse;
   @media (max-width: 475px) {
@@ -83,8 +79,8 @@
   thead {
     th {
       text-align: start;
-      color: #000;
-      font-size: 16px;
+      color: #036;
+      font-size: 18px;
       line-height: normal;
       text-transform: capitalize;
       font-weight: 700 !important;
@@ -92,26 +88,14 @@
   }
   tbody {
     .review {
-      color: #bc2649;
-      font-size: 16px;
+      color: #000;
+      font-size: 18px;
       line-height: normal;
     }
     .amount-result {
-      color: #000;
-      font-size: 16px;
-      font-weight: 400;
-    }
-  }
-  tfoot {
-    .review {
       color: #bc2649;
-      font-size: 16px;
-      line-height: normal;
-    }
-    .amount-result {
-      color: #000;
-      font-size: 16px;
-      font-weight: 400;
+      font-size: 18px;
+      font-weight: 300;
     }
   }
 }
@@ -152,6 +136,9 @@
       font-size: 20px;
       line-height: 26px;
       font-weight: 400 !important;
+      a {
+        text-decoration-line: underline !important;
+      }
     }
   }
 }
@@ -164,9 +151,7 @@
   h3 {
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #324a74;
-    font-size: 20px;
-    font-weight: 400;
+    color: #036;
     line-height: normal;
     text-transform: capitalize;
   }

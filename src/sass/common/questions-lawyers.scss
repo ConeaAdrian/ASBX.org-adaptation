@@ -1,7 +1,7 @@
 .lawyers-information {
   .block-lawyers {
     width: 100%;
-    max-width: 320px;
+    max-width: 340px;
     border-radius: 4px;
     margin-top: 20px;
     padding: 13px;
@@ -20,17 +20,14 @@
 
       .lawyers-data {
         text-align: start;
-        h3 {
-          font-weight: 700;
+        .general-blue-text {
           margin: 0;
-          color: #324a74;
-          font-size: 18px;
           text-decoration-line: underline;
           margin-bottom: 3px;
         }
         p {
           color: #202020;
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 400;
         }
       }
@@ -50,9 +47,9 @@
         height: 14px;
       }
       a {
-        color: #202020;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
+        text-decoration-line: underline !important;
       }
       .number {
         align-items: center;

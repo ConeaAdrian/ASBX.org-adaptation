@@ -71,8 +71,8 @@ $link-hover-color: $main-red;
     }
   }
   .logo {
-    height: 22px;
-    width: 91px;
+    height: 24px;
+    width: 100px;
     @media (max-width: 992px) {
       height: 27px;
       width: 115px;
@@ -131,16 +131,27 @@ nav {
   display: none;
   z-index: 1;
   background-color: rgba(4, 4, 4, 0.5);
-  margin-top: 19px;
+  margin-top: 18px;
   @media (max-width: 992px) {
     background-color: transparent;
     margin-top: 0;
   }
   li {
     padding-left: 10px;
+    background: #324a74;
+    opacity: 0.8;
+    @media (max-width: 992px) {
+      background-color: transparent;
+      opacity: 1;
+    }
     a {
       font-size: 14px;
       padding: 5px 0 !important;
+      color: white;
+      @media (max-width: 992px) {
+        font-size: 18px;
+        color: #324a74;
+      }
     }
   }
 }
@@ -185,12 +196,16 @@ nav {
     margin-top: 0;
     a {
       font-family: "Roboto Condensed", sans-serif !important;
+      font-size: 16px;
       @media (max-width: 992px) {
         padding: 12px 0 !important;
       }
 
       &:hover {
-        color: #e4e0e1 !important;
+        color: #ffffff;
+        @media (max-width: 992px) {
+          color: #324a74;
+        }
       }
     }
   }
@@ -251,7 +266,6 @@ nav {
     }
   }
   .nav-dropdown {
-
     position: static;
   }
 }

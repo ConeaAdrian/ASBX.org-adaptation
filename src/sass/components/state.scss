@@ -120,10 +120,11 @@
     display: grid;
     border-left: 2px solid #bc2649;
     padding-left: 10px;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
     line-height: normal;
     margin-top: 10px;
+    margin-bottom: 40px;
   }
   .city-statistic__table {
     margin-top: 10px;
@@ -143,10 +144,15 @@
     }
     th, td {
       padding: 6px 10px;
-      font-size: 18px;
+      font-size: 20px;
       @media (max-width: 475px) {
       padding: 6px;
       font-size: 14px;
+      }
+    }
+    .city-link {
+      a {
+        text-decoration-line: underline!important;
       }
     }
   }
@@ -244,7 +250,7 @@
     list-style-type: disc;
     break-inside: avoid;
     margin-top: 0;
-    padding-top: 5;
+    padding-top: 5px;
     color: #054AC3;
 
     &::before {
@@ -255,7 +261,8 @@
     a {
       font-size: 20px;
       font-weight: 300;
-      line-height: 26px;
+      line-height: 28px;
+      text-decoration-line: underline!important;
 
       @media (max-width: 475px) {
         font-size: 18px;

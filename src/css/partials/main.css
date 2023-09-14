@@ -48,7 +48,7 @@ a {
   line-height: normal; }
 
 h1 {
-  color: #324a74;
+  color: #003366;
   font-size: 38px;
   font-style: normal;
   font-weight: 700;
@@ -65,7 +65,7 @@ h2 {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 38px;
   padding-top: 40px; }
   @media (max-width: 475px) {
     h2 {
@@ -74,8 +74,9 @@ h2 {
 
 h3 {
   font-size: 24px;
-  color: #036;
-  font-weight: 700; }
+  color: #003366;
+  font-weight: 700;
+  line-height: 32px; }
 
 h4,
 h5,
@@ -106,7 +107,7 @@ a {
   text-decoration: none !important;
   cursor: pointer !important;
   transition: all 0.3s ease-in;
-  color: #054AC3; }
+  color: #054ac3; }
   a > span,
   a > b,
   a > strong {
@@ -163,7 +164,9 @@ strong {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px; }
 
-dl, dt, dd {
+dl,
+dt,
+dd {
   font-family: "Roboto Condensed", sans-serif; }
 
 .position-relative {
@@ -205,7 +208,7 @@ dl, dt, dd {
 .data-info {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #324a74;
+  color: #003366;
   font-size: 20px;
   font-style: normal;
   font-weight: 400; }
@@ -213,13 +216,19 @@ dl, dt, dd {
     .data-info {
       text-align: center; } }
 
+.general-blue-text {
+  color: #003366;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize; }
+
 .red-not {
   color: #bc2649; }
 
 .not-text {
   font-size: 16px;
   line-height: normal;
-  font-weight: 400; }
+  font-weight: 300; }
 
 @media (min-width: 1200px) {
   .container {
@@ -332,7 +341,7 @@ button {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 24px;
     text-decoration-line: underline !important;
     color: #054AC3; }
     @media (max-width: 767px) {
@@ -361,7 +370,7 @@ button {
 
 .lawyers-information .block-lawyers {
   width: 100%;
-  max-width: 320px;
+  max-width: 340px;
   border-radius: 4px;
   margin-top: 20px;
   padding: 13px;
@@ -378,16 +387,13 @@ button {
     align-items: center; }
     .lawyers-information .block-lawyers__about .lawyers-data {
       text-align: start; }
-      .lawyers-information .block-lawyers__about .lawyers-data h3 {
-        font-weight: 700;
+      .lawyers-information .block-lawyers__about .lawyers-data .general-blue-text {
         margin: 0;
-        color: #324a74;
-        font-size: 18px;
         text-decoration-line: underline;
         margin-bottom: 3px; }
       .lawyers-information .block-lawyers__about .lawyers-data p {
         color: #202020;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400; }
   .lawyers-information .block-lawyers .img-lawyers {
     border-radius: 50%;
@@ -402,9 +408,9 @@ button {
       width: 14px;
       height: 14px; }
     .lawyers-information .block-lawyers .contact a {
-      color: #202020;
-      font-size: 16px;
-      font-weight: 400; }
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration-line: underline !important; }
     .lawyers-information .block-lawyers .contact .number {
       align-items: center;
       display: flex;
@@ -792,8 +798,8 @@ footer {
       justify-content: center;
       display: flex; }
   .navigation .logo {
-    height: 22px;
-    width: 91px; }
+    height: 24px;
+    width: 100px; }
     @media (max-width: 992px) {
       .navigation .logo {
         height: 27px;
@@ -845,16 +851,27 @@ nav {
   display: none;
   z-index: 1;
   background-color: rgba(4, 4, 4, 0.5);
-  margin-top: 19px; }
+  margin-top: 18px; }
   @media (max-width: 992px) {
     .nav-dropdown {
       background-color: transparent;
       margin-top: 0; } }
   .nav-dropdown li {
-    padding-left: 10px; }
+    padding-left: 10px;
+    background: #324a74;
+    opacity: 0.8; }
+    @media (max-width: 992px) {
+      .nav-dropdown li {
+        background-color: transparent;
+        opacity: 1; } }
     .nav-dropdown li a {
       font-size: 14px;
-      padding: 5px 0 !important; }
+      padding: 5px 0 !important;
+      color: white; }
+      @media (max-width: 992px) {
+        .nav-dropdown li a {
+          font-size: 18px;
+          color: #324a74; } }
 
 .nav-list {
   background-color: white;
@@ -891,12 +908,16 @@ nav {
   .nav-list li {
     margin-top: 0; }
     .nav-list li a {
-      font-family: "Roboto Condensed", sans-serif !important; }
+      font-family: "Roboto Condensed", sans-serif !important;
+      font-size: 16px; }
       @media (max-width: 992px) {
         .nav-list li a {
           padding: 12px 0 !important; } }
       .nav-list li a:hover {
-        color: #e4e0e1 !important; }
+        color: #ffffff; }
+        @media (max-width: 992px) {
+          .nav-list li a:hover {
+            color: #324a74; } }
   .nav-list .button-question {
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -1919,10 +1940,7 @@ nav {
       font-size: 26px; } }
 
 .city-content .data-free-consultation {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px; }
+  font-weight: 400; }
 
 .city-content .text-exampe {
   margin-top: 10px; }
@@ -1940,10 +1958,7 @@ nav {
   margin-top: 20px;
   margin-bottom: 20px; }
   .sort-chase__content {
-    width: 47.5%; }
-    @media only screen and (max-width: 891px) and (min-width: 767px) {
-      .sort-chase__content {
-        width: 100%; } }
+    width: 48.485%; }
     @media (max-width: 640px) {
       .sort-chase__content {
         width: 100%; } }
@@ -1952,7 +1967,7 @@ nav {
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
-      line-height: 26px; }
+      line-height: 28px; }
     .sort-chase__content td,
     .sort-chase__content th {
       font-weight: 400 !important; }
@@ -1972,9 +1987,6 @@ nav {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
     width: 48.35%;
     padding: 20px; }
-    @media only screen and (max-width: 930px) and (min-width: 767px) {
-      .content-job__search {
-        width: 100%; } }
     @media (max-width: 767px) {
       .content-job__search {
         padding: 10px; } }
@@ -1991,9 +2003,6 @@ nav {
         width: 100%;
         max-width: 242px;
         padding-left: 5px; }
-        @media only screen and (max-width: 930px) and (min-width: 767px) {
-          .content-job__search .select-job select {
-            max-width: none; } }
         @media (max-width: 767px) {
           .content-job__search .select-job select {
             padding: 10px; } }
@@ -2413,13 +2422,6 @@ nav {
     font-weight: 400;
     text-transform: capitalize; }
 
-.nearby-location p {
-  color: #036;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: capitalize; }
-
 .location-list {
   display: flex;
   flex-wrap: wrap;
@@ -2434,19 +2436,13 @@ nav {
 
 .required-asbx {
   width: 100%;
-  max-width: 280px;
+  max-width: 320px;
   gap: 20px;
   display: flex;
   flex-direction: column; }
   @media (max-width: 620px) {
     .required-asbx {
       max-width: none; } }
-  .required-asbx__title {
-    color: #324a74;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize; }
   .required-asbx .block-data {
     display: grid;
     border-left: 2px solid #bc2649;
@@ -2454,19 +2450,17 @@ nav {
     gap: 4px; }
     .required-asbx .block-data b {
       color: #bc2649;
-      font-size: 16px !important; }
+      font-size: 18px !important; }
     .required-asbx .block-data p {
       color: #000;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 18px;
       line-height: normal; }
       .required-asbx .block-data p span {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 300;
         line-height: normal;
         text-decoration-line: underline !important; }
-    .required-asbx .block-data b {
-      font-weight: 400; }
 
 .general-information-table {
   display: flex;
@@ -2489,17 +2483,9 @@ nav {
   @media (max-width: 992px) {
     .content-summarizer {
       max-width: none; } }
-
-@media (max-width: 620px) {
-  .content-summarizer {
-    max-width: none; } }
-
-.content-summarizer p {
-  color: #15528e;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: capitalize; }
+  @media (max-width: 620px) {
+    .content-summarizer {
+      max-width: none; } }
 
 .content-summarizer__notice div {
   display: flex;
@@ -2509,7 +2495,7 @@ nav {
   color: #15528e;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 28px;
   text-decoration-line: underline !important;
   text-transform: capitalize; }
 
@@ -2527,17 +2513,13 @@ nav {
       margin: 0 auto;
       display: block;
       width: 100%;
-      border-radius: 4px;
-      border: 1px solid rgba(186, 186, 186, 0.31);
-      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1); } }
+      border-radius: 4px; } }
 
 .flag-img {
   width: 100%;
   border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid rgba(186, 186, 186, 0.31);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
-  height: 80px; }
+  height: 100px; }
   @media (max-width: 620px) {
     .flag-img {
       display: none; } }
@@ -3064,7 +3046,7 @@ nav {
       margin-top: 30px; } }
   .job-site .add-to-claims__text {
     width: 100%;
-    max-width: 300px; }
+    max-width: 320px; }
     @media (max-width: 660px) {
       .job-site .add-to-claims__text {
         max-width: none; } }
@@ -3080,11 +3062,11 @@ nav {
   margin-top: 10px;
   padding-left: 20px; }
   .job-site .occupational li {
-    line-height: 26px;
+    line-height: 28px;
     list-style-type: disc;
     font-weight: 400;
-    font-size: 18px;
-    color: #466D92;
+    font-size: 20px;
+    color: #054ac3;
     text-decoration-line: underline; }
 
 .no-job-site .nearby-location {
@@ -3101,9 +3083,8 @@ nav {
   font-weight: 700; }
 
 .no-job .nearby-location {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px;
-  margin-bottom: 30px; }
+  padding-bottom: 30px;
+  margin-bottom: 0px; }
 
 .bottom-banner {
   position: fixed;
@@ -3945,10 +3926,6 @@ nav {
   .mesothelioma .content-table img {
     max-width: none; } }
 
-@media only screen and (max-width: 992px) and (min-width: 767px) {
-  .mesothelioma .content-summarizer {
-    max-width: 100%; } }
-
 .occupational .content-summarizer {
   margin-top: 30px;
   max-width: none; }
@@ -3963,7 +3940,7 @@ nav {
   .occupational .boiler-occupation li {
     font-weight: 300;
     list-style-type: disc;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px; }
 
 .occupational .text-exampe {
@@ -4008,18 +3985,17 @@ nav {
     cursor: pointer;
     font-weight: bold;
     border-bottom: none;
-    padding-bottom: 30px;
-    font-size: 26px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 32px;
     color: #324a74; }
     .faq-container dt.faq-question .toggle-icon {
       transition: transform 0.3s; }
   .faq-container dd.faq-answer {
     padding: 0 0 20px 0;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 28px;
     margin-left: 0; }
 
@@ -4250,10 +4226,7 @@ nav {
   justify-content: space-between;
   margin-top: 20px; }
   .sort-chase__content {
-    width: 47.5%; }
-    @media only screen and (max-width: 890px) and (min-width: 767px) {
-      .sort-chase__content {
-        width: 100%; } }
+    width: 48.485%; }
     @media (max-width: 640px) {
       .sort-chase__content {
         width: 100%; } }
@@ -4263,13 +4236,13 @@ nav {
       line-height: normal;
       text-transform: capitalize; }
     .sort-chase__content .review {
-      font-weight: 700 !important; }
+      font-weight: 400 !important; }
 
 .compensation-section__table {
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 4px;
   background: #fbfbfb;
-  max-width: 300px;
+  max-width: 320px;
   width: 100%;
   border-collapse: collapse; }
   @media (max-width: 475px) {
@@ -4282,27 +4255,19 @@ nav {
     padding: 6px 10px; }
   .compensation-section__table thead th {
     text-align: start;
-    color: #000;
-    font-size: 16px;
+    color: #036;
+    font-size: 18px;
     line-height: normal;
     text-transform: capitalize;
     font-weight: 700 !important; }
   .compensation-section__table tbody .review {
-    color: #bc2649;
-    font-size: 16px;
+    color: #000;
+    font-size: 18px;
     line-height: normal; }
   .compensation-section__table tbody .amount-result {
-    color: #000;
-    font-size: 16px;
-    font-weight: 400; }
-  .compensation-section__table tfoot .review {
     color: #bc2649;
-    font-size: 16px;
-    line-height: normal; }
-  .compensation-section__table tfoot .amount-result {
-    color: #000;
-    font-size: 16px;
-    font-weight: 400; }
+    font-size: 18px;
+    font-weight: 300; }
 
 .legend-ratio {
   font-style: normal;
@@ -4336,6 +4301,8 @@ nav {
       font-size: 20px;
       line-height: 26px;
       font-weight: 400 !important; }
+      .mark-text li .dinamic-page-link a {
+        text-decoration-line: underline !important; }
 
 .dinamic-element {
   display: flex;
@@ -4345,9 +4312,7 @@ nav {
 .dinamic-page h3 {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #324a74;
-  font-size: 20px;
-  font-weight: 400;
+  color: #036;
   line-height: normal;
   text-transform: capitalize; }
 
@@ -4400,18 +4365,18 @@ nav {
         max-width: none; } }
     .content-missing-job__text .blue-text {
       margin-top: 0;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 400;
-      line-height: 22px;
+      line-height: 28px;
       text-transform: capitalize;
       margin-bottom: 0;
-      color: #324A74; }
+      color: #036; }
 
 .missing-job {
   max-width: 320px;
   width: 100%;
-  padding: 20px;
-  gap: 10px;
+  padding: 20px 10px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -4423,13 +4388,6 @@ nav {
   @media (max-width: 660px) {
     .missing-job {
       max-width: none; } }
-  .missing-job p {
-    text-transform: capitalize;
-    color: #15528e !important;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px; }
   .missing-job input {
     border: 1px solid #dbdbdb;
     background: #fff;
@@ -4519,16 +4477,13 @@ nav {
 .card-job-site {
   width: 48.35%;
   padding: 20px 10px;
-  gap: 10px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fbfbfb;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
   position: relative; }
-  @media only screen and (max-width: 930px) and (min-width: 767px) {
-    .card-job-site {
-      width: 100%; } }
   @media (max-width: 767px) {
     .card-job-site {
       padding: 10px; } }
@@ -4573,7 +4528,7 @@ nav {
   .card-job-site__select {
     display: flex;
     flex-direction: column;
-    gap: 10px; }
+    gap: 20px; }
 
 .compensation-table {
   margin-top: 20px;
@@ -4625,8 +4580,6 @@ nav {
     @media (max-width: 475px) {
       .section-question__text {
         max-width: none; } }
-    .section-question__text b {
-      font-size: 18px !important; }
     .section-question__text a {
       color: #466d92 !important;
       font-size: 18px;
@@ -4641,12 +4594,15 @@ nav {
       @media (max-width: 475px) {
         .section-question__text img {
           display: none; } }
+    .section-question__text .red-text {
+      font-size: 20px;
+      line-height: 28px; }
 
 .question-card {
   width: 100%;
   max-width: 320px;
   padding: 20px;
-  gap: 10px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   border-radius: 6px;
@@ -4665,7 +4621,7 @@ nav {
     color: #15528e !important;
     font-size: 18px;
     font-style: normal;
-    line-height: 22px; }
+    line-height: 26px; }
   .question-card select {
     border: 1px solid #dbdbdb;
     height: 44px;
@@ -4710,9 +4666,6 @@ nav {
     background: #fbfbfb;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
     position: relative; }
-    @media only screen and (max-width: 930px) and (min-width: 767px) {
-      .content-boiler .card-boiler {
-        width: 100%; } }
     @media (max-width: 767px) {
       .content-boiler .card-boiler {
         padding: 10px; } }
@@ -4862,10 +4815,11 @@ nav {
   display: grid;
   border-left: 2px solid #bc2649;
   padding-left: 10px;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
   line-height: normal;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 40px; }
 
 .state .city-statistic__table {
   margin-top: 10px;
@@ -4881,11 +4835,13 @@ nav {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   .state .city-statistic__table th, .state .city-statistic__table td {
     padding: 6px 10px;
-    font-size: 18px; }
+    font-size: 20px; }
     @media (max-width: 475px) {
       .state .city-statistic__table th, .state .city-statistic__table td {
         padding: 6px;
         font-size: 14px; } }
+  .state .city-statistic__table .city-link a {
+    text-decoration-line: underline !important; }
 
 .state .hidden-column {
   display: none !important; }
@@ -4901,7 +4857,7 @@ nav {
   list-style-type: disc;
   break-inside: avoid;
   margin-top: 0;
-  padding-top: 5;
+  padding-top: 5px;
   color: #054AC3; }
   .state .state-list li::before {
     margin-right: 6px;
@@ -4909,7 +4865,8 @@ nav {
   .state .state-list li a {
     font-size: 20px;
     font-weight: 300;
-    line-height: 26px; }
+    line-height: 28px;
+    text-decoration-line: underline !important; }
     @media (max-width: 475px) {
       .state .state-list li a {
         font-size: 18px; } }

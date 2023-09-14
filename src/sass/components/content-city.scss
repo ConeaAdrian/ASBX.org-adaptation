@@ -1,9 +1,6 @@
 .city-content {
   .data-free-consultation {
-    font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 26px;
   }
   .text-exampe {
     margin-top: 10px;
@@ -24,11 +21,7 @@
   margin-bottom: 20px;
 
   &__content {
-    width: 47.5%;
-
-    @media only screen and (max-width: 891px) and (min-width: 767px) {
-      width: 100%;
-    }
+    width: 48.485%;
     @media (max-width: 640px) {
       width: 100%;
     }
@@ -37,7 +30,7 @@
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
-      line-height: 26px;
+      line-height: 28px;
     }
 
     td,
@@ -62,9 +55,6 @@
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
     width: 48.35%;
     padding: 20px;
-    @media only screen and (max-width: 930px) and (min-width: 767px) {
-      width: 100%;
-    }
     @media (max-width: 767px) {
       padding: 10px;
     }
@@ -84,9 +74,6 @@
         width: 100%;
         max-width: 242px;
         padding-left: 5px;
-        @media only screen and (max-width: 930px) and (min-width: 767px) {
-          max-width: none;
-        }
         @media (max-width: 767px) {
           padding: 10px;
         }

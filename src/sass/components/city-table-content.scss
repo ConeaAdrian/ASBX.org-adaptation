@@ -88,15 +88,6 @@
     text-transform: capitalize;
   }
 }
-.nearby-location {
-  p {
-    color: #036;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: capitalize;
-  }
-}
 .location-list {
   display: flex;
   flex-wrap: wrap;
@@ -113,19 +104,12 @@
 }
 .required-asbx {
   width: 100%;
-  max-width: 280px;
+  max-width: 320px;
   gap: 20px;
   display: flex;
   flex-direction: column;
   @media (max-width: 620px) {
     max-width: none;
-  }
-  &__title {
-    color: #324a74;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
   }
   .block-data {
     display: grid;
@@ -134,22 +118,19 @@
     gap: 4px;
     b {
       color: #bc2649;
-      font-size: 16px !important;
+      font-size: 18px !important;
     }
     p {
       color: #000;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 18px;
       line-height: normal;
       span {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 300;
         line-height: normal;
         text-decoration-line: underline !important;
       }
-    }
-    b {
-      font-weight: 400;
     }
   }
 }
@@ -175,18 +156,9 @@
   @media (max-width: 992px) {
     max-width: none;
   }
-}
-@media (max-width: 620px) {
-  .content-summarizer {
+  @media (max-width: 620px) {
     max-width: none;
   }
-}
-.content-summarizer p {
-  color: #15528e;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: capitalize;
 }
 .content-summarizer__notice div {
   display: flex;
@@ -196,7 +168,7 @@
   color: #15528e;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 28px;
   text-decoration-line: underline !important;
   text-transform: capitalize;
 }
@@ -216,17 +188,13 @@
     display: block;
     width: 100%;
     border-radius: 4px;
-    border: 1px solid rgba(186, 186, 186, 0.31);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   }
 }
 .flag-img {
   width: 100%;
   border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid rgba(186, 186, 186, 0.31);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
-  height: 80px;
+  height: 100px;
   @media (max-width: 620px) {
     display: none;
   }
