@@ -3048,10 +3048,9 @@ nav {
   .job-site .occupational li {
     line-height: 28px;
     list-style-type: disc;
-    font-weight: 400;
-    font-size: 20px;
-    color: #054ac3;
-    text-decoration-line: underline; }
+    color: #054ac3; }
+    .job-site .occupational li a {
+      text-decoration-line: underline !important; }
 
 .job-site .content-table .general-blue-text {
   margin: 0; }
