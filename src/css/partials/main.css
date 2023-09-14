@@ -122,7 +122,7 @@ select:after {
   width: 0;
   height: 0;
   border: 5px solid transparent;
-  border-color: #324a74 transparent transparent transparent; }
+  border-color: #003366 transparent transparent transparent; }
 
 select {
   width: 100%;
@@ -282,7 +282,7 @@ body {
 
 .button-blue {
   border-radius: 4px;
-  background: #324a74;
+  background: #003366;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -435,7 +435,7 @@ button {
     text-decoration-line: underline;
     margin-bottom: 5px; }
   .lawyers-information__content .data .disease {
-    color: #324a74;
+    color: #003366;
     font-size: 12px;
     font-weight: 400; }
   .lawyers-information__content .data .experience {
@@ -475,7 +475,7 @@ button {
       transform: translateY(-3px); } }
 
 .scroll-up:hover {
-  background-color: #0e3862; }
+  background-color: #001a33; }
 
 .scroll-up.active {
   display: block; }
@@ -590,7 +590,7 @@ button {
 
 footer {
   display: flex;
-  background: #324a74;
+  background: #003366;
   flex-direction: column; }
   footer p,
   footer a,
@@ -747,7 +747,7 @@ footer {
 
 .header-section {
   width: 100%;
-  background: #324a74;
+  background: #003366;
   position: sticky;
   height: fit-content;
   top: 0;
@@ -786,7 +786,7 @@ footer {
       justify-content: center;
       display: flex; }
     .navigation .claims-mobile p {
-      background: #324a74;
+      background: #003366;
       height: 30px;
       width: 30px;
       color: #fff;
@@ -858,7 +858,7 @@ nav {
       margin-top: 0; } }
   .nav-dropdown li {
     padding-left: 10px;
-    background: #324a74;
+    background: #003366;
     opacity: 0.8; }
     @media (max-width: 992px) {
       .nav-dropdown li {
@@ -871,7 +871,7 @@ nav {
       @media (max-width: 992px) {
         .nav-dropdown li a {
           font-size: 18px;
-          color: #324a74; } }
+          color: #003366; } }
 
 .nav-list {
   background-color: white;
@@ -917,7 +917,7 @@ nav {
         color: #ffffff; }
         @media (max-width: 992px) {
           .nav-list li a:hover {
-            color: #324a74; } }
+            color: #003366; } }
   .nav-list .button-question {
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -988,7 +988,7 @@ nav {
     border-radius: 1px;
     height: 2px;
     width: 30px;
-    background: #324a74;
+    background: #003366;
     position: absolute;
     display: block;
     content: "";
@@ -1002,10 +1002,10 @@ nav {
     #nav-toggle.active span:before, #nav-toggle.active span:after {
       top: 0; }
     #nav-toggle.active span:before {
-      background-color: #324a74;
+      background-color: #003366;
       transform: rotate(45deg); }
     #nav-toggle.active span:after {
-      background-color: #324a74;
+      background-color: #003366;
       transform: rotate(-45deg); }
 
 .index-image-logo {
@@ -1074,7 +1074,7 @@ nav {
   z-index: 10; }
   @media (max-width: 992px) {
     .search-principal {
-      background: #324a74; } }
+      background: #003366; } }
   .search-principal .search-general {
     display: flex;
     align-items: center;
@@ -1137,7 +1137,7 @@ nav {
     display: none;
     border-radius: 4px;
     padding: 10px 20px;
-    background-color: #324a74;
+    background-color: #003366;
     text-transform: uppercase; }
     @media (max-width: 767px) {
       .search-form-button-container .close-form-button {
@@ -1265,7 +1265,7 @@ nav {
 
 .index-page #nav-toggle.active span:after,
 .index-page #nav-toggle.active span:before {
-  background-color: #324a74 !important; }
+  background-color: #003366 !important; }
 
 .index-page #nav-toggle.active span {
   background-color: transparent !important; }
@@ -1554,7 +1554,7 @@ nav {
               font-size: 68px;
               transform: translate(28px, 16px); } }
       .index-page .our-mision__nomerotation .box-element__content .text h3 {
-        color: #324a74;
+        color: #003366;
         font-size: 36px;
         font-weight: 700;
         line-height: 30px;
@@ -1722,7 +1722,7 @@ nav {
       top: 18px;
       left: 14rem;
       position: absolute;
-      color: #324a74;
+      color: #003366;
       font-size: 32px;
       font-weight: 700;
       line-height: normal;
@@ -1780,7 +1780,7 @@ nav {
       .index-page .choose-asbx__content .information .list-nomerotation {
         margin-top: 0; }
         .index-page .choose-asbx__content .information .list-nomerotation li {
-          color: #324a74;
+          color: #003366;
           font-size: 20px;
           font-weight: 400;
           line-height: 26px; }
@@ -1843,7 +1843,7 @@ nav {
     margin-right: 6px;
     text-decoration-line: none; }
   .index-page .state-connection .state-list-index li a {
-    color: #324a74 !important;
+    color: #003366 !important;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -1963,7 +1963,7 @@ nav {
       .sort-chase__content {
         width: 100%; } }
     .sort-chase__content h3 {
-      color: #324a74;
+      color: #003366;
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
@@ -2047,7 +2047,7 @@ nav {
   .search-alphabet h3 {
     text-transform: capitalize; }
     .search-alphabet h3 a {
-      color: #324a74;
+      color: #003366;
       font-weight: 400; }
   .search-alphabet .alphabet {
     display: flex;
@@ -2055,7 +2055,7 @@ nav {
     gap: 14px;
     margin-top: 10px; }
     .search-alphabet .alphabet a {
-      color: #324a74;
+      color: #003366;
       font-size: 20px;
       font-weight: 400;
       line-height: 28px;
@@ -2099,7 +2099,7 @@ nav {
   width: 100%;
   max-width: 1300px;
   height: 220px;
-  background: #15528E;
+  background: #003366;
   border-radius: 20px; }
   .baner-company__logo {
     border-radius: 20px;
@@ -2249,13 +2249,13 @@ nav {
           margin-top: -35px; } }
       .general-claims .claims-selected .content-information h2 {
         font-size: 20px;
-        color: #324a74;
+        color: #003366;
         font-weight: 700;
         border: 0;
         margin-top: 0;
         padding-top: 0; }
       .general-claims .claims-selected .content-information p {
-        color: #324a74;
+        color: #003366;
         font-size: 18px;
         margin-bottom: 6px;
         font-weight: 400; }
@@ -2265,7 +2265,7 @@ nav {
       height: 61px;
       margin-top: 5px;
       margin-bottom: 5px;
-      background: #324a74;
+      background: #003366;
       display: flex;
       align-items: center;
       justify-content: center; }
@@ -2489,7 +2489,6 @@ nav {
   align-items: baseline; }
 
 .content-summarizer__notice a {
-  color: #15528e;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -2497,7 +2496,7 @@ nav {
   text-transform: capitalize; }
 
 .content-summarizer__notice mark {
-  color: #15528e;
+  color: #054ac3;
   font-size: 18px;
   margin-right: 5px;
   background-color: transparent; }
@@ -2581,7 +2580,7 @@ nav {
       font-weight: 400;
       font-size: 80px !important;
       line-height: 100px;
-      color: #15528E;
+      color: #003366;
       margin: 0 auto; }
       @media (max-width: 768px) {
         .error-page__container .error-text {
@@ -2592,7 +2591,7 @@ nav {
       font-weight: 400;
       font-size: 38px;
       line-height: 120%;
-      color: #15528E;
+      color: #003366;
       margin-bottom: 3rem; }
       @media (max-width: 768px) {
         .error-page__container h3 {
@@ -2630,7 +2629,7 @@ nav {
     text-align: center; } }
 
 .text-available {
-  color: #324a74;
+  color: #003366;
   font-size: 16px;
   font-weight: 400; }
   @media (max-width: 475px) {
@@ -2639,7 +2638,7 @@ nav {
       text-align: center; } }
 
 .no-verified {
-  color: #324a74;
+  color: #003366;
   font-size: 16px;
   font-weight: 300;
   margin-top: 15px;
@@ -2651,7 +2650,7 @@ nav {
   margin-top: 18px;
   margin-bottom: 15px; }
   .content-ship .about-text-ship span {
-    color: #15528e;
+    color: #003366;
     font-weight: 400;
     text-decoration-line: underline; }
 
@@ -2699,7 +2698,7 @@ nav {
     flex-direction: column;
     gap: 10px; }
     .content-ship .ship-claims .ship-select span {
-      color: #15528e;
+      color: #003366;
       font-size: 20px;
       font-weight: 700; }
     .content-ship .ship-claims .ship-select p {
@@ -2764,7 +2763,6 @@ nav {
       .content-ship .equipment .equipment-box {
         max-width: none; } }
     .content-ship .equipment .equipment-box a {
-      color: #15528e;
       font-size: 20px;
       font-weight: 700;
       text-decoration-line: underline !important; }
@@ -2787,7 +2785,7 @@ nav {
   list-style-type: disc; }
 
 .content-ship .list-nomerotation li {
-  color: #324a74;
+  color: #003366;
   font-size: 18px;
   font-weight: 300;
   line-height: 26px;
@@ -2803,10 +2801,10 @@ nav {
   margin-top: 4rem; }
   .contact .hreader-contact h1 {
     font-size: 72px;
-    color: #324A74;
+    color: #003366;
     margin-bottom: 3rem; }
   .contact .hreader-contact p {
-    color: #324A74; }
+    color: #003366; }
 
 .contact .contact-company {
   align-items: center;
@@ -2832,7 +2830,7 @@ nav {
     .contact .contact-company__information .contact-icon {
       width: 55px;
       height: 55px;
-      background-color: #324a74;
+      background-color: #003366;
       border-radius: 50%;
       margin: 0 auto;
       justify-content: center;
@@ -2978,7 +2976,7 @@ nav {
   margin: 10px 0;
   padding-left: 20px; }
   .job-site .responsible-company li {
-    color: #324a74;
+    color: #003366;
     margin-top: 0;
     margin-bottom: 3px;
     line-height: 26px;
@@ -2986,7 +2984,6 @@ nav {
     .job-site .responsible-company li a {
       font-size: 18px;
       font-weight: 400;
-      color: #324a74;
       text-decoration-line: underline !important; }
 
 .job-site .general-blue-text {
@@ -3066,7 +3063,7 @@ nav {
   padding-top: 20px; }
 
 .no-job .data-info b {
-  color: #324a74; }
+  color: #003366; }
 
 .no-job .red-text {
   font-size: 26px;
@@ -3162,7 +3159,7 @@ nav {
             .bottom-banner .banner-calculate .content-information .claims-buttons .calculate {
               font-weight: 400; } }
         .bottom-banner .banner-calculate .content-information .claims-buttons .add-city {
-          color: #324A74;
+          color: #003366;
           background: transparent;
           border-radius: 5px;
           border: 0;
@@ -3220,7 +3217,7 @@ nav {
       text-indent: -9999px;
       width: 56px;
       height: 24px;
-      background: #324a74;
+      background: #003366;
       display: block;
       border-radius: 100px;
       position: relative; }
@@ -3244,7 +3241,7 @@ nav {
     .result-page .legal-representation .recommended {
       margin-bottom: 5px;
       text-align: center;
-      color: #324a74;
+      color: #003366;
       font-size: 16px;
       font-weight: 600; }
     .result-page .legal-representation .legal-information {
@@ -3290,7 +3287,7 @@ nav {
             background: #ede8e8;
             padding: 8px; }
         .result-page .legal-representation .legal-information .ER-claims .revenue {
-          color: #324a74;
+          color: #003366;
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
@@ -3324,7 +3321,7 @@ nav {
         .result-page .legal-representation .legal-information .ER-claims .button-claim {
           border-radius: 16px;
           background: rgba(255, 64, 67, 0.24);
-          color: #324a74;
+          color: #003366;
           font-size: 16px;
           font-weight: 700;
           padding: 14px 27px;
@@ -3347,7 +3344,7 @@ nav {
         max-width: 280px;
         width: 100%;
         border-radius: 24px;
-        background: #324a74;
+        background: #003366;
         box-shadow: 6px 12px 32px 0px rgba(0, 0, 0, 0.12);
         display: flex;
         flex-direction: column; }
@@ -3457,7 +3454,7 @@ nav {
             background: #ede8e8;
             padding: 8px; }
         .result-page .legal-representation .legal-information .IR-claims .revenue {
-          color: #324a74;
+          color: #003366;
           font-size: 16px;
           font-weight: 600;
           padding-top: 4px;
@@ -3491,7 +3488,7 @@ nav {
         .result-page .legal-representation .legal-information .IR-claims .button-claim {
           border-radius: 16px;
           background: rgba(255, 64, 67, 0.24);
-          color: #324a74;
+          color: #003366;
           font-size: 16px;
           font-weight: 700;
           padding: 14px 27px;
@@ -3520,7 +3517,7 @@ nav {
       border-bottom: 1px solid #b4b4b4;
       padding-bottom: 10px; }
     .result-page .your-own .revenue {
-      color: #324a74;
+      color: #003366;
       font-size: 16px;
       font-weight: 600;
       padding-top: 4px;
@@ -3569,7 +3566,7 @@ nav {
         width: 225px;
         height: 28px; }
       .result-page .lawyer-representation__company span {
-        color: #324a74;
+        color: #003366;
         font-size: 32px;
         font-weight: 700;
         line-height: normal;
@@ -3597,7 +3594,7 @@ nav {
       font-weight: 700;
       line-height: 26px; }
     .result-page .content-request .question-lawyer span {
-      color: #324a74;
+      color: #003366;
       font-size: 24px;
       font-weight: 400;
       line-height: 26px; }
@@ -3733,7 +3730,7 @@ nav {
   .callback-form__text {
     border-radius: 8px 8px 0px 0px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #324a74;
+    background: #003366;
     width: 100%;
     height: 43px; }
   .callback-form span {
@@ -3850,7 +3847,7 @@ nav {
   font-weight: 400; }
 
 .mesothelioma .mesothelioma-facts li {
-  color: #15528e;
+  color: #003366;
   font-size: 20px;
   font-weight: 300;
   line-height: 26px; }
@@ -3891,7 +3888,7 @@ nav {
       gap: 10px;
       align-items: flex-start; }
       .mesothelioma .tick-section .tick-element__information p {
-        color: #324a74; }
+        color: #003366; }
       .mesothelioma .tick-section .tick-element__information::before {
         content: "";
         background-image: url("../../img/Vector-.svg");
@@ -3975,7 +3972,7 @@ nav {
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
-    color: #324a74; }
+    color: #003366; }
     .faq-container dt.faq-question .toggle-icon {
       transition: transform 0.3s; }
   .faq-container dd.faq-answer {
@@ -4029,7 +4026,7 @@ nav {
     z-index: 10;
     display: none; }
     .top-search-mobile .search-block .search-dat {
-      background-color: #324a74;
+      background-color: #003366;
       padding: 18px 20px;
       display: flex;
       flex-direction: column;
@@ -4136,7 +4133,7 @@ nav {
   .manufacture .ship-list ul {
     margin-bottom: 20px; }
     .manufacture .ship-list ul li {
-      color: #15528e;
+      color: #003366;
       font-size: 16px;
       font-weight: 300;
       text-decoration-line: underline; }
@@ -4186,7 +4183,7 @@ nav {
 .trust-fund {
   margin-bottom: 40px; }
   .trust-fund .status-active {
-    color: #324a74;
+    color: #003366;
     font-weight: 400;
     margin-bottom: 20px; }
     .trust-fund .status-active span {
@@ -4309,7 +4306,7 @@ nav {
   margin-bottom: 0; }
 
 .city-state .today-data {
-  color: #324a74;
+  color: #003366;
   font-size: 16px;
   font-weight: 300; }
   .city-state .today-data span {
@@ -4324,7 +4321,7 @@ nav {
     margin-top: 0;
     text-decoration-line: underline; }
     .city-state .search-option ul li a {
-      color: #324a74;
+      color: #003366;
       font-size: 18px;
       font-weight: 400;
       line-height: 24px; }
@@ -4604,7 +4601,7 @@ nav {
   .question-card p {
     font-weight: 400;
     text-transform: capitalize;
-    color: #15528e !important;
+    color: #003366 !important;
     font-size: 18px;
     font-style: normal;
     line-height: 26px; }

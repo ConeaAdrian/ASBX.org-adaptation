@@ -10,7 +10,7 @@ $link-hover-color: $main-red;
 
 .header-section {
   width: 100%;
-  background: #324a74;
+  background: #003366;
   position: sticky;
   height: fit-content;
   top: 0;
@@ -57,7 +57,7 @@ $link-hover-color: $main-red;
     }
 
     p {
-      background: #324a74;
+      background:#003366;
       height: 30px;
       width: 30px;
       color: #fff;
@@ -138,7 +138,7 @@ nav {
   }
   li {
     padding-left: 10px;
-    background: #324a74;
+    background: #003366;
     opacity: 0.8;
     @media (max-width: 992px) {
       background-color: transparent;
@@ -150,7 +150,7 @@ nav {
       color: white;
       @media (max-width: 992px) {
         font-size: 18px;
-        color: #324a74;
+        color: #003366;
       }
     }
   }
@@ -204,7 +204,7 @@ nav {
       &:hover {
         color: #ffffff;
         @media (max-width: 992px) {
-          color: #324a74;
+          color: #003366;
         }
       }
     }
@@ -295,7 +295,7 @@ nav {
     border-radius: 1px;
     height: 2px;
     width: 30px;
-    background: #324a74;
+    background: #003366;
     position: absolute;
     display: block;
     content: "";
@@ -314,11 +314,11 @@ nav {
       top: 0;
     }
     &:before {
-      background-color: #324a74;
+      background-color: #003366;
       transform: rotate(45deg);
     }
     &:after {
-      background-color: #324a74;
+      background-color: #003366;
       transform: rotate(-45deg);
     }
   }
@@ -406,7 +406,7 @@ nav {
   height: fit-content;
   z-index: 10;
   @media (max-width: 992px) {
-    background: #324a74;
+    background: #003366;
   }
   .search-general {
     display: flex;
@@ -475,7 +475,7 @@ nav {
     display: none;
     border-radius: 4px;
     padding: 10px 20px;
-    background-color: #324a74;
+    background-color: #003366;
     text-transform: uppercase;
 
     @media (max-width: 767px) {
