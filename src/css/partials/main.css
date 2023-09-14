@@ -4811,6 +4811,12 @@ nav {
       border-radius: 4px 4px 0px 0px;
       width: 100%; }
 
+.state .general-blue-text {
+  margin: 20px 0; }
+
+.state .content-summarizer .general-blue-text {
+  margin: 0; }
+
 .state .block-data {
   display: grid;
   border-left: 2px solid #bc2649;

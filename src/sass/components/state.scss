@@ -63,59 +63,14 @@
       }
     }
   }
-
-  // .compensation-section__table {
-  //   margin-top: 10px;
-  //   border-radius: 4px;
-  //   background: #fbfbfb;
-  //   max-width: 300px;
-  //   width: 100%;
-  //   border-collapse: collapse;
-  //   @media (max-width: 475px) {
-  //     max-width: none;
-  //   }
-
-  //   table,
-  //   th,
-  //   td {
-  //     border: 1px solid rgba(0, 0, 0, 0.1);
-  //     padding: 6px 10px;
-  //   }
-  //   thead {
-  //     th {
-  //       text-align: start;
-  //       color: #000;
-  //       font-size: 16px;
-  //       line-height: normal;
-  //       text-transform: capitalize;
-  //       font-weight: 700 !important;
-  //     }
-  //   }
-  //   tbody {
-  //     .review {
-  //       color: #bc2649;
-  //       font-size: 16px;
-  //       line-height: normal;
-  //     }
-  //     .amount-result {
-  //       color: #000;
-  //       font-size: 16px;
-  //       font-weight: 400;
-  //     }
-  //   }
-  //   tfoot {
-  //     .review {
-  //       color: #bc2649;
-  //       font-size: 16px;
-  //       line-height: normal;
-  //     }
-  //     .amount-result {
-  //       color: #000;
-  //       font-size: 16px;
-  //       font-weight: 400;
-  //     }
-  //   }
-  // }
+  .general-blue-text {
+    margin: 20px 0;
+  }
+  .content-summarizer {
+    .general-blue-text {
+      margin: 0;
+    }
+  }
   .block-data {
     display: grid;
     border-left: 2px solid #bc2649;
@@ -156,83 +111,6 @@
       }
     }
   }
-  // .city-statistic {
-  //   &__table {
-  //     border-collapse: collapse;
-  //     display: flex;
-  //     margin-top: 10px;
-  //     width: 100%;
-  //     margin-top: 30px;
-
-  //     tbody {
-  //       border: 1px solid rgba(0, 0, 0, 0.1);
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //     }
-  //     tr {
-  //       flex-direction: column;
-  //       display: flex;
-  //     }
-  //     .trust-fund-column,
-  //     .job-sites-column {
-  //       width: 50%;
-  //     }
-  //     .city-column {
-  //       width: 100%;
-
-  //       th {
-  //         border-bottom: 1px solid #dedede;
-  //         padding: 5px 0;
-  //         line-height: 26px;
-  //         text-align: start;
-  //         padding-left: 10px;
-  //         display: flex;
-  //         @media (max-width: 475px) {
-  //           font-size: 14px;
-  //         }
-
-  //         a {
-  //           font-weight: 400;
-  //           text-decoration-line: underline !important;
-  //           line-height: 26px;
-  //           @media (max-width: 475px) {
-  //             font-size: 14px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //     .trust-fund-column {
-  //       td {
-  //         border-bottom: 1px solid #dedede;
-  //         width: 100%;
-  //         padding: 5px 0;
-  //         line-height: 26px;
-  //         @media (max-width: 475px) {
-  //           font-size: 14px;
-  //         }
-  //       }
-  //     }
-  //     .job-sites-column {
-  //       td {
-  //         border-bottom: 1px solid #dedede;
-  //         width: 100%;
-  //         padding: 5px 0;
-  //         line-height: 26px;
-  //         @media (max-width: 475px) {
-  //           font-size: 14px;
-  //         }
-  //       }
-  //     }
-  //     .static-text {
-  //       font-weight: 700;
-  //       text-transform: capitalize;
-  //     }
-  //     .city-text {
-  //       padding-left: 10px !important;
-  //     }
-  //   }
-  // }
   .hidden-column {
     display: none !important;
   }
