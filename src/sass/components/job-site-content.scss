@@ -73,9 +73,6 @@
     gap: 20px;
     justify-content: space-between;
     align-items: center;
-    @media only screen and (max-width: 870px) and (min-width: 767px) {
-      flex-direction: column;
-    }
     @media (max-width: 660px) {
       flex-direction: column;
       margin-top: 30px;
@@ -84,9 +81,6 @@
     &__text {
       width: 100%;
       max-width: 300px;
-      @media only screen and (max-width: 870px) and (min-width: 767px) {
-        max-width: none;
-      }
       @media (max-width: 660px) {
         max-width: none;
       }

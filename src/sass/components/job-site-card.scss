@@ -7,11 +7,12 @@
   padding-bottom: 20px;
   .button-red {
     width: 100%;
+    margin-top: 10px;
   }
 }
 .card-job-site {
   width: 48.35%;
-  padding: 20px;
+  padding: 20px 10px;
   gap: 10px;
   display: flex;
   flex-direction: column;
@@ -32,16 +33,17 @@
     font-size: 15px;
   }
   a {
-    color: #1A73F5 !important;
-    font-size: 20px;
+    color: #054AC3 !important;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 26px;
     text-decoration-line: underline !important;
   }
   p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 26px;
   }
 
   select {

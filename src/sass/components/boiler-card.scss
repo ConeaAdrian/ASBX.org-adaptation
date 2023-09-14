@@ -7,7 +7,7 @@
 
   .card-boiler {
     width: 48.35%;
-    padding: 20px;
+    padding: 20px 10px;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -66,6 +66,10 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+
+      .button-blue {
+        margin-top: 10px;
+      }
     }
   }
 }

@@ -66,7 +66,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
-  padding-top: 20px; }
+  padding-top: 40px; }
   @media (max-width: 475px) {
     h2 {
       font-size: 26px;
@@ -106,7 +106,7 @@ a {
   text-decoration: none !important;
   cursor: pointer !important;
   transition: all 0.3s ease-in;
-  color: #1A73F5; }
+  color: #054AC3; }
   a > span,
   a > b,
   a > strong {
@@ -334,7 +334,7 @@ button {
     font-weight: 400;
     line-height: 20px;
     text-decoration-line: underline !important;
-    color: #466D92; }
+    color: #054AC3; }
     @media (max-width: 767px) {
       .breadcrumb a {
         font-size: 14px; } }
@@ -2063,7 +2063,7 @@ nav {
       column-count: 1; } }
 
 .trust-list li {
-  color: #1A73F5;
+  color: #054AC3;
   break-inside: avoid;
   margin-top: 0;
   padding-top: 8px;
@@ -2345,7 +2345,7 @@ nav {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  margin-bottom: 60px; }
+  margin-bottom: 20px; }
   @media (max-width: 620px) {
     .content-table {
       flex-direction: column;
@@ -2397,7 +2397,7 @@ nav {
     line-height: normal;
     text-transform: capitalize; }
   .content-table .table-item a {
-    color: #466d92;
+    color: #054AC3;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -2414,7 +2414,7 @@ nav {
     text-transform: capitalize; }
 
 .nearby-location p {
-  color: #324a74;
+  color: #036;
   font-size: 18px;
   font-weight: 700;
   line-height: normal;
@@ -2429,7 +2429,8 @@ nav {
   .location-list li {
     font-weight: 400; }
     .location-list li a {
-      font-size: 16px; }
+      font-size: 18px;
+      text-decoration: underline !important; }
 
 .required-asbx {
   width: 100%;
@@ -2682,9 +2683,6 @@ nav {
   display: flex;
   gap: 30px;
   margin-top: 20px; }
-  @media only screen and (max-width: 870px) and (min-width: 767px) {
-    .content-ship .content-box-ship {
-      flex-direction: column; } }
   @media (max-width: 660px) {
     .content-ship .content-box-ship {
       flex-direction: column;
@@ -2698,9 +2696,6 @@ nav {
     gap: 30px;
     display: flex;
     flex-direction: column; }
-    @media only screen and (max-width: 870px) and (min-width: 767px) {
-      .content-ship .content-box-ship__text {
-        max-width: none; } }
     @media (max-width: 660px) {
       .content-ship .content-box-ship__text {
         max-width: none; } }
@@ -2714,9 +2709,6 @@ nav {
   padding: 20px;
   width: 100%;
   max-width: 320px; }
-  @media only screen and (max-width: 870px) and (min-width: 767px) {
-    .content-ship .ship-claims {
-      max-width: none; } }
   @media (max-width: 767px) {
     .content-ship .ship-claims {
       padding: 10px; } }
@@ -3066,9 +3058,6 @@ nav {
   gap: 20px;
   justify-content: space-between;
   align-items: center; }
-  @media only screen and (max-width: 870px) and (min-width: 767px) {
-    .job-site .add-to-claims {
-      flex-direction: column; } }
   @media (max-width: 660px) {
     .job-site .add-to-claims {
       flex-direction: column;
@@ -3076,9 +3065,6 @@ nav {
   .job-site .add-to-claims__text {
     width: 100%;
     max-width: 300px; }
-    @media only screen and (max-width: 870px) and (min-width: 767px) {
-      .job-site .add-to-claims__text {
-        max-width: none; } }
     @media (max-width: 660px) {
       .job-site .add-to-claims__text {
         max-width: none; } }
@@ -4346,7 +4332,7 @@ nav {
     line-height: 26px;
     margin-top: 0; }
     .mark-text li .dinamic-page-link {
-      color: #1a73f5;
+      color: #054AC3;
       font-size: 20px;
       line-height: 26px;
       font-weight: 400 !important; }
@@ -4396,9 +4382,6 @@ nav {
   display: flex;
   gap: 20px;
   margin-top: 20px; }
-  @media only screen and (max-width: 870px) and (min-width: 767px) {
-    .content-missing-job {
-      flex-direction: column; } }
   @media (max-width: 660px) {
     .content-missing-job {
       flex-direction: column;
@@ -4412,9 +4395,6 @@ nav {
     gap: 20px;
     display: flex;
     flex-direction: column; }
-    @media only screen and (max-width: 870px) and (min-width: 767px) {
-      .content-missing-job__text {
-        max-width: none; } }
     @media (max-width: 660px) {
       .content-missing-job__text {
         max-width: none; } }
@@ -4437,9 +4417,6 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fbfbfb;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1); }
-  @media only screen and (max-width: 870px) and (min-width: 767px) {
-    .missing-job {
-      max-width: none; } }
   @media (max-width: 767px) {
     .missing-job {
       padding: 10px; } }
@@ -4536,11 +4513,12 @@ nav {
   padding-top: 20px;
   padding-bottom: 20px; }
   .content-card-job .button-red {
-    width: 100%; }
+    width: 100%;
+    margin-top: 10px; }
 
 .card-job-site {
   width: 48.35%;
-  padding: 20px;
+  padding: 20px 10px;
   gap: 10px;
   display: flex;
   flex-direction: column;
@@ -4560,15 +4538,16 @@ nav {
   .card-job-site select {
     font-size: 15px; }
   .card-job-site a {
-    color: #1A73F5 !important;
-    font-size: 20px;
+    color: #054AC3 !important;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 26px;
     text-decoration-line: underline !important; }
   .card-job-site p {
-    font-size: 16px;
-    font-weight: 400; }
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px; }
   .card-job-site select {
     height: 44px;
     width: 100%;
@@ -4723,7 +4702,7 @@ nav {
   margin-top: 20px; }
   .content-boiler .card-boiler {
     width: 48.35%;
-    padding: 20px;
+    padding: 20px 10px;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -4772,6 +4751,8 @@ nav {
       display: flex;
       flex-direction: column;
       gap: 10px; }
+      .content-boiler .card-boiler__select .button-blue {
+        margin-top: 10px; }
 
 .alternative {
   display: block;
@@ -4866,7 +4847,7 @@ nav {
         font-style: normal;
         font-weight: 400;
         text-decoration-line: underline !important;
-        color: #466d92; }
+        color: #054AC3; }
       .state .state-content .state-card__data p {
         font-weight: 300;
         line-height: normal;
@@ -4921,7 +4902,7 @@ nav {
   break-inside: avoid;
   margin-top: 0;
   padding-top: 5;
-  color: #1A73F5; }
+  color: #054AC3; }
   .state .state-list li::before {
     margin-right: 6px;
     text-decoration-line: none; }

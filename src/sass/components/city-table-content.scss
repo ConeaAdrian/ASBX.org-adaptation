@@ -3,7 +3,7 @@
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   @media (max-width: 620px) {
     flex-direction: column;
     margin-bottom: 20px;
@@ -68,7 +68,7 @@
 
   .table-item {
     a {
-      color: #466d92;
+      color: #054AC3;
       font-size: 20px;
       font-weight: 400;
       line-height: 30px;
@@ -90,7 +90,7 @@
 }
 .nearby-location {
   p {
-    color: #324a74;
+    color: #036;
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
@@ -106,7 +106,8 @@
   li {
     font-weight: 400;
     a {
-      font-size: 16px;
+      font-size: 18px;
+      text-decoration: underline !important;
     }
   }
 }
