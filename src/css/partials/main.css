@@ -1843,7 +1843,6 @@ nav {
     margin-right: 6px;
     text-decoration-line: none; }
   .index-page .state-connection .state-list-index li a {
-    color: #003366 !important;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -2785,9 +2784,9 @@ nav {
 
 .content-ship .list-nomerotation li {
   color: #003366;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 28px;
   text-decoration-line: underline; }
 
 .contact .hreader-contact {
@@ -4875,6 +4874,6 @@ nav {
   margin-top: 10px; }
   .list-nomerotation li {
     list-style-type: disc;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 26px; }
+    line-height: 28px; }
