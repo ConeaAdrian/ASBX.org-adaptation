@@ -2478,8 +2478,7 @@ nav {
   background: rgba(240, 245, 255, 0.3);
   width: 100%;
   max-width: 320px;
-  padding: 10px;
-  height: fit-content; }
+  padding: 10px; }
   @media (max-width: 620px) {
     .content-summarizer {
       max-width: none; } }
@@ -4156,7 +4155,7 @@ nav {
     gap: 5px;
     margin-bottom: 20px; }
     .equipment-ship .mark-text li {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 300; }
 
 .button-container {
