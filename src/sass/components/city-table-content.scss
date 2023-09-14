@@ -158,19 +158,20 @@
 .content-summarizer__notice div {
   display: flex;
   align-items: baseline;
-}
-.content-summarizer__notice a {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  text-decoration-line: underline !important;
-  text-transform: capitalize;
-}
-.content-summarizer__notice mark {
-  color: #054ac3;
-  font-size: 18px;
-  margin-right: 5px;
-  background-color: transparent;
+
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration-line: underline !important;
+    text-transform: capitalize;
+  }
+  mark {
+    color: #054ac3;
+    font-size: 18px;
+    margin-right: 5px;
+    background-color: transparent;
+  }
 }
 
 

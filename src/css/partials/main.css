@@ -104,10 +104,13 @@ span {
   line-height: normal; }
 
 a {
-  text-decoration: none !important;
+  text-decoration-line: underline;
   cursor: pointer !important;
   transition: all 0.3s ease-in;
-  color: #054ac3; }
+  color: #054ac3;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px; }
   a > span,
   a > b,
   a > strong {
@@ -1136,7 +1139,7 @@ nav {
   .search-form-button-container .close-form-button {
     display: none;
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 10px 20px 10px;
     background-color: #003366;
     text-transform: uppercase; }
     @media (max-width: 767px) {
@@ -1277,6 +1280,8 @@ nav {
   left: 0;
   z-index: 10;
   background: transparent !important; }
+  .index-page .header-section .nav-dropdown li {
+    background: #151719; }
 
 .index-page .principal-content {
   position: relative;
@@ -2028,13 +2033,8 @@ nav {
     font-size: 20px;
     font-style: normal;
     font-weight: 400; }
-  .search-result ul {
+  .search-result .mark-text {
     padding-left: 25px; }
-    .search-result ul li {
-      line-height: 26px;
-      font-size: 18px;
-      font-weight: 300;
-      list-style-type: disc !important; }
 
 .search-alphabet {
   margin-top: 20px;
@@ -2076,16 +2076,9 @@ nav {
   margin-top: 0;
   padding-top: 8px;
   list-style-type: disc; }
-  .trust-list li::before {
-    margin-right: 6px;
-    text-decoration-line: none; }
-  .trust-list li a {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 28px; }
-    @media (max-width: 475px) {
-      .trust-list li a {
-        font-size: 18px; } }
+  @media (max-width: 475px) {
+    .trust-list li a {
+      font-size: 18px; } }
 
 .next-city .search-alphabet {
   margin-top: 20px;
@@ -2258,8 +2251,6 @@ nav {
         font-size: 18px;
         margin-bottom: 6px;
         font-weight: 400; }
-      .general-claims .claims-selected .content-information b {
-        font-size: 14px; }
     .general-claims .claims-selected .back-ground {
       height: 61px;
       margin-top: 5px;
@@ -2485,19 +2476,17 @@ nav {
 .content-summarizer__notice div {
   display: flex;
   align-items: baseline; }
-
-.content-summarizer__notice a {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  text-decoration-line: underline !important;
-  text-transform: capitalize; }
-
-.content-summarizer__notice mark {
-  color: #054ac3;
-  font-size: 18px;
-  margin-right: 5px;
-  background-color: transparent; }
+  .content-summarizer__notice div a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration-line: underline !important;
+    text-transform: capitalize; }
+  .content-summarizer__notice div mark {
+    color: #054ac3;
+    font-size: 18px;
+    margin-right: 5px;
+    background-color: transparent; }
 
 .mobile-flag-img {
   display: none; }
@@ -3067,9 +3056,10 @@ nav {
   font-size: 26px;
   font-weight: 700; }
 
-.no-job .nearby-location {
+.nearby-location {
   padding-bottom: 30px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .bottom-banner {
   position: fixed;
@@ -4187,18 +4177,15 @@ nav {
     .trust-fund .status-active span {
       color: #bc2649;
       font-weight: 600; }
-  .trust-fund .contact-company strong {
-    font-size: 18px !important;
-    font-weight: 400; }
-  .trust-fund .contact-company a {
-    text-decoration-line: underline !important; }
-  .trust-fund .contact-company .claimant-relations {
-    margin-top: 10px; }
-    .trust-fund .contact-company .claimant-relations a {
-      color: #1c1b1b;
-      font-size: 20px; }
-  .trust-fund .contact-company h3 {
-    color: #000; }
+  .trust-fund .contact-company {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+    .trust-fund .contact-company .claimant-relations {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px; }
 
 .sort-chase {
   display: flex;
@@ -4275,15 +4262,15 @@ nav {
   .mark-text li {
     font-size: 20px;
     list-style-type: disc;
-    line-height: 26px;
+    line-height: 28px;
     margin-top: 0; }
     .mark-text li .dinamic-page-link {
-      color: #054AC3;
+      color: #054ac3;
       font-size: 20px;
       line-height: 26px;
       font-weight: 400 !important; }
       .mark-text li .dinamic-page-link a {
-        text-decoration-line: underline !important; }
+        text-decoration-line: underline; }
 
 .dinamic-element {
   display: flex;
@@ -4407,7 +4394,9 @@ nav {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    color: black;
+    font-size: 14px; }
     @media (max-width: 475px) {
       .page-navigation .page-button,
       .page-navigation .pagination__list__prev,
@@ -4437,7 +4426,8 @@ nav {
       padding: 0;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      text-decoration: none; }
       @media (max-width: 475px) {
         .page-navigation .pagination__list .pagination__list__prev,
         .page-navigation .pagination__list .pagination__list__next {
@@ -4457,8 +4447,8 @@ nav {
 
 .card-job-site {
   width: 48.35%;
-  padding: 20px 10px;
-  gap: 20px;
+  padding: 10px 10px 20px 10px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -4509,7 +4499,7 @@ nav {
   .card-job-site__select {
     display: flex;
     flex-direction: column;
-    gap: 20px; }
+    gap: 10px; }
 
 .compensation-table {
   margin-top: 20px;
@@ -4639,7 +4629,7 @@ nav {
   margin-top: 20px; }
   .content-boiler .card-boiler {
     width: 48.35%;
-    padding: 20px 10px;
+    padding: 10px 10px 20px;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -4776,18 +4766,8 @@ nav {
       padding: 10px; }
       .state .state-content .state-card__data .content-information {
         margin-top: 10px; }
-      .state .state-content .state-card__data a {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        text-decoration-line: underline !important;
-        color: #054AC3; }
-      .state .state-content .state-card__data p {
-        font-weight: 300;
-        line-height: normal;
-        font-size: 16px; }
-        .state .state-content .state-card__data p b {
-          font-weight: 400; }
+      .state .state-content .state-card__data p b {
+        font-weight: 400; }
     .state .state-content .state-card .cities-top {
       border-radius: 4px 4px 0px 0px;
       width: 100%; }
@@ -4828,8 +4808,6 @@ nav {
       .state .city-statistic__table th, .state .city-statistic__table td {
         padding: 6px;
         font-size: 14px; } }
-  .state .city-statistic__table .city-link a {
-    text-decoration-line: underline !important; }
 
 .state .hidden-column {
   display: none !important; }
@@ -4850,14 +4828,9 @@ nav {
   .state .state-list li::before {
     margin-right: 6px;
     text-decoration-line: none; }
-  .state .state-list li a {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 28px;
-    text-decoration-line: underline !important; }
-    @media (max-width: 475px) {
-      .state .state-list li a {
-        font-size: 18px; } }
+  @media (max-width: 475px) {
+    .state .state-list li a {
+      font-size: 18px; } }
 
 .dinamic-page-notice {
   border-left: 2px solid #bc2649;

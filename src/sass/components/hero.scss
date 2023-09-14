@@ -45,6 +45,12 @@
     left: 0;
     z-index: 10;
     background: transparent !important;
+
+    .nav-dropdown {
+      li {
+        background: #151719;
+      }
+    }
   }
   .principal-content {
     position: relative;
@@ -166,7 +172,7 @@
           width: 125px;
           @media (max-width: 475px) {
             gap: 10px;
-          width: 80px;
+            width: 80px;
           }
         }
 

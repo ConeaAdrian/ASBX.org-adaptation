@@ -107,10 +107,13 @@ span {
   line-height: normal;
 }
 a {
-  text-decoration: none !important;
+  text-decoration-line: underline;
   cursor: pointer !important;
   transition: all 0.3s ease-in;
   color: #054ac3;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
 
   // mac safari fix
   > span,

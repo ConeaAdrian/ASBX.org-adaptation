@@ -41,17 +41,8 @@
         .content-information {
           margin-top: 10px;
         }
-        a {
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          text-decoration-line: underline !important;
-          color: #054AC3;
-        }
+
         p {
-          font-weight: 300;
-          line-height: normal;
-          font-size: 16px;
           b {
             font-weight: 400;
           }
@@ -107,11 +98,6 @@
       font-size: 14px;
       }
     }
-    .city-link {
-      a {
-        text-decoration-line: underline!important;
-      }
-    }
   }
   .hidden-column {
     display: none !important;
@@ -139,11 +125,6 @@
     }
 
     a {
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 28px;
-      text-decoration-line: underline!important;
-
       @media (max-width: 475px) {
         font-size: 18px;
       }

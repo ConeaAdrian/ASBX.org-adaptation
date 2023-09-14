@@ -1,7 +1,6 @@
 .trust-fund {
   margin-bottom: 40px;
 
-
   .status-active {
     color: #003366;
     font-weight: 400;
@@ -13,23 +12,15 @@
     }
   }
   .contact-company {
-    strong {
-      font-size: 18px !important;
-      font-weight: 400;
-    }
-    a {
-      text-decoration-line: underline !important;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
     .claimant-relations {
       margin-top: 10px;
-
-      a {
-        color: #1c1b1b;
-        font-size: 20px;
-      }
-    }
-    h3 {
-      color: #000;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
     }
   }
 }
@@ -128,16 +119,16 @@
   li {
     font-size: 20px;
     list-style-type: disc;
-    line-height: 26px;
+    line-height: 28px;
     margin-top: 0;
 
     .dinamic-page-link {
-      color: #054AC3;
+      color: #054ac3;
       font-size: 20px;
       line-height: 26px;
       font-weight: 400 !important;
       a {
-        text-decoration-line: underline !important;
+        text-decoration-line: underline;
       }
     }
   }

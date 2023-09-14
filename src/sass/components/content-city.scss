@@ -107,14 +107,8 @@
     font-style: normal;
     font-weight: 400;
   }
-  ul {
+  .mark-text {
     padding-left: 25px;
-    li {
-      line-height: 26px;
-      font-size: 18px;
-      font-weight: 300;
-      list-style-type: disc !important;
-    }
   }
 }
 .search-alphabet {
@@ -168,16 +162,9 @@
   padding-top: 8px;
   list-style-type: disc;
 
-  &::before {
-    margin-right: 6px;
-    text-decoration-line: none;
-  }
+ 
 
   a {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 28px;
-
     @media (max-width: 475px) {
       font-size: 18px;
     }
