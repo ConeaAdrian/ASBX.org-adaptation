@@ -4245,13 +4245,6 @@ nav {
     list-style-type: disc;
     line-height: 28px;
     margin-top: 0; }
-    .mark-text li .dinamic-page-link {
-      color: #054ac3;
-      font-size: 20px;
-      line-height: 26px;
-      font-weight: 400 !important; }
-      .mark-text li .dinamic-page-link a {
-        text-decoration-line: underline; }
 
 .dinamic-element {
   display: flex;
