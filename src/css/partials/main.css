@@ -1839,7 +1839,7 @@ nav {
       padding-left: 15%; } }
 
 .index-page .state-connection .state-list-index li {
-  color: #000;
+  color: #054ac3;
   list-style-type: disc;
   break-inside: avoid;
   margin-top: 0;
@@ -1847,14 +1847,9 @@ nav {
   .index-page .state-connection .state-list-index li::before {
     margin-right: 6px;
     text-decoration-line: none; }
-  .index-page .state-connection .state-list-index li a {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-decoration-line: underline !important; }
-    @media (max-width: 475px) {
-      .index-page .state-connection .state-list-index li a {
-        font-size: 18px; } }
+  @media (max-width: 475px) {
+    .index-page .state-connection .state-list-index li a {
+      font-size: 18px; } }
 
 .index-page .veterans {
   background: #fafafa; }
@@ -2065,20 +2060,21 @@ nav {
 
 .trust-list {
   column-count: 2;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-left: 20px; }
   @media (max-width: 992px) {
     .trust-list {
       column-count: 1; } }
-
-.trust-list li {
-  color: #054AC3;
-  break-inside: avoid;
-  margin-top: 0;
-  padding-top: 8px;
-  list-style-type: disc; }
-  @media (max-width: 475px) {
-    .trust-list li a {
-      font-size: 18px; } }
+  .trust-list li {
+    color: #054AC3;
+    font-size: 20px;
+    list-style-type: disc;
+    line-height: 28px;
+    margin-top: 8px;
+    margin-right: 10px; }
+    @media (max-width: 475px) {
+      .trust-list li a {
+        font-size: 18px; } }
 
 .next-city .search-alphabet {
   margin-top: 20px;
