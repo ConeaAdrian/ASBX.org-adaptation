@@ -20,7 +20,7 @@
       margin-bottom: 20px;
       font-family: "Inter", sans-serif !important;
       font-size: 32px;
-      font-weight: 600;
+      font-weight: 700;
     }
     p {
       width: 100%;
@@ -54,7 +54,7 @@
       text-indent: -9999px;
       width: 56px;
       height: 24px;
-      background:#003366;
+      background: #003366;
       display: block;
       border-radius: 100px;
       position: relative;
@@ -88,9 +88,9 @@
     .recommended {
       margin-bottom: 5px;
       text-align: center;
-      color:#003366;
+      color: #003366;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .legal-information {
@@ -142,8 +142,8 @@
         }
         .revenue {
           color: #003366;
-          font-size: 16px;
-          font-weight: 600;
+          font-size: 20px;
+          font-weight: 700;
           padding-top: 4px;
           padding-bottom: 22px;
           text-align: left;
@@ -160,12 +160,8 @@
 
             span {
               color: #bc2649;
-              font-size: 18px;
+              font-size: 20px;
               font-weight: 400;
-            }
-            b {
-              font-size: 18px !important;
-              font-weight: 600;
             }
           }
         }
@@ -173,6 +169,7 @@
           content: "✓";
           color: #181059;
           padding-right: 10px;
+          margin-top: 4px;
         }
         .proposed-money {
           color: #bc2649;
@@ -200,11 +197,6 @@
         ul {
           padding-left: 0;
         }
-        li {
-          p {
-            line-height: normal !important;
-          }
-        }
         @media (max-width: 992px) {
           display: none;
         }
@@ -223,7 +215,7 @@
         @media (max-width: 992px) {
           border-radius: 24px 24px 0 0;
           transform: translateY(-42px);
-          max-width: 400px;
+          max-width: 500px;
           margin-top: 10px;
         }
 
@@ -248,8 +240,8 @@
         }
         .revenue {
           color: #ffffff;
-          font-size: 16px;
-          font-weight: 600;
+          font-size: 20px;
+          font-weight: 700;
           padding-top: 4px;
           text-align: left;
           padding-bottom: 22px;
@@ -270,8 +262,6 @@
               color: #fff;
             }
             b {
-              font-size: 18px !important;
-              font-weight: 600;
               color: #fff;
             }
             p {
@@ -283,6 +273,7 @@
           content: "✓";
           color: #fff;
           padding-right: 10px;
+          margin-top: 4px;
         }
         .proposed-money {
           color: #fff;
@@ -309,8 +300,8 @@
           p,
           span {
             color: #f9f9f9 !important;
-            font-size: 14px;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: 700;
           }
         }
       }
@@ -350,8 +341,8 @@
         }
         .revenue {
           color: #003366;
-          font-size: 16px;
-          font-weight: 600;
+          font-size: 20px;
+          font-weight: 700;
           padding-top: 4px;
           text-align: left;
           padding-bottom: 22px;
@@ -368,12 +359,8 @@
 
             span {
               color: #bc2649;
-              font-size: 18px;
+              font-size: 20px;
               font-weight: 400;
-            }
-            b {
-              font-size: 18px !important;
-              font-weight: 600;
             }
           }
         }
@@ -381,6 +368,7 @@
           content: "✓";
           color: #181059;
           padding-right: 10px;
+          margin-top: 4px;
         }
         .proposed-money {
           color: #bc2649;
@@ -431,8 +419,8 @@
 
     .revenue {
       color: #003366;
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 20px;
+      font-weight: 700;
       padding-top: 4px;
       padding-bottom: 22px;
       text-align: left;
@@ -443,18 +431,19 @@
       li {
         margin-bottom: 8px;
         margin-top: 0;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 20px;
+        font-weight: 300;
         display: flex;
+        line-height: 28px;
 
         span {
           color: #bc2649;
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 400;
         }
         b {
           font-size: 18px !important;
-          font-weight: 600;
+          font-weight: 700;
         }
       }
     }
@@ -540,20 +529,10 @@
         margin-top: 8px;
         max-width: 447px;
         width: 100%;
-        font-size: 20px;
-        a {
-          color: #000;
-          font-size: 20px;
-          font-weight: 300;
-          @media (max-width: 475px) {
-            flex-direction: column;
-          }
-        }
       }
       .text-callback {
         margin-top: 25px;
         p {
-          font-size: 18px;
           margin-top: 15px;
         }
       }
@@ -617,8 +596,8 @@
   p,
   span {
     color: #000;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
   }
 }
 .advised-text {
@@ -638,7 +617,7 @@
   &__text {
     color: #bc2649;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     max-width: 380px;
     width: 100%;
     border-bottom: 1px solid #b4b4b4;
@@ -737,7 +716,8 @@
       line-height: 16px;
     }
   }
-  input, select {
+  input,
+  select {
     padding: 5px 10px;
     color: #606060;
     background-color: #fff;
@@ -758,14 +738,14 @@
 }
 .claim-form {
   margin: 0 auto;
-  background: #FBFBFB;
+  background: #fbfbfb;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #FBFBFB;
+  background: #fbfbfb;
   @media (max-width: 475px) {
-      max-width: 300px;
+    max-width: 300px;
   }
   .chase-element {
     width: 100%;
@@ -783,28 +763,29 @@
   z-index: 999;
 }
 
-.close-popup-button{
+.close-popup-button {
   position: absolute;
   cursor: pointer;
-  right:10px;
-  top:10px;
+  right: 10px;
+  top: 10px;
   background: #bc2649;
-  height:16px;
-  width:16px;
+  height: 16px;
+  width: 16px;
   border-radius: 4px;
 }
-.close-popup-button:after,.close-popup-button:before{
+.close-popup-button:after,
+.close-popup-button:before {
   content: "";
   position: absolute;
-  top:7px;
-  left:2px;
-  height:2px;
+  top: 7px;
+  left: 2px;
+  height: 2px;
   width: 12px;
   background: #fff;
 }
-.close-popup-button:after{
+.close-popup-button:after {
   transform: rotate(45deg);
 }
-.close-popup-button:before{
+.close-popup-button:before {
   transform: rotate(-45deg);
 }

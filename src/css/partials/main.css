@@ -3158,7 +3158,7 @@ nav {
       margin-bottom: 20px;
       font-family: "Inter", sans-serif !important;
       font-size: 32px;
-      font-weight: 600; }
+      font-weight: 700; }
     .result-page .header-text p {
       width: 100%;
       max-width: 726px;
@@ -3211,7 +3211,7 @@ nav {
       text-align: center;
       color: #003366;
       font-size: 16px;
-      font-weight: 600; }
+      font-weight: 700; }
     .result-page .legal-representation .legal-information {
       display: flex;
       gap: 28px;
@@ -3256,8 +3256,8 @@ nav {
             padding: 8px; }
         .result-page .legal-representation .legal-information .ER-claims .revenue {
           color: #003366;
-          font-size: 16px;
-          font-weight: 600;
+          font-size: 20px;
+          font-weight: 700;
           padding-top: 4px;
           padding-bottom: 22px;
           text-align: left; }
@@ -3271,15 +3271,13 @@ nav {
             display: flex; }
             .result-page .legal-representation .legal-information .ER-claims ul li span {
               color: #bc2649;
-              font-size: 18px;
+              font-size: 20px;
               font-weight: 400; }
-            .result-page .legal-representation .legal-information .ER-claims ul li b {
-              font-size: 18px !important;
-              font-weight: 600; }
         .result-page .legal-representation .legal-information .ER-claims ul li:before {
           content: "✓";
           color: #181059;
-          padding-right: 10px; }
+          padding-right: 10px;
+          margin-top: 4px; }
         .result-page .legal-representation .legal-information .ER-claims .proposed-money {
           color: #bc2649;
           font-size: 25px;
@@ -3301,8 +3299,6 @@ nav {
               margin-bottom: 35px; } }
       .result-page .legal-representation .legal-information .information-benefits ul {
         padding-left: 0; }
-      .result-page .legal-representation .legal-information .information-benefits li p {
-        line-height: normal !important; }
       @media (max-width: 992px) {
         .result-page .legal-representation .legal-information .information-benefits {
           display: none; } }
@@ -3320,7 +3316,7 @@ nav {
           .result-page .legal-representation .legal-information .AVG-claims {
             border-radius: 24px 24px 0 0;
             transform: translateY(-42px);
-            max-width: 400px;
+            max-width: 500px;
             margin-top: 10px; } }
         .result-page .legal-representation .legal-information .AVG-claims__name {
           display: flex;
@@ -3340,8 +3336,8 @@ nav {
             padding: 8px; }
         .result-page .legal-representation .legal-information .AVG-claims .revenue {
           color: #ffffff;
-          font-size: 16px;
-          font-weight: 600;
+          font-size: 20px;
+          font-weight: 700;
           padding-top: 4px;
           text-align: left;
           padding-bottom: 22px; }
@@ -3358,15 +3354,14 @@ nav {
               font-weight: 400;
               color: #fff; }
             .result-page .legal-representation .legal-information .AVG-claims ul li b {
-              font-size: 18px !important;
-              font-weight: 600;
               color: #fff; }
             .result-page .legal-representation .legal-information .AVG-claims ul li p {
               color: #fff; }
         .result-page .legal-representation .legal-information .AVG-claims ul li:before {
           content: "✓";
           color: #fff;
-          padding-right: 10px; }
+          padding-right: 10px;
+          margin-top: 4px; }
         .result-page .legal-representation .legal-information .AVG-claims .proposed-money {
           color: #fff;
           font-size: 25px;
@@ -3389,8 +3384,8 @@ nav {
         .result-page .legal-representation .legal-information .AVG-claims .amount-money p,
         .result-page .legal-representation .legal-information .AVG-claims .amount-money span {
           color: #f9f9f9 !important;
-          font-size: 14px;
-          font-weight: 600; }
+          font-size: 16px;
+          font-weight: 700; }
       .result-page .legal-representation .legal-information .IR-claims {
         height: fit-content;
         padding: 22px 16px;
@@ -3423,8 +3418,8 @@ nav {
             padding: 8px; }
         .result-page .legal-representation .legal-information .IR-claims .revenue {
           color: #003366;
-          font-size: 16px;
-          font-weight: 600;
+          font-size: 20px;
+          font-weight: 700;
           padding-top: 4px;
           text-align: left;
           padding-bottom: 22px; }
@@ -3438,15 +3433,13 @@ nav {
             display: flex; }
             .result-page .legal-representation .legal-information .IR-claims ul li span {
               color: #bc2649;
-              font-size: 18px;
+              font-size: 20px;
               font-weight: 400; }
-            .result-page .legal-representation .legal-information .IR-claims ul li b {
-              font-size: 18px !important;
-              font-weight: 600; }
         .result-page .legal-representation .legal-information .IR-claims ul li:before {
           content: "✓";
           color: #181059;
-          padding-right: 10px; }
+          padding-right: 10px;
+          margin-top: 4px; }
         .result-page .legal-representation .legal-information .IR-claims .proposed-money {
           color: #bc2649;
           font-size: 25px;
@@ -3486,8 +3479,8 @@ nav {
       padding-bottom: 10px; }
     .result-page .your-own .revenue {
       color: #003366;
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 20px;
+      font-weight: 700;
       padding-top: 4px;
       padding-bottom: 22px;
       text-align: left; }
@@ -3496,16 +3489,17 @@ nav {
       .result-page .your-own ul li {
         margin-bottom: 8px;
         margin-top: 0;
-        font-size: 18px;
-        font-weight: 400;
-        display: flex; }
+        font-size: 20px;
+        font-weight: 300;
+        display: flex;
+        line-height: 28px; }
         .result-page .your-own ul li span {
           color: #bc2649;
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 400; }
         .result-page .your-own ul li b {
           font-size: 18px !important;
-          font-weight: 600; }
+          font-weight: 700; }
     .result-page .your-own ul li:before {
       content: "✓";
       color: #181059;
@@ -3569,19 +3563,10 @@ nav {
     .result-page .content-request .question-lawyer p {
       margin-top: 8px;
       max-width: 447px;
-      width: 100%;
-      font-size: 20px; }
-      .result-page .content-request .question-lawyer p a {
-        color: #000;
-        font-size: 20px;
-        font-weight: 300; }
-        @media (max-width: 475px) {
-          .result-page .content-request .question-lawyer p a {
-            flex-direction: column; } }
+      width: 100%; }
     .result-page .content-request .question-lawyer .text-callback {
       margin-top: 25px; }
       .result-page .content-request .question-lawyer .text-callback p {
-        font-size: 18px;
         margin-top: 15px; }
     .result-page .content-request .button-element {
       display: flex;
@@ -3636,8 +3621,8 @@ nav {
   .amount-money p,
   .amount-money span {
     color: #000;
-    font-size: 14px;
-    font-weight: 600; }
+    font-size: 16px;
+    font-weight: 700; }
 
 .advised-text {
   font-size: 14px;
@@ -3656,7 +3641,7 @@ nav {
   .legend__text {
     color: #bc2649;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     max-width: 380px;
     width: 100%;
     border-bottom: 1px solid #b4b4b4;
@@ -3735,11 +3720,13 @@ nav {
       font-size: 12px;
       font-weight: 400;
       line-height: 16px; }
-  .callback-form input, .callback-form select {
+  .callback-form input,
+  .callback-form select {
     padding: 5px 10px;
     color: #606060;
     background-color: #fff; }
-    .callback-form input::placeholder, .callback-form select::placeholder {
+    .callback-form input::placeholder,
+    .callback-form select::placeholder {
       color: #606060; }
 
 .form-claim-proces {
@@ -3754,12 +3741,12 @@ nav {
 
 .claim-form {
   margin: 0 auto;
-  background: #FBFBFB;
+  background: #fbfbfb;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #FBFBFB; }
+  background: #fbfbfb; }
   @media (max-width: 475px) {
     .claim-form {
       max-width: 300px; } }
@@ -3786,7 +3773,8 @@ nav {
   width: 16px;
   border-radius: 4px; }
 
-.close-popup-button:after, .close-popup-button:before {
+.close-popup-button:after,
+.close-popup-button:before {
   content: "";
   position: absolute;
   top: 7px;
