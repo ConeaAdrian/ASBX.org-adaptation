@@ -766,6 +766,8 @@ footer {
   @media (max-width: 992px) {
     .navigation .brand {
       display: none; } }
+  .navigation .brand a {
+    line-height: 35px; }
   .navigation .mobile-brand {
     display: none; }
     @media (max-width: 992px) {
@@ -909,7 +911,7 @@ nav {
         border: none;
         margin-left: 0; } }
   .nav-list li {
-    margin-top: 0; }
+    margin-top: 3px; }
     .nav-list li a {
       font-family: "Roboto Condensed", sans-serif !important;
       font-size: 16px; }
@@ -1843,7 +1845,8 @@ nav {
   list-style-type: disc;
   break-inside: avoid;
   margin-top: 0;
-  padding-top: 8px; }
+  padding-top: 8px;
+  font-size: 20px; }
   .index-page .state-connection .state-list-index li::before {
     margin-right: 6px;
     text-decoration-line: none; }
@@ -4794,7 +4797,8 @@ nav {
   break-inside: avoid;
   margin-top: 0;
   padding-top: 5px;
-  color: #054AC3; }
+  color: #054AC3;
+  font-size: 20px; }
   .state .state-list li::before {
     margin-right: 6px;
     text-decoration-line: none; }
