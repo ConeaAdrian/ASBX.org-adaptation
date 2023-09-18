@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       e.stopPropagation();
 
       let dropdown = this.nextElementSibling;
-      if (dropdown) {  // Verificăm dacă există un meniu dropdown asociat link-ului
+      if (dropdown) { 
         dropdown.style.display = 
           dropdown.style.display !== "block" ? "block" : "none";
 
@@ -38,5 +38,4 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("active");
     }
   });
-
 });
