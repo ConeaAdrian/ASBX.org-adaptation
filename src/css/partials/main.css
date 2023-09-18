@@ -317,7 +317,7 @@ button {
   font-weight: 400; }
 
 .expres-calculator {
-  background: #233961;
+  background: #003366;
   margin-top: 40px; }
   .expres-calculator h2,
   .expres-calculator h3,
@@ -332,8 +332,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    padding-top: 20px; }
 
 .breadcrumb {
   margin-bottom: 20px; }
