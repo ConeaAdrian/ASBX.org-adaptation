@@ -49,6 +49,9 @@
     .nav-dropdown {
       li {
         background: #151719;
+        @media (max-width: 992px) {
+          background-color: #fff;
+        }
       }
     }
   }

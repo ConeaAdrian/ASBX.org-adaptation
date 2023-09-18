@@ -1284,6 +1284,9 @@ nav {
   background: transparent !important; }
   .index-page .header-section .nav-dropdown li {
     background: #151719; }
+    @media (max-width: 992px) {
+      .index-page .header-section .nav-dropdown li {
+        background-color: #fff; } }
 
 .index-page .principal-content {
   position: relative;
