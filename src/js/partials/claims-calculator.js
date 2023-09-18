@@ -59,18 +59,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //Adaptation for jump element to information element
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        if (link.hash !== "") {
-          event.preventDefault();
-          const hash = link.hash;
-          const targetPosition = document.querySelector(hash).offsetTop - 20;
-          window.scrollTo({
-            top: targetPosition,
-            behavior: "smooth",
-          });
-        }
-      });
-    });
-  });
+// document.addEventListener("DOMContentLoaded", () => {
+//     document.querySelectorAll("a").forEach((link) => {
+//       link.addEventListener("click", (event) => {
+//         if (link.hash !== "") {
+//           event.preventDefault();
+//           const hash = link.hash;
+//           const targetPosition = document.querySelector(hash).offsetTop - 20;
+//           window.scrollTo({
+//             top: targetPosition,
+//             behavior: "smooth",
+//           });
+//         }
+//       });
+//     });
+//   });
