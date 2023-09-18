@@ -22,26 +22,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//--scrop search
 
-// let lastScroll = 0;
-// const search_containe = document.querySelector(".header-search");
-// const header_containe = document.querySelector(".header-section");
-// if (search_containe && header_containe) {
-//   window.addEventListener(
-//     "scroll",
-//     async function () {
-//       const currentScroll = window.pageYOffset;
-//       if (currentScroll < lastScroll) {
-//         search_containe.style.top = `${header_containe.offsetHeight}px`;
-//       } else {
-//         search_containe.style.top = `-30px`;
-//       }
-//       lastScroll = currentScroll;
-//     },
-//     true
-//   );
-// }
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      if (link.hash !== "" && isValidHash(link.hash)) {
+        event.preventDefault();
+        const hash = link.hash;
+        const targetPosition = document.querySelector(hash).offsetTop - 20;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+});
+
+function isValidHash(hash) {
+  if (hash === "#!") return false;
+  return true;
+}
 
 
 
@@ -81,3 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+

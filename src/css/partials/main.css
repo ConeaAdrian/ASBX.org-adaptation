@@ -2451,8 +2451,9 @@ nav {
       .required-asbx .block-data p span {
         font-size: 18px;
         font-weight: 300;
-        line-height: normal;
-        text-decoration-line: underline !important; }
+        line-height: normal; }
+    .required-asbx .block-data a {
+      font-size: 18px; }
 
 .general-information-table {
   display: flex;
@@ -4706,11 +4707,16 @@ nav {
     object-fit: contain !important;
     border-radius: 4px;
     border: 1px solid #c0cad6;
-    background: rgba(240, 245, 255, 0.3); }
+    background: rgba(240, 245, 255, 0.3);
+    padding: 10px;
+    align-items: center;
+    display: flex; }
     @media (max-width: 475px) {
       .state .content-table .state-logo {
         max-width: none;
         height: auto; } }
+    .state .content-table .state-logo__img {
+      height: auto; }
 
 .state .state-content {
   display: flex;
