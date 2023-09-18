@@ -4701,8 +4701,11 @@ nav {
   .state .content-table .state-logo {
     width: 100%;
     max-width: 320px;
-    height: 185px;
-    object-fit: contain !important; }
+    height: auto;
+    object-fit: contain !important;
+    border-radius: 4px;
+    border: 1px solid #c0cad6;
+    background: rgba(240, 245, 255, 0.3); }
     @media (max-width: 475px) {
       .state .content-table .state-logo {
         max-width: none;
@@ -4763,11 +4766,13 @@ nav {
   .state .city-statistic__table thead,
   .state .city-statistic__table tbody {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  .state .city-statistic__table th, .state .city-statistic__table td {
+  .state .city-statistic__table th,
+  .state .city-statistic__table td {
     padding: 6px 10px;
     font-size: 20px; }
     @media (max-width: 475px) {
-      .state .city-statistic__table th, .state .city-statistic__table td {
+      .state .city-statistic__table th,
+      .state .city-statistic__table td {
         padding: 6px;
         font-size: 14px; } }
 
@@ -4786,7 +4791,7 @@ nav {
   break-inside: avoid;
   margin-top: 0;
   padding-top: 5px;
-  color: #054AC3;
+  color: #054ac3;
   font-size: 20px; }
   .state .state-list li::before {
     margin-right: 6px;
