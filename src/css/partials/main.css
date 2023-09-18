@@ -2046,8 +2046,9 @@ nav {
   .search-alphabet h3 {
     text-transform: capitalize; }
     .search-alphabet h3 a {
-      color: #003366;
-      font-weight: 400; }
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px; }
   .search-alphabet .alphabet {
     display: flex;
     flex-wrap: wrap;
@@ -2071,7 +2072,7 @@ nav {
     .trust-list {
       column-count: 1; } }
   .trust-list li {
-    color: #054AC3;
+    color: #054ac3;
     font-size: 20px;
     list-style-type: disc;
     line-height: 28px;
