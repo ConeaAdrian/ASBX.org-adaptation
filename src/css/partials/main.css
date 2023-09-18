@@ -767,7 +767,8 @@ footer {
     .navigation .brand {
       display: none; } }
   .navigation .brand a {
-    line-height: 35px; }
+    line-height: 35px;
+    display: flex; }
   .navigation .mobile-brand {
     display: none; }
     @media (max-width: 992px) {
