@@ -2590,7 +2590,7 @@ nav {
       font-size: 18px;
       line-height: 140%;
       color: rgba(60, 60, 67, 0.85); }
-    .error-page__container .button {
+    .error-page__container .button-red {
       height: 44px;
       max-width: 120px;
       margin-top: 2rem;
