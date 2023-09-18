@@ -142,7 +142,6 @@ nav {
   li {
     padding-left: 10px;
     background: #003366;
-    opacity: 0.8;
     margin-top: 0 !important;
     @media (max-width: 992px) {
       background-color: transparent;
@@ -197,6 +196,7 @@ nav {
     }
   }
   li {
+    margin-top: 0;
     a {
       font-family: "Roboto Condensed", sans-serif !important;
       font-size: 16px;
