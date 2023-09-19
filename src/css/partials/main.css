@@ -2593,14 +2593,6 @@ nav {
   .no-verified b {
     font-weight: 400; }
 
-.content-ship .about-text-ship {
-  margin-top: 18px;
-  margin-bottom: 15px; }
-  .content-ship .about-text-ship span {
-    color: #003366;
-    font-weight: 400;
-    text-decoration-line: underline; }
-
 .content-ship .ship-img {
   padding: 15px 0; }
 
@@ -2683,9 +2675,6 @@ nav {
       .content-ship .ship-claims .add-button {
         margin-left: 0; } }
 
-.content-ship .compensation-navi {
-  margin: 18px 0; }
-
 .content-ship .red-text {
   margin-top: 18px;
   margin-bottom: 18px; }
@@ -2705,23 +2694,18 @@ nav {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 3px; }
+    gap: 5px; }
     @media (max-width: 520px) {
       .content-ship .equipment .equipment-box {
         max-width: none; } }
-    .content-ship .equipment .equipment-box a {
-      font-size: 20px;
-      font-weight: 700;
-      text-decoration-line: underline !important; }
-    .content-ship .equipment .equipment-box b {
-      font-size: 16px !important;
-      font-weight: 700 !important; }
-    .content-ship .equipment .equipment-box p {
-      font-size: 16px;
-      font-weight: 400; }
     @media screen and (min-width: 520px) {
       .content-ship .equipment .equipment-box {
         flex: 0 0 calc(50% - 20px); } }
+    .content-ship .equipment .equipment-box .mark-text {
+      margin: 0 10px; }
+      .content-ship .equipment .equipment-box .mark-text li {
+        font-size: 16px;
+        line-height: 24px; }
   .content-ship .equipment .red-text {
     margin: 0; }
 
@@ -2730,13 +2714,6 @@ nav {
 
 .content-ship .equipment-box ul li {
   list-style-type: disc; }
-
-.content-ship .list-nomerotation li {
-  color: #003366;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 28px;
-  text-decoration-line: underline; }
 
 .contact .hreader-contact {
   width: 100%;
@@ -3001,9 +2978,6 @@ nav {
   padding-bottom: 30px;
   margin-bottom: 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-
-.body-calculator {
-  background: #f3f3f3; }
 
 .result-page {
   margin-top: 55px; }
@@ -4397,7 +4371,7 @@ nav {
   width: 100%;
   max-width: 320px;
   padding: 20px;
-  gap: 20px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 6px;

@@ -1,13 +1,4 @@
 .content-ship {
-  .about-text-ship {
-    margin-top: 18px;
-    margin-bottom: 15px;
-    span {
-      color: #003366;
-      font-weight: 400;
-      text-decoration-line: underline;
-    }
-  }
   .ship-img {
     padding: 15px 0;
   }
@@ -103,9 +94,6 @@
       }
     }
   }
-  .compensation-navi {
-    margin: 18px 0;
-  }
   .red-text {
     margin-top: 18px;
     margin-bottom: 18px;
@@ -126,29 +114,19 @@
       height: fit-content;
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 5px;
       @media (max-width: 520px) {
         max-width: none;
       }
-
-      a {
-        font-size: 20px;
-        font-weight: 700;
-        text-decoration-line: underline !important;
-      }
-
-      b {
-        font-size: 16px !important;
-        font-weight: 700 !important;
-      }
-
-      p {
-        font-size: 16px;
-        font-weight: 400;
-      }
-
       @media screen and (min-width: 520px) {
         flex: 0 0 calc(50% - 20px);
+      }
+      .mark-text {
+        margin: 0 10px;
+        li {
+            font-size: 16px;
+            line-height: 24px;
+        }
       }
     }
     .red-text {
@@ -163,15 +141,6 @@
       li {
         list-style-type: disc;
       }
-    }
-  }
-  .list-nomerotation {
-    li {
-      color: #003366;
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 28px;
-      text-decoration-line: underline;
     }
   }
 }
