@@ -2593,6 +2593,12 @@ nav {
   .no-verified b {
     font-weight: 400; }
 
+.error-message {
+  display: none;
+  color: #bc2649;
+  font-size: 12px;
+  margin-top: 5px; }
+
 .content-ship .ship-img {
   padding: 15px 0; }
 
