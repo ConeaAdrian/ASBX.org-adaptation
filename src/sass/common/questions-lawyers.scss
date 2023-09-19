@@ -42,7 +42,7 @@
       gap: 10px;
       margin-top: 14px;
       img {
-        color: #BC2649;
+        color: $main-red;
         width: 14px;
         height: 14px;
       }
@@ -67,7 +67,7 @@
   .red-text {
     font-size: 18px;
     b {
-      color: #bc2649;
+      color: $main-red;
       font-size: 18px;
     }
   }
@@ -83,7 +83,7 @@
         margin-bottom: 5px;
       }
       .disease {
-        color: #003366;
+        color: $main-color;
         font-size: 12px;
         font-weight: 400;
       }

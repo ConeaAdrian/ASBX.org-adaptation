@@ -2,12 +2,12 @@
   margin-bottom: 40px;
 
   .status-active {
-    color: #003366;
+    color: $main-color;
     font-weight: 400;
     margin-bottom: 20px;
 
     span {
-      color: #bc2649;
+      color: $main-red;
       font-weight: 600;
     }
   }
@@ -74,7 +74,7 @@
       font-size: 18px;
       line-height: normal;
       text-transform: capitalize;
-      font-weight: 700 !important;
+      font-weight: 500 !important;
     }
   }
   tbody {
@@ -84,7 +84,7 @@
       line-height: normal;
     }
     .amount-result {
-      color: #bc2649;
+      color: $main-red;
       font-size: 18px;
       font-weight: 300;
     }
@@ -103,7 +103,7 @@
   }
   span {
     font-size: 16px;
-    color: #bc2649;
+    color: $main-red;
   }
 }
 .mark-text {
@@ -139,5 +139,5 @@
 }
 
 .adapt-img {
-  color: #bc2649;
+  color: $main-red;
 }

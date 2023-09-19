@@ -58,7 +58,7 @@
   line-height: normal;
 }
 .red-placeholder::placeholder {
-  color: #bc2649;
+  color: $main-red;
 }
 
 .close-claims-calculator {
@@ -66,7 +66,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  background-color: #bc2649;
+  background-color: $main-red;
   padding: 0 12px;
   color: #fff;
   border-radius: 4px;
@@ -124,14 +124,14 @@
       }
       h2 {
         font-size: 20px;
-        color: #003366;
+        color: $main-color;
         font-weight: 700;
         border: 0;
         margin-top: 0;
         padding-top: 0;
       }
       p {
-        color: #003366;
+        color: $main-color;
         font-size: 18px;
         margin-bottom: 6px;
         font-weight: 400;
@@ -142,7 +142,7 @@
       height: 61px;
       margin-top: 5px;
       margin-bottom: 5px;
-      background: #003366;
+      background: $main-color;
       display: flex;
       align-items: center;
       justify-content: center;

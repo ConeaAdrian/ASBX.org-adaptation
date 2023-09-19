@@ -105,7 +105,7 @@
       display: flex;
       align-items: center;
       padding-left: 10px;
-      color: #bc2649;
+      color: $main-red;
       text-transform: uppercase !important;
     }
   }
@@ -178,7 +178,7 @@
   p {
     font-weight: 400;
     text-transform: capitalize;
-    color: #003366 !important;
+    color: $main-color !important;
     font-size: 18px;
     font-style: normal;
     line-height: 26px;

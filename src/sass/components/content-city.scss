@@ -26,10 +26,9 @@
       width: 100%;
     }
     h3 {
-      color: #003366;
+      color: $main-color;
       font-size: 20px;
       font-style: normal;
-      font-weight: 700;
       line-height: 28px;
     }
 
@@ -41,7 +40,7 @@
   .text-initial {
     color: #000 !important;
     font-size: 16px;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     line-height: normal;
     text-transform: capitalize;
   }
@@ -83,7 +82,7 @@
       }
       .button-search {
         border-radius: 0px 4px 4px 0px;
-        background: #bc2649;
+        background: $main-red;
         width: 46px;
         height: 44px;
         @media (max-width: 767px) {
@@ -136,7 +135,7 @@
     margin-top: 10px;
 
     a {
-      color: #003366;
+      color: $main-color;
       font-size: 20px;
       font-weight: 400;
       line-height: 28px;

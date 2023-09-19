@@ -42,17 +42,18 @@ h6,
 p,
 li,
 a {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Assistant', sans-serif !important;
   margin: 0;
   line-height: normal;
 }
 h1 {
-  color: #003366;
+  color: $main-color;
   font-size: 38px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   line-height: 46px;
+  font-family: 'Assistant', sans-serif !important;
   @media (max-width: 475px) {
     font-size: 32px;
     line-height: 38px;
@@ -60,12 +61,13 @@ h1 {
   }
 }
 h2 {
-  color: #003366;
+  color: $main-color;
   font-size: 30px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 38px;
   padding-top: 40px;
+  font-family: 'Assistant', sans-serif !important;
   @media (max-width: 475px) {
     font-size: 26px;
     padding-top: 30px;
@@ -74,9 +76,15 @@ h2 {
 
 h3 {
   font-size: 24px;
-  color: #003366;
-  font-weight: 700;
+  color: $main-color;
+  font-weight: 500;
   line-height: 32px;
+  font-family: 'Assistant', sans-serif !important;
+  @media (max-width: 475px) {
+    font-size: 22px;
+  line-height: 30px;
+
+  }
 }
 
 h4,
@@ -86,9 +94,9 @@ h6 {
 }
 
 p {
-  line-height: 28px;
+  line-height: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
 }
 
@@ -132,7 +140,7 @@ select:after {
   width: 0;
   height: 0;
   border: 5px solid transparent;
-  border-color: #003366 transparent transparent transparent;
+  border-color: $main-color transparent transparent transparent;
 }
 
 select {
@@ -150,9 +158,6 @@ select {
   font-family: "Roboto Condensed", sans-serif;
   border-radius: 0;
   outline: none;
-  // @media (max-width: 699px) {
-  //   height: 40px !important;
-  // }
   &:hover {
     border: 1px solid #dbdbdb;
   }
@@ -178,7 +183,7 @@ strong {
   color: #000;
   font-weight: 400;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 dl,
 dt,
@@ -217,7 +222,7 @@ dd {
   background: black;
 }
 .red-text {
-  color: #bc2649;
+  color: $main-red;
   font-size: 20px;
   font-weight: 400;
   margin-top: 20px;
@@ -227,7 +232,7 @@ dd {
 .data-info {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #003366;
+  color: $main-color;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -236,13 +241,13 @@ dd {
   }
 }
 .general-blue-text {
-  color: #003366;
+  color: $main-color;
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
 }
 .red-not {
-  color: #bc2649;
+  color: $main-red;
 }
 .not-text {
   font-size: 16px;

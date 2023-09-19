@@ -1,4 +1,7 @@
 .index-page {
+  p {
+    font-size: 20px;
+  }
   h2 {
     font-size: 48px;
     font-weight: 700;
@@ -33,7 +36,7 @@
   }
   #nav-toggle.active span:after,
   #nav-toggle.active span:before {
-    background-color: #003366 !important;
+    background-color: $main-color !important;
   }
   #nav-toggle.active span {
     background-color: transparent !important;
@@ -75,7 +78,7 @@
       position: inherit;
 
       .hero-content {
-        max-width: 415px;
+        max-width: 440px;
         width: 100%;
         padding-top: 70px;
         position: inherit;
@@ -89,7 +92,7 @@
           color: #fff;
           font-size: 180px;
           font-weight: 700;
-          line-height: 155px;
+          line-height: 165px;
           text-transform: uppercase;
           @media (max-width: 767px) {
             font-size: 120px;
@@ -136,7 +139,7 @@
       height: 140px;
       width: 100%;
       position: unset;
-      padding-top: 135px;
+      padding-top: 122px;
       @media (max-width: 992px) {
         flex-direction: column;
         padding: 0;
@@ -148,15 +151,15 @@
         height: auto;
       }
       .statistic {
-        padding: 35px 0;
+        padding: 10px 0;
         display: flex;
         width: 100%;
-        gap: 74px;
+        gap: 78px;
         position: relative;
         z-index: 105;
         @media (max-width: 992px) {
           gap: 50px;
-          padding: 30px;
+          padding: 22px;
           width: 100%;
         }
         @media (max-width: 767px) {
@@ -170,7 +173,7 @@
         &__data {
           display: flex;
           flex-direction: column;
-          gap: 20px;
+          gap: 5px;
           align-items: center;
           width: 125px;
           @media (max-width: 475px) {
@@ -206,7 +209,7 @@
       }
       &::before {
         content: "";
-        background: #bc2649;
+        background: $main-red;
         width: 58vw;
         height: 130px;
         position: absolute;
@@ -229,10 +232,10 @@
         position: relative;
         z-index: 105;
         width: 35%;
-        padding: 40px;
+        padding: 31px;
         margin-left: 38px;
         @media (max-width: 992px) {
-          padding: 30px;
+          padding: 25px;
           margin-left: 0;
         }
         @media (max-width: 767px) {
@@ -245,7 +248,7 @@
         p {
           color: #fff;
           font-size: 20px;
-          font-weight: 700;
+          font-weight: 600;
           line-height: normal;
           text-transform: uppercase;
           @media (max-width: 992px) {
@@ -288,7 +291,7 @@
       font-weight: 700;
       line-height: 32px;
       span {
-        color: #bc2649;
+        color: $main-red;
         font-size: 26px;
         font-weight: 700;
         line-height: 32px;
@@ -330,7 +333,7 @@
           align-items: center;
 
           .nomerotation {
-            background-color: #bc2649;
+            background-color: $main-red;
             width: 100%;
             min-width: 85px;
             max-width: 85px;
@@ -361,7 +364,7 @@
           }
           .text {
             h3 {
-              color: #003366;
+              color: $main-color;
               font-size: 36px;
               font-weight: 700;
               line-height: 30px;
@@ -501,7 +504,7 @@
           max-width: none;
         }
         span {
-          color: #bc2649;
+          color: $main-red;
           font-size: 64px;
           font-weight: 700;
           line-height: 24px;
@@ -533,7 +536,7 @@
 
       span {
         font-size: 26px;
-        color: #bc2649;
+        color: $main-red;
       }
     }
     .search-principal {
@@ -555,14 +558,14 @@
     }
     &__content {
       width: 100%;
-      padding-top: 40px;
+      padding-top: 60px;
       position: relative;
       z-index: 2;
       p {
-        top: 18px;
+        top: 35px;
         left: 14rem;
         position: absolute;
-        color: #003366;
+        color: $main-color;
         font-size: 32px;
         font-weight: 700;
         line-height: normal;
@@ -574,7 +577,7 @@
           left: 6px;
         }
         @media (max-width: 475px) {
-          top: 25px;
+          top: 42px;
           font-size: 24px;
         }
       }
@@ -629,7 +632,7 @@
         .list-nomerotation {
           margin-top: 0;
           li {
-            color: #003366;
+            color: $main-color;
             font-size: 20px;
             font-weight: 400;
             line-height: 26px;
@@ -650,8 +653,8 @@
             height: 29px;
           }
           p {
-            font-size: 22px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 600;
             line-height: 26px;
           }
         }
@@ -803,7 +806,7 @@
     }
   }
   .red-text-hero {
-    color: #bc2649;
+    color: $main-red;
     font-size: 36px;
     font-weight: 700;
     @media (max-width: 767px) {

@@ -10,7 +10,7 @@ $link-hover-color: $main-red;
 
 .header-section {
   width: 100%;
-  background: #003366;
+  background: $main-color;
   position: sticky;
   height: fit-content;
   top: 0;
@@ -52,7 +52,7 @@ $link-hover-color: $main-red;
     }
     button {
       padding: 2px 6px;
-      background: #bc2649;
+      background: $main-red;
       text-transform: uppercase;
       font-size: 14px;
       align-items: center;
@@ -61,7 +61,7 @@ $link-hover-color: $main-red;
     }
 
     p {
-      background:#003366;
+      background:$main-color;
       height: 30px;
       width: 30px;
       color: #fff;
@@ -141,7 +141,7 @@ nav {
   }
   li {
     padding-left: 10px;
-    background: #003366;
+    background: $main-color;
     margin-top: 0 !important;
     @media (max-width: 992px) {
       background-color: transparent;
@@ -153,7 +153,7 @@ nav {
       color: white;
       @media (max-width: 992px) {
         font-size: 18px;
-        color: #003366;
+        color: $main-color;
       }
     }
   }
@@ -207,7 +207,7 @@ nav {
       &:hover {
         color: #ffffff;
         @media (max-width: 992px) {
-          color: #003366;
+          color: $main-color;
         }
       }
     }
@@ -298,7 +298,7 @@ nav {
     border-radius: 1px;
     height: 2px;
     width: 30px;
-    background: #003366;
+    background: $main-color;
     position: absolute;
     display: block;
     content: "";
@@ -317,11 +317,11 @@ nav {
       top: 0;
     }
     &:before {
-      background-color: #003366;
+      background-color: $main-color;
       transform: rotate(45deg);
     }
     &:after {
-      background-color: #003366;
+      background-color: $main-color;
       transform: rotate(-45deg);
     }
   }
@@ -409,7 +409,7 @@ nav {
   height: fit-content;
   z-index: 10;
   @media (max-width: 992px) {
-    background: #003366;
+    background: $main-color;
   }
   .search-general {
     display: flex;
@@ -455,6 +455,7 @@ nav {
   border: 0.5px solid #3d3d3d80;
   background: #fff;
   border-top: transparent;
+  padding: 12px 20px 12px 8px;
 }
 .search-arrow {
   width: 19px;
@@ -478,7 +479,7 @@ nav {
     display: none;
     border-radius: 4px;
     padding: 10px 20px 10px;
-    background-color: #003366;
+    background-color: $main-color;
     text-transform: uppercase;
 
     @media (max-width: 767px) {
@@ -487,7 +488,7 @@ nav {
   }
   .search-form-button {
     border-radius: 0px 4px 4px 0px;
-    background: #bc2649;
+    background: $main-red;
     width: 45px;
     text-transform: uppercase;
     display: flex;
@@ -541,4 +542,12 @@ nav {
   @media (max-width: 767px) {
     max-width: none;
   }
+}
+.military_icon_search{
+  display: block;
+  position:absolute;
+  right:5px;
+  top:calc(50% - 12px);
+  z-index:-1;
+  color:#bc2649;
 }

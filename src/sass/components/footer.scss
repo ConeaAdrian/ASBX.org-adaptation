@@ -1,6 +1,6 @@
 footer {
   display: flex;
-  background: #003366;
+  background: $main-color;
   flex-direction: column;
 
   p,
@@ -10,7 +10,7 @@ footer {
   }
   .instant-result {
     width: 100%;
-    background-color: #bc2649;
+    background-color: $main-red;
 
     &__content {
       padding: 20px;

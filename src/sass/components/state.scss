@@ -73,7 +73,7 @@
   }
   .block-data {
     display: grid;
-    border-left: 2px solid #bc2649;
+    border-left: 2px solid $main-red;
     padding-left: 10px;
     font-size: 20px;
     font-weight: 300;
@@ -142,6 +142,6 @@
   }
 }
 .dinamic-page-notice {
-  border-left: 2px solid #bc2649;
+  border-left: 2px solid $main-red;
   padding-left: 10px;
 }

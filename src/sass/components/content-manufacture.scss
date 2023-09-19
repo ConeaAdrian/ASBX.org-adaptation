@@ -16,7 +16,7 @@
     ul {
       margin-bottom: 20px;
       li {
-        color: #003366;
+        color: $main-color;
         font-size: 16px;
         font-weight: 300;
         text-decoration-line: underline;
@@ -26,7 +26,7 @@
       border: 1px solid rgba(0, 0, 0, 0.1);
       background: #fff;
       padding: 6px 19px;
-      color: #bc2649;
+      color: $main-red;
       font-size: 14px;
       font-weight: 600;
       margin: 0 auto;
@@ -63,7 +63,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
   padding: 6px 18px;
-  color: #bc2649;
+  color: $main-red;
   font-size: 14px;
   font-weight: 600;
   margin: 0 auto;

@@ -1,37 +1,7 @@
 function updateVisibility() {
   const isSmallScreen = window.innerWidth <= 992;
-  const infoBenefits = document.querySelectorAll(".information-benefits");
-
-  infoBenefits.forEach(info => info.style.display = 'none');
-
-  if (isSmallScreen) {
-    document.querySelector(".AVG-claims .information-benefits").style.display = 'block';
-
-    document.querySelectorAll(".ER-claims, .IR-claims, .AVG-claims").forEach(el => {
-      el.removeEventListener('click', toggleOnClick);
-      el.addEventListener('click', toggleOnClick);
-    });
-  } else {
-    infoBenefits.forEach(info => info.style.display = 'block');
-    document.querySelectorAll(".ER-claims, .IR-claims, .AVG-claims").forEach(el => {
-      el.removeEventListener('click', toggleOnClick);
-    });
-  }
 }
 
-function toggleOnClick(event) {
-  const infoBenefits = event.currentTarget.querySelector(".information-benefits");
-  toggleInformationBenefits(infoBenefits);
-}
-
-function toggleInformationBenefits(element) {
-  const isDesktop = window.innerWidth > 992;
-  if (isDesktop) return;
-
-  const infoBenefits = document.querySelectorAll(".information-benefits");
-  infoBenefits.forEach(info => info.style.display = 'none');
-  element.style.display = 'block';
-}
 
 document.addEventListener("DOMContentLoaded", function() {
   updateVisibility();
