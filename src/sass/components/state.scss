@@ -47,6 +47,9 @@
       &__data {
         padding: 10px;
 
+        a {
+          font-weight: 400;
+        }
         .content-information {
           margin-top: 10px;
         }
@@ -75,7 +78,7 @@
     display: grid;
     border-left: 2px solid $main-red;
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: normal;
     margin-top: 10px;
@@ -115,6 +118,7 @@
   .state-list {
     column-count: 3;
     margin-top: 20px;
+    padding-left: 20px;
 
     @media (max-width: 767px) {
       column-count: 2;
@@ -127,7 +131,7 @@
     margin-top: 0;
     padding-top: 5px;
     color: #054ac3;
-    font-size: 20px;
+    font-size: 18px;
 
     &::before {
       margin-right: 6px;
