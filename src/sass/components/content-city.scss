@@ -22,6 +22,10 @@
 
   &__content {
     width: 48.485%;
+
+    h3 {
+      height: 58px;
+    }
     @media (max-width: 640px) {
       width: 100%;
     }
