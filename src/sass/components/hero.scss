@@ -102,7 +102,7 @@
             line-height: 120px;
           }
           @media (max-width: 475px) {
-            font-size: 80px;
+            font-size: 100px;
             line-height: 100px;
             display: flex;
           }
@@ -119,8 +119,8 @@
             font-size: 28px;
           }
           @media (max-width: 475px) {
-            font-size: 26px;
-            line-height: 32px;
+            font-size: 24px;
+            line-height: 30px;
             display: flex;
             padding-top: 62px;
           }
@@ -183,7 +183,7 @@
           width: 127px;
           @media (max-width: 475px) {
             gap: 10px;
-            width: 80px;
+            width: 86px;
           }
         }
 
@@ -243,16 +243,13 @@
           padding: 25px 36px;
           margin-left: 0;
         }
-        @media (max-width: 767px) {
-          padding: 15px;
-        }
         @media (max-width: 475px) {
           text-align: center;
         }
         width: 100%;
         p {
           color: #fff;
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 600;
           line-height: normal;
           text-transform: uppercase;

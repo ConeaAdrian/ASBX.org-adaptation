@@ -1346,7 +1346,7 @@ nav {
             line-height: 120px; } }
         @media (max-width: 475px) {
           .index-page .principal-content .container .hero-content h1 {
-            font-size: 80px;
+            font-size: 100px;
             line-height: 100px;
             display: flex; } }
       .index-page .principal-content .container .hero-content .principal-content-text {
@@ -1362,8 +1362,8 @@ nav {
             font-size: 28px; } }
         @media (max-width: 475px) {
           .index-page .principal-content .container .hero-content .principal-content-text {
-            font-size: 26px;
-            line-height: 32px;
+            font-size: 24px;
+            line-height: 30px;
             display: flex;
             padding-top: 62px; } }
       .index-page .principal-content .container .hero-content p {
@@ -1421,7 +1421,7 @@ nav {
         @media (max-width: 475px) {
           .index-page .principal-content .information-hero .statistic__data {
             gap: 10px;
-            width: 80px; } }
+            width: 86px; } }
       .index-page .principal-content .information-hero .statistic p {
         color: #fff;
         font-size: 48px;
@@ -1475,15 +1475,12 @@ nav {
         .index-page .principal-content .information-hero .principal-text {
           padding: 25px 36px;
           margin-left: 0; } }
-      @media (max-width: 767px) {
-        .index-page .principal-content .information-hero .principal-text {
-          padding: 15px; } }
       @media (max-width: 475px) {
         .index-page .principal-content .information-hero .principal-text {
           text-align: center; } }
       .index-page .principal-content .information-hero .principal-text p {
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         line-height: normal;
         text-transform: uppercase; }
@@ -2081,8 +2078,7 @@ nav {
       color: #003366;
       font-size: 20px;
       font-weight: 400;
-      line-height: 28px;
-      text-decoration-line: underline !important; }
+      line-height: 28px; }
       @media (max-width: 475px) {
         .search-alphabet .alphabet a {
           line-height: 20px; } }
@@ -4202,7 +4198,7 @@ nav {
     .card-job-site {
       width: 100%; } }
   .card-job-site select {
-    font-size: 15px; }
+    font-size: 14px; }
   .card-job-site a {
     color: #054AC3 !important;
     font-size: 18px;
