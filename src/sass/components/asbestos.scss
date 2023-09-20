@@ -40,15 +40,15 @@
 
     .interogativ-sentence {
       color: #BC2649;
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 700;
       text-transform: uppercase;
       position: absolute;
-      top: -24px;
+      top: -18px;
       left: 20px;
       @media (max-width: 475px) {
-        font-size: 22px;
-        top: -22px;
+        font-size: 24px;
+        top: -18px;
         left: 10px;
       }
     }
