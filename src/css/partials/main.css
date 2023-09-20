@@ -2060,7 +2060,7 @@ nav {
   .search-alphabet .alphabet {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 12px;
     margin-top: 10px; }
 
 .trust-list {
@@ -4137,7 +4137,8 @@ nav {
   .card-job-site select {
     height: 44px;
     width: 100%;
-    padding-left: 5px; }
+    padding-left: 5px;
+    position: relative; }
     @media (max-width: 699px) {
       .card-job-site select {
         height: 40px; } }
@@ -4160,12 +4161,12 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 10px; }
-  .card-job-site .flag-img {
-    position: absolute;
-    right: -1px;
-    top: -2px;
-    width: 44px;
-    height: 58px; }
+    .card-job-site__select .army-flag-img {
+      position: absolute;
+      right: -1px;
+      top: -2px;
+      width: 44px;
+      height: 58px; }
 
 .compensation-table {
   margin-top: 20px;
