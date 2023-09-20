@@ -4145,8 +4145,6 @@ nav {
   .page-navigation .page-button.active {
     background: #BC2649;
     color: #ffffff; }
-  .page-navigation a {
-    text-decoration-line: none; }
   .page-navigation .arrow-left {
     transform: rotate(180deg); }
   .page-navigation .page-button:hover {
@@ -4207,10 +4205,10 @@ nav {
     font-size: 14px; }
   .card-job-site a {
     color: #054AC3 !important;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 26px;
     text-decoration-line: underline !important; }
   .card-job-site p {
     font-size: 18px;
