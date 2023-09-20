@@ -22,7 +22,6 @@
       color: black;
       font-size: 14px;
 
-
       @media (max-width: 475px) {
         margin: 0 3px;
       }
@@ -31,6 +30,9 @@
     .page-button.active {
       background: $main-red;
       color: #ffffff;
+    }
+    a {
+      text-decoration-line: none;
     }
 
     .arrow-left {
