@@ -241,6 +241,11 @@ dd {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
+
+  a {
+    font-size: 20px;
+  font-weight: 700;
+  }
 }
 .red-not {
   color: $main-red;
