@@ -50,7 +50,7 @@ h1 {
   color: $main-color;
   font-size: 38px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   line-height: 46px;
   @media (max-width: 475px) {
@@ -61,15 +61,14 @@ h1 {
 }
 h2 {
   color: $main-color;
-  font-size: 28px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 36px;
   padding-top: 40px;
   @media (max-width: 475px) {
     font-size: 26px;
     padding-top: 30px;
-    line-height: 34px;
   }
 }
 
@@ -240,8 +239,8 @@ dd {
 }
 .general-blue-text {
   color: $main-color;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   text-transform: capitalize;
 }
 .red-not {
