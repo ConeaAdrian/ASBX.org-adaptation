@@ -2655,6 +2655,8 @@ nav {
       .content-ship .equipment .equipment-box .mark-text li {
         font-size: 18px;
         line-height: 24px; }
+    .content-ship .equipment .equipment-box p {
+      font-size: 18px; }
   .content-ship .equipment .red-text {
     margin: 0; }
 
