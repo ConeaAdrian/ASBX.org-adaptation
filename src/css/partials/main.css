@@ -51,7 +51,7 @@ h1 {
   color: #003366;
   font-size: 38px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: normal;
   line-height: 46px; }
   @media (max-width: 475px) {
@@ -62,15 +62,16 @@ h1 {
 
 h2 {
   color: #003366;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 36px;
   padding-top: 40px; }
   @media (max-width: 475px) {
     h2 {
       font-size: 26px;
-      padding-top: 30px; } }
+      padding-top: 30px;
+      line-height: 34px; } }
 
 h3 {
   font-size: 24px;
@@ -226,8 +227,8 @@ dd {
 
 .general-blue-text {
   color: #003366;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   text-transform: capitalize; }
 
 .red-not {
@@ -1873,9 +1874,11 @@ nav {
   .index-page .state-connection .state-list-index li::before {
     margin-right: 6px;
     text-decoration-line: none; }
-  @media (max-width: 475px) {
-    .index-page .state-connection .state-list-index li a {
-      font-size: 18px; } }
+  .index-page .state-connection .state-list-index li a {
+    font-size: 20px; }
+    @media (max-width: 475px) {
+      .index-page .state-connection .state-list-index li a {
+        font-size: 18px; } }
 
 .index-page .veterans {
   background: #fafafa; }
@@ -2076,7 +2079,7 @@ nav {
     margin-top: 10px; }
     .search-alphabet .alphabet a {
       color: #003366;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 400;
       line-height: 28px; }
       @media (max-width: 475px) {
@@ -2290,20 +2293,21 @@ nav {
       position: relative; }
       .general-claims .claims-result__data-information .data-city {
         display: flex;
-        align-items: start; }
+        align-items: start;
+        gap: 5px; }
         .general-claims .claims-result__data-information .data-city b {
           width: 45px;
-          font-size: 14px !important;
+          font-size: 16px !important;
           font-style: normal;
           font-weight: 400;
           line-height: normal; }
         .general-claims .claims-result__data-information .data-city p {
-          font-size: 14px;
+          font-size: 16px;
           line-height: normal;
           width: 100%; }
       .general-claims .claims-result__data-information .button-remove-claims {
         color: black;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         text-decoration-line: underline;
         padding: 0;
@@ -2418,18 +2422,18 @@ nav {
     gap: 4px; }
     .required-asbx .block-data b {
       color: #BC2649;
-      font-size: 18px !important; }
+      font-size: 16px !important; }
     .required-asbx .block-data p {
       color: #000;
       font-weight: 300;
-      font-size: 18px;
+      font-size: 16px;
       line-height: normal; }
       .required-asbx .block-data p span {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 300;
         line-height: normal; }
     .required-asbx .block-data a {
-      font-size: 18px; }
+      font-size: 16px; }
 
 .general-information-table {
   display: flex;
@@ -2456,9 +2460,9 @@ nav {
   display: flex;
   align-items: baseline; }
   .content-summarizer__notice div a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 24px;
     text-decoration-line: underline !important;
     text-transform: capitalize; }
   .content-summarizer__notice div mark {
@@ -4203,7 +4207,7 @@ nav {
     color: #054AC3 !important;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 26px;
     text-decoration-line: underline !important; }
   .card-job-site p {
@@ -4322,19 +4326,10 @@ nav {
   @media (max-width: 475px) {
     .question-card {
       max-width: none; } }
-  .question-card p {
-    font-weight: 400;
-    text-transform: capitalize;
-    color: #003366 !important;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 26px; }
   .question-card select {
-    border: 1px solid #dbdbdb;
     height: 44px;
     padding-left: 10px; }
   .question-card input {
-    border: 1px solid #dbdbdb;
     height: 44px;
     padding-left: 10px; }
     .question-card input::placeholder {
@@ -4385,7 +4380,7 @@ nav {
       color: #BC2649;
       font-size: 20px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 24px; }
     .content-boiler .card-boiler p {
       color: #000;

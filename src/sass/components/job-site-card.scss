@@ -33,7 +33,7 @@
     color: #054AC3 !important;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 26px;
     text-decoration-line: underline !important;
   }
@@ -175,21 +175,11 @@
   @media (max-width: 475px) {
     max-width: none;
   }
-  p {
-    font-weight: 400;
-    text-transform: capitalize;
-    color: $main-color !important;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 26px;
-  }
   select {
-    border: 1px solid #dbdbdb;
     height: 44px;
     padding-left: 10px;
   }
   input {
-    border: 1px solid #dbdbdb;
     height: 44px;
     padding-left: 10px;
     &::placeholder {
