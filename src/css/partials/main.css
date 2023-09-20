@@ -228,6 +228,9 @@ dd {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize; }
+  .general-blue-text a {
+    font-size: 20px;
+    font-weight: 700; }
 
 .red-not {
   color: #BC2649; }
