@@ -2443,12 +2443,11 @@ nav {
 
 .content-summarizer__notice div {
   display: flex;
-  align-items: baseline;
-  line-height: 32px; }
+  align-items: baseline; }
   .content-summarizer__notice div a {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 30px;
     text-transform: capitalize; }
   .content-summarizer__notice div mark {
     color: #054ac3;
