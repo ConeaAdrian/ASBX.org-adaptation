@@ -339,7 +339,8 @@ button {
     padding-top: 20px; }
 
 .breadcrumb {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  align-items: center; }
   @media (max-width: 475px) {
     .breadcrumb {
       justify-content: center; } }
@@ -848,7 +849,7 @@ nav {
             nav ul li a:visited:not(:only-child):after {
               top: 10px; } }
       nav ul li ul li {
-        min-width: 190px; }
+        min-width: 210px; }
         nav ul li ul li a {
           padding: 15px;
           line-height: 20px; }
@@ -874,7 +875,7 @@ nav {
         opacity: 1; } }
     .nav-dropdown li a {
       font-size: 14px;
-      padding: 5px 0 !important;
+      padding: 8px 0 !important;
       color: white; }
       @media (max-width: 992px) {
         .nav-dropdown li a {
@@ -2159,7 +2160,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   justify-content: flex-start; }
   .general-claims .claims-selected {
     width: 100%;
@@ -2435,7 +2435,8 @@ nav {
 
 .content-summarizer__notice div {
   display: flex;
-  align-items: baseline; }
+  align-items: baseline;
+  line-height: 32px; }
   .content-summarizer__notice div a {
     font-size: 18px;
     font-weight: 400;
@@ -3880,8 +3881,6 @@ nav {
       font-weight: 400;
       line-height: normal;
       text-transform: capitalize; }
-    .sort-chase__content .review {
-      font-weight: 400 !important; }
 
 .compensation-section__table {
   margin-top: 20px;
@@ -3904,7 +3903,7 @@ nav {
     font-size: 18px;
     line-height: normal;
     text-transform: capitalize;
-    font-weight: 500 !important; }
+    font-weight: 700 !important; }
   .compensation-section__table tbody .review {
     color: #000;
     font-size: 18px;
