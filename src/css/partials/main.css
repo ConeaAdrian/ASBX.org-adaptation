@@ -2652,7 +2652,8 @@ nav {
         max-width: none; } }
     @media screen and (min-width: 520px) {
       .content-ship .equipment .equipment-box {
-        flex: 0 0 calc(50% - 20px); } }
+        flex: 0 0 calc(50% - 20px);
+        height: inherit; } }
     .content-ship .equipment .equipment-box .mark-text {
       margin: 0 10px; }
       .content-ship .equipment .equipment-box .mark-text li {
