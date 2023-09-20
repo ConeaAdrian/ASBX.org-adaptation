@@ -14,11 +14,11 @@ img {
 
 th,
 td {
-  font-family: "Assistant", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px; }
 
 button {
-  font-family: "Assistant", sans-serif; }
+  font-family: "Roboto Condensed", sans-serif; }
 
 ul {
   font-size: 14px;
@@ -26,7 +26,7 @@ ul {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
-  font-family: "Assistant", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   display: list-item;
   padding-left: 12px; }
   ul li {
@@ -43,7 +43,7 @@ h6,
 p,
 li,
 a {
-  font-family: "Assistant", sans-serif !important;
+  font-family: 'Assistant', sans-serif !important;
   margin: 0;
   line-height: normal; }
 
@@ -53,7 +53,8 @@ h1 {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  line-height: 46px; }
+  line-height: 46px;
+  font-family: 'Assistant', sans-serif !important; }
   @media (max-width: 475px) {
     h1 {
       font-size: 32px;
@@ -65,8 +66,9 @@ h2 {
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
-  line-height: 36px;
-  padding-top: 40px; }
+  line-height: 38px;
+  padding-top: 40px;
+  font-family: 'Assistant', sans-serif !important; }
   @media (max-width: 475px) {
     h2 {
       font-size: 26px;
@@ -76,11 +78,12 @@ h3 {
   font-size: 24px;
   color: #003366;
   font-weight: 500;
-  line-height: 30px; }
+  line-height: 32px;
+  font-family: 'Assistant', sans-serif !important; }
   @media (max-width: 475px) {
     h3 {
       font-size: 22px;
-      line-height: 28px; } }
+      line-height: 30px; } }
 
 h4,
 h5,
@@ -91,18 +94,17 @@ p {
   line-height: normal;
   font-weight: 300;
   font-size: 18px;
-  color: #000;
-  line-height: 24px; }
+  color: #000; }
 
 li {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Assistant", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   margin-top: 5px; }
 
 span {
   color: #000000;
-  font-family: "Assistant", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -114,13 +116,13 @@ a {
   transition: all 0.3s ease-in;
   color: #054ac3;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px; }
   a > span,
   a > b,
   a > strong {
     display: inline-block;
-    font-family: "Assistant", sans-serif; }
+    font-family: "Roboto Condensed", sans-serif; }
 
 select:after {
   position: absolute;
@@ -144,7 +146,7 @@ select {
   background-color: #fff;
   color: #000;
   font-size: 16px;
-  font-family: "Assistant", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   border-radius: 0;
   outline: none; }
   select:hover {
@@ -158,24 +160,24 @@ input {
   border: 1px solid #dbdbdb;
   background: #fff;
   outline: none;
-  font-family: "Assistant", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: 400; }
 
 label {
-  font-family: "Assistant", sans-serif; }
+  font-family: "Roboto Condensed", sans-serif; }
 
 b,
 strong {
   color: #000;
-  font-weight: 600;
-  font-family: "Assistant", sans-serif;
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 18px; }
 
 dl,
 dt,
 dd {
-  font-family: "Assistant", sans-serif; }
+  font-family: "Roboto Condensed", sans-serif; }
 
 .position-relative {
   position: relative; }
@@ -208,7 +210,7 @@ dd {
 
 .red-text {
   color: #BC2649;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   margin-top: 20px;
   margin-bottom: 20px; }
@@ -217,7 +219,7 @@ dd {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #003366;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400; }
   @media (max-width: 475px) {
@@ -226,7 +228,7 @@ dd {
 
 .general-blue-text {
   color: #003366;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: capitalize; }
 
@@ -279,8 +281,8 @@ body {
   padding: 0;
   color: #fff;
   border: 0 !important;
-  font-family: "Assistant", sans-serif;
-  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
   text-transform: uppercase;
   padding: 8.5px; }
   .button-red:hover {
@@ -298,7 +300,7 @@ body {
   padding: 0;
   color: #fff;
   border: 0 !important;
-  font-family: "Assistant", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   padding: 8.5px; }
@@ -348,7 +350,7 @@ button {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 24px;
     text-decoration-line: underline !important;
     color: #054AC3; }
     @media (max-width: 767px) {
@@ -616,7 +618,7 @@ footer {
         padding-bottom: 10px;
         margin-bottom: 10px; }
       footer .instant-result__content b {
-        font-size: 18px !important;
+        font-size: 17px !important;
         text-transform: uppercase; }
       footer .instant-result__content button {
         margin-top: 15px;
@@ -665,7 +667,7 @@ footer {
       display: flex;
       flex-direction: column; }
       footer .important-links__aplicate a {
-        font-size: 20px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 300;
         line-height: 26px;
@@ -720,7 +722,7 @@ footer {
     align-items: start;
     gap: 10px; }
     footer .contact-direct p {
-      font-size: 20px; }
+      font-size: 16px; }
     footer .contact-direct .get-text {
       font-size: 20px;
       font-weight: 400;
@@ -1255,9 +1257,6 @@ nav {
 .index-page p {
   font-size: 20px; }
 
-.index-page b {
-  font-size: 20px; }
-
 .index-page h2 {
   font-size: 48px;
   font-weight: 700;
@@ -1415,7 +1414,7 @@ nav {
         flex-direction: column;
         gap: 5px;
         align-items: center;
-        width: 127px; }
+        width: 125px; }
         @media (max-width: 475px) {
           .index-page .principal-content .information-hero .statistic__data {
             gap: 10px;
@@ -1467,7 +1466,7 @@ nav {
       z-index: 105;
       width: 35%;
       padding: 31px;
-      margin-left: 32px;
+      margin-left: 38px;
       width: 100%; }
       @media (max-width: 992px) {
         .index-page .principal-content .information-hero .principal-text {
@@ -2092,7 +2091,7 @@ nav {
       column-count: 1; } }
   .trust-list li {
     color: #054ac3;
-    font-size: 18px;
+    font-size: 20px;
     list-style-type: disc;
     line-height: 28px;
     margin-top: 8px;
@@ -2729,7 +2728,7 @@ nav {
     .content-ship .equipment .equipment-box .mark-text {
       margin: 0 10px; }
       .content-ship .equipment .equipment-box .mark-text li {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24px; }
   .content-ship .equipment .red-text {
     margin: 0; }
@@ -3374,14 +3373,14 @@ nav {
         padding: 5px; } }
 
 .legal-text {
-  width: 172px;
+  width: 168px;
   font-size: 18px; }
   @media (max-width: 475px) {
     .legal-text {
       font-size: 16px !important; } }
 
 .your-own-text {
-  width: 172px; }
+  width: 168px; }
   @media (max-width: 475px) {
     .your-own-text {
       font-size: 16px !important; } }
@@ -3887,8 +3886,8 @@ nav {
     gap: 5px;
     margin-bottom: 20px; }
     .equipment-ship .mark-text li {
-      font-size: 18px;
-      font-weight: 400; }
+      font-size: 20px;
+      font-weight: 300; }
 
 .button-container {
   display: flex;
@@ -3908,7 +3907,7 @@ nav {
   font-weight: 600;
   margin: 0 auto;
   display: flex;
-  width: 200px;
+  width: 187px;
   justify-content: center; }
 
 .trust-fund {
@@ -3997,15 +3996,15 @@ nav {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   gap: 8px;
   display: flex;
   flex-direction: column; }
   .mark-text li {
-    font-size: 18px;
+    font-size: 20px;
     list-style-type: disc;
-    line-height: 26px;
+    line-height: 28px;
     margin-top: 0; }
 
 .dinamic-element {
@@ -4302,7 +4301,7 @@ nav {
         .section-question__text img {
           display: none; } }
     .section-question__text .red-text {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 28px; }
 
 .question-card {
@@ -4343,7 +4342,7 @@ nav {
       font-style: normal;
       font-weight: 400; }
   .question-card .input-field {
-    font-family: "Assistant", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     padding: 5px 10px;
     width: 100%;
     height: 72px;
@@ -4508,8 +4507,6 @@ nav {
         width: 100%; } }
     .state .state-content .state-card__data {
       padding: 10px; }
-      .state .state-content .state-card__data a {
-        font-weight: 400; }
       .state .state-content .state-card__data .content-information {
         margin-top: 10px; }
       .state .state-content .state-card__data p b {
@@ -4528,7 +4525,7 @@ nav {
   display: grid;
   border-left: 2px solid #BC2649;
   padding-left: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   line-height: normal;
   margin-top: 10px;
@@ -4562,8 +4559,7 @@ nav {
 
 .state .state-list {
   column-count: 3;
-  margin-top: 20px;
-  padding-left: 20px; }
+  margin-top: 20px; }
   @media (max-width: 767px) {
     .state .state-list {
       column-count: 2; } }
@@ -4574,7 +4570,7 @@ nav {
   margin-top: 0;
   padding-top: 5px;
   color: #054ac3;
-  font-size: 18px; }
+  font-size: 20px; }
   .state .state-list li::before {
     margin-right: 6px;
     text-decoration-line: none; }

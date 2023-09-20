@@ -2,9 +2,6 @@
   p {
     font-size: 20px;
   }
-  b {
-    font-size: 20px;
-  }
   h2 {
     font-size: 48px;
     font-weight: 700;
@@ -178,7 +175,7 @@
           flex-direction: column;
           gap: 5px;
           align-items: center;
-          width: 127px;
+          width: 125px;
           @media (max-width: 475px) {
             gap: 10px;
             width: 80px;
@@ -236,7 +233,7 @@
         z-index: 105;
         width: 35%;
         padding: 31px;
-        margin-left: 32px;
+        margin-left: 38px;
         @media (max-width: 992px) {
           padding: 25px;
           margin-left: 0;
