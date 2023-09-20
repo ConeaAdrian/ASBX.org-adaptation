@@ -848,11 +848,9 @@ nav {
             nav ul li a:not(:only-child):after,
             nav ul li a:visited:not(:only-child):after {
               top: 10px; } }
-      nav ul li ul li {
-        min-width: 210px; }
-        nav ul li ul li a {
-          padding: 15px;
-          line-height: 20px; }
+      nav ul li ul li a {
+        padding: 15px;
+        line-height: 20px; }
       nav ul li .FAQs {
         color: #BC2649 !important; }
 
@@ -860,7 +858,8 @@ nav {
   position: absolute;
   display: none;
   z-index: 1;
-  margin-top: 15px; }
+  margin-top: 15px;
+  flex-direction: column; }
   @media (max-width: 992px) {
     .nav-dropdown {
       background-color: transparent;
@@ -877,6 +876,8 @@ nav {
       font-size: 14px;
       padding: 8px 0 !important;
       color: white; }
+      .nav-dropdown li a:not(:only-child):after {
+        display: none !important; }
       @media (max-width: 992px) {
         .nav-dropdown li a {
           font-size: 18px;
@@ -1205,6 +1206,13 @@ nav {
   top: calc(50% - 12px);
   z-index: -1;
   color: #bc2649; }
+
+.dorp-down {
+  display: block !important;
+  padding-left: 10px;
+  background: #036;
+  margin-top: 0 !important;
+  min-width: 210px; }
 
 .index-container {
   max-width: 1155px;
