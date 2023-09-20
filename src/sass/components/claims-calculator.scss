@@ -194,7 +194,7 @@
       p {
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 700;
         line-height: normal;
         width: 100%;
       }
@@ -215,18 +215,24 @@
       .data-city {
         display: flex;
         align-items: start;
+        align-items: center;
 
         b {
-          width: 45px;
+          min-width: 45px;
           font-size: 14px !important;
           font-style: normal;
-          font-weight: 400;
+          font-weight: 700;
           line-height: normal;
         }
         p {
           font-size: 14px;
+          font-weight: 400;
           line-height: normal;
           width: 100%;
+        }
+        &__year {
+          display: flex;
+          align-items: center;
         }
       }
       .button-remove-claims {

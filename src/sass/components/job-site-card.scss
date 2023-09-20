@@ -31,16 +31,16 @@
   }
   a {
     color: #054AC3 !important;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 28px;
     text-decoration-line: underline !important;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 24px;
   }
 
   select {
@@ -77,6 +77,13 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .flag-img {
+    position: absolute;
+    right: -1px;
+    top: -2px;
+    width: 44px;
+    height: 58px;
   }
 }
 
@@ -174,14 +181,6 @@
   }
   @media (max-width: 475px) {
     max-width: none;
-  }
-  p {
-    font-weight: 400;
-    text-transform: capitalize;
-    color: $main-color !important;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 26px;
   }
   select {
     border: 1px solid #dbdbdb;

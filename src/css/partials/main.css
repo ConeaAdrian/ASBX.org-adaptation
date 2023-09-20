@@ -43,7 +43,7 @@ h6,
 p,
 li,
 a {
-  font-family: 'Assistant', sans-serif !important;
+  font-family: "Roboto Condensed", sans-serif;
   margin: 0;
   line-height: normal; }
 
@@ -51,10 +51,9 @@ h1 {
   color: #003366;
   font-size: 38px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: normal;
-  line-height: 46px;
-  font-family: 'Assistant', sans-serif !important; }
+  line-height: 46px; }
   @media (max-width: 475px) {
     h1 {
       font-size: 32px;
@@ -63,23 +62,20 @@ h1 {
 
 h2 {
   color: #003366;
-  font-size: 30px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 38px;
-  padding-top: 40px;
-  font-family: 'Assistant', sans-serif !important; }
+  font-weight: 700;
+  line-height: 32px;
+  padding-top: 40px; }
   @media (max-width: 475px) {
     h2 {
-      font-size: 26px;
       padding-top: 30px; } }
 
 h3 {
-  font-size: 24px;
+  font-size: 22px;
   color: #003366;
-  font-weight: 500;
-  line-height: 32px;
-  font-family: 'Assistant', sans-serif !important; }
+  font-weight: 700;
+  line-height: 28px; }
   @media (max-width: 475px) {
     h3 {
       font-size: 22px;
@@ -93,7 +89,8 @@ h6 {
 p {
   line-height: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 28px;
   color: #000; }
 
 li {
@@ -115,7 +112,7 @@ a {
   cursor: pointer !important;
   transition: all 0.3s ease-in;
   color: #054ac3;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   line-height: 28px; }
   a > span,
@@ -1121,7 +1118,6 @@ nav {
   cursor: pointer;
   position: relative;
   font-size: 16px;
-  padding: 12px 8px;
   color: #564d4d;
   border: 0.5px solid #3d3d3d80;
   background: #fff;
@@ -1379,7 +1375,7 @@ nav {
     height: 140px;
     width: 100%;
     position: unset;
-    padding-top: 122px; }
+    padding-top: 125px; }
     @media (max-width: 992px) {
       .index-page .principal-content .information-hero {
         flex-direction: column;
@@ -1985,11 +1981,6 @@ nav {
     @media (max-width: 640px) {
       .sort-chase__content {
         width: 100%; } }
-    .sort-chase__content h3 {
-      color: #003366;
-      font-size: 20px;
-      font-style: normal;
-      line-height: 28px; }
     .sort-chase__content td,
     .sort-chase__content th {
       font-weight: 400 !important; }
@@ -2048,7 +2039,7 @@ nav {
   margin-top: 20px;
   margin-bottom: 28px; }
   .search-result p {
-    font-size: 20px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400; }
   .search-result .mark-text {
@@ -2072,15 +2063,6 @@ nav {
     flex-wrap: wrap;
     gap: 14px;
     margin-top: 10px; }
-    .search-alphabet .alphabet a {
-      color: #003366;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 28px;
-      text-decoration-line: underline !important; }
-      @media (max-width: 475px) {
-        .search-alphabet .alphabet a {
-          line-height: 20px; } }
 
 .trust-list {
   column-count: 2;
@@ -2091,9 +2073,9 @@ nav {
       column-count: 1; } }
   .trust-list li {
     color: #054ac3;
-    font-size: 20px;
+    font-size: 18px;
     list-style-type: disc;
-    line-height: 28px;
+    line-height: 26px;
     margin-top: 8px;
     margin-right: 10px; }
     @media (max-width: 475px) {
@@ -2273,7 +2255,7 @@ nav {
       .general-claims .claims-result__principal-information p {
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 700;
         line-height: normal;
         width: 100%; }
       .general-claims .claims-result__principal-information .city-img {
@@ -2289,17 +2271,22 @@ nav {
       position: relative; }
       .general-claims .claims-result__data-information .data-city {
         display: flex;
-        align-items: start; }
+        align-items: start;
+        align-items: center; }
         .general-claims .claims-result__data-information .data-city b {
-          width: 45px;
+          min-width: 45px;
           font-size: 14px !important;
           font-style: normal;
-          font-weight: 400;
+          font-weight: 700;
           line-height: normal; }
         .general-claims .claims-result__data-information .data-city p {
           font-size: 14px;
+          font-weight: 400;
           line-height: normal;
           width: 100%; }
+        .general-claims .claims-result__data-information .data-city__year {
+          display: flex;
+          align-items: center; }
       .general-claims .claims-result__data-information .button-remove-claims {
         color: black;
         font-size: 12px;
@@ -2641,64 +2628,6 @@ nav {
       .content-ship .content-box-ship__text {
         max-width: none; } }
 
-.content-ship .ship-claims {
-  position: relative;
-  border-radius: 4px;
-  border-radius: 6px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  background: #fbfbfb;
-  padding: 20px;
-  width: 100%;
-  max-width: 320px; }
-  @media (max-width: 767px) {
-    .content-ship .ship-claims {
-      padding: 10px; } }
-  @media (max-width: 660px) {
-    .content-ship .ship-claims {
-      max-width: none; } }
-  .content-ship .ship-claims .ship-select {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; }
-    .content-ship .ship-claims .ship-select span {
-      color: #003366;
-      font-size: 20px;
-      font-weight: 700; }
-    .content-ship .ship-claims .ship-select p {
-      color: #BC2649;
-      font-weight: 400; }
-  .content-ship .ship-claims__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    @media (max-width: 475px) {
-      .content-ship .ship-claims__content {
-        flex-direction: column;
-        align-items: start; } }
-    .content-ship .ship-claims__content .add-ship {
-      display: flex;
-      flex-direction: column;
-      width: 100%; }
-    .content-ship .ship-claims__content .data-select {
-      display: flex;
-      gap: 10px; }
-  .content-ship .ship-claims .custom-select {
-    margin-bottom: 15px; }
-  .content-ship .ship-claims .button-blue {
-    width: 100%;
-    margin-top: 30px; }
-  .content-ship .ship-claims img {
-    position: absolute;
-    right: -6px;
-    top: 0;
-    right: -5px;
-    top: -1px; }
-  .content-ship .ship-claims .add-button {
-    margin-right: 15px; }
-    @media (max-width: 475px) {
-      .content-ship .ship-claims .add-button {
-        margin-left: 0; } }
-
 .content-ship .red-text {
   margin-top: 18px;
   margin-bottom: 18px; }
@@ -2906,11 +2835,8 @@ nav {
   color: #003366; }
 
 .no-job .red-text {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700; }
-  @media (max-width: 475px) {
-    .no-job .red-text {
-      font-size: 24px; } }
 
 .nearby-location {
   padding-bottom: 30px;
@@ -4200,15 +4126,15 @@ nav {
     font-size: 15px; }
   .card-job-site a {
     color: #054AC3 !important;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 28px;
     text-decoration-line: underline !important; }
   .card-job-site p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 26px; }
+    line-height: 24px; }
   .card-job-site select {
     height: 44px;
     width: 100%;
@@ -4235,6 +4161,12 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 10px; }
+  .card-job-site .flag-img {
+    position: absolute;
+    right: -1px;
+    top: -2px;
+    width: 44px;
+    height: 58px; }
 
 .compensation-table {
   margin-top: 20px;
@@ -4321,13 +4253,6 @@ nav {
   @media (max-width: 475px) {
     .question-card {
       max-width: none; } }
-  .question-card p {
-    font-weight: 400;
-    text-transform: capitalize;
-    color: #003366 !important;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 26px; }
   .question-card select {
     border: 1px solid #dbdbdb;
     height: 44px;
@@ -4388,8 +4313,13 @@ nav {
       line-height: 24px; }
     .content-boiler .card-boiler p {
       color: #000;
-      font-size: 18px;
-      font-weight: 400; }
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; }
+      .content-boiler .card-boiler p b {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px; }
     .content-boiler .card-boiler select {
       height: 44px;
       width: 100%;

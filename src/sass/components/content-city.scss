@@ -25,13 +25,6 @@
     @media (max-width: 640px) {
       width: 100%;
     }
-    h3 {
-      color: $main-color;
-      font-size: 20px;
-      font-style: normal;
-      line-height: 28px;
-    }
-
     td,
     th {
       font-weight: 400 !important;
@@ -102,7 +95,7 @@
   margin-top: 20px;
   margin-bottom: 28px;
   p {
-    font-size: 20px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
   }
@@ -132,18 +125,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    margin-top: 10px;
-
-    a {
-      color: $main-color;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 28px;
-      text-decoration-line: underline !important;
-      @media (max-width: 475px) {
-        line-height: 20px;
-      }
-    }
+    margin-top: 10px; 
   }
 }
 .trust-list {
@@ -157,9 +139,9 @@
 
   li {
     color: #054ac3;
-    font-size: 20px;
+    font-size: 18px;
     list-style-type: disc;
-    line-height: 28px;
+    line-height: 26px;
     margin-top: 8px;
     margin-right: 10px;
     a {
