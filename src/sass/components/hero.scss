@@ -167,6 +167,7 @@
         }
         @media (max-width: 475px) {
           justify-content: center;
+          gap: 10px;
         }
 
         &__data {
@@ -177,7 +178,7 @@
           width: 125px;
           @media (max-width: 475px) {
             gap: 10px;
-            width: 80px;
+            width: 90px;
           }
         }
 
@@ -187,9 +188,6 @@
           font-weight: 400;
           @media (max-width: 767px) {
             font-size: 32px;
-          }
-          @media (max-width: 475px) {
-            font-size: 26px;
           }
         }
         span {
@@ -202,7 +200,7 @@
             font-size: 12px;
           }
           @media (max-width: 475px) {
-            font-size: 9px;
+            font-size: 10px;
           }
         }
       }
@@ -687,7 +685,7 @@
 
       @media (max-width: 767px) {
         padding-left: 20%;
-        column-count: 2; /* optional, dacă dorești să reduci la 2 coloane pe ecrane mai mici */
+        column-count: 2;
       }
       @media (max-width: 475px) {
         padding-left: 15%;

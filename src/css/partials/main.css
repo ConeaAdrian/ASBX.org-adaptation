@@ -389,7 +389,7 @@ button {
       max-width: none; } }
   .lawyers-information .block-lawyers__about {
     display: flex;
-    gap: 17px;
+    gap: 18px;
     align-items: center; }
     .lawyers-information .block-lawyers__about .lawyers-data {
       text-align: start; }
@@ -615,7 +615,7 @@ footer {
         padding-bottom: 10px;
         margin-bottom: 10px; }
       footer .instant-result__content b {
-        font-size: 17px !important;
+        font-size: 18px !important;
         text-transform: uppercase; }
       footer .instant-result__content button {
         margin-top: 15px;
@@ -664,7 +664,7 @@ footer {
       display: flex;
       flex-direction: column; }
       footer .important-links__aplicate a {
-        font-size: 18px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 300;
         line-height: 26px;
@@ -719,7 +719,7 @@ footer {
     align-items: start;
     gap: 10px; }
     footer .contact-direct p {
-      font-size: 16px; }
+      font-size: 20px; }
     footer .contact-direct .get-text {
       font-size: 20px;
       font-weight: 400;
@@ -729,7 +729,7 @@ footer {
     justify-content: center;
     display: flex; }
     footer .footer-text .final-text {
-      font-size: 16px;
+      font-size: 20px;
       padding: 15px 10px;
       color: #000;
       display: flex;
@@ -1126,7 +1126,7 @@ nav {
 
 .search-arrow {
   width: 19px;
-  height: 17px; }
+  height: 18px; }
   @media (max-width: 767px) {
     .search-arrow {
       display: none; } }
@@ -1403,7 +1403,8 @@ nav {
           padding: 15px; } }
       @media (max-width: 475px) {
         .index-page .principal-content .information-hero .statistic {
-          justify-content: center; } }
+          justify-content: center;
+          gap: 10px; } }
       .index-page .principal-content .information-hero .statistic__data {
         display: flex;
         flex-direction: column;
@@ -1413,7 +1414,7 @@ nav {
         @media (max-width: 475px) {
           .index-page .principal-content .information-hero .statistic__data {
             gap: 10px;
-            width: 80px; } }
+            width: 90px; } }
       .index-page .principal-content .information-hero .statistic p {
         color: #fff;
         font-size: 48px;
@@ -1421,9 +1422,6 @@ nav {
         @media (max-width: 767px) {
           .index-page .principal-content .information-hero .statistic p {
             font-size: 32px; } }
-        @media (max-width: 475px) {
-          .index-page .principal-content .information-hero .statistic p {
-            font-size: 26px; } }
       .index-page .principal-content .information-hero .statistic span {
         color: #fff;
         font-size: 14px;
@@ -1435,7 +1433,7 @@ nav {
             font-size: 12px; } }
         @media (max-width: 475px) {
           .index-page .principal-content .information-hero .statistic span {
-            font-size: 9px; } }
+            font-size: 10px; } }
     .index-page .principal-content .information-hero::before {
       content: "";
       background: #BC2649;
@@ -1850,8 +1848,7 @@ nav {
   @media (max-width: 767px) {
     .index-page .state-connection .state-list-index {
       padding-left: 20%;
-      column-count: 2;
-      /* optional, dacă dorești să reduci la 2 coloane pe ecrane mai mici */ } }
+      column-count: 2; } }
   @media (max-width: 475px) {
     .index-page .state-connection .state-list-index {
       padding-left: 15%; } }
@@ -2132,7 +2129,7 @@ nav {
   transform: rotate(180deg); }
 
 .address-text {
-  font-size: 14px !important;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal; }
@@ -2206,7 +2203,6 @@ nav {
         padding-top: 0; }
       .general-claims .claims-selected .content-information p {
         color: #003366;
-        font-size: 18px;
         margin-bottom: 6px;
         font-weight: 400; }
     .general-claims .claims-selected .back-ground {
@@ -2274,7 +2270,7 @@ nav {
         align-items: center; }
         .general-claims .claims-result__data-information .data-city b {
           min-width: 45px;
-          font-size: 14px !important;
+          font-size: 14px;
           font-style: normal;
           font-weight: 700;
           line-height: normal; }
@@ -2444,7 +2440,6 @@ nav {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    text-decoration-line: underline !important;
     text-transform: capitalize; }
   .content-summarizer__notice div mark {
     color: #054ac3;
@@ -2609,7 +2604,8 @@ nav {
 .content-ship .content-box-ship {
   display: flex;
   gap: 30px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  justify-content: space-between; }
   @media (max-width: 660px) {
     .content-ship .content-box-ship {
       flex-direction: column;
@@ -2657,7 +2653,7 @@ nav {
     .content-ship .equipment .equipment-box .mark-text {
       margin: 0 10px; }
       .content-ship .equipment .equipment-box .mark-text li {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px; }
   .content-ship .equipment .red-text {
     margin: 0; }
