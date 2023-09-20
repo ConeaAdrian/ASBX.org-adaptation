@@ -2667,23 +2667,15 @@ nav {
 .content-ship .equipment-box ul li {
   list-style-type: disc; }
 
-.navy-ships {
-  column-count: 1;
-  margin-top: 20px;
-  padding-left: 20px; }
-  @media (max-width: 992px) {
-    .navy-ships {
-      column-count: 1; } }
-  .navy-ships li {
-    color: #054ac3;
-    font-size: 18px;
-    list-style-type: disc;
-    line-height: 26px;
-    margin-top: 8px;
-    margin-right: 10px; }
-    @media (max-width: 475px) {
-      .navy-ships li a {
-        font-size: 18px; } }
+.navy-ships li {
+  color: #054ac3; }
+
+.navy-facilities {
+  margin-top: 20px; }
+  .navy-facilities .mark-text {
+    margin-top: 10px; }
+    .navy-facilities .mark-text li {
+      color: #054ac3; }
 
 .contact .hreader-contact {
   width: 100%;

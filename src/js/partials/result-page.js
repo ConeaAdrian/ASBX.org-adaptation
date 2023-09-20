@@ -13,12 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const legalRepresentationDiv = document.querySelector('.legal-representation');
   const yourOwnDiv = document.querySelector('.your-own');
 
-  switchButton.checked = false;
-  legalText.style.color = '#181059';
-  legalText.style.fontSize = '18px';
-  legalText.style.fontWeight = '500';
-  legalRepresentationDiv.style.display = 'block';
-  yourOwnDiv.style.display = 'none';
 
   switchButton.addEventListener('click', function() {
     const isChecked = this.checked;
