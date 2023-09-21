@@ -2342,7 +2342,8 @@ nav {
         max-width: none;
         height: auto; } }
     .content-table .company-logo__img {
-      height: auto; }
+      height: auto;
+      margin: 0 auto; }
   .content-table__facts {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fffef9;
@@ -4185,11 +4186,6 @@ nav {
     position: absolute;
     right: 5px;
     top: 5px; }
-  .card-job-site .city-location a {
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration-line: underline;
-    color: #000 !important; }
   .card-job-site__select {
     display: flex;
     flex-direction: column;
