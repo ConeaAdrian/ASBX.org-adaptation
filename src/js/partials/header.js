@@ -25,19 +25,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// $(document).ready(function(e) {
-//   $(".scroll-up").hide();
 
-//   $(window).scroll(function() {
-//     if ($(this).scrollTop() > 100) {
-//       $(".scroll-up").fadeIn();
-//     } else {
-//       $(".scroll-up").fadeOut();
-//     }
-//   });
-//   $(".scroll-up").click(function() {
+//functional back
 
-//     document.body.scrollIntoView({ behavior: "smooth", block: "start" });
-//     return false;
-//   });
-// });
+ function goBack() {
+  window.history.go(-1);
+  return false;
+}
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $(".scroll-up").fadeIn();
+    } else {
+      $(".scroll-up").fadeOut();
+    }
+  });
+});

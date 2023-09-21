@@ -127,10 +127,6 @@
       </div>
 
       <nav>
-        <div id="viewClaims" class="claims-mobile">
-          <button onclick="openClaims()">view claims</button>
-          <p>0</p>
-        </div>
         <div class="nav-mobile">
           <a aria-label="nav-toggle" id="nav-toggle" href="#!"><span></span></a>
         </div>
@@ -543,7 +539,7 @@
 
 <!-- end widgets -->
 <!-- Scroll  -->
-<button onclick="window.history.go(-1); return false;" class="scroll-up">
+<button onclick="goBack();" class="scroll-up" style="display: none;">
   <img src="../../img/back-button.svg" alt="">
 </button>
 <!-- / Scrollback -->
