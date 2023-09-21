@@ -234,7 +234,6 @@
 
 <div class="body-page">
   <div class="container">
-
     <div class="general-page page-suplimentar">
         <section class="city-content container-desktop">
   <div class="breadcrumb">
@@ -1038,7 +1037,6 @@
       </div>
     </div>
   </div>
-  
 </section>
 
         <div class="claims-select"></div>
@@ -1117,7 +1115,6 @@
 </dl>
 
 </div></div>
-
 <div class="expres-calculator">
   <div class="container">
     <h2 id="sixth-information">Not Sure What To Do?</h2>
@@ -1191,13 +1188,31 @@
   </div>
 </footer>
 
+<div class="boottom-navigation">
+  <div class="boottom-navigation__element">
+    <img src="../../img/search-baner-boot.svg" alt="" />
+    <p>Search Claims</p>
+  </div>
+  <div class="boottom-navigation__element" onclick="openClaims()">
+    <img src="../../img/claims-baner-boot.svg" alt="" />
+    <div class="claims-select-data">
+      <span class="claims-select-data__number">0</span>
+    </div>
+    <p>View Claims</p>
+  </div>
+  <div class="boottom-navigation__element">
+    <img src="../../img/calculate-baner-boot.svg" alt="" />
+    <p>Calculate Claims</p>
+  </div>
+</div>
+
+
 <!-- end widgets -->
-<!-- Scroll up -->
-<button class="scroll-up">
-  <i class="fas fa-angle-up"></i>
-  <span class="sr-only">Derulați în sus</span>
+<!-- Scroll  -->
+<button onclick="window.history.go(-1); return false;" class="scroll-up">
+  <img src="../../img/back-button.svg" alt="">
 </button>
-<!-- / Scroll up -->
+<!-- / Scrollback -->
 <!--<div id="header-overlay"></div>-->
 <!--<div id="fixed-overlay"></div>-->
 <script src="js/libs.min.js"></script>
