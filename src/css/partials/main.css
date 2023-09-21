@@ -1998,7 +1998,8 @@ nav {
 .index-page .red-text-hero {
   color: #BC2649;
   font-size: 36px;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: normal; }
   @media (max-width: 767px) {
     .index-page .red-text-hero {
       text-align: center;

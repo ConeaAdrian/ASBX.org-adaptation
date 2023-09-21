@@ -29,8 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
 //functional back
 
  function goBack() {
-  window.history.go(-1);
-  return false;
+  console.log("link", document.referrer)
+  if(window.location.pathname !== "/") {
+    window.history.go(-1);
+    return false;
+  } 
 }
 
 $(document).ready(function() {
