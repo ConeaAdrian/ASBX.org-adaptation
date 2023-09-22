@@ -1,5 +1,5 @@
 
-.scroll-up {
+.go-back {
   position: fixed;
   bottom: 30px;
   right: 150px;
@@ -14,7 +14,7 @@
   }
 }
 
-.scroll-up.active {
+.go-back.active {
   display: block;
 }
 

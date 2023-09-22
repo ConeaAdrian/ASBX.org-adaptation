@@ -461,7 +461,7 @@ button {
     .lawyers-information .button {
       margin-top: 15px; } }
 
-.scroll-up {
+.go-back {
   position: fixed;
   bottom: 30px;
   right: 150px;
@@ -470,11 +470,11 @@ button {
   z-index: 9999;
   background-color: transparent; }
   @media (max-width: 992px) {
-    .scroll-up {
+    .go-back {
       bottom: 100px;
       right: 20px; } }
 
-.scroll-up.active {
+.go-back.active {
   display: block; }
 
 /* Stilurile pentru pop-up */
@@ -1308,7 +1308,7 @@ nav {
   font-size: 20px; }
 
 @media (max-width: 767px) {
-  .index-page .scroll-up {
+  .index-page .go-back {
     bottom: 40px !important;
     right: 20px !important; } }
 
