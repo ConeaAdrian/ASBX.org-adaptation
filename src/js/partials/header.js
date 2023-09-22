@@ -28,20 +28,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //functional back
 
- function goBack() {
-  console.log("link", document.referrer)
-  if(window.location.pathname !== "/") {
+function goBack() {
+  console.log("link", document.referrer);
+  if (window.location.pathname !== "/") {
     window.history.go(-1);
     return false;
-  } 
+  }
 }
-
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $(".scroll-up").fadeIn();
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 100) {
+      var scrollUpButton = document.querySelector(".go-back");
+      if (scrollUpButton) {
+        scrollUpButton.style.display = "block";
+      }
     } else {
-      $(".scroll-up").fadeOut();
+      var scrollUpButton = document.querySelector(".go-back");
+      if (scrollUpButton) {
+        scrollUpButton.style.display = "none";
+      }
     }
   });
 });

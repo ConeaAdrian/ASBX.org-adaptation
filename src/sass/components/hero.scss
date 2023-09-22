@@ -2,6 +2,12 @@
   p {
     font-size: 20px;
   }
+  .scroll-up {
+    @media (max-width: 767px) {
+      bottom: 40px !important;
+      right: 20px !important;
+    }
+  }
   h2 {
     font-size: 48px;
     font-weight: 700;
