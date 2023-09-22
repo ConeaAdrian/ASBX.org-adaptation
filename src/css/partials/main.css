@@ -593,14 +593,13 @@ button {
     display: flex;
     background-color: #003366;
     position: relative;
-    bottom: 10px;
-    width: 95%;
+    bottom: 0;
+    width: 100%;
     margin: 0 auto;
     position: sticky;
     z-index: 100;
     height: 80px;
     padding: 0 10px;
-    border-radius: 20px;
     gap: 80px;
     display: flex;
     justify-content: center; } }
@@ -620,9 +619,8 @@ button {
       flex-direction: column;
       position: relative; }
       .boottom-navigation__element .claims-select-data {
-        width: 16px;
-        height: 16px;
-        padding: 0px 4px;
+        width: 18px;
+        height: 18px;
         border-radius: 8px;
         background: #e11d48;
         position: absolute;
@@ -633,7 +631,8 @@ button {
           font-size: 12px;
           align-items: center;
           justify-content: center;
-          display: flex; } }
+          display: flex;
+          transform: translateY(2px); } }
 
 footer {
   display: flex;
