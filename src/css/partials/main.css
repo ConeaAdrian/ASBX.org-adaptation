@@ -56,8 +56,8 @@ h1 {
   line-height: 46px; }
   @media (max-width: 475px) {
     h1 {
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 28px;
+      line-height: 36px;
       text-align: center; } }
 
 h2 {
@@ -600,17 +600,19 @@ button {
     z-index: 100;
     height: 80px;
     padding: 0 10px;
-    gap: 80px;
+    gap: 100px;
     display: flex;
     justify-content: center; } }
   @media (max-width: 992px) and (max-width: 476px) {
     .boottom-navigation {
+      justify-content: space-between;
       gap: 30px; } }
 
 @media (max-width: 992px) {
     .boottom-navigation p {
       font-size: 12px;
-      color: #fff; }
+      color: #fff;
+      font-weight: 700; }
     .boottom-navigation__element {
       align-items: center;
       justify-content: center;
@@ -990,6 +992,22 @@ nav {
       .nav-list .button-question img {
         background-color: black;
         border-radius: 6px; } }
+
+.contact-us {
+  display: none; }
+
+@media (max-width: 992px) {
+  .contact-us {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background: #324a74;
+    margin-right: 40px; }
+    .contact-us__img {
+      display: flex;
+      margin: 0 auto;
+      transform: translateY(6px); } }
 
 .nav-mobile {
   display: none;
@@ -2727,6 +2745,8 @@ nav {
         line-height: 24px; }
     .content-ship .equipment .equipment-box p {
       font-size: 18px; }
+    .content-ship .equipment .equipment-box b {
+      font-size: 18px; }
   .content-ship .equipment .red-text {
     margin: 0;
     font-size: 18px; }
@@ -2746,6 +2766,134 @@ nav {
     margin-top: 10px; }
     .navy-facilities .mark-text li {
       color: #054ac3; }
+
+.banner-calculator {
+  width: 100%;
+  height: fit-content;
+  margin: 100px 0;
+  position: relative; }
+  .banner-calculator__general-text {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28px;
+    display: flex;
+    text-align: center; }
+    @media (max-width: 475px) {
+      .banner-calculator__general-text {
+        font-size: 22px;
+        line-height: 26px; } }
+  .banner-calculator__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+    margin-top: -30px; }
+    @media (max-width: 475px) {
+      .banner-calculator__element {
+        margin-top: -40px; } }
+    .banner-calculator__element span {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: center; }
+      @media (max-width: 475px) {
+        .banner-calculator__element span {
+          font-size: 20px;
+          line-height: 24px; } }
+  .banner-calculator__button {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    bottom: -22px; }
+    .banner-calculator__button button {
+      padding: 5px 35px; }
+      @media (max-width: 475px) {
+        .banner-calculator__button button {
+          padding: 4px 30px; } }
+  .banner-calculator .logo-claims-baner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-55px);
+    margin: 0 auto; }
+
+.banner-military {
+  width: 100%;
+  height: fit-content;
+  margin: 130px 0;
+  position: relative; }
+  .banner-military .background-banner {
+    border-radius: 15px;
+    min-height: 220px;
+    height: 100%;
+    width: 100%; }
+  .banner-military__element {
+    border-radius: 12px;
+    background: #fff;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: -80px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 22px 25px; }
+    @media (max-width: 475px) {
+      .banner-military__element {
+        margin-top: -40px;
+        padding: 22px 0px;
+        max-width: 280px; } }
+    .banner-military__element span {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: center; }
+      @media (max-width: 475px) {
+        .banner-military__element span {
+          font-size: 20px;
+          line-height: 24px; } }
+  .banner-military__general-text {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28px;
+    display: flex;
+    text-align: center; }
+    @media (max-width: 475px) {
+      .banner-military__general-text {
+        font-size: 22px;
+        line-height: 26px; } }
+  .banner-military__button {
+    display: flex;
+    gap: 25px; }
+    .banner-military__button button {
+      padding: 5px 35px; }
+      @media (max-width: 475px) {
+        .banner-military__button button {
+          padding: 4px 30px; } }
+  .banner-military .logo-claims-baner {
+    position: absolute;
+    display: flex;
+    transform: translateY(-55px);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto; }
+
+.banner-red {
+  border-radius: 12px;
+  background: #bc2649; }
+
+.banner-blue {
+  border-radius: 12px;
+  background: #324a74; }
 
 .contact .hreader-contact {
   width: 100%;
@@ -4178,9 +4326,6 @@ nav {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px; }
-  .content-card-job .button-red {
-    width: 100%;
-    margin-top: 10px; }
 
 .card-job-site {
   width: 48.35%;
@@ -4239,6 +4384,9 @@ nav {
       top: -2px;
       width: 44px;
       height: 58px; }
+  .card-job-site .button-red {
+    width: 100%;
+    margin-top: 10px; }
 
 .compensation-table {
   margin-top: 20px;
@@ -4248,7 +4396,8 @@ nav {
   background: #fbfbfb;
   width: 300px;
   height: 82px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  height: fit-content; }
   .compensation-table tbody {
     display: flex;
     width: 100%;

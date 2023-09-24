@@ -5,10 +5,6 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  .button-red {
-    width: 100%;
-    margin-top: 10px;
-  }
 }
 .card-job-site {
   width: 48.35%;
@@ -76,6 +72,10 @@
       height: 58px;
     }
   }
+  .button-red {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 .compensation-table {
@@ -87,6 +87,7 @@
   width: 300px;
   height: 82px;
   margin-bottom: 20px;
+  height: fit-content;
   tbody {
     display: flex;
     width: 100%;

@@ -61,7 +61,7 @@ $link-hover-color: $main-red;
     }
 
     p {
-      background:$main-color;
+      background: $main-color;
       height: 30px;
       width: 30px;
       color: #fff;
@@ -244,7 +244,24 @@ nav {
     }
   }
 }
-
+.contact-us {
+  display: none;
+}
+@media (max-width: 992px) {
+  .contact-us {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background: #324a74;
+    margin-right: 40px;
+    &__img {
+      display: flex;
+      margin: 0 auto;
+      transform: translateY(6px);
+    }
+  }
+}
 .nav-mobile {
   display: none;
   position: absolute;
@@ -547,21 +564,20 @@ nav {
     max-width: none;
   }
 }
-.military_icon_search{
+.military_icon_search {
   display: block;
-  position:absolute;
-  right:5px;
-  top:calc(50% - 12px);
-  z-index:-1;
-  color:#bc2649;
+  position: absolute;
+  right: 5px;
+  top: calc(50% - 12px);
+  z-index: -1;
+  color: #bc2649;
 }
-
 
 .dropdown-element {
   display: flex;
   flex-direction: column;
   background: #036;
-  margin-top: 0!important;
+  margin-top: 0 !important;
   min-width: 210px;
   @media (max-width: 992px) {
     background: transparent;
