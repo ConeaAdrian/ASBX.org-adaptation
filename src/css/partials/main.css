@@ -477,6 +477,9 @@ button {
         width: 180px;
         height: 180px; } }
 
+.lawyers .contact {
+  margin-top: 15px; }
+
 .lawyers .lawyers-information p {
   margin-top: 10px; }
 
