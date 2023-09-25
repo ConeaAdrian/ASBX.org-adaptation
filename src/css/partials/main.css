@@ -489,6 +489,9 @@ button {
     display: flex;
     flex-direction: column; } }
 
+.lawyers .faq-container {
+  padding: 20px 40px; }
+
 .go-back {
   position: fixed;
   bottom: 30px;
