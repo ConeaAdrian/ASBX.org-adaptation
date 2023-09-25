@@ -22,10 +22,10 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
     display: flex;
     margin-top: 30px;
-    justify-content: space-between;
+    justify-content: center;
     &__information {
       width: 100%;
       max-width: 272px;
@@ -38,6 +38,9 @@
       align-items: center;
       text-align: center;
       justify-content: center;
+      @media (max-width: 475px) {
+        max-width: none;
+      }
 
       p {
         max-width: 260px;
