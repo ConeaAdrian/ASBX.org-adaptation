@@ -1003,7 +1003,7 @@ nav {
     height: 30px;
     border-radius: 4px;
     background: #324a74;
-    margin-right: 40px; }
+    margin-right: 50px; }
     .contact-us__img {
       display: flex;
       margin: 0 auto;
@@ -2770,7 +2770,7 @@ nav {
 .banner-calculator {
   width: 100%;
   height: fit-content;
-  margin: 100px 0;
+  margin: 80px 0;
   position: relative; }
   .banner-calculator__general-text {
     color: #fff;
@@ -2823,7 +2823,7 @@ nav {
 .banner-military {
   width: 100%;
   height: fit-content;
-  margin: 130px 0;
+  margin: 80px 0;
   position: relative; }
   .banner-military .background-banner {
     border-radius: 15px;
@@ -2845,11 +2845,15 @@ nav {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 22px 25px; }
+    padding: 22px 25px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
     @media (max-width: 475px) {
       .banner-military__element {
         margin-top: -40px;
         padding: 22px 0px;
+        max-width: 320px; } }
+    @media (max-width: 375px) {
+      .banner-military__element {
         max-width: 280px; } }
     .banner-military__element span {
       font-size: 24px;

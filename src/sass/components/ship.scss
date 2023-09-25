@@ -104,7 +104,7 @@
 .banner-calculator {
   width: 100%;
   height: fit-content;
-  margin: 100px 0;
+  margin: 80px 0;
   position: relative;
 
   &__general-text {
@@ -165,7 +165,7 @@
 .banner-military {
   width: 100%;
   height: fit-content;
-  margin: 130px 0;
+  margin: 80px 0;
   position: relative;
 
   .background-banner {
@@ -190,9 +190,13 @@
     margin-left: auto;
     margin-right: auto;
     padding: 22px 25px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     @media (max-width: 475px) {
       margin-top: -40px;
       padding: 22px 0px;
+      max-width: 320px;
+    }
+    @media (max-width: 375px) {
       max-width: 280px;
     }
     span {
