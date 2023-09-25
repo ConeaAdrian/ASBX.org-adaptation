@@ -153,7 +153,7 @@ ol {
   padding-left: 20px;
   margin-bottom: 0; }
 
-input {
+input, textarea {
   border: 1px solid #dbdbdb;
   background: #fff;
   outline: none;
@@ -3012,9 +3012,7 @@ nav {
       height: 50px;
       width: 100%;
       margin-bottom: 19px;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc; }
+      padding: 10px; }
     .contact .custom-section .custom-section__content .custom-section__textarea {
       height: 140px; }
 
