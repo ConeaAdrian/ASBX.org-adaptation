@@ -62,7 +62,6 @@
         gap: 5px;
       }
     }
-    
   }
   .red-text {
     font-size: 18px;
@@ -101,6 +100,39 @@
     height: 36px;
     @media (max-width: 400px) {
       margin-top: 15px;
+    }
+  }
+}
+
+.lawyers {
+  .lawyer-about {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
+
+    &__img {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      @media (max-width: 550px) {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+  .lawyers-information {
+    p {
+      margin-top: 10px;
+    }
+  }
+  .lawyers-data {
+    @media (max-width: 550px) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
