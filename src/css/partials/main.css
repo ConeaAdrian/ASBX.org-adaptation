@@ -2828,6 +2828,7 @@ nav {
   .banner-military .background-banner {
     border-radius: 15px;
     min-height: 220px;
+    max-height: 220px;
     height: 100%;
     width: 100%; }
   .banner-military__element {
