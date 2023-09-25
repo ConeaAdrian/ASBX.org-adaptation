@@ -4327,6 +4327,8 @@ nav {
     display: flex;
     align-items: center;
     list-style-type: none; }
+    .page-navigation .pagination__list a {
+      text-decoration-line: initial; }
     .page-navigation .pagination__list .pagination__list__prev,
     .page-navigation .pagination__list .pagination__list__next {
       background: #ffffff;

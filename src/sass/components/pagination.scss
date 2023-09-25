@@ -47,6 +47,9 @@
       align-items: center;
       list-style-type: none;
 
+      a {
+        text-decoration-line: initial;
+      }
       .pagination__list__prev,
       .pagination__list__next {
         background: #ffffff;
