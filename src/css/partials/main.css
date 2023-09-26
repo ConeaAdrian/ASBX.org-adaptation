@@ -644,10 +644,11 @@ button {
     justify-content: center; } }
   @media (max-width: 992px) and (max-width: 476px) {
     .boottom-navigation {
-      gap: 60px; } }
-  @media (max-width: 992px) and (max-width: 375px) {
+      gap: 25px; } }
+  @media (max-width: 992px) and (max-width: 340px) {
     .boottom-navigation {
-      gap: 30px; } }
+      gap: 0px;
+      justify-content: space-between; } }
 
 @media (max-width: 992px) {
     .boottom-navigation p {
@@ -660,7 +661,8 @@ button {
       text-align: center;
       display: flex;
       flex-direction: column;
-      position: relative; }
+      position: relative;
+      width: 90px; }
       .boottom-navigation__element .claims-select-data {
         width: 18px;
         height: 18px;
@@ -668,7 +670,7 @@ button {
         background: #e11d48;
         position: absolute;
         top: 5px;
-        right: 10px; }
+        right: 26px; }
         .boottom-navigation__element .claims-select-data__number {
           color: #fff;
           font-size: 12px;
