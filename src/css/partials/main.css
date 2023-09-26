@@ -2075,9 +2075,6 @@ nav {
       text-align: center;
       font-size: 26px; } }
 
-.city-content .data-free-consultation {
-  font-weight: 400; }
-
 .city-content .text-exampe {
   margin-top: 10px; }
   .city-content .text-exampe b {
@@ -2085,6 +2082,9 @@ nav {
 
 .city-content .data-info {
   margin-bottom: 0; }
+
+.data-free-consultation {
+  font-weight: 400; }
 
 .sort-chase {
   display: flex;
