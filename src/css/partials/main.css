@@ -4734,7 +4734,7 @@ nav {
       .state .city-statistic__table th,
       .state .city-statistic__table td {
         padding: 6px;
-        font-size: 14px; } }
+        font-size: 16px; } }
 
 .state .hidden-column {
   display: none !important; }
