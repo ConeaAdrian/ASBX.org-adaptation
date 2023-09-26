@@ -3799,9 +3799,10 @@ nav {
     left: 20px; }
     @media (max-width: 475px) {
       .mesothelioma .tick-section .interogativ-sentence {
+        position: initial;
         font-size: 24px;
-        top: -18px;
-        left: 10px; } }
+        text-align: center;
+        padding: 20px 20px 0 20px; } }
   .mesothelioma .tick-section .tick-element {
     padding: 30px 20px 20px;
     gap: 10px;
