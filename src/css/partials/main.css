@@ -643,7 +643,7 @@ button {
       gap: 60px; } }
   @media (max-width: 992px) and (max-width: 375px) {
     .boottom-navigation {
-      gap: 40px; } }
+      gap: 30px; } }
 
 @media (max-width: 992px) {
     .boottom-navigation p {
