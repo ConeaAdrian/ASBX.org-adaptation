@@ -1820,7 +1820,7 @@ nav {
       .index-page .working-stages .works-step__box img {
         width: 100%; }
       .index-page .working-stages .works-step__box p {
-        font-size: 18px;
+        font-size: 20px;
         padding: 20px;
         font-weight: 300;
         line-height: 24px;
@@ -2953,6 +2953,9 @@ nav {
     color: #003366;
     margin-bottom: 3rem;
     line-height: normal; }
+    @media (max-width: 475px) {
+      .contact .hreader-contact h1 {
+        font-size: 52px; } }
   .contact .hreader-contact p {
     color: #003366; }
 

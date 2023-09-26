@@ -13,6 +13,9 @@
         color: $main-color;
         margin-bottom: 3rem;
         line-height: normal;
+        @media (max-width: 475px) {
+          font-size: 52px;
+        }
     }
     p {
         color: $main-color;
