@@ -1814,19 +1814,35 @@ nav {
         .index-page .working-stages .works-step__box {
           width: 80%;
           max-width: none; } }
+      @media (max-width: 475px) {
+        .index-page .working-stages .works-step__box {
+          width: 100%; } }
       .index-page .working-stages .works-step__box span {
         color: #BC2649;
         font-size: 64px;
         font-weight: 700;
         line-height: 24px; }
       .index-page .working-stages .works-step__box img {
-        width: 100%; }
+        width: 100%;
+        max-height: 160px;
+        height: 100%;
+        min-height: 160px; }
+        @media (max-width: 640px) {
+          .index-page .working-stages .works-step__box img {
+            max-height: 260px; } }
       .index-page .working-stages .works-step__box p {
         font-size: 20px;
         padding: 20px;
         font-weight: 300;
         line-height: 24px;
-        padding-top: 0; }
+        padding-top: 0;
+        height: 160px; }
+        @media (max-width: 767px) {
+          .index-page .working-stages .works-step__box p {
+            height: 200px; } }
+        @media (max-width: 640px) {
+          .index-page .working-stages .works-step__box p {
+            height: auto; } }
 
 .index-page .index-search {
   text-align: center;

@@ -506,6 +506,9 @@
           width: 80%;
           max-width: none;
         }
+        @media (max-width: 475px) {
+          width: 100%;
+        }
         span {
           color: $main-red;
           font-size: 64px;
@@ -514,6 +517,12 @@
         }
         img {
           width: 100%;
+          max-height: 160px;
+          height: 100%;
+          min-height: 160px;
+          @media (max-width: 640px) {
+            max-height: 260px;
+          }
         }
         p {
           font-size: 20px;
@@ -521,6 +530,13 @@
           font-weight: 300;
           line-height: 24px;
           padding-top: 0;
+          height: 160px;
+          @media (max-width: 767px) {
+            height: 200px;
+          }
+          @media (max-width: 640px) {
+            height: auto;
+          }
         }
       }
     }
