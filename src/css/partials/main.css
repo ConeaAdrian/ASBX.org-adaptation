@@ -4541,7 +4541,7 @@ nav {
     padding-left: 10px; }
     .question-card input::placeholder {
       color: #000;
-      font-size: 14px;
+      font-size: 16px;
       font-style: normal;
       font-weight: 400; }
   .question-card .input-field {
