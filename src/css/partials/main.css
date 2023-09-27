@@ -2828,7 +2828,7 @@ nav {
 .banner-calculator {
   width: 100%;
   height: fit-content;
-  margin: 80px 0;
+  margin: 50px 0;
   position: relative; }
   .banner-calculator__general-text {
     color: #fff;
@@ -2881,7 +2881,7 @@ nav {
 .banner-military {
   width: 100%;
   height: fit-content;
-  margin: 80px 0;
+  margin: 50px 0;
   position: relative; }
   .banner-military .background-banner {
     border-radius: 15px;
