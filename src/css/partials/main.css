@@ -663,6 +663,8 @@ button {
       flex-direction: column;
       position: relative;
       width: 90px; }
+      .boottom-navigation__element:hover {
+        background-color: rgba(240, 245, 255, 0.3); }
       .boottom-navigation__element .claims-select-data {
         width: 18px;
         height: 18px;
