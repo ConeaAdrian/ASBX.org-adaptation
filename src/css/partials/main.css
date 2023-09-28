@@ -3452,7 +3452,8 @@ nav {
     max-width: 300px;
     width: 100%;
     padding: 14px 24px;
-    margin: 44px auto; }
+    margin: 44px auto;
+    display: none; }
     .result-page .your-own h2 {
       color: #003366;
       font-size: 24px;
