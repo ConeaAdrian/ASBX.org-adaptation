@@ -11,7 +11,7 @@
   <div class="button-active">
     <p class="legal-text">Legal Representation</p>
     <div class="switch">
-      <input type="checkbox" id="switch" />
+      <input type="checkbox" id="switch" onclick="handleSwitchClick()" />
       <label for="switch">Toggle</label>
     </div>
     <p class="your-own-text">On Your Own</p>
@@ -43,7 +43,9 @@
               <p>Civil Defendants = <span>$778,465</span></p>
             </div>
             <span class="proposed-money">$948,754.5</span>
-            <button onclick="startClaims()" class="button-claim">START YOUR CLAIM</button>
+            <button onclick="startClaims()" class="button-claim">
+              START YOUR CLAIM
+            </button>
           </div>
         </div>
         <div class="AVG-claims">
@@ -71,7 +73,9 @@
               <p>Civil Defendants = <span>$778,465</span></p>
             </div>
             <span class="proposed-money">$3,787,948.00</span>
-            <button onclick="startClaims()" class="button-claim">START YOUR CLAIM</button>
+            <button onclick="startClaims()" class="button-claim">
+              START YOUR CLAIM
+            </button>
           </div>
         </div>
         <div class="IR-claims">
@@ -98,7 +102,9 @@
               <p>Civil Defendants = <span>$778,465</span></p>
             </div>
             <span class="proposed-money">$5,167,116.00</span>
-            <button onclick="startClaims()" class="button-claim">START YOUR CLAIM</button>
+            <button onclick="startClaims()" class="button-claim">
+              START YOUR CLAIM
+            </button>
           </div>
         </div>
       </div>
@@ -213,14 +219,14 @@
           Call Our Toll Free Number:
           <a href="tel:+18449661567">(844) 966-1567</a>
         </p>
-       <div class="text-callback">
-        <span>Request Callback</span>
-        <p>
-          Thank you for considering Flint Cooper services. Kindly request a
-          callback at your earliest convenience for a free legal consultation to
-          help us better understand and assist with your specific needs.
-        </p>
-       </div>
+        <div class="text-callback">
+          <span>Request Callback</span>
+          <p>
+            Thank you for considering Flint Cooper services. Kindly request a
+            callback at your earliest convenience for a free legal consultation
+            to help us better understand and assist with your specific needs.
+          </p>
+        </div>
       </div>
       <div class="callback-form">
         <p>Request A Callback</p>
@@ -239,12 +245,11 @@
         </div>
         <button class="green-button">SEND</button>
         <div class="secure-confirm">
-          <img src="../../img/secure.svg" alt="">
+          <img src="../../img/secure.svg" alt="" />
           <p>All online communication is securely conducted.</p>
         </div>
       </div>
     </div>
   </div>
-@@include('../common/claim-form.html')
-
+  @@include('../common/claim-form.html')
 </section>

@@ -2,10 +2,8 @@ function updateVisibility() {
   const isSmallScreen = window.innerWidth <= 992;
 }
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  updateVisibility();
-  window.addEventListener('resize', updateVisibility);
+function handleSwitchClick() {
+  console.log("Butonul a fost apăsat!");
 
   const switchButton = document.getElementById('switch');
   const legalText = document.querySelector('.legal-text');
@@ -13,22 +11,32 @@ document.addEventListener("DOMContentLoaded", function() {
   const legalRepresentationDiv = document.querySelector('.legal-representation');
   const yourOwnDiv = document.querySelector('.your-own');
 
+  const isChecked = switchButton.checked;
+  const style = isChecked ? '' : '#181059';
+  const fontSize = window.innerWidth <= 475 ? '16px' : '18px';
 
-  switchButton.addEventListener('click', function() {
-    const isChecked = this.checked;
-    const style = isChecked ? '' : '#181059';
-    const fontSize = window.innerWidth <= 475 ? '16px' : '18px';
+  legalText.style.color = style;
+  legalText.style.fontSize = fontSize;
+  legalText.style.fontWeight = isChecked ? '' : '500';
+  yourOwnText.style.color = isChecked ? '#181059' : '';
+  yourOwnText.style.fontSize = fontSize;
+  yourOwnText.style.fontWeight = isChecked ? '500' : '';
+  legalRepresentationDiv.style.display = isChecked ? 'none' : 'block';
+  yourOwnDiv.style.display = isChecked ? 'block' : 'none';
+}
 
-    legalText.style.color = style;
-    legalText.style.fontSize = fontSize;
-    legalText.style.fontWeight = isChecked ? '' : '500';
-    yourOwnText.style.color = isChecked ? '#181059' : '';
-    yourOwnText.style.fontSize = fontSize;
-    yourOwnText.style.fontWeight = isChecked ? '500' : '';
-    legalRepresentationDiv.style.display = isChecked ? 'none' : 'block';
-    yourOwnDiv.style.display = isChecked ? 'block' : 'none';
-  });
+document.addEventListener("DOMContentLoaded", function() {
+  updateVisibility();
+  window.addEventListener('resize', updateVisibility);
+  
+  const legalRepresentationDiv = document.querySelector('.legal-representation');
+  const yourOwnDiv = document.querySelector('.your-own');
+
+  legalRepresentationDiv.style.display = 'block';
+  yourOwnDiv.style.display = 'none';
 });
+
+
 
 
 
@@ -36,7 +44,6 @@ function startClaims() {
   document.getElementById('claimForm').style.display = 'block';
 
 }
-
 function createOverlay() {
   const overlay = document.createElement('div');
   overlay.classList.add('overlay');

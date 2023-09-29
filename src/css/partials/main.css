@@ -2838,7 +2838,8 @@ nav {
     font-weight: 700;
     line-height: 28px;
     display: flex;
-    text-align: center; }
+    text-align: center;
+    padding: 0 20px; }
     @media (max-width: 475px) {
       .banner-calculator__general-text {
         font-size: 22px;
@@ -2869,10 +2870,10 @@ nav {
     position: absolute;
     bottom: -22px; }
     .banner-calculator__button button {
-      padding: 5px 35px; }
+      padding: 6px 60px; }
       @media (max-width: 475px) {
         .banner-calculator__button button {
-          padding: 4px 30px; } }
+          padding: 4px 45px; } }
   .banner-calculator .logo-claims-baner {
     display: flex;
     justify-content: center;
@@ -3452,8 +3453,7 @@ nav {
     max-width: 300px;
     width: 100%;
     padding: 14px 24px;
-    margin: 44px auto;
-    display: none; }
+    margin: 44px auto; }
     .result-page .your-own h2 {
       color: #003366;
       font-size: 24px;

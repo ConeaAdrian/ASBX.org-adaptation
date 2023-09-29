@@ -114,6 +114,7 @@
     line-height: 28px;
     display: flex;
     text-align: center;
+    padding: 0 20px;
     @media (max-width: 475px) {
       font-size: 22px;
       line-height: 26px;
@@ -147,9 +148,9 @@
     position: absolute;
     bottom: -22px;
     button {
-      padding: 5px 35px;
+      padding: 6px 60px;
       @media (max-width: 475px) {
-        padding: 4px 30px;
+        padding: 4px 45px;
       }
     }
   }
