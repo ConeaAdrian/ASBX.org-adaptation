@@ -84,7 +84,7 @@
       position: inherit;
 
       .hero-content {
-        max-width: 440px;
+        max-width: 540px;
         width: 100%;
         padding-top: 70px;
         position: inherit;
@@ -118,6 +118,7 @@
           margin-bottom: 14px;
           padding-top: 115px;
           text-transform: inherit !important;
+          text-align: inherit;
           @media (max-width: 767px) {
             font-size: 30px;
           }
@@ -125,7 +126,7 @@
             font-size: 26px;
             line-height: 32px;
             display: flex;
-            padding-top: 62px;
+            padding-top: 42px;
           }
         }
         p {
@@ -517,11 +518,9 @@
         }
         img {
           width: 100%;
-          max-height: 160px;
           height: 100%;
-          min-height: 160px;
           @media (max-width: 640px) {
-            max-height: 260px;
+            max-height: 300px;
           }
         }
         p {
