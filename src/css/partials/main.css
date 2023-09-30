@@ -257,6 +257,10 @@ dd {
     width: 100%;
     max-width: 660px; } }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 body {
   margin: 0; }
 
@@ -4736,8 +4740,7 @@ nav {
         font-weight: 400; }
     .state .state-content .state-card .cities-top {
       border-radius: 4px 4px 0px 0px;
-      width: 100%;
-      height: auto; }
+      width: 100%; }
 
 .state .general-blue-text {
   margin: 20px 0; }
