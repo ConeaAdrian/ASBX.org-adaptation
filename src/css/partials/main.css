@@ -8,8 +8,8 @@
   box-sizing: border-box; }
 
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover; }
 
 th,
@@ -153,7 +153,8 @@ ol {
   padding-left: 20px;
   margin-bottom: 0; }
 
-input, textarea {
+input,
+textarea {
   border: 1px solid #dbdbdb;
   background: #fff;
   outline: none;
@@ -256,10 +257,6 @@ dd {
   .container-desktop {
     width: 100%;
     max-width: 660px; } }
-
-img {
-  max-width: 100%;
-  height: auto; }
 
 body {
   margin: 0; }
@@ -498,6 +495,9 @@ button {
 
 .go-back {
   display: none; }
+  .go-back img {
+    width: 44px;
+    height: 44px; }
 
 @media (max-width: 992px) {
   .go-back {
@@ -516,11 +516,9 @@ button {
 .go-back.active {
   display: block; }
 
-/* Stilurile pentru pop-up */
 .popup {
   position: fixed;
   bottom: 50px;
-  /* Ajustați distanța de la partea de jos a paginii la butonul "Add +" */
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;
@@ -709,9 +707,6 @@ footer {
         background: #000;
         text-transform: uppercase;
         padding: 10px 14px; }
-    footer .instant-result img {
-      height: auto;
-      width: 100%; }
   footer .important-links {
     width: 100%;
     border-right: 1px solid rgba(226, 226, 226, 0.36);
@@ -1052,7 +1047,9 @@ nav {
     .contact-us__img {
       display: flex;
       margin: 0 auto;
-      transform: translateY(6px); } }
+      transform: translateY(6px);
+      width: 18px;
+      height: 18px; } }
 
 .nav-mobile {
   display: none;
@@ -4361,6 +4358,11 @@ nav {
       .page-navigation .pagination__list__prev,
       .page-navigation .pagination__list__next {
         margin: 0 3px; } }
+    .page-navigation .page-button img,
+    .page-navigation .pagination__list__prev img,
+    .page-navigation .pagination__list__next img {
+      width: 6px;
+      height: 11px; }
   .page-navigation .page-button.active {
     background: #BC2649;
     color: #ffffff; }
@@ -4713,8 +4715,6 @@ nav {
       .state .content-table .state-logo {
         max-width: none;
         height: auto; } }
-    .state .content-table .state-logo__img {
-      height: auto; }
 
 .state .state-content {
   display: flex;
@@ -4739,8 +4739,7 @@ nav {
       .state .state-content .state-card__data p b {
         font-weight: 400; }
     .state .state-content .state-card .cities-top {
-      border-radius: 4px 4px 0px 0px;
-      width: 100%; }
+      border-radius: 4px 4px 0px 0px; }
 
 .state .general-blue-text {
   margin: 20px 0; }
