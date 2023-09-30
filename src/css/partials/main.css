@@ -1717,8 +1717,6 @@ nav {
 .index-page .choose-med,
 .index-page .military-img {
   border-radius: 0px 24px 0px 0px;
-  height: 100% !important;
-  width: 100%;
   min-width: 380px; }
   @media (max-width: 767px) {
     .index-page .medical-img,
@@ -1731,8 +1729,6 @@ nav {
 
 .index-page .lawyer-img {
   border-radius: 24px 0px 0px 0px;
-  height: 100% !important;
-  width: 100%;
   min-width: 380px; }
   @media (max-width: 767px) {
     .index-page .lawyer-img {
@@ -2015,6 +2011,9 @@ nav {
       display: flex;
       flex-direction: column;
       gap: 20px; }
+      .index-page .veterans .veterans-content .military-forces img {
+        width: 101px;
+        height: 101px; }
       @media (max-width: 767px) {
         .index-page .veterans .veterans-content .military-forces {
           max-width: none; } }
@@ -2459,8 +2458,8 @@ nav {
         max-width: none;
         height: auto; } }
     .content-table .company-logo__img {
-      height: auto;
-      margin: 0 auto; }
+      margin: 0 auto;
+      aspect-ratio: 2/1; }
   .content-table__facts {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fffef9;
@@ -2597,7 +2596,7 @@ nav {
       display: flex;
       margin: 0 auto;
       display: block;
-      width: 100%;
+      height: 180px;
       border-radius: 4px; } }
 
 .flag-img {
@@ -2742,7 +2741,9 @@ nav {
   margin-top: 5px; }
 
 .content-ship .ship-img {
-  padding: 15px 0; }
+  padding: 15px 0;
+  max-height: 320px;
+  aspect-ratio: 2/1; }
 
 .content-ship .content-box-ship {
   display: flex;
@@ -2878,7 +2879,9 @@ nav {
     justify-content: center;
     align-items: center;
     transform: translateY(-55px);
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 113px;
+    height: 113px; }
 
 .banner-military {
   width: 100%;
@@ -2953,7 +2956,9 @@ nav {
     left: 0;
     right: 0;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    width: 113px;
+    height: 113px; }
 
 .banner-red {
   border-radius: 12px;
@@ -3787,10 +3792,7 @@ nav {
   transform: rotate(-45deg); }
 
 .mesothelioma .meso-img {
-  width: 100%;
   max-width: 320px;
-  height: 100%;
-  height: auto;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
 

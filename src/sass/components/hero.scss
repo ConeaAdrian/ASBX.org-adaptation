@@ -396,8 +396,6 @@
   .choose-med,
   .military-img {
     border-radius: 0px 24px 0px 0px;
-    height: 100% !important;
-    width: 100%;
     min-width: 380px;
     @media (max-width: 767px) {
       border-radius: 0;
@@ -408,8 +406,6 @@
   }
   .lawyer-img {
     border-radius: 24px 0px 0px 0px;
-    height: 100% !important;
-    width: 100%;
     min-width: 380px;
     @media (max-width: 767px) {
       border-radius: 0;
@@ -420,14 +416,6 @@
   }
   .section-meso {
     position: relative;
-
-    // img {
-    //   width: 508px;
-    //   height: 528px;
-    //   @media (max-width: 767px) {
-    //     width: 100%;
-    //   }
-    // }
     .active-section {
       margin: 0 auto;
       align-items: center;
@@ -747,6 +735,11 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+       img {
+        width: 101px;
+        height: 101px;
+       }
+
         @media (max-width: 767px) {
           max-width: none;
         }
