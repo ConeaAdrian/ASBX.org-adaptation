@@ -22,10 +22,9 @@
 
   &__content {
     width: 48.485%;
-
-    h3 {
-      height: 58px;
-    }
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
     @media (max-width: 640px) {
       width: 100%;
     }

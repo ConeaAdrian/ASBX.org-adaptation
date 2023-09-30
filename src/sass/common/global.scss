@@ -255,3 +255,8 @@ dd {
   line-height: normal;
   font-weight: 300;
 }
+
+input,
+select {
+  touch-action: manipulation;
+}
