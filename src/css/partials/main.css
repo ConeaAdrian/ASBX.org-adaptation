@@ -808,7 +808,7 @@ footer {
         flex-wrap: wrap; } }
     @media (max-width: 767px) {
       footer .footer-content .img-compensation-alternative {
-        height: 260px; } }
+        height: auto; } }
   footer .contact-direct {
     display: flex;
     flex-direction: column;
@@ -2765,6 +2765,9 @@ nav {
   padding: 15px 0;
   max-height: 320px;
   aspect-ratio: 2/1; }
+  @media (max-width: 660px) {
+    .content-ship .ship-img {
+      max-height: 145px; } }
 
 .content-ship .content-box-ship {
   display: flex;

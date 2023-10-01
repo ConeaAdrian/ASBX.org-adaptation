@@ -3,6 +3,10 @@
     padding: 15px 0;
     max-height: 320px;
     aspect-ratio: 2/1;
+    @media (max-width: 660px) {
+      max-height: 145px;
+
+    }
   }
   .content-box-ship {
     display: flex;
