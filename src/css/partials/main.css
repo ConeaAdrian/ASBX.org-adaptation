@@ -242,7 +242,8 @@ dd {
   font-weight: 300; }
 
 input,
-select {
+select,
+textarea {
   touch-action: manipulation; }
 
 @media (min-width: 1200px) {
@@ -2467,7 +2468,8 @@ nav {
         height: auto; } }
     .content-table .company-logo__img {
       margin: 0 auto;
-      aspect-ratio: 2/1; }
+      aspect-ratio: 2/1;
+      object-fit: contain; }
   .content-table__facts {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fffef9;
