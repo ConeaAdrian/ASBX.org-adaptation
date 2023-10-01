@@ -135,6 +135,11 @@ footer {
     @media (max-width: 767px) {
       flex-wrap: wrap;
     }
+    .img-compensation-alternative {
+      @media (max-width: 767px) {
+        height: 260px;
+      }
+    }
   }
   .contact-direct {
     display: flex;
