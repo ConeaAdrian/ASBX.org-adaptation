@@ -481,6 +481,9 @@ button {
 
 .lawyers .contact {
   margin-top: 15px; }
+  .lawyers .contact img {
+    width: 14px;
+    height: 14px; }
 
 .lawyers .lawyers-information p {
   margin-top: 10px; }
