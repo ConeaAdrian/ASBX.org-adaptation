@@ -1827,10 +1827,11 @@ nav {
         font-weight: 700;
         line-height: 24px; }
       .index-page .working-stages .works-step__box img {
-        width: 100%; }
+        height: auto; }
         @media (max-width: 640px) {
           .index-page .working-stages .works-step__box img {
-            max-height: 300px; } }
+            max-height: 300px;
+            object-fit: contain; } }
       .index-page .working-stages .works-step__box p {
         font-size: 20px;
         padding: 20px;

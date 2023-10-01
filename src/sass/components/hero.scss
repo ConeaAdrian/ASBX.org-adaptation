@@ -505,9 +505,10 @@
           line-height: 24px;
         }
         img {
-          width: 100%;
+          height: auto;
           @media (max-width: 640px) {
             max-height: 300px;
+            object-fit: contain;
           }
         }
         p {
@@ -735,10 +736,10 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-       img {
-        width: 101px;
-        height: 101px;
-       }
+        img {
+          width: 101px;
+          height: 101px;
+        }
 
         @media (max-width: 767px) {
           max-width: none;
