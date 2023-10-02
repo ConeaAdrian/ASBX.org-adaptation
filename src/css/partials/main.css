@@ -382,7 +382,7 @@ button {
 
 .lawyers-information .block-lawyers {
   width: 100%;
-  max-width: 340px;
+  max-width: 350px;
   border-radius: 4px;
   margin-top: 20px;
   padding: 13px;
@@ -409,12 +409,12 @@ button {
         font-weight: 400; }
   .lawyers-information .block-lawyers .img-lawyers {
     border-radius: 50%;
-    width: 104px;
-    height: 104px; }
+    width: 120px;
+    height: 120px; }
   .lawyers-information .block-lawyers .contact {
     display: flex;
-    gap: 10px;
-    margin-top: 14px; }
+    flex-direction: column;
+    margin-top: 5px; }
     .lawyers-information .block-lawyers .contact img {
       color: #BC2649;
       width: 14px;
@@ -2131,6 +2131,8 @@ nav {
     .sort-chase__content td,
     .sort-chase__content th {
       font-weight: 400 !important; }
+    .sort-chase__content h3 {
+      margin: 0; }
   .sort-chase .text-initial {
     color: #000 !important;
     font-size: 16px;

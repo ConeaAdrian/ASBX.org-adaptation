@@ -1,7 +1,7 @@
 .lawyers-information {
   .block-lawyers {
     width: 100%;
-    max-width: 340px;
+    max-width: 350px;
     border-radius: 4px;
     margin-top: 20px;
     padding: 13px;
@@ -34,13 +34,13 @@
     }
     .img-lawyers {
       border-radius: 50%;
-      width: 104px;
-      height: 104px;
+      width: 120px;
+      height: 120px;
     }
     .contact {
       display: flex;
-      gap: 10px;
-      margin-top: 14px;
+      flex-direction: column;
+      margin-top: 5px;
       img {
         color: $main-red;
         width: 14px;
