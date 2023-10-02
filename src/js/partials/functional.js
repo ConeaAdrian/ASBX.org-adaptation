@@ -85,3 +85,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  var selectJob = document.querySelector('.select-job');
+  var otherInput = document.getElementById('otherInput');
+  
+  selectJob.addEventListener('change', function() {
+      if (this.value === 'other') {
+          otherInput.style.display = 'block';
+      } else {
+          otherInput.style.display = 'none';
+      }
+  });
+});
