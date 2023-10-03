@@ -261,7 +261,9 @@ textarea {
 @media (min-width: 992px) {
   .container-desktop {
     width: 100%;
-    max-width: 660px; } }
+    max-width: 660px; }
+    .container-desktop .container-faq {
+      padding: 30px; } }
 
 body {
   margin: 0; }
