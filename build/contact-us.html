@@ -154,9 +154,42 @@
   </div>
 </header>
 
+<div id="search-principal" class="search-principal">
+  <div class="container search-general">
+    <img class="search-arrow" src="../../img/Search-arrow.svg" alt="">
+    <form class="custom-search-form" id="main-search-form">
+        <input type="hidden" id="search-state-data" name="state-abbr"></input>
+        <input type="hidden" id="search-city-data" name="city-name"></input>
+        <input type="hidden" id="search-zip-data" name="zip-code"></input>
+        <div class="search-form-input-container">
+            <input class="search-form-input" id='search-form-input' type="text" placeholder="city, state or zip code"
+                   onkeyup="searchEngine(this)" onclick="openCustomSelect(this)"></input>
+            <div id="custom-search-input-items" class="custom-search-items" style="display: none">
+                <div data-city="" data-state="" id="current-location-item" onclick="selectItemInput(this)">Current Location</div>
+            </div>
+        </div>
+        <div class="search-form-button-container">
+            <button class="search-form-button" aria-label="Search" type="button"><img class="search-white" src="../../img/search-white.svg" alt=""></button>
+        </div>
+    </form>
+  </div>
+</div>
+
+<!-- <div class="top-search-mobile">
+  <div class="container">
+    <div class="button-search-mobile">
+      <button onclick="TestOpen()" id="open-search-block" class="search-button">
+        <img src="../../img/search-user.svg" alt="" />
+        Find claims, compensation, legal advice
+      </button>
+    </div>
+  </div>
+</div> -->
+
 
 <div class="body-page">
   <div class="container">
+
     <div class="page-suplimentar">
       <section class="contact">
   <div class="hreader-contact">
@@ -220,6 +253,7 @@
   </div>
 </section>
 
+        <div class="claims-select"></div>
     </div>
   </div>
 </div>
