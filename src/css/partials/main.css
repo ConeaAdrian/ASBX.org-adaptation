@@ -2453,7 +2453,7 @@ nav {
         bottom: 0;
         background: transparent; }
 
-@media only screen and (max-width: 2440px) and (min-width: 767px) {
+@media (min-width: 992px) {
   .claims-select {
     position: sticky;
     height: fit-content;

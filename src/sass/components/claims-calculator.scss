@@ -249,7 +249,7 @@
 }
 
 .claims-select {
-  @media only screen and (max-width: 2440px) and (min-width: 767px) {
+  @media (min-width: 992px) {
     position: sticky;
     height: fit-content;
     top: 150px;
