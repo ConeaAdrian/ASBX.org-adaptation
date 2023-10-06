@@ -89,7 +89,6 @@ h6 {
 }
 
 p {
-  line-height: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
@@ -254,6 +253,7 @@ dd {
   font-size: 16px;
   line-height: normal;
   font-weight: 300;
+  line-height: 24px;
 }
 
 input,
@@ -261,3 +261,8 @@ select,
 textarea {
   touch-action: manipulation;
 }
+.error-message {
+  display: none;
+  color: #BC2649;
+  font-size: 15px;
+  margin-top: 5px; }
