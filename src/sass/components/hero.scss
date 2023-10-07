@@ -379,9 +379,9 @@
             }
             p {
               font-size: 22px;
-              font-style: normal;
               font-weight: 400;
               line-height: 30px;
+              text-align: inherit;
               @media (max-width: 475px) {
                 font-size: 18px;
                 line-height: 22px;
@@ -518,6 +518,7 @@
           line-height: 24px;
           padding-top: 0;
           height: 160px;
+          text-align: inherit;
           @media (max-width: 767px) {
             height: 200px;
           }

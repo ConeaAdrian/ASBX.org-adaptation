@@ -90,7 +90,8 @@ p {
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
-  color: #000; }
+  color: #000;
+  text-align: justify; }
 
 li {
   font-size: 14px;
@@ -227,7 +228,8 @@ dd {
   color: #003366;
   font-size: 20px;
   font-weight: 700;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  text-align: inherit; }
   .general-blue-text a {
     font-size: 20px;
     font-weight: 700; }
@@ -1727,9 +1729,9 @@ nav {
             font-size: 32px; } }
       .index-page .our-mision__nomerotation .box-element__content .text p {
         font-size: 22px;
-        font-style: normal;
         font-weight: 400;
-        line-height: 30px; }
+        line-height: 30px;
+        text-align: inherit; }
         @media (max-width: 475px) {
           .index-page .our-mision__nomerotation .box-element__content .text p {
             font-size: 18px;
@@ -1852,7 +1854,8 @@ nav {
         font-weight: 300;
         line-height: 24px;
         padding-top: 0;
-        height: 160px; }
+        height: 160px;
+        text-align: inherit; }
         @media (max-width: 767px) {
           .index-page .working-stages .works-step__box p {
             height: 200px; } }
@@ -2364,7 +2367,8 @@ nav {
       .general-claims .claims-selected .content-information p {
         color: #003366;
         margin-bottom: 6px;
-        font-weight: 400; }
+        font-weight: 400;
+        text-align: center; }
     .general-claims .claims-selected .back-ground {
       height: 61px;
       margin-top: 5px;
@@ -2584,24 +2588,18 @@ nav {
 
 .general-information-table {
   display: flex;
-  flex-direction: column;
   gap: 30px;
   max-width: fit-content;
-  width: 100%; }
+  width: 100%;
+  align-items: center; }
   @media (max-width: 620px) {
     .general-information-table {
       max-width: none; } }
 
-.content-summarizer {
-  border-radius: 4px;
-  border: 1px solid #c0cad6;
-  background: rgba(240, 245, 255, 0.3);
-  width: 100%;
-  max-width: 320px;
-  padding: 10px; }
-  @media (max-width: 620px) {
-    .content-summarizer {
-      max-width: none; } }
+.intermediar-bar {
+  border: 0.5px solid #036;
+  margin: 40px 0;
+  opacity: 10%; }
 
 .content-summarizer__notice div {
   display: flex;
@@ -2834,9 +2832,9 @@ nav {
         font-size: 18px;
         line-height: 24px; }
     .content-ship .equipment .equipment-box p {
-      font-size: 18px; }
+      font-size: 16px; }
     .content-ship .equipment .equipment-box b {
-      font-size: 18px; }
+      font-size: inherit; }
   .content-ship .equipment .red-text {
     margin: 0;
     font-size: 18px; }
@@ -3339,6 +3337,8 @@ nav {
               margin-bottom: 35px; } }
       .result-page .legal-representation .legal-information .information-benefits ul {
         padding-left: 0; }
+      .result-page .legal-representation .legal-information .information-benefits p {
+        text-align: inherit; }
       .result-page .legal-representation .legal-information .AVG-claims {
         height: fit-content;
         padding: 22px 16px;
@@ -3829,8 +3829,7 @@ nav {
 
 .mesothelioma .meso-img {
   max-width: 320px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
+  border-radius: 4px; }
 
 .mesothelioma .mesothelioma-facts .red-text {
   font-size: 20px;
@@ -3949,7 +3948,8 @@ nav {
 
 .faq-question,
 .faq-answer {
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #ccc;
+  text-align: inherit; }
 
 .faq-question {
   gap: 20px;
