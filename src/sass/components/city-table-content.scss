@@ -190,13 +190,10 @@
     display: flex;
     margin: 0 auto;
     display: block;
-    height: 180px;
+    height: auto;
     border-radius: 4px;
     object-fit: contain;
     margin-top: 20px;
-  }
-  @media (max-width: 475px) {
-    height: 100px;
   }
 }
 .flag-img {
