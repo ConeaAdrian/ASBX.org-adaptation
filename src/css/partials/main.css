@@ -3170,6 +3170,8 @@ nav {
 
 .no-job-site .nearby-location {
   margin-top: 20px; }
+  .no-job-site .nearby-location .general-blue-text {
+    text-transform: inherit; }
 
 .no-job-site .content-card-job {
   padding-top: 20px; }
@@ -3185,6 +3187,8 @@ nav {
   padding-bottom: 30px;
   margin-bottom: 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .nearby-location .general-blue-text {
+    text-transform: inherit; }
 
 .result-page {
   margin-top: 55px; }
