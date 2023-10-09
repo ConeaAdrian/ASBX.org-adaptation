@@ -4581,6 +4581,8 @@ nav {
     .section-question__text .red-text {
       font-size: 20px;
       line-height: 28px; }
+    .section-question__text p {
+      text-align: inherit; }
 
 .question-card {
   width: 100%;
