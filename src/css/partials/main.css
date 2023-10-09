@@ -2623,7 +2623,8 @@ nav {
       display: block;
       height: 180px;
       border-radius: 4px;
-      object-fit: contain; } }
+      object-fit: contain;
+      margin-top: 20px; } }
   @media (max-width: 475px) {
     .mobile-flag-img {
       height: 120px; } }
