@@ -92,6 +92,9 @@ p {
   line-height: 28px;
   color: #000;
   text-align: justify; }
+  @media (max-width: 475px) {
+    p {
+      text-align: inherit; } }
 
 li {
   font-size: 14px;
@@ -395,7 +398,7 @@ button {
   max-width: 350px;
   border-radius: 4px;
   margin-top: 20px;
-  padding: 13px;
+  padding: 10px;
   border: 1px solid #ebebeb;
   background: #fbfbfb;
   display: flex;
@@ -421,6 +424,10 @@ button {
     border-radius: 50%;
     width: 120px;
     height: 120px; }
+    @media (max-width: 475px) {
+      .lawyers-information .block-lawyers .img-lawyers {
+        width: 100px;
+        height: 100px; } }
   .lawyers-information .block-lawyers .contact {
     display: flex;
     flex-direction: column;
@@ -3960,11 +3967,8 @@ nav {
   cursor: pointer;
   font-weight: bold;
   border-bottom: none;
-  font-size: 24px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-  color: #003366; }
+  font-weight: 400; }
   .faq-question .toggle-icon {
     transition: transform 0.3s; }
 

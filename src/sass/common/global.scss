@@ -94,6 +94,10 @@ p {
   line-height: 28px;
   color: #000;
   text-align: justify;
+  @media (max-width: 475px) {
+    text-align: inherit;
+
+  }
 }
 
 li {
