@@ -4599,6 +4599,8 @@ nav {
   @media (max-width: 475px) {
     .question-card {
       max-width: none; } }
+  .question-card .general-blue-text {
+    margin: 0; }
   .question-card select {
     border: 1px solid #dbdbdb;
     height: 44px;
