@@ -172,10 +172,7 @@
     max-width: none;
   }
   @media (max-width: 475px) {
-    max-width: none !important;
-  }
-  .general-blue-text {
-    margin: 0 !important;
+    max-width: none;
   }
   select {
     border: 1px solid #dbdbdb;
@@ -208,5 +205,8 @@
   }
   .red-text {
     margin: 0;
+  }
+  .general-blue-text {
+    margin: 0 !important;
   }
 }
