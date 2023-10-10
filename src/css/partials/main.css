@@ -2473,7 +2473,7 @@ nav {
     top: 150px; } }
 
 .content-table {
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
   gap: 20px;
   margin-bottom: 20px; }
@@ -2606,9 +2606,9 @@ nav {
       max-width: none; } }
 
 .intermediate-bar {
-  border: 0.5px solid #036;
-  margin: 40px 0;
-  opacity: 10%; }
+  border: 0.5px solid #081F35;
+  margin: 10px 0;
+  opacity: 15%; }
 
 .content-summarizer__notice div {
   display: flex;
