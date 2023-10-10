@@ -126,6 +126,7 @@
 .section-question {
   display: flex;
   gap: 20px;
+  margin-top: 20px;
   @media (max-width: 620px) {
     flex-direction: column;
   }
