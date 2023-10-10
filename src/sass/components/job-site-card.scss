@@ -172,7 +172,7 @@
     max-width: none;
   }
   @media (max-width: 475px) {
-    max-width: none;
+    max-width: none !important;
   }
   .general-blue-text {
     margin: 0 !important;
