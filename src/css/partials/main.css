@@ -2628,12 +2628,11 @@ nav {
   @media (max-width: 620px) {
     .mobile-flag-img {
       display: flex;
-      margin: 0 auto;
+      margin: 20px auto;
       display: block;
       height: auto;
       border-radius: 4px;
-      object-fit: contain;
-      margin-top: 20px; } }
+      object-fit: contain; } }
 
 .flag-img {
   width: 320px;
@@ -4751,7 +4750,7 @@ nav {
   flex-direction: initial; }
   @media (max-width: 600px) {
     .state .content-table {
-      flex-direction: column; } }
+      flex-direction: column-reverse; } }
   .state .content-table .state-logo {
     width: 100%;
     max-width: 320px;
