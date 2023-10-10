@@ -146,10 +146,11 @@
     img {
       width: 100%;
       max-width: 320px;
-      height: 151px;
+      height: 150px;
       margin-bottom: 20px;
       @media (max-width: 620px) {
-        display: none;
+        max-width: none;
+        height: 180px;
       }
     }
     .red-text {
