@@ -2571,7 +2571,8 @@ nav {
   max-width: 320px;
   gap: 20px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 20px; }
   @media (max-width: 620px) {
     .required-asbx {
       max-width: none; } }

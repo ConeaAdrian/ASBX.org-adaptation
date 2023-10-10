@@ -3,7 +3,7 @@
     max-width: none !important;
     flex-direction: initial;
     @media (max-width: 600px) {
-      flex-direction:column-reverse;
+      flex-direction: column-reverse;
     }
 
     .state-logo {
