@@ -822,7 +822,7 @@ footer {
         flex-wrap: wrap; } }
     @media (max-width: 767px) {
       footer .footer-content .img-compensation-alternative {
-        height: auto; } }
+        height: 100%; } }
   footer .contact-direct {
     display: flex;
     flex-direction: column;
