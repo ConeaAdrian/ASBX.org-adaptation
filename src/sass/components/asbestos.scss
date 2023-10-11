@@ -33,6 +33,10 @@
     position: relative;
     margin-bottom: 40px;
     margin-top: 80px;
+    @media (max-width: 620px) {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
     
 
     .interogativ-sentence {
@@ -48,7 +52,6 @@
         font-size: 24px;
         text-align: center;
       padding: 20px 20px 0 20px;
-
       }
     }
 
@@ -83,8 +86,7 @@
   .content-table {
     @media (max-width: 620px) {
       flex-direction: column-reverse;
-
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       img {
         height: 310px;
       }
@@ -155,7 +157,6 @@
 .faq-question,
 .faq-answer {
   border-bottom: 1px solid #ccc;
-  text-align: inherit;
 }
 
 .faq-question {

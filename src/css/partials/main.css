@@ -90,11 +90,7 @@ p {
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
-  color: #000;
-  text-align: justify; }
-  @media (max-width: 475px) {
-    p {
-      text-align: inherit; } }
+  color: #000; }
 
 li {
   font-size: 14px;
@@ -142,7 +138,7 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url("../../img/arrow-select.png") no-repeat right 5px center;
+  background: url("../../img/arrow-select.png") no-repeat right 2px center;
   background-size: 16px;
   border: 1px solid #dbdbdb;
   background-color: #fff;
@@ -233,8 +229,7 @@ dd {
   color: #003366;
   font-size: 20px;
   font-weight: 700;
-  text-transform: capitalize;
-  text-align: inherit; }
+  text-transform: capitalize; }
   .general-blue-text a {
     font-size: 20px;
     font-weight: 700; }
@@ -1503,8 +1498,7 @@ nav {
         line-height: 42px;
         margin-bottom: 14px;
         padding-top: 115px;
-        text-transform: inherit !important;
-        text-align: inherit; }
+        text-transform: inherit !important; }
         @media (max-width: 767px) {
           .index-page .principal-content .container .hero-content .principal-content-text {
             font-size: 30px; } }
@@ -1739,8 +1733,7 @@ nav {
       .index-page .our-mision__nomerotation .box-element__content .text p {
         font-size: 22px;
         font-weight: 400;
-        line-height: 30px;
-        text-align: inherit; }
+        line-height: 30px; }
         @media (max-width: 475px) {
           .index-page .our-mision__nomerotation .box-element__content .text p {
             font-size: 18px;
@@ -1863,8 +1856,7 @@ nav {
         font-weight: 300;
         line-height: 24px;
         padding-top: 0;
-        height: 160px;
-        text-align: inherit; }
+        height: 160px; }
         @media (max-width: 767px) {
           .index-page .working-stages .works-step__box p {
             height: 200px; } }
@@ -2478,8 +2470,7 @@ nav {
   gap: 20px; }
   @media (max-width: 620px) {
     .content-table {
-      flex-direction: column;
-      margin-bottom: 20px; } }
+      flex-direction: column; } }
   .content-table .company-logo {
     width: 100%;
     max-width: 320px;
@@ -2537,7 +2528,7 @@ nav {
     line-height: normal;
     text-transform: capitalize; }
   .content-table .table-item a {
-    color: #054AC3;
+    color: #054ac3;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -2574,7 +2565,8 @@ nav {
   margin-bottom: 20px; }
   @media (max-width: 620px) {
     .required-asbx {
-      max-width: none; } }
+      max-width: none;
+      margin-bottom: 0px; } }
   .required-asbx .block-data {
     display: grid;
     border-left: 2px solid #BC2649;
@@ -2603,13 +2595,18 @@ nav {
   align-items: center; }
   @media (max-width: 620px) {
     .general-information-table {
-      max-width: none; } }
+      display: flex;
+      flex-direction: column; } }
 
 .intermediate-bar {
-  border: 0.5px solid #081F35;
+  border: 0.5px solid #081f35;
   margin: 10px 0;
   opacity: 15%;
   margin-bottom: 30px; }
+  @media (max-width: 620px) {
+    .intermediate-bar {
+      margin: 30px 0;
+      margin-bottom: 30px; } }
 
 .content-summarizer__notice div {
   display: flex;
@@ -2624,17 +2621,6 @@ nav {
     margin-right: 5px;
     background-color: transparent; }
 
-.mobile-flag-img {
-  display: none; }
-  @media (max-width: 620px) {
-    .mobile-flag-img {
-      display: flex;
-      margin: 20px auto;
-      display: block;
-      height: auto;
-      border-radius: 4px;
-      object-fit: contain; } }
-
 .flag-img {
   width: 320px;
   border-radius: 4px;
@@ -2642,7 +2628,9 @@ nav {
   height: 100px; }
   @media (max-width: 620px) {
     .flag-img {
-      display: none; } }
+      height: 100%;
+      width: 100%;
+      flex-direction: column; } }
 
 .table-navigator {
   border-radius: 4px 4px 0px 0px;
@@ -3116,9 +3104,6 @@ nav {
   margin-bottom: 10px;
   margin-top: 20px; }
 
-.job-site .general-information-table {
-  gap: 15px; }
-
 .job-site .content-products {
   display: flex;
   gap: 20px;
@@ -3348,8 +3333,6 @@ nav {
               margin-bottom: 35px; } }
       .result-page .legal-representation .legal-information .information-benefits ul {
         padding-left: 0; }
-      .result-page .legal-representation .legal-information .information-benefits p {
-        text-align: inherit; }
       .result-page .legal-representation .legal-information .AVG-claims {
         height: fit-content;
         padding: 22px 16px;
@@ -3869,6 +3852,10 @@ nav {
   position: relative;
   margin-bottom: 40px;
   margin-top: 80px; }
+  @media (max-width: 620px) {
+    .mesothelioma .tick-section {
+      margin-top: 40px;
+      margin-bottom: 0; } }
   .mesothelioma .tick-section .interogativ-sentence {
     color: #BC2649;
     font-size: 28px;
@@ -3906,7 +3893,7 @@ nav {
 @media (max-width: 620px) {
   .mesothelioma .content-table {
     flex-direction: column-reverse;
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
     .mesothelioma .content-table img {
       height: 310px; } }
 
@@ -3959,8 +3946,7 @@ nav {
 
 .faq-question,
 .faq-answer {
-  border-bottom: 1px solid #ccc;
-  text-align: inherit; }
+  border-bottom: 1px solid #ccc; }
 
 .faq-question {
   gap: 20px;
@@ -4469,8 +4455,6 @@ nav {
   @media (max-width: 667px) {
     .card-job-site {
       width: 100%; } }
-  .card-job-site select {
-    font-size: 15px; }
   .card-job-site a {
     color: #054AC3 !important;
     font-size: 20px;
@@ -4578,8 +4562,6 @@ nav {
     .section-question__text .red-text {
       font-size: 20px;
       line-height: 28px; }
-    .section-question__text p {
-      text-align: inherit; }
 
 .question-card {
   width: 100%;
@@ -4748,7 +4730,7 @@ nav {
   flex-direction: initial; }
   @media (max-width: 600px) {
     .state .content-table {
-      flex-direction: column-reverse; } }
+      flex-direction: column; } }
   .state .content-table .state-logo {
     width: 100%;
     max-width: 320px;

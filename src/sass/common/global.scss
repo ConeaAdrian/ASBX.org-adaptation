@@ -93,11 +93,6 @@ p {
   font-size: 20px;
   line-height: 28px;
   color: #000;
-  text-align: justify;
-  @media (max-width: 475px) {
-    text-align: inherit;
-
-  }
 }
 
 li {
@@ -152,7 +147,7 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url("../../img/arrow-select.png") no-repeat right 5px center;
+  background: url("../../img/arrow-select.png") no-repeat right 2px center;
   background-size: 16px;
   border: 1px solid #dbdbdb;
   background-color: #fff;
@@ -248,7 +243,6 @@ dd {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
-  text-align: inherit;
 
   a {
     font-size: 20px;
