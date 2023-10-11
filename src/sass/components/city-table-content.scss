@@ -167,6 +167,14 @@
     margin-bottom: 30px;
   }
 }
+.intermediate-bar-meso {
+  @media (max-width: 620px) {
+    border: 0.5px solid #081f35;
+    opacity: 15%;
+    margin: 30px 0;
+    margin-bottom: 30px;
+  }
+}
 
 .content-summarizer__notice div {
   display: flex;
