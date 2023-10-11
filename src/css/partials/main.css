@@ -3731,6 +3731,7 @@ nav {
   transform: rotate(-45deg); }
 
 .mesothelioma .meso-img {
+  width: auto;
   max-width: 320px;
   border-radius: 4px; }
 
@@ -3801,7 +3802,7 @@ nav {
 
 @media (max-width: 620px) {
   .mesothelioma .content-table {
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-bottom: 30px; }
     .mesothelioma .content-table img {
       height: 310px; } }

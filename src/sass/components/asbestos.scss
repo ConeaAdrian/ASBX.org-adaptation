@@ -1,5 +1,6 @@
 .mesothelioma {
   .meso-img {
+    width: auto;
     max-width: 320px;
     border-radius: 4px;
   }
@@ -85,7 +86,7 @@
 
   .content-table {
     @media (max-width: 620px) {
-      flex-direction: column-reverse;
+      flex-direction: column;
       margin-bottom: 30px;
       img {
         height: 310px;
