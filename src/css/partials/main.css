@@ -3251,16 +3251,12 @@ nav {
       gap: 28px;
       padding-bottom: 44px;
       justify-content: center;
-      padding: 30px 0px; }
-      @media (max-width: 992px) {
-        .result-page .legal-representation .legal-information {
-          flex-direction: column;
-          align-items: center;
-          gap: 0; } }
+      padding: 30px 0px;
+      flex-wrap: wrap; }
       .result-page .legal-representation .legal-information .ER-claims {
         height: fit-content;
         padding: 22px 16px;
-        max-width: 280px;
+        max-width: 300px;
         width: 100%;
         height: fit-content;
         border-radius: 24px;
@@ -3268,9 +3264,8 @@ nav {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column; }
-        @media (max-width: 992px) {
+        @media (max-width: 690px) {
           .result-page .legal-representation .legal-information .ER-claims {
-            border-radius: 24px 24px 0 0;
             max-width: 500px; } }
         .result-page .legal-representation .legal-information .ER-claims__name {
           display: flex;
@@ -3333,104 +3328,18 @@ nav {
               margin-bottom: 35px; } }
       .result-page .legal-representation .legal-information .information-benefits ul {
         padding-left: 0; }
-      .result-page .legal-representation .legal-information .AVG-claims {
-        height: fit-content;
-        padding: 22px 16px;
-        max-width: 280px;
-        width: 100%;
-        border-radius: 24px;
-        background: #003366;
-        box-shadow: 6px 12px 32px 0px rgba(0, 0, 0, 0.12);
-        display: flex;
-        flex-direction: column; }
-        @media (max-width: 992px) {
-          .result-page .legal-representation .legal-information .AVG-claims {
-            border-radius: 24px 24px 0 0;
-            transform: translateY(-42px);
-            max-width: 500px;
-            margin-top: 10px; } }
-        .result-page .legal-representation .legal-information .AVG-claims__name {
-          display: flex;
-          border-bottom: 1px solid #b4b4b4;
-          padding-bottom: 10px; }
-          .result-page .legal-representation .legal-information .AVG-claims__name h2 {
-            color: #fff;
-            font-size: 24px;
-            margin-right: 5px;
-            font-family: "Inter", sans-serif !important; }
-          .result-page .legal-representation .legal-information .AVG-claims__name p {
-            color: #BC2649;
-            font-size: 12px;
-            font-weight: 400;
-            border-radius: 4px;
-            background: #fff;
-            padding: 8px; }
-        .result-page .legal-representation .legal-information .AVG-claims .revenue {
-          color: #ffffff;
-          font-size: 20px;
-          font-weight: 500;
-          padding-top: 4px;
-          text-align: left;
-          padding-bottom: 22px;
-          line-height: 28px; }
-        .result-page .legal-representation .legal-information .AVG-claims ul {
-          list-style: none; }
-          .result-page .legal-representation .legal-information .AVG-claims ul li {
-            margin-bottom: 8px;
-            margin-top: 0;
-            font-size: 18px;
-            font-weight: 400;
-            display: flex; }
-            .result-page .legal-representation .legal-information .AVG-claims ul li span {
-              font-size: 18px;
-              font-weight: 400;
-              color: #fff; }
-            .result-page .legal-representation .legal-information .AVG-claims ul li b {
-              color: #fff; }
-            .result-page .legal-representation .legal-information .AVG-claims ul li p {
-              color: #fff; }
-        .result-page .legal-representation .legal-information .AVG-claims ul li:before {
-          content: "✓";
-          color: #fff;
-          padding-right: 10px;
-          margin-top: 4px; }
-        .result-page .legal-representation .legal-information .AVG-claims .proposed-money {
-          color: #fff;
-          font-size: 25px;
-          font-weight: 400;
-          justify-content: center;
-          display: flex; }
-        .result-page .legal-representation .legal-information .AVG-claims .button-claim {
-          border-radius: 16px;
-          background: #BC2649;
-          color: #fff;
-          font-size: 16px;
-          font-weight: 700;
-          padding: 14px 27px;
-          margin: 0 auto;
-          display: flex;
-          margin-top: 14px; }
-          @media (max-width: 992px) {
-            .result-page .legal-representation .legal-information .AVG-claims .button-claim {
-              margin-bottom: 15px; } }
-        .result-page .legal-representation .legal-information .AVG-claims .amount-money p,
-        .result-page .legal-representation .legal-information .AVG-claims .amount-money span {
-          color: #f9f9f9 !important;
-          font-size: 16px;
-          font-weight: 700; }
       .result-page .legal-representation .legal-information .IR-claims {
         height: fit-content;
         padding: 22px 16px;
-        max-width: 280px;
+        max-width: 300px;
         width: 100%;
         border-radius: 24px;
         background: #fff;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column; }
-        @media (max-width: 992px) {
+        @media (max-width: 690px) {
           .result-page .legal-representation .legal-information .IR-claims {
-            transform: translateY(-65px);
             max-width: 500px; } }
         .result-page .legal-representation .legal-information .IR-claims__name {
           display: flex;
