@@ -2596,7 +2596,8 @@ nav {
   @media (max-width: 620px) {
     .general-information-table {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      align-items: inherit; } }
 
 .intermediate-bar {
   border: 0.5px solid #081f35;
