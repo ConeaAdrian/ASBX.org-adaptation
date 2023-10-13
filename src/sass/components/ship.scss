@@ -267,3 +267,16 @@
   border-radius: 12px;
   background: #324a74;
 }
+
+.sponsor-organisation {
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain!important;
+    border-radius: 4px;
+    border: 1px solid #c0cad6;
+    background: rgba(240,245,255,.3);
+    padding: 10px;
+    display: flex;
+  }
+}
