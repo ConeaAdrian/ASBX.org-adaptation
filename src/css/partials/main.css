@@ -2791,10 +2791,7 @@ nav {
       flex-direction: column; } }
   .content-ship .content-box-ship__text {
     max-width: 300px;
-    width: 100%;
-    gap: 30px;
-    display: flex;
-    flex-direction: column; }
+    width: 100%; }
     @media (max-width: 660px) {
       .content-ship .content-box-ship__text {
         max-width: none; } }

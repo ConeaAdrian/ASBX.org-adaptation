@@ -23,9 +23,6 @@
     &__text {
       max-width: 300px;
       width: 100%;
-      gap: 30px;
-      display: flex;
-      flex-direction: column;
       @media (max-width: 660px) {
         max-width: none;
       }
