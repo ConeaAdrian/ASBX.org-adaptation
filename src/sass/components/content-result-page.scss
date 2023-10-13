@@ -106,7 +106,7 @@
       .ER-claims {
         height: fit-content;
         padding: 22px 16px;
-        max-width: 300px;
+        max-width: 350px;
         width: 100%;
         height: fit-content;
         border-radius: 24px;
@@ -114,7 +114,7 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
-        @media (max-width: 690px) {
+        @media (max-width: 799px) {
           max-width: 500px;
         }
 
@@ -177,8 +177,8 @@
         }
         .button-claim {
           border-radius: 16px;
-          background: rgba(255, 64, 67, 0.24);
-          color: $main-color;
+          background: $main-red;
+          color: white;
           font-size: 16px;
           font-weight: 700;
           padding: 14px 27px;
@@ -195,126 +195,17 @@
           padding-left: 0;
         }
       }
-
-      // .AVG-claims {
-      //   height: fit-content;
-      //   padding: 22px 16px;
-      //   max-width: 280px;
-      //   width: 100%;
-      //   border-radius: 24px;
-      //   background: $main-color;
-      //   box-shadow: 6px 12px 32px 0px rgba(0, 0, 0, 0.12);
-      //   display: flex;
-      //   flex-direction: column;
-      //   @media (max-width: 992px) {
-      //     border-radius: 24px 24px 0 0;
-      //     transform: translateY(-42px);
-      //     max-width: 500px;
-      //     margin-top: 10px;
-      //   }
-
-      //   &__name {
-      //     display: flex;
-      //     border-bottom: 1px solid #b4b4b4;
-      //     padding-bottom: 10px;
-      //     h2 {
-      //       color: #fff;
-      //       font-size: 24px;
-      //       margin-right: 5px;
-      //       font-family: "Inter", sans-serif !important;
-      //     }
-      //     p {
-      //       color: $main-red;
-      //       font-size: 12px;
-      //       font-weight: 400;
-      //       border-radius: 4px;
-      //       background: #fff;
-      //       padding: 8px;
-      //     }
-      //   }
-      //   .revenue {
-      //     color: #ffffff;
-      //     font-size: 20px;
-      //     font-weight: 500;
-      //     padding-top: 4px;
-      //     text-align: left;
-      //     padding-bottom: 22px;
-      //     line-height: 28px;
-      //   }
-      //   ul {
-      //     list-style: none;
-
-      //     li {
-      //       margin-bottom: 8px;
-      //       margin-top: 0;
-      //       font-size: 18px;
-      //       font-weight: 400;
-      //       display: flex;
-
-      //       span {
-      //         font-size: 18px;
-      //         font-weight: 400;
-      //         color: #fff;
-      //       }
-      //       b {
-      //         color: #fff;
-      //       }
-      //       p {
-      //         color: #fff;
-      //       }
-      //     }
-      //   }
-      //   ul li:before {
-      //     content: "✓";
-      //     color: #fff;
-      //     padding-right: 10px;
-      //     margin-top: 4px;
-      //   }
-      //   .proposed-money {
-      //     color: #fff;
-      //     font-size: 25px;
-      //     font-weight: 400;
-      //     justify-content: center;
-      //     display: flex;
-      //   }
-      //   .button-claim {
-      //     border-radius: 16px;
-      //     background: $main-red;
-      //     color: #fff;
-      //     font-size: 16px;
-      //     font-weight: 700;
-      //     padding: 14px 27px;
-      //     margin: 0 auto;
-      //     display: flex;
-      //     margin-top: 14px;
-      //     @media (max-width: 992px) {
-      //       margin-bottom: 15px;
-      //     }
-      //   }
-      //   .amount-money {
-      //     p,
-      //     span {
-      //       color: #f9f9f9 !important;
-      //       font-size: 16px;
-      //       font-weight: 700;
-      //     }
-      //   }
-      // }
       .IR-claims {
         height: fit-content;
         padding: 22px 16px;
-        max-width: 300px;
+        max-width: 350px;
         width: 100%;
         border-radius: 24px;
         background: #fff;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
-        // @media (max-width: 992px) {
-        //   transform: translateY(-65px);
-        //   max-width: 500px;
-        // }
-        @media (max-width: 690px) {
+        @media (max-width: 799px) {
           max-width: 500px;
         }
 
@@ -377,8 +268,8 @@
         }
         .button-claim {
           border-radius: 16px;
-          background: rgba(255, 64, 67, 0.24);
-          color: $main-color;
+          background: $main-red;
+          color: white;
           font-size: 16px;
           font-weight: 700;
           padding: 14px 27px;
@@ -386,7 +277,7 @@
           display: flex;
           margin-top: 14px;
           @media (max-width: 992px) {
-            margin-bottom: 15px;
+            margin-bottom: 35px;
           }
         }
       }
@@ -401,7 +292,7 @@
     border-radius: 24px;
     background: #fff;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    max-width: 350px;
     width: 100%;
     padding: 14px 24px;
     margin: 44px auto;
