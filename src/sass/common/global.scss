@@ -266,6 +266,10 @@ textarea {
 }
 .error-message {
   display: none;
-  color: #BC2649;
+  color: #bc2649;
   font-size: 15px;
-  margin-top: 5px; }
+  margin-top: 5px;
+}
+.grecaptcha-badge {
+  visibility: hidden;
+}
