@@ -3015,6 +3015,9 @@ nav {
 
 .our-sponsor .data-info {
   margin: 0; }
+  .our-sponsor .data-info b {
+    color: #324a74;
+    font-weight: 700; }
 
 .contact .hreader-contact {
   width: 100%;
