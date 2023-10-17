@@ -682,13 +682,6 @@ button {
       background-color: #BC2649; }
       .boottom-navigation .active-class-navigation .claims-select-data {
         background: #003366; }
-        .boottom-navigation .active-class-navigation .claims-select-data__number {
-          color: #fff;
-          font-size: 12px;
-          align-items: center;
-          justify-content: center;
-          display: flex;
-          transform: translateY(2px); }
     .boottom-navigation__element {
       align-items: center;
       justify-content: center;
@@ -700,8 +693,8 @@ button {
       .boottom-navigation__element:hover {
         background-color: rgba(240, 245, 255, 0.3); }
       .boottom-navigation__element .claims-select-data {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         border-radius: 8px;
         background: #BC2649;
         position: absolute;
@@ -709,11 +702,11 @@ button {
         right: 26px; }
         .boottom-navigation__element .claims-select-data__number {
           color: #fff;
-          font-size: 14px;
+          font-size: 16px;
           align-items: center;
           justify-content: center;
           display: flex;
-          transform: translateY(1px); }
+          transform: translateY(0px); }
       .boottom-navigation__element img {
         width: 24px;
         height: auto; } }

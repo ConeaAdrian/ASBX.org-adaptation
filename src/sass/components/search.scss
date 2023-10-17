@@ -152,15 +152,6 @@
 
         .claims-select-data {
           background: #003366;
-  
-          &__number {
-            color: #fff;
-            font-size: 12px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            transform: translateY(2px);
-          }
         }
     }
     &__element {
@@ -175,8 +166,8 @@
         background-color: rgba(240,245,255,.3);
       }
       .claims-select-data {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         border-radius: 8px;
         background: #BC2649;
         position: absolute;
@@ -185,11 +176,11 @@
 
         &__number {
           color: #fff;
-          font-size: 14px;
+          font-size: 16px;
           align-items: center;
           justify-content: center;
           display: flex;
-          transform: translateY(1px);
+          transform: translateY(0px);
         }
       }
       img {
