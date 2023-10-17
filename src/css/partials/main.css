@@ -678,6 +678,17 @@ button {
       font-size: 12px;
       color: #fff;
       font-weight: 700; }
+    .boottom-navigation .active-class-navigation {
+      background-color: #BC2649; }
+      .boottom-navigation .active-class-navigation .claims-select-data {
+        background: #003366; }
+        .boottom-navigation .active-class-navigation .claims-select-data__number {
+          color: #fff;
+          font-size: 12px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          transform: translateY(2px); }
     .boottom-navigation__element {
       align-items: center;
       justify-content: center;
@@ -692,17 +703,17 @@ button {
         width: 18px;
         height: 18px;
         border-radius: 8px;
-        background: #e11d48;
+        background: #BC2649;
         position: absolute;
         top: 5px;
         right: 26px; }
         .boottom-navigation__element .claims-select-data__number {
           color: #fff;
-          font-size: 12px;
+          font-size: 14px;
           align-items: center;
           justify-content: center;
           display: flex;
-          transform: translateY(2px); }
+          transform: translateY(1px); }
       .boottom-navigation__element img {
         width: 24px;
         height: auto; } }

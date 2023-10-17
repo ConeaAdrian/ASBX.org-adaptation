@@ -147,7 +147,22 @@
       color: #fff;
       font-weight: 700;
     }
+    .active-class-navigation {
+        background-color: #BC2649;
 
+        .claims-select-data {
+          background: #003366;
+  
+          &__number {
+            color: #fff;
+            font-size: 12px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            transform: translateY(2px);
+          }
+        }
+    }
     &__element {
       align-items: center;
       justify-content: center;
@@ -163,18 +178,18 @@
         width: 18px;
         height: 18px;
         border-radius: 8px;
-        background: #e11d48;
+        background: #BC2649;
         position: absolute;
         top: 5px;
         right: 26px;
 
         &__number {
           color: #fff;
-          font-size: 12px;
+          font-size: 14px;
           align-items: center;
           justify-content: center;
           display: flex;
-          transform: translateY(2px);
+          transform: translateY(1px);
         }
       }
       img {
