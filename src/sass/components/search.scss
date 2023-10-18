@@ -148,11 +148,26 @@
       font-weight: 700;
     }
     .active-class-navigation {
-        background-color: #BC2649;
+      background-color: #bc2649;
+      .claims-select-data {
+        width: 20px;
+        height: 20px;
+        border-radius: 8px;
+        background: #003366;
+        position: absolute;
+        top: 5px;
+        right: 26px;
+        display: block;
 
-        .claims-select-data {
-          background: #003366;
+        &__number {
+          color: #fff;
+          font-size: 16px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          transform: translateY(0px);
         }
+      }
     }
     &__element {
       align-items: center;
@@ -163,25 +178,10 @@
       position: relative;
       width: 90px;
       &:hover {
-        background-color: rgba(240,245,255,.3);
+        background-color: rgba(240, 245, 255, 0.3);
       }
       .claims-select-data {
-        width: 20px;
-        height: 20px;
-        border-radius: 8px;
-        background: #BC2649;
-        position: absolute;
-        top: 5px;
-        right: 26px;
-
-        &__number {
-          color: #fff;
-          font-size: 16px;
-          align-items: center;
-          justify-content: center;
-          display: flex;
-          transform: translateY(0px);
-        }
+        display: none;
       }
       img {
         width: 24px;

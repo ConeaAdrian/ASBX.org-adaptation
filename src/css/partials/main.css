@@ -679,9 +679,23 @@ button {
       color: #fff;
       font-weight: 700; }
     .boottom-navigation .active-class-navigation {
-      background-color: #BC2649; }
+      background-color: #bc2649; }
       .boottom-navigation .active-class-navigation .claims-select-data {
-        background: #003366; }
+        width: 20px;
+        height: 20px;
+        border-radius: 8px;
+        background: #003366;
+        position: absolute;
+        top: 5px;
+        right: 26px;
+        display: block; }
+        .boottom-navigation .active-class-navigation .claims-select-data__number {
+          color: #fff;
+          font-size: 16px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          transform: translateY(0px); }
     .boottom-navigation__element {
       align-items: center;
       justify-content: center;
@@ -693,20 +707,7 @@ button {
       .boottom-navigation__element:hover {
         background-color: rgba(240, 245, 255, 0.3); }
       .boottom-navigation__element .claims-select-data {
-        width: 20px;
-        height: 20px;
-        border-radius: 8px;
-        background: #BC2649;
-        position: absolute;
-        top: 5px;
-        right: 26px; }
-        .boottom-navigation__element .claims-select-data__number {
-          color: #fff;
-          font-size: 16px;
-          align-items: center;
-          justify-content: center;
-          display: flex;
-          transform: translateY(0px); }
+        display: none; }
       .boottom-navigation__element img {
         width: 24px;
         height: auto; } }
@@ -4296,7 +4297,7 @@ nav {
     align-items: center; }
   .missing-job button {
     border-radius: 4px;
-    background: #1B8A5B;
+    background: #1A5D41;
     text-transform: uppercase;
     font-weight: 700;
     padding: 8.5px; }
