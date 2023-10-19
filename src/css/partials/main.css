@@ -3173,6 +3173,9 @@ nav {
       padding-top: 0; }
   .job-site .add-to-claims .card-job-site p {
     color: #000 !important; }
+  .job-site .add-to-claims .general-blue-text {
+    padding: 10px 0 0 0;
+    font-weight: 400 !important; }
 
 .job-site .red-text {
   font-weight: 700; }
