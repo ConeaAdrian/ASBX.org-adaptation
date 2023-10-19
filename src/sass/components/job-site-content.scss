@@ -104,3 +104,26 @@
     text-transform: inherit;
   }
 }
+
+.search-page {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 70px auto;
+  gap: 20px;
+  h1 {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+.location-search-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 70px auto;
+  gap: 20px;
+}
