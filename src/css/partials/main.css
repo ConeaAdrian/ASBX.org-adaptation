@@ -783,7 +783,6 @@ footer {
         font-style: normal;
         font-weight: 300;
         line-height: 26px;
-        /* 144.444% */
         text-decoration-line: underline !important; }
   footer .grup-element {
     width: 200%;
@@ -1078,7 +1077,7 @@ nav {
     width: 30px;
     height: 30px;
     border-radius: 4px;
-    background: #BC2649;
+    background: #bc2649;
     margin-right: 50px; }
     .contact-us__img {
       display: flex;
@@ -1382,17 +1381,9 @@ nav {
     .container .desktop-only .col-md-3 {
       width: 25%;
       padding: 10px; }
-  .container .tablet-mobile-only {
-    display: none; }
-    .container .tablet-mobile-only select {
-      margin-bottom: 10px; }
-    .container .tablet-mobile-only button {
-      width: 100%; }
   @media (max-width: 992px) {
     .container .desktop-only {
-      display: none; }
-    .container .tablet-mobile-only {
-      display: block; } }
+      display: none; } }
 
 .row.mobile-only {
   display: none; }
@@ -1928,7 +1919,8 @@ nav {
     .index-page .index-search__content .custom-search-form {
       max-width: 620px;
       width: 100%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      gap: 10px; }
       .index-page .index-search__content .custom-search-form input {
         height: 55px; }
     .index-page .index-search__content .search-form-button {
@@ -2121,6 +2113,35 @@ nav {
     .index-page .red-text-hero {
       text-align: center;
       font-size: 26px; } }
+
+.select-type {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  max-width: 240px;
+  margin-right: 10px; }
+  .select-type select {
+    width: 100%;
+    max-width: 242px;
+    padding-left: 5px; }
+    @media (max-width: 767px) {
+      .select-type select {
+        padding: 10px; } }
+    @media (max-width: 667px) {
+      .select-type select {
+        max-width: none; } }
+  .select-type .button-search {
+    border-radius: 0px 4px 4px 0px;
+    background: #BC2649;
+    width: 46px;
+    height: 44px; }
+    @media (max-width: 767px) {
+      .select-type .button-search {
+        height: 40px; } }
+    .select-type .button-search img {
+      color: white !important;
+      width: 20px;
+      height: 20px; }
 
 .city-content .text-exampe {
   margin-top: 10px; }
@@ -3930,8 +3951,7 @@ nav {
   font-weight: 300;
   line-height: 28px;
   margin-left: 0;
-  display: none;
-  /* Initial, răspunsurile sunt ascunse */ }
+  display: none; }
 
 .faq-item:last-child p {
   border-bottom: none; }
@@ -4794,10 +4814,6 @@ nav {
   @media (max-width: 475px) {
     .state .state-list li a {
       font-size: 18px; } }
-
-.dinamic-page-notice {
-  border-left: 2px solid #BC2649;
-  padding-left: 10px; }
 
 .asbestos-trust .content-summarizer {
   max-width: 480px; }

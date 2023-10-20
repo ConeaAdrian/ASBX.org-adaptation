@@ -30,26 +30,26 @@
       }
     }
     
-    .tablet-mobile-only {
-      display: none;
+    // .tablet-mobile-only {
+    //   display: none;
       
-      select {
-        margin-bottom: 10px;
-      }
+    //   select {
+    //     margin-bottom: 10px;
+    //   }
       
-      button {
-        width: 100%;
-      }
-    }
+    //   button {
+    //     width: 100%;
+    //   }
+    // }
     
     @media (max-width: 992px) {
       .desktop-only {
         display: none;
       }
       
-      .tablet-mobile-only {
-        display: block;
-      }
+      // .tablet-mobile-only {
+      //   display: block;
+      // }
     }
   }
   .row.mobile-only {
