@@ -19,6 +19,11 @@ $link-hover-color: $main-red;
   @media (max-width: 992px) {
     background: #ffffff;
   }
+  @media (min-width: 992px) {
+    .container {
+      padding: 0 20px;
+    }
+  }
 }
 .navigation {
   display: flex;
@@ -108,11 +113,11 @@ nav {
 
         &:not(:only-child):after {
           padding-left: 4px;
+          right: 0;
           content: " ▾";
-          top: -1px;
           position: absolute;
           @media (max-width: 992px) {
-            top: 10px;
+            position: relative;
           }
         }
       } // Dropdown list
@@ -132,7 +137,6 @@ nav {
   position: absolute;
   display: none;
   z-index: 1;
-  margin-top: 15px;
   flex-direction: column;
   width: max-content;
   @media (max-width: 992px) {
@@ -177,8 +181,22 @@ nav {
     flex-direction: column;
     align-items: start;
   }
+  & > li {
+    &:hover {
+      ul {
+        display: flex;
+      }
+    }
+  }
   .diseases {
     padding-right: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 58px;
+    @media (max-width: 992px) {
+     height: auto;
+    }
   }
   .bar-top {
     border-left: 1px solid #cdcdcd;
