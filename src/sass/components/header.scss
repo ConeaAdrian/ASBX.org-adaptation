@@ -478,6 +478,50 @@ nav {
   width: 100%;
   display: flex;
   max-width: 660px;
+  gap: 10px;
+  @media (max-width: 475px) {
+    flex-direction: column;
+  }
+}
+
+.select-type {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  max-width: 240px;
+  @media (max-width: 767px) {
+    height: 40px;
+  }
+  @media (max-width: 475px) {
+    max-width: none;
+  }
+
+  select {
+    width: 100%;
+    max-width: 242px;
+    padding-left: 5px;
+    @media (max-width: 767px) {
+      padding: 10px;
+    }
+    @media (max-width: 667px) {
+      max-width: none;
+    }
+  }
+  .button-search {
+    border-radius: 0px 4px 4px 0px;
+    background: $main-red;
+    width: 46px;
+    height: 44px;
+    @media (max-width: 767px) {
+      height: 40px;
+    }
+
+    img {
+      color: white !important;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 .custom-search-items {
@@ -583,6 +627,10 @@ nav {
   @media (max-width: 767px) {
     max-width: none;
   }
+}
+.type-metod-select {
+  display: flex;
+  width: 100%;
 }
 .military_icon_search {
   display: block;
