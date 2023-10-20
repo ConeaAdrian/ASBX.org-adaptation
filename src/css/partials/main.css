@@ -2829,12 +2829,12 @@ nav {
   margin-top: 18px;
   margin-bottom: 18px; }
 
-.content-ship .equipment {
+.equipment {
   margin-top: 18px;
   gap: 20px;
   display: flex;
   flex-wrap: wrap; }
-  .content-ship .equipment .equipment-box {
+  .equipment .equipment-box {
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fbfbfb;
@@ -2846,29 +2846,29 @@ nav {
     flex-direction: column;
     gap: 5px; }
     @media (max-width: 520px) {
-      .content-ship .equipment .equipment-box {
+      .equipment .equipment-box {
         max-width: none; } }
     @media screen and (min-width: 520px) {
-      .content-ship .equipment .equipment-box {
+      .equipment .equipment-box {
         flex: 0 0 calc(50% - 20px);
         height: inherit; } }
-    .content-ship .equipment .equipment-box .mark-text {
+    .equipment .equipment-box .mark-text {
       margin: 0 10px; }
-      .content-ship .equipment .equipment-box .mark-text li {
+      .equipment .equipment-box .mark-text li {
         font-size: 18px;
         line-height: 24px; }
-    .content-ship .equipment .equipment-box p {
+    .equipment .equipment-box p {
       font-size: 16px; }
-    .content-ship .equipment .equipment-box b {
+    .equipment .equipment-box b {
       font-size: inherit; }
-  .content-ship .equipment .red-text {
+  .equipment .red-text {
     margin: 0;
     font-size: 18px; }
 
-.content-ship .notation {
+.notation {
   max-width: none; }
 
-.content-ship .equipment-box ul li {
+.equipment-box ul li {
   list-style-type: disc; }
 
 .navy-ships li {

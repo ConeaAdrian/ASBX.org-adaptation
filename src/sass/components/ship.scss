@@ -31,57 +31,57 @@
     margin-top: 18px;
     margin-bottom: 18px;
   }
-  .equipment {
-    margin-top: 18px;
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
+}
+.equipment {
+  margin-top: 18px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 
-    .equipment-box {
-      border-radius: 4px;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background: #fbfbfb;
-      padding: 18px 12px;
-      width: 100%;
-      max-width: 320px;
-      height: fit-content;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      @media (max-width: 520px) {
-        max-width: none;
-      }
-      @media screen and (min-width: 520px) {
-        flex: 0 0 calc(50% - 20px);
-        height: inherit;
-      }
-      .mark-text {
-        margin: 0 10px;
-        li {
-          font-size: 18px;
-          line-height: 24px;
-        }
-      }
-      p {
-        font-size: 16px;
-      }
-      b {
-        font-size: inherit;
-      }
-    }
-    .red-text {
-      margin: 0;
-      font-size: 18px;
-    }
-  }
-  .notation {
-    max-width: none;
-  }
   .equipment-box {
-    ul {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fbfbfb;
+    padding: 18px 12px;
+    width: 100%;
+    max-width: 320px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @media (max-width: 520px) {
+      max-width: none;
+    }
+    @media screen and (min-width: 520px) {
+      flex: 0 0 calc(50% - 20px);
+      height: inherit;
+    }
+    .mark-text {
+      margin: 0 10px;
       li {
-        list-style-type: disc;
+        font-size: 18px;
+        line-height: 24px;
       }
+    }
+    p {
+      font-size: 16px;
+    }
+    b {
+      font-size: inherit;
+    }
+  }
+  .red-text {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+.notation {
+  max-width: none;
+}
+.equipment-box {
+  ul {
+    li {
+      list-style-type: disc;
     }
   }
 }
