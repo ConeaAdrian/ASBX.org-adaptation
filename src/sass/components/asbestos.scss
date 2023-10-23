@@ -4,26 +4,19 @@
     border-radius: 4px;
     height: auto;
   }
+
   .mesothelioma-facts {
     .red-text {
       font-size: 20px;
-      font-style: normal;
       font-weight: 400;
     }
+
     li {
       color: $main-color;
       font-size: 20px;
       font-weight: 300;
       line-height: 26px;
     }
-  }
-  .cause-symptoms-text {
-    margin-top: 15px;
-  }
-  .life-expectancy-content {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
   }
 
   .tick-section {
@@ -34,25 +27,26 @@
     position: relative;
     margin-bottom: 40px;
     margin-top: 80px;
+
     @media (max-width: 620px) {
       margin-top: 40px;
       margin-bottom: 0;
     }
-    
 
     .interogativ-sentence {
-      color: #BC2649;
+      color: #bc2649;
       font-size: 28px;
       font-weight: 700;
       text-transform: uppercase;
       position: absolute;
       top: -18px;
       left: 20px;
+
       @media (max-width: 475px) {
         position: initial;
         font-size: 24px;
         text-align: center;
-      padding: 20px 20px 0 20px;
+        padding: 20px 20px 0 20px;
       }
     }
 
@@ -88,10 +82,12 @@
     @media (max-width: 620px) {
       flex-direction: column;
       margin-bottom: 30px;
+
       img {
         height: 310px;
       }
     }
+
     @media (max-width: 475px) {
       img {
         max-width: none;
@@ -105,13 +101,16 @@
     margin-top: 30px;
     max-width: none;
   }
+
   .boiler-general-img {
     width: 100%;
     height: auto;
   }
+
   .boiler-occupation {
     padding-left: 25px;
     padding-top: 20px;
+
     li {
       font-weight: 300;
       list-style-type: disc;
@@ -119,25 +118,29 @@
       line-height: 26px;
     }
   }
+
   .text-exampe {
     margin-top: 10px;
+
     b {
       font-size: 18px !important;
     }
   }
 }
 
-
 .faq-component {
   margin-top: 40px;
   background: #f7f7f7;
+
   h2 {
     text-align: center;
   }
+
   .bar {
     margin: 7px auto;
   }
 }
+
 .container-faq {
   border-radius: 18px;
   box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
@@ -146,13 +149,12 @@
   background-color: #fff;
 
   @media (max-width: 767px) {
-      padding: 30px 40px;
+    padding: 30px 40px;
   }
-  
+
   @media (max-width: 475px) {
-      padding: 20px;
-    }
-  
+    padding: 20px;
+  }
 }
 
 .faq-question,
@@ -166,10 +168,8 @@
   justify-content: space-between;
   padding: 10px 0;
   cursor: pointer;
-  font-weight: bold;
-  border-bottom: none;
-  font-style: normal;
   font-weight: 400;
+  border-bottom: none;
 
   .toggle-icon {
     transition: transform 0.3s;
@@ -184,8 +184,11 @@
   margin-left: 0;
   display: none;
 }
-.faq-item:last-child {
-  p {
-    border-bottom: none;
-  }
+.non-existent-letter {
+  color: #a0a0a0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  transition: all 0.3s ease-in;
+  text-decoration-line: none !important;
 }

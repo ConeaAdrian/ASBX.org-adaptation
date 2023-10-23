@@ -3840,7 +3840,6 @@ nav {
 
 .mesothelioma .mesothelioma-facts .red-text {
   font-size: 20px;
-  font-style: normal;
   font-weight: 400; }
 
 .mesothelioma .mesothelioma-facts li {
@@ -3848,14 +3847,6 @@ nav {
   font-size: 20px;
   font-weight: 300;
   line-height: 26px; }
-
-.mesothelioma .cause-symptoms-text {
-  margin-top: 15px; }
-
-.mesothelioma .life-expectancy-content {
-  gap: 20px;
-  display: flex;
-  flex-direction: column; }
 
 .mesothelioma .tick-section {
   border-radius: 4px;
@@ -3870,7 +3861,7 @@ nav {
       margin-top: 40px;
       margin-bottom: 0; } }
   .mesothelioma .tick-section .interogativ-sentence {
-    color: #BC2649;
+    color: #bc2649;
     font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
@@ -3967,10 +3958,8 @@ nav {
   justify-content: space-between;
   padding: 10px 0;
   cursor: pointer;
-  font-weight: bold;
-  border-bottom: none;
-  font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  border-bottom: none; }
   .faq-question .toggle-icon {
     transition: transform 0.3s; }
 
@@ -3982,8 +3971,13 @@ nav {
   margin-left: 0;
   display: none; }
 
-.faq-item:last-child p {
-  border-bottom: none; }
+.non-existent-letter {
+  color: #a0a0a0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  transition: all 0.3s ease-in;
+  text-decoration-line: none !important; }
 
 .top-search-mobile {
   display: none;
