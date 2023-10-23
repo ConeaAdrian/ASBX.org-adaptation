@@ -2636,11 +2636,12 @@ nav {
     .intermediate-bar {
       margin: 30px 0; } }
 
-@media (max-width: 620px) {
+@media (max-width: 767px) {
   .static-page-intermediate-bar {
     border: 0.5px solid #081f35;
     opacity: 15%;
-    margin: 30px 0; } }
+    margin: 20px 0;
+    width: 100%; } }
 
 .content-summarizer__notice div {
   display: flex;
@@ -3818,7 +3819,7 @@ nav {
   position: relative;
   margin-bottom: 40px;
   margin-top: 80px; }
-  @media (max-width: 620px) {
+  @media (max-width: 475px) {
     .mesothelioma .tick-section {
       margin-top: 40px;
       margin-bottom: 0; } }
@@ -3876,6 +3877,10 @@ nav {
     .mesothelioma .content-summarizer {
       flex-direction: column;
       gap: 10px; } }
+
+@media (max-width: 767px) {
+  .mesothelioma .required-asbx {
+    margin-bottom: 0; } }
 
 .occupational .content-summarizer {
   margin-top: 30px;
