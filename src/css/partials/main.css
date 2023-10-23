@@ -4619,7 +4619,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  width: 100%; }
   .content-boiler .card-boiler {
     width: 48.35%;
     padding: 10px 10px 20px;
