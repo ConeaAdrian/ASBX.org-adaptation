@@ -1,8 +1,7 @@
 .mesothelioma {
   .meso-img {
-    max-width: 320px;
+    max-height: 370px;
     border-radius: 4px;
-    height: auto;
   }
 
   .mesothelioma-facts {
@@ -92,6 +91,16 @@
       img {
         max-width: none;
       }
+    }
+  }
+  .content-summarizer {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    align-items: flex-start;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 10px;
     }
   }
 }

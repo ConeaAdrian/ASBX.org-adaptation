@@ -1878,7 +1878,7 @@ nav {
         font-weight: 700;
         line-height: 24px; }
       .index-page .working-stages .works-step__box img {
-        height: auto; }
+        aspect-ratio: 1/1; }
         @media (max-width: 640px) {
           .index-page .working-stages .works-step__box img {
             max-height: 300px;
@@ -3797,9 +3797,8 @@ nav {
   transform: rotate(-45deg); }
 
 .mesothelioma .meso-img {
-  max-width: 320px;
-  border-radius: 4px;
-  height: auto; }
+  max-height: 370px;
+  border-radius: 4px; }
 
 .mesothelioma .mesothelioma-facts .red-text {
   font-size: 20px;
@@ -3867,6 +3866,16 @@ nav {
 @media (max-width: 475px) {
   .mesothelioma .content-table img {
     max-width: none; } }
+
+.mesothelioma .content-summarizer {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  align-items: flex-start; }
+  @media (max-width: 767px) {
+    .mesothelioma .content-summarizer {
+      flex-direction: column;
+      gap: 10px; } }
 
 .occupational .content-summarizer {
   margin-top: 30px;
