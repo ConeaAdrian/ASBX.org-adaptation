@@ -3870,7 +3870,7 @@ nav {
 
 .mesothelioma .content-summarizer {
   display: flex;
-  gap: 30px;
+  gap: 15px;
   width: 100%;
   align-items: flex-start; }
   @media (max-width: 767px) {
