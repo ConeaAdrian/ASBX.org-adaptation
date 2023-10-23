@@ -37,7 +37,6 @@ footer {
   .important-links {
     width: 100%;
     border-right: 1px solid rgba(226, 226, 226, 0.36);
-    height: 80%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -45,7 +44,6 @@ footer {
     @media (max-width: 767px) {
       height: auto;
       margin-top: 30px;
-      height: auto;
       border-right: none;
     }
     @media (max-width: 425px) {
@@ -73,8 +71,6 @@ footer {
       flex-direction: column;
       gap: 10px;
       align-items: start;
-      display: flex;
-      flex-direction: column;
       a {
         font-size: 20px;
         font-style: normal;
@@ -101,7 +97,6 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: flex;
     @media (max-width: 767px) {
       margin-top: 30px;
     }

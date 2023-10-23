@@ -47,7 +47,7 @@
   &__search {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fbfbfb;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
     width: 48.35%;
     padding: 20px;
     @media (max-width: 767px) {
@@ -77,7 +77,7 @@
         }
       }
       .button-search {
-        border-radius: 0px 4px 4px 0px;
+        border-radius: 0 4px 4px 0;
         background: $main-red;
         width: 46px;
         height: 44px;

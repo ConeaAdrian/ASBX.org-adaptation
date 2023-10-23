@@ -170,8 +170,8 @@ nav {
   align-items: center;
   @media (max-width: 992px) {
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -325,10 +325,10 @@ nav {
   right: 0;
   top: 24px;
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
+  padding: 10px 35px 16px 0;
 
   @media (max-width: 992px) {
-    padding: 4px 35px 16px 0px;
+    padding: 4px 35px 16px 0;
   }
   @media (max-width: 375px) {
     top: 20px;
@@ -407,8 +407,6 @@ nav {
   box-sizing: border-box;
   font-size: 16px;
   font-weight: 400;
-  border: none;
-  height: 100%;
   padding: 8px 8px 8px 36px;
   text-transform: capitalize;
   line-height: normal;
@@ -417,12 +415,6 @@ nav {
   height: 44px;
   border: 1px solid rgba(0, 0, 0, 0.17);
   background: #fff;
-  // &::placeholder {
-  //   color: #3d3d3d;
-  //   &:hover {
-  //     background-color: ;
-  //   }
-  // }
 
   @media (max-width: 767px) {
     height: 40px;
@@ -447,7 +439,7 @@ nav {
 }
 .search-principal {
   background: #fbfbfb;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   height: fit-content;
   z-index: 10;
   @media (max-width: 992px) {
@@ -508,7 +500,7 @@ nav {
     }
   }
   .button-search {
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
     background: $main-red;
     width: 46px;
     height: 44px;
@@ -572,7 +564,7 @@ nav {
     }
   }
   .search-form-button {
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
     background: $main-red;
     width: 45px;
     text-transform: uppercase;
@@ -604,7 +596,6 @@ nav {
     background-repeat: no-repeat;
     background-position: 20px center;
     background-size: 18px;
-    align-items: center;
     &[data-type="disease"] {
       background-image: url("../../img/donate.svg");
     }
