@@ -10,13 +10,7 @@
 
     @include respondto(onlyDesktop) {
       padding: 0 4.5rem;
-  
     }
-  }
-}
-.container-desktop {
-  .container-faq {
-    
   }
 }
 @media (min-width: 992px) {
