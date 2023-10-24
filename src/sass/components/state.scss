@@ -22,6 +22,12 @@
         max-width: none;
         height: auto;
       }
+      // &__img {
+      //   aspect-ratio: 2/1;
+      //   width: 300px;
+      //   height: 200px;
+      //   margin: 0 auto;
+      // }
     }
   }
   .state-content {
@@ -135,7 +141,3 @@
     }
   }
 }
-// .dinamic-page-notice {
-//   border-left: 2px solid $main-red;
-//   padding-left: 10px;
-// }
