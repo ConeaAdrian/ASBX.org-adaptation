@@ -2178,6 +2178,11 @@ nav {
       font-weight: 400 !important; }
     .sort-chase__content h3 {
       margin: 0; }
+    .sort-chase__content p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize; }
   .sort-chase .text-initial {
     color: #000 !important;
     font-size: 16px;
@@ -4152,23 +4157,6 @@ nav {
       display: flex;
       flex-direction: column;
       gap: 5px; }
-
-.sort-chase {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  margin-top: 20px; }
-  .sort-chase__content {
-    width: 48.485%; }
-    @media (max-width: 640px) {
-      .sort-chase__content {
-        width: 100%; } }
-    .sort-chase__content p {
-      font-size: 20px;
-      font-weight: 400;
-      line-height: normal;
-      text-transform: capitalize; }
 
 .compensation-section__table {
   border-radius: 4px;
