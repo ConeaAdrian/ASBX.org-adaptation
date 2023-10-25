@@ -2196,13 +2196,10 @@ nav {
   margin-top: 20px;
   margin-bottom: 20px; }
   .sort-chase__content {
-    width: 48.485%;
+    flex: 1 1 300px;
     gap: 10px;
     display: flex;
     flex-direction: column; }
-    @media (max-width: 640px) {
-      .sort-chase__content {
-        width: 100%; } }
     .sort-chase__content td,
     .sort-chase__content th {
       font-weight: 400 !important; }
@@ -2263,6 +2260,34 @@ nav {
           color: white !important;
           width: 20px;
           height: 20px; }
+
+.compensation-section__table {
+  border-radius: 4px;
+  background: #fbfbfb;
+  border-collapse: collapse; }
+  @media (max-width: 475px) {
+    .compensation-section__table {
+      max-width: none; } }
+  .compensation-section__table table,
+  .compensation-section__table th,
+  .compensation-section__table td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px 10px; }
+  .compensation-section__table thead th {
+    text-align: start;
+    color: #036;
+    font-size: 18px;
+    line-height: normal;
+    text-transform: capitalize;
+    font-weight: 700 !important; }
+  .compensation-section__table tbody .review {
+    color: #000;
+    font-size: 18px;
+    line-height: normal; }
+  .compensation-section__table tbody .amount-result {
+    color: #BC2649;
+    font-size: 18px;
+    font-weight: 300; }
 
 .search-result {
   margin-top: 20px;
@@ -4184,36 +4209,6 @@ nav {
       display: flex;
       flex-direction: column;
       gap: 5px; }
-
-.compensation-section__table {
-  border-radius: 4px;
-  background: #fbfbfb;
-  max-width: 320px;
-  width: 100%;
-  border-collapse: collapse; }
-  @media (max-width: 475px) {
-    .compensation-section__table {
-      max-width: none; } }
-  .compensation-section__table table,
-  .compensation-section__table th,
-  .compensation-section__table td {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 6px 10px; }
-  .compensation-section__table thead th {
-    text-align: start;
-    color: #036;
-    font-size: 18px;
-    line-height: normal;
-    text-transform: capitalize;
-    font-weight: 700 !important; }
-  .compensation-section__table tbody .review {
-    color: #000;
-    font-size: 18px;
-    line-height: normal; }
-  .compensation-section__table tbody .amount-result {
-    color: #BC2649;
-    font-size: 18px;
-    font-weight: 300; }
 
 .legend-ratio {
   font-style: normal;

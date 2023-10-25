@@ -18,13 +18,10 @@
   margin-bottom: 20px;
 
   &__content {
-    width: 48.485%;
+    flex: 1 1 300px;
     gap: 10px;
     display: flex;
     flex-direction: column;
-    @media (max-width: 640px) {
-      width: 100%;
-    }
     td,
     th {
       font-weight: 400 !important;
@@ -33,11 +30,11 @@
       margin: 0;
     }
     p {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: normal;
-            text-transform: capitalize;
-          }
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+    }
   }
   .text-initial {
     color: #000 !important;
@@ -100,6 +97,43 @@
     }
   }
 }
+.compensation-section__table {
+  border-radius: 4px;
+  background: #fbfbfb;
+  border-collapse: collapse;
+  @media (max-width: 475px) {
+    max-width: none;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px 10px;
+  }
+  thead {
+    th {
+      text-align: start;
+      color: #036;
+      font-size: 18px;
+      line-height: normal;
+      text-transform: capitalize;
+      font-weight: 700 !important;
+    }
+  }
+  tbody {
+    .review {
+      color: #000;
+      font-size: 18px;
+      line-height: normal;
+    }
+    .amount-result {
+      color: $main-red;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
 .search-result {
   margin-top: 20px;
   margin-bottom: 28px;
@@ -134,7 +168,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 10px; 
+    margin-top: 10px;
   }
 }
 .trust-list {

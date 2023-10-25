@@ -24,45 +24,6 @@
     }
   }
 }
-.compensation-section__table {
-  border-radius: 4px;
-  background: #fbfbfb;
-  max-width: 320px;
-  width: 100%;
-  border-collapse: collapse;
-  @media (max-width: 475px) {
-    max-width: none;
-  }
-
-  table,
-  th,
-  td {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 6px 10px;
-  }
-  thead {
-    th {
-      text-align: start;
-      color: #036;
-      font-size: 18px;
-      line-height: normal;
-      text-transform: capitalize;
-      font-weight: 700 !important;
-    }
-  }
-  tbody {
-    .review {
-      color: #000;
-      font-size: 18px;
-      line-height: normal;
-    }
-    .amount-result {
-      color: $main-red;
-      font-size: 18px;
-      font-weight: 300;
-    }
-  }
-}
 .legend-ratio {
   font-style: normal;
   font-weight: 300;
