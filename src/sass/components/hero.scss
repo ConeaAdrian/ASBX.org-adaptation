@@ -80,17 +80,6 @@
       top: 0;
       left: 0;
     }
-    .asbx-img-home {
-      @media (max-width: 475px) {
-        display: none;
-      }
-    }
-    .asbx-img-mobile {
-      display: none;
-      @media (max-width: 475px) {
-        display: block;
-      }
-    }
     .container {
       position: inherit;
 
