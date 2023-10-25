@@ -550,27 +550,32 @@ button {
 @font-face {
   font-family: 'RobotoCondensed';
   src: url("../../fonts/RobotoCondensed-Bold.ttf") format("truetype");
-  font-weight: 700; }
+  font-weight: 700;
+  font-display: swap; }
 
 @font-face {
   font-family: 'RobotoCondensed';
   src: url("../../fonts/RobotoCondensed-Light.ttf") format("truetype");
-  font-weight: 300; }
+  font-weight: 300;
+  font-display: swap; }
 
 @font-face {
   font-family: 'RobotoCondensed';
   src: url("../../fonts/RobotoCondensed-Medium.ttf") format("truetype");
-  font-weight: 500; }
+  font-weight: 500;
+  font-display: swap; }
 
 @font-face {
   font-family: 'RobotoCondensed';
   src: url("../../fonts/RobotoCondensed-Regular.ttf") format("truetype");
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 @font-face {
   font-family: 'RobotoCondensed';
   src: url("../../fonts/RobotoCondensed-SemiBold.ttf") format("truetype");
-  font-weight: 600; }
+  font-weight: 600;
+  font-display: swap; }
 
 .search-principal {
   z-index: 100; }
@@ -1523,6 +1528,14 @@ nav {
     position: absolute;
     top: 0;
     left: 0; }
+  @media (max-width: 475px) {
+    .index-page .principal-content .asbx-img-home {
+      display: none; } }
+  .index-page .principal-content .asbx-img-mobile {
+    display: none; }
+    @media (max-width: 475px) {
+      .index-page .principal-content .asbx-img-mobile {
+        display: block; } }
   .index-page .principal-content .container {
     position: inherit; }
     .index-page .principal-content .container .hero-content {
