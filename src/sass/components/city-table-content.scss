@@ -152,20 +152,25 @@
     width: 100%;
   }
 }
-
-.content-summarizer__notice div {
+.content-summarizer__notice {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 5px;
 
-  a {
-    font-weight: 400;
-    line-height: 30px;
-  }
-  mark {
-    color: #054ac3;
-    font-size: 18px;
-    margin-right: 5px;
-    background-color: transparent;
+  div {
+    display: flex;
+    align-items: baseline;
+
+    a {
+      font-weight: 400;
+      line-height: 30px;
+    }
+    mark {
+      color: #054ac3;
+      font-size: 18px;
+      margin-right: 5px;
+      background-color: transparent;
+    }
   }
 }
 .flag-img {

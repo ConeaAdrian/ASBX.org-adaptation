@@ -2690,17 +2690,21 @@ nav {
     margin: 20px 0;
     width: 100%; } }
 
-.content-summarizer__notice div {
+.content-summarizer__notice {
   display: flex;
-  align-items: baseline; }
-  .content-summarizer__notice div a {
-    font-weight: 400;
-    line-height: 30px; }
-  .content-summarizer__notice div mark {
-    color: #054ac3;
-    font-size: 18px;
-    margin-right: 5px;
-    background-color: transparent; }
+  flex-direction: column;
+  gap: 5px; }
+  .content-summarizer__notice div {
+    display: flex;
+    align-items: baseline; }
+    .content-summarizer__notice div a {
+      font-weight: 400;
+      line-height: 30px; }
+    .content-summarizer__notice div mark {
+      color: #054ac3;
+      font-size: 18px;
+      margin-right: 5px;
+      background-color: transparent; }
 
 .flag-img {
   width: 320px;
