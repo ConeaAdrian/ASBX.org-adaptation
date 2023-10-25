@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "RobotoCondensed", sans-serif;
 }
 img {
   width: 100%;
@@ -11,11 +12,7 @@ img {
 
 th,
 td {
-  font-family: 'RobotoCondensed', sans-serif;
   font-size: 16px;
-}
-button {
-  font-family: "RobotoCondensed", sans-serif;
 }
 ul {
   font-size: 14px;
@@ -23,7 +20,6 @@ ul {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
-  font-family: "RobotoCondensed", sans-serif;
   display: list-item;
 
   li {
@@ -40,7 +36,6 @@ h6,
 p,
 li,
 a {
-  font-family: "RobotoCondensed", sans-serif;
   margin: 0;
   line-height: normal;
 }
@@ -95,12 +90,10 @@ p {
 li {
   font-size: 14px;
   line-height: 18px;
-  font-family: "RobotoCondensed", sans-serif;
   margin-top: 5px;
 }
 span {
   color: #000000;
-  font-family: "RobotoCondensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -118,12 +111,10 @@ a {
     color: rgb(90, 90, 90);
   }
 
-  // mac safari fix
   > span,
   > b,
   > strong {
     display: inline-block;
-    font-family: "RobotoCondensed", sans-serif;
   }
 }
 
@@ -150,7 +141,6 @@ select {
   background-color: #fff;
   color: #000;
   font-size: 16px;
-  font-family: "RobotoCondensed", sans-serif;
   border-radius: 0;
   outline: none;
   &:hover {
@@ -167,24 +157,14 @@ textarea {
   border: 1px solid #dbdbdb;
   background: #fff;
   outline: none;
-  font-family: "RobotoCondensed", sans-serif;
   font-size: 16px;
   font-weight: 400;
-}
-label {
-  font-family: "RobotoCondensed", sans-serif;
 }
 b,
 strong {
   color: #000;
   font-weight: 400;
-  font-family: "RobotoCondensed", sans-serif;
   font-size: 20px;
-}
-dl,
-dt,
-dd {
-  font-family: "RobotoCondensed", sans-serif;
 }
 .position-relative {
   position: relative;

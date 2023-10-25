@@ -5,7 +5,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "RobotoCondensed", sans-serif; }
 
 img {
   width: 100%;
@@ -14,11 +15,7 @@ img {
 
 th,
 td {
-  font-family: 'RobotoCondensed', sans-serif;
   font-size: 16px; }
-
-button {
-  font-family: "RobotoCondensed", sans-serif; }
 
 ul {
   font-size: 14px;
@@ -26,7 +23,6 @@ ul {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
-  font-family: "RobotoCondensed", sans-serif;
   display: list-item; }
   ul li {
     gap: 4px;
@@ -41,7 +37,6 @@ h6,
 p,
 li,
 a {
-  font-family: "RobotoCondensed", sans-serif;
   margin: 0;
   line-height: normal; }
 
@@ -92,12 +87,10 @@ p {
 li {
   font-size: 14px;
   line-height: 18px;
-  font-family: "RobotoCondensed", sans-serif;
   margin-top: 5px; }
 
 span {
   color: #000000;
-  font-family: "RobotoCondensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -116,8 +109,7 @@ a {
   a > span,
   a > b,
   a > strong {
-    display: inline-block;
-    font-family: "RobotoCondensed", sans-serif; }
+    display: inline-block; }
 
 select:after {
   position: absolute;
@@ -141,7 +133,6 @@ select {
   background-color: #fff;
   color: #000;
   font-size: 16px;
-  font-family: "RobotoCondensed", sans-serif;
   border-radius: 0;
   outline: none; }
   select:hover {
@@ -156,24 +147,14 @@ textarea {
   border: 1px solid #dbdbdb;
   background: #fff;
   outline: none;
-  font-family: "RobotoCondensed", sans-serif;
   font-size: 16px;
   font-weight: 400; }
-
-label {
-  font-family: "RobotoCondensed", sans-serif; }
 
 b,
 strong {
   color: #000;
   font-weight: 400;
-  font-family: "RobotoCondensed", sans-serif;
   font-size: 20px; }
-
-dl,
-dt,
-dd {
-  font-family: "RobotoCondensed", sans-serif; }
 
 .position-relative {
   position: relative; }
@@ -291,7 +272,6 @@ body {
   border: none;
   color: #fff;
   border: 0 !important;
-  font-family: "RobotoCondensed", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   padding: 8.5px; }
@@ -309,7 +289,6 @@ body {
   border: none;
   color: #fff;
   border: 0 !important;
-  font-family: "RobotoCondensed", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   padding: 8.5px; }
@@ -1315,7 +1294,6 @@ nav {
 .custom-search-items > div {
   text-align: start;
   z-index: 10000;
-  font-family: "RobotoCondensed", sans-serif;
   cursor: pointer;
   position: relative;
   font-size: 16px;
@@ -4568,7 +4546,6 @@ nav {
       font-style: normal;
       font-weight: 400; }
   .question-card .input-field {
-    font-family: "RobotoCondensed", sans-serif;
     padding: 5px 10px;
     width: 100%;
     height: 132px;
