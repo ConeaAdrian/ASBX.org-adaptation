@@ -1,4 +1,5 @@
 .contact {
+  width: 100%;
   .hreader-contact {
     width: 100%;
     max-width: 580px;
@@ -29,8 +30,7 @@
     display: flex;
     margin-top: 30px;
     &__information {
-      width: 100%;
-      max-width: 272px;
+      flex: 1 1 290px;
       height: 200px;
       background: #ffffff;
       box-shadow: 0 4px 40px rgba(43, 89, 255, 0.08);
@@ -40,10 +40,6 @@
       align-items: center;
       text-align: center;
       justify-content: center;
-      @media (max-width: 475px) {
-        max-width: none;
-      }
-
       p {
         max-width: 260px;
         height: 60px;
