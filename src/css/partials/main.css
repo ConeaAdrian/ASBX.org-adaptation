@@ -1908,7 +1908,8 @@ nav {
         font-weight: 700;
         line-height: 24px; }
       .index-page .working-stages .works-step__box img {
-        aspect-ratio: 1/1; }
+        aspect-ratio: 1/1;
+        height: 220px; }
         @media (max-width: 640px) {
           .index-page .working-stages .works-step__box img {
             max-height: 300px;

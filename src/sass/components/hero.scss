@@ -503,6 +503,7 @@
         }
         img {
           aspect-ratio: 1/1;
+          height: 220px;
           @media (max-width: 640px) {
             max-height: 300px;
             object-fit: contain;
