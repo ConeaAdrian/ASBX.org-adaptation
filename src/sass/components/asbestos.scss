@@ -2,6 +2,13 @@
   .meso-img {
     max-height: 370px;
     border-radius: 4px;
+    @media (max-width: 660px) {
+      max-height: 300px;
+    }
+    @media (max-width: 475px) {
+      max-height: 220px;
+    }
+
   }
 
   .mesothelioma-facts {

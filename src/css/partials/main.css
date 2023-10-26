@@ -127,7 +127,7 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url("../../img/arrow-select.png") no-repeat right 2px center;
+  background: url("../../img/arrow-select.png") no-repeat right 6px center;
   background-size: 16px;
   border: 1px solid #dbdbdb;
   background-color: #fff;
@@ -3723,6 +3723,12 @@ nav {
 .mesothelioma .meso-img {
   max-height: 370px;
   border-radius: 4px; }
+  @media (max-width: 660px) {
+    .mesothelioma .meso-img {
+      max-height: 300px; } }
+  @media (max-width: 475px) {
+    .mesothelioma .meso-img {
+      max-height: 220px; } }
 
 .mesothelioma .mesothelioma-facts .red-text {
   font-size: 20px;
@@ -4114,7 +4120,8 @@ nav {
   font-size: 20px;
   gap: 8px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-left: 10px; }
   .mark-text li {
     font-size: 20px;
     list-style-type: disc;
@@ -4305,7 +4312,8 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fbfbfb;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .card-job-site a {
     color: #054AC3 !important;
     font-size: 20px;
