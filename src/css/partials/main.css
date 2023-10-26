@@ -2225,20 +2225,9 @@ nav {
   gap: 15px; }
 
 .claims-select {
-  max-width: 250px;
-  min-width: 220px;
-  width: 100%; }
-  @media (max-width: 940px) {
-    .claims-select {
-      max-width: 220px; } }
-  @media (max-width: 992px) {
-    .claims-select {
-      display: none; } }
-
-.claims-select-mobile {
   width: 250px; }
   @media (max-width: 992px) {
-    .claims-select-mobile {
+    .claims-select {
       position: fixed;
       top: 0;
       left: 0;
@@ -2249,7 +2238,7 @@ nav {
       z-index: 10000;
       overflow: scroll; } }
   @media (max-width: 992px) {
-    .claims-select-mobile .general-claims {
+    .claims-select .general-claims {
       max-width: none;
       padding: 10px;
       position: absolute;
@@ -2433,12 +2422,6 @@ nav {
         right: 0;
         bottom: 0;
         background: transparent; }
-
-@media (min-width: 992px) {
-  .claims-select {
-    position: sticky;
-    height: fit-content;
-    top: 150px; } }
 
 .content-table {
   margin-top: 30px;

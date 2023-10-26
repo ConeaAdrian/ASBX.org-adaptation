@@ -1,15 +1,15 @@
+// .claims-select {
+//   max-width: 250px;
+//   min-width: 220px;
+//   width: 100%;
+//   @media (max-width: 940px) {
+//     max-width: 220px;
+//   }
+//   @media (max-width: 992px) {
+//     display: none;
+//   }
+// }
 .claims-select {
-  max-width: 250px;
-  min-width: 220px;
-  width: 100%;
-  @media (max-width: 940px) {
-    max-width: 220px;
-  }
-  @media (max-width: 992px) {
-    display: none;
-  }
-}
-.claims-select-mobile {
   width: 250px;
   @media (max-width: 992px) {
     position: fixed;
@@ -251,10 +251,10 @@
   }
 }
 
-.claims-select {
-  @media (min-width: 992px) {
-    position: sticky;
-    height: fit-content;
-    top: 150px;
-  }
-}
+// .claims-select {
+//   @media (min-width: 992px) {
+//     position: sticky;
+//     height: fit-content;
+//     top: 150px;
+//   }
+// }
