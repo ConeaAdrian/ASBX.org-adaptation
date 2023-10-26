@@ -26,6 +26,9 @@
     @media (max-width: 992px) {
       max-width: none;
       padding: 10px;
+      position: absolute;
+      top: 0;
+      width: 100%;
     }
   }
 }
@@ -85,7 +88,7 @@
   align-items: center;
   justify-content: flex-start;
   position: sticky;
-  top: 100px;
+  top: 150px;
 
   .claims-selected {
     width: 100%;

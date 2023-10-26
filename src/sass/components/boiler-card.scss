@@ -7,7 +7,7 @@
   width: 100%;
 
   .card-boiler {
-    width: 48.35%;
+    flex: 1 1 320px;
     padding: 10px 10px 20px;
     gap: 10px;
     display: flex;
@@ -16,12 +16,6 @@
     background: #fbfbfb;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
     position: relative;
-    @media (max-width: 767px) {
-      padding: 10px;
-    }
-    @media (max-width: 667px) {
-      width: 100%;
-    }
     .text-data-select {
       font-weight: 700;
     }
