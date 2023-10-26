@@ -633,6 +633,15 @@ button {
         width: 24px;
         height: auto; } }
 
+.header-wrapper {
+  width: 100%;
+  background: #003366;
+  position: relative;
+  z-index: 1; }
+
+.index-page .header-wrapper {
+  background: transparent; }
+
 footer {
   display: flex;
   background: #003366;
