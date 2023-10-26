@@ -115,7 +115,7 @@
   .state-list {
     column-count: 3;
     margin-top: 20px;
-
+    padding-left: 20px;
     @media (max-width: 767px) {
       column-count: 2;
     }
