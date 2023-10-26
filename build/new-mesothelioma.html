@@ -84,9 +84,11 @@
       </div>
 
       <nav>
-       <div class="contact-us">
-        <a href="tel:(844) 966-1567"> <img class="contact-us__img" src="../../img/contact-us.svg" alt=""></a>
-       </div>
+        <div class="contact-us">
+          <a href="tel:(844) 966-1567">
+            <img class="contact-us__img" src="../../img/contact-us.svg" alt=""
+          /></a>
+        </div>
         <div class="nav-mobile">
           <a aria-label="nav-toggle" id="nav-toggle" href="#!"><span></span></a>
         </div>
@@ -150,36 +152,113 @@
   </div>
 </header>
 
-<div id="search-principal" class="search-principal">
-  <div class="container search-general">
-    <form class="custom-search-form" id="main-search-form">
-      <select class="select-type">
-        <option value="Please Select Search Type">
-          Please Select Your Job
-        </option>
-        <option value="">select 1</option>
-        <option value="">Select 2</option>
-        <option value="">Select 3</option>
-      </select>
-        <input type="hidden" id="search-state-data" name="state-abbr"></input>
-        <input type="hidden" id="search-city-data" name="city-name"></input>
-        <input type="hidden" id="search-zip-data" name="zip-code"></input>
-       <div class="type-method-select">
-        <div class="search-form-input-container">
-          <input class="search-form-input" id='search-form-input' type="text" placeholder="city, state or zip code"
-                 onkeyup="searchEngine(this)" onclick="openCustomSelect(this)"></input>
-          <div id="custom-search-input-items" class="custom-search-items" style="display: none">
-              <div data-city="" data-state="" id="current-location-item" onclick="selectItemInput(this)">Current Location</div>
+<div class="header-search">
+  <div class="container-search">
+    <div class="search-wrapper">
+      <form class="search-content" autocomplete="off">
+        <input type="hidden" id="search-state" name="state-abbr" value="" />
+        <input type="hidden" id="search-city" name="city-name" value="" />
+        <input type="hidden" id="search-zip-code" name="zip-code" value="" />
+        <input
+          type="hidden"
+          id="search-jobsite-name"
+          name="jobsite-name"
+          value=""
+        />
+        <input type="hidden" id="search-type" name="search-type" value="" />
+        <img
+          class="search-arrow"
+          src="{% static 'common/img/svg/Search-arrow.svg' %}"
+          alt="arrow icons"
+        />
+        <button type="button" class="close-search" onclick="closeSearch()">
+          CLOSE
+        </button>
+        <div class="search-type-wrapper">
+          <div class="search-selected-type" onclick="openTypeItem(event)">
+            <text style="color: #777777"> Select Type </text>
+          </div>
+          <div class="search-type-items">
+            <div
+              data-type="Location"
+              data-src="{% static 'core/img/search/Location.svg' %}"
+              class="select-type-item"
+              onclick="selectType(this,event)"
+            >
+              <img
+                src="{% static 'core/img/search/Location.svg' %}"
+                alt="location icon"
+                class="select-type-icon"
+              />
+              Location
+            </div>
+            <div
+              data-type="Company Name"
+              data-src="{% static 'core/img/search/Company.svg' %}"
+              class="select-type-item"
+              onclick="selectType(this,event)"
+            >
+              <img
+                src="{% static 'core/img/search/Company.svg' %}"
+                alt="Company icon"
+                class="select-type-icon"
+              />
+              Company Name
+            </div>
+            <div
+              data-type="Military Installation"
+              data-src="{% static 'core/img/search/Military-Installation.svg' %}"
+              class="select-type-item"
+              onclick="selectType(this,event)"
+            >
+              <img
+                src="{% static 'core/img/search/Military-Installation.svg' %}"
+                alt="Military icon"
+                class="select-type-icon"
+              />
+              Military Installation
+            </div>
+            <div
+              data-type="Ship Name"
+              data-src="{% static 'core/img/search/Navy.svg' %}"
+              class="select-type-item"
+              onclick="selectType(this,event)"
+            >
+              <img
+                src="{% static 'core/img/search/Navy.svg' %}"
+                alt="Navy icon"
+                class="select-type-icon"
+              />
+              Ship Name
+            </div>
           </div>
         </div>
-        <div class="search-form-button-container">
-            <button class="search-form-button" aria-label="Search" type="button"><img class="search-white" src="../../img/search-white.svg" alt=""></button>
+        <div class="search-input-wrapper">
+          <div class="search-input-container">
+            <input
+              aria-label="Search"
+              class="search-input"
+              name="input_data"
+              type="text"
+              placeholder="Enter City, State or zip code"
+              onkeyup="searchEngine(this)"
+              onclick="openItems(event); extendSearch(event)"
+            />
+            <div class="search-items"></div>
+          </div>
+          <button class="search-button" aria-label="Search" type="button">
+            <img
+              class="search-white"
+              src="../../img/search-white.svg"
+              alt=""
+            />
+          </button>
         </div>
-       </div>
-    </form>
+      </form>
+    </div>
+    <div class="search-overlay"></div>
   </div>
 </div>
-
 <!-- <div class="top-search-mobile">
   <div class="container">
     <div class="button-search-mobile">
