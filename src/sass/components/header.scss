@@ -10,14 +10,15 @@ $link-hover-color: $main-red;
 
 .header-section {
   width: 100%;
+  // background: $main-color;
   position: sticky;
   height: fit-content;
   top: 0;
   z-index: 100;
 
-  @media (max-width: 992px) {
-    background: #ffffff;
-  }
+  // @media (max-width: 992px) {
+  //   background: #ffffff;
+  // }
   @media (min-width: 992px) {
     .container {
       padding: 0 20px;
