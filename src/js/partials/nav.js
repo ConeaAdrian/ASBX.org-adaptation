@@ -1,42 +1,28 @@
 function setupMobileNavigation() {
     let navLinks = document.querySelectorAll("nav ul li a:not(:only-child)");
     let diseasesLinks = document.querySelectorAll("a.diseases");
-
-    let lastClickedLinkId = null;
-
     navLinks.forEach(function (link) {
         link.addEventListener("click", function (e) {
             e.stopPropagation();
-
             let dropdown = this.nextElementSibling;
-            if (dropdown) {
-                dropdown.style.display = dropdown.style.display !== "flex" ? "flex" : "none";
-
+            if (dropdown) { 
+                dropdown.style.display = 
+                    dropdown.style.display !== "flex" ? "flex" : "none";
                 let dropdowns = document.querySelectorAll(".nav-dropdown");
                 dropdowns.forEach(function (d) {
                     if (d !== dropdown) {
                         d.style.display = "none";
                     }
                 });
-
-                lastClickedLinkId = this.getAttribute("href");
             }
         });
     });
-
     diseasesLinks.forEach(function (link) {
         link.addEventListener("click", function (e) {
             e.preventDefault();
-
             let dropdown = this.nextElementSibling;
             if (dropdown) {
-                if (this.getAttribute("href") === lastClickedLinkId) {
-                    window.location.href = lastClickedLinkId;
-                } else {
-                    dropdown.style.display = "flex";
-                    lastClickedLinkId = this.getAttribute("href");
-                }
-
+                dropdown.style.display = "flex";
                 let dropdowns = document.querySelectorAll(".nav-dropdown");
                 dropdowns.forEach(function (d) {
                     if (d !== dropdown) {
@@ -46,14 +32,12 @@ function setupMobileNavigation() {
             }
         });
     });
-
     document.querySelector("html").addEventListener("click", function () {
         let dropdowns = document.querySelectorAll(".nav-dropdown");
         dropdowns.forEach(function (d) {
             d.style.display = "none";
         });
     });
-
     let navToggle = document.querySelector("#nav-toggle");
     navToggle.addEventListener("click", function () {
         let nav = document.querySelector("nav ul");
@@ -66,3 +50,14 @@ function setupMobileNavigation() {
         }
     });
 }
+function setupDesktopNavigation() {
+}
+function checkWindowSize() {
+    if (window.innerWidth <= 993) {
+        setupMobileNavigation();
+    } else {
+        setupDesktopNavigation();
+    }
+}
+document.addEventListener("DOMContentLoaded", checkWindowSize);
+window.addEventListener("resize", checkWindowSize);

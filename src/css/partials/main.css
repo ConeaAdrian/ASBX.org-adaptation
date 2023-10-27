@@ -2067,6 +2067,12 @@ nav {
       text-align: center;
       font-size: 26px; } }
 
+.body-calculator .brand {
+  display: block !important; }
+
+.body-calculator .mobile-brand {
+  display: none !important; }
+
 .city-content .text-exampe {
   margin-top: 10px; }
   .city-content .text-exampe b {
