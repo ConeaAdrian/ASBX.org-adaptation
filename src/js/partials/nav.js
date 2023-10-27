@@ -2,14 +2,15 @@ function setupMobileNavigation() {
     let navLinks = document.querySelectorAll("nav ul li a:not(:only-child)");
     let diseasesLinks = document.querySelectorAll("a.diseases");
 
+    let lastClickedLinkId = null;
+
     navLinks.forEach(function (link) {
         link.addEventListener("click", function (e) {
             e.stopPropagation();
 
             let dropdown = this.nextElementSibling;
-            if (dropdown) { 
-                dropdown.style.display = 
-                    dropdown.style.display !== "flex" ? "flex" : "none";
+            if (dropdown) {
+                dropdown.style.display = dropdown.style.display !== "flex" ? "flex" : "none";
 
                 let dropdowns = document.querySelectorAll(".nav-dropdown");
                 dropdowns.forEach(function (d) {
@@ -17,6 +18,8 @@ function setupMobileNavigation() {
                         d.style.display = "none";
                     }
                 });
+
+                lastClickedLinkId = this.getAttribute("href");
             }
         });
     });
@@ -27,7 +30,12 @@ function setupMobileNavigation() {
 
             let dropdown = this.nextElementSibling;
             if (dropdown) {
-                dropdown.style.display = "flex";
+                if (this.getAttribute("href") === lastClickedLinkId) {
+                    window.location.href = lastClickedLinkId;
+                } else {
+                    dropdown.style.display = "flex";
+                    lastClickedLinkId = this.getAttribute("href");
+                }
 
                 let dropdowns = document.querySelectorAll(".nav-dropdown");
                 dropdowns.forEach(function (d) {
@@ -58,18 +66,3 @@ function setupMobileNavigation() {
         }
     });
 }
-
-function setupDesktopNavigation() {
-
-}
-
-function checkWindowSize() {
-    if (window.innerWidth <= 993) {
-        setupMobileNavigation();
-    } else {
-        setupDesktopNavigation();
-    }
-}
-
-document.addEventListener("DOMContentLoaded", checkWindowSize);
-window.addEventListener("resize", checkWindowSize);

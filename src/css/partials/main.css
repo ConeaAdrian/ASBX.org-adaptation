@@ -1838,7 +1838,7 @@ nav {
     width: 100%;
     max-width: 758px;
     margin: 0 auto;
-    background: rgba(63, 107, 149, 0.1) !important;
+    background: #DDE5EB !important;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1) !important; }
   .index-page .index-search__content {
     width: 100%;
@@ -3113,8 +3113,11 @@ nav {
         max-width: none; } }
     .job-site .add-to-claims__text h2 {
       padding-top: 0; }
-  .job-site .add-to-claims .card-job-site p {
-    color: #000 !important; }
+  .job-site .add-to-claims .card-job-site {
+    flex: 1 1 250px;
+    width: 100%; }
+    .job-site .add-to-claims .card-job-site p {
+      color: #000 !important; }
   .job-site .add-to-claims .general-blue-text {
     padding: 10px 0 0 0;
     font-weight: 400 !important; }
@@ -3728,7 +3731,7 @@ nav {
       max-height: 300px; } }
   @media (max-width: 475px) {
     .mesothelioma .meso-img {
-      max-height: 220px; } }
+      max-height: 200px; } }
 
 .mesothelioma .mesothelioma-facts .red-text {
   font-size: 20px;
@@ -4312,8 +4315,7 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fbfbfb;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-  position: relative;
-  width: 100%; }
+  position: relative; }
   .card-job-site a {
     color: #054AC3 !important;
     font-size: 20px;
