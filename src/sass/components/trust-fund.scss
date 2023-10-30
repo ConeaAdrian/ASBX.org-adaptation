@@ -43,14 +43,13 @@
 .mark-text {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 10px;
   font-size: 20px;
   gap: 8px;
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
 
   li {
+    margin-left: 20px;
     font-size: 20px;
     list-style-type: disc;
     line-height: 28px;

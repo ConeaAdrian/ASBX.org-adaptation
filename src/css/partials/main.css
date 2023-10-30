@@ -2793,7 +2793,7 @@ nav {
         flex: 0 0 calc(50% - 20px);
         height: inherit; } }
     .equipment .equipment-box .mark-text {
-      margin: 0 10px; }
+      margin: 0; }
       .equipment .equipment-box .mark-text li {
         font-size: 18px;
         line-height: 24px; }
@@ -4136,13 +4136,12 @@ nav {
 .mark-text {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 10px;
   font-size: 20px;
   gap: 8px;
   display: flex;
-  flex-direction: column;
-  padding-left: 10px; }
+  flex-direction: column; }
   .mark-text li {
+    margin-left: 20px;
     font-size: 20px;
     list-style-type: disc;
     line-height: 28px;
