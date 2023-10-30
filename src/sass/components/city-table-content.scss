@@ -93,10 +93,8 @@
   gap: 20px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
   @media (max-width: 620px) {
     max-width: none;
-    margin-bottom: 0;
   }
   .block-data {
     display: grid;
@@ -137,12 +135,8 @@
 }
 .intermediate-bar {
   border: 0.5px solid #081f35;
-  margin: 10px 0;
+  margin: 30px 0;
   opacity: 15%;
-  margin-bottom: 30px;
-  @media (max-width: 620px) {
-    margin: 30px 0;
-  }
 }
 .static-page-intermediate-bar {
   @media (max-width: 767px) {

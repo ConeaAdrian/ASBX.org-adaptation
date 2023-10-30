@@ -5,6 +5,11 @@
   margin-bottom: 20px;
   margin-top: 20px;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: 660px) {
+    grid-template-columns: 1fr;
+  }
 
   .card-boiler {
     flex: 1 1 320px;
