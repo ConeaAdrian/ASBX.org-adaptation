@@ -2595,7 +2595,7 @@ nav {
 .flag-img {
   width: 320px;
   border-radius: 4px;
-  height: 120px; }
+  height: 128px; }
   @media (max-width: 620px) {
     .flag-img {
       height: 100%;
