@@ -26,6 +26,11 @@
         max-width: none;
       }
     }
+    .card-job-site {
+      grid-template-columns: 1fr;
+      display: grid;
+      flex: 1 1 260px;
+    }
   }
   .red-text {
     margin-top: 18px;
