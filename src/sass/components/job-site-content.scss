@@ -109,16 +109,20 @@
 
 .search-page {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 70px auto;
+  margin: 170px auto;
   gap: 20px;
   h1 {
     max-width: 480px;
     margin: 0 auto;
+  }
+  .search-wrapper {
+    background-color: #ECF0F4 !important;
+    padding: 30px;
   }
 }
 .location-search-page {

@@ -87,7 +87,7 @@
         width: 100%;
         padding-top: 70px;
         position: inherit;
-        z-index: 100;
+        z-index: 1;
         h1,
         p,
         span {
@@ -145,6 +145,7 @@
       width: 100%;
       position: unset;
       padding-top: 125px;
+      z-index: 1;
       @media (max-width: 992px) {
         flex-direction: column;
         padding: 0;
