@@ -217,6 +217,11 @@ strong {
   @media (max-width: 475px) {
     text-align: center;
   }
+  b {
+    font-weight: 700;
+    color: #324a74;
+    font-size: 18px;
+  }
 }
 .general-blue-text {
   color: $main-color;
