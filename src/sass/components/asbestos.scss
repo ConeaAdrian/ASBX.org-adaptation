@@ -8,7 +8,6 @@
     @media (max-width: 475px) {
       max-height: 200px;
     }
-
   }
 
   .mesothelioma-facts {
@@ -100,22 +99,43 @@
       }
     }
   }
-  .content-summarizer {
-    display: flex;
-    gap: 15px;
-    width: 100%;
-    align-items: flex-start;
-    @media (max-width: 767px) {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
   @media (max-width: 767px) {
     .required-asbx {
       margin-bottom: 0;
     }
   }
-
+}
+.general-table-meso {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 30px;
+  @media (max-width: 767px) {
+   flex-direction: column;
+  }
+}
+.content-summarizer {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__mark-content {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    li {
+      font-size: 16px;
+      list-style-type: disc;
+      color: #054ac3;
+    }
+  }
 }
 
 .occupational {

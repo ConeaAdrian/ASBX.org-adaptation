@@ -1645,7 +1645,7 @@ nav {
     width: 100%;
     max-width: 758px;
     margin: 0 auto;
-    background: #DDE5EB !important;
+    background: #dde5eb !important;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1) !important; }
   .index-page .index-search__content {
     width: 100%;
@@ -1718,12 +1718,13 @@ nav {
         .index-page .choose-asbx__content .information {
           max-width: none; } }
       .index-page .choose-asbx__content .information .list-nomerotation {
-        margin-top: 0; }
+        margin-left: 30px; }
         .index-page .choose-asbx__content .information .list-nomerotation li {
           color: #003366;
           font-size: 20px;
           font-weight: 400;
-          line-height: 26px; }
+          line-height: 28px;
+          list-style-type: disc; }
       .index-page .choose-asbx__content .information .docu-sing {
         display: flex;
         gap: 20px;
@@ -2372,22 +2373,6 @@ nav {
     opacity: 15%;
     margin: 20px 0;
     width: 100%; } }
-
-.content-summarizer__notice {
-  display: flex;
-  flex-direction: column;
-  gap: 5px; }
-  .content-summarizer__notice div {
-    display: flex;
-    align-items: baseline; }
-    .content-summarizer__notice div a {
-      font-weight: 400;
-      line-height: 30px; }
-    .content-summarizer__notice div mark {
-      color: #054ac3;
-      font-size: 18px;
-      margin-right: 5px;
-      background-color: transparent; }
 
 .flag-img {
   width: 320px;
@@ -3615,19 +3600,39 @@ nav {
   .mesothelioma .content-table img {
     max-width: none; } }
 
-.mesothelioma .content-summarizer {
-  display: flex;
-  gap: 15px;
-  width: 100%;
-  align-items: flex-start; }
-  @media (max-width: 767px) {
-    .mesothelioma .content-summarizer {
-      flex-direction: column;
-      gap: 10px; } }
-
 @media (max-width: 767px) {
   .mesothelioma .required-asbx {
     margin-bottom: 0; } }
+
+.general-table-meso {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 30px; }
+  @media (max-width: 767px) {
+    .general-table-meso {
+      flex-direction: column; } }
+
+.content-summarizer {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column; }
+  @media (max-width: 767px) {
+    .content-summarizer {
+      flex-direction: column;
+      gap: 10px; } }
+  .content-summarizer__mark-content {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; }
+    .content-summarizer__mark-content li {
+      font-size: 16px;
+      list-style-type: disc;
+      color: #054ac3; }
 
 .occupational .content-summarizer {
   margin-top: 30px;
@@ -3939,7 +3944,6 @@ nav {
   display: flex;
   flex-direction: column; }
   .mark-text li {
-    margin-left: 20px;
     font-size: 20px;
     list-style-type: disc;
     line-height: 28px;
@@ -4502,12 +4506,3 @@ nav {
 
 .asbestos-trust .red-text {
   margin-bottom: 10px; }
-
-.list-nomerotation {
-  margin-left: 10px;
-  margin-top: 10px; }
-  .list-nomerotation li {
-    list-style-type: disc;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 28px; }

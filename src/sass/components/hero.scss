@@ -547,7 +547,7 @@
       width: 100%;
       max-width: 758px;
       margin: 0 auto;
-      background: #DDE5EB !important;
+      background: #dde5eb !important;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1) !important;
     }
     &__content {
@@ -631,12 +631,13 @@
           max-width: none;
         }
         .list-nomerotation {
-          margin-top: 0;
+          margin-left: 30px;
           li {
             color: $main-color;
             font-size: 20px;
             font-weight: 400;
-            line-height: 26px;
+            line-height: 28px;
+            list-style-type: disc;
           }
         }
         .docu-sing {
