@@ -3,6 +3,10 @@
 *::after {
   box-sizing: border-box;
   font-family: "RobotoCondensed", sans-serif;
+  &::placeholder {
+    color: #3d3d3d;
+    outline: none;
+  }
 }
 img {
   width: 100%;
@@ -21,7 +25,6 @@ ul {
   margin-top: 0;
   padding-left: 0;
   display: list-item;
-
   li {
     gap: 4px;
     display: list-item;
@@ -131,7 +134,6 @@ select:after {
 text {
   color: #333333;
 }
-
 select {
   width: 100%;
   padding: 5px;
