@@ -3046,7 +3046,8 @@ nav {
   .contact .custom-section {
     display: flex;
     height: auto;
-    margin-top: 7rem; }
+    margin-top: 7rem;
+    margin-bottom: 3rem; }
     @media (max-width: 767px) {
       .contact .custom-section {
         flex-direction: column; } }
