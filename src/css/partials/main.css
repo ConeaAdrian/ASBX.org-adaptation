@@ -2590,9 +2590,6 @@ nav {
 .notation {
   max-width: none; }
 
-.equipment-box ul li {
-  list-style-type: disc; }
-
 .navy-ships li {
   color: #054ac3; }
 
@@ -3875,13 +3872,7 @@ nav {
     display: flex; }
 
 .equipment-ship {
-  width: 100%;
-  max-width: 439px;
-  margin-top: 10px;
-  margin-left: 10px; }
-  .equipment-ship .mark-text {
-    gap: 5px;
-    margin-bottom: 20px; }
+  width: 100%; }
 
 .button-container {
   display: flex;
@@ -3944,6 +3935,7 @@ nav {
   display: flex;
   flex-direction: column; }
   .mark-text li {
+    margin-left: 20px;
     font-size: 20px;
     list-style-type: disc;
     line-height: 28px;
