@@ -2235,7 +2235,8 @@ nav {
   @media (max-width: 620px) {
     .content-table {
       flex-direction: column;
-      gap: 40px; } }
+      gap: 40px;
+      margin-bottom: 20px; } }
   .content-table .company-logo {
     width: 100%;
     max-width: 320px;
@@ -2336,7 +2337,6 @@ nav {
 .general-information-table {
   display: flex;
   gap: 30px;
-  max-width: fit-content;
   width: 100%;
   align-items: center; }
   @media (max-width: 620px) {
@@ -2502,12 +2502,12 @@ nav {
   margin-top: 5px; }
 
 .content-ship .ship-img {
-  padding: 15px 0;
+  padding: 20px 0;
   max-height: 320px;
   aspect-ratio: 2/1; }
   @media (max-width: 660px) {
     .content-ship .ship-img {
-      max-height: 145px; } }
+      max-height: 160px; } }
 
 .content-ship .content-box-ship {
   display: flex;
@@ -2734,7 +2734,7 @@ nav {
   height: auto;
   width: 100%;
   max-width: 275px;
-  padding: 20px 0; }
+  padding: 40px 0; }
   @media (max-width: 475px) {
     .our-sponsor .sponsor-organisation {
       display: flex;
@@ -2845,8 +2845,7 @@ nav {
       width: 100%; }
 
 .job-site .responsible-company {
-  margin: 10px 0;
-  padding-left: 20px; }
+  margin: 10px 0; }
   .job-site .responsible-company li {
     color: #054ac3; }
 
