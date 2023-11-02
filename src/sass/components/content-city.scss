@@ -27,7 +27,7 @@
       font-weight: 400 !important;
     }
     h3 {
-      margin: 0;
+      margin: 0 !important;
     }
     p {
       font-size: 20px;
@@ -132,18 +132,6 @@
       font-size: 18px;
       font-weight: 300;
     }
-  }
-}
-.search-result {
-  margin-top: 20px;
-  margin-bottom: 28px;
-  p {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-  }
-  .mark-text {
-    padding-left: 25px;
   }
 }
 .search-alphabet {

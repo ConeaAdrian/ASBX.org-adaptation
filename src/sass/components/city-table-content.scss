@@ -16,6 +16,9 @@
     padding: 10px;
     align-items: center;
     display: flex;
+    @media (max-width: 620px) {
+      margin: 20px 0;
+    }
     @media (max-width: 475px) {
       max-width: none;
       height: auto;
@@ -131,6 +134,7 @@
     display: flex;
     flex-direction: column;
     align-items: inherit;
+    gap: 40px;
   }
 }
 .intermediate-bar {
@@ -170,10 +174,11 @@
 .flag-img {
   width: 320px;
   border-radius: 4px;
-  height: 128px;
+  height: 125px;
   @media (max-width: 620px) {
     height: 100%;
-    width: 100%;
+    width: 300px;
+    margin: 0 auto;
     flex-direction: column;
   }
 }
