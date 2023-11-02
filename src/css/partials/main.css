@@ -1693,59 +1693,53 @@ nav {
         .index-page .index-search__content .select-type {
           height: 40px; } }
 
-.index-page .choose-asbx {
-  background: #fafafa;
-  margin-top: 60px; }
-  @media (max-width: 475px) {
-    .index-page .choose-asbx {
-      margin-top: 0; } }
-  .index-page .choose-asbx__content {
-    margin-top: 60px;
+.index-page .choose-asbx__content {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between; }
+  @media (max-width: 767px) {
+    .index-page .choose-asbx__content {
+      flex-direction: column;
+      margin-top: 40px; } }
+  .index-page .choose-asbx__content .information {
+    max-width: 550px;
+    width: 100%;
+    gap: 15px;
     display: flex;
-    gap: 20px;
-    justify-content: space-between; }
+    flex-direction: column; }
     @media (max-width: 767px) {
-      .index-page .choose-asbx__content {
-        flex-direction: column;
-        margin-top: 40px; } }
-    .index-page .choose-asbx__content .information {
-      max-width: 550px;
-      width: 100%;
-      gap: 15px;
+      .index-page .choose-asbx__content .information {
+        max-width: none; } }
+    .index-page .choose-asbx__content .information .list-nomerotation {
+      margin-left: 30px; }
+      .index-page .choose-asbx__content .information .list-nomerotation li {
+        color: #003366;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        list-style-type: disc; }
+    .index-page .choose-asbx__content .information .docu-sing {
       display: flex;
-      flex-direction: column; }
-      @media (max-width: 767px) {
-        .index-page .choose-asbx__content .information {
-          max-width: none; } }
-      .index-page .choose-asbx__content .information .list-nomerotation {
-        margin-left: 30px; }
-        .index-page .choose-asbx__content .information .list-nomerotation li {
-          color: #003366;
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 28px;
-          list-style-type: disc; }
-      .index-page .choose-asbx__content .information .docu-sing {
-        display: flex;
-        gap: 20px;
-        border-bottom: 1px solid #c7c7c7;
-        padding-bottom: 10px;
-        max-width: 470px;
-        width: 100%; }
-        @media (max-width: 495px) {
-          .index-page .choose-asbx__content .information .docu-sing {
-            flex-direction: column; } }
-        .index-page .choose-asbx__content .information .docu-sing .docu-sing-img {
-          width: 113px;
-          height: 29px; }
-        .index-page .choose-asbx__content .information .docu-sing p {
-          font-size: 20px;
-          font-weight: 700;
-          line-height: 26px; }
-      .index-page .choose-asbx__content .information .docu-sing-text {
-        max-width: 470px;
-        width: 100%;
-        text-align: center; }
+      gap: 20px;
+      border-bottom: 1px solid #c7c7c7;
+      padding-bottom: 10px;
+      max-width: 470px;
+      width: 100%; }
+      @media (max-width: 495px) {
+        .index-page .choose-asbx__content .information .docu-sing {
+          flex-direction: column; } }
+      .index-page .choose-asbx__content .information .docu-sing .docu-sing-img {
+        width: 113px;
+        height: 29px; }
+      .index-page .choose-asbx__content .information .docu-sing p {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px; }
+    .index-page .choose-asbx__content .information .docu-sing-text {
+      max-width: 470px;
+      width: 100%;
+      text-align: center; }
 
 .index-page .state-connection p {
   font-size: 26px;
@@ -1785,51 +1779,49 @@ nav {
     .index-page .state-connection .state-list-index li a {
       font-size: 18px; } }
 
-.index-page .veterans {
-  background: #fafafa; }
-  .index-page .veterans .veterans-content {
+.index-page .veterans .veterans-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between; }
+  @media (max-width: 767px) {
+    .index-page .veterans .veterans-content {
+      flex-direction: column; } }
+  .index-page .veterans .veterans-content .military-forces {
+    width: 100%;
+    max-width: 540px;
     display: flex;
-    gap: 20px;
-    justify-content: space-between; }
+    flex-direction: column;
+    gap: 20px; }
+    .index-page .veterans .veterans-content .military-forces img {
+      width: 101px;
+      height: 101px; }
     @media (max-width: 767px) {
-      .index-page .veterans .veterans-content {
-        flex-direction: column; } }
-    .index-page .veterans .veterans-content .military-forces {
-      width: 100%;
-      max-width: 540px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px; }
-      .index-page .veterans .veterans-content .military-forces img {
-        width: 101px;
-        height: 101px; }
+      .index-page .veterans .veterans-content .military-forces {
+        max-width: none; } }
+    .index-page .veterans .veterans-content .military-forces p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px; }
+    .index-page .veterans .veterans-content .military-forces b {
+      border-bottom: 1px solid #c7c7c7;
+      padding-bottom: 5px;
+      max-width: 380px;
+      width: 100%; }
       @media (max-width: 767px) {
-        .index-page .veterans .veterans-content .military-forces {
+        .index-page .veterans .veterans-content .military-forces b {
+          text-align: center;
+          margin: 0 auto; } }
+    .index-page .veterans .veterans-content .military-forces__img {
+      max-width: 390px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px; }
+      @media (max-width: 767px) {
+        .index-page .veterans .veterans-content .military-forces__img {
           max-width: none; } }
-      .index-page .veterans .veterans-content .military-forces p {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 26px; }
-      .index-page .veterans .veterans-content .military-forces b {
-        border-bottom: 1px solid #c7c7c7;
-        padding-bottom: 5px;
-        max-width: 380px;
-        width: 100%; }
-        @media (max-width: 767px) {
-          .index-page .veterans .veterans-content .military-forces b {
-            text-align: center;
-            margin: 0 auto; } }
-      .index-page .veterans .veterans-content .military-forces__img {
-        max-width: 390px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px; }
-        @media (max-width: 767px) {
-          .index-page .veterans .veterans-content .military-forces__img {
-            max-width: none; } }
 
 .index-page .lawyer-specialist__content {
   display: flex;
@@ -2242,7 +2234,8 @@ nav {
   gap: 20px; }
   @media (max-width: 620px) {
     .content-table {
-      flex-direction: column; } }
+      flex-direction: column;
+      gap: 40px; } }
   .content-table .company-logo {
     width: 100%;
     max-width: 320px;
@@ -2254,9 +2247,6 @@ nav {
     padding: 10px;
     align-items: center;
     display: flex; }
-    @media (max-width: 620px) {
-      .content-table .company-logo {
-        margin: 20px 0; } }
     @media (max-width: 475px) {
       .content-table .company-logo {
         max-width: none;
@@ -3601,7 +3591,7 @@ nav {
   gap: 15px;
   width: 100%;
   align-items: flex-start;
-  margin-top: 30px; }
+  margin-top: 40px; }
   @media (max-width: 767px) {
     .general-table-meso {
       flex-direction: column; } }

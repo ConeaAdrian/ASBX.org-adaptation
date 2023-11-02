@@ -606,11 +606,7 @@
     }
   }
   .choose-asbx {
-    background: #fafafa;
-    margin-top: 60px;
-    @media (max-width: 475px) {
-      margin-top: 0;
-    }
+
     &__content {
       margin-top: 60px;
       display: flex;
@@ -715,7 +711,6 @@
     }
   }
   .veterans {
-    background: #fafafa;
     .veterans-content {
       display: flex;
       gap: 20px;
