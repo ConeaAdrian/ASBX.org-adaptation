@@ -1,57 +1,22 @@
-function updateVisibility() {
-  const isSmallScreen = window.innerWidth <= 992;
-}
 
-function handleSwitchClick() {
-  console.log("Butonul a fost apăsat!");
 
-  const switchButton = document.getElementById('switch');
+function handleSwitchClick(e) {
   const legalText = document.querySelector('.legal-text');
   const yourOwnText = document.querySelector('.your-own-text');
   const legalRepresentationDiv = document.querySelector('.legal-representation');
   const yourOwnDiv = document.querySelector('.your-own');
-
-  const isChecked = switchButton.checked;
-  const style = isChecked ? '' : '#181059';
-  const fontSize = window.innerWidth <= 475 ? '16px' : '18px';
-
-  legalText.style.color = style;
-  legalText.style.fontSize = fontSize;
-  legalText.style.fontWeight = isChecked ? '' : '500';
-  yourOwnText.style.color = isChecked ? '#181059' : '';
-  yourOwnText.style.fontSize = fontSize;
-  yourOwnText.style.fontWeight = isChecked ? '500' : '';
-  legalRepresentationDiv.style.display = isChecked ? 'none' : 'block';
-  yourOwnDiv.style.display = isChecked ? 'block' : 'none';
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  updateVisibility();
-  window.addEventListener('resize', updateVisibility);
-  
-  const legalRepresentationDiv = document.querySelector('.legal-representation');
-  const yourOwnDiv = document.querySelector('.your-own');
-
-  legalRepresentationDiv.style.display = 'block';
-  yourOwnDiv.style.display = 'none';
-});
-
-
-
-
-
-function startClaims() {
-  document.getElementById('claimForm').style.display = 'block';
-
-}
-function createOverlay() {
-  const overlay = document.createElement('div');
-  overlay.classList.add('overlay');
-  
-  overlay.addEventListener('click', function() {
-    document.getElementById('claimForm').style.display = 'none';
-    document.body.removeChild(overlay);
-  });
-  
-  return overlay;
+  if (e.checked){
+      legalText.style.color="#000"
+      legalText.style.fontWeight="300"
+      yourOwnText.style.fontWeight="500"
+      yourOwnText.style.color="#003366"
+      legalRepresentationDiv.style.display="none"
+      yourOwnDiv.style.display="block"
+  }
+  else{
+      legalText.removeAttribute("style")
+      yourOwnText.removeAttribute("style")
+      legalRepresentationDiv.removeAttribute("style")
+      yourOwnDiv.removeAttribute("style")
+  }
 }
