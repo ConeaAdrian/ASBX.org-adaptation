@@ -311,12 +311,7 @@
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
     padding: 43px;
-    margin-top: 33px;
-    margin-bottom: 40px;
-
-    @media (max-width: 992px) {
-      padding: 25px 10px;
-    }
+    margin: 30px 0;
 
     &__company {
       flex-direction: column;
@@ -348,8 +343,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    gap: 20px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 799px) {
       flex-direction: column;
     }
     .question-lawyer {
@@ -406,10 +402,7 @@
     border: 1px solid #f1f1f1;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-    padding: 43px;
-    @media (max-width: 992px) {
-      padding: 15px;
-    }
+    padding: 25px 10px;
     @media (max-width: 475px) {
       padding: 5px;
     }
@@ -495,7 +488,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  @media (max-width: 475px) {
+  @media (max-width: 799px) {
     max-width: none;
   }
   p {
@@ -628,11 +621,6 @@
 .close-popup-button:before {
   transform: rotate(-45deg);
 }
-
-
-
-
-
 
 
 .result-page #switch{

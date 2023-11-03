@@ -3201,11 +3201,7 @@ nav {
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
     padding: 43px;
-    margin-top: 33px;
-    margin-bottom: 40px; }
-    @media (max-width: 992px) {
-      .result-page .lawyer-representation {
-        padding: 25px 10px; } }
+    margin: 30px 0; }
     .result-page .lawyer-representation__company {
       flex-direction: column;
       display: flex; }
@@ -3228,8 +3224,9 @@ nav {
   .result-page .content-request {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px; }
-    @media (max-width: 992px) {
+    margin-top: 40px;
+    gap: 20px; }
+    @media (max-width: 799px) {
       .result-page .content-request {
         flex-direction: column; } }
     @media (max-width: 992px) {
@@ -3274,10 +3271,7 @@ nav {
     border: 1px solid #f1f1f1;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-    padding: 43px; }
-    @media (max-width: 992px) {
-      .result-page .result-data {
-        padding: 15px; } }
+    padding: 25px 10px; }
     @media (max-width: 475px) {
       .result-page .result-data {
         padding: 5px; } }
@@ -3353,7 +3347,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 15px; }
-  @media (max-width: 475px) {
+  @media (max-width: 799px) {
     .callback-form {
       max-width: none; } }
   .callback-form p {
