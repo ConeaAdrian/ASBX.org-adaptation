@@ -149,12 +149,15 @@ function handleLinkClick(linkElementParent, event) {
     }
 }
 
-document.querySelector("html").addEventListener("click", function () {
-    const dropdowns = document.querySelectorAll(".nav-dropdown");
-    dropdowns.forEach(function (d) {
-        d.style.display = "none";
+if (window.innerWidth <= 992) {
+    document.querySelector("html").addEventListener("click", function () {
+        const dropdowns = document.querySelectorAll(".nav-dropdown");
+        dropdowns.forEach(function (d) {
+            d.style.display = "none";
+        });
     });
-});
+}
+
 
 const navToggle = document.querySelector("#nav-toggle");
 navToggle.addEventListener("click", function () {
