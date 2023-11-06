@@ -135,16 +135,14 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url("../../img/arrow-select.png") no-repeat right 6px center;
+  background: url("../../img/arrow-select.png") no-repeat right 10px center;
   background-size: 16px;
-  border: 1px solid #dbdbdb;
+  border: 1px solid #BABABA;
   background-color: #fff;
   color: #000;
   font-size: 16px;
   border-radius: 0;
   outline: none; }
-  select:hover {
-    border: 1px solid #dbdbdb; }
 
 ol {
   padding-left: 20px;
@@ -152,7 +150,7 @@ ol {
 
 input,
 textarea {
-  border: 1px solid #dbdbdb;
+  border: 1px solid #BABABA;
   background: #fff;
   outline: none;
   font-size: 16px;
