@@ -211,7 +211,7 @@ strong {
   .data-info b {
     font-weight: 700;
     color: #324a74;
-    font-size: 18px; }
+    font-size: 22px; }
 
 .general-blue-text {
   color: #003366;
@@ -2583,7 +2583,7 @@ nav {
 .banner-calculator {
   width: 100%;
   height: fit-content;
-  margin: 70px 0;
+  margin: 70px 0 40px;
   position: relative; }
   .banner-calculator__general-text {
     color: #fff;
@@ -2740,9 +2740,6 @@ nav {
 
 .our-sponsor .data-info {
   margin: 0; }
-  .our-sponsor .data-info b {
-    color: #324a74;
-    font-weight: 700; }
 
 .contact {
   width: 100%; }
@@ -4224,11 +4221,9 @@ nav {
   background: #fbfbfb;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
   .question-card select {
-    border: 1px solid #dbdbdb;
     height: 44px;
     padding-left: 10px; }
   .question-card input {
-    border: 1px solid #dbdbdb;
     height: 44px;
     padding-left: 10px; }
     .question-card input::placeholder {
