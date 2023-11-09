@@ -1307,7 +1307,7 @@ nav {
         align-items: center; } }
     .index-page .working-stages .works-step__box {
       width: 100%;
-      max-width: 230px;
+      max-width: 255px;
       height: auto;
       border: 1px solid rgba(0, 0, 0, 0.1);
       gap: 30px;
@@ -1339,8 +1339,7 @@ nav {
         padding: 20px;
         font-weight: 300;
         line-height: 24px;
-        padding-top: 0;
-        height: 160px; }
+        padding-top: 0; }
         @media (max-width: 767px) {
           .index-page .working-stages .works-step__box p {
             height: 200px; } }
@@ -1487,6 +1486,9 @@ nav {
     .index-page .red-text-hero {
       text-align: center;
       font-size: 26px; } }
+
+.index-page .container {
+  max-width: 1115px; }
 
 .body-calculator .brand {
   display: block !important; }
