@@ -173,7 +173,7 @@
 
       &__box {
         width: 100%;
-        max-width: 230px;
+        max-width: 255px;
         height: auto;
         border: 1px solid rgba(0, 0, 0, 0.1);
         gap: 30px;
@@ -209,7 +209,6 @@
           font-weight: 300;
           line-height: 24px;
           padding-top: 0;
-          height: 160px;
           @media (max-width: 767px) {
             height: 200px;
           }
