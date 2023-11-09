@@ -1268,7 +1268,8 @@ nav {
       color: #fff;
       font-size: 20px;
       line-height: normal;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 700; }
     .index-page .section-meso .active-section p {
       color: #fff;
       font-size: 20px;
@@ -1460,7 +1461,8 @@ nav {
       border-bottom: 1px solid #c7c7c7;
       padding-bottom: 5px;
       max-width: 380px;
-      width: 100%; }
+      width: 100%;
+      font-weight: 700; }
       @media (max-width: 767px) {
         .index-page .veterans .veterans-content .military-forces b {
           text-align: center;
