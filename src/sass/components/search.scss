@@ -100,12 +100,19 @@
     background: white;
   }
 }
-.index-page .header-wrapper{
-  background: transparent;
-}
 
 .result-search {
  .mark-text {
   color: #054AC3;
  }
+}
+.index-search {
+  width: 100%;
+  max-width: 758px;
+  margin: 0 auto;
+  background: #DDE5EB !important;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1) !important;
+  .search-wraper {
+    padding: 30px 20px;
+  }
 }
