@@ -653,6 +653,8 @@ button {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1) !important; }
   .index-search .search-wraper {
     padding: 30px 20px; }
+  .index-search .search-principal {
+    background: #DDE5EB; }
 
 footer {
   display: flex;
@@ -1217,7 +1219,7 @@ nav {
     font-style: normal;
     font-weight: 400;
     max-width: 600px;
-    text-transform: capitalize;
+    text-transform: inherit;
     margin: 0 auto; }
   .index-page .principal-content .search-principal {
     margin-top: 25px; }
@@ -1275,7 +1277,6 @@ nav {
       text-transform: uppercase; }
 
 .index-page .working-stages {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center; }
