@@ -2959,15 +2959,10 @@ nav {
   border: 1px solid #dbdbdb;
   background: rgba(240, 245, 255, 0.3);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
-  min-width: 360px;
-  width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px; }
-  @media (max-width: 799px) {
-    .callback-form {
-      max-width: none; } }
   .callback-form p {
     font-size: 20px;
     margin-bottom: 0 !important;
@@ -3029,18 +3024,16 @@ nav {
   width: 100vw;
   top: 0;
   left: 0;
-  background: rgba(25, 37, 58, 0.5); }
+  background: rgba(25, 37, 58, 0.5);
+  align-items: center;
+  justify-content: center; }
 
 .claim-form {
-  margin: 0 auto;
-  background: #fbfbfb;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  @media (max-width: 475px) {
-    .claim-form {
-      max-width: 300px; } }
+  position: relative;
+  max-width: 360px;
+  width: 100%;
+  background: #FBFBFB;
+  box-sizing: border-box; }
   .claim-form .chase-element {
     width: 100%; }
 
