@@ -2954,6 +2954,9 @@ nav {
     font-weight: 300;
     line-height: 24px; }
 
+.question-lawyer {
+  flex: 1.5; }
+
 .callback-form {
   border-radius: 8px;
   border: 1px solid #dbdbdb;
@@ -2962,7 +2965,8 @@ nav {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 15px; }
+  gap: 15px;
+  flex: 1; }
   .callback-form p {
     font-size: 20px;
     margin-bottom: 0 !important;
