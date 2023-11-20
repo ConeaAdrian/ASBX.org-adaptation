@@ -813,7 +813,7 @@ footer {
   height: fit-content;
   top: 0;
   z-index: 100; }
-  @media (min-width: 992px) {
+  @media (min-width: 993px) {
     .header-section .container {
       padding: 0 20px; } }
 
