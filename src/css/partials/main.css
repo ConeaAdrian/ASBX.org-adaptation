@@ -1311,8 +1311,8 @@ nav {
       max-width: 255px;
       height: auto;
       border: 1px solid rgba(0, 0, 0, 0.1);
-      gap: 30px;
-      display: grid;
+      gap: 5px;
+      display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center; }
@@ -1326,8 +1326,7 @@ nav {
       .index-page .working-stages .works-step__box span {
         color: #BC2649;
         font-size: 64px;
-        font-weight: 700;
-        line-height: 24px; }
+        font-weight: 700; }
       .index-page .working-stages .works-step__box img {
         aspect-ratio: 1/1;
         height: 220px; }
@@ -1341,9 +1340,6 @@ nav {
         font-weight: 300;
         line-height: 24px;
         padding-top: 0; }
-        @media (max-width: 767px) {
-          .index-page .working-stages .works-step__box p {
-            height: 200px; } }
         @media (max-width: 640px) {
           .index-page .working-stages .works-step__box p {
             height: auto; } }
